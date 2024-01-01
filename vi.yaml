@@ -1,0 +1,946 @@
+common:
+  none: Không
+  add: Thêm
+  remove: Xóa
+  guild_added: |
+    ## :e_mail: Tin nhắn này đã được gửi từ <:Owner:1159511933414801500> Đội ngũ Phát triển GlitchBucket
+    ~~                                                                                                        ~~
+    Xin chào! Cảm ơn bạn rất nhiều vì đã thêm **GlitchBucket** vào **{0}** <a:151yaya:853095842843852851> 
+    Nếu bạn có bất kỳ câu hỏi nào, hãy thoải mái liên hệ với chúng tôi tại [Trung tâm Hỗ trợ](https://discord.gg/WDc5uF9wyS ) của chúng tôi bất kỳ lúc nào!
+
+    Chúng tôi đã tự động phát hiện ngôn ngữ máy chủ của bạn là {1} ({2}), vì vậy máy chủ của bạn sẽ sử dụng cấu hình ngôn ngữ {1}.
+    Để thay đổi cài đặt về ngôn ngữ ứng dụng, bạn có thể sử dụng </locale guildset:1191002538858778766> hoặc </locale myself:1191002538858778766>.
+
+    Tài liệu ứng dụng: [Điều khoản Dịch vụ](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
+  
+  options:
+    role: "Chọn vai trò"
+    category: "Chọn danh mục"
+    channel: "Chọn kênh"
+    member: "Chọn một thành viên máy chủ"
+    user: "Chọn người dùng"
+    reason: "Hãy nhập lý do cho hành động này"
+    silent: "Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không"
+    action: "Hãy ghi rõ hành động"
+    amount: "Hãy ghi rõ số tiền"
+    enable: "Cho biết có nên kích hoạt điều này hay không"
+  config:
+    saved: "Đã lưu cấu hình thành công!"
+    edited: "Đã chỉnh sửa cấu hình thành công!"
+    updated: "Đã cập nhật cấu hình thành công!"
+  
+  cooldown:
+    triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
+    expired: ":stopwatch: Lệnh đang trong thời gian chờ đã hết hạn. Bây giờ bạn có thể sử dụng lệnh một lần nữa."
+  
+  error:
+    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy khách của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
+    database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu của bạn, vui lòng thử lại sau..."
+    unknown: 
+      reply: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh, vui lòng thử lại sau..."
+      reply_failed: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh trên, vui lòng thử lại sau..."
+
+afk:
+  description: Thiết lập cho bạn AFK
+  options:
+    reason: Lý do AFK
+    silent: Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không
+  translation:
+    welcome_back: ":stopwatch: Chào mừng bạn trở lại, {}! Bạn đã AFK trong **{}** và nhận được **{}** đề cập."
+    received_mention: "Đã nhận được đề cập"
+    currently_afk: ":placard: Hiện tại `{}` AFK trong <t:{}:R>: **{}**"
+
+chat: # Hoàn thành
+  description: Thảo luận với Trí tuệ nhân tạo!
+  options:
+    message: Nhập tin nhắn của bạn vào đây
+
+fack: # Bỏ qua
+  description: gửi một 'fack' đến kẻ thù của bạn
+  options:
+    user: Người dùng bạn muốn fack
+
+information: # Hoàn thành
+  description: Hiển thị thông tin của GlitchBucket
+  translation:
+    global_information: Thông tin Toàn cầu
+    description: "**GlitchBucket** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), chủ yếu tập trung vào tính năng tự động & độc đáo.
+      > - Để biết danh sách các lệnh có sẵn, hãy nhập </help:1119604872497594495> hoặc `/GlitchBucket` trong cuộc trò chuyện.
+      > - Có thể truy xuất Hỗ trợ [thông qua Máy chủ Discord của chúng tôi](https://discord.com/invite/Bzha7tgd7u)!
+      > - Trạng thái trực tuyến của Bot có thể được tìm thấy [tại đây](https://tudubucket.statuspage.io)
+      > - [Mời tôi!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      > - [Điều khoản Dịch vụ](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Chính sách Bảo mật](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)"
+    
+    cpu: Sử dụng CPU
+    ram: Sử dụng RAM
+    disk: Sử dụng Ổ cứng
+    guilds: Tổng số Hội
+    channels: Tổng số Kênh
+    members: Tổng số Thành viên
+    python: Phiên bản Python
+    dpy: Phiên bản discord.py
+    network: Mạng Đến/Đi
+    shards: Các Mảnh hiện tại/Tổng số Mảnh
+    startup: Khởi động
+    made_with_love: Được thực hiện với 💖 bởi {}
+
+snipe: 
+  description: Kiểm tra tin nhắn đã xóa gần đây
+  options:
+    page: Nhập một trang từ 1 đến 10, nhập 'all' để kiểm tra tất cả tin nhắn đã xóa gần đây
+    channel: Chỉ định một kênh
+  
+  translation:
+    recent: "Tin nhắn đã xóa/chỉnh sửa gần đây cho #{}"
+    page_none: "Không có tin nhắn nào ở trang **{}**"
+    from: "{} {} của {} ({}), {} trước"
+    channel_none: "Không tìm thấy tin nhắn đã xóa gần đây nào trong kênh này trong vòng 28 ngày."
+
+help: 
+  description: Hiển thị trợ giúp cho bot
+  translation: 
+    go_slash: "Nhập `/GlitchBucket` trong chat để xem tất cả các lệnh của ứng dụng!"
+
+lemme: 
+  description: Do you want to hug your best Discord friend? Try this out!
+  command:
+    kiss: Kiss an user!
+    hug: Hug an user!
+    slap: Slap an user!
+    bite: Bite an user!
+    handhold: Handhold an user!
+    pat: Pat an user!
+    punch: Punch an user!
+    match: Match an user!
+  
+outage: 
+  description: Khối lệnh kiểm tra cắt điện tại Việt Nam
+  commands:
+
+    provider: 
+      description: Tra cứu mã công ty điện lực
+      options:
+        region: Chọn miền bạn đang sinh sống
+
+    subscription: 
+      description: Kiểm tra thông tin của bạn về chức năng này!
+
+    subprovider: 
+      description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider]
+          để xem mã điện lực.
+
+    lookup: 
+      description: Tra cứu thông tin cắt điện tại khu vực của bạn
+      options:
+        provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
+        subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
+        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc
+          bỏ trống để kiểm tra ngày hôm nay'
+        keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
+
+    unsubscribe: 
+      description: Hủy bỏ thông báo cắt điện tự động
+
+    subscribe: 
+      description: Nhận thông báo cắt điện tự động
+
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider>
+          để xem mã điện lực.
+        keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
+
+
+illustration:
+  description: Tìm kiếm tác phẩm nghệ thuật trên https://pixiv.net
+  options:
+    tag: Thẻ minh họa để tìm kiếm
+    search_mode: Chọn chế độ tìm kiếm thẻ
+    sort_mode: Chọn chế độ sắp xếp tìm kiếm
+    leaderboard: Chọn hình ảnh hàng đầu của phạm vi ngày cụ thể
+    nsfw: "Tìm kiếm hình ảnh NSFW hay không"
+  choices:
+    partial_match: Phù hợp với thẻ một phần
+    exact_match: Phù hợp chính xác với thẻ
+    title: Tiêu đề & Chú thích
+    none: Không
+    popular_sort: Phổ biến giảm dần
+    date_asc_sort: Ngày tăng dần
+    date_desc_sort: Ngày giảm dần
+    lb_daily: Hàng ngày
+    lb_weekly: Hàng tuần
+    lb_monthly: Hàng tháng
+    lb_all: Tất cả
+  translation:
+    no_nsfw: "Bạn không thể sử dụng thẻ NSFW trong kênh này."
+    none_illust: "Thẻ `{}` không trả về minh họa nào."
+    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ của bạn hoặc thay đổi đối số lệnh.*\n_ _"
+    suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử "
+
+    author: "Tác giả"
+    original: "Bài đăng gốc"
+    tag: "Thẻ"
+    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*"
+    less_amount: "***Cảnh báo:** Thẻ minh họa này trả về số lượng tác phẩm nghệ thuật ít (Tổng cộng: {})! Điều này có thể dẫn đến kết quả chất lượng thấp.*"
+    less_accurracy: "***Cảnh báo:** Thẻ minh họa nhập của bạn dài hơn 2 từ! Điều này có thể dẫn đến kết quả chất lượng thấp.*\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+
+artwork:
+  description: Ngẫu nhiên các tác phẩm nghệ thuật hàng đầu trên https://pixiv.net
+  options:
+    leaderboard: Chọn hình ảnh hàng đầu của phạm vi ngày cụ thể
+    archived: Có chọn hình ảnh lưu trữ ngẫu nhiên không còn trong bảng xếp hạng hay không
+  choices:
+    lb_daily: Hàng ngày
+    lb_weekly: Hàng tuần
+    lb_monthly: Hàng tháng
+  translation:
+    no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
+    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+
+r18:
+  description: Hình ảnh R-18 ngẫu nhiên
+  options:
+    leaderboard: Chọn hình ảnh hàng đầu của phạm vi ngày cụ thể
+    archived: Có chọn hình ảnh lưu trữ ngẫu nhiên không còn trong bảng xếp hạng hay không
+  choices:
+    lb_daily: Hàng ngày
+    lb_weekly: Hàng tuần
+  translation:
+    no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
+    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+    nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
+r34:
+  description: Hình ảnh R-34 ngẫu nhiên
+  options:
+    tag: Chỉ định thẻ để tìm kiếm
+  translation:
+    none_illust: "Thẻ `{}` không trả về minh họa nào."
+    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ của bạn hoặc thay đổi đối số lệnh.*\n_ _"
+    suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử </r18:1147727553373683753>!"
+    nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
+
+illust_report:
+  warning: '## :warning: Lưu ý trước khi báo cáo:
+    - Hình ảnh trùng lặp là **không hợp lý** để báo cáo.
+    - Chúng tôi chỉ chấp nhận xóa **Manga/Hướng dẫn Vẽ**, **Thể loại Hình ảnh Sai lệch** và **Hình ảnh Chất lượng Kém/Tệ**.
+    - Không gửi thư rác/báo cáo vô ích, bạn có thể bị đưa vào danh sách đen nếu cố gắng làm điều đó!
+
+    :small_red_triangle_down: Vui lòng chọn một thể loại để báo cáo bên dưới đây :small_red_triangle_down:'
+  reported_button: "Hình ảnh này đã được báo cáo"
+  reported_message: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo của bạn ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
+
+
+autoresponder:
+  common:
+    equal: Bằng
+    contains: Chứa
+    startswith: Bắt đầu bằng
+    endswith: Kết thúc bằng
+    mm_keep: Không thay đổi
+    no_trigger_matched: "Máy chủ của bạn không có bất kỳ autoresponder nào khớp với trigger {}!"
+
+  description: Thiết lập Trả lời tự động trên máy chủ của bạn
+  commands:
+    matchmode:
+      description: Chỉnh sửa chế độ khớp autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
+        mode: Chọn chế độ khớp
+
+    placeholders:
+      description: Hàm cho autoresponder của bạn
+      translation:
+        puser: "Hàm cho người dùng"
+        pserver: "Hàm cho máy chủ"
+        pcmessage: "Hàm cho kênh & tin nhắn"
+        func: "Các hàm khác"
+
+    add:
+      description: Thêm một autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
+        response: Chuỗi để trả lời cho trigger
+        mode: Chế độ khớp cho autoresponder
+        ignorecase: Có nên bỏ qua trường hợp khi khớp hay không
+      translation:
+        maximum_reached: "Bạn không thể tạo nhiều hơn 50 autoresponder trong máy chủ này!"
+        already_exists: "Đã có một autoresponder với trigger này. Bạn chỉ có thể chỉnh sửa hoặc xóa chúng."
+
+    view:
+      description: Xem cài đặt hiện tại của autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
+
+    delete:
+      description: Xóa một autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
+      translation:
+        successful: "Xóa autoresponder thành công!"
+
+    list:
+      description: Danh sách autoresponder trên máy chủ này
+      translation:
+        total: "Máy chủ này có tổng cộng {} autoresponder.\nDanh sách: `{}`"
+        none: "Máy chủ này không có autoresponder nào!"
+
+
+security:
+  description: Thiết lập Bảo mật tự động cho máy chủ của bạn
+  common:
+    current_setting: "Máy chủ này hiện đang {} tính năng này."
+  commands:
+    cancernickname:
+      description: Tự động chỉnh sửa lại tên người dùng khi họ phản cảm
+      options:
+        enable: Bật hoặc tắt tính năng này
+      translation:
+        description: "## :warning: Tên biệt danh chống ung thư
+          > Tính năng này tự động quét tên người dùng trong __Sự kiện tham gia máy chủ__, __Sự kiện thay đổi tên người dùng toàn cầu__ & __Sự kiện thay đổi tên người dùng máy chủ__ để cung cấp khả năng bảo vệ thời gian thực. Nếu có bất kỳ ký tự unicode không tự nhiên nào trong bất kỳ tên người dùng nào kích hoạt lần kiểm tra, chúng tôi sẽ **thực hiện hành động với người dùng đó**.
+
+          **Bạn đang chọn __{}__ tính năng này!**"
+   
+    lockinvite:
+      description: Tự động khóa lời mời
+      options:
+        enable: Bật hoặc tắt tính năng này
+      translation:
+        description: "## :warning: Tự động vô hiệu hóa lời mời trên máy chủ
+          > Do bản cập nhật mới của Discord, Thành viên sẽ không còn vô hiệu hóa lời mời máy chủ của họ một cách vĩnh viễn. Tính năng này sẽ **vô hiệu hóa lời mời máy chủ một cách vĩnh viễn**.
+
+          **Bạn đang chọn __{}__ lời mời máy chủ!**"
+   
+    purgebans:
+      description: Tự động xóa tất cả các lệnh cấm trên máy chủ
+      translation:
+        no_perm: "Bạn không có quyền sử dụng nút này. Chỉ có Quản trị viên bắt đầu hành động này mới được xác nhận."
+        triggered_only: "Lệnh này chỉ dành cho chủ máy chủ."
+        exists_running_instance: "Một phiên bản xóa bỏ lệnh cấm hiện tại đang chạy trên máy chủ này. Bạn không thể chạy hai phiên bản cùng một lúc.
+          Nếu bạn muốn dừng phiên bản đang chạy trước đó, vui lòng nhấp vào nút bên dưới đây."
+        none_bans: "Không có lệnh cấm nào trong máy chủ này."
+        warning: |
+          ## :warning: Cảnh báo: Quy trình không thể đảo ngược!
+          > Lệnh này sẽ bắt đầu xóa tất cả lệnh cấm khỏi máy chủ này (Tổng cộng: {}). Vui lòng xác nhận ủy quyền để tiếp tục hành động này.
+          > Để dừng hành động này trong khi đang thực hiện, vui lòng sử dụng lại lệnh.
+
+        action_accepted: "{} đã chấp nhận thực hiện hành động này. Đang xóa {} lệnh cấm, có thể mất đến {}..."
+        action_declined: "{} đã từ chối hành động này."
+       
+        pending_stop: '{} đã dừng hành động này. Một tệp dump sẽ được gửi sau vài giây...'
+
+        task_done: "Bỏ chặn thành công {}/{} người dùng."
+
+
+
+blocksmc:
+  common:
+    invalid_player: "{} là tên người chơi không hợp lệ. Hãy đảm bảo rằng đầu vào của bạn chỉ chứa các ký tự là chữ cái hoặc/và số."
+  choices:
+    zero: Trắng
+    one: Nội thành
+    two: Thị trấn
+    three: Bình minh
+    four: tudubucket
+    five: Mùa đông
+    six: Trần nhà vào ban đêm
+    seven: Trần nhà vào ban ngày
+    eight: Thị trấn vào ban đêm
+    nine: Thị trấn vào lúc bình minh
+    ten: Minh họa hoạt hình
+    eleven: Quần xã sinh vật Nether
+    negative: Ngẫu nhiên
+
+    today: Hôm nay
+    week: Tuần này
+    month: Tháng này
+    7days: 7 ngày qua
+    24hours: 24 giờ qua
+    30days: 30 ngày qua
+    overall: Tổng thể
+
+  description: Kiểm tra thông tin về người chơi BlocksMC
+  commands:
+    tracker:
+      description: Hiển thị thông tin trò chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+      options:
+        game: Chọn một trò chơi
+        user: Chỉ định người dùng
+        generate_image: Bot có tạo ảnh cho hồ sơ hay không
+        background: Chọn một hình nền đẹp
+        period: "[Người dùng được phép] Chọn một khoảng thời gian"
+        date_start: "[Người dùng được phép] Chỉ định ngày bắt đầu tra cứu theo định dạng DD/MM/YYYY."
+        date_end: "[Người dùng được phép] Chỉ định ngày kết thúc tra cứu theo định dạng DD/MM/YYYY."
+      translation:
+        never_played: Người chơi này chưa bao giờ chơi `{}` trước đây!
+        overall_only: "Lệnh này chỉ hỗ trợ tra cứu `Tổng thể` cho người chơi đã được phép, giá trị trường `period` cần thay thế từ `{}` thành `Tổng thể`."
+        title: "Số liệu thống kê {} của {}"
+        warning: "**Cảnh báo:** \n- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Winstreak, đã vô hiệu hóa!"
+        no_log: "Không tìm thấy mục nhập nhật ký."
+        non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
+        statistics: Số liệu thống kê
+
+    information:
+      description: Hiển thị thông tin người chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+      options:
+        user: Chỉ định người dùng
+        generate_image: Bot có tạo ảnh cho hồ sơ hay không
+        background: Chọn một hình nền đẹp
+        period: Chọn một khoảng thời gian
+      translation:
+        title: "Số liệu thống kê của {}"
+        warning:
+          base: "**Cảnh báo:** \n"
+          not_whitelisted: "- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; đang sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Thời gian chơi, Nhật ký thay đổi Xếp hạng/Bang hội, đã vô hiệu hóa!"
+          non_points: "- Phát hiện ra Loại game ưa thích của người chơi là `{}` không hỗ trợ Điểm, đã vô hiệu hóa!\n"
+        no_log: "Không tìm thấy nhật ký."
+        non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
+        statistics: Số liệu thống kê
+
+        playtime: Thời gian chơi
+        hours: Giờ
+        rank: Xếp hạng hiện tại
+        guild: Bang hội hiện tại
+        fav_game: Loại game ưa thích
+        played: Đã chơi
+        points: Điểm
+
+        no_record: "*Không tìm thấy bản ghi nào.*"
+
+        changelog:
+          guild: "Nhật ký thay đổi Bang hội của người chơi"
+          rank: "Nhật ký thay đổi Xếp hạng của người chơi"
+
+
+
+donation:
+  description: Thiết lập tự động nhận ủng hộ trong máy chủ của bạn
+ 
+  common:
+    not_enabled: "Guild này chưa kích hoạt tính năng nhận ủng hộ tự động! Hãy cân nhắc thiết lập bằng cách sử dụng </donation enable:1152465316878762014>"
+    disabled_automatic_receiver: "Guild này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
+
+  current_setting:
+    roles: "**Vai trò:** "
+    members: "**Thành viên:** "
+    warning: "***Cảnh báo:**"
+    points: "Điểm"
+
+    disabled: "Máy chủ này hiện đang bị vô hiệu hóa!"
+    non_auto: "Máy chủ này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động (không phải vô hiệu hóa ủng hộ)!*"
+
+    receiver: "Người nhận ủng hộ"
+    rchannel: "Kênh nhận ủng hộ"
+    achannel: "Kênh thông báo ủng hộ"
+    threshold: "Ngưỡng thông báo ủng hộ"
+    reward: "Phần thưởng ủng hộ"
+    dmessage: "Tin nhắn ủng hộ"
+    drawmessage: "Tin nhắn ủng hộ thô"
+
+    role_update: "Cập nhật vai trò phần thưởng ủng hộ dựa trên các yêu cầu"
+  commands:
+
+    channel:
+      description: Thêm/Xóa kênh nhận ủng hộ
+      options:
+        channel: Chọn kênh
+      translation:
+        can_remove_only: "{} đã là kênh nhận ủng hộ cho máy chủ này, bạn chỉ có thể xóa chúng."
+        can_add_only: "{} không phải là kênh nhận ủng hộ của máy chủ này, bạn chỉ có thể thêm chúng."
+        maximum_reached: "Bạn không thể thêm nhiều hơn 10 kênh nhận ủng hộ. Bạn phải xóa một kênh để thêm một kênh khác."
+      
+    enable:
+      description: Thiết lập bản ghi ủng hộ cho máy chủ này
+      options:
+        channel: "Chỉ định kênh để tự động nhận ủng hộ từ thành viên
+          thông qua loại tiền tệ của bot khác"
+        receiver: Chỉ định người dùng, người sẽ là người nhận ủng hộ
+
+      translation:
+        already_enabled: "Guild này đã kích hoạt tính năng nhận ủng hộ tự động!"
+        default_receive_message: "{donator_mention} ủng hộ cho chúng tôi thông qua <:OwO:1155867563612446841> __OwOBot currency__ và nhận được **{amount}** điểm ủng hộ!"
+        successful_enabled: |
+          Thành công trong việc kích hoạt ủng hộ tự động cho máy chủ này, với kênh ủng hộ {} & người nhận {}!
+          Để thêm nhiều người nhận/kênh nhận ủng hộ hơn, bạn có thể sử dụng </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
+
+    autoreceive:
+      description: Bật/tắt tính năng ghi lại ủng hộ tự động cho máy chủ này (không vô hiệu hóa
+        tính năng)
+      options:
+        action: Chỉ định hành động
+    
+    disable:
+      description: Vô hiệu hóa bản ghi ủng hộ cho máy chủ này
+      options:
+        delete: Hủy hành động - Xóa dữ liệu ủng hộ của máy chủ
+      translation:
+        disabled: "Guild này hiện đang bị vô hiệu hóa! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
+        data_deleted: "Đã xóa thành công dữ liệu ủng hộ của máy chủ này!"
+
+    threshold:
+      description: Chỉnh sửa ngưỡng thông báo ủng hộ
+      options:
+        threshold: Chỉ định ngưỡng, nếu số tiền ủng hộ lớn hơn ngưỡng này, chúng tôi sẽ thông báo
+    
+    leaderboard:
+      description: Xem bảng xếp hạng ủng hộ
+      options:
+        range: Chỉ định phạm vi cho truy vấn
+        limit: Chỉ định giới hạn cho truy vấn
+      choices:
+        all: "Mọi thời đại"
+        24hours: 24 giờ qua
+        7days: 7 ngày qua
+        30days: 30 ngày qua
+        1year: Năm ngoái
+      translation:
+        no_record: "Không có bản ghi ủng hộ nào trong guild này khớp với phạm vi bạn đã chọn."
+        lb_info: "Bảng xếp hạng ủng hộ cho {}"
+        rank: Xếp hạng
+        points: Điểm
+        user: Người dùng
+
+    message:
+      description: Chỉnh sửa tin nhắn ủng hộ khi kích hoạt
+      options:
+        message: 'Placeholder: {amount}, {donator_id}, {donator_name}, {donator_displayname}, {donator_mention}'
+    
+    receiverole:
+      description: Đặt vai trò cho người nhận
+      options:
+        role: Chỉ định vai trò, sẽ là vai trò của người nhận ủng hộ
+        delete: Có xóa vai trò nhận này hay không
+      translation:
+        already_exists: "{} đã là vai trò nhận ủng hộ cho máy chủ này, bạn chỉ có thể xóa hoặc thay đổi chúng."
+    receiver:
+      description: Thêm/Xóa người nhận
+      options:
+        action: Chọn hành động
+        receiver: Chỉ định người dùng, người sẽ là người nhận ủng hộ
+      translation:
+        can_remove_only: "{} đã là người nhận cho máy chủ này, bạn chỉ có thể xóa chúng."
+        can_add_only: "{} không phải là người nhận của máy chủ này, bạn chỉ có thể thêm chúng."
+        maximum_reached: "Bạn không thể thêm nhiều hơn 10 người nhận. Bạn nên xóa một người để thêm một người khác."
+    
+    announcement:
+      description: Đặt kênh thông báo ủng hộ
+      options:
+        channel: Chỉ định kênh, sẽ là kênh thông báo ủng hộ
+      translation:
+        already_exists: "{} đã là kênh thông báo ủng hộ cho máy chủ này, bạn chỉ có thể thay đổi chúng."
+
+    reward:
+      description: Đặt phần thưởng (vai trò) sau khi ủng hộ một số điểm nhất định
+      options:
+        action: Chọn hành động
+        role: Chỉ định vai trò để thêm, nếu số tiền ủng hộ lớn hơn {threshold} điểm
+        threshold: Chỉ định ngưỡng, bot thêm phần thưởng cho người dùng, nếu số tiền ủng hộ lớn hơn ngưỡng này
+      translation:
+        can_remove_only: "{} đã là vai trò phần thưởng cho máy chủ này, bạn chỉ có thể xóa chúng."
+        can_add_only: "{} không phải là vai trò phần thưởng của máy chủ này, bạn chỉ có thể thêm chúng."
+        maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
+
+    configuration:
+      description: Kiểm tra cấu hình về Người nhận ủng hộ tự động
+      options:
+        action: Chọn hành động
+        channel: Chỉ định kênh, sẽ là kênh nhận ủng hộ
+
+    serverstats: 
+      description: Gửi các thống kê về khoản ủng hộ của máy chủ
+      translation:
+        information: "Thông tin đóng góp của {}"
+        warning: "**Cảnh báo:** Máy chủ này hiện đang vô hiệu hóa tính năng tiếp nhận ủng hộ tự động!"
+        no_record: "Guild này chưa nhận được bất kỳ khoản ủng hộ nào!"
+        received: "Số dư đã nhận"
+        added: "Số dư được Thêm từ Quản trị viên"
+        subtracted: "Số dư bị Trừ đi từ Quản trị viên"
+        highest_donator: "Người ủng hộ cao nhất"
+        highest_donaton: "Khoản ủng hộ cao nhất"
+        your_record: "Hồ sơ đóng góp của bạn"
+
+        points: Điểm
+        donation_record: Hồ sơ ủng hộ
+        not_donated: "Bạn chưa đóng góp cho máy chủ này."
+
+    userstats: 
+      description: Kiểm tra thông tin ủng hộ của một người dùng
+      options:
+        user: Chỉ định một người dùng
+      translation:
+        not_donated: "Người dùng {} chưa ủng hộ cho máy chủ này!"
+        warning: "**Cảnh báo:** Máy chủ này hiện đang vô hiệu hóa tính năng tiếp nhận ủng hộ!"
+        still_more: "Thêm {} mục nữa..."
+
+        added: Đã thêm
+        subtracted: Đã trừ
+        points: Điểm
+        total: "Tổng số dư ủng hộ"
+        rank: "Xếp hạng"
+        recent: "Quyên góp gần đây & Nhật ký thay đổi"
+
+    add: 
+      description: Thêm số tiền ủng hộ vào số dư của người dùng
+      options:
+        user: Chỉ định một người dùng
+        amount: Chỉ định số tiền cần thêm
+        announce: Có nên thông báo về việc này hay không
+        reason: Chỉ định lý do cho hành động này
+        silent: Có thực thi lệnh này ở chế độ im lặng hay không
+      translation:
+        successful_message: "Đã thêm **{} Điểm** vào số dư ủng hộ của {}!"
+
+    subtract: 
+      description: Trừ số tiền ủng hộ khỏi số dư của người dùng
+      options:
+        user: Chỉ định một người dùng
+        amount: Chỉ định số tiền cần trừ
+        reason: Chỉ định lý do cho hành động này
+        silent: Có thực thi lệnh này ở chế độ im lặng hay không
+      translation:
+        not_donated: "Người dùng {} chưa ủng hộ cho máy chủ này!"
+        insufficient_points: "Không thể giảm số tiền cao hơn số tiền ủng hộ hiện tại của {} trong máy chủ này ({} Điểm)."
+        successful_message: "Đã trừ **{} Điểm** khỏi số dư ủng hộ của {} với lý do: {}"
+  
+stickie: 
+  current_setting:
+    title: "Cấu hình thông báo cố định cho {} ﹥ #{}"
+    description: |
+      **Thông báo cố định hiện tại trong {}**:
+      {}
+      
+      **Nội dung gốc của thông báo**:
+      ```{}```
+
+    seconds: Giây
+    messages: Tin nhắn
+    mode: Chế độ
+    inactive: Thời gian trì hoãn trò chuyện không hoạt động
+    threshold: Ngưỡng tin nhắn
+    allowmentions: Cho phép đề cập
+  common:
+    not_enabled: "Kênh {} chưa bật Thông báo cố định! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
+
+  description: Đặt một thông báo cố định trong kênh của bạn!
+  commands:
+    configuration: 
+      description: Xem cấu hình Thông báo cố định hiện tại của kênh
+      options:
+        channel: Chọn một kênh để xem cấu hình
+
+    message: 
+      description: Đặt Thông báo cố định, một khung lệnh sẽ xuất hiện và lắng nghe nội dung bạn nhập!
+      options:
+        channel: Chọn một kênh để chỉ định Thông báo cố định
+      translation: 
+        maximum_reached: "Bạn không thể tạo quá 3 Thông báo cố định trong máy chủ này."
+
+    remove: 
+      description: Xóa Thông báo cố định đã tồn tại
+      options:
+        channel: Chọn một kênh để xóa Thông báo cố định
+    
+    mode: 
+      description: Chỉnh sửa StickMode cho Thông báo cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        mode: Chọn chế độ
+      choices:
+        threshold: Ngưỡng tin nhắn
+        inactive: Thời gian trì hoãn trò chuyện không hoạt động
+      translation:
+        already_set: Kênh <#{channel.mention}> đã được đặt ở chế độ **{mode.name}**!
+
+    webhook: 
+      description: Đặt webhook tùy chỉnh cho Thông báo cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+      
+
+    delay: 
+      description: Đặt độ trễ cho Thông báo cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        delay: Phạm vi từ 1 - 15, Thông báo cố định sẽ xuất hiện trong trò chuyện sau khi
+          trò chuyện không hoạt động trong {delay} giây
+
+    allowmentions: 
+      description: Đặt quy tắc AllowedMention cho Thông báo cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        action: Chọn hành động cho cấu hình này
+
+    msgthreshold: 
+      description: Đặt ngưỡng tin nhắn cho Thông báo cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        threshold: Phạm vi từ 1 - 500, Tin nhắn sẽ xuất hiện trong trò chuyện sau khi số lượng tin nhắn này được gửi đi
+
+    embed: 
+      description: Đặt một thông báo nhúng cố định
+      options:
+        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+      translation:
+        invalid: "Dữ liệu JSON cho thông báo nhúng của bạn không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
+
+setting: 
+  description: Chỉnh sửa một số cài đặt
+  commands:
+    blocksmcdisplay: 
+      description: Đặt loại hiển thị cho Lệnh /blocksmc tracker/information
+      options:
+        action: Chọn một tùy chọn
+      choices:
+        both: "Ảnh và thông báo nhúng (Mặc định)"
+        image: "Chỉ ảnh"
+        embed: "Chỉ thông báo nhúng"
+
+locale:
+  description: "Cài đặt ngôn ngữ"
+  commands:
+    guildset:
+      description: "Đặt ngôn ngữ của máy chủ"
+      options:
+        lang: "Chọn một ngôn ngữ"
+
+      translation:
+        current: "Hiện tại, ngôn ngữ của máy chủ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
+        updated: "Đã cập nhật thành công ngôn ngữ của máy chủ thành {} ({})!"
+
+    myself: 
+      description: "Đặt ngôn ngữ cho chính bạn, để hiển thị lệnh"
+      options:
+        lang: "Chọn một ngôn ngữ"
+        override_guilds: "Có ghi đè cài đặt của máy chủ hay không"
+
+      translation:
+        current: "Hiện tại, ngôn ngữ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
+        updated: "Thành công cập nhật ngôn ngữ của bạn thành {} ({})!"
+quickreport:
+  common:
+    not_enabled: "Quick Report chưa được kích hoạt trong máy chủ này."
+  context_menu:
+    name: Báo cáo tin nhắn này
+  current_setting:
+    title: "Cấu hình Quick Report cho {}"
+    source:
+      name: "Nguồn báo cáo"
+      any: "Bất kỳ Kênh nào (Toàn bộ Máy chủ)"
+      exclude: "Loại trừ Kênh/Danh mục đã đưa vào danh sách đen"
+      whitelist: "Chỉ Kênh/Danh mục đã đưa vào danh sách trắng"
+    manager: "Quản lý báo cáo"
+    inc_channel: "Kênh báo cáo đến"
+    max_concurrent: "Báo cáo đồng thời tối đa"
+    per_user: "{} báo cáo/người dùng"
+    blacklist: "Danh sách đen báo cáo"
+    bypass: "Bỏ qua báo cáo"
+
+    on_member:
+      timeout: "\n- Đối với Thành viên __Bị hết giờ__"
+      muted: "\n- Đối với Thành viên __Bị tắt tiếng__ "
+      leave: "\n- Đối với Thành viên __Bị cấm/Rời__"
+    blacklisted_channels: "Kênh đã đưa vào danh sách đen"
+    whitelisted_channels: "Kênh đã đưa vào danh sách trắng"
+    blacklisted_categories: "Danh mục đã đưa vào danh sách đen"
+    whitelisted_categories: "Danh mục đã đưa vào danh sách trắng"
+
+    auto_delete:
+      name: "Tự động xóa báo cáo"
+      value: "- Sau __{} giờ__ không hoạt động"
+
+    no_muterole: "(:warning: không có vai trò tắt tiếng trong cấu hình)"
+
+    
+  get_report:
+    status:
+      name: "Trạng thái"
+      pending: ':blue_square: Đang chờ xử lý'
+      declined: ':red_square: Từ chối'
+      approved: ':yellow_square: Đã chấp thuận'
+    
+    report_time: "Thời gian báo cáo"
+    last_update: "Lần cập nhật cuối cùng"
+    uuid: "UUID báo cáo"
+    reporter: "Người báo cáo"
+    reported: "Đã báo cáo"
+    evidence: "Bằng chứng"
+    reason: "Lý do"
+
+    approver: "Người chấp thuận báo cáo"
+    approvement_time: "Thời gian chấp thuận"
+    declinement_time: "Thời gian từ chối"
+    approvement_message: "Tin nhắn chấp thuận"
+    declinement_message: "Tin nhắn từ chối"
+
+  send_report:
+    cant_view: "Không thể truy xuất tin nhắn cụ thể, hãy đảm bảo rằng tôi có thể xem {}!"
+    no_self_report: "Bạn không thể tự báo cáo chính mình."
+    no_bot_report: "Bạn không thể báo cáo tin nhắn của bot."
+    blacklisted: "Bạn đã bị chặn gửi báo cáo trong máy chủ này. Hãy đảm bảo rằng hiện tại bạn không bị tắt tiếng, đưa vào danh sách đen hoặc hết giờ."
+    bypassed: "Bạn không được phép báo cáo tin nhắn từ người dùng này!"
+    already_reported: "Tin nhắn này đã được báo cáo!"
+    not_eligible:
+      non_whitelisted_category: "Bạn không được phép báo cáo tin nhắn trong danh mục không được đưa vào danh sách trắng này!"
+      non_whitelisted_channel: "Bạn không được phép báo cáo tin nhắn trong kênh không được đưa vào danh sách trắng này!"
+      blacklisted_category: "Bạn không được phép báo cáo tin nhắn trong danh mục đã đưa vào danh sách đen này!"
+      blacklisted_channel: "Bạn không được phép báo cáo tin nhắn trong kênh đã đưa vào danh sách đen này!"
+    max_concurrent_reached: "Bạn đã đạt đến tối đa **{}** báo cáo đang chờ xử lý đồng thời trong máy chủ này! Vui lòng kiểm tra các báo cáo hiện tại của bạn trong </quickreport recent:1182566872810541056> trước khi báo cáo lại."
+    description: "Sử dụng lệnh </quickreport update:1182566872810541056> để cập nhật trạng thái của báo cáo này."
+    reporter: Người báo cáo
+    reported: Đã báo cáo
+    message: Tin nhắn
+    reason: Lý do
+    destination_content: "Nội dung tin nhắn đích"
+
+  description: Nhanh chóng báo cáo tin nhắn vi phạm tới Người kiểm duyệt máy chủ
+  commands:
+    enable:
+      description: Kích hoạt tính năng Quick Report
+      options:
+        receive_channel: Chỉ định kênh để nhận báo cáo đến
+      translation:
+        received: ":information_source: Chúng tôi đã nhận được báo cáo của bạn. Người quản lý báo cáo sẽ xem qua báo cáo của bạn trong thời gian ngắn."
+        incoming: ":warning: Báo cáo mới đến!"
+
+    successful_message:
+      description: Đặt một tin nhắn được gửi tới Người báo cáo sau khi báo cáo thành công
+      options:
+        message: Chỉ định tin nhắn
+
+    configuration:
+      description: Xem cấu hình Quick Report hiện tại của máy chủ này
+
+    disable:
+      description: Vô hiệu hóa tính năng Quick Report
+
+    muterole:
+      description: Đặt vai trò tắt tiếng hiện có của bot kiểm duyệt khác
+      options:
+        role: "Chọn một vai trò"
+
+    manager:
+      description: Đặt vai trò người quản lý báo cáo
+      options:
+        role: Chỉ định vai trò
+
+    bypass:
+      description: Đặt vai trò sẽ bảo vệ người dùng khỏi các báo cáo
+      options:
+        role: Chỉ định vai trò
+
+    blacklist:
+      description: Đặt vai trò khiến người dùng không thể báo cáo các tin nhắn khác
+      options:
+        role: Chỉ định vai trò
+
+    autoexpire:
+      description: Đặt thời gian chờ cho các báo cáo khi không có người kiểm duyệt nào xử lý sau
+        thời gian cụ thể
+      options:
+        after: Chỉ định khoảng thời gian tính bằng giờ sau đó các báo cáo sẽ tự động hết hạn
+          giờ đã chỉ định
+
+    concurrent:
+      description: Đặt báo cáo đồng thời tối đa cho mỗi người dùng
+      options:
+        maximum: Chỉ định giá trị
+    auto_delele:
+      description: Đặt bot tự động xóa báo cáo trong một số sự kiện
+      options:
+        on_user_timeout: Có xóa báo cáo khi người dùng đó đã hết giờ hay không
+        on_user_muted: Có xóa báo cáo khi người dùng đó bị tắt tiếng hay không (vai trò tắt tiếng đã được trao cho họ)
+        on_user_leave: Có xóa báo cáo khi người dùng đó bị cấm/rời máy chủ hay không
+
+    channels:
+      description: Đưa vào danh sách trắng/đen Quick Report trong một số kênh
+      options:
+        action: Chỉ định hành động
+        channel: Chỉ định kênh
+      translation:
+        no_serverwide: "Bạn không thể sử dụng lệnh này ở chế độ **Toàn bộ Máy chủ**."
+        invalid: "Kênh {} {} trong chế độ **{}**."
+
+    categories:
+      description: Đưa vào danh sách trắng/đen Quick Report trong một số danh mục
+      options:
+        action: Chỉ định hành động
+        category: Chỉ định danh mục
+      translation:
+        no_serverwide: "Bạn không thể sử dụng lệnh này ở chế độ **Toàn bộ Máy chủ**."
+        invalid: "Danh mục {} {} ở chế độ **{}**."
+
+    mode:
+      description: Chuyển đổi chế độ Quick Report
+      options:
+        action: Chọn một hành động
+      choices:
+        blacklist: Danh sách đen
+        whitelist: Danh sách trắng
+        serverwide: Toàn bộ Máy chủ
+
+    update:
+      description: Phê duyệt/Từ chối báo cáo
+      options:
+        action: Chọn một hành động
+        report_id: Chỉ định ID báo cáo
+        reason: Chỉ định lý do cho sự chấp thuận này
+        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+
+      choices:
+        approve: Chấp thuận
+        decline: Từ chối
+
+      translation:
+        no_manager_role: "Vai trò Quản lý báo cáo chưa được đặt trong cấu hình! Vui lòng sử dụng </quickreport manager:1182566872810541056> để thêm một."
+        no_perm: "Cập nhật báo cáo yêu cầu quyền Quản trị viên hoặc <@&{}>."
+        no_report: "Không có báo cáo nào có ID `{}` liên kết với máy chủ này!"
+        no_override: "Báo cáo có ID `{}` đã được cập nhật trước đó, bạn không thể ghi đè bản cập nhật!"
+        successful: "Đã cập nhật thành công báo cáo có ID `{}`!"
+
+    message:
+      description: Báo cáo tin nhắn trong máy chủ này
+      options:
+        channel: Chỉ định kênh chứa tin nhắn
+        message_id: Chỉ định ID tin nhắn
+        reason: Lý do bạn muốn báo cáo tin nhắn này
+        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+
+    recent:
+      description: Xem trước các báo cáo gần đây
+      options:
+        order: Chọn một hành động để sắp xếp kết quả
+        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+        status: Chỉ định trạng thái cho kết quả truy vấn
+        reporter: Chỉ định người báo cáo
+        reported: Chỉ định thành viên đã bị báo cáo
+
+      choices:
+        last_update: "Cập nhật lần cuối"
+        report_time: "Thời gian báo cáo"
+
+        all: Tất cả
+        pending: Đang chờ
+        approved: Đã chấp thuận
+        declined: Đã từ chối
+
+      translation:
+        args_no_perm: "Bạn không có quyền sử dụng đối số `reporter` và `reported`."
+        no_report: "Không có báo cáo gần đây nào khớp với cài đặt truy vấn của bạn trong máy chủ này."
+        title: "Báo cáo gần đây trong {}"
+        pending: Đang chờ
+        declined: Đã từ chối
+        approved: Đã chấp thuận
+        reported: đã báo cáo
+
+    check:
+      description: Xem trước báo cáo dựa trên ID
+      options:
+        report_id: Chỉ định ID báo cáo
+        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+
+      translation:
+        no_report: "Không có báo cáo nào liên kết với ID `{}` trong máy chủ này!"
+        no_perm: "Bạn không có quyền xem báo cáo có ID `{}` trong máy chủ này!"

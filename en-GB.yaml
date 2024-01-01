@@ -1,0 +1,557 @@
+common:
+  guild_added: '## :e_mail: This message has been sent from 
+    <:Owner:1159511933414801500> GlitchBucket Development Team
+
+    ~~                                                                                                        
+     ~~
+    
+    Hello there! Thank you very much for added
+    **GlitchBucket** to **{0}** <a:151yaya:853095842843852851> 
+    
+    If you have any questions, feel free to reach us at our 
+    [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
+
+    We have automatically detected your guild language is English, 
+    so your guild will 
+    Application Documentation: 
+    [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - 
+    [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) -
+    [Support Server](<https://discord.gg/WDc5uF9wyS>)'
+  
+  object:
+    role: "Select a role"
+    category: "Select a category"
+    channel: "Select a channel"
+    member: "Select a guild member"
+    user: "Select an user"
+    reason: "Specify a reason for this action"
+    silent: "Whether this command should be executed in silent or not"
+    action: "Specify an action"
+
+  config:
+    saved: "Successfully saved configuration!"
+    edited: "Successfully edited configuration!"
+    updated: "Successfully updated configuration!"
+  
+  cooldown:
+    triggered: ":stopwatch: Please wait <t:{}:R> before using the command again."
+    expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
+  
+  error:
+    client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
+    database: "A database error occurred while saving your data, please try again later..."
+    unknown: 
+      reply: "An unknown error occurred while executing the command, please try again later..."
+      reply_failed: "An unknown error occurred while executing the above command, please try again later..."
+
+   
+getinvite:
+  description: Get a Server Invite based on Server ID
+  options:
+    id: "…"
+
+afk:
+  description: Set yourself AFK
+  options:
+    reason: AFK Reason
+    silent: Whether this command should be executed in silent or not
+
+chat:
+  description: Have a conversation with Artificial Intelligence!
+  options:
+    message: Type your message into here
+
+fack: 
+  description: send a fack to your hater
+  options:
+    user: The user you want to fack
+
+information: 
+  description: Show information of GlitchBucket
+
+timediff: 
+  description: Check time difference between 2 messages
+  options:
+    first_id: First Message ID
+    second_id: Second Message ID
+
+snipe: 
+  description: Check recent deleted message
+  options:
+    page: Type a page from 1 to 10, type 'all' check all recent deleted message
+    channel: Specify a channel
+
+help: 
+  description: Show help for the bot
+
+illustration: 
+  description: Search for artwork on https://pixiv.net
+  options:
+    tag: The Illustration tag to seach
+    search_mode: Choose tag search mode
+    sort_mode: Choose search sort mode
+    leaderboard: Select top image of specific date range
+
+artwork:
+  description: Random top artworks on https://pixiv.net
+  options:
+    leaderboard: Select top image of specific date range
+    archived: Whether select random archived image that no longer in leaderboard or not
+
+r18: 
+  description: Random R 18 image
+  options:
+    leaderboard: Select top image of specific date range
+    archived: Whether select random archived image that no longer in leaderboard or not
+
+r34: 
+  description: Random R 34 image
+  options:
+    tag: Specify tag to search
+
+autoresponder: 
+  description: Setup Auto responder in your server
+  commands:
+
+    placeholders: 
+      description: Placeholders for your auto responder
+
+    add: 
+      description: Add an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+        response: String to response to the trigger
+        mode: Match mode for the autoresponder
+        ignorecase: Whether we should ignore case when matching or not
+
+    view: 
+      description: View current setting of an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+
+    delete: 
+      description: Delete an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+
+    list: 
+      description: List of autoresponder in this server
+
+security: 
+  description: Setup Automatic Security for your server
+  commands:
+    cancernickname: 
+      description: Automatic rewrite username when they're sucks
+      options:
+        enable: Whether enable this feature or not
+    
+    lockinvite: 
+      description: Automatic lock invite
+      options:
+        enable: Whether enable this feature or not
+
+blocksmc: 
+  description: Check information about BlocksMC's player
+  commands:
+    tracker: 
+      description: Display game information from BlocksMC player statistics tracker
+      options:
+        game: Select a game
+        user: Specify the user
+        generate_image: Whether the bot will generate an image for the profile or not
+        background: Pick a cool background
+        period: "[Whitelisted Users] Select a period"
+        date_start: "[Whitelisted Users] Specify start date to lookup with format DD/MM/YYYY."
+        date_end: "[Whitelisted Users] Specify end date to lookup with format DD/MM/YYYY."
+    information: 
+      description: Display player information from BlocksMC player statistics tracker
+      options:
+        description: Specify the user
+        generate_image: Whether the bot will generate an image for the profile or not
+        background: Pick a cool background
+        period: Select a period
+
+outage: 
+  description: Khối lệnh kiểm tra cắt điện tại Việt Nam
+  options:
+
+    provider: 
+      description: Tra cứu mã công ty điện lực
+
+    options:
+      region: Chọn miền bạn đang sinh sống
+
+    subscription: 
+      description: Kiểm tra thông tin của bạn về chức năng này!
+
+    subprovider: 
+      description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider]
+          để xem mã điện lực.
+
+    lookup: 
+      description: Tra cứu thông tin cắt điện tại khu vực của bạn
+      options:
+        provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
+        subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
+        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc
+          bỏ trống để kiểm tra ngày hôm nay'
+        keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
+
+    unsubscribe: 
+      description: Hủy bỏ thông báo cắt điện tự động
+
+    subscribe: 
+      description: Nhận thông báo cắt điện tự động
+
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider>
+          để xem mã điện lực.
+        keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
+
+gtn: 
+  description: Create a Guess the number game instance
+  commands:
+    create: 
+      description: Create 'Guess the number' Game
+    options:
+      num_range: Generate a random number between 0 and {num_range}, default is
+        400, can only in range 1 - 10000
+      start_after: The time (minute) to start after the command being submitted, default
+        is 2, can only in range 1 - 10
+      game_rounds: Maximum number of round to play, default is 15, can only in range 1 - 20
+      round_duration: Duration on each round, default is 45, can only in range 25 - 90
+lemme: 
+  description: Do you want to hug your best Discord friend? Try this out!
+  command:
+    kiss: Kiss an user!
+    hug: Hug an user!
+    slap: Slap an user!
+    bite: Bite an user!
+    handhold: Handhold an user!
+    pat: Pat an user!
+    punch: Punch an user!
+    match: Match an user!
+  
+blacklist: 
+  description: Global Bot's Blacklist
+  commands:
+    show: 
+      description: List all blacklisted users
+    remove: 
+      description: Remove an user from the global bot's blacklist
+      options:
+        user: Specify an user
+    add: 
+      description: Add an user to global bot's blacklist
+      options:
+        user: "…"
+        lang: Specify language
+        reason: Specify the reason for this action
+        silent: Whether this command should be executed in silent or not
+
+donation: 
+  description: Setup automatic receive donations in your server
+  commands:
+    enable: 
+      description: Setup donations record for this server
+      options:
+        channel: Specify a channel to automatically receive donations from members
+          through another bot's currency
+        receiver: Specify an user, who will be the donation's receiver
+    
+    autoreceive: 
+      description: Toggle automatic donations record for this server (does not disable
+        the feature)
+      options:
+        action: Specify an action
+    
+    disable: 
+      description: Disable donations record for this server
+      options:
+        delete: Destruct Action   Delete server's donation data
+    
+    threshold: 
+      description: Edit donation announce threshold
+      options:
+        threshold: Specify threshold, if the donation amount is larger than this,
+          we will announce it to donation…
+    
+    leaderboard: 
+      description: View donations leaderboard
+      options:
+        range: Specify a range for query
+        limit: Specify a limit for the query
+    
+    message: 
+      description: Edit donation message when triggered
+      options:
+        message: 'Placeholders: {amount}, {donator_id}, {donator_name}, {donator_displayname},
+          {donator_mention}'
+    
+    receiverole: 
+      description: Set a role for receiver
+      options:
+        role: Specify a role, which will be the role for donation's receiver
+        delete: Whether delete this receive role or not
+    
+    receiver: 
+      description: Add/Remove a receiver
+      options:
+        action: Select an action
+        receiver: Specify an user, who will be the donation's receiver
+    
+    announcement: 
+      description: Set donations announce channel
+      options:
+        channel: Specify a channel, which will be donation announce channel
+
+    reward: 
+      description: Set rewards (role) after specific amount of donation points
+      options:
+        action: Select an action
+        role: Specify a role to add, if the donation amount is larger than {threshold}
+          points
+        threshold: Specify threshold, which the bot add the reward to user, if the
+          donation amount is larger than this
+
+    configuration: 
+      description: Check configuration about Automatic donation receiver
+      options:
+        action: Select an action
+        channel: Specify a channel, which it will be the donations receive channel
+
+    serverstats: 
+      description: Send statistics about server's donation
+
+    userstats: 
+      description: Check donation information of an user
+      options:
+        user: Specify an user
+
+    add: 
+      description: Add amount of donation balance to an user
+      options:
+        user: Specify an user
+        amount: Specify the amount to add
+        announce: Whether we should announce this or not
+        reason: Specify a reason for this action
+        silent: Whether this command should be executed in silent or not
+
+    subtract: 
+      description: Subtract amount of donation balance from an user
+      options:
+        user: Specify an user
+        amount: Specify the amount to subtract
+        reason: Specify a reason for this action
+        silent: Whether this command should be executed in silent or not
+  
+betterembed: 
+  description: Better embed for some websites!
+  commands:
+    enable: 
+      description: Enable Better embed feature
+    
+    disable: 
+      description: Disable Better embed feature
+      options:
+        delete: 'Destruct Action - Whether we should delete setting data of your
+          guild or not. Default: False'
+    
+    parse: 
+      description: Apply BetterEmbed to an url
+      options:
+        url: Specify a valid url
+    
+    filter: 
+      description: Change Better embed filter
+      options:
+        mode: Select mode
+        match: Select matchmode
+    
+    toggleserver: 
+      description: Toggle Better embed feature to all channels & categories
+      options:
+        action: "…"
+    
+    configuration: 
+      description: View current configuration for this setting
+    
+    delembed: 
+      description: Delete embed from author message when its triggered this feature
+      options:
+        action: "…"
+    
+    channels: 
+      description: Whitelist/Blacklist feature in some channels
+      options:
+        action: "…"
+        channel: "…"
+
+    categories: 
+      description: Whitelist/Blacklist feature in some categories
+      options:
+        action: "…"
+        category: "…"
+
+stickie: 
+  description: Set a Sticky Message in your channel!
+  commands:
+    configuration: 
+      description: View current Sticky Message configuration of a channel
+      options:
+        channel: Select a channel to see configuration
+
+    message: 
+      description: Set Sticky Message, a modal will appear and listen to your input!
+      options:
+        channel: Select a channel to assign Sticky Message
+
+    remove: 
+      description: Remove a Sticky Message that's already exists
+      options:
+        channel: Select a channel to remove Sticky Message
+    
+    mode: 
+      description: Edit StickMode for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        mode: Choose mode
+
+    webhook: 
+      description: Set custom webhook for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+
+    delay: 
+      description: Set delay for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        delay: Range 1 - 15, the Sticky Message will appear into chat after chat
+          inactive for {delay} seconds
+
+    allowmentions: 
+      description: Set AllowedMention rule for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        action: Choose action for this configuration
+
+    msgthreshold: 
+      description: Set message threshold for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        threshold: Range 1 - 500, Sticky Message will appear into chat after chat
+          these amount of message has been…
+    embed: 
+      description: Set sticky embed
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+
+setting: 
+  description: Edit some settings
+  commands:
+    blocksmcdisplay: 
+      description: Set display type for BlocksMC Tracker/Information Commands
+      options:
+        action: Select an option
+
+quickreport: 
+  description: Quickly report violation messages to Server Moderator
+  commands:
+    enable: 
+      description: Enable Quick Report feature
+      options:
+        receive_channel: Specify a channel to receive incoming reports
+
+    configuration: 
+      description: View current Quick Report configuration of this server
+    
+    disable: 
+      description: Disable Quick Report feature
+    
+    muterole: 
+      description: Set an exists mute role of another moderation's bots
+      options:
+        role: "…"
+    
+    manager: 
+      description: Set a report manager's role
+      options:
+        role: Specify a role
+    
+    bypass: 
+      description: Set a role that will protect users against reports
+      options:
+        role: Specify a role
+    
+    blacklist: 
+      description: Set a role that will made users cannot report other messages
+      options:
+        role: Specify a role
+    
+    autoexpire: 
+      description: Set a timeout for reports when theres no moderators handle it after
+        specific time
+      options:
+        after: Specify hours range, which reports will auto timeout after that
+          specified hours
+    
+    concurrent: 
+      description: Set maximum concurrent reports for each users
+      options:
+        maximum: Specify a value
+    auto_delele: 
+      description: Set the bot to automatically delete reports on some events
+      options:
+        on_user_timeout: Whether delete reports when that user has been timed out
+        on_user_muted: Whether delete reports when that user is muted (a muterole has
+          been given to them)
+        on_user_leave: Whether delete reports when that user is banned/leave the server
+    channels: 
+      description: Whitelist/Blacklist Quick Report in some channels
+      options:
+        action: Specify an action
+        channel: Specify a channel
+
+    categories: 
+      description: Whitelist/Blacklist Quick Report in some categories
+      options:
+        action: Specify an action
+        category: Specify a category
+    
+    mode: 
+      description: Toggle Quick Report mode
+      options:
+        action: Select an action
+    
+    update: 
+      description: Approve/Decline a report
+      options:
+        action: Select an action
+        report_id: Specify Report ID
+        reason: Specify a reason for this approvement
+        silent: Whether we sent this message in silent or not
+    
+    message: 
+      description: Report a Message in this server
+      options:
+        channel: Specify the channel that contains the message
+        message_id: Specify Message ID
+        reason: The reason that you want to report this message
+        silent: Whether we sent this message in silent or not
+
+    recent: 
+      description: Preview recent reports
+      options:
+        order: Select an action for sorting results
+        silent: Whether we sent this message in silent or not
+        status: Specify a status for query results
+        reporter: Specify a reporter
+        reported: Specify a member who has been reported
+
+    check: 
+      description: Preview a report based on ID
+      options:
+        report_id: Specify Report ID
+        silent: Whether we sent this message in silent or not

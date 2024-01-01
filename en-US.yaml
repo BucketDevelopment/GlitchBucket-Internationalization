@@ -1,0 +1,994 @@
+common:
+  none: None
+  add: Add
+  remove: Remove
+  guild_added: |
+    ## :e_mail: This message has been sent from <:Owner:1159511933414801500> GlitchBucket Development Team
+    ~~                                                                                                        ~~
+    Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:151yaya:853095842843852851> 
+    If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
+
+    We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
+    To change application's setting about localization, you can use </locale guildset:1191002538858778766> or </locale myself:1191002538858778766>.
+
+    Application Documentation: [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)"
+  
+  options:
+    role: "Select a role"
+    category: "Select a category"
+    channel: "Select a channel"
+    member: "Select a guild member"
+    user: "Select an user"
+    reason: "Specify a reason for this action"
+    silent: "Whether this command should be executed in silent or not"
+    action: "Specify an action"
+    amount: "Specify the amount"
+    enable: "Whether enable this or not"
+  config:
+    saved: "Successfully saved configuration!"
+    edited: "Successfully edited configuration!"
+    updated: "Successfully updated configuration!"
+  
+  cooldown:
+    triggered: ":stopwatch: Please wait <t:{}:R> before using the command again."
+    expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
+  
+  error:
+    client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
+    database: "A database error occurred while saving your data, please try again later..."
+    unknown: 
+      reply: "An unknown error occurred while executing the command, please try again later..."
+      reply_failed: "An unknown error occurred while executing the above command, please try again later..."
+
+afk:
+  description: Set yourself AFK
+  options:
+    reason: AFK Reason
+    silent: Whether this command should be executed in silent or not
+  translation:
+    welcome_back: ":stopwatch: Welcome back, {}! You were AFK for **{}** and received **{}** mention."
+    received_mention: "Received mention"
+    currently_afk: ":placard: `{}` is currently AFK for <t:{}:R>: **{}**"
+
+chat: # Done
+  description: Have a conversation with Artificial Intelligence!
+  options:
+    message: Type your message into here
+
+fack: # Ignore
+  description: send a fack to your hater
+  options:
+    user: The user you want to fack
+
+information: # Done
+  description: Show information of GlitchBucket
+  translation:
+    global_information: Global Information
+    description: "**GlitchBucket** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), mainly focus on automated & unique feature.
+      > - For a list of available command, type </help:1119604872497594495> or `/GlitchBucket` in chat.
+      > - Support can be retrived [through our Discord Server](https://discord.com/invite/Bzha7tgd7u)!
+      > - Bot alive status can be found [here](https://tudubucket.statuspage.io)
+      > - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      > - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)"
+    
+    cpu: CPU Usage
+    ram: RAM Usage
+    disk: Disk Udage
+    guilds: Total Guilds
+    channels: Total Channels
+    members: Total Members
+    python: Python Version
+    dpy: discord.py Version
+    network: Inbound/Outbound Network
+    shards: Current/Total Shards
+    startup: Startup
+    made_with_love: Made with 💖 by {}
+
+snipe: 
+  description: Check recent deleted message
+  options:
+    page: Type a page from 1 to 10, type 'all' check all recent deleted message
+    channel: Specify a channel
+  
+  translation:
+    recent: "Recent deleted/edited message for #{}"
+    page_none: "There is no message in page **{}**"
+    from: "{} {} by {} ({}), {} ago"
+    channel_none: "There are no recent deleted messages found in this channel within 28 days."
+
+help: 
+  description: Show help for the bot
+  translation: 
+    go_slash: "Type `/GlitchBucket` in chat to view all application's commands!"
+
+illustration: 
+  description: Search for artwork on https://pixiv.net
+  options:
+    tag: The Illustration tag to seach
+    search_mode: Choose tag search mode
+    sort_mode: Choose search sort mode
+    leaderboard: Select top image of specific date range
+    nsfw: Whether search for NSFW art or not
+  choices:
+    partial_match: Partial Tag Match
+    exact_match: Exact Tag Match
+    title: Title & Caption
+    none: None
+    popular_sort: Popular Descending
+    date_asc_sort: Date Ascending
+    date_desc_sort: Date Descending
+    lb_daily: Daily
+    lb_weekly: Weekly
+    lb_monthly: Monthly
+    lb_all: All
+  translation:
+    no_nsfw: "You cannot use NSFW tag in this channel."
+    none_illust: "Tag `{}` return none illustration." 
+    long_input: " Your input tag are longer than 2 words (Total: {} words)! This may cause zero result, try shorten your tag, or change command arguments.*\n_ _"
+    suggesstion: "\nCannot find what are you looking for? Try out "
+
+    author: "Author"
+    original: "Original Post"
+    tag: "Tags"
+    multi_art: "***Note:** The Illustration down below is a single part of the original post, you can view all of the last parts from the link above!*"
+    less_amount: "***Warning:** This Illustration tag return small amount of artworks (Total: {})! This may cause a low-quality result.*"
+    less_accurracy: "***Warning:** Your input Illustration tag are longer than 2 words! This may cause a low-quality result.*\n_ _"
+    tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
+
+artwork:
+  description: Random top artworks on https://pixiv.net
+  options:
+    leaderboard: Select top image of specific date range
+    archived: Whether select random archived image that no longer in leaderboard or not
+  choices:
+    lb_daily: Daily
+    lb_weekly: Weekly
+    lb_monthly: Monthly
+  translation:
+    no_image: "No image found in the directory..."
+    multi_art: "***Note:** The Illustration down below is a single part of the original post, you can view all of the last parts from the link above!*\n_ _"
+    tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
+
+r18: 
+  description: Random R-18 image
+  options:
+    leaderboard: Select top image of specific date range
+    archived: Whether select random archived image that no longer in leaderboard or not
+  choices:
+    lb_daily: Daily
+    lb_weekly: Weekly
+  translation:
+    no_image: "No image found in the directory..."
+    multi_art: "***Note:** The Illustration down below is a single part of the original post, you can view all of the last parts from the link above!*\n_ _"
+    tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
+    nsfw_only: "This command can only be used in NSFW channels."
+r34: 
+  description: Random R-34 image
+  options:
+    tag: Specify tag to search
+  translation:
+    none_illust: "Tag `{}` return none illustration." 
+    long_input: " Your input tag are longer than 2 words (Total: {} words)! This may cause zero result, try shorten your tag, or change command arguments.*\n_ _"
+    suggesstion: "\nCannot find what are you looking for? Try out </r18:1147727553373683753>!"
+    nsfw_only: "This command can only be used in NSFW channels."
+
+illust_report:
+  warning: '## :warning: Notice before report:
+    - Duplicated images is **not reasonable** to report. 
+    - We only accept to remove **Manga/Art Tutorial**, **Deviated Image Category**, and **Low Quality/Bad Image**.
+    - Do not spamming/make useless reports, you could be blacklisted if you try to do that!
+
+    :small_red_triangle_down: Please choose an category to report under here :small_red_triangle_down:'
+  reported_button: "This image has been reported"
+  reported_message: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
+
+autoresponder: 
+  common:
+    equal: Equal
+    contains: Contains
+    startswith: Starts With
+    endswith: Ends With
+    mm_keep: Do not change
+    no_trigger_matched: "Your server doesn't have any autoresponder mathces with trigger {}!"
+
+  description: Setup Auto responder in your server
+  commands:
+    matchmode: 
+      description: Edit autoresponder matchmode
+      options:
+        trigger: The keyword to trigger the autoresponder
+        mode: Select matchmode
+
+    placeholders: 
+      description: Placeholders for your auto responder
+      translation:
+        puser: "User Placeholders"
+        pserver: "Guild Placeholders"
+        pcmessage: "Channel & Message Placeholders"
+        func: "Functions"
+
+    add: 
+      description: Add an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+        response: String to response to the trigger
+        mode: Match mode for the autoresponder
+        ignorecase: Whether we should ignore case when matching or not
+      translation:
+        maximum_reached: "You cannot create more than 50 autoresponders in this guild!"
+        already_exists: "An Autoresponder with this trigger has already exists. You can only edit, or delete them."
+
+    view: 
+      description: View current setting of an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+
+    delete: 
+      description: Delete an autoresponder
+      options:
+        trigger: The keyword to trigger the autoresponder
+      translation:
+        successful: "Successfully deleted autoresponder!"
+
+    list: 
+      description: List of autoresponder in this server
+      translation:
+        total: "This guild having total of {} autoresponder.\nList: `{}`"
+        none: "This guild doesn't have any autoresponder!"
+
+
+security: 
+  description: Setup Automatic Security for your server
+  common:
+    current_setting: "This server is currently {} this feature."
+  commands:
+    cancernickname: 
+      description: Automatic rewrite username when they're sucks
+      options:
+        enable: Whether enable this feature or not
+      translation:
+        description: "## :warning: Anti-Cancer Nickname
+          > This feature automatically scan username in __Guild Join Event__, __Global Username Change Event__ & __Guild Username Change Event__ to provide real-time protection. If there is any unnatural unicode character in any username trigger the check, we will **take action under that user**.
+
+          **You are choosing to __{}__ this feature!**"
+    
+    lockinvite: 
+      description: Automatic lock invite
+      options:
+        enable: Whether enable this feature or not
+      translation:
+        description: "## :warning: Automatic Disable Server Invite
+          > Due to new Discord Update, Member will no longer permanently disable their server invite. This feature will **disable server invites pernamently**.
+
+          **You are choosing to __{}__ server invites!**"
+    
+    purgebans:
+      description: Automatic remove all server bans
+      translation:
+        no_perm: "You do not have permission to use this button. Only Administrator starts this action can confirm."
+        triggered_only: "This command is for guild owner only."
+        exists_running_instance: "A current purge bans instance is running in this guild. You cannot run double instance in a time.
+          If you want to stop the previous running instance, please click button under here."
+        none_bans: "There are no bans record in this guild."
+        warning: |
+          ## :warning: Warning: Irreversible process!
+          > This command will start to remove all the bans from this server (Total: {}). Please confirm authorization to continue on this action.
+          > To stop this action while it is performing, please use the command again.
+
+        action_accepted: "{} has accepted to perform this action. Removing {} bans, this may take up to {}..."
+        action_declined: "{} declined this action."
+        
+        pending_stop: '{} stopped this action. A dump file will be sent in a few seconds...'
+
+        task_done: "Successfully unbanned {}/{} user."
+
+debug: 
+  description: Setup Automatic Security for your server
+  commands:
+    cancernickname: 
+      description: Automatic rewrite username when they're sucks
+      options:
+        enable: Whether enable this feature or not
+    
+    lockinvite: 
+      description: Automatic lock invite
+      options:
+        enable: Whether enable this feature or not
+
+blocksmc: 
+  common:
+    invalid_player: "{} is an invalid player name. Make sure that you input contains only numbers or/and alphabet characters."
+  choices:
+    zero: White
+    one: Inside Town
+    two: Town
+    three: Sunrise
+    four: tudubucket
+    five: Winter
+    six: Ceiling during Nighttime
+    seven: Ceiling during Daytime
+    eight: Town during Nighttime
+    nine: Town during Sunrise
+    ten: Anime Illustration
+    eleven: Nether Biome
+    negative: Random
+
+    today: Today
+    week: This week
+    month: This month
+    7days: Last 7 days
+    24hours: Last 24 hours
+    30days: Last 30 days
+    overall: Overall
+
+  description: Check information about BlocksMC's player
+  commands:
+    tracker: 
+      description: Display game information from BlocksMC player statistics tracker
+      options:
+        game: Select a game
+        user: Specify the user
+        generate_image: Whether the bot will generate an image for the profile or not
+        background: Pick a cool background
+        period: "[Whitelisted Users] Select a period"
+        date_start: "[Whitelisted Users] Specify start date to lookup with format DD/MM/YYYY."
+        date_end: "[Whitelisted Users] Specify start date to lookup with format DD/MM/YYYY."
+      translation:
+        never_played: This player has never played `{}` before!
+        overall_only: "This command only support `Overall` lookup for player that have whitelisted, `period` field value need to replace from `{}` to `Overall`."
+        title: "{}'s {} Statistics"
+        warning: "**Warning:** \n- Player `{user}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Winstreak counter, disabled!"
+        no_log: "No log entries found."
+        non_exists: "This player does not exist in the BlocksMC Database!"
+        statistics: Statistics
+
+    information: 
+      description: Display player information from BlocksMC player statistics tracker
+      options:
+        user: Specify the user
+        generate_image: Whether the bot will generate an image for the profile or not
+        background: Pick a cool background
+        period: Select a period
+      translation:
+        title: "{}'s Statistics"
+        warning: 
+          base: "**Warning:** \n"
+          not_whitelisted: "- Player `{}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Playtime counter, Rank/Guild Changelog, disabled!"
+          non_points: "- Detected player Favorite Gametype is `{}` which does not support Points, disabled!\n"
+        no_log: "No log entries found."
+        non_exists: "This player does not exist in the BlocksMC Database!"
+        statistics: Statistics
+
+        playtime: Playtime
+        hours: Hours
+        rank: Current Rank
+        guild: Current Guild
+        fav_game: Favorite Gametype
+        played: Played
+        points: Points
+
+        no_record: "*No record found.*"
+
+        changelog:
+          guild: "Player Guild Changelog"
+          rank: "Player Rank Changelog"
+
+outage: 
+  description: Khối lệnh kiểm tra cắt điện tại Việt Nam
+  commands:
+
+    provider: 
+      description: Tra cứu mã công ty điện lực
+      options:
+        region: Chọn miền bạn đang sinh sống
+
+    subscription: 
+      description: Kiểm tra thông tin của bạn về chức năng này!
+
+    subprovider: 
+      description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider]
+          để xem mã điện lực.
+
+    lookup: 
+      description: Tra cứu thông tin cắt điện tại khu vực của bạn
+      options:
+        provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
+        subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
+        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc
+          bỏ trống để kiểm tra ngày hôm nay'
+        keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
+
+    unsubscribe: 
+      description: Hủy bỏ thông báo cắt điện tự động
+
+    subscribe: 
+      description: Nhận thông báo cắt điện tự động
+
+      options:
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider>
+          để xem mã điện lực.
+        keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
+
+gtn: 
+  description: Create a Guess the number game instance
+  commands:
+    create: 
+      description: Create 'Guess the number' Game
+      options:
+        num_range: Generate a random number between 0 and {num_range}, default is
+          400, can only in range 1 - 10000
+        start_after: The time (minute) to start after the command being submitted, default
+          is 2, can only in range 1 - 10
+        game_rounds: Maximum number of round to play, default is 15, can only in range 1 - 20
+        round_duration: Duration on each round, default is 45, can only in range 25 - 90
+  buttons:
+    game_not_allowed: ":octagonal_sign: You are not allowed to participate in this game!"
+    already_entered: ":octagonal_sign: You already entered the number!"
+    input_not_allowed: ":octagonal_sign: You are not allowed to enter a number anymore!"
+    input_successful: ":inbox_tray: You entered the number!"
+    user_submitted: "{} entered a number!"
+
+    self_joined:
+    self_already_joined:
+    user_joined: 
+
+lemme: 
+  description: Do you want to hug your best Discord friend? Try this out!
+  command:
+    kiss: Kiss an user!
+    hug: Hug an user!
+    slap: Slap an user!
+    bite: Bite an user!
+    handhold: Handhold an user!
+    pat: Pat an user!
+    punch: Punch an user!
+    match: Match an user!
+  
+blacklist: 
+  description: Global Bot's Blacklist
+  commands:
+    show: 
+      description: List all blacklisted users
+    remove: 
+      description: Remove an user from the global bot's blacklist
+      options:
+        user: Specify an user
+    add: 
+      description: Add an user to global bot's blacklist
+      options:
+        user: "…"
+        lang: Specify language
+        reason: Specify the reason for this action
+        silent: Whether this command should be executed in silent or not
+
+donation: 
+  description: Setup automatic receive donations in your server
+  
+  common:
+    not_enabled: "This guild haven't enabled automatic donations receiver! Consider setting it up by using </donation enable:1152465316878762014>"
+    disabled_automatic_receiver: "This guild is currently disabled automatic donations receiver! Consider re-enable it up by using </donation enable:1152465316878762014>"
+
+  current_setting:
+    roles: "**Role:** "
+    members: "**Members:** "
+    warning: "***Warning:**"
+    points: "Points"
+
+    disabled: " This server is currently disabled donations!*"
+    non_auto: " This server is currently disabled automatic donation receiver (not disabled donations)!*"
+
+    receiver: "Donation Receiver"
+    rchannel: "Donation Receive Channels"
+    achannel: "Donation Announcement Channel"
+    threshold: "Donation Announce Threshold"
+    reward: "Donation Reward"
+    dmessage: "Donation Message"
+    drawmessage: "Donation Raw Message"
+
+    role_update: "Update donation reward roles based on requirements"
+  commands:
+
+    channel: 
+      description: Add/Remove donation receive channel
+      options:
+        channel: Select a channel
+      translation:
+        can_remove_only: "{} already being receive channel for this server, you only can remove them."
+        can_add_only: "{} are not the receive channel of this server, you can only add them."
+        maximum_reached: "You cannot add more than 10 receive channel. You should remove a channel in order to add another."
+      
+    enable: 
+      description: Setup donations record for this server
+      options:
+        channel: "Specify a channel to automatically receive donations from members
+          through another bot's currency"
+        receiver: Specify an user, who will be the donation's receiver
+
+      translation: 
+        already_enabled: "This guild is already enabled automatic donations receiver!"
+        default_receive_message: "{donator_mention} donated for us through <:OwO:1155867563612446841> __OwOBot currency__ and received **{amount}** donation points!"
+        successful_enabled: |
+          Successfully enabled automatic donation for this server, with donation channel {} & receiver {}!
+          To add more receiver/receive channel, you can use </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
+
+    autoreceive: 
+      description: Toggle automatic donations record for this server (does not disable
+        the feature)
+      options:
+        action: Specify an action
+    
+    disable: 
+      description: Disable donations record for this server
+      options:
+        delete: Destruct Action - Delete server's donation data
+      translation:
+        disabled: "This guild is currently disabled donations! Consider re-enable it up by using </donation enable:1152465316878762014>"
+        data_deleted: "Successfully deleted donations data of this server!"
+
+    threshold: 
+      description: Edit donation announce threshold
+      options:
+        threshold: Specify threshold, if the donation amount is larger than this, we will announce it
+    
+    leaderboard: 
+      description: View donations leaderboard
+      options:
+        range: Specify a range for query
+        limit: Specify a limit for the query
+      choices: 
+        all: "All time"
+        24hours: Last 24 hours
+        7days: last 7 days
+        30days: Last 30 days
+        1year: Last year
+      translation:
+        no_record: "There are no donation records in this guild that matches your selected range."
+        lb_info: "Donation Leaderboard for {}"
+        rank: Rank
+        points: Points
+        user: User
+
+    message: 
+      description: Edit donation message when triggered
+      options:
+        message: 'Placeholders: {amount}, {donator_id}, {donator_name}, {donator_displayname}, {donator_mention}'
+    
+    receiverole: 
+      description: Set a role for receiver
+      options:
+        role: Specify a role, which will be the role for donation's receiver
+        delete: Whether delete this receive role or not
+      translation:
+        already_exists: "{} already being receive role for this server, you only can remove or change them."
+    receiver: 
+      description: Add/Remove a receiver
+      options:
+        action: Select an action
+        receiver: Specify an user, who will be the donation's receiver
+      translation:
+        can_remove_only: "{} already being receiver for this server, you only can remove them."
+        can_add_only: "{} are not the receiver of this server, you can only add them."
+        maximum_reached: "You cannot add more than 10 receiver. You should remove someone in order to add another."
+    
+    announcement: 
+      description: Set donations announce channel
+      options:
+        channel: Specify a channel, which will be donation announce channel
+      translation:
+        already_exists: "{} already being donation announcement channel for this server, you only can change it."
+
+    reward: 
+      description: Set rewards (role) after specific amount of donation points
+      options:
+        action: Select an action
+        role: Specify a role to add, if the donation amount is larger than {threshold} points
+        threshold: Specify threshold, which the bot add the reward to user, if the donation amount is larger than this
+      translation:
+        can_remove_only: "{} already being reward role for this server, you only can remove them."
+        can_add_only: "{} are not the reward role of this server, you can only add them."
+        maximum_reached: "You cannot add more than 10 reward role. You should remove a role in order to add another."
+
+    configuration: 
+      description: Check configuration about Automatic donation receiver
+      options:
+        action: Select an action
+        channel: Specify a channel, which it will be the donations receive channel
+
+    serverstats: 
+      description: Send statistics about server's donation
+      translation:
+        information: "{}'s Donation Information"
+        warning: "**Warning:** This server is currently disabled automatic donations receiver!"
+        no_record: "This guild haven't received any donations!"
+        received: "Received Balance"
+        added: "Force-added Balance from Admin"
+        subtracted: "Force-subtracted Balance from Admin"
+        highest_donator: "Highest Donator"
+        highest_donaton: "Highest Donaton"
+        your_record: "Your donation record"
+
+        points: Points
+        donation_record: Donation Record
+        not_donated: "You haven't donated to this server."
+
+    userstats: 
+      description: Check donation information of an user
+      options:
+        user: Specify an user
+      translation:
+        not_donated: "User {} haven't donated to this server!"
+        warning: "**Warning:** This server is currently disabled donations!"
+        still_more: "More {} entries ..."
+
+        added: Added
+        subtracted: Subtracted
+        points: Points
+
+        total: "Total donation balance"
+        rank: "Ranking"
+        recent: "Recent Donation & Changelog"
+
+    add: 
+      description: Add amount of donation balance to an user
+      options:
+        user: Specify an user
+        amount: Specify the amount to add
+        announce: Whether we should announce this or not
+        reason: Specify a reason for this action
+        silent: Whether this command should be executed in silent or not
+      translation:
+        successful_message: "Added **{} Points** into {}'s donations balance!"
+
+    subtract: 
+      description: Subtract amount of donation balance from an user
+      options:
+        user: Specify an user
+        amount: Specify the amount to subtract
+        reason: Specify a reason for this action
+        silent: Whether this command should be executed in silent or not
+      translation:
+        not_donated: "User {} haven't donated to this server!"
+        insufficient_points: "Cannot reduce an amount that's higer than current {}'s donation amount in this server ({} Points)."
+        successful_message: "Subtracted **{} Points** from {} donation balance with reason: {}"
+  
+stickie: 
+  current_setting:
+    title: "Sticky Message Configuration for {} ﹥ #{}"
+    description: |
+      **Current Sticky Message in {}**:
+      {}
+      
+      **Raw Message:**
+      ```{}```
+
+    seconds: Seconds
+    messages: Messages
+    mode: Mode
+    inactive: Chat Inactive Delay
+    threshold: Message Threshold
+    allowmentions: Allow Mentions
+  common:
+    not_enabled: "Channel {} haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
+
+  description: Set a Sticky Message in your channel!
+  commands:
+    configuration: 
+      description: View current Sticky Message configuration of a channel
+      options:
+        channel: Select a channel to see configuration
+
+    message: 
+      description: Set Sticky Message, a modal will appear and listen to your input!
+      options:
+        channel: Select a channel to assign Sticky Message
+      translation: 
+        maximum_reached: "You cannot create more than 3 Sticky Messages in this server."
+
+    remove: 
+      description: Remove a Sticky Message that's already exists
+      options:
+        channel: Select a channel to remove Sticky Message
+    
+    mode: 
+      description: Edit StickMode for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        mode: Choose mode
+      choices:
+        threshold: Message Threshold
+        inactive: Chat Inactive Delay
+      translation:
+        already_set: Channel <#{channel.mention}> mode already set to **{mode.name}**!
+
+    webhook: 
+      description: Set custom webhook for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+      
+
+    delay: 
+      description: Set delay for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        delay: Range 1 - 15, the Sticky Message will appear into chat after chat
+          inactive for {delay} seconds
+
+    allowmentions: 
+      description: Set AllowedMention rule for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        action: Choose action for this configuration
+
+    msgthreshold: 
+      description: Set message threshold for Sticky Message
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+        threshold: Range 1 - 500, Message will appear into chat after these amount of message has been sent
+
+    embed: 
+      description: Set sticky embed
+      options:
+        channel: Select a channel to assign Sticky Message Configuration
+      translation:
+        invalid: "Your embed JSON data is invalid, please try again. Remember to build & get Embed JSON Data only in <https://discohook.org/>!"
+
+setting: 
+  description: Edit some settings
+  commands:
+    blocksmcdisplay: 
+      description: Set display type for BlocksMC Tracker/Information Commands
+      options:
+        action: Select an option
+      choices:
+        both: "Both Image & Embed (Default)"
+        image: "Image only"
+        embed: "Embed only"
+
+locale:
+  description: "Set your locale"
+  commands:
+    guildset:
+      description: "Set guild locale"
+      options:
+        lang: "Select a language"
+
+      translation:
+        current: "Currently, your guild locale is `{} ({})`. You can only change them."
+        updated: "Successfully updated guild locale to {} ({})!"
+
+    myself: 
+      description: "Set locale of yourself, for command display"
+      options:
+        lang: "Select a language"
+        override_guilds: "Whether override guild setting or not"
+      translation:
+        current: "Currently, your locale is `{} ({})`. You can only change them."
+        updated: "Successfully updated your locale to {} ({})!"
+
+quickreport: 
+  common:
+    not_enabled: "Quick Report has not been enabled in this guild."
+  context_menu:
+    name: Report this Message
+  current_setting:
+    title: f"Quick Report Configuration for {}"
+    source: 
+      name: "Reports Sources"
+      any: "Any Channel (Server-wide)"
+      exclude: "Exclude Blacklisted Channels/Categories"
+      whitelist: "Only Whitelisted Channels/Categories"
+    manager: "Report Manager"
+    inc_channel: "Report Incoming Channel"
+    max_concurrent: "Max concurrent reports"
+    per_user: "{} reports/user"
+    blacklist: "Reports Blacklist"
+    bypass: "Reports Bypass"
+
+    on_member:
+      timeout: "\n- On Member __Timed out__"
+      muted: "\n- On Member __Muted__ "
+      leave: "\n- On Member __Banned/Leave__" 
+    blacklisted_channels: "Blacklisted Channels"
+    whitelisted_channels: "Whitelisted Channels"
+    blacklisted_categories: "Blacklisted Categories"
+    whitelisted_categories: "Whitelisted Categories"
+
+    auto_delete:
+      name: "Auto delete reports"
+      value: "- After __{} hours__ of inactive"
+
+    no_muterole: "(:warning: no muterole in configuration)"
+    
+  get_report:
+    status:
+      name: "Status"
+      pending: ':blue_square: Pending'
+      declined: ':red_square: Declined'
+      approved: ':yellow_square: Approved'
+    
+    report_time: "Report Time"
+    last_update: "Last Update"
+    uuid: "Report UUID"
+    reporter: "Reporter"
+    reported: "Reported"
+    evidence: "Evidence"
+    reason: "Reason"
+
+    approver: "Report Approver"
+    approvement_time: "Approvement Time"
+    declinement_time: "Declinement Time"
+    approvement_message: "Approvement Message"
+    declinement_message: "Declinement Message"
+
+  send_report:
+    cant_view: "Cannot retrieve the specific message, please ensure that I can view {}!"
+    no_self_report: "You cannot report yourself."
+    no_bot_report: "You cannot report a bot message."
+    blacklisted: "You have been blocked from sending reports in this guild. Make sure that you are not currently muted, blacklisted, or timed out."
+    bypassed: "You are not eligible to report messages from this user!"
+    already_reported: "This message has already been reported!"
+    not_eligible:
+      non_whitelisted_category: "You are not eligible to report messages in this non-whitelisted category!"
+      non_whitelisted_channel: "You are not eligible to report messages in this non-whitelisted channel!"
+      blacklisted_category: "You are not eligible to report messages in this blacklisted category!"
+      blacklisted_channel: "You are not eligible to report messages in this blacklisted channel!"
+    max_concurrent_reached: "You have reached maximum of **{}** concurrent pending reports in this guild! Please check your current reports in </quickreport recent:1182566872810541056> before making reports again."
+    description: "Use command </quickreport update:1182566872810541056> to update status of this report."
+    reporter: Reporter
+    reported: Reported
+    message: Message
+    reason: Reason
+    destination_content: "Destination Message Content"
+
+  description: Quickly report violation messages to Server Moderator
+  commands:
+    enable: 
+      description: Enable Quick Report feature
+      options:
+        receive_channel: Specify a channel to receive incoming reports
+      translation:
+        received: ":information_source: We have received your report. A Reports Manager will look through your report in a short time."
+        incoming: ":warning: New incoming report!"
+
+    successful_message:
+      description: Set a message to be sent to Reporters after a successful report
+      options:
+        message: Specify a message
+
+    configuration: 
+      description: View current Quick Report configuration of this server
+    
+    disable: 
+      description: Disable Quick Report feature
+    
+    muterole: 
+      description: Set an exists mute role of another moderation's bots
+      options:
+        role: "Select a role"
+    
+    manager: 
+      description: Set a report manager's role
+      options:
+        role: Specify a role
+    
+    bypass: 
+      description: Set a role that will protect users against reports
+      options:
+        role: Specify a role
+    
+    blacklist: 
+      description: Set a role that will made users cannot report other messages
+      options:
+        role: Specify a role
+    
+    autoexpire: 
+      description: Set a timeout for reports when theres no moderators handle it after
+        specific time
+      options:
+        after: Specify hours range, which reports will auto timeout after that
+          specified hours
+    
+    concurrent: 
+      description: Set maximum concurrent reports for each users
+      options:
+        maximum: Specify a value
+    auto_delele: 
+      description: Set the bot to automatically delete reports on some events
+      options:
+        on_user_timeout: Whether delete reports when that user has been timed out
+        on_user_muted: Whether delete reports when that user is muted (a muterole has
+          been given to them)
+        on_user_leave: Whether delete reports when that user is banned/leave the server
+
+    channels: 
+      description: Whitelist/Blacklist Quick Report in some channels
+      options:
+        action: Specify an action
+        channel: Specify a channel
+      translation:
+        no_serverwide: "You cannot use this command in **Server-wide** mode."
+        invalid: "Channel {} {} in **{}** mode."
+
+    categories: 
+      description: Whitelist/Blacklist Quick Report in some categories
+      options:
+        action: Specify an action
+        category: Specify a category
+      translation:
+        no_serverwide: "You cannot use this command in **Server-wide** mode."
+        invalid: "Category {} {} in **{}** mode."
+    
+    mode: 
+      description: Toggle Quick Report mode
+      options:
+        action: Select an action
+      choices:
+        blacklist: Blacklist
+        whitelist: Whitelist
+        serverwide: Entire Guild
+    
+    update: 
+      description: Approve/Decline a report
+      options:
+        action: Select an action
+        report_id: Specify Report ID
+        reason: Specify a reason for this approvement
+        silent: Whether we sent this message in silent or not
+      
+      choices:
+        approve: Approve
+        decline: Decline
+
+      translation:
+        no_manager_role: "Report Manager Role has not been set in confuguration! Please use </quickreport manager:1182566872810541056> to add one."
+        no_perm: "Update reports requires either Administrator or <@&{}>."
+        no_report: "There are no report with ID `{}` associated with this guild!"
+        no_override: "Report with ID `{}` has been updated earlier, you cannot override the update!"
+        successful: "Successfully updated report with ID `{}`!"
+
+    message: 
+      description: Report a Message in this server
+      options:
+        channel: Specify the channel that contains the message
+        message_id: Specify Message ID
+        reason: The reason that you want to report this message
+        silent: Whether we sent this message in silent or not
+
+    recent: 
+      description: Preview recent reports
+      options:
+        order: Select an action for sorting results
+        silent: Whether we sent this message in silent or not
+        status: Specify a status for query results
+        reporter: Specify a reporter
+        reported: Specify a member who has been reported
+      
+      choices:
+        last_update: "last Updated"
+        report_time: "Report Time"
+
+        all: All
+        pending: Pending
+        approved: Approved
+        declined: Declined
+
+      translation:
+        args_no_perm: "You do not have permissions to use argument `reporter` and `reported`."
+        no_report: "There are no recent reports matching your query setting in this guild."
+        title: "Recent reports in {}"
+        pending: Pending
+        declined: Declined
+        approved: Approved
+        reported: reported
+
+    check: 
+      description: Preview a report based on ID
+      options:
+        report_id: Specify Report ID
+        silent: Whether we sent this message in silent or not
+
+      translation:
+        no_report: "There are no report associated with ID `{}` in this guild!"
+        no_perm: "You do not have permissions to view report with ID `{}` in this guild!"
