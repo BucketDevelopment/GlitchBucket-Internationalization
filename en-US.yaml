@@ -50,26 +50,27 @@ afk:
     received_mention: "Received mention"
     currently_afk: ":placard: `{}` is currently AFK for <t:{}:R>: **{}**"
 
-chat: # Done
+chat: 
   description: Have a conversation with Artificial Intelligence!
   options:
     message: Type your message into here
 
-fack: # Ignore
+fack: 
   description: send a fack to your hater
   options:
     user: The user you want to fack
 
-information: # Done
+information: 
   description: Show information of GlitchBucket
   translation:
     global_information: Global Information
-    description: "**GlitchBucket** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), mainly focus on automated & unique feature.
+    description: |
+      **GlitchBucket** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), mainly focus on automated & unique feature.
       > - For a list of available command, type </help:1119604872497594495> or `/GlitchBucket` in chat.
       > - Support can be retrived [through our Discord Server](https://discord.com/invite/Bzha7tgd7u)!
       > - Bot alive status can be found [here](https://tudubucket.statuspage.io)
       > - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
-      > - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)"
+      > - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
     
     cpu: CPU Usage
     ram: RAM Usage
@@ -87,7 +88,7 @@ information: # Done
 snipe: 
   description: Check recent deleted message
   options:
-    page: Type a page from 1 to 10, type 'all' check all recent deleted message
+    page: Type a page from 1 to 10, type 'all' to check all recent deleted message
     channel: Specify a channel
   
   translation:
@@ -148,7 +149,8 @@ artwork:
     no_image: "No image found in the directory..."
     multi_art: "***Note:** The Illustration down below is a single part of the original post, you can view all of the last parts from the link above!*\n_ _"
     tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
-
+    author: "Author:"
+    original: "Original Post:"
 r18: 
   description: Random R-18 image
   options:
@@ -162,6 +164,8 @@ r18:
     multi_art: "***Note:** The Illustration down below is a single part of the original post, you can view all of the last parts from the link above!*\n_ _"
     tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
     nsfw_only: "This command can only be used in NSFW channels."
+    author: "Author:"
+    original: "Original Post:"
 r34: 
   description: Random R-34 image
   options:
@@ -173,12 +177,13 @@ r34:
     nsfw_only: "This command can only be used in NSFW channels."
 
 illust_report:
-  warning: '## :warning: Notice before report:
+  warning: |
+    ## :warning: Notice before report:
     - Duplicated images is **not reasonable** to report. 
     - We only accept to remove **Manga/Art Tutorial**, **Deviated Image Category**, and **Low Quality/Bad Image**.
     - Do not spamming/make useless reports, you could be blacklisted if you try to do that!
 
-    :small_red_triangle_down: Please choose an category to report under here :small_red_triangle_down:'
+    :small_red_triangle_down: Please choose an category to report under here :small_red_triangle_down:
   reported_button: "This image has been reported"
   reported_message: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
 
@@ -241,26 +246,30 @@ security:
   description: Setup Automatic Security for your server
   common:
     current_setting: "This server is currently {} this feature."
+    enable: "Enable"
+    disable: "Disable"
   commands:
     cancernickname: 
       description: Automatic rewrite username when they're sucks
       options:
         enable: Whether enable this feature or not
       translation:
-        description: "## :warning: Anti-Cancer Nickname
+        description: |
+          ## :warning: Anti-Cancer Nickname
           > This feature automatically scan username in __Guild Join Event__, __Global Username Change Event__ & __Guild Username Change Event__ to provide real-time protection. If there is any unnatural unicode character in any username trigger the check, we will **take action under that user**.
 
-          **You are choosing to __{}__ this feature!**"
+          **You are choosing to __{}__ this feature!**
     
     lockinvite: 
       description: Automatic lock invite
       options:
         enable: Whether enable this feature or not
       translation:
-        description: "## :warning: Automatic Disable Server Invite
+        description: |
+          ## :warning: Automatic Disable Server Invite
           > Due to new Discord Update, Member will no longer permanently disable their server invite. This feature will **disable server invites pernamently**.
 
-          **You are choosing to __{}__ server invites!**"
+          **You are choosing to __{}__ server invites!**
     
     purgebans:
       description: Automatic remove all server bans
@@ -337,7 +346,7 @@ blocksmc:
         never_played: This player has never played `{}` before!
         overall_only: "This command only support `Overall` lookup for player that have whitelisted, `period` field value need to replace from `{}` to `Overall`."
         title: "{}'s {} Statistics"
-        warning: "**Warning:** \n- Player `{user}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Winstreak counter, disabled!"
+        warning: "**Warning:** \n- Player `{}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Winstreak counter, disabled!"
         no_log: "No log entries found."
         non_exists: "This player does not exist in the BlocksMC Database!"
         statistics: Statistics
@@ -930,7 +939,7 @@ quickreport:
         serverwide: Entire Guild
     
     update: 
-      description: Approve/Decline a report
+      description: "[Quick Report] Approve/Decline a report"
       options:
         action: Select an action
         report_id: Specify Report ID
@@ -949,7 +958,7 @@ quickreport:
         successful: "Successfully updated report with ID `{}`!"
 
     message: 
-      description: Report a Message in this server
+      description: "[Quick Report] Report a Message in this server"
       options:
         channel: Specify the channel that contains the message
         message_id: Specify Message ID
@@ -957,7 +966,7 @@ quickreport:
         silent: Whether we sent this message in silent or not
 
     recent: 
-      description: Preview recent reports
+      description: "[Quick Report] Preview recent reports"
       options:
         order: Select an action for sorting results
         silent: Whether we sent this message in silent or not
@@ -984,7 +993,7 @@ quickreport:
         reported: reported
 
     check: 
-      description: Preview a report based on ID
+      description: "[Quick Report] Preview a report based on ID"
       options:
         report_id: Specify Report ID
         silent: Whether we sent this message in silent or not

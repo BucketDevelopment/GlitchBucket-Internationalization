@@ -21,8 +21,8 @@ common:
     user: "Chọn người dùng"
     reason: "Hãy nhập lý do cho hành động này"
     silent: "Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không"
-    action: "Hãy ghi rõ hành động"
-    amount: "Hãy ghi rõ số tiền"
+    action: "Hãy ghi hành động"
+    amount: "Hãy ghi số sượng"
     enable: "Cho biết có nên kích hoạt điều này hay không"
   config:
     saved: "Đã lưu cấu hình thành công!"
@@ -31,10 +31,10 @@ common:
   
   cooldown:
     triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
-    expired: ":stopwatch: Lệnh đang trong thời gian chờ đã hết hạn. Bây giờ bạn có thể sử dụng lệnh một lần nữa."
+    expired: ":stopwatch: Lệnh đang trong thời gian chờ đã hết hạn. Bây giờ bạn đã có thể sử dụng lệnh."
   
   error:
-    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy khách của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
+    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
     database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu của bạn, vui lòng thử lại sau..."
     unknown: 
       reply: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh, vui lòng thử lại sau..."
@@ -82,7 +82,7 @@ information: # Hoàn thành
     network: Mạng Đến/Đi
     shards: Các Mảnh hiện tại/Tổng số Mảnh
     startup: Khởi động
-    made_with_love: Được thực hiện với 💖 bởi {}
+    made_with_love: Made with 💖 by {}
 
 snipe: 
   description: Kiểm tra tin nhắn đã xóa gần đây
@@ -128,16 +128,14 @@ outage:
     subprovider: 
       description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
       options:
-        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider]
-          để xem mã điện lực.
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider] để xem mã điện lực.
 
     lookup: 
       description: Tra cứu thông tin cắt điện tại khu vực của bạn
       options:
         provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
         subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
-        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc
-          bỏ trống để kiểm tra ngày hôm nay'
+        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc bỏ trống để kiểm tra ngày hôm nay'
         keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
 
     unsubscribe: 
@@ -147,8 +145,7 @@ outage:
       description: Nhận thông báo cắt điện tự động
 
       options:
-        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider>
-          để xem mã điện lực.
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider> để xem mã điện lực.
         keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
 
 
@@ -199,7 +196,8 @@ artwork:
     no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
     multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
-
+    author: "Tác giả"
+    original: "Bài đăng gốc"
 r18:
   description: Hình ảnh R-18 ngẫu nhiên
   options:
@@ -213,6 +211,8 @@ r18:
     multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
+    author: "Tác giả"
+    original: "Bài đăng gốc"
 r34:
   description: Hình ảnh R-34 ngẫu nhiên
   options:
@@ -224,12 +224,13 @@ r34:
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
 
 illust_report:
-  warning: '## :warning: Lưu ý trước khi báo cáo:
+  warning: |
+    ## :warning: Lưu ý trước khi báo cáo:
     - Hình ảnh trùng lặp là **không hợp lý** để báo cáo.
     - Chúng tôi chỉ chấp nhận xóa **Manga/Hướng dẫn Vẽ**, **Thể loại Hình ảnh Sai lệch** và **Hình ảnh Chất lượng Kém/Tệ**.
     - Không gửi thư rác/báo cáo vô ích, bạn có thể bị đưa vào danh sách đen nếu cố gắng làm điều đó!
 
-    :small_red_triangle_down: Vui lòng chọn một thể loại để báo cáo bên dưới đây :small_red_triangle_down:'
+    :small_red_triangle_down: Vui lòng chọn một thể loại để báo cáo bên dưới đây :small_red_triangle_down:
   reported_button: "Hình ảnh này đã được báo cáo"
   reported_message: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo của bạn ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
 
@@ -293,26 +294,30 @@ security:
   description: Thiết lập Bảo mật tự động cho máy chủ của bạn
   common:
     current_setting: "Máy chủ này hiện đang {} tính năng này."
+    enable: "Bật"
+    disable: "Tắt"
   commands:
     cancernickname:
       description: Tự động chỉnh sửa lại tên người dùng khi họ phản cảm
       options:
         enable: Bật hoặc tắt tính năng này
       translation:
-        description: "## :warning: Tên biệt danh chống ung thư
+        description: |
+          ## :warning: Chống tên biệt danh ung thư
           > Tính năng này tự động quét tên người dùng trong __Sự kiện tham gia máy chủ__, __Sự kiện thay đổi tên người dùng toàn cầu__ & __Sự kiện thay đổi tên người dùng máy chủ__ để cung cấp khả năng bảo vệ thời gian thực. Nếu có bất kỳ ký tự unicode không tự nhiên nào trong bất kỳ tên người dùng nào kích hoạt lần kiểm tra, chúng tôi sẽ **thực hiện hành động với người dùng đó**.
 
-          **Bạn đang chọn __{}__ tính năng này!**"
+          **Bạn đang chọn __{}__ tính năng này!**
    
     lockinvite:
       description: Tự động khóa lời mời
       options:
         enable: Bật hoặc tắt tính năng này
       translation:
-        description: "## :warning: Tự động vô hiệu hóa lời mời trên máy chủ
+        description: |
+          ## :warning: Tự động vô hiệu hóa lời mời trên máy chủ
           > Do bản cập nhật mới của Discord, Thành viên sẽ không còn vô hiệu hóa lời mời máy chủ của họ một cách vĩnh viễn. Tính năng này sẽ **vô hiệu hóa lời mời máy chủ một cách vĩnh viễn**.
 
-          **Bạn đang chọn __{}__ lời mời máy chủ!**"
+          **Bạn đang chọn __{}__ lời mời máy chủ!**
    
     purgebans:
       description: Tự động xóa tất cả các lệnh cấm trên máy chủ
@@ -429,7 +434,7 @@ donation:
     warning: "***Cảnh báo:**"
     points: "Điểm"
 
-    disabled: "Máy chủ này hiện đang bị vô hiệu hóa!"
+    disabled: "Máy chủ này hiện đang vô hiệu hóa tính năng này!"
     non_auto: "Máy chủ này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động (không phải vô hiệu hóa ủng hộ)!*"
 
     receiver: "Người nhận ủng hộ"
@@ -461,14 +466,13 @@ donation:
 
       translation:
         already_enabled: "Guild này đã kích hoạt tính năng nhận ủng hộ tự động!"
-        default_receive_message: "{donator_mention} ủng hộ cho chúng tôi thông qua <:OwO:1155867563612446841> __OwOBot currency__ và nhận được **{amount}** điểm ủng hộ!"
+        default_receive_message: "{donator_mention} ủng hộ cho chúng mình bằng <:OwO:1155867563612446841> __Tiền OwOBot__ và nhận được **{amount}** điểm ủng hộ!"
         successful_enabled: |
-          Thành công trong việc kích hoạt ủng hộ tự động cho máy chủ này, với kênh ủng hộ {} & người nhận {}!
+          Thành công kích hoạt ủng hộ tự động cho máy chủ này, với kênh ủng hộ {} & người nhận {}!
           Để thêm nhiều người nhận/kênh nhận ủng hộ hơn, bạn có thể sử dụng </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
 
     autoreceive:
-      description: Bật/tắt tính năng ghi lại ủng hộ tự động cho máy chủ này (không vô hiệu hóa
-        tính năng)
+      description: Bật/tắt tính năng ghi lại ủng hộ tự động cho máy chủ này (không vô hiệu hóa tính năng)
       options:
         action: Chỉ định hành động
     
@@ -882,7 +886,7 @@ quickreport:
         serverwide: Toàn bộ Máy chủ
 
     update:
-      description: Phê duyệt/Từ chối báo cáo
+      description: "[Quick Report] Phê duyệt/Từ chối báo cáo"
       options:
         action: Chọn một hành động
         report_id: Chỉ định ID báo cáo
@@ -901,7 +905,7 @@ quickreport:
         successful: "Đã cập nhật thành công báo cáo có ID `{}`!"
 
     message:
-      description: Báo cáo tin nhắn trong máy chủ này
+      description: "[Quick Report] Báo cáo tin nhắn trong máy chủ này"
       options:
         channel: Chỉ định kênh chứa tin nhắn
         message_id: Chỉ định ID tin nhắn
@@ -909,7 +913,7 @@ quickreport:
         silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
 
     recent:
-      description: Xem trước các báo cáo gần đây
+      description: "[Quick Report] Xem các báo cáo gần đây"
       options:
         order: Chọn một hành động để sắp xếp kết quả
         silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
@@ -936,7 +940,7 @@ quickreport:
         reported: đã báo cáo
 
     check:
-      description: Xem trước báo cáo dựa trên ID
+      description: "[Quick Report] Xem báo cáo dựa trên ID"
       options:
         report_id: Chỉ định ID báo cáo
         silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
