@@ -63,13 +63,14 @@ fack: # Bỏ qua
 information: # Hoàn thành
   description: Hiển thị thông tin của GlitchBucket
   translation:
-    global_information: Thông tin Toàn cầu
-    description: "**GlitchBucket** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), chủ yếu tập trung vào tính năng tự động & độc đáo.
+    global_information: Thông tin
+    description: |
+      **GlitchBucket** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), chủ yếu tập trung vào tính năng tự động & độc đáo.
       > - Để biết danh sách các lệnh có sẵn, hãy nhập </help:1119604872497594495> hoặc `/GlitchBucket` trong cuộc trò chuyện.
       > - Có thể truy xuất Hỗ trợ [thông qua Máy chủ Discord của chúng tôi](https://discord.com/invite/Bzha7tgd7u)!
       > - Trạng thái trực tuyến của Bot có thể được tìm thấy [tại đây](https://tudubucket.statuspage.io)
       > - [Mời tôi!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
-      > - [Điều khoản Dịch vụ](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Chính sách Bảo mật](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)"
+      > - [Điều khoản Dịch vụ](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Chính sách Bảo mật](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
     
     cpu: Sử dụng CPU
     ram: Sử dụng RAM
