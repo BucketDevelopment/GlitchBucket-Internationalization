@@ -680,6 +680,7 @@ stickie:
     allowmentions: Allow Mentions
   common:
     not_enabled: "Channel {} haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
+    server_not_enabled: "This guild haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
 
   description: Set a Sticky Message in your channel!
   commands:
@@ -687,6 +688,11 @@ stickie:
       description: View current Sticky Message configuration of a channel
       options:
         channel: Select a channel to see configuration
+
+    list: 
+      description: View list of Sticky Message in this server
+      translation: 
+        maximum_reached: "List of channels contains Sticky Message: {}\nUse </stickie configuration:1158663116662525962> to view configuration"
 
     message: 
       description: Set Sticky Message, a modal will appear and listen to your input!

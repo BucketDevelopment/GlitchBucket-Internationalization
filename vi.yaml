@@ -628,13 +628,18 @@ stickie:
     allowmentions: Cho phép đề cập
   common:
     not_enabled: "Kênh {} chưa bật Thông báo cố định! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
-
+    server_not_enabled: "Máy chủ chưa có kênh bật Thông báo cố định! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
   description: Đặt một thông báo cố định trong kênh của bạn!
   commands:
     configuration: 
       description: Xem cấu hình Thông báo cố định hiện tại của kênh
       options:
         channel: Chọn một kênh để xem cấu hình
+
+    list: 
+      description: Xem các Thông báo cố định của máy chủ
+      translation: 
+        maximum_reached: "Các kênh có Thông báo cố định: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
 
     message: 
       description: Đặt Thông báo cố định, một khung lệnh sẽ xuất hiện và lắng nghe nội dung bạn nhập!
