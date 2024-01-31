@@ -149,7 +149,6 @@ outage:
         provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider> để xem mã điện lực.
         keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
 
-
 illustration:
   description: Tìm kiếm tác phẩm nghệ thuật trên https://pixiv.net
   options:
@@ -199,6 +198,7 @@ artwork:
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
     author: "Tác giả"
     original: "Bài đăng gốc"
+
 r18:
   description: Hình ảnh R-18 ngẫu nhiên
   options:
@@ -214,6 +214,7 @@ r18:
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
     author: "Tác giả"
     original: "Bài đăng gốc"
+
 r34:
   description: Hình ảnh R-34 ngẫu nhiên
   options:
