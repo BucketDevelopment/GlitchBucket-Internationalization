@@ -692,7 +692,7 @@ stickie:
     list: 
       description: View list of Sticky Message in this server
       translation: 
-        maximum_reached: "List of channels contains Sticky Message: {}\nUse </stickie configuration:1158663116662525962> to view configuration"
+        list: "List of channels contains Sticky Message: {}\nUse </stickie configuration:1158663116662525962> to view configuration"
 
     message: 
       description: Set Sticky Message, a modal will appear and listen to your input!

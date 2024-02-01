@@ -640,7 +640,7 @@ stickie:
     list: 
       description: Xem các Thông báo cố định của máy chủ
       translation: 
-        maximum_reached: "Các kênh có Thông báo cố định: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
+        list: "Các kênh có Thông báo cố định: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
 
     message: 
       description: Đặt Thông báo cố định, một khung lệnh sẽ xuất hiện và lắng nghe nội dung bạn nhập!
