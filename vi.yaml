@@ -730,7 +730,7 @@ locale:
       translation:
         current: "Hiện tại, ngôn ngữ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
         updated: "Thành công cập nhật ngôn ngữ của bạn thành {} ({})!"
-quickreport:
+quickreport:  
   common:
     not_enabled: "Quick Report chưa được kích hoạt trong máy chủ này."
   context_menu:
