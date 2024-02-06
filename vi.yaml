@@ -750,7 +750,7 @@ quickreport:
     bypass: "Bỏ qua báo cáo"
 
     on_member:
-      timeout: "\n- Đối với Thành viên __Bị hết giờ__"
+      timeout: "\n- Đối với Thành viên __Bị tắt tiếng bằng Discord__"
       muted: "\n- Đối với Thành viên __Bị tắt tiếng__ "
       leave: "\n- Đối với Thành viên __Bị cấm/Rời__"
     blacklisted_channels: "Kênh đã đưa vào danh sách đen"
