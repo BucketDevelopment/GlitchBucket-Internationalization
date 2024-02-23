@@ -1007,3 +1007,172 @@ quickreport:
       translation:
         no_report: "There are no report associated with ID `{}` in this guild!"
         no_perm: "You do not have permissions to view report with ID `{}` in this guild!"
+
+
+customrole:
+  description: "Create Custom Role for your member & let them manage it themself"
+  current_setting:
+    title: "Custom Role Information for @{}"
+    permissions: 
+      icon: "Edit Role Icon"
+      name: "Edit Role Name"
+      mentionable: "Make Role Mentionable"
+      members: "Manage Role Members"
+      color: "Edit Role Color"
+    expire_in:
+      never: "Never"
+      remove_boost: "Until remove all boosts"
+    fields:
+      author: "Author"
+      color: "Color"
+      maximum_member: "Maximum members"
+      created_at: "Created at"
+      expired_in: "Expired in"
+      members: "Role members"
+      granted_permission: "Granted Permissions"
+      restricted_permission: "Restricted Permissions"
+    admin_title: "Custom Role Admin Configuration for {}"
+    description: "**Total Custom Roles:** {}\n**Role Author Permission:**"
+  common:
+    permissions_choice:
+      _true: "True"
+      _false: "False"
+      default: "Default"
+    role_not_registered: |
+      {} is not a role that has been registered as a custom role in our database.
+      To migrate from your own role into our custom role's database, please use </customrole admin migrate:1201110041013526589>
+    invalid_time_format: "`{}` is not a valid short time format."
+    invalid_color_format: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
+  
+  commands:
+    create:
+      description: "Create & Assign a custom none-permission role to a member"
+      options:
+        above_role: "The new custom role will be above this role"
+        author: "Specify custom role's author"
+        name: "Specify role name"
+        max_users: "Maximum users can be assigned into this role"
+        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for pernament, '1' for until remove boost"
+        color: "Specify role color"
+        edit_name_permission: "Let role's author can chance their own role name"
+        edit_icon_permission: "Let role's author can chance their own role icon"
+        edit_color_permission: "Let role's author can chance their own role color"
+        manage_role_members_permission: "Let role's author can add/remove role members"
+        make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
+      translation:
+        already_have_one: "{} already has a custom role {}, and you cannot create more than 1 custom role for each user."
+        limit_exceeded: "You cannot create more than 100 custom roles for this guild."
+        missing_permission: |
+          I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).
+          Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
+        invalid_color: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
+
+    terminate: 
+      description: "Terminate a custom role instance of a member"
+      translation:
+        none_found: "This guild does not have any custom role set."
+        title: "List of Custom Role for {}"
+        entries: "{}Role: {} - Author: {}\n"
+
+
+    list: 
+      description: "Terminate a custom role instance of a member"
+      options:
+        delete_role: "Whether delete the role or not"
+      translation:
+        none_found: "{} does not have any custom role set."
+
+    migrate:
+      description: "Migrate an existing role to a bot's custom role"
+      options: 
+        role: "Specify a role"
+        author: "Specify custom role's author"
+        max_users: "Maximum users can be assigned into this role"
+        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for pernament, '1' for until remove boost"
+      translation:
+        already_migrated: "{} is a role that has been registered as a custom role in our database, you cannot migrate this role"
+        already_have_one: "{} already has a custom role {}, and you cannot create more than 1 custom role for each user."
+        limit_exceeded: "You cannot create more than 100 custom roles for this guild."
+        missing_permission: |
+          I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).
+          Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
+        invalid_time: "`{}` is not a valid short time format."
+                
+    
+    default_author_permission: 
+      description: "Edit default permissions for role's author"
+      options:
+        edit_name: "Let role's author can chance their own role name"
+        edit_icon: "Let role's author can chance their own role icon"
+        edit_color: "Let role's author can chance their own role color"
+        manage_role_members: "Let role's author can add/remove role members"
+        make_role_mentionable: "Let role's author can make their role mentionable by another members"
+
+    extend:
+      description: "Extend expire date for a custom role"
+      options:
+        time_range: "Specity time range. Type '0' to make pernament, '1' to remove when role author remove boost"
+    
+    search: 
+      description: "Search a custom role assigned to a member, or reverse of it"
+      translation:
+        unknown_author: "{} does not being assigned any custom role."
+        unknown_role: "{} is not a role that has been registered as a custom role in our database."
+      
+    reduce:
+      description: "Search a custom role assigned to a member, or reverse of it"
+      options:
+        time_range: "Specity time range to reduce, short date is supported (e.g. 2mon4w6h)"
+      translation:
+        pernament_role: "Time of Pernament Custom Role cannot be reduced."
+        booster_role: "Time of Custom Role which remove in Remove Boost event cannot be reduced."
+        overflow: "You cannot reduce more time than the custom role {} having."
+
+    on_expire:
+      description: "Specify event to do when an user's custom role is expired"
+      choices:
+        removeall: "Remove everyone from the role (default)"
+        remove: "Remove everyone from the role (exclude role author)"
+        delete: "Delete the role"
+    user:
+      common:
+        no_role_found: "You do not have any Custom Role in this server."
+        missing_permission: "Administrator of this server has restricted you from using this setting."
+        role_expired: "Your custom role has been expired."
+        cannot_find_role: "Cannot find your custom role in the server, please try again later..."
+      subcommand:
+        add:
+          description: "Add a member to your custom role"
+          translation:
+            maximum_reached: "You have reached maximum users for this custom role ({} out of {}). You may have to remove another user in order to add someone else."
+            can_remove_only: "{} already has your custom role {}, you can only remove this role from them."
+        remove:
+          description: "Remove a member from your custom role"
+          translation:
+            can_add_only: "{} doesn't have your custom role {}, you can only add this role to them."
+
+        color: 
+          description: "Change color of your custom role"
+          options:
+            color: "Can be `0x<hex>`, `#<hex>`, `rgb(<number>, <number>, <number>)`, or leave empty for default color."
+        icon:
+          description: "Edit icon of your custom role"
+          options:
+            icon: Upload your icon here
+          translation:
+            require_7_boosts: "This feature requires your server to have **Level 2** (or 7 boosts) to works"
+            invalid_image_format: "The icon should in `.png` or `.jpg` format and smaller than 256kb."
+            invalid_image_scale: "The icon should be a square image."
+        removeicon:
+          description: "Remove icon from your custom role"
+        mentionable:
+          description: "Make your custom role mentionable"
+        info:
+          description: "See your custom role's information"
+        name: 
+          description: "Change your custom role's name"
+          options:
+            name: "Specify role name"
+
+
+      
