@@ -94,7 +94,9 @@ snipe:
   translation:
     recent: "Tin nhắn đã xóa/chỉnh sửa gần đây cho #{}"
     page_none: "Không có tin nhắn nào ở trang **{}**"
-    from: "{} {} của {} ({}), {} trước"
+    from: 
+      deleted: "{} đã xóa của {} ({}), {} trước đó"
+      edited: "{} đã chỉnh sửa của {} ({}), {} trước đó"
     channel_none: "Không tìm thấy tin nhắn đã xóa gần đây nào trong kênh này trong vòng 28 ngày."
 
 help: 
