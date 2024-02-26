@@ -95,8 +95,8 @@ snipe:
     recent: "Recent deleted/edited message for #{}"
     page_none: "There is no message in page **{}**"
     from: 
-      deleted: "{} deleted by {}, {} ago"
-      edited: "{} edited by {}, {} ago"
+      deleted: "Message deleted by {}, {} ago"
+      edited: "Message edited by {}, {} ago"
     channel_none: "There are no recent deleted messages found in this channel within 28 days."
 
 help: 
