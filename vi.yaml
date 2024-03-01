@@ -801,7 +801,7 @@ quickreport:
       blacklisted_category: "Bạn không được phép báo cáo tin nhắn trong danh mục đã đưa vào danh sách đen này!"
       blacklisted_channel: "Bạn không được phép báo cáo tin nhắn trong kênh đã đưa vào danh sách đen này!"
     max_concurrent_reached: "Bạn đã đạt đến tối đa **{}** báo cáo đang chờ xử lý đồng thời trong máy chủ này! Vui lòng kiểm tra các báo cáo hiện tại của bạn trong </quickreport recent:1182566872810541056> trước khi báo cáo lại."
-    description: "Để cập nhật trạng thái của báo cáo này, bạn có thể kick, ban, hoặc mute {}. Để cập nhật thủ công, sử dụng lệnh </quickreport update:1182566872810541056> "
+    description: "Để cập nhật trạng thái của báo cáo này, bạn có thể kick, ban, hoặc mute {}.\nĐể cập nhật thủ công, sử dụng lệnh </quickreport update:1182566872810541056> "
     reporter: Người báo cáo
     reported: Đã báo cáo
     message: Tin nhắn
