@@ -1,4 +1,7 @@
 common:
+  support:
+    discord: Discord Support
+    status: Status Page
   none: Không
   add: Thêm
   remove: Xóa
