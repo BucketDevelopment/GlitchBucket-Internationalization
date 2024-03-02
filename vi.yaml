@@ -1,7 +1,7 @@
 common:
   support:
-    discord: Discord Support
-    status: Status Page
+    discord: Hỗ trợ Discord
+    status: Trạng thái Bot
   none: Không
   add: Thêm
   remove: Xóa
