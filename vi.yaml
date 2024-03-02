@@ -652,7 +652,7 @@ stickie:
       options:
         channel: Chọn một kênh để chỉ định Thông báo cố định
       translation: 
-        maximum_reached: "Bạn không thể tạo quá 3 Thông báo cố định trong máy chủ này."
+        maximum_reached: "Bạn không thể tạo quá 6 Thông báo cố định trong máy chủ này."
 
     remove: 
       description: Xóa Thông báo cố định đã tồn tại

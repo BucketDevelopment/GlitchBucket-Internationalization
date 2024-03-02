@@ -704,7 +704,7 @@ stickie:
       options:
         channel: Select a channel to assign Sticky Message
       translation: 
-        maximum_reached: "You cannot create more than 3 Sticky Messages in this server."
+        maximum_reached: "You cannot create more than 6 Sticky Messages in this server."
 
     remove: 
       description: Remove a Sticky Message that's already exists
