@@ -750,6 +750,8 @@ quickreport:
     manager: "Quản lý báo cáo"
     inc_channel: "Kênh báo cáo đến"
     max_concurrent: "Báo cáo đồng thời tối đa"
+    max_message_old: "Độ cũ tin nhắn tối đa"
+    hour: "{} tiếng"
     per_user: "{} báo cáo/người dùng"
     blacklist: "Danh sách đen báo cáo"
     bypass: "Bỏ qua báo cáo"
@@ -853,11 +855,16 @@ quickreport:
         role: Chỉ định vai trò
 
     autoexpire:
-      description: Đặt thời gian chờ cho các báo cáo khi không có người kiểm duyệt nào xử lý sau
-        thời gian cụ thể
+      description: Đặt thời gian tự xóa cho các báo cáo khi không có người kiểm duyệt nào xử lý
       options:
-        after: Chỉ định khoảng thời gian tính bằng giờ sau đó các báo cáo sẽ tự động hết hạn
-          giờ đã chỉ định
+        after: Chỉ định khoảng thời gian (tính bằng giờ), các báo cáo sẽ tự động hết hạn sau từng ấy giờ
+
+    messageold:
+      description: Đặt thời gian tối đa mà tin nhắn có thể bị báo cáo
+      options:
+        before: Chỉ định khoảng thời gian (tính bằng giờ), tin nhắn cũ hơn từng ấy giờ thì không thể báo cáo
+        
+
 
     concurrent:
       description: Đặt báo cáo đồng thời tối đa cho mỗi người dùng
@@ -934,7 +941,7 @@ quickreport:
         reported: Chỉ định thành viên đã bị báo cáo
 
       choices:
-        last_update: "Cập nhật lần cuối"
+        last_update: "Cập nhật gần nhất"
         report_time: "Thời gian báo cáo"
 
         all: Tất cả

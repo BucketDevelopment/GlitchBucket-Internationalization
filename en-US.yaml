@@ -802,6 +802,8 @@ quickreport:
     manager: "Report Manager"
     inc_channel: "Report Incoming Channel"
     max_concurrent: "Max concurrent reports"
+    max_message_old: "Maximim message old"
+    hour: "{} hours"
     per_user: "{} reports/user"
     blacklist: "Reports Blacklist"
     bypass: "Reports Bypass"
@@ -910,6 +912,12 @@ quickreport:
         after: Specify hours range, which reports will auto timeout after that
           specified hours
     
+    messageold: 
+      description: Set a maximum duration for message to be reportable 
+      options:
+        before: Specify hours range, which reports for that message will be unable after this range
+
+
     concurrent: 
       description: Set maximum concurrent reports for each users
       options:
@@ -986,7 +994,7 @@ quickreport:
         reported: Specify a member who has been reported
       
       choices:
-        last_update: "last Updated"
+        last_update: "Recently Updated"
         report_time: "Report Time"
 
         all: All
