@@ -97,6 +97,7 @@ snipe:
   translation:
     recent: "Recent deleted/edited message for #{}"
     page_none: "There is no message in page **{}**"
+    invalid_page: "**{}** is not a valid page."
     from: 
       deleted: "Message deleted by {}, {} ago"
       edited: "Message edited by {}, {} ago"

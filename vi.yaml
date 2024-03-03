@@ -97,6 +97,7 @@ snipe:
   translation:
     recent: "Tin nhắn đã xóa/chỉnh sửa gần đây cho #{}"
     page_none: "Không có tin nhắn nào ở trang **{}**"
+    invalid_page: "**{}** không phải là một trang hợp lệ."
     from: 
       deleted: "Tin nhắn đã xóa của {}, {} trước đó"
       edited: "Tin nhắn đã chỉnh sửa của {}, {} trước đó"
