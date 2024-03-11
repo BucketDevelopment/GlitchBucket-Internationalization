@@ -968,3 +968,182 @@ quickreport:
       translation:
         no_report: "Không có báo cáo nào liên kết với ID `{}` trong máy chủ này!"
         no_perm: "Bạn không có quyền xem báo cáo có ID `{}` trong máy chủ này!"
+
+customrole:
+  description: "Tạo Custom Role cho thành viên của bạn và cho phép họ tự quản lý nó"
+  current_setting:
+    title: "Thông tin Custom Role cho @{}"
+    permissions: 
+      icon: "Chỉnh sửa biểu tượng vai trò"
+      name: "Chỉnh sửa tên vai trò"
+      mentionable: "Cho phép nhắc đến vai trò"
+      members: "Quản lý thành viên của vai trò"
+      color: "Chỉnh sửa màu vai trò"
+    expire_in:
+      never: "Không bao giờ"
+      remove_boost: "Cho đến khi xóa tất cả các boost"
+    fields:
+      author: "Người sở hữu"
+      color: "Màu"
+      maximum_member: "Số lượng thành viên tối đa"
+      created_at: "Được tạo vào"
+      expired_in: "Hết hạn trong"
+      members: "Các thành viên của vai trò"
+      granted_permission: "Quyền được cấp"
+      restricted_permission: "Quyền bị hạn chế"
+    admin_title: "Cấu hình quản trị Custom Role cho {}"
+    description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu vai trò:**"
+  common:
+    permissions_choice:
+      _true: "Có"
+      _false: "Không"
+      default: "Mặc định"
+    role_not_registered: |
+      {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi.
+      Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của chúng tôi, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
+    invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
+    invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
+  admin: "Nhóm Lệnh Quản trị Custom Role"
+  user: "Nhóm Lệnh Người Dùng Custom Role"
+  commands:
+    create:
+      description: "Tạo & Gán một Custom Role không có quyền cho một thành viên"
+      options:
+        above_role: "Custom Role mới sẽ ở trên vai trò này"
+        author: "Chỉ định người sở hữu của Custom Role"
+        name: "Chỉ định tên vai trò"
+        max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
+        expire_after: "Hỗ trợ ngày ngắn (vd: 2th1ng2g), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
+        color: "Chỉ định màu vai trò"
+        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+      translation:
+        already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
+        missing_permission: |
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi.
+        invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
+
+    max_users:
+      description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
+      options:
+        users: "Chỉ định số lượng thành viên tối đa cho vai trò này"
+
+    terminate: 
+      description: "Chấm dứt một phiên bản Custom Role của một thành viên"
+      translation:
+        none_found: "Guild này không có bất kỳ Custom Role nào được thiết lập."
+
+    list: 
+      description: "Liệt kê các Custom Role của một thành viên"
+      options:
+        delete_role: "Có xóa vai trò hay không"
+      translation:
+        none_found: "{} không có bất kỳ Custom Role nào được thiết lập."
+        title: "Danh sách Custom Role cho {}"
+        entries: "{}Vai trò: {} - Người sở hữu: {}\n"
+
+    migrate:
+      description: "Di chuyển một vai trò hiện có sang Custom Role của bot"
+      options: 
+        role: "Chỉ định một vai trò"
+        author: "Chỉ định người sở hữu của Custom Role"
+        max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
+        expire_after: "Hỗ trợ ngày ngắn (vd: 2th1ng2g), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
+      translation:
+        already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi, bạn không thể di chuyển vai trò này"
+        already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
+        missing_permission: |
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng vị trí cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi.
+        invalid_time: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
+                
+    set_permission:
+      description: "Đặt quyền cho một Custom Role"
+      options: 
+        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        
+    default_author_permission: 
+      description: "Chỉnh sửa quyền mặc định cho người sở hữu của vai trò"
+      options:
+        edit_name: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
+        edit_icon: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
+        manage_role_members: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+
+    extend:
+      description: "Gia hạn ngày hết hạn cho một Custom Role"
+      options:
+        time_range: "Chỉ định phạm vi thời gian. Nhập '0' để là vĩnh viễn, '1' để xóa khi người sở hữu vai trò xóa boost"
+    
+    search: 
+      description: "Tìm kiếm một Custom Role được gán cho một thành viên, hoặc ngược lại"
+      translation:
+        missing_arguments: "Bạn cần cung cấp `role` hoặc `member`, hoặc cả hai."
+        unknown_author: "{} không được gán bất kỳ Custom Role nào."
+        unknown_role: "{} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi."
+      
+    reduce:
+      description: "Giảm thời gian cho một Custom Role được gán cho một thành viên, hoặc ngược lại"
+      options:
+        time_range: "Chỉ định phạm vi thời gian để giảm, hỗ trợ ngày ngắn (vd: 2th4t6g)"
+      translation:
+        pernament_role: "Thời gian của Custom Role Vĩnh viễn không thể giảm."
+        booster_role: "Thời gian của Custom Role mà được xóa trong sự kiện Loại bỏ Boost không thể giảm."
+        overflow: "Bạn không thể giảm thời gian nhiều hơn so với Custom Role {} đang có."
+
+    on_expire:
+      description: "Chỉ định sự kiện khi Custom Role của một người dùng hết hạn"
+      choices:
+        removeall: "Xóa tất cả mọi người khỏi vai trò (mặc định)"
+        remove: "Xóa tất cả mọi người khỏi vai trò (loại trừ người sở hữu)"
+        delete: "Xóa vai trò"
+    user:
+      common:
+        no_role_found: "Bạn không có bất kỳ Custom Role nào trong server này."
+        missing_permission: "Người quản trị của server này đã hạn chế bạn khỏi việc sử dụng cài đặt này."
+        role_expired: "Custom Role của bạn đã hết hạn."
+        cannot_find_role: "Không thể tìm thấy Custom Role của bạn trong server, vui lòng thử lại sau..."
+      subcommands:
+        add:
+          description: "Thêm một thành viên vào Custom Role của bạn"
+          translation:
+            maximum_reached: "Bạn đã đạt tối đa số lượng thành viên cho Custom Role này ({} trong số {}). Bạn có thể phải xóa bỏ một người khác để thêm người khác."
+            can_remove_only: "{} đã có Custom Role của bạn {}, bạn chỉ có thể xóa vai trò này khỏi họ."
+        remove:
+          description: "Xóa một thành viên khỏi Custom Role của bạn"
+          translation:
+            can_add_only: "{} không có Custom Role của bạn {}, bạn chỉ có thể thêm vai trò này cho họ."
+
+        color: 
+          description: "Thay đổi màu của Custom Role của bạn"
+          options:
+            color: "Có thể là `0x<hex>`, `#<hex>`, `rgb(<số>, <số>, <số>)`, hoặc để trống cho màu mặc định."
+        icon:
+          description: "Chỉnh sửa biểu tượng của Custom Role của bạn"
+          options:
+            icon: Tải biểu tượng của bạn tại đây
+          translation:
+            require_7_boosts: "Tính năng này yêu cầu server của bạn phải có **Cấp độ 2**, hoặc 7 boost server."
+            invalid_image_format: "Biểu tượng phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
+            invalid_image_scale: "Biểu tượng phải là một hình ảnh vuông."
+        removeicon:
+          description: "Xóa biểu tượng khỏi Custom Role của bạn"
+        mentionable:
+          description: "Cho phép Custom Role của bạn có thể nhắc đến"
+        info:
+          description: "Xem thông tin của Custom Role của bạn"
+        name: 
+          description: "Thay đổi tên của Custom Role của bạn"
+          options:
+            name: "Chỉ định tên vai trò"
