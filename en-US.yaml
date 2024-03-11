@@ -14,7 +14,7 @@ common:
     We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
     To change application's setting about localization, you can use </locale guildset:1191002538858778766> or </locale myself:1191002538858778766>.
 
-    Application Documentation: [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)"
+    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)"
   
   options:
     role: "Select a role"
@@ -72,7 +72,7 @@ information:
       > - For a list of available command, type </help:1119604872497594495> or `/GlitchBucket` in chat.
       > - Support can be retrived [through our Discord Server](https://discord.com/invite/Bzha7tgd7u)!
       > - Bot alive status can be found [here](https://tudubucket.statuspage.io)
-      > - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) & [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       > - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
     
     cpu: CPU Usage
@@ -1057,7 +1057,8 @@ customrole:
       To migrate from your own role into our custom role's database, please use </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` is not a valid short time format."
     invalid_color_format: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
-  
+  admin: "Custom Role Admin Command Group"
+  user: "Custom Role User Command Group"
   commands:
     create:
       description: "Create & Assign a custom none-permission role to a member"
@@ -1081,13 +1082,15 @@ customrole:
           Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
         invalid_color: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
 
+    max_users:
+      description: "Edit maximum users of a custom role"
+      options:
+        users: "Specity maximum users count for this role"
+
     terminate: 
       description: "Terminate a custom role instance of a member"
       translation:
         none_found: "This guild does not have any custom role set."
-        title: "List of Custom Role for {}"
-        entries: "{}Role: {} - Author: {}\n"
-
 
     list: 
       description: "Terminate a custom role instance of a member"
@@ -1095,6 +1098,8 @@ customrole:
         delete_role: "Whether delete the role or not"
       translation:
         none_found: "{} does not have any custom role set."
+        title: "List of Custom Role for {}"
+        entries: "{}Role: {} - Author: {}\n"
 
     migrate:
       description: "Migrate an existing role to a bot's custom role"
@@ -1112,7 +1117,15 @@ customrole:
           Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
         invalid_time: "`{}` is not a valid short time format."
                 
-    
+    set_permission:
+      description: "Set permissions for a custom role"
+      options: 
+        edit_name_permission: "Let role's author can chance their own role name"
+        edit_icon_permission: "Let role's author can chance their own role icon"
+        edit_color_permission: "Let role's author can chance their own role color"
+        manage_role_members_permission: "Let role's author can add/remove role members"
+        make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
+        
     default_author_permission: 
       description: "Edit default permissions for role's author"
       options:
@@ -1130,6 +1143,7 @@ customrole:
     search: 
       description: "Search a custom role assigned to a member, or reverse of it"
       translation:
+        missing_arguments: "You need to provide `role` or `member`, or both."
         unknown_author: "{} does not being assigned any custom role."
         unknown_role: "{} is not a role that has been registered as a custom role in our database."
       
@@ -1139,7 +1153,7 @@ customrole:
         time_range: "Specity time range to reduce, short date is supported (e.g. 2mon4w6h)"
       translation:
         pernament_role: "Time of Pernament Custom Role cannot be reduced."
-        booster_role: "Time of Custom Role which remove in Remove Boost event cannot be reduced."
+        booster_role: "Time of Custom Role which remove in Boost Removal event cannot be reduced."
         overflow: "You cannot reduce more time than the custom role {} having."
 
     on_expire:
@@ -1151,10 +1165,10 @@ customrole:
     user:
       common:
         no_role_found: "You do not have any Custom Role in this server."
-        missing_permission: "Administrator of this server has restricted you from using this setting."
+        missing_permission: "Administrator of this Server has restricted you from using this setting."
         role_expired: "Your custom role has been expired."
         cannot_find_role: "Cannot find your custom role in the server, please try again later..."
-      subcommand:
+      subcommands:
         add:
           description: "Add a member to your custom role"
           translation:
@@ -1174,7 +1188,7 @@ customrole:
           options:
             icon: Upload your icon here
           translation:
-            require_7_boosts: "This feature requires your server to have **Level 2** (or 7 boosts) to works"
+            require_7_boosts: "This feature requires your server to have **Level 2**, or 7 server boosts."
             invalid_image_format: "The icon should in `.png` or `.jpg` format and smaller than 256kb."
             invalid_image_scale: "The icon should be a square image."
         removeicon:

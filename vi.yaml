@@ -14,7 +14,7 @@ common:
     Chúng tôi đã tự động phát hiện ngôn ngữ máy chủ của bạn là {1} ({2}), vì vậy máy chủ của bạn sẽ sử dụng cấu hình ngôn ngữ {1}.
     Để thay đổi cài đặt về ngôn ngữ ứng dụng, bạn có thể sử dụng </locale guildset:1191002538858778766> hoặc </locale myself:1191002538858778766>.
 
-    Tài liệu ứng dụng: [Điều khoản Dịch vụ](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
+    [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
   
   options:
     role: "Chọn vai trò"
@@ -69,10 +69,10 @@ information: # Hoàn thành
     global_information: Thông tin
     description: |
       **GlitchBucket** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), chủ yếu tập trung vào tính năng tự động & độc đáo.
-      > - Để biết danh sách các lệnh có sẵn, hãy nhập </help:1119604872497594495> hoặc `/GlitchBucket` trong cuộc trò chuyện.
+      > - Để biết danh sách các lệnh có sẵn, hãy nhập `/GlitchBucket` trong cuộc trò chuyện.
       > - Có thể truy xuất Hỗ trợ [thông qua Máy chủ Discord của chúng tôi](https://discord.com/invite/Bzha7tgd7u)!
       > - Trạng thái trực tuyến của Bot có thể được tìm thấy [tại đây](https://tudubucket.statuspage.io)
-      > - [Mời tôi!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) & [Mời bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       > - [Điều khoản Dịch vụ](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Chính sách Bảo mật](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
     
     cpu: Sử dụng CPU
