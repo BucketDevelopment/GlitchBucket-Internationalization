@@ -1093,7 +1093,7 @@ customrole:
         none_found: "This guild does not have any custom role set."
 
     list: 
-      description: "Terminate a custom role instance of a member"
+      description: "View all server's custom role"
       options:
         delete_role: "Whether delete the role or not"
       translation:
