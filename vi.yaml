@@ -983,6 +983,7 @@ customrole:
       never: "Không bao giờ"
       remove_boost: "Cho đến khi xóa tất cả các boost"
     fields:
+      current: "{} (Hiện tại: {} Thành viên)"
       author: "Người sở hữu"
       color: "Màu"
       maximum_member: "Số lượng thành viên tối đa"
@@ -1013,7 +1014,7 @@ customrole:
         author: "Chỉ định người sở hữu của Custom Role"
         name: "Chỉ định tên vai trò"
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
-        expire_after: "Hỗ trợ ngày ngắn (vd: 2th1ng2g), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
+        expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
         color: "Chỉ định màu vai trò"
         edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
         edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
@@ -1053,7 +1054,7 @@ customrole:
         role: "Chỉ định một vai trò"
         author: "Chỉ định người sở hữu của Custom Role"
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
-        expire_after: "Hỗ trợ ngày ngắn (vd: 2th1ng2g), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
+        expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
       translation:
         already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi, bạn không thể di chuyển vai trò này"
         already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
@@ -1096,7 +1097,7 @@ customrole:
     reduce:
       description: "Giảm thời gian cho một Custom Role được gán cho một thành viên, hoặc ngược lại"
       options:
-        time_range: "Chỉ định phạm vi thời gian để giảm, hỗ trợ ngày ngắn (vd: 2th4t6g)"
+        time_range: "Chỉ định phạm vi thời gian để giảm, hỗ trợ ngày ngắn (vd: 2mon1d2h)"
       translation:
         pernament_role: "Thời gian của Custom Role Vĩnh viễn không thể giảm."
         booster_role: "Thời gian của Custom Role mà được xóa trong sự kiện Loại bỏ Boost không thể giảm."
