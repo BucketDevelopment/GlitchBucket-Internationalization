@@ -585,13 +585,15 @@ donation:
       translation:
         not_donated: "Người dùng {} chưa ủng hộ cho máy chủ này!"
         warning: "**Cảnh báo:** Máy chủ này hiện đang vô hiệu hóa tính năng tiếp nhận ủng hộ!"
-        still_more: "Thêm {} mục nữa..."
+        more: 
+          before: "*Thêm {} mục trước đó...*"
+          after: "*Thêm {} mục sau đó...*"
 
         added: Đã thêm
         subtracted: Đã trừ
         points: Điểm
         total: "Tổng số dư ủng hộ"
-        rank: "Xếp hạng"
+        rank: "Hạng"
         recent: "Quyên góp gần đây & Nhật ký thay đổi"
 
     add: 
@@ -1148,3 +1150,7 @@ customrole:
           description: "Thay đổi tên của Custom Role của bạn"
           options:
             name: "Chỉ định tên vai trò"
+
+pagination:
+  unauthorized: "You cannot interact with this menu."
+  inactive: "This message is now inactive."

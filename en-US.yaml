@@ -635,7 +635,9 @@ donation:
       translation:
         not_donated: "User {} haven't donated to this server!"
         warning: "**Warning:** This server is currently disabled donations!"
-        still_more: "More {} entries ..."
+        more: 
+          before: "*More {} entries before...*"
+          after: "*More {} entries after...*"
 
         added: Added
         subtracted: Subtracted
@@ -1203,5 +1205,9 @@ customrole:
           options:
             name: "Specify role name"
 
-
-      
+pagination:
+  unauthorized: "You cannot interact with this menu."
+  inactive: "This message is now inactive."
+  start: Start
+  stop: Stop
+  next: Next
