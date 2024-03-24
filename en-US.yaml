@@ -2,6 +2,7 @@ common:
   support:
     discord: Discord Support
     status: Status Page
+  page: "Page {}/{}"
   none: None
   add: Add
   remove: Remove
