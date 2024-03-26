@@ -191,9 +191,14 @@ illust_report:
     - Do not spamming/make useless reports, you could be blacklisted if you try to do that!
 
     :small_red_triangle_down: Please choose an category to report under here :small_red_triangle_down:
-  reported_button: "This image has been reported"
-  reported_message: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
-
+  reported: "This image has been reported"
+  received: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
+  report: 
+    label: Report this image
+    bad: 'This image looks not so good'
+    nsfw: 'NSFW Image in SFW command'
+    manga: 'Image highly related to Manga/Art Tutorial'
+    other: 'Other Reason'
 autoresponder: 
   common:
     equal: Equal
