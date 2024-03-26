@@ -1153,5 +1153,8 @@ customrole:
             name: "Chỉ định tên vai trò"
 
 pagination:
-  unauthorized: "You cannot interact with this menu."
-  inactive: "This message is now inactive."
+  unauthorized: "Bạn không có quyền sử dụng menu này."
+  inactive: "Menu của tin nhắn này đã được tạm dừng."
+  next: "Tiếp"
+  previous: "Trước"
+  stop: "Dừng"
