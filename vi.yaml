@@ -245,6 +245,9 @@ illust_report:
   reported: "Nội dung này đã được báo cáo"
   received: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo của bạn ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
   report: 
+    title: Report Image
+    reason: Reason
+    description: The reason of the report
     label: Báo cáo Nội dung này
     bad: 'Nội dung nhìn không hấp dẫn'
     nsfw: 'Nội dung Phản cảm (NSFW) trong kênh thường (SFW)'
