@@ -248,7 +248,7 @@ illust_report:
     title: Báo cáo Nội dung
     reason: Lí do
     description: Lí do của báo cáo này
-    label: Báo cáo Nội dung này
+    label: Báo cáo nội dung
     bad: 'Nội dung nhìn không hấp dẫn'
     nsfw: 'Nội dung Phản cảm (NSFW) trong kênh thường (SFW)'
     manga: 'Nội dung liên quan tới Hướng dẫn Vẽ tranh'
