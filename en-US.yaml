@@ -194,9 +194,12 @@ illust_report:
   reported: "This image has been reported"
   received: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
   report: 
-    label: Report this image
-    bad: 'This image looks not so good'
-    nsfw: 'NSFW Image in SFW command'
+    title: Report Content
+    reason: Reason
+    description: The reason of the report
+    label: Report this content
+    bad: 'This content looks not so good'
+    nsfw: 'NSFW Content in SFW channel'
     manga: 'Image highly related to Manga/Art Tutorial'
     other: 'Other Reason'
 autoresponder: 
