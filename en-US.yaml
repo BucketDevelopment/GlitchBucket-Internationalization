@@ -347,6 +347,32 @@ blocksmc:
 
   description: Check information about BlocksMC's player
   commands:
+    leaderboard:
+      description: Fetch BlocksMC's Leaderboard statistics
+      options:
+        game: Specify a game
+        mode: Whether display full member information or not
+      choices:
+        mode:
+          compact: "Compact (Default)"
+          full: "Full members information"
+      translation:
+        title: "{}'s Leaderboard"
+    guild:
+      description: Fetch BlocksMC's Guild statistics
+      options:
+        guild: Specify a guild
+        mode: Whether display full member information or not
+      choices:
+        mode:
+          compact: "Compact (Default)"
+          full: "Full members information"
+      translation:
+        owner: Guild Owner
+        created_at: Created at
+        joined_at: Joined at
+        last_login: Last login
+        members: Members
     tracker: 
       description: Display game information from BlocksMC player statistics tracker
       options:

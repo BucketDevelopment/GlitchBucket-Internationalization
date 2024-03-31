@@ -388,6 +388,32 @@ blocksmc:
 
   description: Kiểm tra thông tin về người chơi BlocksMC
   commands:
+    leaderboard:
+      description: Kiểm tra Bảng xếp hạng của BlocksMC
+      options:
+        game: Chọn một game
+        mode: Có xem thông tin từng người chơi hay không
+      choices:
+        mode:
+          compact: "Trình bày nhỏ gọn (Mặc định)"
+          full: "Đầy đủ thông tin người chơi"
+      translation:
+        title: "Bảng xếp hạng {}"
+    guild:
+      description: Kiểm tra thông tin guild của BlocksMC
+      options:
+        guild: Chọn một guild
+        mode: Có xem thông tin từng người chơi hay không
+      choices:
+        mode:
+          compact: "Trình bày nhỏ gọn (Mặc định)"
+          full: "Đầy đủ thông tin người chơi"
+      translation:
+        owner: Chủ Guild
+        created_at: Tạo lúc
+        joined_at: Tham gia lúc
+        last_login: Đăng nhập gần nhất
+        members: Thành viên
     tracker:
       description: Hiển thị thông tin trò chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
       options:
