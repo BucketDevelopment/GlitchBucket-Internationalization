@@ -409,6 +409,7 @@ blocksmc:
           compact: "Trình bày nhỏ gọn (Mặc định)"
           full: "Đầy đủ thông tin người chơi"
       translation:
+        name: Tên
         owner: Chủ Guild
         created_at: Tạo lúc
         joined_at: Tham gia lúc
