@@ -105,7 +105,7 @@ snipe:
     channel_none: "There are no recent deleted messages found in this channel within 28 days."
 
 help: 
-  description: Show help for the bot
+  description: Show help for GlitchBucket
   translation: 
     go_slash: "Type `/GlitchBucket` in chat to view all application's commands!"
 
@@ -347,6 +347,25 @@ blocksmc:
 
   description: Check information about BlocksMC's player
   commands:
+    link: 
+      description: Link your account to bot's database (for skin render purposes)
+      options:
+        name: Specify your account's name
+      translation: 
+        successful: Successfully linked your Discord account with player name {}!
+    unlink:
+      description: Unlink your account from our bot's database
+      translation:
+        not_linked: "You do not having any account linked with our bot's database."
+        successful: Successfully unlinked your Discord account with player name {}!
+    skin: 
+      description: Set your skin on image render
+      options:
+        name: Specify a premium account to render skin as 
+      translation:
+        not_linked: "You do not having any account linked with our bot's database."
+        successful: Successfully linked your game account with skin {}!
+
     leaderboard:
       description: Fetch BlocksMC's Leaderboard statistics
       options:
@@ -384,6 +403,8 @@ blocksmc:
         period: "[Whitelisted Users] Select a period"
         date_start: "[Whitelisted Users] Specify start date to lookup with format DD/MM/YYYY."
         date_end: "[Whitelisted Users] Specify start date to lookup with format DD/MM/YYYY."
+        update_skin: Whether update your skin in our cache or not
+        render_skin_as: Specify a premium account to render skin as
       translation:
         never_played: This player has never played `{}` before!
         overall_only: "This command only support `Overall` lookup for player that have whitelisted, `period` field value need to replace from `{}` to `Overall`."
@@ -400,6 +421,8 @@ blocksmc:
         generate_image: Whether the bot will generate an image for the profile or not
         background: Pick a cool background
         period: Select a period
+        update_skin: Whether update your skin in our cache or not
+        render_skin_as: Specify a premium account to render skin as
       translation:
         title: "{}'s Statistics"
         warning: 
