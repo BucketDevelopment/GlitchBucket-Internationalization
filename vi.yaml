@@ -388,107 +388,107 @@ blocksmc:
 
   description: Kiểm tra thông tin về người chơi BlocksMC
   commands:
-  link:
-    description: Liên kết tài khoản của bạn với cơ sở dữ liệu của bot (với mục đích render skin)
-    options:
-      name: Chỉ định tên tài khoản của bạn
-    translation:
-      successful: Đã liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
-
-  unlink:
-    description: Hủy liên kết tài khoản của bạn từ cơ sở dữ liệu của bot
-    translation:
-      not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
-      successful: Đã hủy liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
-
-  skin:
-    description: Đặt skin của bạn trên hình ảnh render
-    options:
-      name: Chỉ định một tài khoản premium để render skin
-    translation:
-      not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
-      successful: Đã liên kết tài khoản game của bạn với skin {} thành công!
-
-  leaderboard:
-    description: Kiểm tra Bảng xếp hạng của BlocksMC
-    options:
-      game: Chọn một game
-      mode: Có xem thông tin từng người chơi hay không
-    choices:
-      mode:
-        compact: "Trình bày nhỏ gọn (Mặc định)"
-        full: "Đầy đủ thông tin người chơi"
-    translation:
-      title: "Bảng xếp hạng {}"
-  guild:
-    description: Kiểm tra thông tin guild của BlocksMC
-    options:
-      guild: Chọn một guild
-      mode: Có xem thông tin từng người chơi hay không
-    choices:
-      mode:
-        compact: "Trình bày nhỏ gọn (Mặc định)"
-        full: "Đầy đủ thông tin người chơi"
-    translation:
-      name: Tên
-      owner: Chủ Guild
-      created_at: Tạo lúc
-      joined_at: Tham gia lúc
-      last_login: Đăng nhập gần nhất
-      members: Thành viên
-  tracker:
-    description: Hiển thị thông tin trò chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
-    options:
-      game: Chọn một trò chơi
-      user: Chỉ định người dùng
-      generate_image: Bot có tạo ảnh cho hồ sơ hay không
-      background: Chọn một hình nền đẹp
-      period: "[Người dùng được phép] Chọn một khoảng thời gian"
-      date_start: "[Người dùng được phép] Chỉ định ngày bắt đầu tra cứu theo định dạng DD/MM/YYYY."
-      date_end: "[Người dùng được phép] Chỉ định ngày kết thúc tra cứu theo định dạng DD/MM/YYYY."
-      update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
-      render_skin_as: Chỉ định một tài khoản premium để render skin
-    translation:
-      never_played: Người chơi này chưa bao giờ chơi `{}` trước đây!
-      overall_only: "Lệnh này chỉ hỗ trợ tra cứu `Tổng thể` cho người chơi đã được phép, giá trị trường `period` cần thay thế từ `{}` thành `Tổng thể`."
-      title: "Số liệu thống kê {} của {}"
-      warning: "**Cảnh báo:** \n- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Winstreak, đã vô hiệu hóa!"
-      no_log: "Không tìm thấy mục nhập nhật ký."
-      non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
-      statistics: Số liệu thống kê
-
-    information:
-      description: Hiển thị thông tin người chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+    link:
+      description: Liên kết tài khoản của bạn với cơ sở dữ liệu của bot (với mục đích render skin)
       options:
+        name: Chỉ định tên tài khoản của bạn
+      translation:
+        successful: Đã liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
+
+    unlink:
+      description: Hủy liên kết tài khoản của bạn từ cơ sở dữ liệu của bot
+      translation:
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
+        successful: Đã hủy liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
+
+    skin:
+      description: Đặt skin của bạn trên hình ảnh render
+      options:
+        name: Chỉ định một tài khoản premium để render skin
+      translation:
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
+        successful: Đã liên kết tài khoản game của bạn với skin {} thành công!
+
+    leaderboard:
+      description: Kiểm tra Bảng xếp hạng của BlocksMC
+      options:
+        game: Chọn một game
+        mode: Có xem thông tin từng người chơi hay không
+      choices:
+        mode:
+          compact: "Trình bày nhỏ gọn (Mặc định)"
+          full: "Đầy đủ thông tin người chơi"
+      translation:
+        title: "Bảng xếp hạng {}"
+    guild:
+      description: Kiểm tra thông tin guild của BlocksMC
+      options:
+        guild: Chọn một guild
+        mode: Có xem thông tin từng người chơi hay không
+      choices:
+        mode:
+          compact: "Trình bày nhỏ gọn (Mặc định)"
+          full: "Đầy đủ thông tin người chơi"
+      translation:
+        name: Tên
+        owner: Chủ Guild
+        created_at: Tạo lúc
+        joined_at: Tham gia lúc
+        last_login: Đăng nhập gần nhất
+        members: Thành viên
+    tracker:
+      description: Hiển thị thông tin trò chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+      options:
+        game: Chọn một trò chơi
         user: Chỉ định người dùng
         generate_image: Bot có tạo ảnh cho hồ sơ hay không
         background: Chọn một hình nền đẹp
-        period: Chọn một khoảng thời gian
+        period: "[Người dùng được phép] Chọn một khoảng thời gian"
+        date_start: "[Người dùng được phép] Chỉ định ngày bắt đầu tra cứu theo định dạng DD/MM/YYYY."
+        date_end: "[Người dùng được phép] Chỉ định ngày kết thúc tra cứu theo định dạng DD/MM/YYYY."
         update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
         render_skin_as: Chỉ định một tài khoản premium để render skin
       translation:
-        title: "Số liệu thống kê của {}"
-        warning:
-          base: "**Cảnh báo:** \n"
-          not_whitelisted: "- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; đang sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Thời gian chơi, Nhật ký thay đổi Xếp hạng/Bang hội, đã vô hiệu hóa!"
-          non_points: "- Phát hiện ra Loại game ưa thích của người chơi là `{}` không hỗ trợ Điểm, đã vô hiệu hóa!\n"
-        no_log: "Không tìm thấy nhật ký."
+        never_played: Người chơi này chưa bao giờ chơi `{}` trước đây!
+        overall_only: "Lệnh này chỉ hỗ trợ tra cứu `Tổng thể` cho người chơi đã được phép, giá trị trường `period` cần thay thế từ `{}` thành `Tổng thể`."
+        title: "Số liệu thống kê {} của {}"
+        warning: "**Cảnh báo:** \n- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Winstreak, đã vô hiệu hóa!"
+        no_log: "Không tìm thấy mục nhập nhật ký."
         non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
         statistics: Số liệu thống kê
 
-        playtime: Thời gian chơi
-        hours: Giờ
-        rank: Xếp hạng hiện tại
-        guild: Bang hội hiện tại
-        fav_game: Loại game ưa thích
-        played: Đã chơi
-        points: Điểm
+      information:
+        description: Hiển thị thông tin người chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+        options:
+          user: Chỉ định người dùng
+          generate_image: Bot có tạo ảnh cho hồ sơ hay không
+          background: Chọn một hình nền đẹp
+          period: Chọn một khoảng thời gian
+          update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
+          render_skin_as: Chỉ định một tài khoản premium để render skin
+        translation:
+          title: "Số liệu thống kê của {}"
+          warning:
+            base: "**Cảnh báo:** \n"
+            not_whitelisted: "- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; đang sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Thời gian chơi, Nhật ký thay đổi Xếp hạng/Bang hội, đã vô hiệu hóa!"
+            non_points: "- Phát hiện ra Loại game ưa thích của người chơi là `{}` không hỗ trợ Điểm, đã vô hiệu hóa!\n"
+          no_log: "Không tìm thấy nhật ký."
+          non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
+          statistics: Số liệu thống kê
 
-        no_record: "*Không tìm thấy bản ghi nào.*"
+          playtime: Thời gian chơi
+          hours: Giờ
+          rank: Xếp hạng hiện tại
+          guild: Bang hội hiện tại
+          fav_game: Loại game ưa thích
+          played: Đã chơi
+          points: Điểm
 
-        changelog:
-          guild: "Nhật ký thay đổi Bang hội của người chơi"
-          rank: "Nhật ký thay đổi Xếp hạng của người chơi"
+          no_record: "*Không tìm thấy bản ghi nào.*"
+
+          changelog:
+            guild: "Nhật ký thay đổi Bang hội của người chơi"
+            rank: "Nhật ký thay đổi Xếp hạng của người chơi"
 
 
 
