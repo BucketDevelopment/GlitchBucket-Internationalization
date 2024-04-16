@@ -457,38 +457,38 @@ blocksmc:
         non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
         statistics: Số liệu thống kê
 
-      information:
-        description: Hiển thị thông tin người chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
-        options:
-          user: Chỉ định người dùng
-          generate_image: Bot có tạo ảnh cho hồ sơ hay không
-          background: Chọn một hình nền đẹp
-          period: Chọn một khoảng thời gian
-          update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
-          render_skin_as: Chỉ định một tài khoản premium để render skin
-        translation:
-          title: "Số liệu thống kê của {}"
-          warning:
-            base: "**Cảnh báo:** \n"
-            not_whitelisted: "- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; đang sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Thời gian chơi, Nhật ký thay đổi Xếp hạng/Bang hội, đã vô hiệu hóa!"
-            non_points: "- Phát hiện ra Loại game ưa thích của người chơi là `{}` không hỗ trợ Điểm, đã vô hiệu hóa!\n"
-          no_log: "Không tìm thấy nhật ký."
-          non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
-          statistics: Số liệu thống kê
+    information:
+      description: Hiển thị thông tin người chơi từ trình theo dõi số liệu thống kê người chơi BlocksMC
+      options:
+        user: Chỉ định người dùng
+        generate_image: Bot có tạo ảnh cho hồ sơ hay không
+        background: Chọn một hình nền đẹp
+        period: Chọn một khoảng thời gian
+        update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
+        render_skin_as: Chỉ định một tài khoản premium để render skin
+      translation:
+        title: "Số liệu thống kê của {}"
+        warning:
+          base: "**Cảnh báo:** \n"
+          not_whitelisted: "- Người chơi `{}` chưa được phép trong cơ sở dữ liệu bot; đang sử dụng phương pháp kiểm tra trực tiếp!\n- Kiểm tra trực tiếp không hỗ trợ bộ đếm Thời gian chơi, Nhật ký thay đổi Xếp hạng/Bang hội, đã vô hiệu hóa!"
+          non_points: "- Phát hiện ra Loại game ưa thích của người chơi là `{}` không hỗ trợ Điểm, đã vô hiệu hóa!\n"
+        no_log: "Không tìm thấy nhật ký."
+        non_exists: "Người chơi này không tồn tại trong Cơ sở dữ liệu BlocksMC!"
+        statistics: Số liệu thống kê
 
-          playtime: Thời gian chơi
-          hours: Giờ
-          rank: Xếp hạng hiện tại
-          guild: Bang hội hiện tại
-          fav_game: Loại game ưa thích
-          played: Đã chơi
-          points: Điểm
+        playtime: Thời gian chơi
+        hours: Giờ
+        rank: Xếp hạng hiện tại
+        guild: Bang hội hiện tại
+        fav_game: Loại game ưa thích
+        played: Đã chơi
+        points: Điểm
 
-          no_record: "*Không tìm thấy bản ghi nào.*"
+        no_record: "*Không tìm thấy bản ghi nào.*"
 
-          changelog:
-            guild: "Nhật ký thay đổi Bang hội của người chơi"
-            rank: "Nhật ký thay đổi Xếp hạng của người chơi"
+        changelog:
+          guild: "Nhật ký thay đổi Bang hội của người chơi"
+          rank: "Nhật ký thay đổi Xếp hạng của người chơi"
 
 
 
