@@ -356,14 +356,14 @@ blocksmc:
     unlink:
       description: Unlink your account from our bot's database
       translation:
-        not_linked: "You do not having any account linked with our bot's database."
+        not_linked: "You do not having any account linked with our bot's database, please use </blocksmc link:1125614999411359794> to link your account."
         successful: Successfully unlinked your Discord account with player name {}!
     skin: 
       description: Set your skin on image render
       options:
         name: Specify a premium account to render skin as 
       translation:
-        not_linked: "You do not having any account linked with our bot's database."
+        not_linked: "You do not having any account linked with our bot's database, please use </blocksmc link:1125614999411359794> to link your account."
         successful: Successfully linked your game account with skin {}!
 
     leaderboard:

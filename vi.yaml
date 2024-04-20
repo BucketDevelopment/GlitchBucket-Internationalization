@@ -398,7 +398,7 @@ blocksmc:
     unlink:
       description: Hủy liên kết tài khoản của bạn từ cơ sở dữ liệu của bot
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
         successful: Đã hủy liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
 
     skin:
@@ -406,7 +406,7 @@ blocksmc:
       options:
         name: Chỉ định một tài khoản premium để render skin
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi."
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
         successful: Đã liên kết tài khoản game của bạn với skin {} thành công!
 
     leaderboard:
