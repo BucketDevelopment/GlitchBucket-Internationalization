@@ -1217,6 +1217,6 @@ customrole:
 pagination:
   unauthorized: "Bạn không có quyền sử dụng menu này."
   inactive: "Menu của tin nhắn này đã được tạm dừng."
-  next: "Tiếp"
+  next: "Sau"
   previous: "Trước"
   stop: "Dừng"
