@@ -1219,6 +1219,7 @@ collections:
   translation:
     no_collections: "Bạn không có bức họa nào được lưu bào bộ sưu tập, :("
     title: "Bộ sưu tập yêu thích của {}"
+    saved_at: "Đã lưu lúc: "
   button:
     label: Lưu vào Bộ sưu tập! 
     saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn!"
