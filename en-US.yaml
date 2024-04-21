@@ -1270,3 +1270,13 @@ pagination:
   next: "Next"
   previous: "Previous"
   stop: "Stop"
+
+collections:
+  description: "View your illustration's collection"
+  translation:
+    no_collections: "You don't have any illustration in your collection yet, :("
+    title: "{}'s Collection"
+  button:
+    label: Save to Collection!
+    saved: "Successfully saved illustration to your collection!"
+    already_saved: "You have already saved this illustration to your collection!"

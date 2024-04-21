@@ -1214,6 +1214,16 @@ customrole:
           options:
             name: "Chỉ định tên vai trò"
 
+collections:
+  description: "Xem các ảnh được yêu thích bởi bạn"
+  translation:
+    no_collections: "Bạn không có bức họa nào được lưu bào bộ sưu tập, :("
+    title: "Bộ sưu tập yêu thích của {}"
+  button:
+    label: Lưu vào Bộ sưu tập! 
+    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn!"
+    already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích của bạn trước đó rồi!"
+
 pagination:
   unauthorized: "Bạn không có quyền sử dụng menu này."
   inactive: "Menu của tin nhắn này đã được tạm dừng."
