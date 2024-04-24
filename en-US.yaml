@@ -933,7 +933,7 @@ quickreport:
       options:
         receive_channel: Specify a channel to receive incoming reports
       translation:
-        received: ":information_source: We have received your report. A Reports Manager will look through your report in a short time."
+        received: ":information_source: We have received your report. A Reports Manager will look through your report in a short time.\nTo view report's status, use </report recent:1192112079977582672> & </report check:1192112079977582672>"
         incoming: ":warning: New incoming report!"
 
     successful_message:
@@ -1076,7 +1076,7 @@ quickreport:
     check: 
       description: "[Quick Report] Preview a report based on ID"
       options:
-        report_id: Specify Report ID
+        report_id: Specify a Report ID, or select from the list above
         silent: Whether we sent this message in silent or not
 
       translation:

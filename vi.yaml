@@ -886,7 +886,7 @@ quickreport:
       options:
         receive_channel: Chỉ định kênh để nhận báo cáo đến
       translation:
-        received: ":information_source: Chúng tôi đã nhận được báo cáo của bạn. Người quản lý báo cáo sẽ xem qua báo cáo của bạn trong thời gian ngắn."
+        received: ":information_source: Chúng tôi đã nhận được báo cáo của bạn. Người quản lý báo cáo sẽ xem qua báo cáo của bạn trong thời gian ngắn.\nĐể xem thông tin về các báo cáo của bạn, hãy sử dụng lệnh </report recent:1192112079977582672> & </report check:1192112079977582672>"
         incoming: ":warning: Báo cáo mới đến!"
 
     successful_message:
@@ -1027,7 +1027,7 @@ quickreport:
     check:
       description: "[Quick Report] Xem báo cáo dựa trên ID"
       options:
-        report_id: Chỉ định ID báo cáo
+        report_id: Chỉ định một ID báo cáo, hoặc chọn từ danh sách bên trên
         silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
 
       translation:
@@ -1222,7 +1222,7 @@ collections:
     saved_at: "Đã lưu lúc: "
   button:
     label: Lưu vào Bộ sưu tập! 
-    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn!"
+    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn! Hãy sử dụng lệnh "
     already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích của bạn trước đó rồi!"
 
 pagination:
