@@ -850,6 +850,14 @@ locale:
         updated: "Successfully updated your locale to {} ({})!"
 
 quickreport: 
+  modal:
+    label: Reason
+    placeholder: The reason for this action, can be empty
+    title: Specify Reason
+    no_reason: No Reason
+  button:
+    approve: Approve
+    decline: Decline
   common:
     not_enabled: "Quick Report has not been enabled in this guild."
   context_menu:

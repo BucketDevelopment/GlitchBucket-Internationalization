@@ -802,6 +802,14 @@ locale:
         current: "Hiện tại, ngôn ngữ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
         updated: "Thành công cập nhật ngôn ngữ của bạn thành {} ({})!"
 quickreport:  
+  modal:
+    label: Lí do
+    placeholder: Lí do cho hành động này, có thể bỏ trống
+    title: Nhập lí do
+    no_reason: Không có lí do
+  button:
+    approve: Chấp nhận
+    decline: Từ chối
   common:
     not_enabled: "Quick Report chưa được kích hoạt trong máy chủ này."
   context_menu:
