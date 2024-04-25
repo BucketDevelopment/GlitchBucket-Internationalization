@@ -915,6 +915,8 @@ quickreport:
     declinement_message: "Declinement Message"
 
   send_report:
+    channel_not_available: "The channel to receive reports is currently unavailable and we cannot send this report to moderators. Please try again in few minutes, or contact Server Administrator about this problem."
+    bot_missing_permission: "We are missing either **Send Messages** or **Embed Links** permissions in report's receive channel, so we cannot send this report to moderators. You may contact Server Administrator about this problem."
     cant_view: "Cannot retrieve the specific message, please ensure that I can view {}!"
     no_self_report: "You cannot report yourself."
     no_bot_report: "You cannot report a bot message."

@@ -868,6 +868,8 @@ quickreport:
     declinement_message: "Tin nhắn từ chối"
 
   send_report:
+    channel_not_available: "Kênh nhận báo cáo từ người dùng hiện không tồn tại. Hãy thử lại sau vài phút, hoặc hỏi Quản trị viên Máy chủ về vấn đề này."
+    bot_missing_permission: "Bot hiện đang thiếu quyền **Gửi Tin nhắn (Send Messages)** hoặc **Gửi Embed (Embed Links)** trong kênh nhận báo cáo, vậy nên chúng tôi không thể gửi báo cáo này tới Người Quản lí. Bạn có thể hỏi Quản trị viên Máy chủ về vấn đề này."
     cant_view: "Không thể truy xuất tin nhắn cụ thể, hãy đảm bảo rằng tôi có thể xem {}!"
     no_self_report: "Bạn không thể tự báo cáo chính mình."
     no_bot_report: "Bạn không thể báo cáo tin nhắn của bot."
