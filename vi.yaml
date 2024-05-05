@@ -1,6 +1,6 @@
-True: "Có"
-False: "Không"
 common:
+  _true: "Có"
+  _false: "Không"
   support:
     discord: Hỗ trợ Discord
     status: Trạng thái Bot

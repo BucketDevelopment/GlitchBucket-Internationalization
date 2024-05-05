@@ -1,6 +1,6 @@
-True: "True"
-False: "False"
 common:
+  _true: "True"
+  _false: "False"
   support:
     discord: Discord Support
     status: Status Page
