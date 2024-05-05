@@ -17,7 +17,7 @@ common:
     We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
     To change application's setting about localization, you can use </locale guildset:1191002538858778766> or </locale myself:1191002538858778766>.
 
-    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)"
+    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
   
   options:
     role: "Select a role"
