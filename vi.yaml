@@ -1,3 +1,5 @@
+True: "Có"
+False: "Không"
 common:
   support:
     discord: Hỗ trợ Discord
@@ -106,8 +108,22 @@ snipe:
 
 help: 
   description: Hiển thị trợ giúp cho GlitchBucket
+  options:
+    command: Chọn một lệnh hợp lệ
   translation: 
-    go_slash: "Nhập `/GlitchBucket` trong chat để xem tất cả các lệnh của ứng dụng!"
+    no_command: "Không có lệnh nào của bot mang tên `{}`."
+    guild_only: "Chỉ Guild"
+    installable: "Có thể cài đặt bởi Người dùng"
+    group_note: "\n\n*Lưu ý: Đây là một khối lệnh.*"
+    subcommand: "Các lệnh con"
+    parameters: 
+      none: "*Không yêu cầu tham số.*"
+      string: "Các tham số"
+      no_required: "*Không có tham số bắt buộc.*"
+      no_optional: "*Không có tham số không bắt buộc.*"
+      default: "Mặc định: "
+      required: "> **Bắt buộc:**\n"
+      optional: "> **Không bắt buộc:**\n"
 
 lemme: 
   description: Do you want to hug your best Discord friend? Try this out!

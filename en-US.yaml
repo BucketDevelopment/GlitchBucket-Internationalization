@@ -1,3 +1,5 @@
+True: "True"
+False: "False"
 common:
   support:
     discord: Discord Support
@@ -106,8 +108,22 @@ snipe:
 
 help: 
   description: Show help for GlitchBucket
+  options:
+    command: Select a command
   translation: 
-    go_slash: "Type `/GlitchBucket` in chat to view all application's commands!"
+    no_command: "There are no command associated with name `{}`."
+    guild_only: "Guild Only"
+    installable: "User Installable"
+    group_note: "\n\n*Note: This is a command group.*"
+    subcommand: "Sub-Command"
+    parameters: 
+      none: "*No parameters required.*"
+      string: "Parameters"
+      no_required: "*No required parameters.*"
+      no_optional: "*No optional parameters.*"
+      default: "Default: "
+      required: "> **Required:**\n"
+      optional: "> **Optional:**\n"
 
 illustration: 
   description: Search for artwork on https://pixiv.net
