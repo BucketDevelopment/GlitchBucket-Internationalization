@@ -123,7 +123,7 @@ help:
       no_optional: "*Không có tham số không bắt buộc.*"
       default: "Mặc định: "
       required: "> **Bắt buộc:**\n"
-      optional: "> **Không bắt buộc:**\n"
+      optional: "\n\n> **Không bắt buộc:**\n"
 
 lemme: 
   description: Do you want to hug your best Discord friend? Try this out!
