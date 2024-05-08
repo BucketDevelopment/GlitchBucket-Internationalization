@@ -60,7 +60,9 @@ chat:
   description: Have a conversation with Artificial Intelligence!
   options:
     message: Type your message into here
-
+  translation:
+    disallowed_content: Your requested prompt has been aborted. Make sure to not use violation/insult language while submitting prompt.
+    response: "Response:"
 fack: 
   description: send a fack to your hater
   options:
@@ -855,7 +857,8 @@ locale:
       translation:
         current: "Currently, your guild locale is `{} ({})`. You can only change them."
         updated: "Successfully updated guild locale to {} ({})!"
-
+        invalid: "{} is not a valid language, please choose from the command auto-complete."
+        guild_only: This command can be used in guild only.
     myself: 
       description: "Set locale of yourself, for command display"
       options:
@@ -864,6 +867,7 @@ locale:
       translation:
         current: "Currently, your locale is `{} ({})`. You can only change them."
         updated: "Successfully updated your locale to {} ({})!"
+        invalid: "{} is not a valid language, please choose from the command auto-complete."
 
 quickreport: 
   modal:

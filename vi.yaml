@@ -60,7 +60,9 @@ chat: # Hoàn thành
   description: Thảo luận với Trí tuệ nhân tạo!
   options:
     message: Nhập tin nhắn của bạn vào đây
-
+  translation:
+    disallowed_content: Your requested prompt has been aborted. Make sure to not use violation/insult language while submitting prompt.
+    response: "Phản hồi:"
 fack: # Bỏ qua
   description: gửi một 'fack' đến kẻ thù của bạn
   options:
@@ -807,12 +809,14 @@ locale:
       translation:
         current: "Hiện tại, ngôn ngữ của máy chủ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
         updated: "Đã cập nhật thành công ngôn ngữ của máy chủ thành {} ({})!"
-
+        invalid: "{} không phải là một ngôn ngữ hợp lệ, hãy chọn từ danh sách khi sử dụng lệnh."
+        guild_only: "Lệnh này chỉ được phép dùng trong các guild."
     myself: 
       description: "Đặt ngôn ngữ cho chính bạn, để hiển thị lệnh"
       options:
         lang: "Chọn một ngôn ngữ"
         override_guilds: "Có ghi đè cài đặt của máy chủ hay không"
+        invalid: "{} không phải là một ngôn ngữ hợp lệ, hãy chọn từ danh sách khi sử dụng lệnh."
 
       translation:
         current: "Hiện tại, ngôn ngữ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
