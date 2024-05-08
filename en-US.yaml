@@ -1305,5 +1305,5 @@ collections:
     saved_at: "Saved at: "
   button:
     label: Save to Collection!
-    saved: "Successfully saved illustration to your collection!"
-    already_saved: "You have already saved this illustration to your collection!"
+    saved: "Successfully saved illustration to your collection! Use </collections:1231542816325374034> to view your collection."
+    already_saved: "You have already saved this illustration to your collection! Use </collections:1231542816325374034> to view your collection."

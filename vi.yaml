@@ -1248,8 +1248,8 @@ collections:
     saved_at: "Đã lưu lúc: "
   button:
     label: Lưu vào Bộ sưu tập! 
-    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn! Hãy sử dụng lệnh "
-    already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích của bạn trước đó rồi!"
+    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection của bạn."
+    already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích của bạn trước đó rồi! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection của bạn."
 
 pagination:
   unauthorized: "Bạn không có quyền sử dụng menu này."
