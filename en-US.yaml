@@ -231,10 +231,20 @@ autoresponder:
 
   description: Setup Auto responder in your server
   commands:
+    edit:
+      description: Edit an autoresponder
+      options:
+        trigger: The keyword that trigger the autoresponder
+        response: String to response to the trigger
+    ignorecase:
+      description: Set ignorecase-setting for an autoresponder
+      options:
+        trigger: The keyword that trigger the autoresponder
+
     matchmode: 
       description: Edit autoresponder matchmode
       options:
-        trigger: The keyword to trigger the autoresponder
+        trigger: The keyword that trigger the autoresponder
         mode: Select matchmode
 
     placeholders: 
@@ -1322,7 +1332,7 @@ giveaway:
     winners_determined: "🎉 [Giveaway]({}) ended with winners: {}. Congratulations!"
     winners: "Winner(s): "
     winners_raw: "Winners"
-    determine_winners_failed: "\nWinners: Unable to determine winner ..."
+    determine_winners_failed: "\n- Winners: Unable to determine winner ..."
     ended_giveaway: Select an ended giveaway
     giveaway: Select a running giveaway
     get_channel_failed: Unable to get giveaway channel, please try again later...

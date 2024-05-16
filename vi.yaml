@@ -283,6 +283,15 @@ autoresponder:
 
   description: Thiết lập Trả lời tự động trên máy chủ của bạn
   commands:
+    edit:
+      description: Chỉnh sửa một autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
+        response: Chuỗi để trả lời cho trigger
+    ignorecase:
+      description: Bỏ qua phân biệt chữ hoa - chữ thường cho autoresponder
+      options:
+        trigger: Từ khóa để kích hoạt autoresponder
     matchmode:
       description: Chỉnh sửa chế độ khớp autoresponder
       options:
@@ -1130,6 +1139,8 @@ customrole:
         users: "Chỉ định số lượng thành viên tối đa cho vai trò này"
 
     terminate: 
+      options:
+        delete_role: "Có xóa role sau khi chấm dứt Custom Role đó không"
       description: "Chấm dứt một phiên bản Custom Role của một thành viên"
       translation:
         none_found: "Guild này không có bất kỳ Custom Role nào được thiết lập."
@@ -1171,11 +1182,11 @@ customrole:
     default_author_permission: 
       description: "Chỉnh sửa quyền mặc định cho người sở hữu của vai trò"
       options:
-        edit_name: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
-        edit_icon: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
-        manage_role_members: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
 
     extend:
       description: "Gia hạn ngày hết hạn cho một Custom Role"
@@ -1272,7 +1283,7 @@ giveaway:
     winners_determined: "🎉 [Giveaway]({}) đã kết thúc với người chiến thắng: {}. Chúc mừng!"
     winners: "Người chiến thắng: "
     winners_raw: "Người chiến thắng"
-    determine_winners_failed: "\nNgười chiến thắng: Không thể xác định người chiến thắng ..."
+    determine_winners_failed: "\n- Người chiến thắng: Không thể xác định người chiến thắng ..."
     ended_giveaway: Chọn một giveaway đã kết thúc
     giveaway: Chọn một giveaway đang chạy
     get_channel_failed: Không thể lấy kênh giveaway, vui lòng thử lại sau...
