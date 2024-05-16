@@ -1263,7 +1263,7 @@ pagination:
   stop: "Dừng"
 
 giveaway:
-  description: Tạo giveaway nâng cao trong máy chủ của bạn
+  description: Tạo Giveaway nâng cao trong máy chủ của bạn
   translation:
     guild_unavailable: "Để xác định người chiến thắng, chúng tôi phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
     not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
@@ -1285,7 +1285,7 @@ giveaway:
       default:
         label: Không
         description: Bắt đầu từ đầu mà không sử dụng template đã lưu
-    invalid_input: "Đầu vào trước của bạn không hợp lệ, hãy đảm bảo làm theo hướng dẫn."
+    invalid_input: "Input của bạn không hợp lệ, hãy đảm bảo làm theo hướng dẫn đã chỉ định."
   embeds:
     missing_permission:
       title: Thiếu quyền
