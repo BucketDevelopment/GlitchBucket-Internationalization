@@ -1449,7 +1449,7 @@ giveaway:
     image: Set Image
     button: Change Button Style
     color_edit: Change Embed Color
-    channel: Edit Channel
+    channel: Edit Giveaway Channel
     template_save: Save as Template
   modals:
     duration:

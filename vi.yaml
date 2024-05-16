@@ -1392,14 +1392,14 @@ giveaway:
     edit_settings: Chỉnh sửa Phần thưởng, Thời lượng, ...
     settings: Cài đặt
     bonus: Đặt Lượt tham gia bonus
-    requirements: Đặt Yêu cầu
-    bypasses: Thêm Bỏ qua
-    blacklists: Thêm vào Danh sách đen
+    requirements: Đặt Requirement
+    bypasses: Sửa Vượt Requirement
+    blacklists: Thêm Blacklist
     decorators: Trang trí
     image: Đặt Hình ảnh
     button: Thay đổi Phong cách nút
-    color_edit: Thay đổi Màu nhúng
-    channel: Chỉnh sửa Kênh
+    color_edit: Thay đổi Màu Embed
+    channel: Chỉnh sửa Kênh Giveaway
     template_save: Lưu làm Template
   modals:
     duration:
