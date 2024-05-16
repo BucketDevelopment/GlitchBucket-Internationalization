@@ -1321,6 +1321,7 @@ giveaway:
     giveaway_rerolled: 🎉 Giveaway has been rerolled by {}. Congratulations {}!
     winners_determined: "🎉 [Giveaway]({}) ended with winners: {}. Congratulations!"
     winners: "Winner(s): "
+    winners_raw: "Winners"
     determine_winners_failed: "\nWinners: Unable to determine winner ..."
     ended_giveaway: Select an ended giveaway
     giveaway: Select a running giveaway
