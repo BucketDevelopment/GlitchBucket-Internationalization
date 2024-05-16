@@ -1191,6 +1191,8 @@ customrole:
 
     terminate: 
       description: "Terminate a custom role instance of a member"
+      options:
+        delete_role: Whether delete the role after the termination or not
       translation:
         none_found: "This guild does not have any custom role set."
 
@@ -1231,11 +1233,11 @@ customrole:
     default_author_permission: 
       description: "Edit default permissions for role's author"
       options:
-        edit_name: "Let role's author can chance their own role name"
-        edit_icon: "Let role's author can chance their own role icon"
-        edit_color: "Let role's author can chance their own role color"
-        manage_role_members: "Let role's author can add/remove role members"
-        make_role_mentionable: "Let role's author can make their role mentionable by another members"
+        edit_name_permission: "Let role's author can chance their own role name"
+        edit_icon_permission: "Let role's author can chance their own role icon"
+        edit_color_permission: "Let role's author can chance their own role color"
+        manage_role_members_permission: "Let role's author can add/remove role members"
+        make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
 
     extend:
       description: "Extend expire date for a custom role"
