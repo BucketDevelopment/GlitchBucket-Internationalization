@@ -1261,3 +1261,306 @@ pagination:
   next: "Sau"
   previous: "Trước"
   stop: "Dừng"
+
+giveaway:
+  description: Tạo giveaway nâng cao trong máy chủ của bạn
+  translation:
+    guild_unavailable: "Để xác định người chiến thắng, chúng tôi phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
+    not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
+    reroll_failed: Không thể quay lại giveaway...
+    giveaway_rerolled: 🎉 Giveaway đã được quay lại bởi {}. Chúc mừng {}!
+    winners_determined: "🎉 [Giveaway]({}) đã kết thúc với người chiến thắng: {}. Chúc mừng!"
+    winners: "Người chiến thắng: "
+    determine_winners_failed: "\nNgười chiến thắng: Không thể xác định người chiến thắng ..."
+    ended_giveaway: Chọn một giveaway đã kết thúc
+    giveaway: Chọn một giveaway đang chạy
+    get_channel_failed: Không thể lấy kênh giveaway, vui lòng thử lại sau...
+    create_giveaway_failed: Không thể tạo giveaway, đảm bảo rằng tôi có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
+    new_giveaway: "🎉🎉 **GIVEAWAY MỚI** 🎉🎉"
+    giveaway_ended: "🎉🎉 **GIVEAWAY ĐÃ KẾT THÚC** 🎉🎉"
+    template:
+      already_exists: Một Template Giveaway với tên đó đã tồn tại. Bạn có thể phải sử dụng một tên khác.
+      maximum_reached: "Đã đạt đến giới hạn template giveaway tối đa (10)."
+      saved: Đã lưu template thành công!
+      default:
+        label: Không
+        description: Bắt đầu từ đầu mà không sử dụng template đã lưu
+    invalid_input: "Đầu vào trước của bạn không hợp lệ, hãy đảm bảo làm theo hướng dẫn."
+  embeds:
+    missing_permission:
+      title: Thiếu quyền
+      description: Bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.
+
+    not_enough_entrants:
+      title: Không thể kết thúc giveaway...
+      description: Không có đủ người tham gia để xác định người chiến thắng cho [giveaway này]({}), ;(
+    mismatch_requirements:
+      title: Yêu cầu không khớp!
+      description: "Bạn không được phép tham gia giveaway này với lý do: {}."
+    already_participated:
+      title: Đã tham gia!
+      description: 'Bạn đã tham gia giveaway này. Nếu bạn muốn rời đi, bạn có thể nhấn "Rời khỏi Giveaway" dưới đây.'
+    successfully_participated:
+      title: Đã tham gia thành công!
+      description: 'Bạn đã tham gia giveaway này thành công. Nếu bạn muốn rời đi, bạn có thể nhấn "Rời khỏi Giveaway" dưới đây.'
+    main: 
+      hosted_by: "Tổ chức bởi:"
+      duration: "Thời lượng:"
+      ends: "Kết thúc:"
+      stay: "- Đã ở trong máy chủ ít nhất"
+      has_roles: "Có một trong các vai trò sau:"
+      requirements: Yêu cầu
+      bonus: Lượt tham gia bonus
+      entrants: người tham gia
+      bypass: Bỏ qua yêu cầu
+      blacklist: Danh sách đen
+    embed_created: 
+      title: Tạo giveaway thành công!
+      description: "Giveaway sau đã được tạo: {}"
+    create_confirm:
+      title: Xác nhận Giveaway
+      description: Bạn có muốn bắt đầu giveaway này không? Bạn vẫn có thể chỉnh sửa giveaway này sau.
+    channel: 
+      title: Kênh Giveaway
+      description: "Chọn kênh để đăng giveaway hiện tại.\n\nKênh hiện tại: <#{}>"
+
+    bypasses:
+      title: Bỏ qua Giveaway
+      description: "Chọn vai trò để bỏ qua yêu cầu từ giveaway hiện tại. Một thành viên có thể bỏ qua yêu cầu nếu họ có bất kỳ vai trò nào trong lựa chọn này.\nBạn có thể chọn tối đa 5 vai trò."
+      translation:
+        roles: "Vai trò bỏ qua: Bất kỳ của"
+
+    blacklists:
+      title: Danh sách đen Giveaway
+      description: "Chọn vai trò để đưa vào danh sách đen từ giveaway hiện tại. Nếu thành viên có bất kỳ vai trò nào trong lựa chọn này, họ sẽ bị đưa vào danh sách đen.\nBạn có thể chọn tối đa 10 vai trò."
+      translation:
+        roles: "Vai trò trong danh sách đen: Bất kỳ của"
+
+    requirements:
+      title: Yêu cầu Giveaway
+      description: "Thêm yêu cầu để tham gia giveaway này. Thành viên sẽ đáp ứng yêu cầu nếu họ có bất kỳ vai trò nào trong lựa chọn này.\nBạn có thể chọn tối đa 10 vai trò yêu cầu.\nBạn cũng có thể đặt yêu cầu thời gian tham gia bằng cách nhấn vào nút."
+      translation:
+        roles: "- Vai trò yêu cầu: Bất kỳ của"
+        join: "- Yêu cầu tham gia: Thành viên phải ở trong máy chủ ít nhất"
+    bonus:
+      title: Lượt tham gia bonus của Giveaway
+      description: Thêm lượt tham gia bonus cho các vai trò vào giveaway này. Bạn có thể chọn tối đa 15 vai trò cho người lượt tham gia bonus.
+      translation:
+        entries: Lượt tham gia
+        bonus_entrants: "Lượt tham gia bonus:"
+    edit_button:
+      title: Nút Giveaway
+      description: Chỉnh sửa màu & biểu tượng cho nút giveaway. Do giới hạn, bạn chỉ có thể chọn màu nút ở dưới đây.
+    leave:
+      success: 
+        title: Rời thành công!
+        description: Bạn đã rời khỏi giveaway này thành công.
+      failed: 
+        title: Không thể rời đi...
+        description: Bạn chưa tham gia giveaway này, hoặc giveaway không tồn tại.
+  selects:
+    bonus: Chọn vai trò để thêm Lượt tham gia bonus
+    requirements: Chọn vai trò để làm Requirement
+    blacklists: Chọn vai trò để đưa vào Blacklist
+    bypasses: Thêm vai trò để vượt Requirement
+    channel: Đặt kênh Giveaway
+    templates: Chọn một template để áp dụng
+  buttons:
+    participated:
+      entrants: Người tham gia
+      entrant: Người tham gia
+
+    enter_giveaway: "Tham gia Giveaway!"
+    reroll: Quay lại
+    rerolled: Đã quay lại
+    join_req: Thêm yêu cầu tham gia
+    leave: Rời khỏi Giveaway
+    save: "Lưu & Quay lại"
+    preview: Xem trước nút
+    color:
+      default: Màu sắc
+      gray: Xám
+      blurple: Xanh đậm
+      green: Xanh lá 
+      red: Đỏ 
+      custom: Đặt Unicode/Biểu tượng tùy chỉnh
+    confirm_start: "Xác nhận & Bắt đầu"
+    back: Quay lại chỉnh sửa
+    core: Cốt lõi 
+    start: Bắt đầu Giveaway
+    edit_settings: Chỉnh sửa Phần thưởng, Thời lượng, ...
+    settings: Cài đặt
+    bonus: Đặt Lượt tham gia bonus
+    requirements: Đặt Yêu cầu
+    bypasses: Thêm Bỏ qua
+    blacklists: Thêm vào Danh sách đen
+    decorators: Trang trí
+    image: Đặt Hình ảnh
+    button: Thay đổi Phong cách nút
+    color_edit: Thay đổi Màu nhúng
+    channel: Chỉnh sửa Kênh
+    template_save: Lưu làm Template
+  modals:
+    duration:
+      title: Yêu cầu Thời gian Tham gia 
+      label: "Thời lượng (ví dụ: 1d2h, tối đa 30d)"
+      placeholder: Để trống để xóa yêu cầu
+    template_create:
+      title: Tạo Template
+      fields:
+        name:
+          label: Tên
+          placeholder: Chỉ định tên cho template
+        description:
+          label: Mô tả
+          placeholder: "[Tùy chọn] Chỉ định mô tả cho template"
+
+    button_emoji:
+      title: Biểu tượng Nút
+      fields:
+        emoji:
+          label: Biểu tượng cảm xúc
+          placeholder: Dán mã Unicode biểu tượng cảm xúc của bạn hoặc Biểu tượng cảm xúc tùy chỉnh của máy chủ tại đây
+    
+    color:
+      title: Màu nhúng Giveaway
+      fields:
+        color:
+          label: Màu sắc
+          placeholder: "Có thể là #<hex>, rgb(<số>, <số>, <số>), hoặc để trống cho màu mặc định."
+
+    image:
+      title: Hình ảnh nhúng Giveaway
+      fields:
+        image:
+          label: URL hình ảnh
+          placeholder: "Chỉ định liên kết hình ảnh ngắn hơn 512 ký tự. Để trống để xóa hình ảnh"
+
+    settings:
+      title: Cài đặt cần thiết 
+      fields:
+        reward: 
+          label: Phần thưởng
+          placeholder: Chỉ định phần thưởng cho giveaway
+        duration: 
+          label: Thời lượng
+          placeholder: "Chỉ định thời lượng cho giveaway (ví dụ: 1d2h, tối đa 60d)"
+        winner: 
+          label: Người chiến thắng
+          placeholder: Chỉ định số người chiến thắng cho giveaway, từ 1 - 10
+    bonus:
+      title: "Lượt tham gia bonus"
+      fields:
+        bonus:
+          label: Số lượng lượt tham gia bonus (1 - 99)
+          placeholder: Nhập '0' để xóa vai trò khỏi lượt tham gia bonus
+
+  commands:
+    setup: 
+      description: Thiết lập một giveaway mới
+      embeds:
+
+        preparing:
+          title: Đang chuẩn bị...
+          description: Chúng tôi đang chuẩn bị dữ liệu cho thiết lập này, vui lòng đợi...
+
+        failed:
+          title: Thiết lập thất bại!
+          description: Bạn không thể tạo nhiều hơn 20 giveaway đang chạy trong máy chủ này.
+
+        select: 
+          title: Chọn template
+          description: "Bạn có thể nhanh chóng tạo một giveaway với lệnh </giveaway create:1240148427967565866>. Lệnh này dùng để thiết lập một giveaway phức tạp với các yêu cầu, danh sách đen, v.v.\nNếu bạn muốn tiếp tục, vui lòng chọn một template để bắt đầu:"
+
+    end: 
+      description: Kết thúc một giveaway hiện có
+      embeds:
+        unknown:
+          title: Giveaway không xác định
+          description: ID Giveaway cung cấp không hợp lệ.
+        already_ended:
+          title: Giveaway đã kết thúc!
+          description: Giveaway được cung cấp đã kết thúc trước đó. Bạn có thể quay lại người chiến thắng bằng cách sử dụng lệnh </giveaway reroll:1240148427967565866>.
+        failed:
+          title: Không thể kết thúc giveaway...
+          description: "Không thể kết thúc giveaway này với lý do: {}"
+        successful:
+          title: Giveaway đã kết thúc
+          description: Giveaway được chỉ định đã kết thúc thành công!
+    
+    create:
+      description: Nhanh chóng tạo một giveaway
+      options:
+        reward: 'Chỉ định phần thưởng'
+        duration: 'Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)'
+        winners: 'Chỉ định người chiến thắng'
+        channel: 'Chỉ định kênh để bắt đầu'
+        template: 'Chọn một template'
+        requirements: 'Chỉ định requirements theo định dạng: role1|role2|...|role(n). Tối đa 15 vai trò'
+        blacklists: 'Chỉ định blacklists theo định dạng: role1|role2|...|role(n). Tối đa 10 vai trò'
+        bypasses: 'Chỉ định bypass requirements dạng: role1|role2|...|role(n). Tối đa 15 vai trò'
+        multipliers: 'Chỉ định số lượt tham gia bonus theo định dạng: role1:bonus1|role2:bonus2|... Tối đa 10 phần thưởng'
+        color: 'Chỉ định màu theo định dạng: #<hex>, hoặc rgb(<số>, <số>, <số>)'
+        button_color: "Chọn màu nút"
+        button_emoji: "Chỉ định biểu tượng cảm xúc tùy chỉnh của máy chủ hoặc mã Unicode biểu tượng cảm xúc"
+        requires_join_before: 'Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)'
+        image: "Chỉ định URL hình ảnh"
+      embeds:
+        validating:
+          title: Đang xác thực...
+          description: 'Chúng tôi đang xác thực đầu vào của bạn, vui lòng đợi...'
+      translation:
+        errors:
+          requirements:
+            maximum_reached: "Lỗi trong trường **Requirements**: Bạn không thể thêm hơn 10 vai trò trong trường này."
+            invalid: "Lỗi trong trường **Requirements**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong máy chủ này."
+          blacklists:
+            maximum_reached: "Lỗi trong trường **Blacklists**: Bạn không thể thêm hơn 10 vai trò trong trường này."
+            invalid: "Lỗi trong trường **Blacklists**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong máy chủ này."
+          bypasses:
+            maximum_reached: "Lỗi trong trường **Bypasses**: Bạn không thể thêm hơn 5 vai trò trong trường này."
+            invalid: "Lỗi trong trường **Bypasses**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong máy chủ này."
+          multipliers:
+            maximum_reached: "Lỗi trong trường **Bonus Entries**: Bạn không thể thêm hơn 15 vai trò trong trườn  này."
+            invalid: "Lỗi trong trường **Bonus Entries**: `{}` không phải là một phần dữ liệu phần thưởng hợp lệ."
+          color: "Lỗi trong trường **Color**: `{}` không phải là một màu hợp lệ. Định dạng chấp nhận: `#<hex>`, `rgb(<số>, <số>, <số>)`"
+          image: "Lỗi trong trường **Image**: `{}` không phải là một URL hình ảnh hợp lệ."
+          duration: "Lỗi trong trường **Duration**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
+          requires_join_before: "Lỗi trong trường **Requires Join Before**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
+          template: Không có template nào gọi là `{}` trong máy chủ của bạn.
+          bot_missing_permission: Không thể tạo giveaway, đảm bảo rằng tôi có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
+    reroll: 
+      description: Quay lại một giveaway đã kết thúc
+      embeds:
+        unknown:
+          title: Giveaway không xác định
+          description: ID Giveaway cung cấp không hợp lệ.
+        giveaway_running:
+          title: Giveaway đang chạy!
+          description: Giveaway được cung cấp đang chạy. Bạn có thể kết thúc giveaway bằng cách sử dụng lệnh </giveaway end:1240148427967565866>.
+        
+    edit: 
+      description: Chỉnh sửa một giveaway đang chạy
+      embeds:
+        unknown:
+          title: Giveaway không xác định
+          description: ID Giveaway cung cấp không hợp lệ.
+    template:
+      common: 
+        template: Chọn một template
+        embeds:
+          none_template:
+            title: Template không hợp lệ!
+            description: "Không có template nào gọi là `{}` trong máy chủ của bạn."
+      subcommands:
+        edit: 
+          description: 'Chỉnh sửa một template'
+        delete:
+          description: 'Xóa một template'
+          translation:
+            successful: Đã xóa template `{}` thành công!
+        create:
+          description: 'Tạo một template'
+          options:
+            name: Chỉ định tên template
+            description: Chỉ định mô tả template

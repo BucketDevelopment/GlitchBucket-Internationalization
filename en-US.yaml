@@ -1311,3 +1311,306 @@ collections:
     label: Save to Collection!
     saved: "Successfully saved illustration to your collection! Use </collections:1231542816325374034> to view your collection."
     already_saved: "You have already saved this illustration to your collection! Use </collections:1231542816325374034> to view your collection."
+
+giveaway:
+  description: Create Advanced giveaway in your server
+  translation:
+    guild_unavailable: "To determine winners, we have to fetch full data of entrants. Since this guild is currently unavailable, please try again in few minutes."
+    not_enought_entrants: 'There are not enough entrants to determine winners for this giveaway.'
+    reroll_failed: Failed to reroll giveaway...
+    giveaway_rerolled: 🎉 Giveaway has been rerolled by {}. Congratulations {}!
+    winners_determined: "🎉 [Giveaway]({}) ended with winners: {}. Congratulations!"
+    winners: "Winner(s): "
+    determine_winners_failed: "\nWinners: Unable to determine winner ..."
+    ended_giveaway: Select an ended giveaway
+    giveaway: Select a running giveaway
+    get_channel_failed: Unable to get giveaway channel, please try again later...
+    create_giveaway_failed: Unable to create giveaway, make sure that I have `Send Messages`, `Embed Links` and `Read Messages History` permissions.
+    new_giveaway: "🎉🎉 **NEW GIVEAWAY** 🎉🎉"
+    giveaway_ended: "🎉🎉 **GIVEAWAY ENDED** 🎉🎉"
+    template:
+      already_exists: A Giveaway Template with that name already exists. You may have to use another name.
+      maximum_reached: "Maximum giveaway template reached (10)."
+      saved: Successfully saved tempalte!
+      default:
+        label: None
+        description: Start from scratch without using saved templates
+    invalid_input: "Your previous input was invalid, make sure to follow the instruction."
+  embeds:
+    missing_permission:
+      title: Missing Permissions
+      description: You are missing `Manage Messages` permission to perform this action.
+
+    not_enough_entrants:
+      title: Failed to end giveaway...
+      description: There are not enough entrants to determine winners for [this giveaway]({}), ;(
+    mismatch_requirements:
+      title: Requirement Mismatch!
+      description: "You are not allowed to participate in this giveaway with reason: {}."
+    already_participated:
+      title: Already Participated!
+      description: 'You have already participated in this giveaway. If you want to leave, you can click "Leave Giveaway" under here.'
+    successfully_participated:
+      title: Successfully Participated!
+      description: 'You have successfully participated in this giveaway. If you want to leave, you can click "Leave Giveaway" under here.'
+    main: 
+      hosted_by: "Hosted by:"
+      duration: "Duration:"
+      ends: "Ends:"
+      stay: "- Stayed in server for at least"
+      has_roles: "Has one of following roles:"
+      requirements: Requirements
+      bonus: Bonus Entrants
+      entrants: entrants
+      bypass: Bypass Requirements
+      blacklist: Blacklist
+    embed_created: 
+      title: Giveaway successfully created!
+      description: "The following giveaway has been created: {}"
+    create_confirm:
+      title: Giveaway Confirmation
+      description: Do you want to start this giveaway? You still can edit this giveaway later.
+    channel: 
+      title: Giveaway Channel
+      description: "Select channel to post the current giveaway.\n\nCurrent channel: <#{}>"
+
+    bypasses:
+      title: Giveaway Bypasses
+      description: "Select roles to bypass requirements from the current giveaway. A member can bypass requirements if they have any role in this selection.\nYou can choose up to 5 roles."
+      translation:
+        roles: "Bypass roles: Any of"
+
+    blacklists:
+      title: Giveaway Blacklists
+      description: "Select roles to blacklist from the current giveaway. If the member has any role in this selection, they will be blacklist.\nYou can choose up to 10 roles."
+      translation:
+        roles: "Blacklisted roles: Any of"
+
+    requirements:
+      title: Giveaway Requirements
+      description: "Add requirements to join this giveaway. Members will met the requirement if they have any role in this selection.\nYou can choose up to 10 requirement roles.\nYou can also make join duration requirement by click into the button."
+      translation:
+        roles: "- Requirements's roles: Any of"
+        join: "- Join requirement: Member have to stay in server at least"
+    bonus:
+      title: Giveaway Bonus Entrants
+      description: Add bonus entrants for roles to this giveaway. You can choose up to 15 roles for bonus entrants.
+      translation:
+        entries: entries
+        bonus_entrants: "Bonus entrants:"
+    edit_button:
+      title: Giveaway Button
+      description: Edit color & emoji for the giveaway button. By limitation, you can only select button color down here.
+    leave:
+      success: 
+        title: Leave Successfully!
+        description: You have successfully leave this giveaway.
+      failed: 
+        title: Unable to leave...
+        description: You haven't participated in this giveaway, or the giveaway does not exist.
+  selects:
+    bonus: Select role to add bonus entrants
+    requirements: Select roles to make requirement
+    blacklists: Select roles to blacklist
+    bypasses: Add roles to requirement bypasses
+    channel: Set Giveaway channel
+    templates: Select a template to apply
+  buttons:
+    participated:
+      entrants: Entrants Participated
+      entrant: Entrant Participated
+
+    enter_giveaway: "Enter Giveaway!"
+    reroll: Reroll
+    rerolled: Rerolled
+    join_req: Add Join requirement
+    leave: Leave Giveaway
+    save: "Save & Back"
+    preview: Preview Button
+    color:
+      default: Color
+      gray: Gray
+      blurple: Blurple
+      green: Green 
+      red: Red 
+      custom: Set Unicode/Custom Emoji
+    confirm_start: "Confirm & Start"
+    back: Back to edit
+    core: Core 
+    start: Start Giveaway
+    edit_settings: Edit Reward, Duration & Winners
+    settings: Settings
+    bonus: Set Bonus Entrants
+    requirements: Set Requirements
+    bypasses: Add Bypasses
+    blacklists: Add Blacklists
+    decorators: Decorators
+    image: Set Image
+    button: Change Button Style
+    color_edit: Change Embed Color
+    channel: Edit Channel
+    template_save: Save as Template
+  modals:
+    duration:
+      title: Join Duration Requirement 
+      label: Duration (e.g. 1d2h, maximum 30d)
+      placeholder: Leave emtpy to remove requirement
+    template_create:
+      title: Create Template
+      fields:
+        name:
+          label: Name
+          placeholder: Specify name for the template
+        description:
+          label: Description
+          placeholder: "[Optional] Specify description for the template"
+
+    button_emoji:
+      title: Button Emoji
+      fields:
+        emoji:
+          label: Emoji
+          placeholder: Paste your Emoji Unicode, or Custom Server Emoji here
+    
+    color:
+      title: Giveaway Embed Color
+      fields:
+        color:
+          label: Color
+          placeholder: "Can be #<hex>, rgb(<number>, <number>, <number>), or leave empty for default color."
+
+    image:
+      title: Giveaway Embed Image
+      fields:
+        image:
+          label: Image URL
+          placeholder: "Specify an image link that shorter than 512 characters. Leave empty to remove image"
+
+    settings:
+      title: Necessary Settings 
+      fields:
+        reward: 
+          label: Reward
+          placeholder: Specify reward for the givewaway
+        duration: 
+          label: Duration
+          placeholder: Specify duration for the givewaway (e.g. 1d2h, maximum 60d)
+        winner: 
+          label: Winners
+          placeholder: Specify winners for the givewaway, from 1 - 10
+    bonus:
+      title: "Bonus Entrants"
+      fields:
+        bonus:
+          label: Number of bonus entrants (1 - 99)
+          placeholder: Type '0' to remove the role from bonus entrants
+
+  commands:
+    setup: 
+      description: Setup a new giveaway
+      embeds:
+
+        preparing:
+          title: Preaparing...
+          description: We are preparing data for this setup, please wait...
+
+        failed:
+          title: Setup failed!
+          description: You cannot create more than 20 running giveaways in this server.
+
+        select: 
+          title: Select template
+          description: "You can quickly a giveaway with command </giveaway create:1240148427967565866>. This command is for setting up a complex giveaway with requirements, blacklists, etc.\nIf you want to continue, please select a template to start:"
+
+    end: 
+      description: End an existing giveaway
+      embeds:
+        unknown:
+          title: Unknown Giveaway
+          description: The Giveaway ID provided was invalid.
+        already_ended:
+          title: Giveaway Already Ended!
+          description: The Giveaway provided has ended before. You can reroll winners by using command </giveaway reroll:1240148427967565866>.
+        failed:
+          title: Failed to end giveaway...
+          description: "Unable to end this giveaway with reason: {}"
+        successful:
+          title: Giveaway ended
+          description: The specified giveaway has ended successfully!
+    
+    create:
+      description: Quickly create a giveaway
+      options:
+        reward: 'Specify reward'
+        duration: 'Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)'
+        winners: 'Specify winners'
+        channel: 'Specify channel to start'
+        template: 'Select a template'
+        requirements: 'Specify requirement roles in format: role1|role2|...|role(n). Max 15 roles'
+        blacklists: 'Specify blakclist roles in format: role1|role2|...|role(n). Max 10 roles'
+        bypasses: 'Specify bypass roles in format: role1|role2|...|role(n). Max 15 roles'
+        multipliers: 'Specify bonus in format: role1:bonus1|role2:bonus2|... Max 10 bonuses'
+        color: 'Specify embed color in format: #<hex>, or rgb(<number>, <number>, <number>)'
+        button_color: "Choose a button color"
+        button_emoji: "Specify a custom server emoji or an emoji unicode"
+        requires_join_before: 'Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)'
+        image: "Specify image URL"
+      embeds:
+        validating:
+          title: Validating...
+          description: 'We are validating your input, please wait...'
+      translation:
+        errors:
+          requirements:
+            maximum_reached: "Error in field **Requirements**: You cannot add more than 10 roles in `requirements` field."
+            invalid: "Error in field **Requirements**: Role ID `{0}` (<@&{0}>) does not exist in this server."
+          blacklists:
+            maximum_reached: "Error in field **Blacklists**: You cannot add more than 10 roles in `blacklists` field."
+            invalid: "Error in field **Blacklists**: Role ID `{0}` (<@&{0}>) does not exist in this server."
+          bypasses:
+            maximum_reached: "Error in field **Bypasses**: You cannot add more than 5 roles in `blacklists` field."
+            invalid: "Error in field **Bypasses**: Role ID `{0}` (<@&{0}>) does not exist in this server."
+          multipliers:
+            maximum_reached: "Error in field **Multipliers**: You cannot add more than 15 roles in `blacklists` field."
+            invalid: "Error in field **Multipliers**: `{}` is not a valid multiplier data part."
+          color: "Error in field **Color**: `{}` is not a valid color. Acceptable format: `#<hex>`, `rgb(<number>, <number>, <number>)`"
+          image: "Error in field **Image**: `{}` is not a valid image URL."
+          duration: "Error in field **Duration**: Your giveaway duration was invalid. Please specify by short date format (e.g. `1d2h`) or pure second (e.g. `86400`) and lower than 60 days."
+          requires_join_before: "Error in field **Requires join before**: Your giveaway duration was invalid. Please specify by short date format (e.g. `1d2h`) or pure second (e.g. `86400`) and lower than 60 days."
+          template: There are none template called `{}` in your server.
+          bot_missing_permission: Unable to create giveaway, make sure that I have `Send Messages`, `Embed Links` and `Read Messages History` permissions.
+    reroll: 
+      description: Reroll a giveaway that ended
+      embeds:
+        unknown:
+          title: Unknown Giveaway
+          description: The Giveaway ID provided was invalid.
+        giveaway_running:
+          title: Giveaway are running!
+          description: The provided giveaway are running. You can end giveaway by using command </giveaway end:1240148427967565866>.
+        
+    edit: 
+      description: Edit a running giveaway
+      embeds:
+        unknown:
+          title: Unknown Giveaway
+          description: The Giveaway ID provided was invalid.
+    template:
+      common: 
+        template: Select a template
+        embeds:
+          none_template:
+            title: Invalid template!
+            description: "There are none template called `{}` in your server."
+      subcommands:
+        edit: 
+          description: 'Edit a template'
+        delete:
+          description: 'Delete a template'
+          translation:
+            successful: Successfully deleted template `{}`!
+        create:
+          description: 'Create a template'
+          options:
+            name: Specify template name
+            description: Specify template description
