@@ -1276,6 +1276,9 @@ pagination:
 giveaway:
   description: Tạo Giveaway nâng cao trong máy chủ của bạn
   translation:
+    participants: Người tham gia
+    giveaway_participants: Những người tham gia Giveaway
+    none_participants: Chưa có ai tham gia vào giveaway này cả, ;(
     guild_unavailable: "Để xác định người chiến thắng, chúng tôi phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
     not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
     reroll_failed: Không thể quay lại giveaway...

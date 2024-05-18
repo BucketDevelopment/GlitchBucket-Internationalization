@@ -1328,6 +1328,9 @@ collections:
 giveaway:
   description: Create Advanced giveaway in your server
   translation:
+    participants: Participants
+    giveaway_participants: Giveaway Participants
+    none_participants: No one has participated into this giveaway yet, ;(
     guild_unavailable: "To determine winners, we have to fetch full data of entrants. Since this guild is currently unavailable, please try again in few minutes."
     not_enought_entrants: 'There are not enough entrants to determine winners for this giveaway.'
     reroll_failed: Failed to reroll giveaway...
