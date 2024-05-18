@@ -1281,7 +1281,7 @@ giveaway:
     none_participants: Chưa có ai tham gia vào giveaway này cả, ;(
     guild_unavailable: "Để xác định người chiến thắng, chúng tôi phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
     not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
-    reroll_failed: Không thể quay lại giveaway...
+    reroll_failed: Không thể reroll giveaway...
     giveaway_rerolled: 🎉 Giveaway đã được quay lại bởi {}. Chúc mừng {}!
     winners_determined: "🎉 [Giveaway]({}) đã kết thúc với người chiến thắng: {}. Chúc mừng!"
     winners: "Người chiến thắng: "
@@ -1386,8 +1386,8 @@ giveaway:
       entrant: Người tham gia
 
     enter_giveaway: "Tham gia Giveaway!"
-    reroll: Quay lại
-    rerolled: Đã quay lại
+    reroll: Quay lại (Reroll)
+    rerolled: Đã Reroll
     join_req: Thêm yêu cầu tham gia
     leave: Rời khỏi Giveaway
     save: "Lưu & Quay lại"
@@ -1545,7 +1545,7 @@ giveaway:
           template: Không có template nào gọi là `{}` trong máy chủ của bạn.
           bot_missing_permission: Không thể tạo giveaway, đảm bảo rằng tôi có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
     reroll: 
-      description: Quay lại một giveaway đã kết thúc
+      description: Reroll một giveaway đã kết thúc
       embeds:
         unknown:
           title: Giveaway không xác định
