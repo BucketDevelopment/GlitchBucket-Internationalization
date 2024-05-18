@@ -334,7 +334,7 @@ autoresponder:
       translation:
         total: "Máy chủ này có tổng cộng {} autoresponder.\nDanh sách: `{}`"
         none: "Máy chủ này không có autoresponder nào!"
-
+        title: Danh sách Autoresponder
 
 security:
   description: Thiết lập Bảo mật tự động cho máy chủ của bạn

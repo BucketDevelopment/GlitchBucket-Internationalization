@@ -283,6 +283,7 @@ autoresponder:
       translation:
         total: "This guild having total of {} autoresponder.\nList: `{}`"
         none: "This guild doesn't have any autoresponder!"
+        title: Autoresponder's List
 
 
 security: 
