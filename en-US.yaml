@@ -1374,7 +1374,7 @@ giveaway:
       hosted_by: "Hosted by:"
       duration: "Duration:"
       ends: "Ends:"
-      stay: "- Stayed in server for at least"
+      stay: "Stayed in server for at least"
       has_roles: "Has one of following roles:"
       requirements: Requirements
       bonus: Bonus Entrants

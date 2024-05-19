@@ -1322,7 +1322,7 @@ giveaway:
       hosted_by: "Tổ chức bởi:"
       duration: "Thời lượng:"
       ends: "Kết thúc:"
-      stay: "- Đã ở trong máy chủ ít nhất"
+      stay: "Đã ở trong máy chủ ít nhất"
       has_roles: "Có một trong các vai trò sau:"
       requirements: Yêu cầu
       bonus: Lượt tham gia bonus
