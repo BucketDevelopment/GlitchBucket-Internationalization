@@ -811,7 +811,7 @@ stickie:
         threshold: Message Threshold
         inactive: Chat Inactive Delay
       translation:
-        already_set: Channel <#{channel.mention}> mode already set to **{mode.name}**!
+        already_set: Channel <#{}> mode already set to **{}**!
 
     webhook: 
       description: Set custom webhook for Sticky Message
