@@ -52,8 +52,10 @@ afk:
     reason: AFK Reason
     silent: Whether this command should be executed in silent or not
   translation:
+    already_set: ":warning: You already AFK with reason: {}."
+    successfull: ":electric_plug: You have set yourself AFK, with reason: **{}**"
     welcome_back: ":stopwatch: Welcome back, {}! You were AFK for **{}** and received **{}** mention."
-    received_mention: "Received mention"
+    received_mention: "Received mention(s)"
     currently_afk: ":placard: `{}` is currently AFK for <t:{}:R>: **{}**"
 
 chat: 

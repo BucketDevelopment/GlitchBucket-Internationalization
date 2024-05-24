@@ -52,9 +52,11 @@ afk:
     reason: Lý do AFK
     silent: Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không
   translation:
+    already_set: ":warning: Bạn hiện đã AFK với lí do: {}."
+    successfull: ":electric_plug: Bạn đã set AFK, với lí do: **{}**"
     welcome_back: ":stopwatch: Chào mừng bạn trở lại, {}! Bạn đã AFK trong **{}** và nhận được **{}** đề cập."
-    received_mention: "Đã nhận được đề cập"
-    currently_afk: ":placard: Hiện tại `{}` AFK trong <t:{}:R>: **{}**"
+    received_mention: "Các đề cập đã nhận"
+    currently_afk: ":placard: Hiện tại `{}` đang AFK (<t:{}:R>): **{}**"
 
 chat: # Hoàn thành
   description: Thảo luận với Trí tuệ nhân tạo!
