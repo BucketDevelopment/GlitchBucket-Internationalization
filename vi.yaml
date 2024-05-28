@@ -1278,6 +1278,8 @@ pagination:
 giveaway:
   description: Tạo Giveaway nâng cao trong máy chủ của bạn
   translation:
+    unknown_channel: Không thể tìm thấy kênh tổ chức giveaway, vui lòng thử lại sau... 
+    unknown_giveaway: Không thể tìm thấy giveaway từ kênh đã chỉ định, vui lòng thử lại sau...
     participants: Người tham gia
     giveaway_participants: Những người tham gia Giveaway
     none_participants: Chưa có ai tham gia vào giveaway này cả, ;(
@@ -1296,6 +1298,7 @@ giveaway:
     new_giveaway: "🎉🎉 **GIVEAWAY MỚI** 🎉🎉"
     giveaway_ended: "🎉🎉 **GIVEAWAY ĐÃ KẾT THÚC** 🎉🎉"
     template:
+      note: "Bạn đang chỉnh sửa một Template Giveaway. Không cần lo về việc quên lưu thay đổi - chúng tôi sẽ tự lưu thay đổi của bạn mỗi khi bạn thực hiện chỉnh sửa!"
       already_exists: Một Template Giveaway với tên đó đã tồn tại. Bạn có thể phải sử dụng một tên khác.
       maximum_reached: "Đã đạt đến giới hạn template giveaway tối đa (10)."
       saved: Đã lưu template thành công!
@@ -1331,6 +1334,12 @@ giveaway:
       entrants: người tham gia
       bypass: Bỏ qua yêu cầu
       blacklist: Danh sách đen
+    embed_edited: 
+      title: Đã chỉnh sửa thành công!
+      description: "Giveaway sau đây đã được chỉnh sửa: {}"
+    edit_confirm:
+      title: Xác nhận chỉnh sửa Giveaway
+      description: Bạn có muốn chỉnh sửa Giveaway này không? Tất cả người tham gia sẽ tiếp tục ở trong giveaway, và bạn vẫn có thể chỉnh sửa giveaway này sau.
     embed_created: 
       title: Tạo giveaway thành công!
       description: "Giveaway sau đã được tạo: {}"
@@ -1340,6 +1349,8 @@ giveaway:
     channel: 
       title: Kênh Giveaway
       description: "Chọn kênh để đăng giveaway hiện tại.\n\nKênh hiện tại: <#{}>"
+      prevent_edit: "Một khi giveaway đã bắt đầu, bạn sẽ không thể chỉnh sửa kênh nữa.\n\nKênh hiện tại: <#{}>"
+
 
     bypasses:
       title: Bỏ qua Giveaway

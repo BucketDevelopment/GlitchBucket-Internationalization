@@ -1330,6 +1330,8 @@ collections:
 giveaway:
   description: Create Advanced giveaway in your server
   translation:
+    unknown_channel: Cannot get the channel assigned to the giveaway, please try again later...  
+    unknown_giveaway: Cannot get the giveaway assigned to the specified channel, please try again later...  
     participants: Participants
     giveaway_participants: Giveaway Participants
     none_participants: No one has participated into this giveaway yet, ;(
@@ -1348,6 +1350,7 @@ giveaway:
     new_giveaway: "🎉🎉 **NEW GIVEAWAY** 🎉🎉"
     giveaway_ended: "🎉🎉 **GIVEAWAY ENDED** 🎉🎉"
     template:
+      note: "You are editing a Giveaway Template. Don't worry about forgetting to save changes - we do it automatically for you after every edit!"
       already_exists: A Giveaway Template with that name already exists. You may have to use another name.
       maximum_reached: "Maximum giveaway template reached (10)."
       saved: Successfully saved tempalte!
@@ -1386,12 +1389,19 @@ giveaway:
     embed_created: 
       title: Giveaway successfully created!
       description: "The following giveaway has been created: {}"
+    embed_edited: 
+      title: Giveaway successfully edited!
+      description: "The following giveaway has been edited: {}"
+    edit_confirm:
+      title: Giveaway Edit Confirmation
+      description: Do you want to edit this giveaway? All participants will keep staying in the giveaway, and you still can edit this giveaway later.
     create_confirm:
       title: Giveaway Confirmation
       description: Do you want to start this giveaway? You still can edit this giveaway later.
     channel: 
       title: Giveaway Channel
       description: "Select channel to post the current giveaway.\n\nCurrent channel: <#{}>"
+      prevent_edit: "Since the giveaway started, you cannot edit the giveaway channel anymore.\n\nCurrent channel: <#{}>"
 
     bypasses:
       title: Giveaway Bypasses
