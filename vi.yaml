@@ -1509,6 +1509,9 @@ giveaway:
         already_ended:
           title: Giveaway đã kết thúc!
           description: Giveaway được cung cấp đã kết thúc trước đó. Bạn có thể quay lại người chiến thắng bằng cách sử dụng lệnh </giveaway reroll:1240148427967565866>.
+        cannot_edit:
+          title: Giveaway đã kết thúc!
+          description: Bạn không được phép chỉnh sửa Giveaway đã kết thúc trước đó.
         failed:
           title: Không thể kết thúc giveaway...
           description: "Không thể kết thúc giveaway này với lý do: {}"

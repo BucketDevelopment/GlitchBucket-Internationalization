@@ -1559,7 +1559,10 @@ giveaway:
           description: The Giveaway ID provided was invalid.
         already_ended:
           title: Giveaway Already Ended!
-          description: The Giveaway provided has ended before. You can reroll winners by using command </giveaway reroll:1240148427967565866>.
+          description: The provided giveaway has ended before. You can reroll winners by using command </giveaway reroll:1240148427967565866>.
+        cannot_edit:
+          title: Giveaway Already Ended!
+          description: You cannot edit a giveaway that ended.
         failed:
           title: Failed to end giveaway...
           description: "Unable to end this giveaway with reason: {}"
