@@ -1575,14 +1575,14 @@ giveaway:
           placeholder: Type '0' to remove the role from bonus entrants
 
   commands:
-    setup: 
-      recover: 
-        description: Recover a deleted giveaway that is not ended
-        embeds:
-          unknown:
-            title: Unknown Giveaway ID
-            description: The Message assigned to the giveaway was invalid. Please use </giveaway recover:1240148427967565866> if the giveaway message has been deleted before. 
+    recover: 
+      description: Recover a deleted giveaway that is not ended
+      embeds:
+        unknown:
+          title: Unknown Giveaway ID
+          description: The Message assigned to the giveaway was invalid. Please use </giveaway recover:1240148427967565866> if the giveaway message has been deleted before. 
     
+    setup: 
       description: Setup a new giveaway
       embeds:
 
