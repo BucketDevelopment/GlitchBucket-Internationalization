@@ -1378,6 +1378,9 @@ giveaway:
     embed_created: 
       title: Tạo giveaway thành công!
       description: "Giveaway sau đã được tạo: {}"
+    embed_recovered: 
+      title: Khôi phục giveaway thành công!
+      description: "Giveaway sau đã được khôi phục: {}"
     create_confirm:
       title: Xác nhận Giveaway
       description: Bạn có muốn bắt đầu giveaway này không? Bạn vẫn có thể chỉnh sửa giveaway này sau.
@@ -1519,10 +1522,15 @@ giveaway:
           placeholder: Nhập '0' để xóa vai trò khỏi lượt tham gia bonus
 
   commands:
+    recover: 
+      description: Khôi phục một giveaway đã bị xóa nhưng vẫn chưa kết thúc
+      embeds:
+        unknown:
+          title: Giveaway không xác định
+          description: Giveaway được gắn với ID tin nhắn này không hợp lệ. Trong trường hợp giveaway đã bị xóa, vui lòng sử dụng </giveaway recover:1240148427967565866> để khôi phục lại giveaway đó. 
     setup: 
       description: Thiết lập một giveaway mới
       embeds:
-
         preparing:
           title: Đang chuẩn bị...
           description: Chúng tôi đang chuẩn bị dữ liệu cho thiết lập này, vui lòng đợi...
@@ -1547,6 +1555,9 @@ giveaway:
         cannot_edit:
           title: Giveaway đã kết thúc!
           description: Bạn không được phép chỉnh sửa Giveaway đã kết thúc trước đó.
+        cannot_recover:
+          title: Giveaway đã kết thúc!
+          description: Bạn không được phép khôi phục Giveaway đã kết thúc trước đó.
         failed:
           title: Không thể kết thúc giveaway...
           description: "Không thể kết thúc giveaway này với lý do: {}"
