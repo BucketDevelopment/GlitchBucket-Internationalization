@@ -275,6 +275,41 @@ illust_report:
     other: 'Lí do khác'
 
 autoresponder:
+  setting:
+    after: Sau
+    trigger: Kích hoạt
+    matchmode: Chế độ khớp
+    ignorecase: Bỏ qua chữ hoa/thường
+    autodelete:
+      title: "Tự động xóa tin nhắn"
+      trigger: "Tin nhắn gốc: "
+      response: "Phản hồi: "
+    args: Độ dài tin nhắn
+    setnick: Đặt biệt danh
+    require: 
+      channel: Yêu cầu Kênh
+      member: Yêu cầu Thành viên
+      permissions: Yêu cầu Quyền
+      roles: Yêu cầu Vai trò
+    ignore: 
+      channel: Bỏ qua Kênh
+      member: Bỏ qua Thành viên
+      permissions: Bỏ qua Quyền
+      roles: Bỏ qua Vai trò
+      error: Bỏ qua Lỗi
+    add_roles: Thêm Vai trò
+    remove_roles: Xóa Vai trò
+    reaction: Phản ứng
+    reply: Trả lời
+    raw: Trả lời thô
+    cooldown: Thời gian chờ
+    redirect: Chuyển hướng trả lời đến
+    sendback:
+      title: Loại gửi lại
+      normal: Gửi đến kênh (bình thường)
+      no_mentions: ' (không đề cập)'
+      reply: Trả lời lại tin nhắn kích hoạt
+    empty: "**Không có tin nhắn phản hồi**"
   common:
     equal: Bằng
     contains: Chứa
@@ -1595,3 +1630,141 @@ giveaway:
           options:
             name: Chỉ định tên template
             description: Chỉ định mô tả template
+
+bucketscript:
+  description: "Tiện ích để xử lý các tin nhắn & embed động."
+  translation:
+    invalid:
+      greeting: Máy chủ của bạn không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/bucketscript greeting message`
+      farewell: Máy chủ của bạn không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/bucketscript farewell message`
+
+    greeting: 
+      title: Tin nhắn Chào mừng của Máy chủ
+      description: 
+        missing: "**Tin nhắn Chào mừng:**\n\n{}"
+        full: "**Tin nhắn Chào mừng cho <#{}>:**\n\n{}"
+    farewell: 
+      title: Tin nhắn Tạm biệt của Máy chủ
+      description: 
+        missing: "**Tin nhắn Tạm biệt:**\n\n{}"
+        full: "**Tin nhắn Tạm biệt cho <#{}>:**\n\n{}"
+    maximum_fields_reached: Đã đạt đến giới hạn field của embed (25). Bạn không thể thêm bất kỳ field nào cho đến khi bạn xóa một cái.
+    invalid_input: Thông tin đã nhập trước đó của bạn không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
+    maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
+    zero_field: "Không thể tương tác vì embed này không có field nào"
+    back: Quay lại
+  embeds:
+    empty:
+      title: Embed Trống
+      description: Embed này hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng nút bên dưới để làm biến mất embed mặc định này!
+  selects:
+    remove_fields: Chọn field để xóa
+    insert_fields: Chọn field để thêm sau nó
+    edit_fields: Chọn field để chỉnh sửa
+  modals:
+    message:
+      title: Nhập Tin nhắn
+      label: Tin nhắn
+      placeholder: Nhập Tin nhắn của bạn ở đây
+    author:
+      title: Nhập Tác giả
+      fields:
+        name: 
+          label: Tác giả
+          placeholder: Nhập tên/placeholder của Tác giả. Để trống để xóa/bỏ qua
+        url: 
+          label: URL Tác giả
+          placeholder: Nhập URL Tác giả. Để trống để xóa/bỏ qua
+        icon:
+          label: URL Biểu tượng
+          placeholder: Nhập URL Biểu tượng. Để trống để xóa/bỏ qua
+    footer:
+      title: Chân trang Embed
+      fields:
+        text:
+          label: Văn bản
+          placeholder: Nhập văn bản Chân trang. Để trống để xóa/bỏ qua
+        icon:
+          label: URL Biểu tượng
+          placeholder: Nhập URL biểu tượng Chân trang. Để trống để xóa/bỏ qua
+        timestamp:
+          label: Dấu thời gian
+          placeholder: Xác định theo định dạng 'DD/MM/YYYY HH:MM:SS'. Gõ 'now' để đặt thời gian hiện tại. Để trống để xóa
+    image:
+      label: URL Hình ảnh
+      placeholder: Nhập URL Hình ảnh. Để trống để xóa/bỏ qua
+      title: Nhập URL Hình ảnh
+    color: 
+      title: Màu sắc
+      label: Màu Hex
+      placeholder: "Nhập màu ở định dạng HEX (ví dụ: #C0CDFF). Để trống để sử dụng màu mặc định"
+    fields:
+      title: Nhập Thông tin Cơ bản
+      fields:
+        name: 
+          label: Tên
+          placeholder: Nhập tên Field
+        value: 
+          label: Giá trị
+          placeholder: Nhập giá trị Field
+        inline:
+          label: Inline
+          placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
+  commands:
+    greeting:
+      subcommands:
+        message:
+          description: Đặt tin nhắn Chào mừng
+          options:
+            message: Chỉ định tin nhắn
+        channel:
+          description: Đặt kênh Chào mừng
+        clear:
+          description: Xóa tin nhắn Chào mừng
+        test: 
+          description: Kiểm tra tin nhắn Chào mừng
+          translation:
+            invalid_channel: "Không thể lấy kênh chào mừng đã chỉ định, vui lòng thử lại sau..."
+            missing_permission: Không đủ quyền. Đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Nhúng Liên kết`, và `Đọc Lịch sử Tin nhắn` trong {}.
+            successful: "Tin nhắn Chào mừng đã được gửi!"
+
+    farewell:
+      subcommands:
+        message:
+          description: Đặt tin nhắn Tạm biệt
+          options:
+            message: Chỉ định tin nhắn
+        channel:
+          description: Đặt kênh Tạm biệt
+        clear:
+          description: Xóa tin nhắn Tạm biệt
+        test: 
+          description: Kiểm tra & Thử tin nhắn Tạm biệt
+          translation:
+            invalid_channel: "Không thể lấy kênh tạm biệt đã cấu hình, vui lòng thử lại sau..."
+            missing_permission: Quyền không đủ. Đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Nhúng Liên kết`, và `Đọc Lịch sử Tin nhắn` trong {}.
+            successful: "Tin nhắn Tạm biệt đã được gửi!"
+
+userscript:
+  translation:
+    update_roles: Cập nhật vai trò từ autoresponder
+  errors:
+    validator:
+      user: ID Người dùng '{}' là không hợp lệ trong placeholder `{}`
+      channel: ID Kênh '{}' là không hợp lệ trong placeholder `{}`
+      permission: Quyền '{}' là không hợp lệ trong placeholder `{}`
+      role: ID Vai trò '{}' là không hợp lệ trong placeholder `{}`
+      invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
+    occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
+    invalid_channel: "ID kênh không hợp lệ: `{}`."
+    cannot_add_roles: "Bạn không thể thêm vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
+    cannot_remove_roles: "Bạn không thể xóa vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
+    missing_permission:
+      send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
+      read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
+      add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
+      manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
+      manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
+    invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
+  embeds:
+    maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo tính năng này hoạt động đúng."

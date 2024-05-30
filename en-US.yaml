@@ -223,6 +223,43 @@ illust_report:
     manga: 'Image highly related to Manga/Art Tutorial'
     other: 'Other Reason'
 autoresponder: 
+  setting:
+    after: After
+    trigger: Trigger
+    matchmode: Match Mode
+    ignorecase: Ignore Case
+    autodelete:
+      title: "Auto delete message"
+      trigger: "Trigger: "
+      response: "Response: "
+
+    args: Required Args. Length
+    setnick: Setnick
+    require: 
+      channel: Require Channel(s)
+      member: Require Member(s)
+      permissions: Require Permission(s)
+      roles: Require Role(s)
+    ignore: 
+      channel: Ignore Channel(s)
+      member: Ignore Member(s)
+      permissions: Ignore Permission(s)
+      roles: Ignore Role(s)
+      error: Ignore Error
+    add_roles: Add Role(s)
+    remove_roles: Remove Role(s)
+    reaction: Reaction
+    reply: Reply
+    raw: Raw reply
+    cooldown: Cooldown
+    redirect: Redirect reply to
+    sendback:
+      title: Sendback type
+      normal: Send to channel (normal)
+      no_mentions: ' (without mentions)'
+      reply: Reply back to trigger message
+    empty: "**Empty reply**"
+
   common:
     equal: Equal
     contains: Contains
@@ -1646,3 +1683,144 @@ giveaway:
           options:
             name: Specify template name
             description: Specify template description
+
+bucketscript:
+  description: "Utilities for processing dynamic messages & embeds"
+  translation:
+    invalid:
+      greeting: Your server doesn't have any Greeting Message. Consider create one by using `/bucketscript greeting message`
+      farewell: Your server doesn't have any Farewell Message. Consider create one by using `/bucketscript farewell message`
+
+    greeting: 
+      title: Server Greeting Message
+      description: 
+        missing: "**Greeting Message:**\n\n{}"
+        full: "**Greeting Message for <#{}>:**\n\n{}"
+    farewell: 
+      title: Server Farewell Message
+      description: 
+        missing: "**Farewell Message:**\n\n{}"
+        full: "**Farewell Message for <#{}>:**\n\n{}"
+    maximum_fields_reached: Maximum embed fields reached (25). You cannot add any field until you remove one.
+    invalid_input: Your previous input was invalid, make sure to follow the instruction.
+    maximum_size_reached: 'Maximum embed size reached (6000 characters). Consider remove another parts of embed to add another one.'
+    zero_field: "Cannot interact since this embed has zero field"
+    back: Back
+  embeds:
+    empty:
+      title: Empty Embed
+      description: This embed is currently empty. Start editing by using button below to make this default embed disappear!
+  selects:
+    remove_fields: Select field(s) to remove
+    insert_fields: Select field to add after it
+    edit_fields: Select field to edit
+  modals:
+    message:
+      title: Message Input
+      label: Message
+      placeholder: Enter your Message here
+    author:
+      title: Author Input
+      fields:
+        name: 
+          label: Author
+          placeholder: Enter Author name/placeholder. Leave empty to remove/ignore
+        url: 
+          label: Author URL
+          placeholder: Enter Author URL. Leave empty to remove/ignore
+        icon:
+          label: Icon URL
+          placeholder: Enter Icon URL. Leave empty to remove/ignore
+    footer:
+      title: Embed Footer
+      fields:
+        text:
+          label: Text
+          placeholder: Enter Footer text. Leave empty to remove/ignore
+        icon:
+          label: Icon URL
+          placeholder: Enter Footer icon URL. Leave empty to remove/ignore
+        timestamp:
+          label: Timestamp
+          placeholder: Specify by format 'DD/MM/YYYY HH:MM:SS'. Type 'now' to set time to now. Leave empty to remove
+    image:
+      label: Image URL
+      placeholder: Enter Image URL. Leave empty to remove/ignore
+      title: Image URL Input
+    color: 
+      title: Color
+      label: Hex Color
+      placeholder: "Enter color in HEX format (example: #C0CDFF). Leave empty for default color"
+    fields:
+      title: Base Information Input
+      fields:
+        name: 
+          label: Name
+          placeholder: Enter Field name
+        value: 
+          label: Value
+          placeholder: Enter Field value
+        inline:
+          label: Inline
+          placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
+  commands:
+    greeting:
+      subcommands:
+        message:
+          description: Set Greeting message
+          options:
+            message: Specify message
+        channel:
+          description: Set Greeting channel
+        clear:
+          description: Clear Greeting message
+        test: 
+          description: Test Greeting message
+          translation:
+            invalid_channel: "Cannot get the configured greeting channel, please try again later..."
+            missing_permission: Insufficient permissions. Make sure the bot has permissions `Send Messages`, `Embed Links`, and `Read Message History` in {}.
+            successful: "The Greeting message has been sent!"
+
+    farewell:
+      subcommands:
+        message:
+          description: Set Farewell message
+          options:
+            message: Specify message
+        channel:
+          description: Set Farewell channel
+        clear:
+          description: Clear Farewell message
+        test: 
+          description: Test Farewell message
+          translation:
+            invalid_channel: "Cannot get the configured farewell channel, please try again later..."
+            missing_permission: Insufficient permissions. Make sure the bot has permissions `Send Messages`, `Embed Links`, and `Read Message History` in {}.
+            successful: "The Farewell message has been sent!"
+
+userscript:
+  translation:
+    update_roles: Update roles on autoresponder
+  errors:
+    validator:
+      user: User ID '{}' is not valid in placeholder `{}`
+      channel: Channel ID '{}' is not valid in placeholder `{}`
+      permission: Permission '{}' is not valid in placeholder `{}`
+      role: Role ID '{}' is not valid in placeholder `{}`
+      invalid_int: Value in placeholder `{}` need to be a valid integer
+    occurred: "An exception as been caught while processing BucketScript:\n`{}`: {}"
+    invalid_channel: Invalid channel ID `{}`.
+    cannot_add_roles: "You cannot add roles that's equal or higher than your current highest role's position."
+    cannot_remove_roles: "You cannot remove roles that's equal or higher than your current highest role's position."
+    missing_permission:
+      send_messages: "Bot Missing Permission: Send Messages"
+      read_message_history: "`Reply` requires **Read Message History** permission."
+      add_reactions: "Bot Missing Permission: Add Reactions"
+      manage_messages: "Bot Missing Permission: Manage Messages"
+      manage_nickname: "Bot Missing Permission: Manage Nickname"
+    invalid_redirect: "`reply` function cannot being set with `redirect_to`."
+  embeds:
+    maximum_size_reached: "Embed `{}` for guild `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
+
+
+    
