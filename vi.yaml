@@ -1322,7 +1322,7 @@ giveaway:
     not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
     reroll_failed: Không thể reroll giveaway...
     giveaway_rerolled: 🎉 Giveaway đã được quay lại bởi {}. Chúc mừng {}!
-    winners_determined: "🎉 [Giveaway]({}) đã kết thúc với người chiến thắng: {}. Chúc mừng!"
+    winners_determined: "🎉 Giveaway [{}]({}) đã kết thúc với người chiến thắng: {}. Chúc mừng!"
     winners: "Người chiến thắng: "
     winners_raw: "Người chiến thắng"
     determine_winners_failed: "\n- Người chiến thắng: Không thể xác định người chiến thắng ..."
