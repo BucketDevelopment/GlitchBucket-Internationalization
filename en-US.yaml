@@ -1719,6 +1719,18 @@ bucketscript:
     maximum_size_reached: 'Maximum embed size reached (6000 characters). Consider remove another parts of embed to add another one.'
     zero_field: "Cannot interact since this embed has zero field"
     back: Back
+  buttons:
+    author: Author
+    title: Title & Description
+    footer: Footer
+    color: Color
+    thumbnail: Thumbnail
+    image: Image
+    fields:
+      add: Add Field
+      edit: Edit Field
+      remove: Remove Field
+      insert: Insert Field
   embeds:
     empty:
       title: Empty Embed

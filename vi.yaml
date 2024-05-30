@@ -1664,6 +1664,19 @@ bucketscript:
     maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
     zero_field: "Không thể tương tác vì embed này không có field nào"
     back: Quay lại
+  buttons:
+    author: Đầu Embed
+    title: Tiêu đề & Nội dung
+    footer: Chân Embed
+    color: Màu
+    thumbnail: Ảnh thu nhỏ
+    image: Ảnh lớn
+    fields:
+      add: Thêm Field
+      edit: Sửa Field
+      remove: Xóa Field
+      insert: Chèn Field
+  
   embeds:
     empty:
       title: Embed Trống
