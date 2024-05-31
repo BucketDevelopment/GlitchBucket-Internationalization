@@ -1313,7 +1313,7 @@ pagination:
 giveaway:
   description: Tạo Giveaway nâng cao trong máy chủ của bạn
   translation:
-    winners_determined: "🎉 [Giveaway]({1}) **{0}** đã kết thúc với người chiến thắng: {2}. Chúc mừng! 🎉"
+    winners_determined: "🎉 [Giveaway]({1}) **{0}** được tổ chức bởi {3} đã kết thúc với người chiến thắng: {2}. Chúc mừng! 🎉"
     giveaway_rerolled: 🎉 Giveaway đã được quay lại bởi {}. Chúc mừng {}!
     unknown_channel: Không thể tìm thấy kênh tổ chức giveaway, vui lòng thử lại sau... 
     unknown_giveaway: Không thể tìm thấy giveaway từ kênh đã chỉ định, vui lòng thử lại sau...

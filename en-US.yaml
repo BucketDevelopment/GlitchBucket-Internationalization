@@ -1376,7 +1376,7 @@ giveaway:
     not_enought_entrants: 'There are not enough entrants to determine winners for this giveaway.'
     reroll_failed: Failed to reroll giveaway...
     giveaway_rerolled: 🎉 Giveaway has been rerolled by {}. Congratulations {}!
-    winners_determined: "🎉 [Giveaway]({1}) *{0}** ended with winners: {2}. Congratulations!"
+    winners_determined: "🎉 [Giveaway]({1}) **{0}** hosted my {3} ended with winners: {2}. Congratulations!"
     winners: "Winner(s): "
     winners_raw: "Winners"
     determine_winners_failed: "\n- Winners: Unable to determine winner ..."
