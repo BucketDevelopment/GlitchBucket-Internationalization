@@ -1130,7 +1130,7 @@ customrole:
       maximum_member: "Số lượng thành viên tối đa"
       created_at: "Được tạo vào"
       expired_in: "Hết hạn trong"
-      members: "Các thành viên của vai trò"
+      members: "Thành viên"
       granted_permission: "Quyền được cấp"
       restricted_permission: "Quyền bị hạn chế"
     admin_title: "Cấu hình quản trị Custom Role cho {}"
