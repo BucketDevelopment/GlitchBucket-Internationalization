@@ -1772,12 +1772,21 @@ bucketscript:
       label: Image URL
       placeholder: Enter Image URL. Leave empty to remove/ignore
       title: Image URL Input
+    title:
+      title: Base Information Input
+      fields:
+        title:
+          label: Title
+          placeholder: "Enter Embed title. Leave empty to remove/ignore"
+        description:
+          label: Description
+          placeholder: "Enter Embed description. Leave empty to remove/ignore"
     color: 
       title: Color
       label: Hex Color
       placeholder: "Enter color in HEX format (example: #C0CDFF). Leave empty for default color"
     fields:
-      title: Base Information Input
+      title: Embed Field
       fields:
         name: 
           label: Name

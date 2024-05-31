@@ -1722,6 +1722,15 @@ bucketscript:
       title: Màu sắc
       label: Màu Hex
       placeholder: "Nhập màu ở định dạng HEX (ví dụ: #C0CDFF). Để trống để sử dụng màu mặc định"
+    title:
+      title: Thông tin chung
+      fields:
+        title:
+          label: Tiêu đề
+          placeholder: "Tiêu đề của embed. Để trống để xóa/bỏ qua"
+        description:
+          label: Nội dung
+          placeholder: "Nội dung của embed. Để trống để xóa/bỏ qua"
     fields:
       title: Nhập Thông tin Cơ bản
       fields:
