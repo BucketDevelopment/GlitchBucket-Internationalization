@@ -1596,7 +1596,7 @@ giveaway:
 
         select: 
           title: Select template
-          description: "You can quickly a giveaway with command </giveaway create:1240148427967565866>. This command is for setting up a complex giveaway with requirements, blacklists, etc.\nIf you want to continue, please select a template to start:"
+          description: "You can quickly a giveaway with command </giveaway create:1240148427967565866> with the same usage of </giveaway setup:1240148427967565866> by specify parameters with advanced usage. Also, that command helps you to create many similiar giveaway by using `Upside Arrow (↑)` to quickly re-use previous slash command.\n\nThis command is for setting up a complex giveaway with requirements, blacklists, etc., with a friendly interface for better usage.\nIf you want to continue, please select a template to start:"
 
     end: 
       description: End an existing giveaway
