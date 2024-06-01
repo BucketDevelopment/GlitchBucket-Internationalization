@@ -1541,7 +1541,7 @@ giveaway:
 
         select: 
           title: Chọn template
-          description: "Bạn có thể nhanh chóng tạo một giveaway với lệnh </giveaway create:1240148427967565866>. Lệnh này dùng để thiết lập một giveaway phức tạp với các yêu cầu, danh sách đen, v.v.\nNếu bạn muốn tiếp tục, vui lòng chọn một template để bắt đầu:"
+          description: "Bạn có thể nhanh chóng tạo một giveaway với lệnh </giveaway create:1240148427967565866> với đầy đủ chức năng của </giveaway setup:1240148427967565866> bằng cách sử dụng các tham số (parameters) với độ phức tạp cao hơn. Cùng với đó, lệnh </giveaway create:1240148427967565866> cũng giúp bạn tạo nhiều giveaway giống nhau trong cùng 1 lúc nếu bạn sử dụng nút `Mũi tên lên (↑)` để nhanh chóng sử dụng lại lệnh vừa được gửi.\n\nLệnh này dùng để thiết lập một giveaway phức tạp với các yêu cầu, danh sách đen, v.v, với một giao diện thân thiện & dễ sử dụng hơn.\nNếu bạn muốn tiếp tục, vui lòng chọn một template để bắt đầu:"
 
     end: 
       description: Kết thúc một giveaway hiện có
