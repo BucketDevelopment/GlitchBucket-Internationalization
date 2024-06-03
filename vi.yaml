@@ -1366,7 +1366,7 @@ giveaway:
       has_roles: "Có một trong các vai trò sau:"
       requirements: Yêu cầu
       bonus: Lượt tham gia bonus
-      entrants: người tham gia
+      entrants: lượt tham gia
       bypass: Bỏ qua yêu cầu
       blacklist: Danh sách đen
     embed_edited: 
