@@ -1615,7 +1615,8 @@ giveaway:
         giveaway_running:
           title: Giveaway đang chạy!
           description: Giveaway được cung cấp đang chạy. Bạn có thể kết thúc giveaway bằng cách sử dụng lệnh </giveaway end:1240148427967565866>.
-        
+      translation:
+        winners: Số lượng người chiến thắng cần reroll thay thay vì theo mặc định, mặc định theo giveaway.
     edit: 
       description: Chỉnh sửa một giveaway đang chạy
       embeds:

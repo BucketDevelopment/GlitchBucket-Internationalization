@@ -1663,6 +1663,8 @@ giveaway:
           bot_missing_permission: Unable to create giveaway, make sure that I have `Send Messages`, `Embed Links` and `Read Messages History` permissions.
     reroll: 
       description: Reroll a giveaway that ended
+      translation:
+        winners: Number of winners when reroll to overwrite from configuration, default to giveaway configuration.
       embeds:
         unknown:
           title: Unknown Giveaway
