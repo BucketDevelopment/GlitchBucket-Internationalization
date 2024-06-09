@@ -1398,7 +1398,7 @@ giveaway:
   embeds:
     missing_permission:
       title: Missing Permissions
-      description: You are missing `Manage Messages` permission to perform this action.
+      description: Only Giveaway host can use this button. Otherwise, you are missing `Manage Messages` permission to perform this action.
 
     not_enough_entrants:
       title: Failed to end giveaway...
