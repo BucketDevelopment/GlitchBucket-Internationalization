@@ -1344,7 +1344,7 @@ giveaway:
   embeds:
     missing_permission:
       title: Thiếu quyền
-      description: Bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.
+      description: Chỉ có người tổ chức Giveaway mới có thể sử dụng nút này. Hoặc không, bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.
 
     not_enough_entrants:
       title: Không thể kết thúc giveaway...
