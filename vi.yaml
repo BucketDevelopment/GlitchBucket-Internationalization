@@ -15,7 +15,7 @@ common:
     Nếu bạn có bất kỳ câu hỏi nào, hãy thoải mái liên hệ với chúng tôi tại [Trung tâm Hỗ trợ](https://discord.gg/WDc5uF9wyS ) của chúng tôi bất kỳ lúc nào!
 
     Chúng tôi đã tự động phát hiện ngôn ngữ máy chủ của bạn là {1} ({2}), vì vậy máy chủ của bạn sẽ sử dụng cấu hình ngôn ngữ {1}.
-    Để thay đổi cài đặt về ngôn ngữ ứng dụng, bạn có thể sử dụng </locale guildset:1191002538858778766> hoặc </locale myself:1191002538858778766>.
+    Để thay đổi cài đặt về ngôn ngữ ứng dụng, bạn có thể sử dụng </locale guildset:1191310036950069269> hoặc </locale myself:1191310036950069269>.
 
     [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
   
@@ -1802,3 +1802,151 @@ userscript:
     invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
   embeds:
     maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo tính năng này hoạt động đúng."
+
+voting:
+  description: Dễ dàng theo dõi & kiểm tra các vote trong cuộc thi vote!
+  modals:
+    emoji:
+      title: Biểu tượng cảm xúc
+      label: Biểu tượng
+      placeholder: Dán Biểu tượng Unicode của bạn hoặc Biểu tượng Tùy chỉnh từ máy chủ ở đây
+    messages:
+      title: Tin nhắn
+      label: Số lượng
+      placeholder: Để trống để không giới hạn số lượng tin nhắn, tối đa 99
+    duration:
+      title: Thời lượng
+      label: Thời lượng
+      placeholder: "Chỉ định thời lượng theo định dạng ngắn (vd: 1d2h, tối đa 60d) hoặc số giây (vd: 86400)"
+  selects:
+    blacklist: Chọn vai trò cho blacklist
+    blacklist_whitelist: Chọn vai trò cho blacklist/whitelist
+  embeds:
+    preparing: 
+      title:
+      description:
+    invalid_channel: 
+      title: Kênh vote không hợp lệ!
+      description: Kênh vote không hợp lệ (có thể đã bị xóa). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút.
+    missing_permission: 
+      title: Thiếu Quyền
+      description: "Chúng tôi thiếu quyền để đọc phiếu bầu trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Máy chủ về vấn đề này."
+    
+  translation: 
+    none_running: Hiện không có phiên vote nào đang diễn ra trong máy chủ này.
+    require_setup: Máy chủ này chưa thiết lập bất kỳ phiên vote nào. Vui lòng chạy lệnh `/voting session setup` ít nhất một lần để lệnh này hoạt động.
+    cache: "\nĐã lưu trữ {} trước • Cập nhật lại mỗi 5 phút"
+    votes: Phiếu bầu
+    messages: Tin nhắn
+    valid: hợp lệ
+    left: còn lại
+    blacklisted: blacklisted
+    young:
+      member:
+        short: "th.viên mới"
+        full: "thành viên mới"
+      account:
+        short: "t.khoản mới"
+        full: "tài khoản mới"
+    configuration:
+      vote_state: Phương thức Đếm vote
+      voter_requirements: Yêu cầu cho Người vote
+      participant_requirements:
+        name: Yêu cầu của Người tham gia
+        whitelist: "- Chỉ có thành viên có vai trò <@&{}> mới được tham gia\n"
+        blacklist: "- Thành viên có vai trò <@&{}> không được phép tham gia\n"
+        everyone: "- Tất cả mọi người đều có thể tham gia\n"
+        messages:
+          limited: "- Mỗi người tham gia chỉ được gửi __{} tin nhắn__"
+          unlimited: "- Mỗi người tham gia có thể gửi __bất kỳ số tin nhắn__"
+      state: 
+        member: "> Đếm __tổng số lượt reaction__ của tin nhắn"
+        reaction: "> Đếm __tổng số thành viên đã react__ vào tin nhắn"
+        strict: "> Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})"
+    start: 
+      name: Bắt đầu Phiên Bầu chọn
+      buttons:
+        start: Bắt đầu
+        cancel: Hủy
+      embeds:
+        confirmation:
+          title: Xác nhận Bắt đầu
+          description: "Bạn có muốn bắt đầu phiên này? Để dừng phiên và lưu kết quả, sử dụng `/voting session end`."
+        started: 
+          title: Phiên Bầu chọn Đã bắt đầu
+          description: Phiên vote đã bắt đầu thành công trong <#{}>!
+    no_emoji:
+      short: Không có biểu tượng cảm xúc trong cấu hình
+      full: Không có biểu tượng cảm xúc trong cấu hình. Nhấn 'Thiết lập Biểu tượng' dưới đây để thiết lập biểu tượng riêng cho việc đếm phiếu
+    back: trở lại
+    voter_requirement:
+      join: Đặt Thời gian Tham gia
+      register: Đặt Thời gian Đăng ký T.khoản
+      allow_leave: Bật/Tắt 'Cho phép người vote rời đi'
+      embed:
+        title: Yêu cầu Người bỏ phiếu
+        description: "Chọn điều kiện để đếm phiếu bầu. Cấu hình hiện tại:\n"
+      requrement:
+        role: "- Thành viên có vai trò <@&{}> không thể vote\n"
+        stay: "- Thành viên phải ở trong máy chủ ít nhất __{}__ để có thể vote\n"
+        register: "- Tài khoản phải được đăng ký ít nhất __{}__ để có thể vote\n"
+        leave_invalid: "- Tất cả các vote __vẫn hợp lệ__ nếu người vote rời khỏi máy chủ"
+        leave_valid: "- Tất cả các vote __sẽ không hợp lệ__ nếu người vote rời khỏi máy chủ"
+    method: 
+      invalid_emoji: Máy chủ của bạn không có biểu tượng cảm xúc `{}`, hoặc biểu tượng Unicode này không hợp lệ.
+      set_emoji: Thiết lập biểu tượng (Yêu cầu Chế độ Strict)
+      embed: 
+        title: Phương thức Đếm vote
+        description: |
+          Chọn cách thức bot đếm vote:
+
+          **Reaction**: Đếm __tổng số lượt reaction__ của tin nhắn,
+          **Member**: Đếm __tổng số member đã react__ vào tin nhắn,
+          **Strict**: Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})
+
+          Chọn phương pháp dưới đây. Lựa chọn hiện tại: **{}**"
+    participate_method: 
+      embed:
+        title: Phương thức Tham gia
+        description: |
+          Chọn cách thức mà các thành viên có thể tham gia vào phiên bầu chọn này:
+
+          **Blacklist**: Tất cả các thành viên có vai trò đã chọn không thể tham gia vào phiên bầu chọn,
+          **Whitelist**: Các thành viên cần phải có vai trò đã chọn để tham gia vào phiên bầu chọn,
+          **Any**: Tất cả mọi người có thể tham gia vào phiên bầu chọn này
+
+          Chọn phương pháp tham gia dưới đây. Lựa chọn hiện tại: **`{}`**
+      maximum_messages: Số lượng Tin nhắn Tối đa/Thành viên
+  commands:
+    statistics:
+      description: Xem thống kê hiện tại của phiên bầu chọn
+      options:
+        sort: Sắp xếp kết quả theo thứ tự giảm dần hay không
+        user: Xem tin nhắn từ một người dùng cụ thể
+    configuration: 
+      description: Xem & Chỉnh sửa cấu hình bầu chọn
+    history:
+      description: Xem một phiên bầu chọn trong lịch sử
+      options:
+        session: Chọn một phiên hoặc chỉ định ID phiên
+        sort: Sắp xếp kết quả theo thứ tự giảm dần hay không
+        user: Xem tin nhắn từ một người dùng cụ thể
+      translation:
+        invalid_id: Không có phiên đã lưu nào với ID `{}` trong máy chủ này.
+    session:
+      description: Quản lý một phiên bầu chọn
+      subcommands:
+        start:
+          description: Thiết lập một phiên bầu chọn
+          options:
+            from_message: Chỉ định một ID tin nhắn để bắt đầu đếm phiếu sau đó
+          translation:
+            missing_permission: "Chúng tôi thiếu quyền trong {} để đọc phiếu bầu: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
+            invalid_message: "ID Tin nhắn cung cấp cho {0} không hợp lệ. Đảm bảo rằng đó là một số nguyên hợp lệ và tồn tại trong {0}."
+            already_running: "Máy chủ này đã có một phiên bầu chọn đang diễn ra trong <#{}>."
+        end:
+          description: Kết thúc phiên bầu chọn của máy chủ
+          translation:
+            ending: Phiên này đang trong quá trình lưu với ID `{}` - bạn có thể kiểm tra lại sau.
+            saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
+            saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`**` session:{0}`.

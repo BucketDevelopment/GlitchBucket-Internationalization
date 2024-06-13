@@ -15,7 +15,7 @@ common:
     If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
 
     We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
-    To change application's setting about localization, you can use </locale guildset:1191002538858778766> or </locale myself:1191002538858778766>.
+    To change application's setting about localization, you can use </locale guildset:1191310036950069269> or </locale myself:1191310036950069269>.
 
     [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
   
@@ -1858,5 +1858,150 @@ userscript:
   embeds:
     maximum_size_reached: "Embed `{}` for guild `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
 
-
+voting:
+  description: Easily track votes of a voting competition!
+  modals:
+    emoji:
+      title: Emoji
+      label: Emoji
+      placeholder: Paste your Emoji Unicode, or Custom Server Emoji here
+    messages:
+      title: Messages
+      label: Count
+      placeholder: Leave empty for unlimited message count, maximum 99
+    duration:
+      title: Timer
+      label: Duration
+      placeholder: Specify duration in short format (e.g. 1d2h, maximum 60d) or pure second (e.g. 86400)
+  selects:
+    blacklist: Select a role for blacklist
+    blacklist_whitelist: Select a role for blacklist/whitelist
+  embeds:
+    preparing: 
+      title:
+      description:
+    invalid_channel: 
+      title: Invalid voting channel!
+      description: The voting channel is invalid (may deleted). If your believe this is an error, please try again after a minute.
+    missing_permission: 
+      title: Missing Permissions
+      description: "We are missing permission to read votes in {}: **Manage Messages**, **Read Message History**, **Read Messages** & **Add Reactions**.\nYou may have to contact Server Administrator about this problem."
     
+  translation: 
+    none_running: There is no vote session running in this guild.
+    require_setup: This guild has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
+    cache: "\nCached {} ago • Renew every 5 minutes"
+    votes: Votes
+    messages: Messages
+    valid: valid
+    left: left
+    blacklisted: blacklisted
+    young:
+      member:
+        short: "y. member"
+        full: "young member"
+      account:
+        short: "y. acc"
+        full: "young account"
+    configuration:
+      vote_state: Vote State
+      voter_requirements: Voter Requirements
+      participant_requirements:
+        name: Participant Requirements
+        whitelist: "- Only members with role <@&{}> can participate\n"
+        blacklist: "- Members with role <@&{}> cannot participate\n"
+        everyone: "- Everyone can participate\n"
+        messages:
+          limited: "- Each participant can post only __{} messages__"
+          unlimited: "- Each participant can post __unlimited messages__"
+      state: 
+        member: "> Count __total reaction count__ of the message"
+        reaction: "> Count __total member reacted__ to the message"
+        strict: "> Count only reaction count of a single emoji ({})"
+    start: 
+      name: Start Voting Session
+      buttons:
+        start: Start
+        cancel: Cancel
+      embeds:
+        confirmation:
+          title: Start Confirmation
+          description: "Do you want to start this session? To stop the session and save results, use `/voting session end`."
+        started: 
+          title: Vote Session Started
+          description: The vote session has started successfully in <#{}>!
+    no_emoji:
+      short: No emoji in configuration
+      full: No emoji in configuration. Press 'Set Emoji' below to set your own emoji for vote count
+    back: back
+    voter_requirement:
+      join: Set Join Duration
+      register: Set Register Duration
+      allow_leave: Toggle 'Allow voters leave'
+      embed:
+        title: Voter Requirement
+        description: "Select conditions to count votes. Current configuration:\n"
+      requrement:
+        role: "- Member with role <@&{}> cannot vote\n"
+        stay: "- Member have to stay in server at least __{}__ to make valid votes\n"
+        register: "- Member account's have to registered at least __{}__ to make valid votes\n"
+        leave_invalid: "- All votes __are still valid__ if voter leave the server"
+        leave_valid: "- All votes __will be invalidated__ if voter leave the server"
+    method: 
+      invalid_emoji: Your server does not have the emoji `{}`, or this unicode emoji does not valid.
+      set_emoji: Set emoji (Require Strict Mode)
+      embed: 
+        title: Vote Method
+        description: |
+          Choose how the bot count votes:
+
+          **Reaction**: Count __total reaction count__ of the message,
+          **Member**: Count __total member reacted__ to the message,
+          **Strict**: Count only reaction count of a single emoji ({})
+
+          Select method below. Current option: **{}**"
+    participate_method: 
+      embed:
+        title: Participate Method
+        description: |
+          Select how participants can participate into this vote session:
+
+          **Blacklist**: All members with selected role cannot participate into this vote,
+          **Whitelist**: Members need to have selected role to participate into this vote,
+          **Any**: Everyone can participate into this vote
+
+          Select participate method under here. Current option: **`{}`**
+      maximum_messages: Maximum Messages/Participant
+  commands:
+    statistics:
+      description: View current statistics of voting session
+      options:
+        sort: Whether sort the result in descending order
+        user: View messages from a specific user
+    configuration: 
+      description: View & Edit vote configuration
+    history:
+      description: View a vote session in history
+      options:
+        session: Choose a session, or specify a session ID
+        sort: Whether sort the result in descending order
+        user: View messages from a specific user
+      translation:
+        invalid_id: There is no saved session with ID `{}` in this guild.
+    session:
+      description: Manage a vote session
+      subcommands:
+        start:
+          description: Setup a vote session
+          options:
+            from_message: Specify a message ID to start count votes after it
+          translation:
+            missing_permission: "We are missing permission in {} to read votes: **`Manage Messages`**, **`Read Message History`**, **`Read Messages`** & **`Add Reactions`**"
+            invalid_message: "The provided Message ID for {0} was invalid. Make sure it is a valid integer and exists in {0}."
+            already_running: "This server already having a running vote session in <#{}>."
+        end:
+          description: End server's vote session
+          translation:
+            ending: This session is currently in save progess with ID `{}` - and you can check back later.'
+            saving: Saving data, please wait for some minutes ...
+            saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`**` session:{0}`.
