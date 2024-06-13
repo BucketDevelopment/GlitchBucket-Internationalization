@@ -1,4 +1,5 @@
 common:
+  missing_permission: You do not have permissions to perform previous action.
   _true: "True"
   _false: "False"
   support:
@@ -1904,6 +1905,7 @@ voting:
         short: "y. acc"
         full: "young account"
     configuration:
+      regulation: Vote Regulations
       vote_state: Vote State
       voter_requirements: Voter Requirements
       participant_requirements:
@@ -1933,7 +1935,7 @@ voting:
     no_emoji:
       short: No emoji in configuration
       full: No emoji in configuration. Press 'Set Emoji' below to set your own emoji for vote count
-    back: back
+    back: Back
     voter_requirement:
       join: Set Join Duration
       register: Set Register Duration
@@ -1959,7 +1961,7 @@ voting:
           **Member**: Count __total member reacted__ to the message,
           **Strict**: Count only reaction count of a single emoji ({})
 
-          Select method below. Current option: **{}**"
+          Select method below. Current option: **{}**
     participate_method: 
       embed:
         title: Participate Method
@@ -2002,6 +2004,6 @@ voting:
         end:
           description: End server's vote session
           translation:
-            ending: This session is currently in save progess with ID `{}` - and you can check back later.'
+            ending: This session is currently in save progess, you can check back later.'
             saving: Saving data, please wait for some minutes ...
             saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`**` session:{0}`.

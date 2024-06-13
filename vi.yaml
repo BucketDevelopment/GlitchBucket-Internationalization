@@ -1,4 +1,5 @@
 common:
+  missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
   _true: "Có"
   _false: "Không"
   support:
@@ -1839,7 +1840,7 @@ voting:
     votes: Phiếu bầu
     messages: Tin nhắn
     valid: hợp lệ
-    left: còn lại
+    left: thoát
     blacklisted: blacklisted
     young:
       member:
@@ -1849,6 +1850,7 @@ voting:
         short: "t.khoản mới"
         full: "tài khoản mới"
     configuration:
+      regulation: Quy định Vote
       vote_state: Phương thức Đếm vote
       voter_requirements: Yêu cầu cho Người vote
       participant_requirements:
@@ -1878,7 +1880,7 @@ voting:
     no_emoji:
       short: Không có biểu tượng cảm xúc trong cấu hình
       full: Không có biểu tượng cảm xúc trong cấu hình. Nhấn 'Thiết lập Biểu tượng' dưới đây để thiết lập biểu tượng riêng cho việc đếm phiếu
-    back: trở lại
+    back: Trở lại
     voter_requirement:
       join: Đặt Thời gian Tham gia
       register: Đặt Thời gian Đăng ký T.khoản
@@ -1904,7 +1906,7 @@ voting:
           **Member**: Đếm __tổng số member đã react__ vào tin nhắn,
           **Strict**: Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})
 
-          Chọn phương pháp dưới đây. Lựa chọn hiện tại: **{}**"
+          Chọn phương pháp dưới đây. Lựa chọn hiện tại: **{}**
     participate_method: 
       embed:
         title: Phương thức Tham gia
@@ -1947,6 +1949,6 @@ voting:
         end:
           description: Kết thúc phiên bầu chọn của máy chủ
           translation:
-            ending: Phiên này đang trong quá trình lưu với ID `{}` - bạn có thể kiểm tra lại sau.
+            ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
             saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`**` session:{0}`.
