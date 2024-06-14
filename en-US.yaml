@@ -554,29 +554,6 @@ outage:
           để xem mã điện lực.
         keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
 
-gtn: 
-  description: Create a Guess the number game instance
-  commands:
-    create: 
-      description: Create 'Guess the number' Game
-      options:
-        num_range: Generate a random number between 0 and {num_range}, default is
-          400, can only in range 1 - 10000
-        start_after: The time (minute) to start after the command being submitted, default
-          is 2, can only in range 1 - 10
-        game_rounds: Maximum number of round to play, default is 15, can only in range 1 - 20
-        round_duration: Duration on each round, default is 45, can only in range 25 - 90
-  buttons:
-    game_not_allowed: ":octagonal_sign: You are not allowed to participate in this game!"
-    already_entered: ":octagonal_sign: You already entered the number!"
-    input_not_allowed: ":octagonal_sign: You are not allowed to enter a number anymore!"
-    input_successful: ":inbox_tray: You entered the number!"
-    user_submitted: "{} entered a number!"
-
-    self_joined:
-    self_already_joined:
-    user_joined: 
-
 lemme: 
   description: Do you want to hug your best Discord friend? Try this out!
   command:
@@ -1191,6 +1168,7 @@ customrole:
     admin_title: "Custom Role Admin Configuration for {}"
     description: "**Total Custom Roles:** {}\n**Role Author Permission:**"
   common:
+    roles: Custom Roles
     permissions_choice:
       _true: "True"
       _false: "False"
@@ -1221,8 +1199,8 @@ customrole:
         already_have_one: "{} already has a custom role {}, and you cannot create more than 1 custom role for each user."
         limit_exceeded: "You cannot create more than 100 custom roles for this guild."
         missing_permission: |
-          I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).
-          Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
+          I cannot create a role that has higher than or equal position with my highest role position (me: pos {0}, destination role: pos {1}) or your highest role position (me: pos {0}, your: pos {2}).
+          Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
         invalid_color: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
 
     max_users:

@@ -1137,6 +1137,7 @@ customrole:
     admin_title: "Cấu hình quản trị Custom Role cho {}"
     description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu vai trò:**"
   common:
+    roles: Custom Role
     permissions_choice:
       _true: "Có"
       _false: "Không"
@@ -1167,8 +1168,8 @@ customrole:
         already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
         missing_permission: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi.
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
 
     max_users:
