@@ -1313,14 +1313,14 @@ customrole:
           description: "Edit icon of your custom role"
           options:
             icon: Upload your icon here
-            emoji: A Custom Emoji or a Unicode Emoji. Add '\' before a Custom Emoji to get the right format
+            emoji: A Custom Emoji or a Unicode Emoji for the icon
 
           translation:
             require_7_boosts: "This feature requires your server to have **Level 2**, or 7 server boosts."
             invalid_image_format: "The icon should in `.png` or `.jpg` format and smaller than 256kb."
             invalid_image_scale: "The icon should be a square image."
             invalid_arguments: "You have to specify `icon` or `emoji`, you neither can specify both of them nor skip it."
-            invalid_emoji: "{} is not a valid Emoji/Custom Emoji. If you want to use Custom Emoji, add a character `\\` before your emoji. This turns \\\\<:superlol:1233540276233044022> to \\<:superlol:1233540276233044022>, and the \\<:superlol:1233540276233044022> is what you need."
+            invalid_emoji: "`{}` is not a valid Emoji/Custom Emoji in this guild."
         removeicon:
           description: "Remove icon from your custom role"
         mentionable:
