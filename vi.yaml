@@ -463,7 +463,7 @@ blocksmc:
     unlink:
       description: Hủy liên kết tài khoản của bạn từ cơ sở dữ liệu của bot
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
         successful: Đã hủy liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
 
     skin:
@@ -471,7 +471,7 @@ blocksmc:
       options:
         name: Chỉ định một tài khoản premium để render skin
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của chúng tôi, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
         successful: Đã liên kết tài khoản game của bạn với skin {} thành công!
 
     leaderboard:
@@ -623,7 +623,7 @@ donation:
     threshold:
       description: Chỉnh sửa ngưỡng thông báo ủng hộ
       options:
-        threshold: Chỉ định ngưỡng, nếu số tiền ủng hộ lớn hơn ngưỡng này, chúng tôi sẽ thông báo
+        threshold: Chỉ định ngưỡng, nếu số tiền ủng hộ lớn hơn ngưỡng này, bot sẽ thông báo
     
     leaderboard:
       description: Xem bảng xếp hạng ủng hộ
@@ -936,7 +936,7 @@ quickreport:
 
   send_report:
     channel_not_available: "Kênh nhận báo cáo từ người dùng hiện không tồn tại. Hãy thử lại sau vài phút, hoặc hỏi Quản trị viên Máy chủ về vấn đề này."
-    bot_missing_permission: "Bot hiện đang thiếu quyền **Gửi Tin nhắn (Send Messages)** hoặc **Gửi Embed (Embed Links)** trong kênh nhận báo cáo, vậy nên chúng tôi không thể gửi báo cáo này tới Người Quản lí. Bạn có thể hỏi Quản trị viên Máy chủ về vấn đề này."
+    bot_missing_permission: "Bot hiện đang thiếu quyền **Gửi Tin nhắn (Send Messages)** hoặc **Gửi Embed (Embed Links)** trong kênh nhận báo cáo, vậy nên bot không thể gửi báo cáo này tới Người Quản lí. Bạn có thể hỏi Quản trị viên Máy chủ về vấn đề này."
     cant_view: "Không thể truy xuất tin nhắn cụ thể, hãy đảm bảo rằng tôi có thể xem {}!"
     no_self_report: "Bạn không thể tự báo cáo chính mình."
     no_bot_report: "Bạn không thể báo cáo tin nhắn của bot."
@@ -1053,7 +1053,7 @@ quickreport:
         action: Chọn một hành động
         report_id: Chỉ định ID báo cáo
         reason: Chỉ định lý do cho sự chấp thuận này
-        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+        silent: Cho dù bot đã gửi tin nhắn này ở chế độ im lặng hay không
 
       choices:
         approve: Chấp thuận
@@ -1072,13 +1072,13 @@ quickreport:
         channel: Chỉ định kênh chứa tin nhắn
         message_id: Chỉ định ID tin nhắn
         reason: Lý do bạn muốn báo cáo tin nhắn này
-        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+        silent: Cho dù bot đã gửi tin nhắn này ở chế độ im lặng hay không
 
     recent:
       description: "[Quick Report] Xem các báo cáo gần đây"
       options:
         order: Chọn một hành động để sắp xếp kết quả
-        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+        silent: Cho dù bot đã gửi tin nhắn này ở chế độ im lặng hay không
         status: Chỉ định trạng thái cho kết quả truy vấn
         reporter: Chỉ định người báo cáo
         reported: Chỉ định thành viên đã bị báo cáo
@@ -1105,7 +1105,7 @@ quickreport:
       description: "[Quick Report] Xem báo cáo dựa trên ID"
       options:
         report_id: Chỉ định một ID báo cáo, hoặc chọn từ danh sách bên trên
-        silent: Cho dù chúng tôi đã gửi tin nhắn này ở chế độ im lặng hay không
+        silent: Cho dù bot đã gửi tin nhắn này ở chế độ im lặng hay không
 
       translation:
         no_report: "Không có báo cáo nào liên kết với ID `{}` trong máy chủ này!"
@@ -1137,14 +1137,17 @@ customrole:
     admin_title: "Cấu hình quản trị Custom Role cho {}"
     description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu vai trò:**"
   common:
+    unknown_role: "ID Role `{}` không thuộc về server này - role có thể đã bị xóa."
+    select_role: Chọn một Custom Role, hoặc chỉ định một Custom Role ID
+    cannot_edit_role: "Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}). Bạn có thể hỏi Quản trị viên của máy chủ về vấn đề này, xem xét việc thay đổi vai trò của tôi thành một vị trí cao hơn."
     roles: Custom Role
     permissions_choice:
       _true: "Có"
       _false: "Không"
       default: "Mặc định"
     role_not_registered: |
-      {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi.
-      Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của chúng tôi, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
+      {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
+      Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
   admin: "Nhóm Lệnh Quản trị Custom Role"
@@ -1153,7 +1156,7 @@ customrole:
     create:
       description: "Tạo & Gán một Custom Role không có quyền cho một thành viên"
       options:
-        above_role: "Custom Role mới sẽ ở trên vai trò này"
+        above_role: "Custom Role mới sẽ ở dưới vai trò này"
         author: "Chỉ định người sở hữu của Custom Role"
         name: "Chỉ định tên vai trò"
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
@@ -1201,8 +1204,8 @@ customrole:
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
       translation:
-        already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi, bạn không thể di chuyển vai trò này"
-        already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
+        already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
+        already_have_one: "{} đã có tối đa số lượng Custom Role, và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng vị trí cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
@@ -1230,14 +1233,14 @@ customrole:
     extend:
       description: "Gia hạn ngày hết hạn cho một Custom Role"
       options:
-        time_range: "Chỉ định phạm vi thời gian. Nhập '0' để là vĩnh viễn, '1' để xóa khi người sở hữu vai trò xóa boost"
+        time_range: "Chỉ định phạm vi thời gian (vd 1d2h). Nhập '0' = vĩnh viễn, '1' = xóa khi người sở hữu xóa boost"
     
     search: 
-      description: "Tìm kiếm một Custom Role được gán cho một thành viên, hoặc ngược lại"
+      description: "Tìm kiếm một Custom Role được gán cho một thành viên"
       translation:
         missing_arguments: "Bạn cần cung cấp `role` hoặc `member`, hoặc cả hai."
         unknown_author: "{} không được gán bất kỳ Custom Role nào."
-        unknown_role: "{} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của chúng tôi."
+        unknown_role: "{} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot."
       
     reduce:
       description: "Giảm thời gian cho một Custom Role được gán cho một thành viên, hoặc ngược lại"
@@ -1258,7 +1261,7 @@ customrole:
       common:
         no_role_found: "Bạn không có bất kỳ Custom Role nào trong server này."
         missing_permission: "Người quản trị của server này đã hạn chế bạn khỏi việc sử dụng cài đặt này."
-        role_expired: "Custom Role của bạn đã hết hạn."
+        role_expired: "Custom Role {} của bạn đã hết hạn {}. Để gia hạn Custom Role của bạn, hãy liên hệ với Quản trị viên Server."
         cannot_find_role: "Không thể tìm thấy Custom Role của bạn trong server, vui lòng thử lại sau..."
       subcommands:
         add:
@@ -1279,10 +1282,13 @@ customrole:
           description: "Chỉnh sửa biểu tượng của Custom Role của bạn"
           options:
             icon: Tải biểu tượng của bạn tại đây
+            emoji: Custom Emoji hoặc một Unicode Emoji. Thêm kí tự '\' trước Custom Emoji để lấy đúng định dạng
           translation:
             require_7_boosts: "Tính năng này yêu cầu server của bạn phải có **Cấp độ 2**, hoặc 7 boost server."
             invalid_image_format: "Biểu tượng phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
             invalid_image_scale: "Biểu tượng phải là một hình ảnh vuông."
+            invalid_arguments: "Bạn cần chỉ định `icon` hoặc `emoji`, bạn không được chỉ định cả 2 phần, hoặc bỏ qua cả 2 phần này"
+            invalid_emoji: "{} Không phải là một emoji/custom emoji hợp lệ trong máy chủ này. Nếu bạn muốn sử dụng custom emoji, thêm kí tự `\\` vào trước emoji của bạn. Emoji sẽ từ \\\\<:superlol:1233540276233044022> biến thành \\<:superlol:1233540276233044022>, và \\<:superlol:1233540276233044022> là thứ bạn cần."
         removeicon:
           description: "Xóa biểu tượng khỏi Custom Role của bạn"
         mentionable:
@@ -1322,7 +1328,7 @@ giveaway:
     participants: Người tham gia
     giveaway_participants: Những người tham gia Giveaway
     none_participants: Chưa có ai tham gia vào giveaway này cả, ;(
-    guild_unavailable: "Để xác định người chiến thắng, chúng tôi phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
+    guild_unavailable: "Để xác định người chiến thắng, bot phải truy xuất đầy đủ dữ liệu của người tham gia. Vì máy chủ này hiện không khả dụng, vui lòng thử lại sau vài phút."
     not_enought_entrants: 'Không có đủ người tham gia để xác định người chiến thắng cho giveaway này.'
     reroll_failed: Không thể reroll giveaway...
     winners: "Người chiến thắng: "
@@ -1335,7 +1341,7 @@ giveaway:
     new_giveaway: "🎉🎉 **GIVEAWAY MỚI** 🎉🎉"
     giveaway_ended: "🎉🎉 **GIVEAWAY ĐÃ KẾT THÚC** 🎉🎉"
     template:
-      note: "Bạn đang chỉnh sửa một Template Giveaway. Không cần lo về việc quên lưu thay đổi - chúng tôi sẽ tự lưu thay đổi của bạn mỗi khi bạn thực hiện chỉnh sửa!"
+      note: "Bạn đang chỉnh sửa một Template Giveaway. Không cần lo về việc quên lưu thay đổi - bot sẽ tự lưu thay đổi của bạn mỗi khi bạn thực hiện chỉnh sửa!"
       already_exists: Một Template Giveaway với tên đó đã tồn tại. Bạn có thể phải sử dụng một tên khác.
       maximum_reached: "Đã đạt đến giới hạn template giveaway tối đa (10)."
       saved: Đã lưu template thành công!
@@ -1535,7 +1541,7 @@ giveaway:
       embeds:
         preparing:
           title: Đang chuẩn bị...
-          description: Chúng tôi đang chuẩn bị dữ liệu cho thiết lập này, vui lòng đợi...
+          description: Bot đang chuẩn bị dữ liệu cho thiết lập này, vui lòng đợi...
 
         failed:
           title: Thiết lập thất bại!
@@ -1587,7 +1593,7 @@ giveaway:
       embeds:
         validating:
           title: Đang xác thực...
-          description: 'Chúng tôi đang xác thực đầu vào của bạn, vui lòng đợi...'
+          description: 'Bot đang xác thực đầu vào của bạn, vui lòng đợi...'
       translation:
         errors:
           requirements:
@@ -1832,7 +1838,7 @@ voting:
       description: Kênh vote không hợp lệ (có thể đã bị xóa). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút.
     missing_permission: 
       title: Thiếu Quyền
-      description: "Chúng tôi thiếu quyền để đọc phiếu bầu trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Máy chủ về vấn đề này."
+      description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Máy chủ về vấn đề này."
     
   translation: 
     none_running: Hiện không có phiên vote nào đang diễn ra trong máy chủ này.
@@ -1944,7 +1950,7 @@ voting:
           options:
             from_message: Chỉ định một ID tin nhắn để bắt đầu đếm phiếu sau đó
           translation:
-            missing_permission: "Chúng tôi thiếu quyền trong {} để đọc phiếu bầu: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
+            missing_permission: "Bot thiếu quyền trong {} để đọc phiếu bầu: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
             invalid_message: "ID Tin nhắn cung cấp cho {0} không hợp lệ. Đảm bảo rằng đó là một số nguyên hợp lệ và tồn tại trong {0}."
             already_running: "Máy chủ này đã có một phiên bầu chọn đang diễn ra trong <#{}>."
         end:
