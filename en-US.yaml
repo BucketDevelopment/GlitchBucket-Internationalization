@@ -1199,7 +1199,7 @@ customrole:
         manage_role_members_permission: "Let role's author can add/remove role members"
         make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
       translation:
-        already_have_one: "{} already has a custom role {}, and you cannot create more than 1 custom role for each user."
+        already_have_one: "{} has reached maximum customrole count, and you cannot create more than 10 custom role for each user."
         limit_exceeded: "You cannot create more than 100 custom roles for this guild."
         missing_permission: |
           I cannot create a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
@@ -1236,7 +1236,7 @@ customrole:
         expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for pernament, '1' for until remove boost"
       translation:
         already_migrated: "{} is a role that has been registered as a custom role in our database, you cannot migrate this role"
-        already_have_one: "{} already has a custom role {}, and you cannot create more than 1 custom role for each user."
+        already_have_one: "{} has reached maximum customrole count, and you cannot create more than 10 custom role for each user."
         limit_exceeded: "You cannot create more than 100 custom roles for this guild."
         missing_permission: |
           I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).

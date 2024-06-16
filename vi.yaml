@@ -1168,7 +1168,7 @@ customrole:
         manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
         make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
       translation:
-        already_have_one: "{} đã có một Custom Role {}, và bạn không thể tạo nhiều hơn 1 Custom Role cho mỗi người dùng."
+        already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
@@ -1205,7 +1205,7 @@ customrole:
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
       translation:
         already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
-        already_have_one: "{} đã có tối đa số lượng Custom Role, và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
+        already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng vị trí cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
