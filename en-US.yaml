@@ -1184,6 +1184,15 @@ customrole:
   admin: "Custom Role Admin Command Group"
   user: "Custom Role User Command Group"
   commands:
+    warning:
+      description: Send a warning message when a role is close to expiration date
+      options:
+        before: Specify time (e.g. 1d1h) is the role duration remaining to send a warning
+        message: "[BucketScript Compatible] Specify expiration warning message"
+        channel: "Specify a channel to post warnings"
+
+    clear_warning:
+      description: Clear warning message configuration
     create:
       description: "Create & Assign a custom none-permission role to a member"
       options:
