@@ -646,7 +646,7 @@ donation:
     message:
       description: Chỉnh sửa tin nhắn ủng hộ khi kích hoạt
       options:
-        message: 'Placeholder: {amount}, {donator_id}, {donator_name}, {donator_displayname}, {donator_mention}'
+        message: '[Tích hợp BucketScript] Chỉ định tin nhắn khi nhận được donate. Placeholder mới: {amount}'
     
     receiverole:
       description: Đặt vai trò cho người nhận
@@ -779,7 +779,7 @@ stickie:
         list: "Các kênh có Thông báo cố định: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
 
     message: 
-      description: Đặt Thông báo cố định, một khung lệnh sẽ xuất hiện và lắng nghe nội dung bạn nhập!
+      description: "[Tích hợp BucketScript] Đặt Thông báo cố định"
       options:
         channel: Chọn một kênh để chỉ định Thông báo cố định
       translation: 

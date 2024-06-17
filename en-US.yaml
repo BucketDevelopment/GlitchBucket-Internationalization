@@ -673,7 +673,7 @@ donation:
     message: 
       description: Edit donation message when triggered
       options:
-        message: 'Placeholders: {amount}, {donator_id}, {donator_name}, {donator_displayname}, {donator_mention}'
+        message: '[BucketScript Compatible] Set message when receive a donation. Extra Placeholders: {amount}'
     
     receiverole: 
       description: Set a role for receiver
@@ -808,7 +808,7 @@ stickie:
         list: "List of channels contains Sticky Message: {}\nUse </stickie configuration:1158663116662525962> to view configuration"
 
     message: 
-      description: Set Sticky Message, a modal will appear and listen to your input!
+      description: "[BucketScript Compatible] Set Sticky Message for a channel"
       options:
         channel: Select a channel to assign Sticky Message
       translation: 
@@ -1697,6 +1697,7 @@ giveaway:
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
+    embed: Specify Embed name
     invalid:
       greeting: Your server doesn't have any Greeting Message. Consider create one by using `/bucketscript greeting message`
       farewell: Your server doesn't have any Farewell Message. Consider create one by using `/bucketscript farewell message`
