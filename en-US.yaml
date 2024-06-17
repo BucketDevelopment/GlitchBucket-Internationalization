@@ -1188,7 +1188,7 @@ customrole:
       description: Send a warning message when a role is close to expiration date
       options:
         before: Specify time (e.g. 1d1h) is the role duration remaining to send a warning
-        message: "[BucketScript Compatible] Specify expiration warning message. Extra placeholders: {role_id}, {remaining}"
+        message: "[BucketScript Compatible] Set expiration warning message. Extra placeholders: {role_id}, {remaining}"
         channel: "Specify a channel to post warnings"
 
     clear_warning:
