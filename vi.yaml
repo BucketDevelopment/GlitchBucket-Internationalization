@@ -1157,7 +1157,7 @@ customrole:
       description: Gửi một thông báo ghi một role sắp hết hạn
       options:
         before: Chỉ định thời hạn (vd. 1d1h) là thời lượng còn lại của 1 custom role trước khi hết hạn
-        message: "[Tích hợp BucketScript] Chỉ định tin nhắn thông báo hết hạn"
+        message: "[Tích hợp BucketScript] Chỉ định tin nhắn thông báo hết hạn. Placeholder mới: {role_id}, {remaining}"
         channel: "Chỉ định một kênh để gửi thông báo"
 
     clear_warning:
