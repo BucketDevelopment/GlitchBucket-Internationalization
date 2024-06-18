@@ -1697,6 +1697,7 @@ giveaway:
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
+    preparing: Preparing data, please wait...
     embed: Specify Embed name
     invalid:
       greeting: Your server doesn't have any Greeting Message. Consider create one by using `/bucketscript greeting message`
@@ -1796,6 +1797,22 @@ bucketscript:
           label: Inline
           placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
   commands:
+    embed:
+      create:
+        description: Create an Embed for BucketScript
+        translation:
+          already_exists: An embed with that name already exists. Please choose another name, or use `/bucketscript embed edit` to edit an existing embed.
+          maximum_reached: You cannot create more than 15 embeds in this server.
+      edit:
+        description: Edit a BucketScript Embed
+        translation:
+          unknown_embed: There is no embed with that name in our BucketScript database.
+
+      delete:
+        description: Delete a BucketScript Embed
+        translation:
+          unknown_embed: There is no embed with that name in our BucketScript database.
+
     greeting:
       subcommands:
         message:

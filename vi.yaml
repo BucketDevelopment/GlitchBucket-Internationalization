@@ -1763,6 +1763,21 @@ bucketscript:
           label: Inline
           placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
   commands:
+    embed:
+      create:
+        description: Tạo một Embed cho BucketScript
+        translation:
+          already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/bucketscript embed edit` để chỉnh sửa một embed hiện có.
+          maximum_reached: Bạn không thể tạo hơn 15 embed trong máy chủ này.
+      edit:
+        description: Chỉnh sửa một BucketScript Embed
+        translation:
+          unknown_embed: Không có embed nào với tên đó trong cơ sở dữ liệu BucketScript của bot.
+      delete:
+        description: Xóa một BucketScript Embed
+        translation:
+          unknown_embed: Không có embed nào với tên đó trong cơ sở dữ liệu BucketScript của bot.
+
     greeting:
       subcommands:
         message:
