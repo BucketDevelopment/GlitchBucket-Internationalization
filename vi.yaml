@@ -1984,3 +1984,89 @@ voting:
             ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
             saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`**` session:{0}`.
+
+tasks:
+  description: Tạo các tác vụ tự động
+  current_setting:
+    mode: Chế độ khóa
+    lock: Khóa hàng ngày lúc
+    unlock: Mở khóa hàng ngày lúc
+    paused: Tạm dừng?
+    ignore: Bỏ qua khóa vào
+    id: Task UUID
+
+  common:
+    task: Chọn một tác vụ từ autocomplete, hoặc chỉ định ID tác vụ
+    invalid_task: ID tác vụ không hợp lệ `{}` cho guild này.
+  commands:
+    autolock:
+      description: Tự động khóa kênh
+      create:
+        description: Tạo một tác vụ tự động khóa hàng ngày cho một kênh cụ thể
+        options:
+          task_name: Chỉ định tên tác vụ
+          timezone: Chọn múi giờ cho máy chủ này
+          lock_at: Khi nào kênh sẽ bị khóa, chỉ định theo định dạng hh:mm.
+          unlock_at: Khi nào kênh sẽ được mở khóa, chỉ định theo định dạng hh:mm.
+        translation:
+          invalid_time: Đầu vào thời gian `{}` không hợp lệ. Bạn có thể nhập theo định dạng `hh:mm`, với `hh` = giờ (00 - 23), `mm` = phút (00 - 59), tất cả đều 2 chữ số.
+          invalid_time_gap: Khoảng thời gian giữa `lock_at` & `unlock_at` phải lớn hơn 180 giây (3 phút)
+          overlapped: "Tác vụ của bạn đã bị chồng chéo với một tác vụ khác: `{}`. \nĐảm bảo không thêm một tác vụ với thời gian bị chồng chéo với tác vụ khác (ví dụ: một tác vụ khóa từ 21:00 -> 22:00 không thể chồng chéo với tác vụ khóa khác trong 21:30 -> 22:30)"
+      
+      mode:
+        description: Chỉnh sửa chế độ tự động khóa cho một tác vụ cụ thể
+        options:
+          task: Chỉ định tác vụ
+        choices:
+          action:
+            _0: Chỉ vô hiệu hóa nhập tin nhắn
+            _1: Chỉ loại bỏ khả năng thấy kênh
+            _2: Cả vô hiệu hóa nhập tin nhắn & loại bỏ khả năng thấy kênh
+
+      rename: 
+        description: Đổi tên một tác vụ
+        options:
+          name: Chỉ định tên
+
+      setstatus:
+        description: Tạm dừng/Tiếp tục một tác vụ tự động khóa cụ thể
+        options:
+          task: Chọn một tác vụ
+        choices:
+          action:
+            _0: Tiếp tục
+            _1: Tạm dừng
+        translation:
+          resume_only: Tác vụ này hiện đang bị tạm dừng, bạn chỉ có thể tiếp tục nó.
+          pause_only: Tác vụ này hiện đang hoạt động, bạn chỉ có thể tạm dừng nó.
+
+      configuration: 
+        description: Xem cấu hình của một tác vụ cụ thể
+      
+      delete:
+        description: Xóa một tác vụ cụ thể
+
+      ignore_date:
+        description: Bỏ qua thực thi tác vụ vào ngày cụ thể
+        options:
+          date: Chỉ định một ngày
+        choices:
+          date:
+            monday: Thứ Hai
+            tuesday: Thứ Ba
+            wednesday: Thứ Tư
+            thursday: Thứ Năm
+            friday: Thứ Sáu
+            saturday: Thứ Bảy
+            sunday: Chủ Nhật
+        translation:
+          remove_only: Task ID `{}` đã bỏ qua ngày này, bạn chỉ có thể loại bỏ chúng.
+          add_only: Task ID `{}` không bỏ qua ngày này, bạn chỉ có thể thêm chúng vào danh sách bỏ qua.
+
+      list:
+        description: Liệt kê tất cả các tác vụ thuộc về máy chủ này
+        translation:
+          none_tasks: Máy chủ này không có bất kỳ tác vụ nào.
+          embed:
+            title: Danh sách tác vụ cho {}
+            description: ":blue_square: - Không bị tạm dừng | :red_square: - Bị tạm dừng\n\n"

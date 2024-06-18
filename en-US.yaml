@@ -2019,3 +2019,90 @@ voting:
             ending: This session is currently in save progess, you can check back later.'
             saving: Saving data, please wait for some minutes ...
             saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`**` session:{0}`.
+
+tasks:
+  description: Create Automatic tasks
+  current_setting:
+    mode: Lock mode
+    lock: Daily lock at
+    unlock: Daily unlock at
+    paused: Paused?
+    ignore: Ignore lock on
+    id: Task UUID
+
+  common:
+    task: Choose a task from autocomplete, or specity task ID
+    invalid_task: Invalid task ID `{}` for this guild.
+  commands:
+    autolock:
+      description: Automatic lock channels
+      create:
+        description: Create a daily auto-lock task for a specific channel
+        options:
+          task_name: Specify task name
+          timezone: Select timezone for this server
+          lock_at: When the channel should locked down, specify by hh:mm format.
+          unlock_at: When the channel should unlock, specify by hh:mm format.
+        translation:
+          invalid_time: Invalid `{}` time input. You may input in format `hh:mm`, with `hh` = hour (00 - 23), `mm` = minute (00 - 59), all in 2 digits.
+          invalid_time_gap: Time gap between `lock_at` & `unlock_at` must be larger than 180 seconds (3 minutes)
+          overlapped: "Your task has overlapped another task: `{}`. \nMake sure to not add a task with time that overlapped another one (e.g. a lockdown task from 21:00 -> 22:00 cannot overlap another lockdown task in 21:30 -> 22:30)"
+      
+      mode:
+        description: Edit auto-lock mode for a specific task
+        options:
+          task: Specify task
+        choices:
+          action:
+            _0: Disable message typing only
+            _1: Remove channel visible only
+            _2: Both disable message & remove channel visible
+
+      rename: 
+        description: Rename a task
+        options:
+          name: Specify a name
+
+      setstatus:
+        description: Pause/Resume a specific auto-lock task
+        options:
+          task: Choose a task
+        choices:
+          action:
+            _0: Resume
+            _1: Pause
+        translation:
+          resume_only: This task is currently paused, you can only resume it.
+          pause_only: This task is currently in action, you can only pause it.
+
+
+      configuration: 
+        description: View configuration of a specific task
+      
+      delete:
+        description: Delete a specific task
+
+      ignore_date:
+        description: Ignore task execution on specific date
+        options:
+          date: Specify a date
+        choices:
+          date:
+            monday: Monday
+            tuesday: Tuesday
+            wednesday: Wednesday
+            thursday: Thursday
+            friday: Friday
+            saturday: Saturday
+            sunday: Sunday
+        translation:
+          remove_only: Task ID `{}` already ignored this date, you can only remove them.
+          add_only: Task ID `{}` are not ignored this date, you can only add them to ignore list.
+
+      list:
+        description: List all tasks belong to this server
+        translation:
+          none_tasks: This server does not have any tasks.
+          embed:
+            title: Task List for {}
+            description: ":blue_square: - Not paused | :red_square: - Paused\n\n"
