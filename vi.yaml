@@ -1269,7 +1269,7 @@ customrole:
         delete: "Xóa vai trò"
     user:
       common:
-        no_role_found: "Bạn không có bất kỳ Custom Role nào trong server này."
+        no_role_found: "Bạn không có bất kỳ Custom Role nào với ID đó trong server này."
         missing_permission: "Người quản trị của server này đã hạn chế bạn khỏi việc sử dụng cài đặt này."
         role_expired: "Custom Role {} của bạn đã hết hạn {}. Để gia hạn Custom Role của bạn, hãy liên hệ với Quản trị viên Server."
         cannot_find_role: "Không thể tìm thấy Custom Role của bạn trong server, vui lòng thử lại sau..."

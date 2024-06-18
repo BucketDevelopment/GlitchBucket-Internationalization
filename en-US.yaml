@@ -1299,7 +1299,7 @@ customrole:
         delete: "Delete the role"
     user:
       common:
-        no_role_found: "You do not have any Custom Role in this server."
+        no_role_found: "You do not have any Custom Role with that ID in this server."
         missing_permission: "Administrator of this Server has restricted you from using this setting."
         role_expired: "Your Custom Role {} has been expired {}. To extend your Custom Role, contact a Server Administrator."
         cannot_find_role: "Cannot find your custom role in the server, please try again later..."
