@@ -811,8 +811,7 @@ stickie:
       description: Đặt độ trễ cho Thông báo cố định
       options:
         channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
-        delay: Phạm vi từ 1 - 15, Thông báo cố định sẽ xuất hiện trong trò chuyện sau khi
-          trò chuyện không hoạt động trong {delay} giây
+        delay: Thông báo cố định sẽ xuất hiện sau khi trò chuyện không hoạt động trong {delay} giây
 
     allowmentions: 
       description: Đặt quy tắc AllowedMention cho Thông báo cố định
@@ -1172,11 +1171,11 @@ customrole:
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
         color: "Chỉ định màu vai trò"
-        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
       translation:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
@@ -1225,20 +1224,20 @@ customrole:
     set_permission:
       description: "Đặt quyền cho một Custom Role"
       options: 
-        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
         
     default_author_permission: 
       description: "Chỉnh sửa quyền mặc định cho người sở hữu của vai trò"
       options:
-        edit_name_permission: "Cho phép người sở hữu của vai trò có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu của vai trò có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu của vai trò có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu của vai trò có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu của vai trò có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
 
     extend:
       description: "Gia hạn ngày hết hạn cho một Custom Role"
