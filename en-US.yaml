@@ -1697,6 +1697,9 @@ giveaway:
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
+    unknown_embed: | 
+      Unknown embed `{}` for guild `{}`
+      To create an emmbed, use </bucketscript embed create:1245661361673863238>
     preparing: Preparing data, please wait...
     embed: Specify Embed name
     invalid:

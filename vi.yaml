@@ -1664,6 +1664,11 @@ giveaway:
 bucketscript:
   description: "Tiện ích để xử lý các tin nhắn & embed động."
   translation:
+    unknown_embed: | 
+      Unknown embed `{}` for guild `{}`
+      To create an emmbed, use </bucketscript embed create:1245661361673863238>
+    preparing: Đang chuẩn bị dữ liệu, hãy đợi chút...
+    embed: Chỉ định tên Embed
     invalid:
       greeting: Máy chủ của bạn không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/bucketscript greeting message`
       farewell: Máy chủ của bạn không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/bucketscript farewell message`
