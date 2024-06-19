@@ -375,19 +375,6 @@ security:
 
         task_done: "Successfully unbanned {}/{} user."
 
-debug: 
-  description: Setup Automatic Security for your server
-  commands:
-    cancernickname: 
-      description: Automatic rewrite username when they're sucks
-      options:
-        enable: Whether enable this feature or not
-    
-    lockinvite: 
-      description: Automatic lock invite
-      options:
-        enable: Whether enable this feature or not
-
 blocksmc: 
   common:
     invalid_player: "{} is an invalid player name. Make sure that you input contains only numbers or/and alphabet characters."
@@ -1904,6 +1891,7 @@ voting:
       description: "We are missing permission to read votes in {}: **Manage Messages**, **Read Message History**, **Read Messages** & **Add Reactions**.\nYou may have to contact Server Administrator about this problem."
     
   translation: 
+    none_vote: "*There is no valid votes in this channel.*"
     none_running: There is no vote session running in this guild.
     require_setup: This guild has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
     cache: "\nCached {} ago • Renew every 5 minutes"
