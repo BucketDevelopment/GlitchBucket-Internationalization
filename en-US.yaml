@@ -1881,8 +1881,8 @@ voting:
     blacklist_whitelist: Select a role for blacklist/whitelist
   embeds:
     preparing: 
-      title:
-      description:
+      title: 'Preparing...'
+      description: 'We are preparing data for this server, please wait for some minutes.'
     invalid_channel: 
       title: Invalid voting channel!
       description: The voting channel is invalid (may deleted). If your believe this is an error, please try again after a minute.

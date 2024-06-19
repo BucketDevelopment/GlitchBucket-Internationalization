@@ -1860,8 +1860,8 @@ voting:
     blacklist_whitelist: Chọn vai trò cho blacklist/whitelist
   embeds:
     preparing: 
-      title:
-      description:
+      title: 'Đang chuẩn bị...'
+      description: 'Bot hiện đang chuẩn bị dữ liệu cho server này, vui lòng quay trở lại trong vài phút.'
     invalid_channel: 
       title: Kênh vote không hợp lệ!
       description: Kênh vote không hợp lệ (có thể đã bị xóa). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút.
