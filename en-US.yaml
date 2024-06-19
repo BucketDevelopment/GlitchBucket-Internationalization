@@ -107,8 +107,8 @@ snipe:
     page_none: "There is no message in page **{}**"
     invalid_page: "**{}** is not a valid page."
     from: 
-      deleted: "Message deleted by {}, {} ago"
-      edited: "Message edited by {}, {} ago"
+      deleted: "### Message deleted by {}, {} ago"
+      edited: "### Message edited by {}, {} ago"
     channel_none: "There are no recent deleted messages found in this channel within 28 days."
 
 help: 
@@ -2007,7 +2007,7 @@ voting:
         end:
           description: End server's vote session
           translation:
-            ending: This session is currently in save progess, you can check back later.'
+            ending: This session is currently in save progess, you can check back later.
             saving: Saving data, please wait for some minutes ...
             saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`**` session:{0}`.
 

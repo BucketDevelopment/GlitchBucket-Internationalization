@@ -32,13 +32,13 @@ common:
     amount: "Hãy ghi số sượng"
     enable: "Cho biết có nên kích hoạt điều này hay không"
   config:
-    saved: "Đã lưu cấu hình thành công!"
-    edited: "Đã chỉnh sửa cấu hình thành công!"
-    updated: "Đã cập nhật cấu hình thành công!"
+    saved: "Đã lưu configuration thành công!"
+    edited: "Đã chỉnh sửa configuration thành công!"
+    updated: "Đã cập nhật configuration thành công!"
   
   cooldown:
     triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
-    expired: ":stopwatch: Lệnh đang trong thời gian chờ đã hết hạn. Bây giờ bạn đã có thể sử dụng lệnh."
+    expired: ":stopwatch: Cooldown của lệnh đã kết thúc. Bây giờ bạn đã có thể sử dụng lại lệnh."
   
   error:
     client_desync: "### :warning: Lệnh này đã lỗi thời so với máy của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
@@ -107,8 +107,8 @@ snipe:
     page_none: "Không có tin nhắn nào ở trang **{}**"
     invalid_page: "**{}** không phải là một trang hợp lệ."
     from: 
-      deleted: "Tin nhắn đã xóa của {}, {} trước đó"
-      edited: "Tin nhắn đã chỉnh sửa của {}, {} trước đó"
+      deleted: "### Tin nhắn đã xóa của {}, {} trước đó"
+      edited: "### Tin nhắn đã chỉnh sửa của {}, {} trước đó"
     channel_none: "Không tìm thấy tin nhắn đã xóa gần đây nào trong kênh này trong vòng 28 ngày."
 
 help: 
