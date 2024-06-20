@@ -203,9 +203,9 @@ illustration:
     long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ của bạn hoặc thay đổi đối số lệnh.*\n_ _"
     suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử "
 
-    author: "Tác giả"
-    original: "Bài đăng gốc"
-    tag: "Thẻ"
+    author: "Author: "
+    original: "Bài đăng gốc: "
+    tag: "Tag"
     multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*"
     less_amount: "***Cảnh báo:** Thẻ minh họa này trả về số lượng tác phẩm nghệ thuật ít (Tổng cộng: {})! Điều này có thể dẫn đến kết quả chất lượng thấp.*"
     less_accurracy: "***Cảnh báo:** Thẻ minh họa nhập của bạn dài hơn 2 từ! Điều này có thể dẫn đến kết quả chất lượng thấp.*\n_ _"
