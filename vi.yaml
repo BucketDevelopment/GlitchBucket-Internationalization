@@ -18,8 +18,77 @@ common:
     Chúng tôi đã tự động phát hiện ngôn ngữ máy chủ của bạn là {1} ({2}), vì vậy máy chủ của bạn sẽ sử dụng cấu hình ngôn ngữ {1}.
     Để thay đổi cài đặt về ngôn ngữ ứng dụng, bạn có thể sử dụng </locale guildset:1191310036950069269> hoặc </locale myself:1191310036950069269>.
 
-    [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
-  
+    [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
+  ban: 
+    removed: |
+      ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
+      ~~                                                                                                        ~~
+      Lệnh cấm hiện tại của bạn đã được gỡ bỏ, với lý do sau:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      Chúng tôi xin lỗi vì bất kỳ sai sót nào mà chúng tôi đã đưa ra.
+      Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS ).
+
+      [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Máy chủ hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
+    
+    temporarily: |
+      ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
+      ~~                                                                                                        ~~
+      Bạn đã bị **tạm thời cấm** sử dụng bot, với lý do sau:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      Lệnh cấm của bạn sẽ kết thúc vào <t:{1}:R>.
+      Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS ).
+
+      [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS)
+    
+    permanently: |
+      ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
+      ~~                                                                                                        ~~
+      Bạn đã bị **vĩnh viễn cấm** sử dụng bot, với lý do sau:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS ).
+
+      [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS)
+    
+    modify:
+      temporarily: |
+        ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
+        ~~                                                                                                        ~~
+        Lệnh cấm hiện tại của bạn đã được sửa đổi, và bây giờ bạn bị **tạm thời cấm** sử dụng bot, với lý do sau:
+
+        *{0}*
+
+        ~~                                                                                                        ~~
+        Lệnh cấm của bạn sẽ kết thúc vào <t:{1}:R>.
+        Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS ).
+
+        [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS)
+      
+      permanently: |
+        ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
+        ~~                                                                                                        ~~
+        Lệnh cấm hiện tại của bạn đã được sửa đổi, và bây giờ bạn bị **vĩnh viễn cấm** sử dụng bot, với lý do sau:
+
+        *{0}*
+
+        ~~                                                                                                        ~~
+        Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS ).
+
+        [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Máy chủ hỗ trợ](https://discord.gg/WDc5uF9wyS)
+    
+    reason:
+      elevated_errors: Bạn đã gặp phải số lượng lỗi cao trong thời gian ngắn, vui lòng không thực hiện lại hành động này. Hỏi về nó, hoặc báo cáo chúng trong Máy chủ hỗ trợ của chúng tôi.
+      none: Không có lý do được cung cấp.
+      terms_violated: Bạn đã vi phạm Điều khoản Dịch vụ của bot, vì vậy chúng tôi đã ngưng bạn sử dụng dịch vụ của chúng tôi.
+
   options:
     role: "Chọn vai trò"
     category: "Chọn danh mục"

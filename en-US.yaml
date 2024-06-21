@@ -18,8 +18,75 @@ common:
     We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
     To change application's setting about localization, you can use </locale guildset:1191310036950069269> or </locale myself:1191310036950069269>.
 
-    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://tudubucket.dev/application/GlitchBucket/term-of-service>) - [Privacy Policy](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
-  
+    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+  ban: 
+    removed: |
+      ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
+      ~~                                                                                                        ~~
+      Your current ban has been removed, with the following reason:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      We are sorry for any mistakes we made
+      For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
+
+      [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+    
+    temporarily: |
+      ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
+      ~~                                                                                                        ~~
+      You have been **temporarily banned** from the bot, with the following reason:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      Your ban will ends <t:{1}:R>.
+      For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
+
+      [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+    permanently: |
+      ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
+      ~~                                                                                                        ~~
+      You have been **permanently banned** from the bot, with the following reason:
+
+      *{0}*
+
+      ~~                                                                                                        ~~
+      For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
+
+      [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+    modify:
+      temporarily: |
+        ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
+        ~~                                                                                                        ~~
+        Your current ban has been modified, and now you're **temporarily banned** from the bot, with the following reason:
+
+        *{0}*
+
+        ~~                                                                                                        ~~
+        Your ban will ends <t:{1}:R>.
+        For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
+
+        [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+      
+      permanently: |
+        ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
+        ~~                                                                                                        ~~
+        Your current ban has been modified, and now you're **permanently banned** from the bot, with the following reason:
+
+        *{0}*
+
+        ~~                                                                                                        ~~
+        Your ban will ends <t:{1}:R>.
+        For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
+
+        [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
+    
+    reason:
+      elevated_errors: You have reached high number of errors in a short period of time, please do not perform these action again. Ask about it, or report them in our Support Server instead.
+      none: No reason provided.
+      terms_violated: You have violated Terms & Conditions of the bot, so we have to stop you from using our service. 
   options:
     role: "Select a role"
     category: "Select a category"
