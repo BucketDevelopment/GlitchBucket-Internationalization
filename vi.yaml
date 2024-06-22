@@ -1367,6 +1367,7 @@ customrole:
             invalid_image_scale: "Biểu tượng phải là một hình ảnh vuông."
             invalid_arguments: "Bạn cần chỉ định `icon` hoặc `emoji`, bạn không được chỉ định cả 2 phần, hoặc bỏ qua cả 2 phần này"
             invalid_emoji: "{} Không phải là một emoji/custom emoji hợp lệ trong máy chủ này."
+            invalid_emoji_id: "`{}` Không phải là một Emoji ID hợp lệ."
         removeicon:
           description: "Xóa biểu tượng khỏi Custom Role của bạn"
         mentionable:

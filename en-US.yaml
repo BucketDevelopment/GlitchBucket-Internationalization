@@ -1384,6 +1384,7 @@ customrole:
             invalid_image_scale: "The icon should be a square image."
             invalid_arguments: "You have to specify `icon` or `emoji`, you neither can specify both of them nor skip it."
             invalid_emoji: "`{}` is not a valid Emoji/Custom Emoji in this guild."
+            invalid_emoji_id: "`{}` is not a valid Emoji ID."
         removeicon:
           description: "Remove icon from your custom role"
         mentionable:
