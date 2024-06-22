@@ -1360,7 +1360,7 @@ customrole:
           description: "Chỉnh sửa biểu tượng của Custom Role của bạn"
           options:
             icon: Tải icon của bạn tại đây
-            emoji: Sử dụng Custom Emoji của server hoặc một Unicode Emoji cho icon
+            emoji: Sử dụng Emoji ID, Custom Emoji của server, hoặc một Unicode Emoji cho icon
           translation:
             require_7_boosts: "Tính năng này yêu cầu server của bạn phải có **Cấp độ 2**, hoặc 7 boost server."
             invalid_image_format: "Biểu tượng phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
