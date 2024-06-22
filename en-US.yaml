@@ -1376,7 +1376,7 @@ customrole:
           description: "Edit icon of your custom role"
           options:
             icon: Upload your icon here
-            emoji: A Emoji ID, Custom Server Emoji, or a Unicode Emoji for the icon
+            emoji: An Emoji ID, Custom Server Emoji, or a Unicode Emoji for the icon
 
           translation:
             require_7_boosts: "This feature requires your server to have **Level 2**, or 7 server boosts."
