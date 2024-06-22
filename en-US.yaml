@@ -965,7 +965,9 @@ quickreport:
   context_menu:
     name: Report this Message
   current_setting:
-    title: f"Quick Report Configuration for {}"
+    report_updated: | 
+      Your report ID `{}` for server **{}** has been updated. 
+    title: "Quick Report Configuration for {}"
     source: 
       name: "Reports Sources"
       any: "Any Channel (Server-wide)"

@@ -950,6 +950,8 @@ quickreport:
   context_menu:
     name: Báo cáo tin nhắn này
   current_setting:
+    report_updated: | 
+      Báo cáo với ID `{}` của bạn tại server **{}** đã được cập nhật. 
     title: "Cấu hình Quick Report cho {}"
     source:
       name: "Nguồn báo cáo"
