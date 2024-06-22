@@ -868,7 +868,7 @@ stickie:
         threshold: Ngưỡng tin nhắn
         inactive: Thời gian trì hoãn trò chuyện không hoạt động
       translation:
-        already_set: Kênh <#{}> đã được đặt ở chế độ **{}**!
+        already_set: Kênh {} đã được đặt ở chế độ **{}**!
 
     webhook: 
       description: Đặt webhook tùy chỉnh cho Thông báo cố định
