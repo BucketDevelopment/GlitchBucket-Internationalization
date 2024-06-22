@@ -1147,7 +1147,7 @@ quickreport:
 
       translation:
         no_manager_role: "Report Manager Role has not been set in confuguration! Please use </quickreport manager:1182566872810541056> to add one."
-        no_perm: "Update reports requires either Administrator or <@&{}>."
+        no_perm: "Update reports requires either Manage Members or Manage Report Role."
         no_report: "There are no report with ID `{}` associated with this guild!"
         no_override: "Report with ID `{}` has been updated earlier, you cannot override the update!"
         successful: "Successfully updated report with ID `{}`!"

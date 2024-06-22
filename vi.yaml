@@ -1131,7 +1131,7 @@ quickreport:
 
       translation:
         no_manager_role: "Vai trò Quản lý báo cáo chưa được đặt trong cấu hình! Vui lòng sử dụng </quickreport manager:1182566872810541056> để thêm một."
-        no_perm: "Cập nhật báo cáo yêu cầu quyền Quản trị viên hoặc <@&{}>."
+        no_perm: "Cập nhật báo cáo yêu cầu quyền Quản lí Member hoặc Vai trò quản lí."
         no_report: "Không có báo cáo nào có ID `{}` liên kết với máy chủ này!"
         no_override: "Báo cáo có ID `{}` đã được cập nhật trước đó, bạn không thể ghi đè bản cập nhật!"
         successful: "Đã cập nhật thành công báo cáo có ID `{}`!"
