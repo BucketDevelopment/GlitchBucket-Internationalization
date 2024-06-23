@@ -564,6 +564,7 @@ blocksmc:
           compact: "Trình bày nhỏ gọn (Mặc định)"
           full: "Đầy đủ thông tin người chơi"
       translation:
+        unknown_guild: "`{}` là một guild không hợp lệ. Nếu bạn muốn tìm guild của bạn, hãy sử dụng tên guild (không phải tag có 3 chữ) để tìm kiếm"
         name: Tên
         owner: Chủ Guild
         created_at: Tạo lúc

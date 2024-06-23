@@ -510,6 +510,7 @@ blocksmc:
           compact: "Compact (Default)"
           full: "Full members information"
       translation:
+        unknown_guild: "`{}` is an invalid guild name. If your guild does not on the autocomplete, use your guild name (not guild 3-letter tag) to search."
         name: Name
         owner: Guild Owner
         created_at: Created at
