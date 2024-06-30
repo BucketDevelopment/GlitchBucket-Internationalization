@@ -1285,6 +1285,7 @@ customrole:
         max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
       translation:
+        elevated_permissions: "{} không phải là một role không có quyền hạn (role có một số quyền). Để bảo mật, bot sẽ không đăng ký role này thành Custom Role."
         already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
