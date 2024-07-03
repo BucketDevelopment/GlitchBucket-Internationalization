@@ -2168,7 +2168,7 @@ minecraft:
           description: f"Không thể tách địa chỉ máy chủ/cổng (port) từ địa chỉ `{}`, hoặc tên máy chủ không phải là IPv4 hợp lệ, hoặc kết quả DNS từ tên máy chủ là `None`."
         failed:
           title: "Không thể kết nối tới máy chủ"
-          description: "Không thể kết nối tới `{}` ngay bây giờ, vui lòng thử lại sau.\n:information_source: **Lưu ý:** Bạn có thể thử kết nối tới địa chỉ khác trên cùng một domain, ví dụ: `play.hypixel.net` thay vì `hypixel.net`"
+          description: "Không thể kết nối tới `{}` ngay bây giờ, vui lòng thử lại sau.\n\n:information_source: **Lưu ý:** Bạn có thể thử kết nối tới địa chỉ khác trên cùng một domain, ví dụ: `play.hypixel.net` thay vì `hypixel.net`"
       translation:
         below_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `below_layer`. Vui lòng chọn lại từ danh sách autocomplete. Bot sẽ sử dụng `end_stone` làm mặc định.\n"
         above_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `above_layer`. Vui lòng chọn lại từ danh sách autocomplete.\n"
