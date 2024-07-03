@@ -1,5 +1,6 @@
 common:
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
+  ping: " **|** `Shard {}/{}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Để xem các lệnh có sẵn, sử dụng </help:> hoặc truy cập [Trang tài liệu](<https://docs.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
   _true: "Có"
   _false: "Không"
   support:
@@ -152,16 +153,16 @@ information: # Hoàn thành
       > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) & [Mời bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       > - [Điều khoản Dịch vụ](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Chính sách Bảo mật](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
     
-    cpu: Sử dụng CPU
-    ram: Sử dụng RAM
-    disk: Sử dụng Ổ cứng
-    guilds: Tổng số Hội
+    cpu: CPU
+    ram: RAM
+    disk: Ổ đĩa
+    guilds: Tổng số Server
     channels: Tổng số Kênh
-    members: Tổng số Thành viên
+    members: Tổng số Người dùng
     python: Phiên bản Python
     dpy: Phiên bản discord.py
-    network: Mạng Đến/Đi
-    shards: Các Mảnh hiện tại/Tổng số Mảnh
+    network: Network
+    shards: Shard hiện tại/Tổng số Shard
     startup: Khởi động
     made_with_love: Made with 💖 by {}
 
