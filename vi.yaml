@@ -2151,6 +2151,7 @@ tasks:
             description: ":blue_square: - Không bị tạm dừng | :red_square: - Bị tạm dừng\n\n"
 
 minecraft:
+  description: "Các tính năng dành cho Minecraft."
   commands:
     server: 
       description: "Hiển thị thông tin của một máy chủ Minecraft"

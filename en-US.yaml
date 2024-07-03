@@ -2171,6 +2171,7 @@ tasks:
             description: ":blue_square: - Not paused | :red_square: - Paused\n\n"
 
 minecraft:
+  description: "Utilities for Minecraft."
   commands:
     server: 
       description: "Display status of a Minecraft server"
