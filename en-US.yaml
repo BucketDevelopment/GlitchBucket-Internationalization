@@ -2169,3 +2169,29 @@ tasks:
           embed:
             title: Task List for {}
             description: ":blue_square: - Not paused | :red_square: - Paused\n\n"
+
+minecraft:
+  commands:
+    server: 
+      description: "Display status of a Minecraft server"
+      options:
+        address: "A server address, may include port"
+        name: "Name for this server"
+        above_layer: "Above layer to render in background (for transparency blocks, like 'Glass' or 'Leaves')"
+        below_layer: "Second layer to render in background (below transparency blocks, default 'End Stone')"
+        darken: "Darken value for background, default 160"
+        blur: "Blur background, default 0"
+      embed:
+        invalid:
+          title: "Invalid address!"
+          description: f"Cannot strip hostname/port from address `{}`, or hostname is not a valid IPv4, or DNS result from hostname is `None`."
+        failed:
+          title: "Cannot connect to server"
+          description: "We are unable to connect to `{}` right now, please try again later.\n:information_source: **Note:** You might try to connect to other endpoint, for example: `play.hypixel.net` instead of `hypixel.net`"
+      translation:
+        below_block_warning: ":warning: **Warning:** Unknown material `{}` for `below_layer`. Please select again from the autocomplete. We will use `end_stone` as default.\n"
+        above_block_warning: ":warning: **Warning:** Unknown material `{}` for `above_layer`. Please select again from the autocomplete.\n"
+        resolved_ip: "Resolved IP"
+        player_count: "Player Count"
+        version: "Version"
+        sofware: "Software: `{}`\nProtocol Version: `{}` `({})`"

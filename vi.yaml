@@ -2149,3 +2149,29 @@ tasks:
           embed:
             title: Danh sách tác vụ cho {}
             description: ":blue_square: - Không bị tạm dừng | :red_square: - Bị tạm dừng\n\n"
+
+minecraft:
+  commands:
+    server: 
+      description: "Hiển thị thông tin của một máy chủ Minecraft"
+      options:
+        address: "Địa chỉ máy chủ, có thể bao gồm cổng (port)"
+        name: "Tên cho máy chủ này"
+        above_layer: "Lớp phía trên của nền (cho các khối trong suốt, như Kính hoặc Lá)"
+        below_layer: "Lớp phía dưới của nền (dưới các khối trong suốt, mặc định là Đá End)"
+        darken: "Giá trị làm tối cho nền, mặc định là 160"
+        blur: "Làm mờ nền, mặc định là 0"
+      embed:
+        invalid:
+          title: "Địa chỉ không hợp lệ!"
+          description: f"Không thể tách địa chỉ máy chủ/cổng (port) từ địa chỉ `{}`, hoặc tên máy chủ không phải là IPv4 hợp lệ, hoặc kết quả DNS từ tên máy chủ là `None`."
+        failed:
+          title: "Không thể kết nối tới máy chủ"
+          description: "Không thể kết nối tới `{}` ngay bây giờ, vui lòng thử lại sau.\n:information_source: **Lưu ý:** Bạn có thể thử kết nối tới địa chỉ khác trên cùng một domain, ví dụ: `play.hypixel.net` thay vì `hypixel.net`"
+      translation:
+        below_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `below_layer`. Vui lòng chọn lại từ danh sách autocomplete. Bot sẽ sử dụng `end_stone` làm mặc định.\n"
+        above_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `above_layer`. Vui lòng chọn lại từ danh sách autocomplete.\n"
+        resolved_ip: "Địa chỉ IP"
+        player_count: "Số lượng người chơi"
+        version: "Phiên bản"
+        sofware: "Phần mềm: `{}`\nPhiên bản: `{}` `({})`"
