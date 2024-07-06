@@ -115,6 +115,13 @@ common:
       reply: "An unknown error occurred while executing the command, please try again later..."
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
 
+logging:
+  action:
+    donation:
+      subtract:
+        title: 
+
+
 afk:
   description: Set yourself AFK
   options:
@@ -762,6 +769,11 @@ donation:
         role: Specify a role to add, if the donation amount is larger than {threshold} points
         threshold: Specify threshold, which the bot add the reward to user, if the donation amount is larger than this
       translation:
+        elevated_permissions: "{} contains elevated permissions, so we cannot assign this role for security reason. If you want so, please remove all elevated permissions in this role."
+        insufficient_hierachy: |
+          I cannot manage a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
+          Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
+        
         can_remove_only: "{} already being reward role for this server, you only can remove them."
         can_add_only: "{} are not the reward role of this server, you can only add them."
         maximum_reached: "You cannot add more than 10 reward role. You should remove a role in order to add another."
@@ -2082,7 +2094,7 @@ voting:
           translation:
             ending: This session is currently in save progess, you can check back later.
             saving: Saving data, please wait for some minutes ...
-            saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`**` session:{0}`.
+            saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`** `session:{0}`.
 
 tasks:
   description: Create Automatic tasks

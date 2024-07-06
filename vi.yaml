@@ -750,6 +750,10 @@ donation:
         role: Chỉ định vai trò để thêm, nếu số tiền ủng hộ lớn hơn {threshold} điểm
         threshold: Chỉ định ngưỡng, bot thêm phần thưởng cho người dùng, nếu số tiền ủng hộ lớn hơn ngưỡng này
       translation:
+        insufficient_hierachy: |
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+
         can_remove_only: "{} đã là vai trò phần thưởng cho máy chủ này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của máy chủ này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
@@ -1255,6 +1259,7 @@ customrole:
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
 
     max_users:
@@ -1291,8 +1296,9 @@ customrole:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
         missing_permission: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng vị trí cao nhất của tôi (tại vị trí {}) hoặc của bạn (tại vị trí {}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi.
+          Tôi không thể quản lí một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+
         invalid_time: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
                 
     set_permission:
@@ -2063,7 +2069,7 @@ voting:
           translation:
             ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
-            saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`**` session:{0}`.
+            saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`** `session:{0}`.
 
 tasks:
   description: Tạo các tác vụ tự động
