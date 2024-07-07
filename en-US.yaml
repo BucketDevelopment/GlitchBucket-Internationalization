@@ -109,6 +109,7 @@ common:
     expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
   
   error:
+    dns: "We cannot connect to discord to process your previous interaction, please try again."
     client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
     database: "A database error occurred while saving your data, please try again later..."
     unknown: 
