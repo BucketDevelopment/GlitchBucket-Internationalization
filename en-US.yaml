@@ -2199,7 +2199,7 @@ minecraft:
       embed:
         invalid:
           title: "Invalid address!"
-          description: f"Cannot strip hostname/port from address `{}`, or hostname is not a valid IPv4, or DNS result from hostname is `None`."
+          description: "Cannot strip hostname/port from address `{}`, or hostname is not a valid IPv4, or DNS result from hostname is `None`."
         failed:
           title: "Cannot connect to server"
           description: "We are unable to connect to `{}` right now, please try again later.\n\n:information_source: **Note:** You might try to connect to other endpoint, for example: `play.hypixel.net` instead of `hypixel.net`"
