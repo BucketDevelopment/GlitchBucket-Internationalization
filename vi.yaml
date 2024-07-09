@@ -754,7 +754,8 @@ donation:
         insufficient_hierachy: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
-
+        elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì dí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
+        
         can_remove_only: "{} đã là vai trò phần thưởng cho máy chủ này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của máy chủ này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
