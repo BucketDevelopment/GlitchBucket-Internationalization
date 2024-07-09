@@ -90,10 +90,10 @@ common:
       terms_violated: You have violated Terms & Conditions of the bot, so we have to stop you from using our service. 
   options:
     role: "Select a role"
-    category: "Select a category"
-    channel: "Select a channel"
-    member: "Select a guild member"
-    user: "Select an user"
+    category: "Select a Category, or specify Category ID"
+    channel: "Select a Channel, or specify Channel ID"
+    member: "Select a Guild Member, or specify User ID"
+    user: "Select a User, or specify User ID"
     reason: "Specify a reason for this action"
     silent: "Whether this command should be executed in silent or not"
     action: "Specify an action"

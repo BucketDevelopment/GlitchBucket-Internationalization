@@ -91,15 +91,15 @@ common:
       terms_violated: Bạn đã vi phạm Điều khoản Dịch vụ của bot, vì vậy chúng tôi đã ngưng bạn sử dụng dịch vụ của chúng tôi.
 
   options:
-    role: "Chọn vai trò"
-    category: "Chọn danh mục"
-    channel: "Chọn kênh"
-    member: "Chọn một thành viên máy chủ"
-    user: "Chọn người dùng"
+    role: "Chọn một vai trò, hoặc chỉ định ID vai trò"
+    category: "Chọn danh mục, hoặc chỉ định ID danh mục"
+    channel: "Chọn một kênh, hoặc chỉ định ID kênh"
+    member: "Chọn một thành viên server, hoặc chỉ định ID thành viên"
+    user: "Chọn một người dùng, hoặc chỉ định ID người dùng"
     reason: "Hãy nhập lý do cho hành động này"
     silent: "Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không"
     action: "Hãy ghi hành động"
-    amount: "Hãy ghi số sượng"
+    amount: "Hãy ghi số lượng"
     enable: "Cho biết có nên kích hoạt điều này hay không"
   config:
     saved: "Đã lưu configuration thành công!"
@@ -755,7 +755,7 @@ donation:
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
         elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì dí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
-        
+
         can_remove_only: "{} đã là vai trò phần thưởng cho máy chủ này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của máy chủ này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
