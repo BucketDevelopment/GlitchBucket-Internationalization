@@ -2194,6 +2194,7 @@ minecraft:
         name: "Name for this server"
         above_layer: "Above layer to render in background (for transparency blocks, like 'Glass' or 'Leaves')"
         below_layer: "Second layer to render in background (below transparency blocks, default 'End Stone')"
+        background: "A MOTD background. You can specify an image URL with size 2560x320 (16:2 ratio)"
         darken: "Darken value for background, default 160"
         blur: "Blur background, default 0"
       embed:
