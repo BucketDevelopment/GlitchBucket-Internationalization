@@ -887,6 +887,8 @@ stickie:
       description: Remove a Sticky Message that's already exists
       options:
         channel: Select a channel to remove Sticky Message
+      translation:
+        invalid_channel: This is not a valid channel. Try select again from the autocomplete. 
     
     mode: 
       description: Edit StickMode for Sticky Message

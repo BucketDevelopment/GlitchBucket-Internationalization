@@ -866,6 +866,8 @@ stickie:
       description: Xóa Thông báo cố định đã tồn tại
       options:
         channel: Chọn một kênh để xóa Thông báo cố định
+      translation:
+        invalid_channel: Đây không phải là một kênh hợp lệ, vui lòng chọn lại từ auto-complete.
     
     mode: 
       description: Chỉnh sửa StickMode cho Thông báo cố định
