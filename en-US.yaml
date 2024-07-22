@@ -338,6 +338,7 @@ autoresponder:
     empty: "**Empty reply**"
 
   common:
+    error: "{}: {}"
     equal: Equal
     contains: Contains
     startswith: Starts With

@@ -383,6 +383,7 @@ autoresponder:
       reply: Trả lời lại tin nhắn kích hoạt
     empty: "**Không có tin nhắn phản hồi**"
   common:
+    error: "{}: {}"
     equal: Bằng
     contains: Chứa
     startswith: Bắt đầu bằng
