@@ -1445,6 +1445,9 @@ giveaway:
         description: Bắt đầu từ đầu mà không sử dụng template đã lưu
     invalid_input: "Input của bạn không hợp lệ, hãy đảm bảo làm theo hướng dẫn đã chỉ định."
   embeds:
+    somehow_ended:
+      title: Giveaway đã kết thúc trước đó!
+      description: Bằng một cách nào đó, giveaway này đã kết thúc nhưng bạn vẫn có thể yêu cầu tham gia. Bạn sẽ không thể tham gia giveaway này, thay vào đó, hãy liên hệ với Quản trị viên để reroll giveaway.
     missing_permission:
       title: Thiếu quyền
       description: Chỉ có người tổ chức Giveaway mới có thể sử dụng nút này. Hoặc không, bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.

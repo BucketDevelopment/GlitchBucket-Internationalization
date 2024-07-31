@@ -1467,6 +1467,10 @@ giveaway:
         description: Start from scratch without using saved templates
     invalid_input: "Your previous input was invalid, make sure to follow the instruction."
   embeds:
+    somehow_ended:
+      title: Giveaway Already Ended!
+      description: Somehow this giveaway has ended, and you cannot enter to a giveaway that has ended before. Please contact server administrator to reroll this giveaway instead.
+    
     missing_permission:
       title: Missing Permissions
       description: Only Giveaway host can use this button. Otherwise, you are missing `Manage Messages` permission to perform this action.
