@@ -339,6 +339,7 @@ autoresponder:
 
   common:
     error: "{}: {}"
+    bot_error: "Exception occurred inside bot client, please report to developer.\n{}: {}"
     equal: Equal
     contains: Contains
     startswith: Starts With
