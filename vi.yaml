@@ -1953,7 +1953,7 @@ voting:
       description: 'Bot hiện đang chuẩn bị dữ liệu cho server này, vui lòng quay trở lại trong vài phút.'
     invalid_channel: 
       title: Kênh vote không hợp lệ!
-      description: Kênh vote không hợp lệ (có thể đã bị xóa). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút.
+      description: "Kênh vote không hợp lệ (có thể đã bị xóa: `{}``). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút. Nếu kênh đã bị xóa, bạn cần setup một vote session mới."
     missing_permission: 
       title: Thiếu Quyền
       description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Máy chủ về vấn đề này."

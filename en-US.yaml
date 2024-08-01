@@ -1978,7 +1978,7 @@ voting:
       description: 'We are preparing data for this server, please wait for some minutes.'
     invalid_channel: 
       title: Invalid voting channel!
-      description: The voting channel is invalid (may deleted). If your believe this is an error, please try again after a minute.
+      description: "The voting channel is invalid (may deleted: `{}`). If your believe this is an error, please try again after a minute. If the channel has been deleted, you have to setup a new voting session."
     missing_permission: 
       title: Missing Permissions
       description: "We are missing permission to read votes in {}: **Manage Messages**, **Read Message History**, **Read Messages** & **Add Reactions**.\nYou may have to contact Server Administrator about this problem."
