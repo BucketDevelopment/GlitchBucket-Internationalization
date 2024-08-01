@@ -1917,8 +1917,8 @@ userscript:
       invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
     occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
     invalid_channel: "ID kênh không hợp lệ: `{}`."
-    cannot_add_roles: "Bạn không thể thêm vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
-    cannot_remove_roles: "Bạn không thể xóa vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
+    cannot_add_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng thêm vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
+    cannot_remove_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng xóa vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
     missing_permission:
       send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
       read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
