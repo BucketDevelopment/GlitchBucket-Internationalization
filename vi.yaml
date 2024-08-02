@@ -1960,6 +1960,7 @@ voting:
       description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Máy chủ về vấn đề này."
     
   translation: 
+    outdated_data: "*Dữ liệu này đã cũ và hiện bot đang làm mới dữ liệu trong nền. Hãy sử dụng lại lệnh sau vài phút để có dữ liệu mới nhất.*"
     none_vote: "*Hiện đang không có vote hợp lệ nào trong kênh <#{}>.*"
     none_running: Hiện không có phiên vote nào đang diễn ra trong máy chủ này.
     require_setup: Máy chủ này chưa thiết lập bất kỳ phiên vote nào. Vui lòng chạy lệnh `/voting session setup` ít nhất một lần để lệnh này hoạt động.
