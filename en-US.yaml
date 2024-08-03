@@ -1713,6 +1713,7 @@ giveaway:
         button_emoji: "Specify a custom server emoji or an emoji unicode"
         requires_join_before: 'Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)'
         image: "Specify image URL"
+        count: "Create multiple giveaways with the same settings. Default: 1"
       embeds:
         validating:
           title: Validating...
