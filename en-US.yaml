@@ -153,13 +153,12 @@ information:
     global_information: Global Information
     description: |
       **GlitchBucket** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), mainly focus on automated & unique feature.
-      > - For a list of available command, type </help:1119604872497594495> or `/GlitchBucket` in chat.
+      > - For a list of available command, use </help:1119604872497594495>.
       > - Support can be retrived [through our Discord Server](https://discord.com/invite/Bzha7tgd7u)!
-      > - Bot alive status can be found [here](https://tudubucket.statuspage.io)
-      > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) & [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
-      > - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) & [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy)
+      > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
     
     cpu: CPU Usage
+    recent: Latest Update
     ram: RAM Usage
     disk: Disk Udage
     guilds: Total Guilds
