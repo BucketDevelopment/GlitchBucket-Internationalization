@@ -2220,3 +2220,205 @@ minecraft:
         player_count: "Player Count"
         version: "Version"
         sofware: "Software: `{}`\nProtocol Version: `{}` `({})`"
+
+agecalculator:
+  description: "Smart, reliable, future-prediction, and always spot-on age-calculator - just like your favorite one."
+  options:
+    age: "Specify their age"
+    calculation_speed: "Specify calculation speed (may not accurate if fast)"
+    ask_discord: "Whether ask Discord for their age or not"
+    exploit_dna: "Whether use exploits to hack into their DNAs for more accurate result"
+    use_starlink: "Whether use Elon Musk's Starlink for looking up for them"
+    birth_date: "Enter their birth date (DD/MM/YYYY)"
+    country: "Specify their country of origin"
+    time_travel_machine: "Whether use a time machine to verify their birth"
+    astrological_sign: "Specify their astrological sign"
+    blood_type: "Specify their blood type"
+    foot_size: "Specify their foot size in cm"
+    superpower: "Specify their preferred superpower"
+    palm_reading: "Use palm reading for age calculation"
+    biometric_scan: "Perform a biometric scan for accuracy"
+    horoscope_analysis: "Use horoscope analysis for age calculation"
+    use_google: "Search Google for their age"
+    ancestry_dna: "Use Ancestry DNA to verify their age"
+    past_life: "Calculate age including past lives"
+    favorite_food: "Specify their favorite food"
+    hobby: "Specify their favorite hobby"
+    favorite_book: "Specify their favorite book"
+    height: "Enter their height in cm"
+    weight: "Enter their weight in kg"
+    favorite_animal: "Specify their favorite animal"
+  
+  choices:
+    astrological_sign: 
+      aries: "Aries"
+      taurus: "Taurus"
+      gemini: "Gemini"
+      cancer: "Cancer"
+      leo: "Leo"
+      virgo: "Virgo"
+      libra: "Libra"
+      scorpio: "Scorpio"
+      sagittarius: "Sagittarius"
+      capricorn: "Capricorn"
+      aquarius: "Aquarius"
+      pisces: "Pisces"
+      other: "Other"
+
+    blood_type:
+      a_plus: "A+"
+      a_minus: "A-"
+      b_plus: "B+"
+      b_minus: "B-"
+      o_plus: "O+"
+      o_minus: "O-"
+      ab_plus: "AB+"
+      ab_minus: "AB-"
+      other: "Other"
+
+    calculation_speed:
+      slow: "Slow (more accurate, default)"
+      normal: "Normal (less accurate)"
+      fast: "Fast (very low accurate)"
+
+  translation:
+    skipping:
+      time_travel_machine: "Skipping time travel machine phase..."
+      use_starlink: "Skipping Starlink check..."
+      exploit_dna: "Skipping DNA exploit..."
+      birth_date: "Skipping birth date scan..."
+      astrological_sign: "Skipping Astrological sign check..."
+      blood_type: "Skipping blood type check..."
+      foot_size: "Skipping foot size measurement..."
+      superpower: "Skipping superpower check..."
+      palm_reading: "Skipping palm reading..."
+      biometric_scan: "Skipping biometric scan..."
+      horoscope_analysis: "Skipping horoscope analysis..."
+      google_search: "Skipping Google search..."
+      ancestry_dna: "Skipping Ancestry DNA verification..."
+      past_life: "Skipping past life age calculation..."
+      discord: "Skipping Discord age retrieval..."
+      favorite_food: "Skipping favorite food check..."
+      hobby: "Skipping favorite hobby check..."
+      favorite_book: "Skipping favorite book check..."
+      height: "Skipping height measurement..."
+      weight: "Skipping weight measurement..."
+      favorite_animal: "Skipping favorite animal check..."
+
+    finishing: Finishing calculation, please wait... 
+    invalid_datetime: "Invalid date format. Please use DD/MM/YYYY."
+    time_travel_machine: "Using time travel machine for age prediction..."
+    use_starlink: "Using Starlink for age prediction..."
+    done: "Done!"
+    complete: "Complete!"
+    completed:
+      biometric_scan: "Biometric scan complete!"
+      horoscope_analysis: "Horoscope analysis complete!"
+      google_search: "Google search complete!"
+      ancestry_dna: "Ancestry DNA verification complete!"
+      past_life: "Past life age calculation complete!"
+      discord: "Discord age retrieval complete!"
+
+    self: 
+      completed: "Age calculation completed! Your age is: **{}**."
+      calculating: "Calculating your age, please wait..."
+      exploit_dna: "Exploiting your DNA..."
+      birth_date:
+        performing: "Scanning for your birth date..."
+        done: "Done! Your birth date is {0}."
+      astrological_sign:
+        performing: "Checking your astrological sign..."
+        done: "Done! Your Astrological sign is {0}."
+      blood_type:
+        performing: "Checking your blood type..."
+        done: "Done! Your blood type is {0}."
+      foot_size:
+        performing: "Measuring your foot size..."
+        done: "Done! Your foot size is {0} cm."
+      superpower:
+        performing: "Checking your preferred superpower..."
+        done: "Done! Your preferred superpower is {0}."
+      palm_reading: 
+        performing: "Performing palm reading..."
+      biometric_scan: 
+        performing: "Performing biometric scan..."
+      horoscope_analysis: 
+        performing: "Performing horoscope analysis..."
+      google_search: 
+        performing: "Searching Google for your age..."
+      ancestry_dna: 
+        performing: "Using Ancestry DNA to verify your age..."
+      past_life: 
+        performing: "Calculating your age including past lives..."
+      discord: 
+        performing: "Asking Discord for your age..."
+      favorite_food:
+        performing: "Checking your favorite food..."
+        done: "Done! Your favorite food is {0}."
+      hobby:
+        performing: "Checking your favorite hobby..."
+        done: "Done! Your favorite hobby is {0}."
+      favorite_book:
+        performing: "Checking your favorite book..."
+        done: "Done! Your favorite book is {0}."
+      height:
+        performing: "Measuring your height..."
+        done: "Done! Your height is {0} cm."
+      weight:
+        performing: "Measuring your weight..."
+        done: "Done! Your weight is {0} kg."
+      favorite_animal:
+        performing: "Checking your favorite animal..."
+        done: "Done! Your favorite animal is {0}."
+
+    other:
+      completed: "Age calculation completed! {}'s age is: **{}**."
+      calculating: "Calculating {}'s age, please wait..."
+      exploit_dna: "Exploiting @{}'s DNA..."
+      birth_date:
+        performing: "Scanning for @{0} birth date..."
+        done: "Done! Their birth date is {0}."
+      astrological_sign:
+        performing: "Checking @{0}'s astrological sign..."
+        done: "Done! Their Astrological sign is {0}."
+      blood_type:
+        performing: "Checking @{0}'s blood type..."
+        done: "Done! Their blood type is {0}."
+      foot_size:
+        performing: "Measuring @{0}'s foot size..."
+        done: "Done! Their foot size is {0} cm."
+      superpower:
+        performing: "Checking @{0}'s preferred superpower..."
+        done: "Done! Their preferred superpower is {0}."
+      palm_reading: 
+        performing: "Performing palm reading for @{0}..."
+      biometric_scan: 
+        performing: "Performing biometric scan for @{0}..."
+      horoscope_analysis: 
+        performing: "Performing horoscope analysis for @{0}..."
+      google_search: 
+        performing: "Searching Google for @{0}'s age..."
+      ancestry_dna: 
+        performing: "Using Ancestry DNA to verify @{0}'s age..."
+      past_life: 
+        performing: "Calculating @{0}'s age including past lives..."
+      discord: 
+        performing: "Asking Discord for @{0}'s age..."
+      favorite_food:
+        performing: "Checking @{0}'s favorite food..."
+        done: "Done! Their favorite food is {0}."
+      hobby:
+        performing: "Checking @{0}'s favorite hobby..."
+        done: "Done! Their favorite hobby is {0}."
+      favorite_book:
+        performing: "Checking @{0}'s favorite book..."
+        done: "Done! Their favorite book is {0}."
+      height:
+        performing: "Measuring @{0}'s height..."
+        done: "Done! Their height is {0} cm."
+      weight:
+        performing: "Measuring @{0}'s weight..."
+        done: "Done! Their weight is {0} kg."
+      favorite_animal:
+        performing: "Checking @{0}'s favorite animal..."
+        done: "Done! Their favorite animal is {0}."

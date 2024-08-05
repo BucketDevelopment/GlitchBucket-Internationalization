@@ -2195,3 +2195,205 @@ minecraft:
         player_count: "Số lượng người chơi"
         version: "Phiên bản"
         sofware: "Phần mềm: `{}`\nPhiên bản: `{}` `({})`"
+
+agecalculator:
+  description: "Máy tính tuổi thông minh, đáng tin cậy, dự đoán tương lai và luôn đem lại chính xác tuyệt đối."
+  options:
+    age: "Chỉ định tuổi của người đó"
+    calculation_speed: "Chỉ định tốc độ tính toán (có thể không chính xác nếu nhanh)"
+    ask_discord: "Có hỏi Discord về tuổi của người đó không"
+    exploit_dna: "Có sử dụng khai thác để hack vào DNA của người đó để có kết quả chính xác hơn không"
+    use_starlink: "Có sử dụng Starlink của Elon Musk để tìm kiếm người đó không"
+    birth_date: "Nhập ngày sinh của người đó (DD/MM/YYYY)"
+    country: "Chỉ định quốc gia của người đó"
+    time_travel_machine: "Có sử dụng máy du hành thời gian để xác minh ngày sinh không"
+    astrological_sign: "Chỉ định cung hoàng đạo của người đó"
+    blood_type: "Chỉ định nhóm máu của người đó"
+    foot_size: "Chỉ định kích thước chân của người đó theo cm"
+    superpower: "Chỉ định siêu năng lực ưa thích của người đó"
+    palm_reading: "Sử dụng xem tay để tính tuổi"
+    biometric_scan: "Thực hiện quét sinh trắc học để chính xác"
+    horoscope_analysis: "Sử dụng phân tích cung hoàng đạo để tính tuổi"
+    use_google: "Tìm kiếm Google về tuổi của người đó"
+    ancestry_dna: "Sử dụng Ancestry DNA để xác minh tuổi của người đó"
+    past_life: "Tính tuổi bao gồm các kiếp trước"
+    favorite_food: "Chỉ định món ăn yêu thích của người đó"
+    hobby: "Chỉ định sở thích yêu thích của người đó"
+    favorite_book: "Chỉ định sách yêu thích của người đó"
+    height: "Nhập chiều cao của người đó theo cm"
+    weight: "Nhập cân nặng của người đó theo kg"
+    favorite_animal: "Chỉ định động vật yêu thích của người đó"
+  
+  choices:
+    astrological_sign:
+      aries: "Bạch Dương"
+      taurus: "Kim Ngưu"
+      gemini: "Song Tử"
+      cancer: "Cự Giải"
+      leo: "Sư Tử"
+      virgo: "Xử Nữ"
+      libra: "Thiên Bình"
+      scorpio: "Thiên Yết"
+      sagittarius: "Nhân Mã"
+      capricorn: "Ma Kết"
+      aquarius: "Bảo Bình"
+      pisces: "Song Ngư"
+      other: "Khác"
+
+    blood_type:
+      a_plus: "A+"
+      a_minus: "A-"
+      b_plus: "B+"
+      b_minus: "B-"
+      o_plus: "O+"
+      o_minus: "O-"
+      ab_plus: "AB+"
+      ab_minus: "AB-"
+      other: "Khác"
+
+    calculation_speed:
+      slow: "Chậm (chính xác hơn, mặc định)"
+      normal: "Bình thường (ít chính xác hơn)"
+      fast: "Nhanh (rất ít chính xác)"
+
+  translation:
+    skipping:
+      time_travel_machine: "Bỏ qua giai đoạn máy du hành thời gian..."
+      use_starlink: "Bỏ qua kiểm tra Starlink..."
+      exploit_dna: "Bỏ qua khai thác DNA..."
+      birth_date: "Bỏ qua quét ngày sinh..."
+      astrological_sign: "Bỏ qua kiểm tra cung hoàng đạo..."
+      blood_type: "Bỏ qua kiểm tra nhóm máu..."
+      foot_size: "Bỏ qua đo kích thước chân..."
+      superpower: "Bỏ qua kiểm tra siêu năng lực..."
+      palm_reading: "Bỏ qua xem tay..."
+      biometric_scan: "Bỏ qua quét sinh trắc học..."
+      horoscope_analysis: "Bỏ qua phân tích cung hoàng đạo..."
+      google_search: "Bỏ qua tìm kiếm Google..."
+      ancestry_dna: "Bỏ qua xác minh Ancestry DNA..."
+      past_life: "Bỏ qua tính tuổi kiếp trước..."
+      discord: "Bỏ qua lấy tuổi từ Discord..."
+      favorite_food: "Bỏ qua kiểm tra món ăn yêu thích..."
+      hobby: "Bỏ qua kiểm tra sở thích yêu thích..."
+      favorite_book: "Bỏ qua kiểm tra sách yêu thích..."
+      height: "Bỏ qua đo chiều cao..."
+      weight: "Bỏ qua đo cân nặng..."
+      favorite_animal: "Bỏ qua kiểm tra động vật yêu thích..."
+
+    finishing: "Đang hoàn tất tính toán, vui lòng chờ..."
+    invalid_datetime: "Định dạng ngày không hợp lệ. Vui lòng sử dụng DD/MM/YYYY."
+    time_travel_machine: "Đang sử dụng máy du hành thời gian để dự đoán tuổi..."
+    use_starlink: "Đang sử dụng Starlink để dự đoán tuổi..."
+    done: "Hoàn tất!"
+    complete: "Hoàn tất!"
+    completed:
+      biometric_scan: "Quét sinh trắc học hoàn tất!"
+      horoscope_analysis: "Phân tích cung hoàng đạo hoàn tất!"
+      google_search: "Tìm kiếm Google hoàn tất!"
+      ancestry_dna: "Xác minh Ancestry DNA hoàn tất!"
+      past_life: "Tính tuổi kiếp trước hoàn tất!"
+      discord: "Lấy tuổi từ Discord hoàn tất!"
+
+    self:
+      completed: "Tính toán tuổi hoàn tất! Tuổi của bạn là: **{}**."
+      calculating: "Đang tính tuổi của bạn, vui lòng chờ..."
+      exploit_dna: "Đang khai thác DNA của bạn..."
+      birth_date:
+        performing: "Đang quét ngày sinh của bạn..."
+        done: "Hoàn tất! Ngày sinh của bạn là {0}."
+      astrological_sign:
+        performing: "Đang kiểm tra cung hoàng đạo của bạn..."
+        done: "Hoàn tất! Cung hoàng đạo của bạn là {0}."
+      blood_type:
+        performing: "Đang kiểm tra nhóm máu của bạn..."
+        done: "Hoàn tất! Nhóm máu của bạn là {0}."
+      foot_size:
+        performing: "Đang đo kích thước chân của bạn..."
+        done: "Hoàn tất! Kích thước chân của bạn là {0} cm."
+      superpower:
+        performing: "Đang kiểm tra siêu năng lực ưa thích của bạn..."
+        done: "Hoàn tất! Siêu năng lực ưa thích của bạn là {0}."
+      palm_reading:
+        performing: "Đang xem tay..."
+      biometric_scan:
+        performing: "Đang quét sinh trắc học..."
+      horoscope_analysis:
+        performing: "Đang phân tích cung hoàng đạo..."
+      google_search:
+        performing: "Đang tìm kiếm Google về tuổi của bạn..."
+      ancestry_dna:
+        performing: "Đang sử dụng Ancestry DNA để xác minh tuổi của bạn..."
+      past_life:
+        performing: "Đang tính tuổi bao gồm các kiếp trước..."
+      discord:
+        performing: "Đang hỏi Discord về tuổi của bạn..."
+      favorite_food:
+        performing: "Đang kiểm tra món ăn yêu thích của bạn..."
+        done: "Hoàn tất! Món ăn yêu thích của bạn là {0}."
+      hobby:
+        performing: "Đang kiểm tra sở thích yêu thích của bạn..."
+        done: "Hoàn tất! Sở thích yêu thích của bạn là {0}."
+      favorite_book:
+        performing: "Đang kiểm tra sách yêu thích của bạn..."
+        done: "Hoàn tất! Sách yêu thích của bạn là {0}."
+      height:
+        performing: "Đang đo chiều cao của bạn..."
+        done: "Hoàn tất! Chiều cao của bạn là {0} cm."
+      weight:
+        performing: "Đang đo cân nặng của bạn..."
+        done: "Hoàn tất! Cân nặng của bạn là {0} kg."
+      favorite_animal:
+        performing: "Đang kiểm tra động vật yêu thích của bạn..."
+        done: "Hoàn tất! Động vật yêu thích của bạn là {0}."
+
+    other:
+      completed: "Tính toán tuổi hoàn tất! Tuổi của {} là: **{}**."
+      calculating: "Đang tính tuổi của {} , vui lòng chờ..."
+      exploit_dna: "Đang khai thác DNA của @{}..."
+      birth_date:
+        performing: "Đang quét ngày sinh của @{0}..."
+        done: "Hoàn tất! Ngày sinh của người đó là {0}."
+      astrological_sign:
+        performing: "Đang kiểm tra cung hoàng đạo của @{0}..."
+        done: "Hoàn tất! Cung hoàng đạo của người đó là {0}."
+      blood_type:
+        performing: "Đang kiểm tra nhóm máu của @{0}..."
+        done: "Hoàn tất! Nhóm máu của người đó là {0}."
+      foot_size:
+        performing: "Đang đo kích thước chân của @{0}..."
+        done: "Hoàn tất! Kích thước chân của người đó là {0} cm."
+      superpower:
+        performing: "Đang kiểm tra siêu năng lực ưa thích của @{0}..."
+        done: "Hoàn tất! Siêu năng lực ưa thích của người đó là {0}."
+      palm_reading:
+        performing: "Đang xem tay cho @{0}..."
+      biometric_scan:
+        performing: "Đang quét sinh trắc học cho @{0}..."
+      horoscope_analysis:
+        performing: "Đang phân tích cung hoàng đạo cho @{0}..."
+      google_search:
+        performing: "Đang tìm kiếm Google về tuổi của @{0}..."
+      ancestry_dna:
+        performing: "Đang sử dụng Ancestry DNA để xác minh tuổi của @{0}..."
+      past_life:
+        performing: "Đang tính tuổi của @{0} bao gồm các kiếp trước..."
+      discord:
+        performing: "Đang hỏi Discord về tuổi của @{0}..."
+      favorite_food:
+        performing: "Đang kiểm tra món ăn yêu thích của @{0}..."
+        done: "Hoàn tất! Món ăn yêu thích của người đó là {0}."
+      hobby:
+        performing: "Đang kiểm tra sở thích yêu thích của @{0}..."
+        done: "Hoàn tất! Sở thích yêu thích của người đó là {0}."
+      favorite_book:
+        performing: "Đang kiểm tra sách yêu thích của @{0}..."
+        done: "Hoàn tất! Sách yêu thích của người đó là {0}."
+      height:
+        performing: "Đang đo chiều cao của @{0}..."
+        done: "Hoàn tất! Chiều cao của người đó là {0} cm."
+      weight:
+        performing: "Đang đo cân nặng của @{0}..."
+        done: "Hoàn tất! Cân nặng của người đó là {0} kg."
+      favorite_animal:
+        performing: "Đang kiểm tra động vật yêu thích của @{0}..."
+        done: "Hoàn tất! Động vật yêu thích của người đó là {0}."
