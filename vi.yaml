@@ -2219,7 +2219,7 @@ agecalculator:
     past_life: "Tính tuổi bao gồm các kiếp trước"
     favorite_food: "Chỉ định món ăn yêu thích của người đó"
     hobby: "Chỉ định sở thích yêu thích của người đó"
-    favorite_book: "Chỉ định sách yêu thích của người đó"
+    brain_injection: "Có truy cập vào bộ não của người đó hay không"
     height: "Nhập chiều cao của người đó theo cm"
     weight: "Nhập cân nặng của người đó theo kg"
     favorite_animal: "Chỉ định động vật yêu thích của người đó"
@@ -2257,6 +2257,168 @@ agecalculator:
       fast: "Nhanh (rất ít chính xác)"
 
   translation:
+    random:
+      countries:
+        usa: Mỹ
+        canada: Canada
+        uk: Vương quốc Anh
+        australia: Úc
+        france: Pháp
+        germany: Đức
+        japan: Nhật Bản
+        china: Trung Quốc
+        india: Ấn Độ
+        brazil: Brazil
+        russia: Nga
+        italy: Ý
+        spain: Tây Ban Nha
+        mexico: Mexico
+        south_korea: Hàn Quốc
+        south_africa: Nam Phi
+        new_zealand: New Zealand
+        argentina: Argentina
+        netherlands: Hà Lan
+        sweden: Thụy Điển
+        norway: Na Uy
+        denmark: Đan Mạch
+        finland: Phần Lan
+        ireland: Ireland
+        switzerland: Thụy Sĩ
+        belgium: Bỉ
+        portugal: Bồ Đào Nha
+        greece: Hy Lạp
+        turkey: Thổ Nhĩ Kỳ
+        poland: Ba Lan
+
+      superpowers:
+        invisibility: Tàng hình
+        super_strength: Siêu sức mạnh
+        telekinesis: Định vị
+        flight: Bay
+        teleportation: Dịch chuyển tức thời
+        time_manipulation: Điều khiển thời gian
+        mind_reading: Đọc suy nghĩ
+        shape_shifting: Biến hình
+        energy_blasts: Phát nổ năng lượng
+        regeneration: Tự phục hồi
+        super_speed: Tốc độ siêu phàm
+        x_ray_vision: Thị lực tia X
+        invulnerability: Vô hình
+        elasticity: Đàn hồi
+        fire_control: Điều khiển lửa
+        water_control: Điều khiển nước
+        earth_control: Điều khiển đất
+        wind_control: Điều khiển gió
+        animal_communication: Giao tiếp với động vật
+        plant_manipulation: Điều khiển thực vật
+        ice_control: Điều khiển băng
+        electrokinesis: Điện từ
+        force_fields: Trường lực
+        precognition: Tiên đoán
+        postcognition: Nhận thức sau
+        healing: Chữa lành
+        shadow_manipulation: Điều khiển bóng tối
+        light_manipulation: Điều khiển ánh sáng
+        sound_manipulation: Điều khiển âm thanh
+        gravity_manipulation: Điều khiển trọng lực
+
+      favorite_foods:
+        banh_mi: Bánh Mì
+        pizza: Pizza
+        sushi: Sushi
+        burger: Burger
+        pasta: Mỳ Ý
+        salad: Xà lách
+        tacos: Tacos
+        steak: Bít tết
+        ice_cream: Kem
+        chocolate: Socola
+        fries: Khoai tây chiên
+        sandwich: Sandwich
+        cake: Bánh
+        pie: Bánh nướng
+        chicken: Gà
+        fish: Cá
+        rice: Cơm
+        noodles: Mì
+        soup: Súp
+        bread: Bánh mì
+        fruit: Trái cây
+        vegetables: Rau củ
+        seafood: Hải sản
+        pancakes: Bánh kếp
+        waffles: Waffles
+        curry: Cà ri
+        dumplings: Sủi cảo
+        bbq: BBQ
+        stew: Hầm
+        lasagna: Lasagna
+        burrito: Burrito
+
+      hobbies:
+        reading: Đọc sách
+        gaming: Chơi game
+        hiking: Đi bộ đường dài
+        painting: Vẽ tranh
+        cooking: Nấu ăn
+        dancing: Khiêu vũ
+        singing: Hát
+        gardening: Làm vườn
+        fishing: Câu cá
+        cycling: Đạp xe
+        running: Chạy
+        swimming: Bơi
+        traveling: Du lịch
+        photography: Chụp ảnh
+        writing: Viết lách
+        drawing: Vẽ
+        knitting: Đan len
+        crafting: Thủ công
+        puzzles: Đố vui
+        board_games: Board Games
+        yoga: Yoga
+        martial_arts: Võ thuật
+        bird_watching: Quan sát chim
+        surfing: Lướt sóng
+        skiing: Trượt tuyết
+        snowboarding: Lướt ván tuyết
+        skating: Trượt băng
+        camping: Cắm trại
+        rock_climbing: Leo núi
+        horse_riding: Cưỡi ngựa
+
+      favorite_animals:
+        dog: Chó
+        cat: Mèo
+        bird: Chim
+        fish: Cá
+        horse: Ngựa
+        tiger: Hổ
+        lion: Sư tử
+        elephant: Voi
+        panda: Gấu trúc
+        kangaroo: Kangaroo
+        koala: Koala
+        monkey: Khỉ
+        bear: Gấu
+        wolf: Sói
+        fox: Cáo
+        rabbit: Thỏ
+        deer: Hươu
+        giraffe: Hươu cao cổ
+        zebra: Ngựa vằn
+        hedgehog: Nhím
+        otter: Rái cá
+        penguin: Chim cánh cụt
+        dolphin: Cá heo
+        shark: Cá mập
+        turtle: Rùa
+        crocodile: Cá sấu
+        alligator: Cá sấu Mỹ
+        lizard: Thằn lằn
+        snake: Rắn
+        frog: Ếch
+
     skipping:
       time_travel_machine: "Bỏ qua giai đoạn máy du hành thời gian..."
       use_starlink: "Bỏ qua kiểm tra Starlink..."
@@ -2275,7 +2437,7 @@ agecalculator:
       discord: "Bỏ qua lấy tuổi từ Discord..."
       favorite_food: "Bỏ qua kiểm tra món ăn yêu thích..."
       hobby: "Bỏ qua kiểm tra sở thích yêu thích..."
-      favorite_book: "Bỏ qua kiểm tra sách yêu thích..."
+      brain_injection: "Bỏ qua truy cập bộ não..."
       height: "Bỏ qua đo chiều cao..."
       weight: "Bỏ qua đo cân nặng..."
       favorite_animal: "Bỏ qua kiểm tra động vật yêu thích..."
@@ -2333,9 +2495,9 @@ agecalculator:
       hobby:
         performing: "Đang kiểm tra sở thích yêu thích của bạn..."
         done: "Hoàn tất! Sở thích yêu thích của bạn là {0}."
-      favorite_book:
-        performing: "Đang kiểm tra sách yêu thích của bạn..."
-        done: "Hoàn tất! Sách yêu thích của bạn là {0}."
+      brain_injection:
+        performing: "Đang truy cập vào bộ não của bạn..."
+        done: "Đã hoàn tất truy cập vào bộ não của bạn."
       height:
         performing: "Đang đo chiều cao của bạn..."
         done: "Hoàn tất! Chiều cao của bạn là {0} cm."
@@ -2385,9 +2547,9 @@ agecalculator:
       hobby:
         performing: "Đang kiểm tra sở thích yêu thích của @{0}..."
         done: "Hoàn tất! Sở thích yêu thích của người đó là {0}."
-      favorite_book:
-        performing: "Đang kiểm tra sách yêu thích của @{0}..."
-        done: "Hoàn tất! Sách yêu thích của người đó là {0}."
+      brain_injection:
+        performing: "Đang truy cập vào bộ não của @{0}..."
+        done: "Đã hoàn tất truy cập vào bộ não của {0}."
       height:
         performing: "Đang đo chiều cao của @{0}..."
         done: "Hoàn tất! Chiều cao của người đó là {0} cm."

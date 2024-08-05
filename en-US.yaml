@@ -2244,7 +2244,7 @@ agecalculator:
     past_life: "Calculate age including past lives"
     favorite_food: "Specify their favorite food"
     hobby: "Specify their favorite hobby"
-    favorite_book: "Specify their favorite book"
+    brain_injection: "Whether inject into their brain or not"
     height: "Enter their height in cm"
     weight: "Enter their weight in kg"
     favorite_animal: "Specify their favorite animal"
@@ -2282,6 +2282,168 @@ agecalculator:
       fast: "Fast (very low accurate)"
 
   translation:
+    random:
+      countries:
+        usa: USA
+        canada: Canada
+        uk: UK
+        australia: Australia
+        france: France
+        germany: Germany
+        japan: Japan
+        china: China
+        india: India
+        brazil: Brazil
+        russia: Russia
+        italy: Italy
+        spain: Spain
+        mexico: Mexico
+        south_korea: South Korea
+        south_africa: South Africa
+        new_zealand: New Zealand
+        argentina: Argentina
+        netherlands: Netherlands
+        sweden: Sweden
+        norway: Norway
+        denmark: Denmark
+        finland: Finland
+        ireland: Ireland
+        switzerland: Switzerland
+        belgium: Belgium
+        portugal: Portugal
+        greece: Greece
+        turkey: Turkey
+        poland: Poland
+
+      superpowers:
+        invisibility: Invisibility
+        super_strength: Super Strength
+        telekinesis: Telekinesis
+        flight: Flight
+        teleportation: Teleportation
+        time_manipulation: Time Manipulation
+        mind_reading: Mind Reading
+        shape_shifting: Shape Shifting
+        energy_blasts: Energy Blasts
+        regeneration: Regeneration
+        super_speed: Super Speed
+        x_ray_vision: X-Ray Vision
+        invulnerability: Invulnerability
+        elasticity: Elasticity
+        fire_control: Fire Control
+        water_control: Water Control
+        earth_control: Earth Control
+        wind_control: Wind Control
+        animal_communication: Animal Communication
+        plant_manipulation: Plant Manipulation
+        ice_control: Ice Control
+        electrokinesis: Electrokinesis
+        force_fields: Force Fields
+        precognition: Precognition
+        postcognition: Postcognition
+        healing: Healing
+        shadow_manipulation: Shadow Manipulation
+        light_manipulation: Light Manipulation
+        sound_manipulation: Sound Manipulation
+        gravity_manipulation: Gravity Manipulation
+
+      favorite_foods:
+        banh_mi: Banh Mi
+        pizza: Pizza
+        sushi: Sushi
+        burger: Burger
+        pasta: Pasta
+        salad: Salad
+        tacos: Tacos
+        steak: Steak
+        ice_cream: Ice Cream
+        chocolate: Chocolate
+        fries: Fries
+        sandwich: Sandwich
+        cake: Cake
+        pie: Pie
+        chicken: Chicken
+        fish: Fish
+        rice: Rice
+        noodles: Noodles
+        soup: Soup
+        bread: Bread
+        fruit: Fruit
+        vegetables: Vegetables
+        seafood: Seafood
+        pancakes: Pancakes
+        waffles: Waffles
+        curry: Curry
+        dumplings: Dumplings
+        bbq: BBQ
+        stew: Stew
+        lasagna: Lasagna
+        burrito: Burrito
+
+      hobbies:
+        reading: Reading
+        gaming: Gaming
+        hiking: Hiking
+        painting: Painting
+        cooking: Cooking
+        dancing: Dancing
+        singing: Singing
+        gardening: Gardening
+        fishing: Fishing
+        cycling: Cycling
+        running: Running
+        swimming: Swimming
+        traveling: Traveling
+        photography: Photography
+        writing: Writing
+        drawing: Drawing
+        knitting: Knitting
+        crafting: Crafting
+        puzzles: Puzzles
+        board_games: Board Games
+        yoga: Yoga
+        martial_arts: Martial Arts
+        bird_watching: Bird Watching
+        surfing: Surfing
+        skiing: Skiing
+        snowboarding: Snowboarding
+        skating: Skating
+        camping: Camping
+        rock_climbing: Rock Climbing
+        horse_riding: Horse Riding
+
+      favorite_animals:
+        dog: Dog
+        cat: Cat
+        bird: Bird
+        fish: Fish
+        horse: Horse
+        tiger: Tiger
+        lion: Lion
+        elephant: Elephant
+        panda: Panda
+        kangaroo: Kangaroo
+        koala: Koala
+        monkey: Monkey
+        bear: Bear
+        wolf: Wolf
+        fox: Fox
+        rabbit: Rabbit
+        deer: Deer
+        giraffe: Giraffe
+        zebra: Zebra
+        hedgehog: Hedgehog
+        otter: Otter
+        penguin: Penguin
+        dolphin: Dolphin
+        shark: Shark
+        turtle: Turtle
+        crocodile: Crocodile
+        alligator: Alligator
+        lizard: Lizard
+        snake: Snake
+        frog: Frog
+
     skipping:
       time_travel_machine: "Skipping time travel machine phase..."
       use_starlink: "Skipping Starlink check..."
@@ -2300,7 +2462,7 @@ agecalculator:
       discord: "Skipping Discord age retrieval..."
       favorite_food: "Skipping favorite food check..."
       hobby: "Skipping favorite hobby check..."
-      favorite_book: "Skipping favorite book check..."
+      brain_injection: "Skipping brain injection..."
       height: "Skipping height measurement..."
       weight: "Skipping weight measurement..."
       favorite_animal: "Skipping favorite animal check..."
@@ -2358,9 +2520,9 @@ agecalculator:
       hobby:
         performing: "Checking your favorite hobby..."
         done: "Done! Your favorite hobby is {0}."
-      favorite_book:
-        performing: "Checking your favorite book..."
-        done: "Done! Your favorite book is {0}."
+      brain_injection:
+        performing: "Injecting into your brain..."
+        done: "Brain injection successfully."
       height:
         performing: "Measuring your height..."
         done: "Done! Your height is {0} cm."
@@ -2410,9 +2572,9 @@ agecalculator:
       hobby:
         performing: "Checking @{0}'s favorite hobby..."
         done: "Done! Their favorite hobby is {0}."
-      favorite_book:
-        performing: "Checking @{0}'s favorite book..."
-        done: "Done! Their favorite book is {0}."
+      brain_injection:
+        performing: "Injecting into @{0}'s brain..."
+        done: "@{0}'s brain injection successfully."
       height:
         performing: "Measuring @{0}'s height..."
         done: "Done! Their height is {0} cm."
