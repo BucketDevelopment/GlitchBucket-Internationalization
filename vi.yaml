@@ -1341,7 +1341,7 @@ customrole:
       options:
         time_range: "Chỉ định phạm vi thời gian để giảm, hỗ trợ ngày ngắn (vd: 2mon1d2h)"
       translation:
-        pernament_role: "Thời gian của Custom Role Vĩnh viễn không thể giảm."
+        permanent_role: "Thời gian của Custom Role Vĩnh viễn không thể giảm."
         booster_role: "Thời gian của Custom Role mà được xóa trong sự kiện Loại bỏ Boost không thể giảm."
         overflow: "Bạn không thể giảm thời gian nhiều hơn so với Custom Role {} đang có."
 

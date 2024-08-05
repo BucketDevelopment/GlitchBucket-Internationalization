@@ -428,7 +428,7 @@ security:
       translation:
         description: |
           ## :warning: Automatic Disable Server Invite
-          > Due to new Discord Update, Member will no longer permanently disable their server invite. This feature will **disable server invites pernamently**.
+          > Due to new Discord Update, Member will no longer permanently disable their server invite. This feature will **disable server invites permanently**.
 
           **You are choosing to __{}__ server invites!**
     
@@ -1274,7 +1274,7 @@ customrole:
         author: "Specify custom role's author"
         name: "Specify role name"
         max_users: "Maximum users can be assigned into this role"
-        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for pernament, '1' for until remove boost"
+        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for permanent, '1' for until remove boost"
         color: "Specify role color"
         edit_name_permission: "Let role's author can chance their own role name"
         edit_icon_permission: "Let role's author can chance their own role icon"
@@ -1316,7 +1316,7 @@ customrole:
         role: "Specify a role"
         author: "Specify custom role's author"
         max_users: "Maximum users can be assigned into this role"
-        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for pernament, '1' for until remove boost"
+        expire_after: "Short date supported (e.g. 2mon1d2h), write '0' for permanent, '1' for until remove boost"
       translation:
         elevated_permissions: "{} is not a role that has zero-permission value, so we will not migrate this role for security reason."
         already_migrated: "{} is a role that has been registered as a custom role in our database, you cannot migrate this role"
@@ -1348,7 +1348,7 @@ customrole:
     extend:
       description: "Extend expire date for a custom role"
       options:
-        time_range: "Specity time range. Type '0' to make pernament, '1' to remove when role author remove boost"
+        time_range: "Specity time range. Type '0' to make permanent, '1' to remove when role author remove boost"
     
     search: 
       description: "Search a custom role assigned to a member"
@@ -1362,7 +1362,7 @@ customrole:
       options:
         time_range: "Specity time range to reduce, short date is supported (e.g. 2mon4w6h)"
       translation:
-        pernament_role: "Time of Pernament Custom Role cannot be reduced."
+        permanent_role: "Time of Permanent Custom Role cannot be reduced."
         booster_role: "Time of Custom Role which remove in Boost Removal event cannot be reduced."
         overflow: "You cannot reduce more time than the custom role {} having."
 
