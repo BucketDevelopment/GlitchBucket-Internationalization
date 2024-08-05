@@ -2480,6 +2480,7 @@ agecalculator:
       ancestry_dna: "Ancestry DNA verification complete!"
       past_life: "Past life age calculation complete!"
       discord: "Discord age retrieval complete!"
+      palm_reading: "Finished palm reading!"
 
     self: 
       completed: "Age calculation completed! Your age is: **{}**."

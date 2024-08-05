@@ -2455,7 +2455,8 @@ agecalculator:
       ancestry_dna: "Xác minh Ancestry DNA hoàn tất!"
       past_life: "Tính tuổi kiếp trước hoàn tất!"
       discord: "Lấy tuổi từ Discord hoàn tất!"
-
+      palm_reading: "Xem tay thành công!"
+      
     self:
       completed: "Tính toán tuổi hoàn tất! Tuổi của bạn là: **{}**."
       calculating: "Đang tính tuổi của bạn, vui lòng chờ..."
