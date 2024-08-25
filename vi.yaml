@@ -348,7 +348,7 @@ illust_report:
 autoresponder:
   setting:
     after: Sau
-    trigger: Kích hoạt
+    trigger: Trigger
     matchmode: Chế độ khớp
     ignorecase: Bỏ qua chữ hoa/thường
     autodelete:
@@ -370,7 +370,7 @@ autoresponder:
       error: Bỏ qua Lỗi
     add_roles: Thêm Vai trò
     remove_roles: Xóa Vai trò
-    reaction: Phản ứng
+    reaction: React tin nhắn
     reply: Trả lời
     raw: Trả lời thô
     cooldown: Thời gian chờ
@@ -384,7 +384,7 @@ autoresponder:
   common:
     error: "{}: {}"
     bot_error: "Bot đã xuất hiện lỗi khi xử lí tin nhắn của bạn cho autoresponder, vui lòng báo cáo tới Developer.\n{}: {}"
-    equal: Bằng
+    equal: Khớp chính xác
     contains: Chứa
     startswith: Bắt đầu bằng
     endswith: Kết thúc bằng
