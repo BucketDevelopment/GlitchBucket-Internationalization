@@ -383,7 +383,7 @@ autoresponder:
     empty: "**Không có tin nhắn phản hồi**"
   common:
     error: "{}: {}"
-    bot_error: "Bot đã xuất hiện lỗi khi xử lí tin nhắn của bạn cho autoresponder, vui lòng báo cáo tới Developer.\n{}: {}"
+    bot_error: "Bot đã xuất hiện lỗi khi xử lí BucketScript, vui lòng báo cáo tới Developer.\n{}: {}"
     equal: Khớp chính xác
     contains: Chứa
     startswith: Bắt đầu bằng
