@@ -1916,7 +1916,7 @@ userscript:
     no_negative: "Số dư không thể được đặt thành âm bằng cách sử dụng chức năng BucketScript (người dùng: `{}`, trước: `{}`, sau: `{}`). Bạn chỉ có thể làm cho nó âm bằng cách sử dụng lệnh /bucketscript subtract."
     invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}``."
     invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
-    large_payload: "`amount` phải trong khoảng [-5,000,000 | 5,000,000] cho mỗi thao tác. (đã nhận `{}`)"
+    large_payload: "`amount` phải trong khoảng [-5,000,000 | 5,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
     unknown_member: Thành viên không xác định `{}` 
 
     triggered: "\n-# Autoresponder ID: `{}`"
