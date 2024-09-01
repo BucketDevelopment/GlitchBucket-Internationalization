@@ -1919,6 +1919,7 @@ userscript:
     large_payload: "`amount` phải trong khoảng [-5,000,000 | 5,000,000] cho mỗi thao tác. (đã nhận `{}`)"
     unknown_member: Thành viên không xác định `{}` 
 
+    triggered: "\n-# Autoresponder ID: `{}`"
     forbidden:
       require_user: Bạn không được phép sử dụng autoresponder này.
       require_channel: Bạn không được phép sử dụng autoresponder này trong kênh này.
