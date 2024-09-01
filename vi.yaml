@@ -347,6 +347,7 @@ illust_report:
 
 autoresponder:
   setting:
+    title: Cấu hình Autoresponder
     after: Sau
     trigger: Trigger
     matchmode: Chế độ khớp
@@ -1911,6 +1912,26 @@ userscript:
   translation:
     update_roles: Cập nhật vai trò từ autoresponder
   errors:
+    preparing: "Máy chủ này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
+    no_negative: "Số dư không thể được đặt thành âm bằng cách sử dụng chức năng BucketScript (người dùng: `{}`, trước: `{}`, sau: `{}`). Bạn chỉ có thể làm cho nó âm bằng cách sử dụng lệnh /bucketscript subtract."
+    invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}``."
+    invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
+    large_payload: "`amount` phải trong khoảng [-5,000,000 | 5,000,000] cho mỗi thao tác. (đã nhận `{}`)"
+    unknown_member: Thành viên không xác định `{}` 
+
+    forbidden:
+      require_user: Bạn không được phép sử dụng autoresponder này.
+      require_channel: Bạn không được phép sử dụng autoresponder này trong kênh này.
+      require_permission: Bạn không có quyền để sử dụng autoresponder này.
+      require_role: Bạn thiếu vai trò cần thiết để sử dụng autoresponder này.
+
+      ignore_user: Bạn đã bị cấm sử dụng autoresponder này.
+      ignore_channel: Kênh này đã bị cấm sử dụng autoresponder này.
+      ignore_permission: Một số quyền của bạn đã bị cấm sử dụng autoresponder này.
+      ignore_role: Một số vai trò của bạn đã bị cấm sử dụng autoresponder này.
+
+      cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
+      global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
     validator:
       user: ID Người dùng '{}' là không hợp lệ trong placeholder `{}`
       channel: ID Kênh '{}' là không hợp lệ trong placeholder `{}`

@@ -300,6 +300,7 @@ illust_report:
     other: 'Other Reason'
 autoresponder: 
   setting:
+    title: Autoresponder Configuration
     after: After
     trigger: Trigger
     matchmode: Match Mode
@@ -1935,6 +1936,27 @@ userscript:
   translation:
     update_roles: Update roles on autoresponder
   errors:
+    preparing: "This guild is currently in preparing phase, please try this autoresponder later."
+    no_negative: "Balance could not set to negative by using BucketScript function (user: `{}`, before: `{}`, after: `{}`). You could only make it negative by using command /bucketscript subtract."
+    invalid_balance: "Invalid balance name/uuid {}."
+    invalid_number: "`amount` should be a numeric value. (received `{}`)"
+    large_payload: "`amount` should in range [-5,000,000 | 5,000,000] for each operation. (received `{}`)"
+    unknown_member: Unknown member `{}`
+    forbidden:
+      require_user: You are not allowed to use this autoresponder.
+      require_channel: You are not allowed to use this autoresponder in this channel.
+      require_permission: You are missing permissions to use this autoresponder.
+      require_role: You are missing specific roles to use this autoresponder.
+
+      ignore_user: You have been ignored from using this autoresponder.
+      ignore_channel: This channel has been ignored from using this autoresponder.
+      ignore_permission: You have specific permissions that has been ignored from using this autoresponder.
+      ignore_role: You have specific roles that has been ignored from using this autoresponder.
+
+      cooldown: "This autoresponder is on a **cooldown**. Try again: {}"
+      global_cooldown: "This autoresponder is on a **global cooldown**. Try again: {}"
+    triggered: "\n-# Triggered Autoresponder ID: `{}`"
+    webhook_cannot_reply: Webhook cannot reply to messages.
     validator:
       user: User ID '{}' is not valid in placeholder `{}`
       channel: Channel ID '{}' is not valid in placeholder `{}`
