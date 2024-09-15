@@ -676,7 +676,7 @@ donation:
 
       translation:
         already_enabled: "Guild này đã kích hoạt tính năng nhận ủng hộ tự động!"
-        default_receive_message: "{donator_mention} ủng hộ cho chúng mình bằng <:OwO:1155867563612446841> __Tiền OwOBot__ và nhận được **{amount}** điểm ủng hộ!"
+        default_receive_message: "{user} đã ủng hộ cho **{server_name}** bằng <:OwO:1155867563612446841> __Tiền OwOBot__ và nhận được **{amount}** điểm ủng hộ!"
         successful_enabled: |
           Thành công kích hoạt ủng hộ tự động cho máy chủ này, với kênh ủng hộ {} & người nhận {}!
           Để thêm nhiều người nhận/kênh nhận ủng hộ hơn, bạn có thể sử dụng </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
@@ -756,7 +756,7 @@ donation:
         insufficient_hierachy: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
-        elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì dí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
+        elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì lí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
 
         can_remove_only: "{} đã là vai trò phần thưởng cho máy chủ này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của máy chủ này, bạn chỉ có thể thêm chúng."

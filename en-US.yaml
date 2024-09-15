@@ -92,7 +92,7 @@ common:
     role: "Select a role"
     category: "Select a Category, or specify Category ID"
     channel: "Select a Channel, or specify Channel ID"
-    member: "Select a Guild Member, or specify User ID"
+    member: "Select a Server Member, or specify Member ID"
     user: "Select a User, or specify User ID"
     reason: "Specify a reason for this action"
     silent: "Whether this command should be executed in silent or not"
@@ -117,11 +117,22 @@ common:
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
 
 logging:
+  description: "Bot's action logging"
+  commands:
+    setup:
+      description: Setup logging for every events relate to the bot
+      translation:
+        successful: Successfully set {} to be {}'s logging channel.
+    disable: 
+      description: Disable events logging
+      translation:
+        no_record: There is no logging channel for the bot.
+        successful: Successfully disabled bot logging.
+  
   action:
     donation:
       subtract:
         title: 
-
 
 afk:
   description: Set yourself AFK
@@ -694,7 +705,7 @@ donation:
 
       translation: 
         already_enabled: "This guild is already enabled automatic donations receiver!"
-        default_receive_message: "{donator_mention} donated for us through <:OwO:1155867563612446841> __OwOBot currency__ and received **{amount}** donation points!"
+        default_receive_message: "{user} donated for **{server_name}** through <:OwO:1155867563612446841> __OwOBot currency__ and received **{amount}** donation points!"
         successful_enabled: |
           Successfully enabled automatic donation for this server, with donation channel {} & receiver {}!
           To add more receiver/receive channel, you can use </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
@@ -2607,3 +2618,478 @@ agecalculator:
       favorite_animal:
         performing: "Checking @{0}'s favorite animal..."
         done: "Done! Their favorite animal is {0}."
+
+moderation:
+  description: Server Moderation utilities.
+  commands:
+    timeout:
+      description: Timeout a member
+      translation:
+        errors:
+          self: "You cannot timeout yourself."
+          user_hierachy: "You are not higher than **{}** in the role hierarchy."
+          owner: "You cannot timeout server owner."
+          bot_hierachy: "I cannot timeout **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
+          invalid_time: "`{}` is not a valid short time format, or larger than 7 days."
+          unknown: "I cannot timeout **{}** right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been timed out for **{}**, with reason: {}"
+          none: "**{}** has been timed out for **{}**."
+
+    untimeout:
+      description: Remove timeout from a member
+      translation:
+        errors:
+          not_timed_out: "**{}** is not currently timed out."
+          self: "You cannot un-timeout yourself."
+          user_hierachy: "You are not higher than {} in the role hierarchy."
+          owner: "You cannot un-timeout server owner."
+          bot_hierachy: "I cannot un-timeout {} due to Discord hierarchy rules. Please give me higher role to perform this action."
+          unknown: "I cannot un-timeout {} right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been removed time out, with reason: {}"
+          none: "**{}** has been removed time out."      
+
+    ban:
+      description: Ban a member
+      translation:
+        errors:
+          self: "You cannot ban yourself."
+          user_hierachy: "You are not higher than **{}** in the role hierarchy."
+          owner: "You cannot ban server owner."
+          bot_hierachy: "I cannot ban **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
+          invalid_time: "`{}` is not a valid short time format, or larger than 7 days."
+          unknown: "I cannot ban **{}** right now. Please try again later. `({})`"
+          already_banned: "**{}** already banned in this server."
+        success: 
+          reason: "**{}** has been banned, with reason: {}"
+          none: "**{}** has been banned."
+
+    unban:
+      description: Unban a user
+      translation:
+        not_banned: "This member is not banned."
+        invalid: "This user is invalid, or not banned in this server."
+        error: "I cannot unban **{}** right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been unbanned, with reason: {}"
+          none: "**{}** has been unbanned."
+    
+    warn:
+      description: Warn a member
+      translation:
+        errors:
+          self: "You cannot warn yourself."
+          user_hierachy: "You are not higher than **{}** in the role hierarchy."
+          owner: "You cannot warn server owner."
+          bot_hierachy: "I cannot warn **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
+          unknown: "I cannot warn **{}** right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been warned, with reason: {}"
+          none: "**{}** has been warned."  
+    
+    unwarn:
+      description: Un-warn a member
+      options:
+        case: Specify Case ID, leave empty for lasest case
+      translation:
+        no_recent: "This user does not have any recent warning."
+        errors:
+          self: "You cannot un-warn yourself."
+          user_hierachy: "You are not higher than **{}** in the role hierarchy."
+          owner: "You cannot un-warn server owner."
+          bot_hierachy: "I cannot un-warn **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
+          unknown: "I cannot un-warn **{}** right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been un-warned, with reason: {}"
+          none: "**{}** has been un-warned."  
+    
+    kick:
+      description: Kick a member
+      translation:
+        errors:
+          self: "You cannot warn yourself."
+          user_hierachy: "You are not higher than {} in the role hierarchy."
+          owner: "You cannot warn server owner."
+          bot_hierachy: "I cannot warn {} due to Discord hierarchy rules. Please give me higher role to perform this action."
+          unknown: "I cannot warn {} right now. Please try again later. `({})`"
+        success: 
+          reason: "**{}** has been kicked, with reason: {}"
+          none: "**{}** has been kicked."  
+
+bucketbalance:
+  description: Virtual-Economy for your server!
+  common:
+    balance: "Select a balance, or specify Balance ID"
+    invalid_id: "This is not a valid balance ID. Please choose again from the autocomplete."
+  commands:
+    create:
+      description: Create a virtual-economy in your server
+      options:
+        name: "Specify balance identity name. This is not the name to display"
+        display_icon: "Specify an icon to display. Can be string"
+        display_name: "Specify a name to display"
+      translation:
+        invalid_name: "Balance name should contains only lowercase characters, numbers and underscore."
+        already_exists: "Balance with identity name `{}` already exists, please try another name."
+        limit_exceeded: "You cannot create more than 10 virtual-economy for this server."
+        created: |
+          Successfully created balance {} **`[{}]`** **{}** with ID `{}`.
+          Use `{}` function to modify balance in BucketScript, or use `/bucketbalance add/subtract` for modify manually.
+    
+    delete:
+      description: Delete an existing virtual-economy in your server
+      translation: 
+        confirmation: 
+          question: Are you sure to delete economy {} **{}**? All existance balance record of members that assigned with this economy will be delete too!
+          timed_out: Confirmation timed out (15 seconds).
+          invalid: Invalid confirmation code (received `{}`, `{}` expected)
+        deleted: Economy {} `{}` with ID `{}` has been deleted.
+      modal:
+        title: 
+        placeholder: Please type '{}' to confirm deletion.
+        label: Delete Confirmation [{}]
+
+    list:
+      description: List all existing virtual-economy in your server
+      translation:
+        no_balance: This server does not have any balance. You can create a balance by using `/bucketbalance create`
+        title: BucketBalance list for {}
+        member: Member
+        total: Total Balance
+
+    add:
+      description: Add a specific amount of virtual-economy to a specific user
+      translation:
+        successful: "Successfully added {} {} **{}** to {}'s balance!"
+    
+    subtract:
+      description: Subtract a specific amount of virtual-economy from a specific user
+      translation:
+        successful: "Successfully subtracted {} {} **{}** to {}'s balance!"
+
+    leaderboard:
+      description: Show leaderboard of a specific virtual-economy
+      options:
+        limit: "Specify entries limit per page, default 10"
+      translation:
+        no_record: "There is no balance record for {} **{}**"
+      embed:
+        title: "{}'s Leaderboard for {}"
+        rank: Rank
+        points: Points
+        user: User
+
+server:
+  description: Show server-related information.
+  buttons:
+    banner: Banner
+    icon: Icon 
+  commands:
+    info:
+      description: Show information about this server
+      embed:
+        title: Server Information
+        owner: Owner
+        created: Created
+        boost: Boost
+        language: 
+          text: Language
+          server: "Server Setting"
+          config: "Configuration"
+        statistics: "Statistics"
+        security: 
+          text: Security
+          value: |
+            Verfivication Level: {}
+            Invite Paused: {}
+            Direct Message Paused: {}
+        verification:
+          none: None 
+          low: Low 
+          medium: Medium 
+          high: High 
+          highest: Highest
+    membercount:
+      description: Show members count about this server
+      translation:
+        total: Total
+        human: Humans
+        bot: Bots
+        24hours: Last 24 hours
+        7days: Last 7 days
+        30days: Last 30 days
+    role:
+      members:
+        description: Show members of a specific role
+        options:
+          limit: "Specify entries limit per page, default 10"
+        translation:
+          title: "@{}'s Role Members"
+      add:
+        description: Add a role to a member
+        translation:
+          user_hierachy: You are not higher than **{}** in the role hierarchy.
+          owner: You cannot give **{}** to server owner.
+          server_hierachy: I cannot give **{}** to **{}** due to Discord hierarchy rules. Please give me higher role to perform this action.
+          already_have: "{} already has the role **{}**."
+          elevated_permissions: "**{}** contains elevated permissions and cannot be assigned by the bot for security reasons."
+          successful: Added **{}** to **{}**.
+
+      add-all:
+        description: Add a role to all server members
+        choices:
+          option:
+            all: All Humans & Bots
+            human: All Humans (exclude bots)
+            bot: All Bots (exclude humans)
+        translation:
+          already_running: This server is currently having an instance of assigning roles to all members, please try after a few minutes.
+          server_hierachy: I cannot give **{}** to all members due to Discord hierarchy rules. Please give me higher role to perform this action.
+          elevated_permissions: "**{}** contains elevated permission and cannot be assigned by the bot for security reasons."
+          adding: Adding **{}** to {} accounts, this may take {}.
+          successful: Successfully added **{}** to {} accounts.
+      
+      remove:
+        description: Remove a role to from member
+        translation:
+          user_hierachy: You are not higher than **{}** in the role hierarchy.
+          owner: You cannot remove **{}** from server owner.
+          server_hierachy: I cannot remove {} from **{}** due to Discord hierarchy rules. Please give me higher role to perform this action.
+          already_have: "{} does not have the role {}."
+          elevated_permissions: "**{}** contains elevated permissions and cannot be removed by the bot for security reasons."
+          successful: Removed {} from **{}**.
+          
+      remove-all:
+        description: Remove a role from all server members
+        translation:
+          already_running: This server is currently having an instance of removing roles from all members, please try after a few minutes.
+          server_hierachy: I cannot remove {} from all members due to Discord hierarchy rules. Please give me higher role to perform this action.
+          elevated_permissions: "**{}** contains elevated permission and cannot be removed by the bot for security reasons."
+          adding: Removing **{}** from {} accounts, this may take {}.
+          successful: Successfully removed **{}** from {} accounts.
+
+quests:
+  description: Create Quests for your server members!
+  translation:
+    select: Select a quest, or specify Quest ID
+    invalid_quest: This is not a valid quest ID. Please choose again from the autocomplete.
+    empty_quest: "*There is no quest for you right now.*"
+    setting: 
+      state: 
+        mute: You cannot `🔇` **mute** while in voice
+        deafen: You cannot `🧏` **deafen** while in voice
+        both: You cannot `🧏` **deafen** or `🔇` **mute** while in voice
+      title: 
+        text: "Send {} text messages"
+        voice: "Stay in Voice Chat for {} minutes"
+      channel: 
+        single: "- In channel: {}"
+        any: "- In **one of following** channel: {}"
+      filter:
+        blacklist: '- Blacklist: '
+        whitelist: '- Whitelist: '
+      reset: 
+        timing: "- Resets: *{}*"
+        permanent: "- Resets: *No reset*"
+    duration:
+      text:
+        daily: 💬 Daily Chat's Quest
+        weekly: 💬 Weekly Chat's Quest
+        monthly: 💬 Monthly Chat's Quest
+        permanent: 💬 Chat's Quest
+      voice:
+        daily: 🔊 Daily Voice's Quest
+        weekly: 🔊 Weekly Voice's Quest
+        monthly: 🔊 Monthly Voice's Quest
+        permanent: 🔊 Voice's Quest
+    channel: Channel
+    any_channel: Any channel
+    toggle:
+      mute: Allow Mute
+      deafen: Allow Deafen
+    mode:
+      title: Mode
+      any: Messages can be anything
+      startswith: Messages have to begins with **{}**
+      contains: Messages have to contains **{}**
+      endswith: Messages have to ends with **{}**
+    filter:
+      text: Blacklist/Whitelist
+      blacklist: "Blacklist: Any of {}"
+      whitelist: "Whitelist: Any of {}"
+      
+  buttons:
+    whitelist: Whitelist
+    blacklist: Blacklist
+    function: Completion Functions
+    continue: Continue
+    back: Back
+    complete: Complete
+    textmode:
+      any: Any
+      startswith: Startswith 
+      contains: Contains 
+      endswith: Endswith 
+    voicemode:
+      mute: Allow Mute
+      deaf: Allow Deafen 
+    duration:
+      daily: Daily
+      weekly: Weekly
+      monthly: Monthly
+      permanent: No Reset
+    mode:
+      voice: Voice
+      text: Text
+
+  selects:
+    whitelist: Select roles to whitelist
+    blacklist: Select roles to blacklist
+    channel: Select channels
+
+  modals:
+    text:
+      title: Text Requirement
+      count:
+        label: Message Count
+        placeholder: Input a number of messages to complete the quest (1 - 99,999)
+      type: 
+        label: Message Type
+        startswith: The message content have to starts with ...
+        contains: The message content have to contains ...
+        endswith: The message content have to ends with ...
+    
+    function:
+      title: Completion Function
+      label: Completion Function
+      placeholder: Input quests completion function
+    
+    voice:
+      title: Voice Count
+      label: Voice Minutes
+      placeholder: Input a number of voice minutes to complete the quest (1 - 99,999)
+
+  embeds:
+    mode:
+      title: Quest Mode
+      description: |
+        You are selecting quest mode, that is able to complete either by stay in **Voice**, or chatting in **Text** channel.
+        Please select your selection below.
+        
+        **Next step:** Select Quest duration
+
+    duration:
+      title: Quest Duration
+      description: |
+        You are selecting quest duration, that we will reset the quest for everyone in the server after each specific period.
+        Please select your selection below.
+        
+        **Next step:** Select Channels
+
+    channel:
+      title: Quest's Channel
+      description:
+        text: |
+          You are selecting quest channels, only these channels will be count towards quest completion.
+          You can aslo skip this step.
+          Please select your selection below.
+          
+          **Next step:** Specify message requirement
+        
+        voice: |
+          You are selecting quest channels, only these channels will be count towards quest completion.
+          You can aslo skip this step.
+          Please select your selection below.
+          
+          **Next step:** Specify voice requirement
+
+    voicemode:
+      title: Quest's Voice Mode
+      description: | 
+        You are editing quest's voice mode, managing which conditions will count towards quest completion.\n' \
+        Your current option:
+        - Allow User Voice Mute: {}
+        - Allow User Deafen: {}
+        Please edit your option below.
+        
+        **Next step:** Specify voice duration
+    
+    textmode:
+      title: Quest's Text Mode
+      description: |
+        You are editing quest\'s text mode, meaning that the message content could be **startswith**, **contains**, or **endswith** something.
+        You can also skip this step if you want the message content to be anything.
+        Please select your selection below.
+
+        **Next step:** Specify message count, and message type (if you choose **startswith**, **contains**, or **endswith**)
+    
+    whitelistblacklist: 
+      title: Additional Settings
+      description: |
+        Additionaly, you can whitelist/blacklist specific roles from completing the quest.
+        Also, you should add a [BucketScript Functions](https://bot.tudubucket.dev/bucketscript/functions/) for quests completetion message. 
+
+        You can ignore this setting, **but you should add a message function**. Press **`🎉 Complete`** to complete the setup.
+        Otherwise, please select your selection below:
+
+    whitelist: 
+      title: Quest Whitelist
+      description: |
+        Whitelist specific roles can complete this quest.
+        Current roles: {}
+        Please select your selection below.
+
+        This is the final step. Press **`🎉 Complete`** to complete the setup
+      
+    blacklist: 
+      title: Quest Blacklist
+      description: |
+        Blacklist specific roles from complete this quest.
+        Current roles: {}
+        Please select your selection below.
+
+        This is the final step. Press **`🎉 Complete`** to complete the setup
+
+  commands:
+    setup:
+      description: Setup a new quest
+      translation:
+        missing:
+          timezone: "Before setting up a quest, you have to configure **Server timezone for Quest** (`/quest setting timezone`)."
+          channel: "Before setting up a quest, you have to configure **Channel for Quest's completion message** (`/quest setting channel`)."
+          both: "Before setting up a quest, you have to configure **Server timezone for Quest** (`/quest setting timezone`) & **Channel for Quest's completion message** (`/quest setting channel`)."
+    
+    list:
+      description: List all running quests
+      options:
+        hidden: Whether hide quests that you cannot complete
+    
+    delete:
+      description: Delete a quest
+      options:
+        purge_data: Whether purge the user's data associated with this quest
+
+    leaderboard: 
+      description: Shows leaderboard of a quest
+      options:
+        limit: "Specify entries limit per page, default 10"
+      translation:
+        embed:
+          title: "Quest's Leaderboard"
+          rank: Rank
+          points: Points
+          user: User
+    
+    settings:
+      timezone: 
+        description: Quests will reset on midnight based on configured timezone
+        translation:
+          already_set: "Your current timezone for quests is already at {}"
+          successfully: Successfully changed your quest timezone to {}"
+      
+      channel: 
+        description: Set channel to send quest's completion message
+        translation:
+          already_set: "Your current channel for sending quest's completed message for quests is already at {}"
+          successfully: Successfully changed your channel for sending quest's completed message to {}!"
