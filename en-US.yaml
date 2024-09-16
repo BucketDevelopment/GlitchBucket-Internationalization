@@ -2624,6 +2624,8 @@ moderation:
   commands:
     timeout:
       description: Timeout a member
+      options:
+        duration: 'Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)'
       translation:
         errors:
           self: "You cannot timeout yourself."
@@ -2652,6 +2654,8 @@ moderation:
 
     ban:
       description: Ban a member
+      options:
+        delete_message: Speficy message old (in days) to delete message, default 0
       translation:
         errors:
           self: "You cannot ban yourself."
@@ -2838,6 +2842,8 @@ server:
 
       add-all:
         description: Add a role to all server members
+        describe:
+          option: Select an option for assigning roles
         choices:
           option:
             all: All Humans & Bots
@@ -2862,6 +2868,8 @@ server:
           
       remove-all:
         description: Remove a role from all server members
+        describe:
+          option: Select an option for assigning roles
         translation:
           already_running: This server is currently having an instance of removing roles from all members, please try after a few minutes.
           server_hierachy: I cannot remove {} from all members due to Discord hierarchy rules. Please give me higher role to perform this action.
