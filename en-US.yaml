@@ -1792,7 +1792,7 @@ bucketscript:
   translation:
     unknown_embed: | 
       Unknown embed `{}` for guild `{}`
-      To create an emmbed, use </bucketscript embed create:1245661361673863238>
+      To create an embed, use </bucketscript embed create:1245661361673863238>
     preparing: Preparing data, please wait...
     embed: Specify Embed name
     invalid:
@@ -3101,3 +3101,21 @@ quests:
         translation:
           already_set: "Your current channel for sending quest's completed message for quests is already at {}"
           successfully: Successfully changed your channel for sending quest's completed message to {}!"
+
+user:
+  description: Show user-related information.
+  setting:
+    created: Created
+    joined: Joined 
+    boost: Boost 
+    badge: Badge 
+    roles: Roles 
+  commands:
+    info:
+      description: Show information of a user
+    avatar:
+      description: Show avatar of a user
+    banner:
+      description: Show banner of a user
+      translation:
+        no_banner: "{} does not have any banner."
