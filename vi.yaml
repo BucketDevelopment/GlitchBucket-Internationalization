@@ -3083,3 +3083,17 @@ user:
       description: Xem banner của một người dùng
       translation:
         no_banner: "{} không có banner."
+
+logging:
+  description: "Ghi nhật ký hoạt động của bot"
+  commands:
+    setup:
+      description: Thiết lập nhật ký cho mọi sự kiện liên quan đến bot
+      translation:
+        successful: Đã thiết lập thành công {} để trở thành kênh ghi nhật ký của {}.
+    disable:
+      description: Vô hiệu hóa ghi nhật ký sự kiện
+      translation:
+        no_record: Không có kênh ghi nhật ký cho bot.
+        successful: Đã vô hiệu hóa thành công ghi nhật ký của bot.
+ 
