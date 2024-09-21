@@ -1829,7 +1829,7 @@ bucketscript:
   embeds:
     empty:
       title: Empty Embed
-      description: This embed is currently empty. Start editing by using button below to make this default embed disappear!
+      description: Embed **`{}`** is currently empty. Start editing by using </bucketscript embed edit:1245661361673863238> to make this default embed disappear!
   selects:
     remove_fields: Select field(s) to remove
     insert_fields: Select field to add after it

@@ -1795,7 +1795,7 @@ bucketscript:
   embeds:
     empty:
       title: Embed Trống
-      description: Embed này hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng nút bên dưới để làm biến mất embed mặc định này!
+      description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </bucketscript embed edit:1245661361673863238> để làm biến mất embed mặc định này!
   selects:
     remove_fields: Chọn field để xóa
     insert_fields: Chọn field để thêm sau nó
