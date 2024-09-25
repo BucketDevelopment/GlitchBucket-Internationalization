@@ -3119,3 +3119,16 @@ user:
       description: Show banner of a user
       translation:
         no_banner: "{} does not have any banner."
+
+slowflake:
+  description: Showing difference between given ID and command message ID or 2 given IDs
+  options:
+    id1: First ID to compare
+    id2: Second ID to compare, default to Interaction ID
+  translation: 
+    sent: Sent 
+    compare: 
+      self: Showing difference between given ID and Interaction ID.
+      both: Showing difference between 2 given IDs.
+    invalid_input: Invalid input. Please provide a valid ID/Message link.
+  
