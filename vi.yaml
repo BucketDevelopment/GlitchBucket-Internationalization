@@ -3097,7 +3097,7 @@ logging:
         no_record: Không có kênh ghi nhật ký cho bot.
         successful: Đã vô hiệu hóa thành công ghi nhật ký của bot.
  
-slowflake:
+snowflake:
   description: Kiểm tra độ lệch thời gian giữa 2 ID
   options:
     id1: ID đầu tiên
