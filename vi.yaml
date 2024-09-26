@@ -3097,3 +3097,14 @@ logging:
         no_record: Không có kênh ghi nhật ký cho bot.
         successful: Đã vô hiệu hóa thành công ghi nhật ký của bot.
  
+slowflake:
+  description: Kiểm tra độ lệch thời gian giữa 2 ID
+  options:
+    id1: ID đầu tiên
+    id2: ID thứ hai, mặc định là ID Interaction
+  translation: 
+    sent: Gửi lúc 
+    compare: 
+      self: Kiểm tra thời gian giữa ID được cung cấp và ID Interaction
+      both: Kiểm tra thời gian giữa 2 ID được cung cấp
+    invalid_input: Input không hợp lệ. Vui lòng cung cấp một ID/Link tin nhắn hợp lệ

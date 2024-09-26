@@ -3121,7 +3121,7 @@ user:
         no_banner: "{} does not have any banner."
 
 slowflake:
-  description: Showing difference between given ID and command message ID or 2 given IDs
+  description: Showing time difference between given ID and command message ID or 2 given IDs
   options:
     id1: First ID to compare
     id2: Second ID to compare, default to Interaction ID
