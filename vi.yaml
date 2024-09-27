@@ -1914,7 +1914,7 @@ userscript:
   errors:
     preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
     no_negative: "Số dư không thể được đặt thành âm bằng cách sử dụng chức năng BucketScript (người dùng: `{}`, trước: `{}`, sau: `{}`). Bạn chỉ có thể làm cho nó âm bằng cách sử dụng lệnh /bucketscript subtract."
-    invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}``."
+    invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}`."
     invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
     large_payload: "`amount` phải trong khoảng [-5,000,000 | 5,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
     unknown_member: Thành viên không xác định `{}` 
@@ -1977,7 +1977,7 @@ voting:
       description: 'Bot hiện đang chuẩn bị dữ liệu cho server này, vui lòng quay trở lại sau vài phút.'
     invalid_channel: 
       title: Kênh vote không hợp lệ!
-      description: "Kênh vote không hợp lệ (có thể đã bị xóa: `{}``). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút. Nếu kênh đã bị xóa, bạn cần setup một vote session mới."
+      description: "Kênh vote không hợp lệ (có thể đã bị xóa: `{}`). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút. Nếu kênh đã bị xóa, bạn cần setup một vote session mới."
     missing_permission: 
       title: Thiếu Quyền
       description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Server về vấn đề này."
