@@ -2698,18 +2698,18 @@ bucketbalance:
         display_icon: "Chỉ định biểu tượng để hiển thị. Có thể là chuỗi ký tự"
         display_name: "Chỉ định tên để hiển thị"
       translation:
-        invalid_name: "Tên economy chỉ nên chứa các ký tự thường, số và dấu gạch dưới."
+        invalid_name: "Tên định danh economy chỉ nên chứa các ký tự thường, số và dấu gạch dưới."
         already_exists: "Economy với tên nhận dạng `{}` đã tồn tại, vui lòng thử tên khác."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 10 economy cho máy chủ này."
         created: |
           Đã tạo thành công economy {} **`[{}]`** **{}** với ID `{}`.
-          Sử dụng chức năng `{}` để chỉnh sửa economy trong BucketScript, hoặc sử dụng `/bucketbalance add/subtract` để chỉnh sửa thủ công.
+          Sử dụng function `{}` để chỉnh sửa economy trong BucketScript, hoặc sử dụng lệnh `/bucketbalance add/subtract` để chỉnh sửa thủ công.
     
     delete:
       description: Xóa một economy có sẵn trong máy chủ của bạn
       translation: 
         confirmation: 
-          question: Bạn có chắc chắn muốn xóa kinh tế {} **{}** không? Tất cả các bản ghi số dư của các thành viên được gán với kinh tế này cũng sẽ bị xóa!
+          question: Bạn có chắc chắn muốn xóa economy {} **{}** không? Tất cả các bản ghi số dư của các thành viên được gán với economy này cũng sẽ bị xóa!
           timed_out: Hết thời gian xác nhận (15 giây).
           invalid: Mã xác nhận không hợp lệ (nhận `{}`, mong đợi `{}`)
         deleted: Economy {} `{}` với ID `{}` đã bị xóa.
