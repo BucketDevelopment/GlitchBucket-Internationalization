@@ -1951,7 +1951,7 @@ userscript:
     no_negative: "Balance could not set to negative by using BucketScript function (user: `{}`, before: `{}`, after: `{}`). You could only make it negative by using command /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."
     invalid_number: "`amount` should be a numeric value. (received `{}`)"
-    large_payload: "`amount` should in range [-5,000,000 | 5,000,000] for each operation. (received `{}`)"
+    large_payload: "`amount` should in range [0 - 50,000,000] for each operation. (received `{}`)"
     unknown_member: Unknown member `{}`
     forbidden:
       require_user: You are not allowed to use this autoresponder.
