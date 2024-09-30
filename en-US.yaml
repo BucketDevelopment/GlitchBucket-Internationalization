@@ -189,6 +189,7 @@ snipe:
     channel: Specify a channel
   
   translation:
+    disabled: "[snipe disabled for this user]"
     recent: "Recent deleted/edited message for #{}"
     page_none: "There is no message in page **{}**"
     invalid_page: "**{}** is not a valid page."
@@ -946,9 +947,20 @@ stickie:
       translation:
         invalid: "Your embed JSON data is invalid, please try again. Remember to build & get Embed JSON Data only in <https://discohook.org/>!"
 
+fun:
+  description: Fun commands!
+
 setting: 
   description: Edit some settings
   commands:
+    blocksmcdisplay: 
+      description: Set display type for BlocksMC Tracker/Information Commands
+      options:
+        action: Select an option
+      choices:
+        both: "Both Image & Embed (Default)"
+        image: "Image only"
+        embed: "Embed only"
     snipe:
       toggle:
         description: Enable/Disable snipe for you

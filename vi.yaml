@@ -913,9 +913,20 @@ stickie:
       translation:
         invalid: "Dữ liệu JSON cho thông báo nhúng của bạn không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
 
+fun: 
+  description: mấy lệnh xàm loz
+
 setting: 
   description: Chỉnh sửa một số cài đặt
   commands:
+    blocksmcdisplay: 
+      description: Đặt loại hiển thị cho Lệnh /blocksmc tracker/information
+      options:
+        action: Chọn một tùy chọn
+      choices:
+        both: "Ảnh và embed (Mặc định)"
+        image: "Chỉ ảnh"
+        embed: "Chỉ embed"
     snipe:
       toggle:
         description: Bật/Tắt chức năng snipe cho bạn
@@ -931,7 +942,6 @@ setting:
         translation: 
           none_message: Không có tin nhắn nào trong bộ nhớ đệm để xóa.
           successful: Đã xóa thành công tất cả tin nhắn trong bộ nhớ đệm cho server này.
-
 
 locale:
   description: "Cài đặt ngôn ngữ"
@@ -2694,13 +2704,13 @@ moderation:
           none: "**{}** đã bị đá khỏi server."
 
 bucketbalance:
-  description: Economy cho server của bạn!
+  description: Economy cho máy chủ của bạn!
   common:
     balance: "Chọn một economy hoặc chỉ định ID Economy"
     invalid_id: "Đây không phải là ID economy hợp lệ. Vui lòng chọn lại từ phần tự động hoàn thành."
   commands:
     create:
-      description: Tạo economy trong server của bạn
+      description: Tạo economy trong máy chủ của bạn
       options:
         name: "Chỉ định tên nhận dạng economy. Đây không phải là tên để hiển thị"
         display_icon: "Chỉ định biểu tượng để hiển thị. Có thể là chuỗi ký tự"
@@ -2708,13 +2718,13 @@ bucketbalance:
       translation:
         invalid_name: "Tên định danh economy chỉ nên chứa các ký tự thường, số và dấu gạch dưới."
         already_exists: "Economy với tên nhận dạng `{}` đã tồn tại, vui lòng thử tên khác."
-        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 economy cho server này."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 economy cho máy chủ này."
         created: |
           Đã tạo thành công economy {} **`[{}]`** **{}** với ID `{}`.
           Sử dụng function `{}` để chỉnh sửa economy trong BucketScript, hoặc sử dụng lệnh `/bucketbalance add/subtract` để chỉnh sửa thủ công.
     
     delete:
-      description: Xóa một economy có sẵn trong server của bạn
+      description: Xóa một economy có sẵn trong máy chủ của bạn
       translation: 
         confirmation: 
           question: Bạn có chắc chắn muốn xóa economy {} **{}** không? Tất cả các bản ghi số dư của các thành viên được gán với economy này cũng sẽ bị xóa!
@@ -2727,9 +2737,9 @@ bucketbalance:
         label: Xác nhận xóa [{}]
 
     list:
-      description: Liệt kê tất cả các economy có sẵn trong server của bạn
+      description: Liệt kê tất cả các economy có sẵn trong máy chủ của bạn
       translation:
-        no_balance: Server này không có balance nào. Bạn có thể tạo một balance bằng cách sử dụng `/bucketbalance create`
+        no_balance: Máy chủ này không có số dư nào. Bạn có thể tạo một số dư bằng cách sử dụng `/bucketbalance create`
         title: Danh sách BucketBalance cho {}
         member: Thành viên
         total: Tổng số dư
@@ -2757,21 +2767,21 @@ bucketbalance:
         user: Người dùng
 
 server:
-  description: Hiển thị thông tin liên quan đến server.
+  description: Hiển thị thông tin liên quan đến máy chủ.
   buttons:
     banner: Biểu ngữ
     icon: Biểu tượng 
   commands:
     info:
-      description: Hiển thị thông tin về server này
+      description: Hiển thị thông tin về máy chủ này
       embed:
-        title: Thông tin Server
+        title: Thông tin Máy chủ
         owner: Chủ sở hữu
         created: Tạo ra
         boost: Tăng cường
         language: 
           text: Ngôn ngữ
-          server: "Cài đặt Server"
+          server: "Cài đặt Máy chủ"
           config: "Cấu hình"
         statistics: "Thống kê"
         security: 
@@ -2787,7 +2797,7 @@ server:
           high: Cao 
           highest: Cao nhất
     membercount:
-      description: Hiển thị số lượng thành viên về server này
+      description: Hiển thị số lượng thành viên về máy chủ này
       translation:
         total: Tổng cộng
         human: Người thật
@@ -2806,14 +2816,14 @@ server:
         description: Thêm một vai trò cho một thành viên
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
-          owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
+          owner: Bạn không thể cấp **{}** cho chủ sở hữu máy chủ.
           server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           already_have: "{} đã có vai trò **{}**."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           successful: Đã thêm **{}** cho **{}**.
 
       add-all:
-        description: Thêm vai trò cho tất cả thành viên server
+        description: Thêm vai trò cho tất cả thành viên máy chủ
         describe:
           option: Chọn một tùy chọn để gán vai trò
         choices:
@@ -2822,7 +2832,7 @@ server:
             human: Tất cả Người (không bao gồm bot)
             bot: Tất cả Bot (không bao gồm người)
         translation:
-          already_running: Server này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Máy chủ này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Tôi không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: Đang thêm **{}** cho {} tài khoản, điều này có thể mất {}.
@@ -2832,25 +2842,25 @@ server:
         description: Xóa một vai trò khỏi thành viên
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
-          owner: Bạn không thể xóa **{}** khỏi chủ sở hữu server.
+          owner: Bạn không thể xóa **{}** khỏi chủ sở hữu máy chủ.
           server_hierachy: Tôi không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           already_have: "{} không có vai trò {}."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           successful: Đã xóa {} khỏi **{}**.
 
       remove-all:
-        description: Xóa vai trò khỏi tất cả thành viên server
+        description: Xóa vai trò khỏi tất cả thành viên máy chủ
         describe:
           option: Chọn một tùy chọn để gán vai trò
         translation:
-          already_running: Server này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Máy chủ này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Tôi không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           adding: Đang xóa **{}** khỏi {} tài khoản, điều này có thể mất {}.
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
 
 quests:
-  description: Tạo nhiệm vụ cho thành viên trong server của bạn!
+  description: Tạo nhiệm vụ cho thành viên trong máy chủ của bạn!
   translation:
     select: Chọn một nhiệm vụ, hoặc nhập ID Nhiệm Vụ
     invalid_quest: Đây không phải là một ID nhiệm vụ hợp lệ. Vui lòng chọn lại từ gợi ý tự động.
@@ -2962,7 +2972,7 @@ quests:
     duration:
       title: Thời Gian Nhiệm Vụ
       description: |
-        Bạn đang chọn thời gian của nhiệm vụ, sẽ được đặt lại cho tất cả mọi người trong server sau mỗi khoảng thời gian nhất định.
+        Bạn đang chọn thời gian của nhiệm vụ, sẽ được đặt lại cho tất cả mọi người trong máy chủ sau mỗi khoảng thời gian nhất định.
         Vui lòng chọn lựa chọn của bạn bên dưới.
         
         **Bước tiếp theo:** Chọn Kênh
@@ -3036,9 +3046,9 @@ quests:
       description: Thiết lập một nhiệm vụ mới
       translation:
         missing:
-          timezone: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ server cho Nhiệm Vụ** (`/quest setting timezone`)."
+          timezone: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ máy chủ cho Nhiệm Vụ** (`/quest setting timezone`)."
           channel: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
-          both: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ server cho Nhiệm Vụ** (`/quest setting timezone`) & **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
+          both: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ máy chủ cho Nhiệm Vụ** (`/quest setting timezone`) & **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
     
     list:
       description: Liệt kê tất cả các nhiệm vụ đang chạy
