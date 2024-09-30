@@ -949,14 +949,22 @@ stickie:
 setting: 
   description: Edit some settings
   commands:
-    blocksmcdisplay: 
-      description: Set display type for BlocksMC Tracker/Information Commands
-      options:
-        action: Select an option
-      choices:
-        both: "Both Image & Embed (Default)"
-        image: "Image only"
-        embed: "Embed only"
+    snipe:
+      toggle:
+        description: Enable/Disable snipe for you
+        choices:
+          action:
+            enable: Enable (keep logging)
+            disable: Disable (no logging)
+        translation:
+          enabled: You have successfully enabled snipe logging. (Your message still in cache when you edit/delete it)
+          disabled: You have successfully disabled snipe logging. (Your message will be delete in cache when you edit/delete it)
+      clear:
+        description: Clear messages cache for snipe
+        translation: 
+          none_message: No cached messages to clear.
+          successful: Successfully cleared all cache messages for this server.
+
 
 locale:
   description: "Set your locale"
