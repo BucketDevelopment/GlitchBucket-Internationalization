@@ -969,8 +969,8 @@ setting:
             enable: Enable (keep logging)
             disable: Disable (no logging)
         translation:
-          enabled: You have successfully enabled snipe logging. (Your message still in cache when you edit/delete it)
-          disabled: You have successfully disabled snipe logging. (Your message will be delete in cache when you edit/delete it)
+          enable: You have successfully enabled snipe logging. (Your message still in cache when you edit/delete it)
+          disable: You have successfully disabled snipe logging. (Your message will be delete in cache when you edit/delete it)
       clear:
         description: Clear messages cache for snipe
         translation: 

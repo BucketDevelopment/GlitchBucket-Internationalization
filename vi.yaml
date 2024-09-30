@@ -173,6 +173,7 @@ snipe:
     channel: Chỉ định một kênh
   
   translation:
+    disabled: "[snipe đã bị tắt đối với người dùng này]"
     recent: "Tin nhắn đã xóa/chỉnh sửa gần đây cho #{}"
     page_none: "Không có tin nhắn nào ở trang **{}**"
     invalid_page: "**{}** không phải là một trang hợp lệ."
@@ -935,8 +936,8 @@ setting:
             enable: Bật (tiếp tục lưu trữ)
             disable: Tắt (không lưu trữ)
         translation:
-          enabled: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn của bạn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
-          disabled: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn của bạn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
+          enable: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn của bạn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
+          disable: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn của bạn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
       clear:
         description: Xóa bộ nhớ đệm tin nhắn cho snipe
         translation: 
