@@ -2876,13 +2876,13 @@ quests:
         voice: "Ở trong Kênh Thoại trong {} phút"
       channel: 
         single: "- Trong kênh: {}"
-        any: "- Trong **một trong các** kênh: {}"
+        any: "- Ở **một trong các** kênh: {}"
       filter:
         blacklist: '- Danh sách đen: '
         whitelist: '- Danh sách trắng: '
       reset: 
         timing: "- Đặt lại: *{}*"
-        permanent: "- Không đặt lại: *Không đặt lại*"
+        permanent: "- Đặt lại: *Không đặt lại*"
     duration:
       text:
         daily: 💬 Nhiệm Vụ Chat Hàng Ngày
@@ -2998,7 +2998,7 @@ quests:
     voicemode:
       title: Chế Độ Thoại của Nhiệm Vụ
       description: | 
-        Bạn đang chỉnh sửa chế độ thoại của nhiệm vụ, quản lý các điều kiện sẽ được tính vào việc hoàn thành nhiệm vụ.\n' \
+        Bạn đang chỉnh sửa chế độ thoại của nhiệm vụ, quản lý các điều kiện sẽ được tính vào việc hoàn thành nhiệm vụ.
         Tùy chọn hiện tại của bạn:
         - Cho phép người dùng tắt tiếng: {}
         - Cho phép người dùng tắt âm: {}
