@@ -2945,7 +2945,7 @@ quests:
       contains: Messages have to contains **{}**
       endswith: Messages have to ends with **{}**
     filter:
-      text: Blacklist/Whitelist
+      title: Blacklist/Whitelist
       blacklist: "Blacklist: Any of {}"
       whitelist: "Whitelist: Any of {}"
       

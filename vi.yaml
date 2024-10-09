@@ -2909,7 +2909,7 @@ quests:
       contains: Tin nhắn phải chứa **{}**
       endswith: Tin nhắn phải kết thúc bằng **{}**
     filter:
-      text: Danh Sách Đen/Trắng
+      title: Danh Sách Đen/Trắng
       blacklist: "Danh Sách Đen: Bất kỳ của {}"
       whitelist: "Danh Sách Trắng: Bất kỳ của {}"
       
