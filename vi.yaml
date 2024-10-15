@@ -274,13 +274,13 @@ illustration:
   translation:
     no_nsfw: "Bạn không thể sử dụng thẻ NSFW trong kênh này."
     none_illust: "Thẻ `{}` không trả về minh họa nào."
-    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ của bạn hoặc thay đổi đối số lệnh.*\n_ _"
+    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Kết quả có thể rất ít, hãy thử rút ngắn thẻ của bạn hoặc thay đổi tag.*\n_ _"
     suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử "
 
     author: "Author: "
     original: "Bài đăng gốc: "
     tag: "Tag"
-    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*"
+    multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*"
     less_amount: "***Cảnh báo:** Thẻ minh họa này trả về số lượng tác phẩm nghệ thuật ít (Tổng cộng: {})! Điều này có thể dẫn đến kết quả chất lượng thấp.*"
     less_accurracy: "***Cảnh báo:** Thẻ minh họa nhập của bạn dài hơn 2 từ! Điều này có thể dẫn đến kết quả chất lượng thấp.*\n_ _"
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
@@ -288,7 +288,7 @@ illustration:
 artwork:
   report:
     label: 
-  description: Ngẫu nhiên các tác phẩm nghệ thuật hàng đầu trên https://pixiv.net
+  description: Ngẫu nhiên các top artwork trên https://pixiv.net
   options:
     leaderboard: Chọn hình ảnh hàng đầu của phạm vi ngày cụ thể
     archived: Có chọn hình ảnh lưu trữ ngẫu nhiên không còn trong bảng xếp hạng hay không
@@ -298,10 +298,10 @@ artwork:
     lb_monthly: Hàng tháng
   translation:
     no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
-    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
+    multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
-    author: "Tác giả"
-    original: "Bài đăng gốc"
+    author: "Author:"
+    original: "Bài đăng gốc:"
 
 r18:
   description: Hình ảnh R-18 ngẫu nhiên
@@ -313,7 +313,7 @@ r18:
     lb_weekly: Hàng tuần
   translation:
     no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
-    multi_art: "***Lưu ý:** Minh họa bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
+    multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
     tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
     author: "Tác giả"
@@ -332,9 +332,9 @@ r34:
 illust_report:
   warning: |
     ## :warning: Lưu ý trước khi báo cáo:
-    - Hình ảnh trùng lặp là **không hợp lý** để báo cáo.
-    - Chúng tôi chỉ chấp nhận xóa **Manga/Hướng dẫn Vẽ**, **Thể loại Hình ảnh Sai lệch** và **Hình ảnh Chất lượng Kém/Tệ**.
-    - Không gửi thư rác/báo cáo vô ích, bạn có thể bị đưa vào danh sách đen nếu cố gắng làm điều đó!
+    - Hình ảnh trùng lặp **không phải là một lí do hợp lý** để báo cáo.
+    - Đội ngũ Kiểm duyệt chỉ chấp nhận xóa **Manga/Art tutorial**, **Ảnh sai Category** và **Hình ảnh Chất lượng Kém**.
+    - Gửi báo cáo rác sẽ bị blacklist!
 
     :small_red_triangle_down: Vui lòng chọn một thể loại để báo cáo bên dưới đây :small_red_triangle_down:
   reported: "Nội dung này đã được báo cáo"
