@@ -2005,11 +2005,11 @@ voting:
       description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Server về vấn đề này."
     
   translation: 
-    outdated_data: "*Dữ liệu này đã cũ và hiện bot đang làm mới dữ liệu trong nền (Cập nhật {}). Hãy sử dụng lại lệnh sau vài phút để có dữ liệu mới nhất.*"
+    outdated_data: "*Dữ liệu này đã cũ và hiện bot đang làm mới dữ liệu trong nền (Thời gian bắt đầu cập nhật: {}). Hãy sử dụng lại lệnh sau vài phút để có dữ liệu mới nhất.*"
     none_vote: "*Hiện đang không có vote hợp lệ nào trong kênh <#{}>.*"
     none_running: Hiện không có phiên vote nào đang diễn ra trong server này.
     require_setup: Server này chưa thiết lập bất kỳ phiên vote nào. Vui lòng chạy lệnh `/voting session setup` ít nhất một lần để lệnh này hoạt động.
-    cache: "\nĐã lưu trữ {} trước • Cập nhật lại mỗi 5 phút"
+    cache: "\nĐã lưu trữ {} trước • Cập nhật lại mỗi 10 phút"
     votes: Phiếu bầu
     messages: Tin nhắn
     valid: hợp lệ
