@@ -2040,11 +2040,11 @@ voting:
       description: "We are missing permission to read votes in {}: **Manage Messages**, **Read Message History**, **Read Messages** & **Add Reactions**.\nYou may have to contact Server Administrator about this problem."
     
   translation: 
-    outdated_data: "*This data is outdated and the bot is currently refreshing the data in the background (Updated {}). Please use the command again in a few minutes to get the latest data.*"
+    outdated_data: "*This data is outdated and the bot is currently refreshing the data in the background (Starting update since: {}). Please use the command again in a few minutes to get the latest data.*"
     none_vote: "*There is no valid votes in <#{}>.*"
     none_running: There is no vote session running in this guild.
     require_setup: This guild has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
-    cache: "\nCached {} ago • Renew every 5 minutes"
+    cache: "\nCached {} ago • Renew every 10 minutes"
     votes: Votes
     messages: Messages
     valid: valid
