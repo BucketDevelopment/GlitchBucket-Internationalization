@@ -3153,4 +3153,16 @@ snowflake:
       self: Showing difference between given ID and Interaction ID.
       both: Showing difference between 2 given IDs.
     invalid_input: Invalid input. Please provide a valid ID/Message link.
+
+snowflake_ctxmenu:
+  translation:
+    modal:
+      title: Snowflake
+      label: ID to compare with
+      placeholder: 123456789012345678 | https://discord.com/channels/...
+    sent: Sent
+    compare:
+      given: Showing difference in time between the ID from the given message and the current timestamp.
+      current: Showing difference in time between the ID from the given message and the given ID.
+    invalid_input: Invalid input. Please provide a valid ID/Message link.
   

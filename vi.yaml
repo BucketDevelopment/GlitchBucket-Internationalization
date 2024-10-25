@@ -3130,3 +3130,15 @@ snowflake:
       self: Kiểm tra thời gian giữa ID được cung cấp và ID Interaction
       both: Kiểm tra thời gian giữa 2 ID được cung cấp
     invalid_input: Input không hợp lệ. Vui lòng cung cấp một ID/Link tin nhắn hợp lệ
+
+snowflake_ctxmenu:
+  translation:
+    modal:
+      title: Snowflake
+      label: ID to compare with
+      placeholder: 123456789012345678 | https://discord.com/channels/...
+    sent: Sent
+    compare:
+      given: Showing difference in time between the ID from the given message and the current timestamp.
+      current: Showing difference in time between the ID from the given message and the given ID.
+    invalid_input: Invalid input. Please provide a valid ID/Message link.
