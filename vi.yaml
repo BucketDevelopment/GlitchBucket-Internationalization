@@ -2250,7 +2250,7 @@ minecraft:
           title: "Không thể kết nối tới server"
           description: "Không thể kết nối tới `{}` ngay bây giờ, vui lòng thử lại sau."
       translation:
-        custom_banner: "Đặt banner tùy chỉnh cho Server Minecraft của bạn bằng </minecraft custom-server-banner:1258037133189451817>!"
+        custom_banner: "**TIP:** Đặt banner tùy chỉnh cho Server Minecraft của bạn bằng lệnh </minecraft custom-server-banner:1258037133189451817>!"
         below_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `below_layer`. Vui lòng chọn lại từ danh sách autocomplete. Bot sẽ sử dụng `end_stone` làm mặc định.\n"
         above_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `above_layer`. Vui lòng chọn lại từ danh sách autocomplete.\n"
         resolved_ip: "Địa chỉ IP"
