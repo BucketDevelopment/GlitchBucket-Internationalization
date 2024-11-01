@@ -2286,6 +2286,7 @@ minecraft:
           title: "Cannot connect to server"
           description: "We are unable to connect to `{}` right now, please try again later."
       translation:
+        custom_banner: "Set your own banner for your Minecraft Server by using </minecraft custom-server-banner:1258037133189451817>!"
         below_block_warning: ":warning: **Warning:** Unknown material `{}` for `below_layer`. Please select again from the autocomplete. We will use `end_stone` as default.\n"
         above_block_warning: ":warning: **Warning:** Unknown material `{}` for `above_layer`. Please select again from the autocomplete.\n"
         resolved_ip: "Resolved IP"
