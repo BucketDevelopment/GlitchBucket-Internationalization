@@ -2251,6 +2251,23 @@ tasks:
 minecraft:
   description: "Utilities for Minecraft."
   commands:
+  custombanner:
+    description: 'Guide to setting a custom Banner for your Minecraft Server'
+    translation:
+      title: Set a Banner for the Minecraft Server
+      fields:
+        preparation:
+          name: "Preparation"
+          value: |
+            - DNS Manager (Such as [Cloudflare](https://dash.cloudflare.com/?to=/dns/records))
+            - An image URL for a banner sized 2560x320
+        setup:
+          name: "Steps"
+          value: "Create a **`URI`** record type with `Priority` set to **`15`** and `Weight` set to **`2215`**. For `Target`, enter the URL pointing to the banner you’ve prepared.\nThe bot will automatically check and fetch the banner once the record is successfully set."
+        reason:
+          name: "Reason"
+          value: "Creating this DNS Record ensures that you own/manage the domain, preventing other users from changing or using data based on your domain."
+
     server: 
       description: "Display status of a Minecraft server"
       options:
