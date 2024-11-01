@@ -2227,7 +2227,7 @@ minecraft:
               - Một URL hình ảnh, cho banner kích cỡ 2560x320
           setup:
             name: "Cách thực hiện"
-            value: "Tạo một record loại **`URI`**, với `Priority` (độ ưu tiên) là **`15`**, và `Weight` (độ nặng) là **`2215`**. Phần `Target` (mục tiêu), bạn hãy điền URL dẫn đến banner bạn đã chuẩn bị.\nBot sẽ tự động kiểm tra và lấy banner ngay khi bạn đặt record thành công"
+            value: "Tạo một record loại **`URI`**, với `Priority` (độ ưu tiên) là **`15`**, và `Weight` (độ nặng) là **`2215`**. Phần `Target` (mục tiêu), bạn hãy điền URL dẫn đến banner bạn đã chuẩn bị.\n\nBot sẽ tự động kiểm tra và lấy banner ngay khi bạn đặt record thành công"
           reason:
             name: "Lí do" 
             value: "Việc thực hiện tạo một DNS Record này để đảm bảo rằng bạn là người sở hữu/quản lí tên miền đó, tránh việc người dùng khác thay đổi hoặc sử dụng dữ liệu dựa trên tên miền của bạn"
