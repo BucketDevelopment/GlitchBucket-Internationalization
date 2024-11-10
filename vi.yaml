@@ -1,4 +1,5 @@
 common:
+  limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
   ping: " **|** `Shard {}/{}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Để xem các lệnh có sẵn, sử dụng </help:1119604872497594495> hoặc truy cập [Trang tài liệu](<https://docs.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
   _true: "Có"
@@ -2098,6 +2099,17 @@ voting:
       options:
         sort: Sắp xếp kết quả theo thứ tự giảm dần hay không
         user: Xem tin nhắn từ một người dùng cụ thể
+        hide_disqualified: Có ẩn những người bị loại hay không 
+    detail: 
+      description: Xem thống kê chi tiết của 1 tin nhắn 
+      options:
+        hide_invalid: Có ẩn những người vote bị loại hay không 
+        session: Chọn một phiên hoặc chỉ định ID phiên
+      translation:
+        invalid_message: Phiên bầu chọn hiện đang chạy trong server không chứa ID tin nhắn này.
+      autocomplete:
+        author: Người gửi
+        votes: Số lượng vote
     configuration: 
       description: Xem & Chỉnh sửa cấu hình bầu chọn
     history:

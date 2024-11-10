@@ -1,4 +1,5 @@
 common:
+  limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
   ping: " **|** `Shard {}/{}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://docs.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
   _true: "True"
@@ -2133,6 +2134,17 @@ voting:
       options:
         sort: Whether sort the result in descending order
         user: View messages from a specific user
+        hide_disqualified: Whether hide disqualified participants or not
+    detail: 
+      description: View detail statistics of a message
+      options:
+        hide_invalid: Whether hide disqualified voters or not
+        session: Choose a session, or specify a session ID
+      translation:
+        invalid_message: The current voting session does not contains this message ID.
+      autocomplete:
+        author: Author
+        votes: Votes
     configuration: 
       description: View & Edit vote configuration
     history:
