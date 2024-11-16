@@ -1343,7 +1343,10 @@ customrole:
       translation:
         none_found: "{} does not have any custom role set."
         title: "List of Custom Role for {}"
-        entries: "{}Role: {} - Author: {}\n"
+        duration: 
+          permanent: "no expires"
+          boost: "expire on remove boosts"
+          timing: "expires: {}"
 
     migrate:
       description: "Migrate an existing role to a bot's custom role"

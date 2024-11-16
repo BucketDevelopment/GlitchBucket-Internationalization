@@ -1310,8 +1310,10 @@ customrole:
       translation:
         none_found: "{} không có bất kỳ Custom Role nào được thiết lập."
         title: "Danh sách Custom Role cho {}"
-        entries: "{}Vai trò: {} - Người sở hữu: {}\n"
-
+        duration: 
+          permanent: "không hết hạn"
+          boost: "cho đến khi xóa boost"
+          timing: "hết hạn: {}"
     migrate:
       description: "Di chuyển một vai trò hiện có sang Custom Role của bot"
       options: 
