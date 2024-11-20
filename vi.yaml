@@ -3177,3 +3177,22 @@ snowflake_ctxmenu:
       given: Showing difference in time between the ID from the given message and the current timestamp.
       current: Showing difference in time between the ID from the given message and the given ID.
     invalid_input: Invalid input. Please provide a valid ID/Message link.
+
+emoji:  
+  description: Quản lý Emoji.
+  commands:
+    upload:
+      description: "Tải lên một emoji mới vào máy chủ"
+      translation:
+        failed: 
+          download: "Không thể tải xuống hình ảnh."
+          upload: "Không thể tải lên emoji: {}"
+        uploaded: "Đã tải lên emoji: {}"
+    steal:
+      description: "Lấy một emoji từ máy chủ khác hoặc từ một URL"
+      translation:
+        invalid: "Emoji hoặc URL không hợp lệ."
+        failed: 
+          download: "Không thể tải xuống emoji."
+          upload: "Không thể tải lên emoji: {}"
+        uploaded: "Đã tải lên emoji: {}"
