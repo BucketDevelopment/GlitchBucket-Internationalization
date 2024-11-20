@@ -3191,6 +3191,7 @@ emoji:
     steal:
       description: "Lấy một emoji từ máy chủ khác hoặc từ một URL"
       translation:
+        name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."
         failed: 
           download: "Không thể tải xuống emoji."

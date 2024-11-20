@@ -3216,6 +3216,7 @@ emoji:
     steal:
       description: "Steal an emoji from another server, or from an url"
       translation:
+        name_required: "Emoji name is required for emoji URL stealing."
         invalid: "Invalid emoji or URL provided."
         failed: 
           download: "Failed to download the emoji."
