@@ -1,7 +1,7 @@
 common:
   limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
-  ping: " **|** `Shard {}/{}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://docs.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
+  ping: " **|** `Shard {}/{}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://bot.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
   _true: "True"
   _false: "False"
   support:
