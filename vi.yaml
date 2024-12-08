@@ -1239,7 +1239,40 @@ customrole:
       restricted_permission: "Quyền bị hạn chế"
     admin_title: "Cấu hình quản trị Custom Role cho {}"
     description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu vai trò:**"
+  
+  modal: 
+    title: Color Palette
+    color: 
+      label: Hex Color
+      placeholder: "Format: #ABABAB"
+    description: 
+      label: Description
+      placeholder: A description for this color, could be empty
+  
   common:
+    palette:
+      added: "Đã thêm màu {} vào bảng màu."
+      modified: "Màu {} đã có trong cơ sở dữ liệu của server, nên chúng tôi đã thay đổi thông tin về màu này."
+      toggle: "Bật/Tắt chỉ sử dụng bảng màu"
+      maximum_reached: Số lượng màu trong bảng màu đã đạt mức tối đa (25).
+      add: Thêm một màu
+      remove: Xóa một màu
+    approval:
+      approved: Đã chấp nhận yêu cầu {}.
+      approve: Chấp nhận 
+      decline: Từ chối
+      declined: Đã từ chối yêu cầu {}.
+      unknown_channel: "Server này không có kênh phê duyệt yêu cầu. Vui lòng liên hệ với Quản trị viên máy chủ để thiết lập kênh phê duyệt bằng cách sử dụng `/customrole admin request-approval`."
+      sent: "Yêu cầu `#{}` của bạn đã được gửi. Đội ngũ Quản trị của server sẽ sớm xem xét yêu cầu sửa đổi của bạn."
+      messages: 
+        remove_member: "{} đã yêu cầu **xóa** {} khỏi {}."
+        add_member: "{} đã yêu cầu **thêm** {} vào {}."
+        edit_mentionable: "{} đã yêu cầu **{}** quyền được nhắc tới cho {}."
+        edit_color: "{} đã yêu cầu **chỉnh sửa màu** thành {} cho {}."
+        edit_name: "{} đã yêu cầu **chỉnh sửa tên hiển thị** thành {} cho {}."
+        edit_icon: "{} đã yêu cầu **chỉnh sửa icon** thành {} cho {}."
+        this: đây
+
     unknown_role: "ID Role `{}` không thuộc về server này - role có thể đã bị xóa."
     select_role: Chọn một Custom Role, hoặc chỉ định một Custom Role ID
     cannot_edit_role: "Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi vai trò của tôi thành một vị trí cao hơn."
@@ -1347,12 +1380,23 @@ customrole:
         edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
         manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
         make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+    
+    approval: 
+      description: "Bật/Tắt yêu cầu chỉnh sửa Custom Role"
+
+    palette:
+      description: "Lệnh tùy chỉnh bảng màu cho Custom Role" 
 
     extend:
       description: "Gia hạn ngày hết hạn cho một Custom Role"
       options:
         time_range: "Chỉ định phạm vi thời gian (vd 1d2h). Nhập '0' = vĩnh viễn, '1' = xóa khi người sở hữu xóa boost"
-    
+        from: "Chỉ định sẽ thêm thời gian vào thời điểm nào. Mặc định là cộng vào thời điểm role hết hạn."
+      choices:
+        from: 
+          now: Cộng vào thời điểm bây giờ
+          expire: Cộng vào thời điểm role hết hạn
+
     search: 
       description: "Tìm kiếm một Custom Role được gán cho một thành viên"
       translation:
@@ -1396,6 +1440,8 @@ customrole:
           description: "Thay đổi màu của Custom Role của bạn"
           options:
             color: "Có thể là `0x<hex>`, `#<hex>`, `rgb(<số>, <số>, <số>)`, hoặc để trống cho màu mặc định."
+          translation: 
+            palette_forbidden: Server này đã giới hạn bạn chỉ được sử dụng một số màu nhất định. Vui lòng chọn từ autocomplete thay vì nhập một màu.
         icon:
           description: "Chỉnh sửa biểu tượng của Custom Role của bạn"
           options:

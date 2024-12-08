@@ -1274,7 +1274,39 @@ customrole:
       restricted_permission: "Restricted Permissions"
     admin_title: "Custom Role Admin Configuration for {}"
     description: "**Total Custom Roles:** {}\n**Role Author Permission:**"
+
+  modal: 
+    title: Color Palette
+    color: 
+      label: Hex Color
+      placeholder: "Format: #ABABAB"
+    description: 
+      label: Description
+      placeholder: A description for this color, could be empty
+
   common:
+    palette: 
+      toggle: "Toggle \"Color Palette only\""
+      maximum_reached: "Maximum color in palette reached (25)."
+      added: "Added color {} to the color palette."
+      modified: "The color {} already exists in the server's database, so we have updated its information."
+      add: Add a color
+      remove: Remove a color
+    approval:
+      approved: Request {} has been approved.
+      approve: Approve
+      decline: Decline
+      declined: Request {} has been declined.
+      unknown_channel: "This server does not have an approval channel. Please contant a Server Administrator to set up approval channel by using `/customrole admin request-approval`."
+      sent: "Your update request `#{}` has been sent. A Server Manager will review your update request soon."
+      messages: 
+        remove_member: "{} requested to **remove** {} from {}."
+        add_member: "{} requested to **add** {} to {}."
+        edit_mentionable: "{} requested to **{}** mentionable for {}."
+        edit_color: "{} requested to **edit color** to {} for {}."
+        edit_name: "{} requested to **edit display name** to {} for {}."
+        edit_icon: "{} requested to **edit display icon** to {} for {}."
+        this: this
     select_role: Select a Custom Role, or specify your Custom Role ID
     unknown_role: "Role ID `{}` does not belong to this server - the role may have been deleted."
     cannot_edit_role: "I cannot manage a role that has higher than or equal position with my highest role position (me: pos {0}, destination role: pos {1}).\nYou may contact Server Administrator about this, consider change my role to a higher priority."
@@ -1381,11 +1413,21 @@ customrole:
         manage_role_members_permission: "Let role's author can add/remove role members"
         make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
 
+    approval: 
+      description: "Manage custom role's approval channel & status"
+
+    palette:
+      description: "Manage custom role's color palette"
+
     extend:
       description: "Extend expire date for a custom role"
       options:
         time_range: "Specity time range. Type '0' to make permanent, '1' to remove when role author remove boost"
-    
+        from: "Specify which time to extend the role. Default is when the role expired."
+      choices:
+        from: 
+          now: From now
+          expire: When the role expired 
     search: 
       description: "Search a custom role assigned to a member"
       translation:
@@ -1429,6 +1471,8 @@ customrole:
           description: "Change color of your custom role"
           options:
             color: "Can be `0x<hex>`, `#<hex>`, `rgb(<number>, <number>, <number>)`, or leave empty for default color."
+          translation: 
+            palette_forbidden: This server has restricted role color to a set of color. Please select a color from command autocomplete instead of specifying one.
         icon:
           description: "Edit icon of your custom role"
           options:
