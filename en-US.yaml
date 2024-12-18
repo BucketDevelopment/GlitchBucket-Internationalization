@@ -1290,6 +1290,12 @@ customrole:
 
   common:
     palette: 
+      embed: 
+        title: "Color Palette"
+        description: 
+          restricted: "This server is **restricted** to use only color in palette below. You can only use one of colors below here:"
+          not_restricted: "This server is **not restricted** to use only color in palette below. You can use any color, or one of colors below here:"
+          no_palette: "No color available. Start adding color palette by pressing \"Add Color\" below."
       toggle: "Toggle \"Color Palette only\""
       maximum_reached: "Maximum color in palette reached (25)."
       added: "Added color {} to the color palette."

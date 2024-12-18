@@ -1255,6 +1255,13 @@ customrole:
   
   common:
     palette:
+      embed: 
+        title: "Bảng Màu"
+        description: 
+          restricted: "Máy chủ này **đã giới hạn** bạn chỉ được sử dụng màu ở bảng phía dưới. Bạn chỉ có thể sử dụng một trong những màu dưới đây:"
+          not_restricted: "Máy chủ này **không giới hạn** màu bạn có thể sử dụng. Bạn có thể sử dụng bất kỳ màu nào, hoặc một trong những màu dưới đây:"
+          no_palette: "Không có màu nào trong bảng. Bắt đầu thêm bảng màu bằng cách nhấn \"Thêm Màu\" bên dưới."
+
       added: "Đã thêm màu {} vào bảng màu."
       modified: "Màu {} đã có trong cơ sở dữ liệu của server, nên chúng tôi đã thay đổi thông tin về màu này."
       toggle: "Bật/Tắt chỉ sử dụng bảng màu"
