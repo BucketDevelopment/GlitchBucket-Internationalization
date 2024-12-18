@@ -110,11 +110,15 @@ common:
     expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
   
   error:
-    dns: "We cannot connect to discord to process your previous interaction, please try again."
+    dns: "We could not connect to discord to process your previous interaction, please try again."
     client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
     database: "A database error occurred while saving your data, please try again later..."
     unknown: 
-      reply: "An unknown error occurred while executing the command, please try again later..."
+      reply: | 
+        "An error occurred while executing the command: "
+        "{}" 
+        "Please try again. If the issue still persists, join our support server for further fixes."
+        "-# Triggering a consistent amount of errors in a short period will result in a temporary bot-ban. Error ID: {}"
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
 
 logging:

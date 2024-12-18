@@ -117,7 +117,11 @@ common:
     client_desync: "### :warning: Lệnh này đã lỗi thời so với máy của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
     database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu của bạn, vui lòng thử lại sau..."
     unknown: 
-      reply: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh, vui lòng thử lại sau..."
+      reply: |
+        "Đã có lỗi xảy ra trong khi thực hiện thao tác: "
+        "{}" 
+        "Bạn có thể thử lại. Nếu lỗi vẫn tiếp diễn, vui lòng tham gia Server Hỗ trợ để được hỗ trợ sớm nhất."
+        "-# Tạo liên tục nhiều lỗi trong thời gian ngắn sẽ bị cấm tạm thời. ID Lỗi: {}"
       reply_failed: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh trên, vui lòng thử lại sau..."
 
 afk:
