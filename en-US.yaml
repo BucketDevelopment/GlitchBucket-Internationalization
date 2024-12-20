@@ -213,6 +213,7 @@ help:
     installable: "User Installable"
     group_note: "\n\n*Note: This is a command group.*"
     subcommand: "Sub-Command"
+    commands: "Commands"
     parameters: 
       none: "*No parameters required.*"
       string: "Parameters"

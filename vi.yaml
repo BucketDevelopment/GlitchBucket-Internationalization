@@ -198,6 +198,7 @@ help:
     installable: "Có thể cài đặt bởi Người dùng"
     group_note: "\n\n*Lưu ý: Đây là một khối lệnh.*"
     subcommand: "Các lệnh con"
+    commands: "Các lệnh của bot"
     parameters: 
       none: "*Không yêu cầu tham số.*"
       string: "Các tham số"
