@@ -1,4 +1,5 @@
 common:
+  bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
   ping: " **|** `Shard {}/{}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://bot.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
@@ -390,6 +391,8 @@ autoresponder:
         pserver: "Guild Placeholders"
         pcmessage: "Channel & Message Placeholders"
         func: "Functions"
+        bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)'s complete list & examples"
+
 
     add: 
       description: Add an autoresponder
@@ -1881,13 +1884,13 @@ bucketscript:
     greeting: 
       title: Server Greeting Message
       description: 
-        missing: "**Greeting Message:**\n\n{}"
-        full: "**Greeting Message for <#{}>:**\n\n{}"
+        missing: "### Greeting Message:\n\n{}"
+        full: "### Greeting Message for <#{}>:\n\n{}"
     farewell: 
       title: Server Farewell Message
       description: 
-        missing: "**Farewell Message:**\n\n{}"
-        full: "**Farewell Message for <#{}>:**\n\n{}"
+        missing: "### Farewell Message:\n\n{}"
+        full: "### Farewell Message for <#{}>:\n\n{}"
     maximum_fields_reached: Maximum embed fields reached (25). You cannot add any field until you remove one.
     invalid_input: Your previous input was invalid, make sure to follow the instruction.
     maximum_size_reached: 'Maximum embed size reached (6000 characters). Consider remove another parts of embed to add another one.'

@@ -1,4 +1,5 @@
 common:
+  bucketscript: "[Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
   ping: " **|** `Shard {}/{}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Để xem các lệnh có sẵn, sử dụng </help:1119604872497594495> hoặc truy cập [Trang tài liệu](<https://bot.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
@@ -424,6 +425,7 @@ autoresponder:
         pserver: "Hàm cho server"
         pcmessage: "Hàm cho kênh & tin nhắn"
         func: "Các hàm khác"
+        bucketscript: "Danh sách đầy đủ cho [Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
 
     add:
       description: Thêm một autoresponder
@@ -1848,13 +1850,13 @@ bucketscript:
     greeting: 
       title: Tin nhắn Chào mừng của Server
       description: 
-        missing: "**Tin nhắn Chào mừng:**\n\n{}"
-        full: "**Tin nhắn Chào mừng cho <#{}>:**\n\n{}"
+        missing: "### Tin nhắn Chào mừng:\n\n{}"
+        full: "### Tin nhắn Chào mừng cho <#{}>: \n\n{}"
     farewell: 
       title: Tin nhắn Tạm biệt của Server
       description: 
-        missing: "**Tin nhắn Tạm biệt:**\n\n{}"
-        full: "**Tin nhắn Tạm biệt cho <#{}>:**\n\n{}"
+        missing: "### Tin nhắn Tạm biệt: \n\n{}"
+        full: "### Tin nhắn Tạm biệt cho <#{}>:**\n\n{}\n\n"
     maximum_fields_reached: Đã đạt đến giới hạn field của embed (25). Bạn không thể thêm bất kỳ field nào cho đến khi bạn xóa một cái.
     invalid_input: Thông tin đã nhập trước đó của bạn không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
     maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
