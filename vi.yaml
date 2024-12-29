@@ -1295,6 +1295,7 @@ customrole:
       _true: "Có"
       _false: "Không"
       default: "Mặc định"
+      approval: "Gửi Yêu cầu cho Quản trị viên duyệt"
     role_not_registered: |
       {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
       Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
@@ -1397,6 +1398,9 @@ customrole:
     
     approval: 
       description: "Bật/Tắt yêu cầu chỉnh sửa Custom Role"
+      options:
+        channel: "Chỉ định kênh để nhận yêu cầu chỉnh sửa"
+        concurrent_request: "Chỉ định tối đa số yêu cầu đồng thời chưa được duyệt của một người. Mặc định: 2"
 
     palette:
       description: "Lệnh tùy chỉnh bảng màu cho Custom Role" 
@@ -3255,3 +3259,6 @@ emoji:
           download: "Không thể tải xuống emoji."
           upload: "Không thể tải lên emoji: {}"
         uploaded: "Đã tải lên emoji: {}"
+
+network: 
+  description: Các lệnh liên quan tới mạng.

@@ -1329,6 +1329,7 @@ customrole:
       _true: "True"
       _false: "False"
       default: "Default"
+      approval: "Send Approval to Manager"
     role_not_registered: |
       {} is not a role that has been registered as a custom role in our database.
       To migrate from your own role into our custom role's database, please use </customrole admin migrate:1201110041013526589>
@@ -1429,7 +1430,8 @@ customrole:
 
     approval: 
       description: "Manage custom role's approval channel & status"
-
+      channel: "Specify the channel to receive requests"
+      concurrent_request: "Specify the maximum number of concurrent unapproved requests from a member. Default: 2"
     palette:
       description: "Manage custom role's color palette"
 
@@ -3278,3 +3280,6 @@ emoji:
           download: "Failed to download the emoji."
           upload: "Failed to upload emoji: {}"
         uploaded: "Emoji uploaded: {}"
+
+network: 
+  description: Network Utilities 
