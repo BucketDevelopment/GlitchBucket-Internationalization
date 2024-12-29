@@ -715,11 +715,14 @@ donation:
         range: Chỉ định phạm vi cho truy vấn
         limit: Chỉ định giới hạn cho truy vấn
       choices:
-        all: "Mọi thời đại"
+        all: "Từ trước tới nay"
         24hours: 24 giờ qua
         7days: 7 ngày qua
         30days: 30 ngày qua
-        1year: Năm ngoái
+        1year: 1 năm qua
+        year: Năm nay
+        month: Tháng này
+        week: Tuần này
       translation:
         no_record: "Không có bản ghi ủng hộ nào trong guild này khớp với phạm vi bạn đã chọn."
         lb_info: "Bảng xếp hạng ủng hộ cho {}"

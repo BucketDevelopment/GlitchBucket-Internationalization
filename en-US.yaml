@@ -750,6 +750,9 @@ donation:
         7days: last 7 days
         30days: Last 30 days
         1year: Last year
+        year: This year
+        month: This month
+        week: This week
       translation:
         no_record: "There are no donation records in this guild that matches your selected range."
         lb_info: "Donation Leaderboard for {}"
