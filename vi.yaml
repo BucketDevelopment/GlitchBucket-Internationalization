@@ -725,7 +725,9 @@ donation:
         week: Tuần này
       translation:
         no_record: "Không có bản ghi ủng hộ nào trong guild này khớp với phạm vi bạn đã chọn."
-        lb_info: "Bảng xếp hạng ủng hộ cho {}"
+        leaderboard: 
+          info: "Bảng xếp hạng ủng hộ cho {}"
+          description: "Thông tin donate được lấy từ <t:{0}:F> (t:{0}:R) đến nay."
         rank: Xếp hạng
         points: Điểm
         user: Người dùng

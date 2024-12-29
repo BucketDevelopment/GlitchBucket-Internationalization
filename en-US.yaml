@@ -755,7 +755,9 @@ donation:
         week: This week
       translation:
         no_record: "There are no donation records in this guild that matches your selected range."
-        lb_info: "Donation Leaderboard for {}"
+        leaderboard: 
+          info: "Donation Leaderboard for {}"
+          description: "This leaderboard shows donation records from <t:{0}:F> (t:{0}:R) to now."
         rank: Rank
         points: Points
         user: User
