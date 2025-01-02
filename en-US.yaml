@@ -2042,6 +2042,17 @@ userscript:
     invalid_number: "`amount` should be a numeric value. (received `{}`)"
     large_payload: "`amount` should in range [0 - 50,000,000] for each operation. (received `{}`)"
     unknown_member: Unknown member `{}`
+    random: 
+      number: You haven't picked a random number before calling `[random:number]` placeholder. Please add a random number function `{random:number:A-B}` to random a number from `A` to `B`, then get the randomized number by using `[random:number]` placeholder.
+      string: You haven't picked a random string before calling `[random:string]` placeholder. Please add a random string function `{random:string:A|B|C}` to random a string between `A`, `B`, or `C`, then get the randomized string by using `[random:string]` placeholder.
+    malform_number: "Malformed input for random number function. To random a number between `A` and `B`, please follow structure `{random:number:A-B}`"
+    argument_error: 
+      from: Arguments are required from position `{}`.
+      range: Arguments are required in position `{}` to `{}`.
+      single: An argument is required in position `{}`.
+    invalid_reply_edit: "Cannot edit/reply to original message when calling both `{reply}`/`{reply_no_mention}` & `{edit}` functions."
+    quick_delay: "A sleep/delay/wait opreration should be at least 1 second. (received `{}`)"
+    requires_delay: "Message editing is only allowed after `{sleep}`/`{delay}`/`{wait}` is called."
     forbidden:
       require_user: You are not allowed to use this autoresponder.
       require_channel: You are not allowed to use this autoresponder in this channel.

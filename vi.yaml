@@ -2010,7 +2010,17 @@ userscript:
     invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
     large_payload: "`amount` phải trong khoảng [0 - 50,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
     unknown_member: Thành viên không xác định `{}` 
-
+    quick_delay: "Cần ít nhất 1 giây giữa các sleep/delay/wait. (đã nhận `{}`)"
+    requires_delay: "Lệnh chỉnh sửa tin nhắn chỉ được phép thực hiện sau khi `{sleep}`/`{delay}`/`{wait}` được gọi ra."
+    invalid_reply_edit: "Không thể chỉnh sửa/phản hồi tin nhắn gốc khi gọi chung `{reply}`/`{reply_no_mention}` và `{edit}` function."
+    random: 
+      number: Bạn chưa chọn một số ngẫu nhiên trước khi gọi placeholder `[random:number]`. Vui lòng thêm một hàm tính số ngẫu nhiên `{random:number:A-B}` để chọn một số ngẫu nhiên từ `A` đến `B`, sau đó lấy số ngẫu nhiên bằng cách sử dụng placeholder `[random:number]`.
+      string: Bạn chưa chọn một chuỗi ngẫu nhiên trước khi gọi placeholder `[random:string]`. Vui lòng thêm một hàm tính chuỗi ngẫu nhiên `{random:string:A|B|C}` để chọn một chuỗi ngẫu nhiên từ `A`, `B`, hoặc `C`, sau đó lấy chuỗi ngẫu nhiên bằng cách sử dụng placeholder `[random:string]`.
+    malform_number: "Dữ liệu đầu vào chưa chính xác đối với hàm số ngẫu nhiên. Để chọn một số ngẫu nhiên giữa `A` và `B`, vui lòng làm theo cấu trúc: `{random:number:A-B}`"
+    argument_error: 
+      from: Tin nhắn của bạn cần có độ dài `{}`.
+      range: Tin nhắn của bạn cần có độ dài `{}` đến `{}`.
+      single: Tin nhắn của bạn cần có nội dung tại vị trí thứ `{}`.
     triggered: "\n-# Autoresponder ID: `{}`"
     forbidden:
       require_user: Bạn không được phép sử dụng autoresponder này.
