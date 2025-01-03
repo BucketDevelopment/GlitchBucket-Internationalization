@@ -2037,8 +2037,8 @@ userscript:
     update_roles: Update roles on autoresponder
   errors:
     user: 
-      missing_permission: "{} :: Missing Permissions: {}"
-      placeholder_error: "{} :: Logical Placeholder Error: {}"
+        missing_permission: "{} Missing Permissions:"
+        placeholder_error: "{} Logical Placeholder Error:"
     preparing: "This guild is currently in preparing phase, please try this autoresponder later."
     no_negative: "Balance could not set to negative by using BucketScript function (user: `{}`, before: `{}`, after: `{}`). You could only make it negative by using command /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."
