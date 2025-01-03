@@ -392,7 +392,7 @@ autoresponder:
       reply: Trả lời lại tin nhắn kích hoạt
     empty: "**Không có tin nhắn phản hồi**"
   common:
-    error: "{}: {}"
+    error: "{}:\n {}"
     bot_error: "Bot đã xuất hiện lỗi khi xử lí BucketScript, vui lòng báo cáo tới Developer.\n{}: {}"
     equal: Khớp chính xác
     contains: Chứa
@@ -2004,6 +2004,9 @@ userscript:
   translation:
     update_roles: Cập nhật vai trò từ autoresponder
   errors:
+    user: 
+      missing_permission: "{} :: Thiếu quyền sử dụng:"
+      placeholder_error: "{} :: Lỗi quy trình sử dụng:"
     preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
     no_negative: "Số dư không thể được đặt thành âm bằng cách sử dụng chức năng BucketScript (người dùng: `{}`, trước: `{}`, sau: `{}`). Bạn chỉ có thể làm cho số tiền âm bằng cách sử dụng lệnh /bucketscript subtract."
     invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}`."
