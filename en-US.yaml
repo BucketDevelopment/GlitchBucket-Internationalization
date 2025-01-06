@@ -2036,9 +2036,20 @@ userscript:
   translation:
     update_roles: Update roles on autoresponder
   errors:
+    argument:
+      missing:
+        user: "A valid user is required at argument `#{}`."
+        role: "A valid role is required at argument `#{}`."
+        channel: "A valid channel is required at argument `#{}`."
+        number: "A valid number is required at argument `#{}`."
+        any: "An argument is required at position `#{}`."
+      invalid: 
+        user: "A valid user is required at argument `#{}`. You wrote `{}`."
+        role: "A valid role is required at argument `#{}`. You wrote `{}`."
+        channel: "A valid channel is required at argument `#{}`. You wrote `{}`."
     user: 
-        missing_permission: "### {} Missing Permissions: {}"
-        placeholder_error: "### {} Logical Placeholder Error: {}"
+      missing_permission: "### {} Missing Permissions: {}"
+      placeholder_error: "### {} Logical Placeholder Error: {}"
     preparing: "This guild is currently in preparing phase, please try this autoresponder later."
     no_negative: "User {} does not have sufficient {}'s balance to perform the deduction (current: `{}`, after deduction: `{}`). The balance can only go negative by using /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."

@@ -2004,6 +2004,18 @@ userscript:
   translation:
     update_roles: Cập nhật vai trò từ autoresponder
   errors:
+    argument:
+      missing:
+        user: "Cần một người dùng hợp lệ tại vị trí `#{}`."
+        role: "Cần một vai trò hợp lệ tại vị trí `#{}`."
+        channel: "Cần một kênh hợp lệ tại vị trí `#{}`."
+        number: "Cần một số hợp lệ tại vị trí `#{}`."
+        any: "Cần một tham số tại vị trí `#{}`."
+      invalid:
+        user: "Cần một người dùng hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+        role: "Cần một vai trò hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+        channel: "Cần một kênh hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+
     user: 
       missing_permission: "### {} Thiếu quyền: {}"
       placeholder_error: "### {} Lỗi quy trình: {}"
