@@ -2080,7 +2080,7 @@ userscript:
 
       cooldown: "This autoresponder is on a **cooldown**. Try again: {}"
       global_cooldown: "This autoresponder is on a **global cooldown**. Try again: {}"
-    triggered: "\n-# Triggered Autoresponder ID: `{}`"
+    triggered: "-# Triggered Autoresponder ID: `{}`"
     webhook_cannot_reply: Webhook cannot reply to messages.
     validator:
       user: User ID '{}' is not valid in placeholder `{}`

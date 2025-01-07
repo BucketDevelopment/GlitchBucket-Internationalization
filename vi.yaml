@@ -2036,7 +2036,7 @@ userscript:
       from: Tin nhắn của bạn cần có độ dài `{}`.
       range: Tin nhắn của bạn cần có độ dài `{}` đến `{}`.
       single: Tin nhắn của bạn cần có nội dung tại vị trí thứ `{}`.
-    triggered: "\n-# Autoresponder ID: `{}`"
+    triggered: "-# Autoresponder ID: `{}`"
     forbidden:
       require_user: Bạn không được phép sử dụng autoresponder này.
       require_channel: Bạn không được phép sử dụng autoresponder này trong kênh này.
