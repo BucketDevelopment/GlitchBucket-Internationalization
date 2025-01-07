@@ -122,7 +122,7 @@ common:
         Đã có lỗi xảy ra trong khi thực hiện thao tác: 
         {}
         Bạn có thể thử lại. Nếu lỗi vẫn tiếp diễn, vui lòng tham gia Server Hỗ trợ để được hỗ trợ sớm nhất.
-        -# Tạo liên tục nhiều lỗi trong thời gian ngắn sẽ bị cấm tạm thời. ID Lỗi: {}
+        -# Tạo liên tục nhiều lỗi trong thời gian ngắn sẽ bị cấm tạm thời. ID Lỗi: `{}`
       reply_failed: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh trên, vui lòng thử lại sau..."
 
 afk:

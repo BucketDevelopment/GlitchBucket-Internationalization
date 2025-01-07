@@ -119,7 +119,7 @@ common:
         An error occurred while executing the command:
         {}
         Please try again. If the issue still persists, join our support server for further fixes.
-        -# Triggering a consistent amount of errors in a short period will result in a temporary bot-ban. Error ID: {}
+        -# Triggering a consistent amount of errors in a short period will result in a temporary bot-ban. Error ID: `{}`
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
 
 logging:
