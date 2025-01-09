@@ -21,7 +21,7 @@ common:
     Bot đã tự động phát hiện ngôn ngữ server của bạn là {1} ({2}), vì vậy server của bạn sẽ sử dụng ngôn ngữ {1}.
     Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </locale guildset:1191310036950069269> hoặc </locale myself:1191310036950069269>.
 
-    [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>)
+    [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>) - [✨ Premium](<https://bot.tudubucket.dev/premium/whitelabel/>)
   
   ban: 
     removed: |
