@@ -347,7 +347,10 @@ autoresponder:
     reaction: Reaction
     reply: Reply
     raw: Raw reply
-    cooldown: Cooldown
+    cooldown: 
+      title: Cooldown
+      global: Global
+      member: Member
     redirect: Redirect reply to
     sendback:
       title: Sendback type

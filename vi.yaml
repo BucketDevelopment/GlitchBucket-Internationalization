@@ -383,7 +383,10 @@ autoresponder:
     reaction: React tin nhắn
     reply: Trả lời
     raw: Trả lời thô
-    cooldown: Thời gian chờ
+    cooldown: 
+      title: Thời gian chờ
+      global: Toàn server
+      member: Theo Member
     redirect: Chuyển hướng trả lời đến
     sendback:
       title: Loại gửi lại
