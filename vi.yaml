@@ -2173,6 +2173,7 @@ voting:
         description: |
           Chọn cách thức bot đếm vote:
 
+          **First Reaction**: Đếm __tổng số lượt reaction__ của react đầu tiên,
           **Reaction**: Đếm __tổng số lượt reaction__ của tin nhắn,
           **Member**: Đếm __tổng số member đã react__ vào tin nhắn,
           **Strict**: Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})
@@ -2223,7 +2224,7 @@ voting:
         start:
           description: Thiết lập một phiên bầu chọn
           options:
-            from_message: Chỉ định một ID tin nhắn để bắt đầu đếm phiếu sau đó
+            from_message: Chỉ định một ID tin nhắn để đếm phiếu từ đó. Để trống để đếm toàn bộ tin nhắn.
           translation:
             missing_permission: "Bot thiếu quyền trong {} để đọc phiếu bầu: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
             invalid_message: "ID Tin nhắn cung cấp cho {0} không hợp lệ. Đảm bảo rằng đó là một số nguyên hợp lệ và tồn tại trong {0}."

@@ -2205,6 +2205,7 @@ voting:
         description: |
           Choose how the bot count votes:
 
+          **First Reaction**: Count __total reaction count__ of the first reaction,
           **Reaction**: Count __total reaction count__ of the message,
           **Member**: Count __total member reacted__ to the message,
           **Strict**: Count only reaction count of a single emoji ({})
@@ -2255,7 +2256,7 @@ voting:
         start:
           description: Setup a vote session
           options:
-            from_message: Specify a message ID to start count votes after it
+            from_message: Specify a message ID to count votes after it. Leave empty to count all messages in that channel.
           translation:
             missing_permission: "We are missing permission in {} to read votes: **`Manage Messages`**, **`Read Message History`**, **`Read Messages`** & **`Add Reactions`**"
             invalid_message: "The provided Message ID for {0} was invalid. Make sure it is a valid integer and exists in {0}."
