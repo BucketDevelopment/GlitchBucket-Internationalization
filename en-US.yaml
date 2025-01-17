@@ -2165,6 +2165,7 @@ voting:
           limited: "- Each participant can post only __{} messages__"
           unlimited: "- Each participant can post __unlimited messages__"
       state: 
+        first: "> Count __total reaction count__ of the first react"
         member: "> Count __total reaction count__ of the message"
         reaction: "> Count __total member reacted__ to the message"
         strict: "> Count only reaction count of a single emoji ({})"

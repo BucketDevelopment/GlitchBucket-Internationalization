@@ -2131,8 +2131,9 @@ voting:
         everyone: "- Tất cả mọi người đều có thể tham gia\n"
         messages:
           limited: "- Mỗi người tham gia chỉ được gửi __{} tin nhắn__"
-          unlimited: "- Mỗi người tham gia có thể gửi __bất kỳ số tin nhắn__"
+          unlimited: "- Mỗi người tham gia có thể gửi __bất kỳ số lượng tin nhắn__"
       state: 
+        first: "> Đếm __tổng số lượt reaction__ của react đầu tiên"
         member: "> Đếm __tổng số lượt reaction__ của tin nhắn"
         reaction: "> Đếm __tổng số thành viên đã react__ vào tin nhắn"
         strict: "> Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})"
