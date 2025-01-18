@@ -2356,7 +2356,7 @@ minecraft:
       embed:
         invalid:
           title: "Địa chỉ không hợp lệ!"
-          description: "Không thể tách địa chỉ server/cổng (port) từ địa chỉ `{}`, hoặc tên server không phải là IPv4 hợp lệ, hoặc kết quả DNS từ tên server là `None`."
+          description: "Không thể tách địa chỉ server/cổng (port), hoặc tên server không phải là IPv4 hợp lệ, hoặc kết quả DNS từ tên server là `None`."
         failed:
           title: "Không thể kết nối tới server"
           description: "Không thể kết nối tới `{}` ngay bây giờ, đó có thể do:\n- Server đã chặn IP dịch vụ của bot,\n- Server đang ngoại tuyến.\nBạn có thể thử lại sau vài phút."

@@ -2389,7 +2389,7 @@ minecraft:
       embed:
         invalid:
           title: "Invalid address!"
-          description: "Cannot strip hostname/port from address `{}`, or hostname is not a valid IPv4, or DNS result from hostname is `None`."
+          description: "Cannot strip hostname/port from provided address, or hostname is not a valid IPv4, or DNS result from hostname is `None`."
         failed:
           title: "Unable to connect to server"
           description: "Cannot connect to `{}` right now, this may be due to:\n- The server has blocked the bot's service IP,\n- The server is offline.\nYou can try again in a few minutes."
