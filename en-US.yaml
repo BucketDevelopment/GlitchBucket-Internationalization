@@ -2057,6 +2057,12 @@ userscript:
     no_negative: "User {} does not have sufficient {}'s balance to perform the deduction (current: `{}`, after deduction: `{}`). The balance can only go negative by using /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."
     invalid_number: "`amount` should be a numeric value. (received `{}`)"
+    invalid_delete:
+      trigger: "`int` in `{delete_trigger:int}` should be a numeric value. (received `{}`)"
+      reply: "`int` in `{delete_reply:int}` should be a numeric value. (received `{}`)"
+    cooldown:
+      member: "`int` in `{cooldown:int}` should be a numeric value. (received `{}`)"
+      global: "`int` in `{global_cooldown:int}` should be a numeric value. (received `{}`)"
     large_payload: "`amount` should in range [0 - 50,000,000] for each operation. (received `{}`)"
     unknown_member: Unknown member `{}`
     random: 
