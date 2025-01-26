@@ -2053,6 +2053,7 @@ userscript:
     user: 
       missing_permission: "### {} Missing Permissions: {}"
       placeholder_error: "### {} Logical Placeholder Error: {}"
+    insufficient_balance: "You do not have sufficient {}'s balance to perform this trigger (current: `{}`, required: `{}`)."
     preparing: "This guild is currently in preparing phase, please try this autoresponder later."
     no_negative: "User {} does not have sufficient {}'s balance to perform the deduction (current: `{}`, after deduction: `{}`). The balance can only go negative by using /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."

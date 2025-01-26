@@ -2022,6 +2022,7 @@ userscript:
     user: 
       missing_permission: "### {} Thiếu quyền: {}"
       placeholder_error: "### {} Lỗi quy trình: {}"
+    insufficient_balance: "Bạn không đủ số dư `{}` để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
     preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
     no_negative: "Người dùng {} không đủ số dư {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số tiền chỉ có thể xuống âm bằng cách sử dụng lệnh /bucketscript subtract."
     invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}`."
