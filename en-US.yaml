@@ -1438,8 +1438,9 @@ customrole:
 
     approval: 
       description: "Manage custom role's approval channel & status"
-      channel: "Specify the channel to receive requests"
-      concurrent_request: "Specify the maximum number of concurrent unapproved requests from a member. Default: 2"
+      describe:
+        channel: "Specify the channel to receive requests"
+        concurrent_request: "Specify the maximum number of concurrent approval requests from a member. Default: 2"
     palette:
       description: "Manage custom role's color palette"
 
