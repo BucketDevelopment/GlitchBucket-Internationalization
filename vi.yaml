@@ -3287,6 +3287,9 @@ emoji:
   commands:
     upload:
       description: "Tải lên một emoji mới vào máy chủ"
+      describe:
+        name: Têm emoji
+        image: Tải lên emoji
       translation:
         failed: 
           download: "Không thể tải xuống hình ảnh."
@@ -3294,6 +3297,9 @@ emoji:
         uploaded: "Đã tải lên emoji: {}"
     steal:
       description: "Lấy một emoji từ máy chủ khác hoặc từ một URL"
+      describe: 
+        emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
+        name: Chỉ định tên emoji
       translation:
         name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."

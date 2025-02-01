@@ -3308,6 +3308,9 @@ emoji:
   commands:
     upload:
       description: "Upload a new emoji to the server"
+      describe:
+        name: Specify emoji name
+        image: Upload emoji here
       translation:
         failed: 
           download: "Failed to download the image."
@@ -3315,6 +3318,9 @@ emoji:
         uploaded: "Emoji uploaded: {}"
     steal:
       description: "Steal an emoji from another server, or from an url"
+      describe:
+        emoji_input: Specify a custom emoji, or an Image URL
+        name: Specify emoji name
       translation:
         name_required: "Emoji name is required for emoji URL stealing."
         invalid: "Invalid emoji or URL provided."
