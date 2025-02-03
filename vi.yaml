@@ -130,9 +130,14 @@ afk:
   options:
     reason: Lý do AFK
     silent: Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không
+    is_global: Có AFK ở toàn bộ server không, hay chỉ AFK tại server này
+
   translation:
     already_set: ":warning: Bạn hiện đã AFK với lí do: {}."
-    successfull: ":electric_plug: Bạn đã set AFK, với lí do: **{}**"
+    successful_title: "Đã set AFK!"
+    successful: 
+      global: ":electric_plug: Bạn đã set AFK **tại tất cả server**, với lí do: **{}**"
+      server: ":electric_plug: Bạn đã set AFK **tại server này**, với lí do: **{}**"
     welcome_back: ":stopwatch: Chào mừng bạn trở lại, {}! Bạn đã AFK trong **{}** và nhận được **{}** đề cập."
     received_mention: "Các đề cập đã nhận"
     currently_afk: ":placard: Hiện tại `{}` đang AFK (<t:{}:R>): **{}**"

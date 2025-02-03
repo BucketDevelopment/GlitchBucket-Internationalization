@@ -145,9 +145,13 @@ afk:
   options:
     reason: AFK Reason
     silent: Whether this command should be executed in silent or not
+    is_global: Whether globally AFK or not
   translation:
     already_set: ":warning: You already AFK with reason: {}."
-    successfull: ":electric_plug: You have set yourself AFK, with reason: **{}**"
+    successful_title: "AFK Set!"
+    successful: 
+      global: ":electric_plug: You have **globally** set yourself AFK, with reason: **{}**"
+      server: ":electric_plug: You have set yourself AFK **in this server**, with reason: **{}**"
     welcome_back: ":stopwatch: Welcome back, {}! You were AFK for **{}** and received **{}** mention."
     received_mention: "Received mention(s)"
     currently_afk: ":placard: `{}` is currently AFK for <t:{}:R>: **{}**"
