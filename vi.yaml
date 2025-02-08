@@ -2365,6 +2365,7 @@ minecraft:
         background: "Hình nền. Ép buộc blur trên 5. Bạn có thể chỉ định 1 URL image cỡ 2560x320 (16:2)"
         darken: "Giá trị làm tối cho nền, mặc định là 160"
         blur: "Làm mờ nền, mặc định là 0"
+        proxy_protocol: "Chỉ định server có bật PROXY protocol hay không"
       embed:
         invalid:
           title: "Địa chỉ không hợp lệ!"

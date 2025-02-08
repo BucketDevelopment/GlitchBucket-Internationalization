@@ -2398,6 +2398,7 @@ minecraft:
         background: "A MOTD background. You can specify an image URL with size 2560x320 (16:2 ratio)"
         darken: "Darken value for background, default 160"
         blur: "Blur background, default 0"
+        proxy_protocol: "Specify if server has PROXY protocol enabled or not"
       embed:
         invalid:
           title: "Invalid address!"
