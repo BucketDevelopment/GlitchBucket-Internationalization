@@ -1994,6 +1994,7 @@ bucketscript:
       create:
         description: Create an Embed for BucketScript
         translation:
+          forbidden: "You cannot name an embed with a name that startswith `__` - this is for our system embed identification."
           already_exists: An embed with that name already exists. Please choose another name, or use `/bucketscript embed edit` to edit an existing embed.
           maximum_reached: You cannot create more than 15 embeds in this server.
       edit:
@@ -2276,6 +2277,8 @@ voting:
             already_running: "This server already having a running vote session in <#{}>."
         end:
           description: End server's vote session
+          options:
+            save_data: Whever to save vote data or not. This could take a very long duration
           translation:
             ending: This session is currently in save progess, you can check back later.
             saving: Saving data, please wait for some minutes ...

@@ -1963,6 +1963,7 @@ bucketscript:
       create:
         description: Tạo một Embed cho BucketScript
         translation:
+          forbidden: "Bạn không thể đặt tên embed bắt đầu bằng `__` - đây là đặc điểm nhận dạng cho các embed của hệ thống bot."
           already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/bucketscript embed edit` để chỉnh sửa một embed hiện có.
           maximum_reached: Bạn không thể tạo hơn 15 embed trong server này.
       edit:
@@ -2244,6 +2245,8 @@ voting:
             already_running: "Server này đã có một phiên bầu chọn đang diễn ra trong <#{}>."
         end:
           description: Kết thúc phiên bầu chọn của server
+          options:
+            save_data: Tùy chọn có lưu dữ liệu hay không. Sẽ mất một khoảng thời gian dài để làm mới dữ liệu và lưu
           translation:
             ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
