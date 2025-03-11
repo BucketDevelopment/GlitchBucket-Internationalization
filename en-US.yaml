@@ -172,11 +172,19 @@ information:
   description: Show information of GlitchBucket
   translation:
     global_information: Global Information
-    description: |
-      **GlitchBucket** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), mainly focus on automated & unique feature.
-      > - For a list of available command, use </help:1119604872497594495>.
-      > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
-      > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+    description: 
+      normal: |
+        **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
+        > - For a list of available command, use </help:1119604872497594495>.
+        > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      whitelabeled: |
+        **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
+        `👑` This bot is a registered Whitelabel Instance of **[GlitchBucket](https://bot.tudubucket.dev).**
+        > - For a list of available command, use </help:1119604872497594495>.
+        > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      
     
     cpu: CPU Usage
     recent: Latest Update

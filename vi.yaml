@@ -155,15 +155,22 @@ fack: # Bỏ qua
     user: Người dùng bạn muốn fack
 
 information: # Hoàn thành
-  description: Hiển thị thông tin của GlitchBucket
+  description: Hiển thị thông tin của bot
   translation:
     global_information: Thông tin
-    description: |
-      **GlitchBucket** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), chủ yếu tập trung vào tính năng tự động & độc đáo.
-      > - Để biết danh sách các lệnh có sẵn, hãy sử dụng </help:1119604872497594495>.
-      > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
-      > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
-    
+    description: 
+      normal: |
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết của bạn.
+        > - Để biết danh sách các lệnh có sẵn, hãy sử dụng </help:1119604872497594495>.
+        > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      whitelabeled: |
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết của bạn.
+        `👑` Đây là phiên bản đăng kí Premium (Whitelabel Instance) của **[GlitchBucket](https://bot.tudubucket.dev).**
+        > - Để biết danh sách các lệnh có sẵn, hãy sử dụng </help:1119604872497594495>.
+        > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        
     cpu: CPU
     recent: Cập nhật gần nhất
     ram: RAM
