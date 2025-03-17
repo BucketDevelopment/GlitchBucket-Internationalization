@@ -3059,6 +3059,7 @@ quests:
     select: Select a quest, or specify Quest ID
     invalid_quest: This is not a valid quest ID. Please choose again from the autocomplete.
     empty_quest: "*There is no quest for you right now.*"
+    unknown_channel: ":warning: Bot cannot access/view these channel(s): {}"
     setting: 
       state: 
         mute: You cannot `🔇` **mute** while in voice

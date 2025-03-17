@@ -3024,6 +3024,7 @@ quests:
     select: Chọn một nhiệm vụ, hoặc nhập ID Nhiệm Vụ
     invalid_quest: Đây không phải là một ID nhiệm vụ hợp lệ. Vui lòng chọn lại từ gợi ý tự động.
     empty_quest: "*Hiện tại không có nhiệm vụ nào dành cho bạn.*"
+    unknown_channel: ":warning: Bot không thể xem/truy cập vào kênh sau: {}"
     setting: 
       state: 
         mute: Bạn không thể `🔇` **tắt tiếng** khi đang ở trong kênh thoại
