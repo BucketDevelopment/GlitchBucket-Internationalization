@@ -19,7 +19,7 @@ common:
     Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi tại [Trung tâm Hỗ trợ](https://discord.gg/WDc5uF9wyS )!
 
     Bot đã tự động phát hiện ngôn ngữ server của bạn là {1} ({2}), vì vậy server của bạn sẽ sử dụng ngôn ngữ {1}.
-    Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </locale guildset:1191310036950069269> hoặc </locale myself:1191310036950069269>.
+    Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </language server:1351220692863156396> hoặc </language me:1351220692863156396>.
 
     [Tài liệu Hướng dẫn](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Trung tâm Hỗ trợ](<https://discord.gg/WDc5uF9wyS>) - ✨ [Premium](<https://bot.tudubucket.dev/premium/whitelabel/>)
   
@@ -965,8 +965,8 @@ setting:
             enable: Bật (tiếp tục lưu trữ)
             disable: Tắt (không lưu trữ)
         translation:
-          enable: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn của bạn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
-          disable: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn của bạn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa nó)
+          enable: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn của bạn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa)
+          disable: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn của bạn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa)
       clear:
         description: Xóa bộ nhớ đệm tin nhắn cho snipe
         translation: 

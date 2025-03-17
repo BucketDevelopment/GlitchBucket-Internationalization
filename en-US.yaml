@@ -19,7 +19,7 @@ common:
     If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
 
     We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
-    To change application's setting about localization, you can use </locale guildset:1191310036950069269> or </locale myself:1191310036950069269>.
+    To change application's setting about localization, you can use </language server:1351220692863156396> or </language me:1351220692863156396>.
 
     [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>) - ✨ [Premium](<https://bot.tudubucket.dev/premium/whitelabel/>)
   ban: 
@@ -177,13 +177,13 @@ information:
         **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
         > - For a list of available command, use </help:1119604872497594495>.
         > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
-        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://bot.tudubucket.dev/policy/terms-of-service/) - [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       whitelabeled: |
         **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
         `👑` This bot is a registered Whitelabel Instance of **[GlitchBucket](https://bot.tudubucket.dev).**
         > - For a list of available command, use </help:1119604872497594495>.
         > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
-        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://ankita.tudubucket.workers.dev/application/GlitchBucket/term-of-service) - [Privacy Policy](https://ankita.tudubucket.workers.dev/application/GlitchBucket/privacy-policy) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://bot.tudubucket.dev/policy/terms-of-service/) - [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       
     
     cpu: CPU Usage
