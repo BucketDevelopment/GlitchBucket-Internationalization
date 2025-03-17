@@ -826,15 +826,15 @@ donation:
           before: "*Thêm {} mục trước đó...*"
           after: "*Thêm {} mục sau đó...*"
 
-        added: Đã thêm
-        subtracted: Đã trừ
+        added: Được thêm
+        subtracted: Bị trừ
         points: Điểm
-        total: "Tổng số dư ủng hộ"
+        total: "Tổng số dư donate"
         rank: "Hạng"
-        recent: "Quyên góp gần đây & Nhật ký thay đổi"
+        recent: "Lịch sử donate"
 
     add: 
-      description: Thêm số tiền ủng hộ vào số dư của người dùng
+      description: Thêm số dư donate cho một của người dùng
       options:
         user: Chỉ định một người dùng
         amount: Chỉ định số tiền cần thêm
@@ -842,25 +842,25 @@ donation:
         reason: Chỉ định lý do cho hành động này
         silent: Có thực thi lệnh này ở chế độ im lặng hay không
       translation:
-        successful_message: "Đã thêm **{} Điểm** vào số dư ủng hộ của {}!"
+        successful_message: "Đã thêm **{} Điểm** vào số dư donate của {}!"
 
     subtract: 
-      description: Trừ số tiền ủng hộ khỏi số dư của người dùng
+      description: Trừ số dư donate khỏi một người dùng
       options:
         user: Chỉ định một người dùng
         amount: Chỉ định số tiền cần trừ
         reason: Chỉ định lý do cho hành động này
         silent: Có thực thi lệnh này ở chế độ im lặng hay không
       translation:
-        not_donated: "Người dùng {} chưa ủng hộ cho server này!"
-        insufficient_points: "Không thể giảm số tiền cao hơn số tiền ủng hộ hiện tại của {} trong server này ({} Điểm)."
-        successful_message: "Đã trừ **{} Điểm** khỏi số dư ủng hộ của {} với lý do: {}"
+        not_donated: "Người dùng {} chưa donate cho server này!"
+        insufficient_points: "Không thể giảm số tiền cao hơn số dư donate hiện tại của {} trong server này ({} Điểm)."
+        successful_message: "Đã trừ **{} Điểm** khỏi số dư donate của {} với lý do: {}"
   
 stickie: 
   current_setting:
-    title: "Cấu hình thông báo cố định cho {} ﹥ #{}"
+    title: "Cấu hình Sticky Message cho {} ﹥ #{}"
     description: |
-      **Thông báo cố định hiện tại trong {}**:
+      **Sticky Message hiện tại trong {}**:
       {}
       
       **Nội dung gốc của thông báo**:
@@ -873,38 +873,38 @@ stickie:
     threshold: Ngưỡng tin nhắn
     allowmentions: Cho phép đề cập
   common:
-    not_enabled: "Kênh {} chưa bật Thông báo cố định! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
-    server_not_enabled: "Server chưa có kênh bật Thông báo cố định! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
-  description: Đặt một thông báo cố định trong kênh của bạn!
+    not_enabled: "Kênh {} chưa bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
+    server_not_enabled: "Server chưa có kênh bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
+  description: Đặt một Sticky Message trong kênh của bạn!
   commands:
     configuration: 
-      description: Xem cấu hình Thông báo cố định hiện tại của kênh
+      description: Xem cấu hình Sticky Message hiện tại của kênh
       options:
         channel: Chọn một kênh để xem cấu hình
 
     list: 
-      description: Xem các Thông báo cố định của server
+      description: Xem các Sticky Message của server
       translation: 
-        list: "Các kênh có Thông báo cố định: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
+        list: "Các kênh có Sticky Message: {}\nSử dụng lệnh </stickie configuration:1158663116662525962> để xem các cài đặt liên quan"
 
     message: 
-      description: "[Tích hợp BucketScript] Đặt Thông báo cố định"
+      description: "[Tích hợp BucketScript] Đặt Sticky Message"
       options:
-        channel: Chọn một kênh để chỉ định Thông báo cố định
+        channel: Chọn một kênh để chỉ định Sticky Message
       translation: 
-        maximum_reached: "Bạn không thể tạo quá 6 Thông báo cố định trong server này."
+        maximum_reached: "Bạn không thể tạo quá 6 Sticky Message trong server này."
 
     remove: 
-      description: Xóa Thông báo cố định đã tồn tại
+      description: Xóa Sticky Message đã tồn tại
       options:
-        channel: Chọn một kênh để xóa Thông báo cố định
+        channel: Chọn một kênh để xóa Sticky Message
       translation:
         invalid_channel: Đây không phải là một kênh hợp lệ, vui lòng chọn lại từ auto-complete.
     
     mode: 
-      description: Chỉnh sửa StickMode cho Thông báo cố định
+      description: Chỉnh sửa StickMode cho Sticky Message
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
         mode: Chọn chế độ
       choices:
         threshold: Ngưỡng tin nhắn
@@ -913,33 +913,33 @@ stickie:
         already_set: Kênh {} đã được đặt ở chế độ **{}**!
 
     webhook: 
-      description: Đặt webhook tùy chỉnh cho Thông báo cố định
+      description: Đặt webhook tùy chỉnh cho Sticky Message
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
       
 
     delay: 
-      description: Đặt độ trễ cho Thông báo cố định
+      description: Đặt độ trễ cho Sticky Message
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
-        delay: Thông báo cố định sẽ xuất hiện sau khi trò chuyện không hoạt động trong {delay} giây
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
+        delay: Sticky Message sẽ xuất hiện sau khi trò chuyện không hoạt động trong {delay} giây
 
     allowmentions: 
-      description: Đặt quy tắc AllowedMention cho Thông báo cố định
+      description: Đặt quy tắc AllowedMention cho Sticky Message
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
         action: Chọn hành động cho cấu hình này
 
     msgthreshold: 
-      description: Đặt ngưỡng tin nhắn cho Thông báo cố định
+      description: Đặt ngưỡng tin nhắn cho Sticky Message
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
         threshold: Phạm vi từ 1 - 500, Tin nhắn sẽ xuất hiện trong trò chuyện sau khi số lượng tin nhắn này được gửi đi
 
     embed: 
       description: Đặt một thông báo nhúng cố định
       options:
-        channel: Chọn một kênh để chỉ định Cấu hình thông báo cố định
+        channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
       translation:
         invalid: "Dữ liệu JSON cho thông báo nhúng của bạn không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
 
