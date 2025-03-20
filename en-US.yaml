@@ -1915,6 +1915,7 @@ bucketscript:
         missing: "### Farewell Message:\n\n{}"
         full: "### Farewell Message for <#{}>:\n\n{}"
     maximum_fields_reached: Maximum embed fields reached (25). You cannot add any field until you remove one.
+    require_content: You need to provide embed content (title/description/field/...) for this embed before editing the color.
     invalid_input: Your previous input was invalid, make sure to follow the instruction.
     maximum_size_reached: 'Maximum embed size reached (6000 characters). Consider remove another parts of embed to add another one.'
     zero_field: "Cannot interact since this embed has zero field"

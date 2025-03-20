@@ -1881,8 +1881,9 @@ bucketscript:
       description: 
         missing: "### Tin nhắn Tạm biệt: \n\n{}"
         full: "### Tin nhắn Tạm biệt cho <#{}>:**\n\n{}\n\n"
-    maximum_fields_reached: Đã đạt đến giới hạn field của embed (25). Bạn không thể thêm bất kỳ field nào cho đến khi bạn xóa một cái.
+    maximum_fields_reached: Đã đạt đến giới hạn field của embed (25). Bạn không thể thêm bất kỳ field nào cho đến khi bạn xóa một cái khác.
     invalid_input: Thông tin đã nhập trước đó của bạn không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
+    require_content: Bạn cần cung cấp nội dung (ở bất kì vị trí nào, như tiêu đề/description/field/...) cho embed này trước khi sửa màu.
     maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
     zero_field: "Không thể tương tác vì embed này không có field nào"
     back: Quay lại
