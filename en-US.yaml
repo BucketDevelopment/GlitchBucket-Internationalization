@@ -1608,6 +1608,7 @@ giveaway:
       hosted_by: "Hosted by:"
       duration: "Duration:"
       ends: "Ends:"
+      participators: "Participators:"
       stay: "Stayed in server for at least"
       has_roles: "Has one of following roles:"
       requirements: Requirements

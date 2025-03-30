@@ -1576,6 +1576,7 @@ giveaway:
       hosted_by: "Tổ chức bởi:"
       duration: "Thời lượng:"
       ends: "Kết thúc:"
+      participators: "Số người tham gia:"
       stay: "Đã ở trong server ít nhất"
       has_roles: "Có một trong các vai trò sau:"
       requirements: Yêu cầu
