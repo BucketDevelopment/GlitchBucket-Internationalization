@@ -2840,7 +2840,7 @@ moderation:
       options:
         case: Chỉ định ID của trường hợp, để trống cho trường hợp gần nhất
       translation:
-        no_recent: "Người dùng này không có cảnh cáo gần đây nào."
+        no_recent: "Người dùng này không có cảnh cáo nào gần đây."
         errors:
           self: "Bạn không thể tự bỏ cảnh cáo mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
