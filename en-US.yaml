@@ -18,7 +18,7 @@ common:
     Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:yaya:1267138629608931338> 
     If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
 
-    We have automatically detected your guild language is English (en-US), so your guild will use our default language configuration.
+    We have automatically detected your server language is English (en-US), so your server will use our default language configuration.
     To change application's setting about localization, you can use </language server:1351220692863156396> or </language me:1351220692863156396>.
 
     [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>) - ✨ [Premium](<https://bot.tudubucket.dev/premium/whitelabel/>)
@@ -222,7 +222,7 @@ help:
     command: Select a command
   translation: 
     no_command: "There are no command associated with name `{}`."
-    guild_only: "Guild Only"
+    guild_only: "Server Only"
     installable: "User Installable"
     group_note: "\n\n*Note: This is a command group.*"
     subcommand: "Sub-Command"
@@ -403,7 +403,7 @@ autoresponder:
       description: Placeholders for your auto responder
       translation:
         puser: "User Placeholders"
-        pserver: "Guild Placeholders"
+        pserver: "Server Placeholders"
         pcmessage: "Channel & Message Placeholders"
         func: "Functions"
         bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)'s complete list & examples"
@@ -417,7 +417,7 @@ autoresponder:
         mode: Match mode for the autoresponder
         ignorecase: Whether we should ignore case when matching or not
       translation:
-        maximum_reached: "You cannot create more than 50 autoresponders in this guild!"
+        maximum_reached: "You cannot create more than 50 autoresponders in this server!"
         already_exists: "An Autoresponder with this trigger has already exists. You can only edit, or delete them."
 
     view: 
@@ -435,8 +435,8 @@ autoresponder:
     list: 
       description: List of autoresponder in this server
       translation:
-        total: "This guild having total of {} autoresponder.\nList: `{}`"
-        none: "This guild doesn't have any autoresponder!"
+        total: "This server having total of {} autoresponder.\nList: `{}`"
+        none: "This server doesn't have any autoresponder!"
         title: Autoresponder's List
 
 
@@ -473,10 +473,10 @@ security:
       description: Automatic remove all server bans
       translation:
         no_perm: "You do not have permission to use this button. Only Administrator starts this action can confirm."
-        triggered_only: "This command is for guild owner only."
-        exists_running_instance: "A current purge bans instance is running in this guild. You cannot run double instance in a time.
+        triggered_only: "This command is for server owner only."
+        exists_running_instance: "A current purge bans instance is running in this server. You cannot run double instance in a time.
           If you want to stop the previous running instance, please click button under here."
-        none_bans: "There are no bans record in this guild."
+        none_bans: "There are no bans record in this server."
         warning: |
           ## :warning: Warning: Irreversible process!
           > This command will start to remove all the bans from this server (Total: {}). Please confirm authorization to continue on this action.
@@ -547,19 +547,19 @@ blocksmc:
           full: "Full members information"
       translation:
         title: "{}'s Leaderboard"
-    guild:
-      description: Fetch BlocksMC's Guild statistics
+    server:
+      description: Fetch BlocksMC's Server statistics
       options:
-        guild: Specify a guild
+        server: Specify a server
         mode: Whether display full member information or not
       choices:
         mode:
           compact: "Compact (Default)"
           full: "Full members information"
       translation:
-        unknown_guild: "`{}` is an invalid guild name. If your guild does not on the autocomplete, use your guild name (not guild 3-letter tag) to search."
+        unknown_guild: "`{}` is an invalid server name. If your server does not on the autocomplete, use your server name (not server 3-letter tag) to search."
         name: Name
-        owner: Guild Owner
+        owner: Server Owner
         created_at: Created at
         joined_at: Joined at
         last_login: Last login
@@ -598,7 +598,7 @@ blocksmc:
         title: "{}'s Statistics"
         warning: 
           base: "**Warning:** \n"
-          not_whitelisted: "- Player `{}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Playtime counter, Rank/Guild Changelog, disabled!"
+          not_whitelisted: "- Player `{}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Playtime counter, Rank/Server Changelog, disabled!"
           non_points: "- Detected player Favorite Gametype is `{}` which does not support Points, disabled!\n"
         no_log: "No log entries found."
         non_exists: "This player does not exist in the BlocksMC Database!"
@@ -607,7 +607,7 @@ blocksmc:
         playtime: Playtime
         hours: Hours
         rank: Current Rank
-        guild: Current Guild
+        server: Current Server
         fav_game: Favorite Gametype
         played: Played
         points: Points
@@ -615,7 +615,7 @@ blocksmc:
         no_record: "*No record found.*"
 
         changelog:
-          guild: "Player Guild Changelog"
+          server: "Player Server Changelog"
           rank: "Player Rank Changelog"
 
 outage: 
@@ -689,8 +689,8 @@ donation:
   description: Setup automatic receive donations in your server
   
   common:
-    not_enabled: "This guild haven't enabled automatic donations receiver! Consider setting it up by using </donation enable:1152465316878762014>"
-    disabled_automatic_receiver: "This guild is currently disabled automatic donations receiver! Consider re-enable it up by using </donation enable:1152465316878762014>"
+    not_enabled: "This server haven't enabled automatic donations receiver! Consider setting it up by using </donation enable:1152465316878762014>"
+    disabled_automatic_receiver: "This server is currently disabled automatic donations receiver! Consider re-enable it up by using </donation enable:1152465316878762014>"
 
   current_setting:
     roles: "**Role:** "
@@ -729,7 +729,7 @@ donation:
         receiver: Specify an user, who will be the donation's receiver
 
       translation: 
-        already_enabled: "This guild is already enabled automatic donations receiver!"
+        already_enabled: "This server is already enabled automatic donations receiver!"
         default_receive_message: "{user} donated for **{server_name}** through <:OwO:1155867563612446841> __OwOBot currency__ and received **{amount}** donation points!"
         successful_enabled: |
           Successfully enabled automatic donation for this server, with donation channel {} & receiver {}!
@@ -746,7 +746,7 @@ donation:
       options:
         delete: Destruct Action - Delete server's donation data
       translation:
-        disabled: "This guild is currently disabled donations! Consider re-enable it up by using </donation enable:1152465316878762014>"
+        disabled: "This server is currently disabled donations! Consider re-enable it up by using </donation enable:1152465316878762014>"
         data_deleted: "Successfully deleted donations data of this server!"
 
     threshold: 
@@ -769,7 +769,7 @@ donation:
         month: This month
         week: This week
       translation:
-        no_record: "There are no donation records in this guild that matches your selected range."
+        no_record: "There are no donation records in this server that matches your selected range."
         leaderboard: 
           info: "Donation Leaderboard for {}"
           description: "This leaderboard shows donation records from <t:{0}:F> (<t:{0}:R>) till now."
@@ -833,7 +833,7 @@ donation:
       translation:
         information: "{}'s Donation Information"
         warning: "**Warning:** This server is currently disabled automatic donations receiver!"
-        no_record: "This guild haven't received any donations!"
+        no_record: "This server haven't received any donations!"
         received: "Received Balance"
         added: "Force-added Balance from Admin"
         subtracted: "Force-subtracted Balance from Admin"
@@ -905,7 +905,7 @@ stickie:
     allowmentions: Allow Mentions
   common:
     not_enabled: "Channel {} haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
-    server_not_enabled: "This guild haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
+    server_not_enabled: "This server haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
 
   description: Set a Sticky Message in your channel!
   commands:
@@ -1011,20 +1011,20 @@ locale:
   description: "Set your locale"
   commands:
     guildset:
-      description: "Set guild locale"
+      description: "Set server locale"
       options:
         lang: "Select a language"
 
       translation:
-        current: "Currently, your guild locale is `{} ({})`. You can only change them."
-        updated: "Successfully updated guild locale to {} ({})!"
+        current: "Currently, your server locale is `{} ({})`. You can only change them."
+        updated: "Successfully updated server locale to {} ({})!"
         invalid: "{} is not a valid language, please choose from the command auto-complete."
-        guild_only: This command can be used in guild only.
+        guild_only: This command can be used in server only.
     myself: 
       description: "Set locale of yourself, for command display"
       options:
         lang: "Select a language"
-        override_guilds: "Whether override guild setting or not"
+        override_guilds: "Whether override server setting or not"
       translation:
         current: "Currently, your locale is `{} ({})`. You can only change them."
         updated: "Successfully updated your locale to {} ({})!"
@@ -1040,7 +1040,7 @@ quickreport:
     approve: Approve
     decline: Decline
   common:
-    not_enabled: "Quick Report has not been enabled in this guild."
+    not_enabled: "Quick Report has not been enabled in this server."
   context_menu:
     name: Report this Message
   current_setting:
@@ -1103,7 +1103,7 @@ quickreport:
     cant_view: "Cannot retrieve the specific message, please ensure that I can view {}!"
     no_self_report: "You cannot report yourself."
     no_bot_report: "You cannot report a bot message."
-    blacklisted: "You have been blocked from sending reports in this guild. Make sure that you are not currently muted, blacklisted, or timed out."
+    blacklisted: "You have been blocked from sending reports in this server. Make sure that you are not currently muted, blacklisted, or timed out."
     bypassed: "You are not eligible to report messages from this user!"
     already_reported: "This message has already been reported!"
     not_eligible:
@@ -1111,7 +1111,7 @@ quickreport:
       non_whitelisted_channel: "You are not eligible to report messages in this non-whitelisted channel!"
       blacklisted_category: "You are not eligible to report messages in this blacklisted category!"
       blacklisted_channel: "You are not eligible to report messages in this blacklisted channel!"
-    max_concurrent_reached: "You have reached maximum of **{}** concurrent pending reports in this guild! Please check your current reports in </quickreport recent:1182566872810541056> before making reports again."
+    max_concurrent_reached: "You have reached maximum of **{}** concurrent pending reports in this server! Please check your current reports in </quickreport recent:1182566872810541056> before making reports again."
     description: "Use command </quickreport update:1182566872810541056> to update status of this report."
     reporter: Reporter
     reported: Reported
@@ -1210,7 +1210,7 @@ quickreport:
       choices:
         blacklist: Blacklist
         whitelist: Whitelist
-        serverwide: Entire Guild
+        serverwide: Entire Server
     
     update: 
       description: "[Quick Report] Approve/Decline a report"
@@ -1227,7 +1227,7 @@ quickreport:
       translation:
         no_manager_role: "Report Manager Role has not been set in confuguration! Please use </quickreport manager:1182566872810541056> to add one."
         no_perm: "Update reports requires either Manage Members or Manage Report Role."
-        no_report: "There are no report with ID `{}` associated with this guild!"
+        no_report: "There are no report with ID `{}` associated with this server!"
         no_override: "Report with ID `{}` has been updated earlier, you cannot override the update!"
         successful: "Successfully updated report with ID `{}`!"
 
@@ -1259,7 +1259,7 @@ quickreport:
 
       translation:
         args_no_perm: "You do not have permissions to use argument `reporter` and `reported`."
-        no_report: "There are no recent reports matching your query setting in this guild."
+        no_report: "There are no recent reports matching your query setting in this server."
         title: "Recent reports in {}"
         pending: Pending
         declined: Declined
@@ -1273,8 +1273,8 @@ quickreport:
         silent: Whether we sent this message in silent or not
 
       translation:
-        no_report: "There are no report associated with ID `{}` in this guild!"
-        no_perm: "You do not have permissions to view report with ID `{}` in this guild!"
+        no_report: "There are no report associated with ID `{}` in this server!"
+        no_perm: "You do not have permissions to view report with ID `{}` in this server!"
 
 
 customrole:
@@ -1383,7 +1383,7 @@ customrole:
         make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
       translation:
         already_have_one: "{} has reached maximum customrole count, and you cannot create more than 10 custom role for each user."
-        limit_exceeded: "You cannot create more than 100 custom roles for this guild."
+        limit_exceeded: "You cannot create more than 100 custom roles for this server."
         missing_permission: |
           I cannot create a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
           Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
@@ -1399,14 +1399,14 @@ customrole:
       options:
         delete_role: Whether delete the role after the termination or not
       translation:
-        none_found: "This guild does not have any custom role set."
+        none_found: "This server does not have any custom role set."
 
     list: 
       description: "View all server's custom role"
       options:
         delete_role: "Whether delete the role or not"
       translation:
-        none_found: "{} does not have any custom role set."
+        none_found: "This server does not have any custom role set."
         title: "List of Custom Role for {}"
         duration: 
           permanent: "no expires"
@@ -1424,7 +1424,7 @@ customrole:
         elevated_permissions: "{} is not a role that has zero-permission value, so we will not migrate this role for security reason."
         already_migrated: "{} is a role that has been registered as a custom role in our database, you cannot migrate this role"
         already_have_one: "{} has reached maximum customrole count, and you cannot create more than 10 custom role for each user."
-        limit_exceeded: "You cannot create more than 100 custom roles for this guild."
+        limit_exceeded: "You cannot create more than 100 custom roles for this server."
         missing_permission: |
           I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).
           Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
@@ -1521,7 +1521,7 @@ customrole:
             invalid_image_format: "The icon should in `.png` or `.jpg` format and smaller than 256kb."
             invalid_image_scale: "The icon should be a square image."
             invalid_arguments: "You have to specify `icon` or `emoji`, you neither can specify both of them nor skip it."
-            invalid_emoji: "`{}` is not a valid Emoji/Custom Emoji in this guild."
+            invalid_emoji: "`{}` is not a valid Emoji/Custom Emoji in this server."
             invalid_emoji_id: "`{}` is not a valid Emoji ID."
         removeicon:
           description: "Remove icon from your custom role"
@@ -1560,7 +1560,7 @@ giveaway:
     participants: Participants
     giveaway_participants: Giveaway Participants
     none_participants: No one has participated into this giveaway yet, ;(
-    guild_unavailable: "To determine winners, we have to fetch full data of entrants. Since this guild is currently unavailable, please try again in few minutes."
+    guild_unavailable: "To determine winners, we have to fetch full data of entrants. Since this server is currently unavailable, please try again in few minutes."
     not_enought_entrants: 'There are not enough entrants to determine winners for this giveaway.'
     reroll_failed: Failed to reroll giveaway...
     giveaway_rerolled: 🎉 Giveaway has been rerolled by {}. Congratulations {}!
@@ -1897,7 +1897,7 @@ bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
     unknown_embed: | 
-      Unknown embed `{}` for guild `{}`
+      Unknown embed `{}` for server `{}`
       To create an embed, use </bucketscript embed create:1245661361673863238>
     preparing: Preparing data, please wait...
     embed: Specify Embed name
@@ -2070,7 +2070,7 @@ userscript:
       missing_permission: "### {} Missing Permissions: {}"
       placeholder_error: "### {} Logical Placeholder Error: {}"
     insufficient_balance: "You do not have sufficient {}'s balance to perform this trigger (current: `{}`, required: `{}`)."
-    preparing: "This guild is currently in preparing phase, please try this autoresponder later."
+    preparing: "This server is currently in preparing phase, please try this autoresponder later."
     no_negative: "User {} does not have sufficient {}'s balance to perform the deduction (current: `{}`, after deduction: `{}`). The balance can only go negative by using /bucketscript subtract."
     invalid_balance: "Invalid balance name/uuid {}."
     invalid_number: "`amount` should be a numeric value. (received `{}`)"
@@ -2126,7 +2126,7 @@ userscript:
       manage_nickname: "Bot Missing Permission: Manage Nickname"
     invalid_redirect: "`reply` function cannot being set with `redirect_to`."
   embeds:
-    maximum_size_reached: "Embed `{}` for guild `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
+    maximum_size_reached: "Embed `{}` for server `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
 
 voting:
   description: Easily track votes of a voting competition!
@@ -2160,8 +2160,8 @@ voting:
   translation: 
     outdated_data: "*This data is outdated and the bot is currently refreshing the data in the background (Starting update since: {}). Please use the command again in a few minutes to get the latest data.*"
     none_vote: "*There is no valid votes in <#{}>.*"
-    none_running: There is no vote session running in this guild.
-    require_setup: This guild has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
+    none_running: There is no vote session running in this server.
+    require_setup: This server has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
     cache: "\nCached {} ago • Renew every 10 minutes"
     votes: Votes
     messages: Messages
@@ -2273,7 +2273,7 @@ voting:
         sort: Whether sort the result in descending order
         user: View messages from a specific user
       translation:
-        invalid_id: There is no saved session with ID `{}` in this guild.
+        invalid_id: There is no saved session with ID `{}` in this server.
     session:
       description: Manage a vote session
       subcommands:
@@ -2306,7 +2306,7 @@ tasks:
 
   common:
     task: Choose a task from autocomplete, or specity task ID
-    invalid_task: Invalid task ID `{}` for this guild.
+    invalid_task: Invalid task ID `{}` for this server.
   commands:
     autolock:
       description: Automatic lock channels

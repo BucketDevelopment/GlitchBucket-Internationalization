@@ -1374,7 +1374,7 @@ customrole:
       options:
         delete_role: "Có xóa vai trò hay không"
       translation:
-        none_found: "{} không có bất kỳ Custom Role nào được thiết lập."
+        none_found: "Server này không có bất kỳ Custom Role nào được thiết lập."
         title: "Danh sách Custom Role cho {}"
         duration: 
           permanent: "không hết hạn"
