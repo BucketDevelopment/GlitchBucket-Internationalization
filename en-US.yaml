@@ -169,7 +169,7 @@ fack:
     user: The user you want to fack
 
 information: 
-  description: Show information of the bto
+  description: Show information of the bot
   translation:
     global_information: Global Information
     description: 
