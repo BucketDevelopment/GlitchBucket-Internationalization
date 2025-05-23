@@ -12,16 +12,25 @@ common:
   none: None
   add: Add
   remove: Remove
-  guild_added: |
-    ## :e_mail: This message has been sent from <:owner:1267138666128474215> GlitchBucket Development Team
-    ~~                                                                                                        ~~
-    Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:yaya:1267138629608931338> 
-    If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
+  guild_added:
+    header: "### :e_mail: This message has been sent from <:owner:1267138666128474215> GlitchBucket Development Team"
+    
+    open: |
+      Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:yaya:1267138629608931338> 
+      If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
 
-    We have automatically detected your server language is English (en-US), so your server will use our default language configuration.
-    To change application's setting about localization, you can use </language server:1351220692863156396> or </language me:1351220692863156396>.
+    middle: |
+      We have automatically detected your server language is {0} ({1}), so your server will use our default language configuration.
+      To change application's setting about localization, you can use </language server:1351220692863156396> or </language me:1351220692863156396>.
 
-    [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>) - ✨ [Premium](<https://bot.tudubucket.dev/premium/whitelabel/>)
+    button: 
+      support: Support
+      docs: "Docs"
+      policy: "Terms"
+      premium: Premium
+
+
+
   ban: 
     removed: |
       ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
