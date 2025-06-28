@@ -2172,7 +2172,7 @@ voting:
     none_vote: "*There is no valid votes in <#{}>.*"
     none_running: There is no vote session running in this server.
     require_setup: This server has not setting up any voting session. Please run command `/voting session setup` at least once for this command to work.
-    cache: "\nCached {} ago • Renew every 10 minutes"
+    cache: "Data updated in real-time"
     votes: Votes
     messages: Messages
     valid: valid

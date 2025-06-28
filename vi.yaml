@@ -2136,7 +2136,7 @@ voting:
     none_vote: "*Hiện đang không có vote hợp lệ nào trong kênh <#{}>.*"
     none_running: Hiện không có phiên vote nào đang diễn ra trong server này.
     require_setup: Server này chưa thiết lập bất kỳ phiên vote nào. Vui lòng chạy lệnh `/voting session setup` ít nhất một lần để lệnh này hoạt động.
-    cache: "\nĐã lưu trữ {} trước • Cập nhật lại mỗi 10 phút"
+    cache: "Dữ liệu được cập nhật theo thời gian thực"
     votes: Phiếu bầu
     messages: Tin nhắn
     valid: hợp lệ
