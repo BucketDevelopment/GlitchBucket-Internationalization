@@ -2,7 +2,7 @@ common:
   bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
-  ping: " **|** `Shard {}/{}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://bot.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
+  ping: " **|** `Shard {}` response within `{} ms / avg. {} ms`. \n        **|** Use </help:1119604872497594495>, or access [Documentation](<https://bot.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
   _true: "True"
   _false: "False"
   support:
@@ -391,7 +391,18 @@ autoresponder:
     mm_keep: Do not change
     no_trigger_matched: "Your server doesn't have any autoresponder mathces with trigger {}!"
 
-  description: Setup Auto responder in your server
+  description: Set up Auto-responses in your server
+  context_menu:
+    name: Create Autoresponder
+  modal:
+    response:
+      title: Update Autoresponder
+      label: Content
+      placeholder: View placeholders at https://bot.tudubucket.dev/bucketscript/functions/
+    trigger:
+      title: Create Autoresponder
+      label: Trigger
+      placeholder: Trigger for this autoresponder
   commands:
     edit:
       description: Edit an autoresponder

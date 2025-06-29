@@ -2,7 +2,7 @@ common:
   bucketscript: "[Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
-  ping: " **|** `Shard {}/{}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Để xem các lệnh có sẵn, sử dụng </help:1119604872497594495> hoặc truy cập [Trang tài liệu](<https://bot.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
+  ping: " **|** `Shard {}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Để xem các lệnh có sẵn, sử dụng </help:1119604872497594495> hoặc truy cập [Trang tài liệu](<https://bot.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
   _true: "Có"
   _false: "Không"
   support:
@@ -356,11 +356,11 @@ r34:
 illust_report:
   warning: |
     ## :warning: Lưu ý trước khi báo cáo:
-    - Hình ảnh trùng lặp **không phải là một lí do hợp lý** để báo cáo.
+    - Hình ảnh trùng lặp **không phải là một lí do** để báo cáo.
     - Đội ngũ Kiểm duyệt chỉ chấp nhận xóa **Manga/Art tutorial**, **Ảnh sai Category** và **Hình ảnh Chất lượng Kém**.
-    - Gửi báo cáo rác sẽ bị blacklist!
+    - Spam báo cáo sẽ bị blacklist!
 
-    :small_red_triangle_down: Vui lòng chọn một thể loại để báo cáo bên dưới đây :small_red_triangle_down:
+    :small_red_triangle_down: Vui lòng chọn một category để báo cáo bên dưới đây :small_red_triangle_down:
   reported: "Nội dung này đã được báo cáo"
   received: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo của bạn ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
   report: 
@@ -423,7 +423,19 @@ autoresponder:
     mm_keep: Không thay đổi
     no_trigger_matched: "Server của bạn không có bất kỳ autoresponder nào khớp với trigger {}!"
 
-  description: Thiết lập Trả lời tự động trên server của bạn
+  description: Thiết lập Trả lời tự động trong server của bạn
+  context_menu:
+    name: Tạo thành một Autoresponder
+  modal:
+    response:
+      title: Cập nhật Autoresponder
+      label: Nội dung
+      placeholder: Bạn có thể sử dụng các placeholder tại https://bot.tudubucket.dev/bucketscript/functions/
+    trigger:
+      title: Tạo Autoresponder
+      label: Trigger
+      placeholder: Trigger cho autoresponder này
+
   commands:
     edit:
       description: Chỉnh sửa một autoresponder
