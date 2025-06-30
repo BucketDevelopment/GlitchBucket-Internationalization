@@ -1,4 +1,8 @@
 common:
+  vote_required: |
+    Lệnh này chỉ dành cho những người đã vote cho bot!
+    **`>`** [Bấm vào đây để vote](https://top.gg/bot/1103932552701550622/vote?source=command_forbidden)
+    `💎` Bạn muốn skip vote? Hãy xem **[các quyền lợi premium](https://bot.tudubucket.dev/premium/whitelabel/)** của bot.
   bucketscript: "[Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.

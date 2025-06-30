@@ -1,4 +1,9 @@
 common:
+  vote_required: |
+    This command is available to voted users only!
+    **`>`** [Click here to vote](https://top.gg/bot/1103932552701550622/vote?source=command_forbidden)
+    `💎` Want to skip voting? Check out bot's **[premium perks](https://bot.tudubucket.dev/premium/whitelabel/)**.
+
   bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
