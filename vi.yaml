@@ -1,7 +1,7 @@
 common:
   vote_required: |
     `🎫` Lệnh này chỉ dành cho những người đã vote cho bot!
-    `💖` **[`Bấm vào đây để vote`](https://top.gg/bot/1103932552701550622/vote?source=command_forbidden)**
+    `💖` **[`Bấm vào đây để vote`](https://redirect.tudubucket.dev/?url=https%3A%2F%2Ftop.gg%2Fbot%2F1103932552701550622%2Fvote%3Fsource%3Dcommand_forbidden)**
     `💎` Bạn muốn skip vote? Hãy xem **[`các quyền lợi premium`](https://bot.tudubucket.dev/premium/whitelabel/)** của bot.
   bucketscript: "[Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
@@ -3343,6 +3343,7 @@ emoji:
         emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
         name: Chỉ định tên emoji
       translation:
+        rate_limited: Server đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
         name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."
         failed: 
