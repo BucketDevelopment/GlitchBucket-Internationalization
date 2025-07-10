@@ -3368,7 +3368,8 @@ emoji:
         emoji_input: Specify a custom emoji, or an Image URL
         name: Specify emoji name
       translation:
-        rate_limited: The server is currently limited to uploading more emojis. We will notify back when the server is no longer rate-limited and the upload is complete.
+        limit_reached: This server has reached its maximum emoji slot. Please delete another emoji in order to add a new one.
+        rate_limited: This server is currently limited to uploading more emojis. We will notify back when the server is no longer rate-limited and the upload is complete.
         name_required: "Emoji name is required for emoji URL stealing."
         invalid: "Invalid emoji or URL provided."
         failed: 

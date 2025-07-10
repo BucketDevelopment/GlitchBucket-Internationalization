@@ -3343,7 +3343,8 @@ emoji:
         emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
         name: Chỉ định tên emoji
       translation:
-        rate_limited: Server đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
+        limit_reached: Server này đã đạt đến số lượng emoji tối đa. Vui lòng xóa emoji khác để thêm emoji mới.
+        rate_limited: Server nayf đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
         name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."
         failed: 
