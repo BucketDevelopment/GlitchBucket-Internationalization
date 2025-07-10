@@ -3354,3 +3354,17 @@ emoji:
 
 network: 
   description: Các lệnh liên quan tới mạng.
+
+
+ticket:
+  description: Ticket.
+  embed: 
+    setup:
+      title: "Setup"
+  commands:
+    setup:
+      description: Setup một hệ thống ticket đơn giản
+      describe:
+        force: Có ép buộc setup lần nữa hay không (không phải setup lại từ đầu)
+      translation:
+        already_set: "Server này đã thực hiện setup ticket trước đó. Để chỉnh sửa các cài đặt, sử dụng lệnh `/ticket configuration`"
