@@ -2122,11 +2122,13 @@ userscript:
     forbidden:
       require_user: You are not allowed to use this autoresponder.
       require_channel: You are not allowed to use this autoresponder in this channel.
+      require_category: You are not allowed to use this autoresponder in this category.
       require_permission: You are missing permissions to use this autoresponder.
       require_role: You are missing specific roles to use this autoresponder.
 
       ignore_user: You have been ignored from using this autoresponder.
       ignore_channel: This channel has been ignored from using this autoresponder.
+      ignore_category: This category has been ignored from using this autoresponder.
       ignore_permission: You have specific permissions that has been ignored from using this autoresponder.
       ignore_role: You have specific roles that has been ignored from using this autoresponder.
 

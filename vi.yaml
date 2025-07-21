@@ -2087,14 +2087,16 @@ userscript:
     triggered: "-# Autoresponder ID: `{}`"
     forbidden:
       require_user: Bạn không được phép sử dụng autoresponder này.
-      require_channel: Bạn không được phép sử dụng autoresponder này trong kênh này.
+      require_channel: Bạn không được phép sử dụng autoresponder đó trong kênh này.
+      require_category: Bạn không được phép sử dụng autoresponder đó trong category này.
       require_permission: Bạn không có quyền để sử dụng autoresponder này.
-      require_role: Bạn thiếu vai trò cần thiết để sử dụng autoresponder này.
+      require_role: Bạn thiếu role cần thiết để sử dụng autoresponder này.
 
-      ignore_user: Bạn đã bị cấm sử dụng autoresponder này.
-      ignore_channel: Kênh này đã bị cấm sử dụng autoresponder này.
-      ignore_permission: Một số quyền của bạn đã bị cấm sử dụng autoresponder này.
-      ignore_role: Một số vai trò của bạn đã bị cấm sử dụng autoresponder này.
+      ignore_user: Bạn đã bị chặn sử dụng autoresponder trên.
+      ignore_channel: Kênh này đã bị chặn sử dụng autoresponder trên.
+      ignore_category: Category này đã bị cấm sử dụng autoresponder này.
+      ignore_permission: Một số quyền của bạn đã bị cấm sử dụng autoresponder trên.
+      ignore_role: Một số vai trò của bạn đã bị cấm sử dụng autoresponder trên.
 
       cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
       global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
