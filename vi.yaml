@@ -17,6 +17,8 @@ common:
   add: Thêm
   remove: Xóa
   guild_added: 
+    selection:
+      placeholder: Chọn ngôn ngữ cho server của bạn
     header: "### :e_mail: Tin nhắn này đã được gửi từ <:owner:1267138666128474215> Đội ngũ Phát triển GlitchBucket"
     
     open: |
@@ -26,7 +28,7 @@ common:
 
     middle: |
       Bot đã tự động phát hiện ngôn ngữ server của bạn là {0} ({1}), vì vậy server của bạn sẽ sử dụng ngôn ngữ {0}.
-      Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </language server:1351220692863156396> hoặc </language me:1351220692863156396>.
+      Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </language server:1351220692863156396> hoặc </language me:1351220692863156396>, hoặc chọn ở dưới đây:
 
     button: 
       support: Support
