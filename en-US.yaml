@@ -3,7 +3,6 @@ common:
     `🎫` This command is available to voted users only!
     `💖` **[`Click here to vote`](https://redirect.tudubucket.dev/?url=https%3A%2F%2Ftop.gg%2Fbot%2F1103932552701550622%2Fvote%3Fsource%3Dcommand_forbidden)**
     `💎` Want to skip voting? Check out bot's **[`premium perks`](https://bot.tudubucket.dev/premium/whitelabel/)**.
-
   bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Specify entries limit per page, default 10
   missing_permission: You do not have permissions to perform previous action.
@@ -21,25 +20,19 @@ common:
     selection:
       placeholder: Select your server's language
     header: "### :e_mail: This message has been sent from <:owner:1267138666128474215> GlitchBucket Development Team"
-    
     open: |
-      Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:yaya:1267138629608931338> 
-      
-      If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
+      Hello there! Thank you very much for added **GlitchBucket** to **{}** <a:yaya:1267138629608931338>
 
+      If you have any questions, feel free to reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ) anytime!
     middle: |
       We have automatically detected your server language is {0} ({1}), so your server will use our default language configuration.
       To change application's setting about localization, you can use </language server:1351220692863156396> or </language me:1351220692863156396>, or select here:
-
-    button: 
+    button:
       support: Support
       docs: "Docs"
       policy: "Terms"
       premium: Premium
-
-
-
-  ban: 
+  ban:
     removed: |
       ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
       ~~                                                                                                        ~~
@@ -52,7 +45,6 @@ common:
       For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
 
       [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
-    
     temporarily: |
       ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
       ~~                                                                                                        ~~
@@ -89,7 +81,6 @@ common:
         For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
 
         [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
-      
       permanently: |
         ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
         ~~                                                                                                        ~~
@@ -102,11 +93,10 @@ common:
         For further assistance, reach us at our [Support Server](https://discord.gg/WDc5uF9wyS ).
 
         [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Privacy Policy](<https://bot.tudubucket.dev/policy/privacy-policy/>) - [Support Server](<https://discord.gg/WDc5uF9wyS>)
-    
     reason:
       elevated_errors: You have reached high number of errors in a short period of time, please do not perform these action again. Ask about it, or report them in our Support Server instead.
       none: No reason provided.
-      terms_violated: You have violated Terms & Conditions of the bot, so we have to stop you from using our service. 
+      terms_violated: You have violated Terms & Conditions of the bot, so we have to stop you from using our service.
   options:
     role: "Select a role"
     category: "Select a Category, or specify Category ID"
@@ -122,23 +112,20 @@ common:
     saved: "Successfully saved configuration!"
     edited: "Successfully edited configuration!"
     updated: "Successfully updated configuration!"
-  
   cooldown:
     triggered: ":stopwatch: Please wait <t:{}:R> before using the command again."
     expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
-  
   error:
     dns: "We could not connect to discord to process your previous interaction, please try again."
     client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
     database: "A database error occurred while saving your data, please try again later..."
-    unknown: 
-      reply: | 
+    unknown:
+      reply: |
         An error occurred while executing the command:
         {}
         Please try again. If the issue still persists, join our support server for further fixes.
         -# Triggering a consistent amount of errors in a short period will result in a temporary bot-ban. Error ID: `{}`
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
-
 logging:
   description: "Bot's action logging"
   commands:
@@ -146,17 +133,15 @@ logging:
       description: Setup logging for every events relate to the bot
       translation:
         successful: Successfully set {} to be {}'s logging channel.
-    disable: 
+    disable:
       description: Disable events logging
       translation:
         no_record: There is no logging channel for the bot.
         successful: Successfully disabled bot logging.
-  
   action:
     donation:
       subtract:
-        title: 
-
+        title:
 afk:
   description: Set yourself AFK
   options:
@@ -166,30 +151,28 @@ afk:
   translation:
     already_set: ":warning: You already AFK with reason: {}."
     successful_title: "AFK Set!"
-    successful: 
+    successful:
       global: ":electric_plug: You have **globally** set yourself AFK, with reason: **{}**"
       server: ":electric_plug: You have set yourself AFK **in this server**, with reason: **{}**"
     welcome_back: ":stopwatch: Welcome back, {}! You were AFK for **{}** and received **{}** mention."
     received_mention: "Received mention(s)"
     currently_afk: ":placard: `{}` is currently AFK for <t:{}:R>: **{}**"
-
-chat: 
+chat:
   description: Have a conversation with Artificial Intelligence!
   options:
     message: Type your message into here
   translation:
     disallowed_content: Your requested prompt has been aborted. Make sure to not use violation/insult language while submitting prompt.
     response: "Response:"
-fack: 
+fack:
   description: send a fack to your hater
   options:
     user: The user you want to fack
-
-information: 
+information:
   description: Show information of the bot
   translation:
     global_information: Global Information
-    description: 
+    description:
       normal: |
         **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
         > - For a list of available command, use </help:1119604872497594495>.
@@ -201,8 +184,6 @@ information:
         > - For a list of available command, use </help:1119604872497594495>.
         > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
         > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://bot.tudubucket.dev/policy/terms-of-service/) - [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
-      
-    
     cpu: CPU Usage
     recent: Latest Update
     ram: RAM Usage
@@ -216,35 +197,32 @@ information:
     shards: Current/Total Shards
     startup: Startup
     made_with_love: Made with 💖 by {}
-
-snipe: 
+snipe:
   description: Check recent deleted message
   options:
     page: Type a page from 1 to 10, type 'all' to check all recent deleted message
     channel: Specify a channel
-  
   translation:
     disabled: "[snipe disabled for this user]"
     recent: "Recent deleted/edited message for #{}"
     page_none: "There is no message in page **{}**"
     invalid_page: "**{}** is not a valid page."
-    from: 
+    from:
       deleted: "### Message deleted by {}, {} ago"
       edited: "### Message edited by {}, {} ago"
     channel_none: "There are no recent deleted messages found in this channel within 28 days."
-
-help: 
+help:
   description: Show help for the bot
   options:
     command: Select a command
-  translation: 
+  translation:
     no_command: "There are no command associated with name `{}`."
     guild_only: "Server Only"
     installable: "User Installable"
     group_note: "\n\n*Note: This is a command group.*"
     subcommand: "Sub-Command"
     commands: "Commands"
-    parameters: 
+    parameters:
       none: "*No parameters required.*"
       string: "Parameters"
       no_required: "*No required parameters.*"
@@ -252,8 +230,7 @@ help:
       default: "Default: "
       required: "> **Required:**\n"
       optional: "\n\n> **Optional:**\n"
-
-illustration: 
+illustration:
   description: Search for artwork on https://pixiv.net
   options:
     tag: The Illustration tag to seach
@@ -275,10 +252,9 @@ illustration:
     lb_all: All
   translation:
     no_nsfw: "You cannot use NSFW tag in this channel."
-    none_illust: "Tag `{}` return none illustration." 
+    none_illust: "Tag `{}` return none illustration."
     long_input: " Your input tag are longer than 2 words (Total: {} words)! This may cause zero result, try shorten your tag, or change command arguments.*\n_ _"
     suggesstion: "\nCannot find what are you looking for? Try out "
-
     author: "Author"
     original: "Original Post"
     tag: "Tags"
@@ -286,7 +262,6 @@ illustration:
     less_amount: "***Warning:** This Illustration tag return small amount of artworks (Total: {})! This may cause a low-quality result.*"
     less_accurracy: "***Warning:** Your input Illustration tag are longer than 2 words! This may cause a low-quality result.*\n_ _"
     tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
-
 artwork:
   description: Random top artworks on https://pixiv.net
   options:
@@ -302,7 +277,7 @@ artwork:
     tips: "**Command-usage Tip:**\nBy simply press `Arrow Up Button - ↑` in your keyboard, you can quickly use the previous slash command, instead of copy-paste!\n_ _"
     author: "Author:"
     original: "Original Post:"
-r18: 
+r18:
   description: Random R-18 image
   options:
     leaderboard: Select top image of specific date range
@@ -317,27 +292,26 @@ r18:
     nsfw_only: "This command can only be used in NSFW channels."
     author: "Author:"
     original: "Original Post:"
-r34: 
+r34:
   description: Random R-34 image
   options:
     tag: Specify tag to search
   translation:
-    none_illust: "Tag `{}` return none illustration." 
+    none_illust: "Tag `{}` return none illustration."
     long_input: " Your input tag are longer than 2 words (Total: {} words)! This may cause zero result, try shorten your tag, or change command arguments.*\n_ _"
     suggesstion: "\nCannot find what are you looking for? Try out </r18:1147727553373683753>!"
     nsfw_only: "This command can only be used in NSFW channels."
-
 illust_report:
   warning: |
     ## :warning: Notice before report:
-    - Duplicated images is **not reasonable** to report. 
+    - Duplicated images is **not reasonable** to report.
     - We only accept to remove **Manga/Art Tutorial**, **Deviated Image Category**, and **Low Quality/Bad Image**.
     - Do not spamming/make useless reports, you could be blacklisted if you try to do that!
 
     :small_red_triangle_down: Please choose an category to report under here :small_red_triangle_down:
   reported: "This image has been reported"
   received: ":inbox_tray: Thanks for the report! An application moderator will look through your report in a moment. Any advice about this report won't be announced to you."
-  report: 
+  report:
     title: Report Content
     reason: Reason
     description: The reason of the report
@@ -346,7 +320,7 @@ illust_report:
     nsfw: 'NSFW Content in SFW channel'
     manga: 'Image highly related to Manga/Art Tutorial'
     other: 'Other Reason'
-autoresponder: 
+autoresponder:
   setting:
     title: Autoresponder Configuration
     after: After
@@ -357,15 +331,14 @@ autoresponder:
       title: "Auto delete message"
       trigger: "Trigger: "
       response: "Response: "
-
     args: Required Args. Length
     setnick: Setnick
-    require: 
+    require:
       channel: Require Channel(s)
       member: Require Member(s)
       permissions: Require Permission(s)
       roles: Require Role(s)
-    ignore: 
+    ignore:
       channel: Ignore Channel(s)
       member: Ignore Member(s)
       permissions: Ignore Permission(s)
@@ -376,7 +349,7 @@ autoresponder:
     reaction: Reaction
     reply: Reply
     raw: Raw reply
-    cooldown: 
+    cooldown:
       title: Cooldown
       global: Global
       member: Member
@@ -387,7 +360,6 @@ autoresponder:
       no_mentions: ' (without mentions)'
       reply: Reply back to trigger message
     empty: "**Empty reply**"
-
   common:
     error: "{}: {}"
     bot_error: "Exception occurred inside bot client while processing BucketScript, please report to developer.\n{}: {}"
@@ -397,7 +369,6 @@ autoresponder:
     endswith: Ends With
     mm_keep: Do not change
     no_trigger_matched: "Your server doesn't have any autoresponder mathces with trigger {}!"
-
   description: Set up Auto-responses in your server
   context_menu:
     name: Create Autoresponder
@@ -420,14 +391,12 @@ autoresponder:
       description: Set ignorecase-setting for an autoresponder
       options:
         trigger: The keyword that trigger the autoresponder
-
-    matchmode: 
+    matchmode:
       description: Edit autoresponder matchmode
       options:
         trigger: The keyword that trigger the autoresponder
         mode: Select matchmode
-
-    placeholders: 
+    placeholders:
       description: Placeholders for your auto responder
       translation:
         puser: "User Placeholders"
@@ -435,9 +404,7 @@ autoresponder:
         pcmessage: "Channel & Message Placeholders"
         func: "Functions"
         bucketscript: "[BucketScript Placeholder/Function](https://bot.tudubucket.dev/bucketscript/functions/)'s complete list & examples"
-
-
-    add: 
+    add:
       description: Add an autoresponder
       options:
         trigger: The keyword to trigger the autoresponder
@@ -447,35 +414,30 @@ autoresponder:
       translation:
         maximum_reached: "You cannot create more than 50 autoresponders in this server!"
         already_exists: "An Autoresponder with this trigger has already exists. You can only edit, or delete them."
-
-    view: 
+    view:
       description: View current setting of an autoresponder
       options:
         trigger: The keyword to trigger the autoresponder
-
-    delete: 
+    delete:
       description: Delete an autoresponder
       options:
         trigger: The keyword to trigger the autoresponder
       translation:
         successful: "Successfully deleted autoresponder!"
-
-    list: 
+    list:
       description: List of autoresponder in this server
       translation:
         total: "This server having total of {} autoresponder.\nList: `{}`"
         none: "This server doesn't have any autoresponder!"
         title: Autoresponder's List
-
-
-security: 
+security:
   description: Setup Automatic Security for your server
   common:
     current_setting: "This server is currently {} this feature."
     enable: "Enable"
     disable: "Disable"
   commands:
-    cancernickname: 
+    cancernickname:
       description: Automatic rewrite username when they're sucks
       options:
         enable: Whether enable this feature or not
@@ -485,8 +447,7 @@ security:
           > This feature automatically scan username in __Guild Join Event__, __Global Username Change Event__ & __Guild Username Change Event__ to provide real-time protection. If there is any unnatural unicode character in any username trigger the check, we will **take action under that user**.
 
           **You are choosing to __{}__ this feature!**
-    
-    lockinvite: 
+    lockinvite:
       description: Automatic lock invite
       options:
         enable: Whether enable this feature or not
@@ -496,28 +457,22 @@ security:
           > Due to new Discord Update, Member will no longer permanently disable their server invite. This feature will **disable server invites permanently**.
 
           **You are choosing to __{}__ server invites!**
-    
     purgebans:
       description: Automatic remove all server bans
       translation:
         no_perm: "You do not have permission to use this button. Only Administrator starts this action can confirm."
         triggered_only: "This command is for server owner only."
-        exists_running_instance: "A current purge bans instance is running in this server. You cannot run double instance in a time.
-          If you want to stop the previous running instance, please click button under here."
+        exists_running_instance: "A current purge bans instance is running in this server. You cannot run double instance in a time. If you want to stop the previous running instance, please click button under here."
         none_bans: "There are no bans record in this server."
         warning: |
           ## :warning: Warning: Irreversible process!
           > This command will start to remove all the bans from this server (Total: {}). Please confirm authorization to continue on this action.
           > To stop this action while it is performing, please use the command again.
-
         action_accepted: "{} has accepted to perform this action. Removing {} bans, this may take up to {}..."
         action_declined: "{} declined this action."
-        
         pending_stop: '{} stopped this action. A dump file will be sent in a few seconds...'
-
         task_done: "Successfully unbanned {}/{} user."
-
-blocksmc: 
+blocksmc:
   common:
     invalid_player: "{} is an invalid player name. Make sure that you input contains only numbers or/and alphabet characters."
   choices:
@@ -534,7 +489,6 @@ blocksmc:
     ten: Anime Illustration
     eleven: Nether Biome
     negative: Random
-
     today: Today
     week: This week
     month: This month
@@ -542,28 +496,26 @@ blocksmc:
     24hours: Last 24 hours
     30days: Last 30 days
     overall: Overall
-
   description: Check information about BlocksMC's player
   commands:
-    link: 
+    link:
       description: Link your account to bot's database (for skin render purposes)
       options:
         name: Specify your account's name
-      translation: 
+      translation:
         successful: Successfully linked your Discord account with player name {}!
     unlink:
       description: Unlink your account from our bot's database
       translation:
         not_linked: "You do not having any account linked with our bot's database, please use </blocksmc link:1125614999411359794> to link your account."
         successful: Successfully unlinked your Discord account with player name {}!
-    skin: 
+    skin:
       description: Set your skin on image render
       options:
-        name: Specify a premium account to render skin as 
+        name: Specify a premium account to render skin as
       translation:
         not_linked: "You do not having any account linked with our bot's database, please use </blocksmc link:1125614999411359794> to link your account."
         successful: Successfully linked your game account with skin {}!
-
     leaderboard:
       description: Fetch BlocksMC's Leaderboard statistics
       options:
@@ -592,7 +544,7 @@ blocksmc:
         joined_at: Joined at
         last_login: Last login
         members: Members
-    tracker: 
+    tracker:
       description: Display game information from BlocksMC player statistics tracker
       options:
         game: Select a game
@@ -612,8 +564,7 @@ blocksmc:
         no_log: "No log entries found."
         non_exists: "This player does not exist in the BlocksMC Database!"
         statistics: Statistics
-
-    information: 
+    information:
       description: Display player information from BlocksMC player statistics tracker
       options:
         user: Specify the user
@@ -624,14 +575,13 @@ blocksmc:
         render_skin_as: Specify a premium account to render skin as
       translation:
         title: "{}'s Statistics"
-        warning: 
+        warning:
           base: "**Warning:** \n"
           not_whitelisted: "- Player `{}` has not been whitelisted in the bot database; using live check method!\n- Live check does not support Playtime counter, Rank/Server Changelog, disabled!"
           non_points: "- Detected player Favorite Gametype is `{}` which does not support Points, disabled!\n"
         no_log: "No log entries found."
         non_exists: "This player does not exist in the BlocksMC Database!"
         statistics: Statistics
-
         playtime: Playtime
         hours: Hours
         rank: Current Rank
@@ -639,52 +589,38 @@ blocksmc:
         fav_game: Favorite Gametype
         played: Played
         points: Points
-
         no_record: "*No record found.*"
-
         changelog:
           server: "Player Server Changelog"
           rank: "Player Rank Changelog"
-
-outage: 
+outage:
   description: Khối lệnh kiểm tra cắt điện tại Việt Nam
   commands:
-
-    provider: 
+    provider:
       description: Tra cứu mã công ty điện lực
       options:
         region: Chọn miền bạn đang sinh sống
-
-    subscription: 
+    subscription:
       description: Kiểm tra thông tin của bạn về chức năng này!
-
-    subprovider: 
+    subprovider:
       description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
       options:
-        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider]
-          để xem mã điện lực.
-
-    lookup: 
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider] để xem mã điện lực.
+    lookup:
       description: Tra cứu thông tin cắt điện tại khu vực của bạn
       options:
         provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
         subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
-        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc
-          bỏ trống để kiểm tra ngày hôm nay'
+        time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc bỏ trống để kiểm tra ngày hôm nay'
         keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
-
-    unsubscribe: 
+    unsubscribe:
       description: Hủy bỏ thông báo cắt điện tự động
-
-    subscribe: 
+    subscribe:
       description: Nhận thông báo cắt điện tự động
-
       options:
-        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider>
-          để xem mã điện lực.
-        keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây. 
-
-lemme: 
+        provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng </outage provider> để xem mã điện lực.
+        keyword: Nhận thông báo khi khu mất điện chứa từ khóa dưới đây.
+lemme:
   description: Do you want to hug your best Discord friend? Try this out!
   command:
     kiss: Kiss an user!
@@ -695,40 +631,34 @@ lemme:
     pat: Pat an user!
     punch: Punch an user!
     match: Match an user!
-  
-blacklist: 
+blacklist:
   description: Global Bot's Blacklist
   commands:
-    show: 
+    show:
       description: List all blacklisted users
-    remove: 
+    remove:
       description: Remove an user from the global bot's blacklist
       options:
         user: Specify an user
-    add: 
+    add:
       description: Add an user to global bot's blacklist
       options:
         user: "…"
         lang: Specify language
         reason: Specify the reason for this action
         silent: Whether this command should be executed in silent or not
-
-donation: 
+donation:
   description: Setup automatic receive donations in your server
-  
   common:
     not_enabled: "This server haven't enabled automatic donations receiver! Consider setting it up by using </donation enable:1152465316878762014>"
     disabled_automatic_receiver: "This server is currently disabled automatic donations receiver! Consider re-enable it up by using </donation enable:1152465316878762014>"
-
   current_setting:
     roles: "**Role:** "
     members: "**Members:** "
     warning: "***Warning:**"
     points: "Points"
-
     disabled: " This server is currently disabled donations!*"
     non_auto: " This server is currently disabled automatic donation receiver (not disabled donations)!*"
-
     receiver: "Donation Receiver"
     rchannel: "Donation Receive Channels"
     achannel: "Donation Announcement Channel"
@@ -736,11 +666,9 @@ donation:
     reward: "Donation Reward"
     dmessage: "Donation Message"
     drawmessage: "Donation Raw Message"
-
     role_update: "Update donation reward roles based on requirements"
   commands:
-
-    channel: 
+    channel:
       description: Add/Remove donation receive channel
       options:
         channel: Select a channel
@@ -748,46 +676,38 @@ donation:
         can_remove_only: "{} already being receive channel for this server, you only can remove them."
         can_add_only: "{} are not the receive channel of this server, you can only add them."
         maximum_reached: "You cannot add more than 10 receive channel. You should remove a channel in order to add another."
-      
-    enable: 
+    enable:
       description: Setup donations record for this server
       options:
-        channel: "Specify a channel to automatically receive donations from members
-          through another bot's currency"
+        channel: "Specify a channel to automatically receive donations from members through another bot's currency"
         receiver: Specify an user, who will be the donation's receiver
-
-      translation: 
+      translation:
         already_enabled: "This server is already enabled automatic donations receiver!"
         default_receive_message: "{user} donated for **{server_name}** through <:OwO:1155867563612446841> __OwOBot currency__ and received **{amount}** donation points!"
         successful_enabled: |
           Successfully enabled automatic donation for this server, with donation channel {} & receiver {}!
           To add more receiver/receive channel, you can use </donation receiver:1152465316878762014> & </donation channel:1152465316878762014>
-
-    autoreceive: 
-      description: Toggle automatic donations record for this server (does not disable
-        the feature)
+    autoreceive:
+      description: Toggle automatic donations record for this server (does not disable the feature)
       options:
         action: Specify an action
-    
-    disable: 
+    disable:
       description: Disable donations record for this server
       options:
         delete: Destruct Action - Delete server's donation data
       translation:
         disabled: "This server is currently disabled donations! Consider re-enable it up by using </donation enable:1152465316878762014>"
         data_deleted: "Successfully deleted donations data of this server!"
-
-    threshold: 
+    threshold:
       description: Edit donation announce threshold
       options:
         threshold: Specify threshold, if the donation amount is larger than this, we will announce it
-    
-    leaderboard: 
+    leaderboard:
       description: View donations leaderboard
       options:
         range: Specify a range for query
         limit: Specify a limit for the query
-      choices: 
+      choices:
         all: "All time"
         24hours: Last 24 hours
         7days: last 7 days
@@ -798,26 +718,24 @@ donation:
         week: This week
       translation:
         no_record: "There are no donation records in this server that matches your selected range."
-        leaderboard: 
+        leaderboard:
           info: "Donation Leaderboard for {}"
           description: "This leaderboard shows donation records from <t:{0}:F> (<t:{0}:R>) till now."
         rank: Rank
         points: Points
         user: User
-
-    message: 
+    message:
       description: Edit donation message when triggered
       options:
         message: '[BucketScript Compatible] Set message when receive a donation. Extra Placeholders: {amount}'
-    
-    receiverole: 
+    receiverole:
       description: Set a role for receiver
       options:
         role: Specify a role, which will be the role for donation's receiver
         delete: Whether delete this receive role or not
       translation:
         already_exists: "{} already being receive role for this server, you only can remove or change them."
-    receiver: 
+    receiver:
       description: Add/Remove a receiver
       options:
         action: Select an action
@@ -826,15 +744,13 @@ donation:
         can_remove_only: "{} already being receiver for this server, you only can remove them."
         can_add_only: "{} are not the receiver of this server, you can only add them."
         maximum_reached: "You cannot add more than 10 receiver. You should remove someone in order to add another."
-    
-    announcement: 
+    announcement:
       description: Set donations announce channel
       options:
         channel: Specify a channel, which will be donation announce channel
       translation:
         already_exists: "{} already being donation announcement channel for this server, you only can change it."
-
-    reward: 
+    reward:
       description: Set rewards (role) after specific amount of donation points
       options:
         action: Select an action
@@ -845,18 +761,15 @@ donation:
         insufficient_hierachy: |
           I cannot manage a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
           Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
-        
         can_remove_only: "{} already being reward role for this server, you only can remove them."
         can_add_only: "{} are not the reward role of this server, you can only add them."
         maximum_reached: "You cannot add more than 10 reward role. You should remove a role in order to add another."
-
-    configuration: 
+    configuration:
       description: Check configuration about Automatic donation receiver
       options:
         action: Select an action
         channel: Specify a channel, which it will be the donations receive channel
-
-    serverstats: 
+    serverstats:
       description: Send statistics about server's donation
       translation:
         information: "{}'s Donation Information"
@@ -868,31 +781,26 @@ donation:
         highest_donator: "Highest Donator"
         highest_donaton: "Highest Donaton"
         your_record: "Your donation record"
-
         points: Points
         donation_record: Donation Record
         not_donated: "You haven't donated to this server."
-
-    userstats: 
+    userstats:
       description: Check donation information of an user
       options:
         user: Specify an user
       translation:
         not_donated: "User {} haven't donated to this server!"
         warning: "**Warning:** This server is currently disabled donations!"
-        more: 
+        more:
           before: "*More {} entries before...*"
           after: "*More {} entries after...*"
-
         added: Added
         subtracted: Subtracted
         points: Points
-
         total: "Total donation balance"
         rank: "Ranking"
         recent: "Recent Donation & Changelog"
-
-    add: 
+    add:
       description: Add amount of donation balance to an user
       options:
         user: Specify an user
@@ -902,8 +810,7 @@ donation:
         silent: Whether this command should be executed in silent or not
       translation:
         successful_message: "Added **{} Points** into {}'s donations balance!"
-
-    subtract: 
+    subtract:
       description: Subtract amount of donation balance from an user
       options:
         user: Specify an user
@@ -914,17 +821,15 @@ donation:
         not_donated: "User {} haven't donated to this server!"
         insufficient_points: "Cannot reduce an amount that's higer than current {}'s donation amount in this server ({} Points)."
         successful_message: "Subtracted **{} Points** from {} donation balance with reason: {}"
-  
-stickie: 
+stickie:
   current_setting:
     title: "Sticky Message Configuration for {} ﹥ #{}"
     description: |
       **Current Sticky Message in {}**:
       {}
-      
+
       **Raw Message:**
       ```{}```
-
     seconds: Seconds
     messages: Messages
     mode: Mode
@@ -934,34 +839,29 @@ stickie:
   common:
     not_enabled: "Channel {} haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
     server_not_enabled: "This server haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
-
   description: Set a Sticky Message in your channel!
   commands:
-    configuration: 
+    configuration:
       description: View current Sticky Message configuration of a channel
       options:
         channel: Select a channel to see configuration
-
-    list: 
+    list:
       description: View list of Sticky Message in this server
-      translation: 
+      translation:
         list: "List of channels contains Sticky Message: {}\nUse </stickie configuration:1158663116662525962> to view configuration"
-
-    message: 
+    message:
       description: "[BucketScript Compatible] Set Sticky Message for a channel"
       options:
         channel: Select a channel to assign Sticky Message
-      translation: 
+      translation:
         maximum_reached: "You cannot create more than 6 Sticky Messages in this server."
-
-    remove: 
+    remove:
       description: Remove a Sticky Message that's already exists
       options:
         channel: Select a channel to remove Sticky Message
       translation:
-        invalid_channel: This is not a valid channel. Try select again from the autocomplete. 
-    
-    mode: 
+        invalid_channel: This is not a valid channel. Try select again from the autocomplete.
+    mode:
       description: Edit StickMode for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
@@ -971,46 +871,37 @@ stickie:
         inactive: Chat Inactive Delay
       translation:
         already_set: Channel {} mode already set to **{}**!
-
-    webhook: 
+    webhook:
       description: Set custom webhook for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
-      
-
-    delay: 
+    delay:
       description: Set delay for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
-        delay: Range 1 - 15, the Sticky Message will appear into chat after chat
-          inactive for {delay} seconds
-
-    allowmentions: 
+        delay: Range 1 - 15, the Sticky Message will appear into chat after chat inactive for {delay} seconds
+    allowmentions:
       description: Set AllowedMention rule for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
         action: Choose action for this configuration
-
-    msgthreshold: 
+    msgthreshold:
       description: Set message threshold for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
         threshold: Range 1 - 500, Message will appear into chat after these amount of message has been sent
-
-    embed: 
+    embed:
       description: Set sticky embed
       options:
         channel: Select a channel to assign Sticky Message Configuration
       translation:
         invalid: "Your embed JSON data is invalid, please try again. Remember to build & get Embed JSON Data only in <https://discohook.org/>!"
-
 fun:
   description: Fun commands!
-
-setting: 
+setting:
   description: Edit some settings
   commands:
-    blocksmcdisplay: 
+    blocksmcdisplay:
       description: Set display type for BlocksMC Tracker/Information Commands
       options:
         action: Select an option
@@ -1030,11 +921,9 @@ setting:
           disable: You have successfully disabled snipe logging. (Your message will be delete in cache when you edit/delete it)
       clear:
         description: Clear messages cache for snipe
-        translation: 
+        translation:
           none_message: No cached messages to clear.
           successful: Successfully cleared all cache messages for this server.
-
-
 locale:
   description: "Set your locale"
   commands:
@@ -1042,13 +931,12 @@ locale:
       description: "Set server locale"
       options:
         lang: "Select a language"
-
       translation:
         current: "Currently, your server locale is `{} ({})`. You can only change them."
         updated: "Successfully updated server locale to {} ({})!"
         invalid: "{} is not a valid language, please choose from the command auto-complete."
         guild_only: This command can be used in server only.
-    myself: 
+    myself:
       description: "Set locale of yourself, for command display"
       options:
         lang: "Select a language"
@@ -1057,8 +945,7 @@ locale:
         current: "Currently, your locale is `{} ({})`. You can only change them."
         updated: "Successfully updated your locale to {} ({})!"
         invalid: "{} is not a valid language, please choose from the command auto-complete."
-
-quickreport: 
+quickreport:
   modal:
     label: Reason
     placeholder: The reason for this action, can be empty
@@ -1072,10 +959,10 @@ quickreport:
   context_menu:
     name: Report this Message
   current_setting:
-    report_updated: | 
-      Your report ID `{}` for server **{}** has been updated. 
+    report_updated: |
+      Your report ID `{}` for server **{}** has been updated.
     title: "Quick Report Configuration for {}"
-    source: 
+    source:
       name: "Reports Sources"
       any: "Any Channel (Server-wide)"
       exclude: "Exclude Blacklisted Channels/Categories"
@@ -1088,29 +975,24 @@ quickreport:
     per_user: "{} reports/user"
     blacklist: "Reports Blacklist"
     bypass: "Reports Bypass"
-
     on_member:
       timeout: "\n- On Member __Timed out__"
       muted: "\n- On Member __Muted__ "
-      leave: "\n- On Member __Banned/Leave__" 
+      leave: "\n- On Member __Banned/Leave__"
     blacklisted_channels: "Blacklisted Channels"
     whitelisted_channels: "Whitelisted Channels"
     blacklisted_categories: "Blacklisted Categories"
     whitelisted_categories: "Whitelisted Categories"
-
     auto_delete:
       name: "Auto delete reports"
       value: "- After __{} hours__ of inactive"
-
     no_muterole: "(:warning: no muterole in configuration)"
-    
   get_report:
     status:
       name: "Status"
       pending: ':blue_square: Pending'
       declined: ':red_square: Declined'
       approved: ':yellow_square: Approved'
-    
     report_time: "Report Time"
     last_update: "Last Update"
     uuid: "Report UUID"
@@ -1118,13 +1000,11 @@ quickreport:
     reported: "Reported"
     evidence: "Evidence"
     reason: "Reason"
-
     approver: "Report Approver"
     approvement_time: "Approvement Time"
     declinement_time: "Declinement Time"
     approvement_message: "Approvement Message"
     declinement_message: "Declinement Message"
-
   send_report:
     channel_not_available: "The channel to receive reports is currently unavailable and we cannot send this report to moderators. Please try again in few minutes, or contact Server Administrator about this problem."
     bot_missing_permission: "We are missing either **Send Messages** or **Embed Links** permissions in report's receive channel, so we cannot send this report to moderators. You may contact Server Administrator about this problem."
@@ -1146,74 +1026,58 @@ quickreport:
     message: Message
     reason: Reason
     destination_content: "Destination Message Content"
-
   description: Quickly report violation messages to Server Moderator
   commands:
-    enable: 
+    enable:
       description: Enable Quick Report feature
       options:
         receive_channel: Specify a channel to receive incoming reports
       translation:
         received: ":information_source: We have received your report. A Reports Manager will look through your report in a short time.\nTo view report's status, use </report recent:1192112079977582672> & </report check:1192112079977582672>"
         incoming: ":warning: New incoming report!"
-
     successful_message:
       description: Set a message to be sent to Reporters after a successful report
       options:
         message: Specify a message
-
-    configuration: 
+    configuration:
       description: View current Quick Report configuration of this server
-    
-    disable: 
+    disable:
       description: Disable Quick Report feature
-    
-    muterole: 
+    muterole:
       description: Set an exists mute role of another moderation's bots
       options:
         role: "Select a role"
-    
-    manager: 
+    manager:
       description: Set a report manager's role
       options:
         role: Specify a role
-    
-    bypass: 
+    bypass:
       description: Set a role that will protect users against reports
       options:
         role: Specify a role
-    
-    blacklist: 
+    blacklist:
       description: Set a role that will made users cannot report other messages
       options:
         role: Specify a role
-    
-    autoexpire: 
-      description: Set a timeout for reports when theres no moderators handle it after
-        specific time
+    autoexpire:
+      description: Set a timeout for reports when theres no moderators handle it after specific time
       options:
-        after: Specify hours range, which reports will auto timeout after that
-          specified hours
-    
-    messageold: 
-      description: Set a maximum duration for message to be reportable 
+        after: Specify hours range, which reports will auto timeout after that specified hours
+    messageold:
+      description: Set a maximum duration for message to be reportable
       options:
         before: Specify hours range, which reports for that message will be unable after this range
-
-
-    concurrent: 
+    concurrent:
       description: Set maximum concurrent reports for each users
       options:
         maximum: Specify a value
-    auto_delele: 
+    auto_delele:
       description: Set the bot to automatically delete reports on some events
       options:
         on_user_timeout: Whether delete reports when that user has been timed out
-        on_user_muted: Whether delete reports when that user is muted (a muterole has
-          been given to them)
+        on_user_muted: Whether delete reports when that user is muted (a muterole has been given to them)
         on_user_leave: Whether delete reports when that user is banned/leave the server
-
-    channels: 
+    channels:
       description: Whitelist/Blacklist Quick Report in some channels
       options:
         action: Specify an action
@@ -1221,8 +1085,7 @@ quickreport:
       translation:
         no_serverwide: "You cannot use this command in **Server-wide** mode."
         invalid: "Channel {} {} in **{}** mode."
-
-    categories: 
+    categories:
       description: Whitelist/Blacklist Quick Report in some categories
       options:
         action: Specify an action
@@ -1230,8 +1093,7 @@ quickreport:
       translation:
         no_serverwide: "You cannot use this command in **Server-wide** mode."
         invalid: "Category {} {} in **{}** mode."
-    
-    mode: 
+    mode:
       description: Toggle Quick Report mode
       options:
         action: Select an action
@@ -1239,35 +1101,30 @@ quickreport:
         blacklist: Blacklist
         whitelist: Whitelist
         serverwide: Entire Server
-    
-    update: 
+    update:
       description: "[Quick Report] Approve/Decline a report"
       options:
         action: Select an action
         report_id: Specify Report ID
         reason: Specify a reason for this approvement
         silent: Whether we sent this message in silent or not
-      
       choices:
         approve: Approve
         decline: Decline
-
       translation:
         no_manager_role: "Report Manager Role has not been set in confuguration! Please use </quickreport manager:1182566872810541056> to add one."
         no_perm: "Update reports requires either Manage Members or Manage Report Role."
         no_report: "There are no report with ID `{}` associated with this server!"
         no_override: "Report with ID `{}` has been updated earlier, you cannot override the update!"
         successful: "Successfully updated report with ID `{}`!"
-
-    message: 
+    message:
       description: "[Quick Report] Report a Message in this server"
       options:
         channel: Specify the channel that contains the message
         message_id: Specify Message ID
         reason: The reason that you want to report this message
         silent: Whether we sent this message in silent or not
-
-    recent: 
+    recent:
       description: "[Quick Report] Preview recent reports"
       options:
         order: Select an action for sorting results
@@ -1275,16 +1132,13 @@ quickreport:
         status: Specify a status for query results
         reporter: Specify a reporter
         reported: Specify a member who has been reported
-      
       choices:
         last_update: "Recently Updated"
         report_time: "Report Time"
-
         all: All
         pending: Pending
         approved: Approved
         declined: Declined
-
       translation:
         args_no_perm: "You do not have permissions to use argument `reporter` and `reported`."
         no_report: "There are no recent reports matching your query setting in this server."
@@ -1293,23 +1147,19 @@ quickreport:
         declined: Declined
         approved: Approved
         reported: reported
-
-    check: 
+    check:
       description: "[Quick Report] Preview a report based on ID"
       options:
         report_id: Specify a Report ID, or select from the list above
         silent: Whether we sent this message in silent or not
-
       translation:
         no_report: "There are no report associated with ID `{}` in this server!"
         no_perm: "You do not have permissions to view report with ID `{}` in this server!"
-
-
 customrole:
   description: "Create Custom Role for your member & let them manage it themself"
   current_setting:
     title: "Custom Role Information for @{}"
-    permissions: 
+    permissions:
       icon: "Edit Role Icon"
       name: "Edit Role Name"
       mentionable: "Make Role Mentionable"
@@ -1330,21 +1180,19 @@ customrole:
       restricted_permission: "Restricted Permissions"
     admin_title: "Custom Role Admin Configuration for {}"
     description: "**Total Custom Roles:** {}\n**Role Author Permission:**"
-
-  modal: 
+  modal:
     title: Color Palette
-    color: 
+    color:
       label: Hex Color
       placeholder: "Format: #ABABAB"
-    description: 
+    description:
       label: Description
       placeholder: A description for this color, could be empty
-
   common:
-    palette: 
-      embed: 
+    palette:
+      embed:
         title: "Color Palette"
-        description: 
+        description:
           restricted: "This server is **restricted** to use only color in palette below. You can only use one of colors below here:"
           not_restricted: "This server is **not restricted** to use only color in palette below. You can use any color, or one of colors below here:"
           no_palette: "No color available. Start adding color palette by pressing \"Add Color\" below."
@@ -1361,7 +1209,7 @@ customrole:
       declined: Request {} has been declined.
       unknown_channel: "This server does not have an approval channel. Please contant a Server Administrator to set up approval channel by using `/customrole admin request-approval`."
       sent: "Your update request `#{}` has been sent. A Server Manager will review your update request soon."
-      messages: 
+      messages:
         remove_member: "{} requested to **remove** {} from {}."
         add_member: "{} requested to **add** {} to {}."
         edit_mentionable: "{} requested to **{}** mentionable for {}."
@@ -1392,7 +1240,6 @@ customrole:
         before: Specify time (e.g. 1d1h) is the role duration remaining to send a warning
         message: "[BucketScript Compatible] Set expiration warning message. Extra placeholders: {role}, {remaining}"
         channel: "Specify a channel to post warnings"
-
     clear_warning:
       description: Clear warning message configuration
     create:
@@ -1416,34 +1263,30 @@ customrole:
           I cannot create a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
           Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
         invalid_color: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
-
     max_users:
       description: "Edit maximum users of a custom role"
       options:
         users: "Specity maximum users count for this role"
-
-    terminate: 
+    terminate:
       description: "Terminate a custom role instance of a member"
       options:
         delete_role: Whether delete the role after the termination or not
       translation:
         none_found: "This server does not have any custom role set."
-
-    list: 
+    list:
       description: "View all server's custom role"
       options:
         delete_role: "Whether delete the role or not"
       translation:
         none_found: "This server does not have any custom role set."
         title: "List of Custom Role for {}"
-        duration: 
+        duration:
           permanent: "no expires"
           boost: "expire on remove boosts"
           timing: "expires: {}"
-
     migrate:
       description: "Migrate an existing role to a bot's custom role"
-      options: 
+      options:
         role: "Specify a role"
         author: "Specify custom role's author"
         max_users: "Maximum users can be assigned into this role"
@@ -1457,17 +1300,15 @@ customrole:
           I cannot create a role that has higher than or equal position (at pos {}) with my highest role position (pos {}) or your (pos {}).
           Consider change my role to a higher priority, or create a role with position that is lower than my highest position.
         invalid_time: "`{}` is not a valid short time format."
-                
     set_permission:
       description: "Set permissions for a custom role"
-      options: 
+      options:
         edit_name_permission: "Let role's author can chance their own role name"
         edit_icon_permission: "Let role's author can chance their own role icon"
         edit_color_permission: "Let role's author can chance their own role color"
         manage_role_members_permission: "Let role's author can add/remove role members"
         make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
-        
-    default_author_permission: 
+    default_author_permission:
       description: "Edit default permissions for role's author"
       options:
         edit_name_permission: "Let role's author can chance their own role name"
@@ -1475,31 +1316,28 @@ customrole:
         edit_color_permission: "Let role's author can chance their own role color"
         manage_role_members_permission: "Let role's author can add/remove role members"
         make_role_mentionable_permission: "Let role's author can make their role mentionable by another members"
-
-    approval: 
+    approval:
       description: "Manage custom role's approval channel & status"
       options:
         channel: "Specify the channel to receive requests"
         concurrent_request: "Specify the maximum number of concurrent approval requests from a member. Default: 2"
     palette:
       description: "Manage custom role's color palette"
-
     extend:
       description: "Extend expire date for a custom role"
       options:
         time_range: "Specity time range. Type '0' to make permanent, '1' to remove when role author remove boost"
         from: "Specify which time to extend the role. Default is when the role expired."
       choices:
-        from: 
+        from:
           now: From now
-          expire: When the role expired 
-    search: 
+          expire: When the role expired
+    search:
       description: "Search a custom role assigned to a member"
       translation:
         missing_arguments: "You need to provide `role` or `member`, or both."
         unknown_author: "{} does not being assigned any custom role."
         unknown_role: "{} is not a role that has been registered as a custom role in our database."
-      
     reduce:
       description: "Search a custom role assigned to a member, or reverse of it"
       options:
@@ -1508,7 +1346,6 @@ customrole:
         permanent_role: "Time of Permanent Custom Role cannot be reduced."
         booster_role: "Time of Custom Role which remove in Boost Removal event cannot be reduced."
         overflow: "You cannot reduce more time than the custom role {} having."
-
     on_expire:
       description: "Specify event to do when an user's custom role is expired"
       choices:
@@ -1531,19 +1368,17 @@ customrole:
           description: "Remove a member from your custom role"
           translation:
             can_add_only: "{} doesn't have your custom role {}, you can only add this role to them."
-
-        color: 
+        color:
           description: "Change color of your custom role"
           options:
             color: "Can be `0x<hex>`, `#<hex>`, `rgb(<number>, <number>, <number>)`, or leave empty for default color."
-          translation: 
+          translation:
             palette_forbidden: This server has restricted role color to a set of color. Please select a color from command autocomplete instead of specifying one.
         icon:
           description: "Edit icon of your custom role"
           options:
             icon: Upload your icon here
             emoji: An Emoji ID, Custom Server Emoji, or a Unicode Emoji for the icon
-
           translation:
             require_7_boosts: "This feature requires your server to have **Level 2**, or 7 server boosts."
             invalid_image_format: "The icon should in `.png` or `.jpg` format and smaller than 256kb."
@@ -1557,18 +1392,16 @@ customrole:
           description: "Make your custom role mentionable"
         info:
           description: "See your custom role's information"
-        name: 
+        name:
           description: "Change your custom role's name"
           options:
             name: "Specify role name"
-
 pagination:
   unauthorized: "You cannot interact with this menu."
   inactive: "This message is now inactive."
   next: "Next"
   previous: "Previous"
   stop: "Stop"
-
 collections:
   description: "View your illustration's collection"
   translation:
@@ -1579,19 +1412,18 @@ collections:
     label: Save to Collection!
     saved: "Successfully saved illustration to your collection! Use </collections:1231542816325374034> to view your collection."
     already_saved: "You have already saved this illustration to your collection! Use </collections:1231542816325374034> to view your collection."
-
 giveaway:
   description: Create Advanced giveaway in your server
   translation:
-    unknown_channel: Cannot get the channel assigned to the giveaway, please try again later...  
-    unknown_giveaway: Cannot get the giveaway assigned to the specified channel, please try again later...  
+    unknown_channel: Cannot get the channel assigned to the giveaway, please try again later...
+    unknown_giveaway: Cannot get the giveaway assigned to the specified channel, please try again later...
     participants: Participants
     giveaway_participants: Giveaway Participants
     none_participants: No one has participated into this giveaway yet, ;(
     guild_unavailable: "To determine winners, we have to fetch full data of entrants. Since this server is currently unavailable, please try again in few minutes."
     not_enought_entrants: 'There are not enough entrants to determine winners for this giveaway.'
     reroll_failed: Failed to reroll giveaway...
-    giveaway_rerolled: 🎉 Giveaway has been rerolled by {}. Congratulations {}!
+    giveaway_rerolled: '🎉 Giveaway has been rerolled by {}. Congratulations {}!'
     winners_determined: "🎉 [Giveaway]({1}) **{0}** hosted by {3} ended with winners: {2}. Congratulations!"
     winners: "Winner(s): "
     winners_raw: "Winners"
@@ -1615,11 +1447,9 @@ giveaway:
     somehow_ended:
       title: Giveaway Already Ended!
       description: Somehow this giveaway has ended, and you cannot enter to a giveaway that has ended before. Please contact server administrator to reroll this giveaway instead.
-    
     missing_permission:
       title: Missing Permissions
       description: Only Giveaway host can use this button. Otherwise, you are missing `Manage Messages` permission to perform this action.
-
     not_enough_entrants:
       title: Failed to end giveaway...
       description: There are not enough entrants to determine winners for [this giveaway]({}), ;(
@@ -1632,7 +1462,7 @@ giveaway:
     successfully_participated:
       title: Successfully Participated!
       description: 'You have successfully participated in this giveaway. If you want to leave, you can click "Leave Giveaway" under here.'
-    main: 
+    main:
       hosted_by: "Hosted by:"
       duration: "Duration:"
       ends: "Ends:"
@@ -1644,13 +1474,13 @@ giveaway:
       entrants: entrants
       bypass: Bypass Requirements
       blacklist: Blacklist
-    embed_recovered: 
+    embed_recovered:
       title: Giveaway successfully created!
       description: "The following giveaway has been recovered: {}"
-    embed_created: 
+    embed_created:
       title: Giveaway successfully created!
       description: "The following giveaway has been created: {}"
-    embed_edited: 
+    embed_edited:
       title: Giveaway successfully edited!
       description: "The following giveaway has been edited: {}"
     edit_confirm:
@@ -1659,23 +1489,20 @@ giveaway:
     create_confirm:
       title: Giveaway Confirmation
       description: Do you want to start this giveaway? You still can edit this giveaway later.
-    channel: 
+    channel:
       title: Giveaway Channel
       description: "Select channel to post the current giveaway.\n\nCurrent channel: <#{}>"
       prevent_edit: "Since the giveaway started, you cannot edit the giveaway channel anymore.\n\nCurrent channel: <#{}>"
-
     bypasses:
       title: Giveaway Bypasses
       description: "Select roles to bypass requirements from the current giveaway. A member can bypass requirements if they have any role in this selection.\nYou can choose up to 5 roles."
       translation:
         roles: "Bypass roles: Any of"
-
     blacklists:
       title: Giveaway Blacklists
       description: "Select roles to blacklist from the current giveaway. If the member has any role in this selection, they will be blacklist.\nYou can choose up to 10 roles."
       translation:
         roles: "Blacklisted roles: Any of"
-
     requirements:
       title: Giveaway Requirements
       description: "Add requirements to join this giveaway. Members will met the requirement if they have any role in this selection.\nYou can choose up to 10 requirement roles.\nYou can also make join duration requirement by click into the button."
@@ -1692,10 +1519,10 @@ giveaway:
       title: Giveaway Button
       description: Edit color & emoji for the giveaway button. By limitation, you can only select button color down here.
     leave:
-      success: 
+      success:
         title: Leave Successfully!
         description: You have successfully leave this giveaway.
-      failed: 
+      failed:
         title: Unable to leave...
         description: You haven't participated in this giveaway, or the giveaway does not exist.
   selects:
@@ -1709,7 +1536,6 @@ giveaway:
     participated:
       entrants: Entrants Participated
       entrant: Entrant Participated
-
     enter_giveaway: "Enter Giveaway!"
     reroll: Reroll
     rerolled: Rerolled
@@ -1721,12 +1547,12 @@ giveaway:
       default: Color
       gray: Gray
       blurple: Blurple
-      green: Green 
-      red: Red 
+      green: Green
+      red: Red
       custom: Set Unicode/Custom Emoji
     confirm_start: "Confirm & Start"
     back: Back to edit
-    core: Core 
+    core: Core
     start: Start Giveaway
     edit_settings: Edit Reward, Duration & Winners
     settings: Settings
@@ -1742,7 +1568,7 @@ giveaway:
     template_save: Save as Template
   modals:
     duration:
-      title: Join Duration Requirement 
+      title: Join Duration Requirement
       label: Duration (e.g. 1d2h, maximum 30d)
       placeholder: Leave emtpy to remove requirement
     template_create:
@@ -1754,38 +1580,34 @@ giveaway:
         description:
           label: Description
           placeholder: "[Optional] Specify description for the template"
-
     button_emoji:
       title: Button Emoji
       fields:
         emoji:
           label: Emoji
           placeholder: Paste your Emoji Unicode, or Custom Server Emoji here
-    
     color:
       title: Giveaway Embed Color
       fields:
         color:
           label: Color
           placeholder: "Can be #<hex>, rgb(<number>, <number>, <number>), or leave empty for default color."
-
     image:
       title: Giveaway Embed Image
       fields:
         image:
           label: Image URL
           placeholder: "Specify an image link that shorter than 512 characters. Leave empty to remove image"
-
     settings:
-      title: Necessary Settings 
+      title: Necessary Settings
       fields:
-        reward: 
+        reward:
           label: Reward
           placeholder: Specify reward for the givewaway
-        duration: 
+        duration:
           label: Duration
           placeholder: Specify duration for the givewaway (e.g. 1d2h, maximum 60d)
-        winner: 
+        winner:
           label: Winners
           placeholder: Specify winners for the givewaway, from 1 - 10
     bonus:
@@ -1794,32 +1616,26 @@ giveaway:
         bonus:
           label: Number of bonus entrants (1 - 99)
           placeholder: Type '0' to remove the role from bonus entrants
-
   commands:
-    recover: 
+    recover:
       description: Recover a deleted giveaway that is not ended
       embeds:
         unknown:
           title: Unknown Giveaway ID
-          description: The Message assigned to the giveaway was invalid. Please use </giveaway recover:1240148427967565866> if the giveaway message has been deleted before. 
-    
-    setup: 
+          description: The Message assigned to the giveaway was invalid. Please use </giveaway recover:1240148427967565866> if the giveaway message has been deleted before.
+    setup:
       description: Setup a new giveaway
       embeds:
-
         preparing:
           title: Preaparing...
           description: We are preparing data for this setup, please wait...
-
         failed:
           title: Setup failed!
           description: You cannot create more than 20 running giveaways in this server.
-
-        select: 
+        select:
           title: Select template
           description: "You can quickly a giveaway with command </giveaway create:1240148427967565866> with the same usage of </giveaway setup:1240148427967565866> by specify parameters with advanced usage. Also, that command helps you to create many similiar giveaway by using `Upside Arrow (↑)` to quickly re-use previous slash command.\n\nThis command is for setting up a complex giveaway with requirements, blacklists, etc., with a friendly interface for better usage.\nIf you want to continue, please select a template to start:"
-
-    end: 
+    end:
       description: End an existing giveaway
       embeds:
         unknown:
@@ -1840,7 +1656,6 @@ giveaway:
         successful:
           title: Giveaway ended
           description: The specified giveaway has ended successfully!
-    
     create:
       description: Quickly create a giveaway
       options:
@@ -1883,7 +1698,7 @@ giveaway:
           requires_join_before: "Error in field **Requires join before**: Your giveaway duration was invalid. Please specify by short date format (e.g. `1d2h`) or pure second (e.g. `86400`) and lower than 60 days."
           template: There are none template called `{}` in your server.
           bot_missing_permission: Unable to create giveaway, make sure that I have `Send Messages`, `Embed Links` and `Read Messages History` permissions.
-    reroll: 
+    reroll:
       description: Reroll a giveaway that ended
       translation:
         winners: Number of winners when reroll to overwrite from configuration, default to giveaway configuration.
@@ -1894,22 +1709,21 @@ giveaway:
         giveaway_running:
           title: Giveaway are running!
           description: The provided giveaway are running. You can end giveaway by using command </giveaway end:1240148427967565866>.
-        
-    edit: 
+    edit:
       description: Edit a running giveaway
       embeds:
         unknown:
           title: Unknown Giveaway
           description: The Giveaway ID provided was invalid.
     template:
-      common: 
+      common:
         template: Select a template
         embeds:
           none_template:
             title: Invalid template!
             description: "There are none template called `{}` in your server."
       subcommands:
-        edit: 
+        edit:
           description: 'Edit a template'
         delete:
           description: 'Delete a template'
@@ -1920,11 +1734,10 @@ giveaway:
           options:
             name: Specify template name
             description: Specify template description
-
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
-    unknown_embed: | 
+    unknown_embed: |
       Unknown embed `{}` for server `{}`
       To create an embed, use </bucketscript embed create:1245661361673863238>
     preparing: Preparing data, please wait...
@@ -1932,15 +1745,14 @@ bucketscript:
     invalid:
       greeting: Your server doesn't have any Greeting Message. Consider create one by using `/bucketscript greeting message`
       farewell: Your server doesn't have any Farewell Message. Consider create one by using `/bucketscript farewell message`
-
-    greeting: 
+    greeting:
       title: Server Greeting Message
-      description: 
+      description:
         missing: "### Greeting Message:\n\n{}"
         full: "### Greeting Message for <#{}>:\n\n{}"
-    farewell: 
+    farewell:
       title: Server Farewell Message
-      description: 
+      description:
         missing: "### Farewell Message:\n\n{}"
         full: "### Farewell Message for <#{}>:\n\n{}"
     maximum_fields_reached: Maximum embed fields reached (25). You cannot add any field until you remove one.
@@ -1977,10 +1789,10 @@ bucketscript:
     author:
       title: Author Input
       fields:
-        name: 
+        name:
           label: Author
           placeholder: Enter Author name/placeholder. Leave empty to remove/ignore
-        url: 
+        url:
           label: Author URL
           placeholder: Enter Author URL. Leave empty to remove/ignore
         icon:
@@ -2011,17 +1823,17 @@ bucketscript:
         description:
           label: Description
           placeholder: "Enter Embed description. Leave empty to remove/ignore"
-    color: 
+    color:
       title: Color
       label: Hex Color
       placeholder: "Enter color in HEX format (example: #C0CDFF). Leave empty for default color"
     fields:
       title: Embed Field
       fields:
-        name: 
+        name:
           label: Name
           placeholder: Enter Field name
-        value: 
+        value:
           label: Value
           placeholder: Enter Field value
         inline:
@@ -2039,12 +1851,10 @@ bucketscript:
         description: Edit a BucketScript Embed
         translation:
           unknown_embed: There is no embed with that name in our BucketScript database.
-
       delete:
         description: Delete a BucketScript Embed
         translation:
           unknown_embed: There is no embed with that name in our BucketScript database.
-
     greeting:
       subcommands:
         message:
@@ -2055,13 +1865,12 @@ bucketscript:
           description: Set Greeting channel
         clear:
           description: Clear Greeting message
-        test: 
+        test:
           description: Test Greeting message
           translation:
             invalid_channel: "Cannot get the configured greeting channel, please try again later..."
             missing_permission: Insufficient permissions. Make sure the bot has permissions `Send Messages`, `Embed Links`, and `Read Message History` in {}.
             successful: "The Greeting message has been sent!"
-
     farewell:
       subcommands:
         message:
@@ -2072,13 +1881,12 @@ bucketscript:
           description: Set Farewell channel
         clear:
           description: Clear Farewell message
-        test: 
+        test:
           description: Test Farewell message
           translation:
             invalid_channel: "Cannot get the configured farewell channel, please try again later..."
             missing_permission: Insufficient permissions. Make sure the bot has permissions `Send Messages`, `Embed Links`, and `Read Message History` in {}.
             successful: "The Farewell message has been sent!"
-
 userscript:
   translation:
     update_roles: Update roles on autoresponder
@@ -2090,11 +1898,11 @@ userscript:
         channel: "A valid channel is required at argument `#{}`."
         number: "A valid number is required at argument `#{}`."
         any: "An argument is required at position `#{}`."
-      invalid: 
+      invalid:
         user: "A valid user is required at argument `#{}`. You wrote `{}`."
         role: "A valid role is required at argument `#{}`. You wrote `{}`."
         channel: "A valid channel is required at argument `#{}`. You wrote `{}`."
-    user: 
+    user:
       missing_permission: "### {} Missing Permissions: {}"
       placeholder_error: "### {} Logical Placeholder Error: {}"
     insufficient_balance: "You do not have sufficient {}'s balance to perform this trigger (current: `{}`, required: `{}`)."
@@ -2110,11 +1918,11 @@ userscript:
       global: "`int` in `{global_cooldown:int}` should be a numeric value. (received `{}`)"
     large_payload: "`amount` should in range [0 - 50,000,000] for each operation. (received `{}`)"
     unknown_member: Unknown member `{}`
-    random: 
+    random:
       number: You haven't picked a random number before calling `[random:number]` placeholder. Please add a random number function `{random:number:A-B}` to random a number from `A` to `B`, then get the randomized number by using `[random:number]` placeholder.
       string: You haven't picked a random string before calling `[random:string]` placeholder. Please add a random string function `{random:string:A|B|C}` to random a string between `A`, `B`, or `C`, then get the randomized string by using `[random:string]` placeholder.
     malform_number: "Malformed input for random number function. To random a number between `A` and `B`, please follow structure `{random:number:A-B}`"
-    argument_error: 
+    argument_error:
       from: Arguments are required from position `{}`.
       range: Arguments are required in position `{}` to `{}`.
       single: An argument is required in position `{}`.
@@ -2127,13 +1935,11 @@ userscript:
       require_category: You are not allowed to use this autoresponder in this category.
       require_permission: You are missing permissions to use this autoresponder.
       require_role: You are missing specific roles to use this autoresponder.
-
       ignore_user: You have been ignored from using this autoresponder.
       ignore_channel: This channel has been ignored from using this autoresponder.
       ignore_category: This category has been ignored from using this autoresponder.
       ignore_permission: You have specific permissions that has been ignored from using this autoresponder.
       ignore_role: You have specific roles that has been ignored from using this autoresponder.
-
       cooldown: "This autoresponder is on a **cooldown**. Try again: {}"
       global_cooldown: "This autoresponder is on a **global cooldown**. Try again: {}"
     triggered: "-# Triggered Autoresponder ID: `{}`"
@@ -2157,7 +1963,6 @@ userscript:
     invalid_redirect: "`reply` function cannot being set with `redirect_to`."
   embeds:
     maximum_size_reached: "Embed `{}` for server `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
-
 voting:
   description: Easily track votes of a voting competition!
   modals:
@@ -2177,17 +1982,16 @@ voting:
     blacklist: Select a role for blacklist
     blacklist_whitelist: Select a role for blacklist/whitelist
   embeds:
-    preparing: 
+    preparing:
       title: 'Preparing...'
       description: 'We are preparing data for this server, please wait for some minutes.'
-    invalid_channel: 
+    invalid_channel:
       title: Invalid voting channel!
       description: "The voting channel is invalid (may deleted: `{}`). If your believe this is an error, please try again after a minute. If the channel has been deleted, you have to setup a new voting session."
-    missing_permission: 
+    missing_permission:
       title: Missing Permissions
       description: "We are missing permission to read votes in {}: **Manage Messages**, **Read Message History**, **Read Messages** & **Add Reactions**.\nYou may have to contact Server Administrator about this problem."
-    
-  translation: 
+  translation:
     outdated_data: "*This data is outdated and the bot is currently refreshing the data in the background (Starting update since: {}). Please use the command again in a few minutes to get the latest data.*"
     none_vote: "*There is no valid votes in <#{}>.*"
     none_running: There is no vote session running in this server.
@@ -2217,12 +2021,12 @@ voting:
         messages:
           limited: "- Each participant can post only __{} messages__"
           unlimited: "- Each participant can post __unlimited messages__"
-      state: 
+      state:
         first: "> Count __total reaction count__ of the first react"
         member: "> Count __total reaction count__ of the message"
         reaction: "> Count __total member reacted__ to the message"
         strict: "> Count only reaction count of a single emoji ({})"
-    start: 
+    start:
       name: Start Voting Session
       buttons:
         start: Start
@@ -2231,9 +2035,9 @@ voting:
         confirmation:
           title: Start Confirmation
           description: "Do you want to start this session? To stop the session and save results, use `/voting session end`."
-        started: 
+        started:
           title: Vote Session Started
-          description: The vote session has started successfully in <#{}>!
+          description: 'The vote session has started successfully in <#{}>!'
     no_emoji:
       short: No emoji in configuration
       full: No emoji in configuration. Press 'Set Emoji' below to set your own emoji for vote count
@@ -2251,10 +2055,10 @@ voting:
         register: "- Member account's have to registered at least __{}__ to make valid votes\n"
         leave_invalid: "- All votes __are still valid__ if voter leave the server"
         leave_valid: "- All votes __will be invalidated__ if voter leave the server"
-    method: 
+    method:
       invalid_emoji: Your server does not have the emoji `{}`, or this unicode emoji does not valid.
       set_emoji: Set emoji (Require Strict Mode)
-      embed: 
+      embed:
         title: Vote Method
         description: |
           Choose how the bot count votes:
@@ -2265,7 +2069,7 @@ voting:
           **Strict**: Count only reaction count of a single emoji ({})
 
           Select method below. Current option: **{}**
-    participate_method: 
+    participate_method:
       embed:
         title: Participate Method
         description: |
@@ -2284,7 +2088,7 @@ voting:
         sort: Whether sort the result in descending order
         user: View messages from a specific user
         hide_disqualified: Whether hide disqualified participants or not
-    detail: 
+    detail:
       description: View detail statistics of a message
       options:
         hide_invalid: Whether hide disqualified voters or not
@@ -2294,7 +2098,7 @@ voting:
       autocomplete:
         author: Author
         votes: Votes
-    configuration: 
+    configuration:
       description: View & Edit vote configuration
     history:
       description: View a vote session in history
@@ -2323,7 +2127,6 @@ voting:
             ending: This session is currently in save progess, you can check back later.
             saving: Saving data, please wait for some minutes ...
             saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`** `session:{0}`.
-
 tasks:
   description: Create Automatic tasks
   current_setting:
@@ -2333,7 +2136,6 @@ tasks:
     paused: Paused?
     ignore: Ignore lock on
     id: Task UUID
-
   common:
     task: Choose a task from autocomplete, or specity task ID
     invalid_task: Invalid task ID `{}` for this server.
@@ -2351,7 +2153,6 @@ tasks:
           invalid_time: Invalid `{}` time input. You may input in format `hh:mm`, with `hh` = hour (00 - 23), `mm` = minute (00 - 59), all in 2 digits.
           invalid_time_gap: Time gap between `lock_at` & `unlock_at` must be larger than 180 seconds (3 minutes)
           overlapped: "Your task has overlapped another task: `{}`. \nMake sure to not add a task with time that overlapped another one (e.g. a lockdown task from 21:00 -> 22:00 cannot overlap another lockdown task in 21:30 -> 22:30)"
-      
       mode:
         description: Edit auto-lock mode for a specific task
         options:
@@ -2361,12 +2162,10 @@ tasks:
             _0: Disable message typing only
             _1: Remove channel visible only
             _2: Both disable message & remove channel visible
-
-      rename: 
+      rename:
         description: Rename a task
         options:
           name: Specify a name
-
       setstatus:
         description: Pause/Resume a specific auto-lock task
         options:
@@ -2378,14 +2177,10 @@ tasks:
         translation:
           resume_only: This task is currently paused, you can only resume it.
           pause_only: This task is currently in action, you can only pause it.
-
-
-      configuration: 
+      configuration:
         description: View configuration of a specific task
-      
       delete:
         description: Delete a specific task
-
       ignore_date:
         description: Ignore task execution on specific date
         options:
@@ -2402,7 +2197,6 @@ tasks:
         translation:
           remove_only: Task ID `{}` already ignored this date, you can only remove them.
           add_only: Task ID `{}` are not ignored this date, you can only add them to ignore list.
-
       list:
         description: List all tasks belong to this server
         translation:
@@ -2410,7 +2204,6 @@ tasks:
           embed:
             title: Task List for {}
             description: ":blue_square: - Not paused | :red_square: - Paused\n\n"
-
 minecraft:
   description: "Utilities for Minecraft."
   commands:
@@ -2430,8 +2223,7 @@ minecraft:
           reason:
             name: "Reason"
             value: "Creating this DNS Record ensures that you own/manage the domain, preventing other users from changing or using data based on your domain."
-
-    server: 
+    server:
       description: "Display status of a Minecraft server"
       options:
         address: "A server address, may include port"
@@ -2452,7 +2244,6 @@ minecraft:
         timeout:
           title: "Connection timed out"
           description: "`{}` did not return data within 5 seconds. This may be due to:\n- The server has blocked the bot's service IP,\n- The server is overloaded & did not respond in time,\n- The server is offline.\nYou can try again in a few minutes."
-
       translation:
         custom_banner: "**TIP:** Set your own banner for your Minecraft Server by using </minecraft custom-server-banner:1258037133189451817>!"
         below_block_warning: ":warning: **Warning:** Unknown material `{}` for `below_layer`. Please select again from the autocomplete. We will use `end_stone` as default.\n"
@@ -2461,7 +2252,6 @@ minecraft:
         player_count: "Player Count"
         version: "Version"
         sofware: "Software: `{}`\nProtocol Version: `{}` `({})`"
-
 agecalculator:
   description: "Smart, reliable, future-prediction, and always spot-on age-calculator - just like your favorite one."
   options:
@@ -2489,9 +2279,8 @@ agecalculator:
     height: "Enter their height in cm"
     weight: "Enter their weight in kg"
     favorite_animal: "Specify their favorite animal"
-  
   choices:
-    astrological_sign: 
+    astrological_sign:
       aries: "Aries"
       taurus: "Taurus"
       gemini: "Gemini"
@@ -2505,7 +2294,6 @@ agecalculator:
       aquarius: "Aquarius"
       pisces: "Pisces"
       other: "Other"
-
     blood_type:
       a_plus: "A+"
       a_minus: "A-"
@@ -2516,12 +2304,10 @@ agecalculator:
       ab_plus: "AB+"
       ab_minus: "AB-"
       other: "Other"
-
     calculation_speed:
       slow: "Slow (more accurate, default)"
       normal: "Normal (less accurate)"
       fast: "Fast (very low accurate)"
-
   translation:
     random:
       countries:
@@ -2555,7 +2341,6 @@ agecalculator:
         greece: Greece
         turkey: Turkey
         poland: Poland
-
       superpowers:
         invisibility: Invisibility
         super_strength: Super Strength
@@ -2587,7 +2372,6 @@ agecalculator:
         light_manipulation: Light Manipulation
         sound_manipulation: Sound Manipulation
         gravity_manipulation: Gravity Manipulation
-
       favorite_foods:
         banh_mi: Banh Mi
         pizza: Pizza
@@ -2620,7 +2404,6 @@ agecalculator:
         stew: Stew
         lasagna: Lasagna
         burrito: Burrito
-
       hobbies:
         reading: Reading
         gaming: Gaming
@@ -2652,7 +2435,6 @@ agecalculator:
         camping: Camping
         rock_climbing: Rock Climbing
         horse_riding: Horse Riding
-
       favorite_animals:
         dog: Dog
         cat: Cat
@@ -2684,7 +2466,6 @@ agecalculator:
         lizard: Lizard
         snake: Snake
         frog: Frog
-
     skipping:
       time_travel_machine: "Skipping time travel machine phase..."
       use_starlink: "Skipping Starlink check..."
@@ -2707,8 +2488,7 @@ agecalculator:
       height: "Skipping height measurement..."
       weight: "Skipping weight measurement..."
       favorite_animal: "Skipping favorite animal check..."
-
-    finishing: Finishing calculation, please wait... 
+    finishing: Finishing calculation, please wait...
     invalid_datetime: "Invalid date format. Please use DD/MM/YYYY."
     time_travel_machine: "Using time travel machine for age prediction..."
     use_starlink: "Using Starlink for age prediction..."
@@ -2722,8 +2502,7 @@ agecalculator:
       past_life: "Past life age calculation complete!"
       discord: "Discord age retrieval complete!"
       palm_reading: "Finished palm reading!"
-
-    self: 
+    self:
       completed: "Age calculation completed! Your age is: **{}**."
       calculating: "Calculating your age, please wait..."
       exploit_dna: "Exploiting your DNA..."
@@ -2742,19 +2521,19 @@ agecalculator:
       superpower:
         performing: "Checking your preferred superpower..."
         done: "Done! Your preferred superpower is {0}."
-      palm_reading: 
+      palm_reading:
         performing: "Performing palm reading..."
-      biometric_scan: 
+      biometric_scan:
         performing: "Performing biometric scan..."
-      horoscope_analysis: 
+      horoscope_analysis:
         performing: "Performing horoscope analysis..."
-      google_search: 
+      google_search:
         performing: "Searching Google for your age..."
-      ancestry_dna: 
+      ancestry_dna:
         performing: "Using Ancestry DNA to verify your age..."
-      past_life: 
+      past_life:
         performing: "Calculating your age including past lives..."
-      discord: 
+      discord:
         performing: "Asking Discord for your age..."
       favorite_food:
         performing: "Checking your favorite food..."
@@ -2774,7 +2553,6 @@ agecalculator:
       favorite_animal:
         performing: "Checking your favorite animal..."
         done: "Done! Your favorite animal is {0}."
-
     other:
       completed: "Age calculation completed! {}'s age is: **{}**."
       calculating: "Calculating {}'s age, please wait..."
@@ -2794,19 +2572,19 @@ agecalculator:
       superpower:
         performing: "Checking @{0}'s preferred superpower..."
         done: "Done! Their preferred superpower is {0}."
-      palm_reading: 
+      palm_reading:
         performing: "Performing palm reading for @{0}..."
-      biometric_scan: 
+      biometric_scan:
         performing: "Performing biometric scan for @{0}..."
-      horoscope_analysis: 
+      horoscope_analysis:
         performing: "Performing horoscope analysis for @{0}..."
-      google_search: 
+      google_search:
         performing: "Searching Google for @{0}'s age..."
-      ancestry_dna: 
+      ancestry_dna:
         performing: "Using Ancestry DNA to verify @{0}'s age..."
-      past_life: 
+      past_life:
         performing: "Calculating @{0}'s age including past lives..."
-      discord: 
+      discord:
         performing: "Asking Discord for @{0}'s age..."
       favorite_food:
         performing: "Checking @{0}'s favorite food..."
@@ -2826,7 +2604,6 @@ agecalculator:
       favorite_animal:
         performing: "Checking @{0}'s favorite animal..."
         done: "Done! Their favorite animal is {0}."
-
 moderation:
   description: Server Moderation utilities.
   commands:
@@ -2842,10 +2619,9 @@ moderation:
           bot_hierachy: "I cannot timeout **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
           invalid_time: "`{}` is not a valid short time format, or larger than 7 days."
           unknown: "I cannot timeout **{}** right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been timed out for **{}**, with reason: {}"
           none: "**{}** has been timed out for **{}**."
-
     untimeout:
       description: Remove timeout from a member
       translation:
@@ -2856,10 +2632,9 @@ moderation:
           owner: "You cannot un-timeout server owner."
           bot_hierachy: "I cannot un-timeout {} due to Discord hierarchy rules. Please give me higher role to perform this action."
           unknown: "I cannot un-timeout {} right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been removed time out, with reason: {}"
-          none: "**{}** has been removed time out."      
-
+          none: "**{}** has been removed time out."
     ban:
       description: Ban a member
       options:
@@ -2873,20 +2648,18 @@ moderation:
           invalid_time: "`{}` is not a valid short time format, or larger than 7 days."
           unknown: "I cannot ban **{}** right now. Please try again later. `({})`"
           already_banned: "**{}** already banned in this server."
-        success: 
+        success:
           reason: "**{}** has been banned, with reason: {}"
           none: "**{}** has been banned."
-
     unban:
       description: Unban a user
       translation:
         not_banned: "This member is not banned."
         invalid: "This user is invalid, or not banned in this server."
         error: "I cannot unban **{}** right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been unbanned, with reason: {}"
           none: "**{}** has been unbanned."
-    
     warn:
       description: Warn a member
       translation:
@@ -2896,10 +2669,9 @@ moderation:
           owner: "You cannot warn server owner."
           bot_hierachy: "I cannot warn **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
           unknown: "I cannot warn **{}** right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been warned, with reason: {}"
-          none: "**{}** has been warned."  
-    
+          none: "**{}** has been warned."
     unwarn:
       description: Un-warn a member
       options:
@@ -2912,10 +2684,9 @@ moderation:
           owner: "You cannot un-warn server owner."
           bot_hierachy: "I cannot un-warn **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
           unknown: "I cannot un-warn **{}** right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been un-warned, with reason: {}"
-          none: "**{}** has been un-warned."  
-    
+          none: "**{}** has been un-warned."
     kick:
       description: Kick a member
       translation:
@@ -2925,10 +2696,9 @@ moderation:
           owner: "You cannot warn server owner."
           bot_hierachy: "I cannot warn {} due to Discord hierarchy rules. Please give me higher role to perform this action."
           unknown: "I cannot warn {} right now. Please try again later. `({})`"
-        success: 
+        success:
           reason: "**{}** has been kicked, with reason: {}"
-          none: "**{}** has been kicked."  
-
+          none: "**{}** has been kicked."
 bucketbalance:
   description: Virtual-Economy for your server!
   common:
@@ -2948,20 +2718,18 @@ bucketbalance:
         created: |
           Successfully created balance {} **`[{}]`** **{}** with ID `{}`.
           Use `{}` function to modify balance in BucketScript, or use `/bucketbalance add/subtract` for modify manually.
-    
     delete:
       description: Delete an existing virtual-economy in your server
-      translation: 
-        confirmation: 
+      translation:
+        confirmation:
           question: Are you sure to delete economy {} **{}**? All existance balance record of members that assigned with this economy will be delete too!
           timed_out: Confirmation timed out (15 seconds).
           invalid: Invalid confirmation code (received `{}`, `{}` expected)
         deleted: Economy {} `{}` with ID `{}` has been deleted.
       modal:
-        title: 
+        title:
         placeholder: Please type '{}' to confirm deletion.
         label: Delete Confirmation [{}]
-
     list:
       description: List all existing virtual-economy in your server
       translation:
@@ -2969,17 +2737,14 @@ bucketbalance:
         title: BucketBalance list for {}
         member: Member
         total: Total Balance
-
     add:
       description: Add a specific amount of virtual-economy to a specific user
       translation:
         successful: "Successfully added {} {} **{}** to {}'s balance!"
-    
     subtract:
       description: Subtract a specific amount of virtual-economy from a specific user
       translation:
         successful: "Successfully subtracted {} {} **{}** to {}'s balance!"
-
     leaderboard:
       description: Show leaderboard of a specific virtual-economy
       options:
@@ -2991,12 +2756,11 @@ bucketbalance:
         rank: Rank
         points: Points
         user: User
-
 server:
   description: Show server-related information.
   buttons:
     banner: Banner
-    icon: Icon 
+    icon: Icon
   commands:
     info:
       description: Show information about this server
@@ -3005,22 +2769,22 @@ server:
         owner: Owner
         created: Created
         boost: Boost
-        language: 
+        language:
           text: Language
           server: "Server Setting"
           config: "Configuration"
         statistics: "Statistics"
-        security: 
+        security:
           text: Security
           value: |
             Verfivication Level: {}
             Invite Paused: {}
             Direct Message Paused: {}
         verification:
-          none: None 
-          low: Low 
-          medium: Medium 
-          high: High 
+          none: None
+          low: Low
+          medium: Medium
+          high: High
           highest: Highest
     membercount:
       description: Show members count about this server
@@ -3047,7 +2811,6 @@ server:
           already_have: "{} already has the role **{}**."
           elevated_permissions: "**{}** contains elevated permissions and cannot be assigned by the bot for security reasons."
           successful: Added **{}** to **{}**.
-
       add-all:
         description: Add a role to all server members
         describe:
@@ -3063,7 +2826,6 @@ server:
           elevated_permissions: "**{}** contains elevated permission and cannot be assigned by the bot for security reasons."
           adding: Adding **{}** to {} accounts, this may take {}.
           successful: Successfully added **{}** to {} accounts.
-      
       remove:
         description: Remove a role to from member
         translation:
@@ -3073,7 +2835,6 @@ server:
           already_have: "{} does not have the role {}."
           elevated_permissions: "**{}** contains elevated permissions and cannot be removed by the bot for security reasons."
           successful: Removed {} from **{}**.
-          
       remove-all:
         description: Remove a role from all server members
         describe:
@@ -3084,7 +2845,6 @@ server:
           elevated_permissions: "**{}** contains elevated permission and cannot be removed by the bot for security reasons."
           adding: Removing **{}** from {} accounts, this may take {}.
           successful: Successfully removed **{}** from {} accounts.
-
 quests:
   description: Create Quests for your server members!
   translation:
@@ -3092,34 +2852,34 @@ quests:
     invalid_quest: This is not a valid quest ID. Please choose again from the autocomplete.
     empty_quest: "*There is no quest for you right now.*"
     unknown_channel: ":warning: Bot cannot access/view these channel(s): {}"
-    setting: 
-      state: 
+    setting:
+      state:
         mute: You cannot `🔇` **mute** while in voice
         deafen: You cannot `🧏` **deafen** while in voice
         both: You cannot `🧏` **deafen** or `🔇` **mute** while in voice
-      title: 
+      title:
         text: "Send {} text messages"
         voice: "Stay in Voice Chat for {} minutes"
-      channel: 
+      channel:
         single: "- In channel: {}"
         any: "- In **one of following** channel: {}"
       filter:
         blacklist: '- Blacklist: '
         whitelist: '- Whitelist: '
-      reset: 
+      reset:
         timing: "- Resets: *{}*"
         permanent: "- Resets: *No reset*"
     duration:
       text:
-        daily: 💬 Daily Chat's Quest
-        weekly: 💬 Weekly Chat's Quest
-        monthly: 💬 Monthly Chat's Quest
-        permanent: 💬 Chat's Quest
+        daily: '💬 Daily Chat''s Quest'
+        weekly: '💬 Weekly Chat''s Quest'
+        monthly: '💬 Monthly Chat''s Quest'
+        permanent: '💬 Chat''s Quest'
       voice:
-        daily: 🔊 Daily Voice's Quest
-        weekly: 🔊 Weekly Voice's Quest
-        monthly: 🔊 Monthly Voice's Quest
-        permanent: 🔊 Voice's Quest
+        daily: '🔊 Daily Voice''s Quest'
+        weekly: '🔊 Weekly Voice''s Quest'
+        monthly: '🔊 Monthly Voice''s Quest'
+        permanent: '🔊 Voice''s Quest'
     channel: Channel
     any_channel: Any channel
     toggle:
@@ -3135,7 +2895,6 @@ quests:
       title: Blacklist/Whitelist
       blacklist: "Blacklist: Any of {}"
       whitelist: "Whitelist: Any of {}"
-      
   buttons:
     whitelist: Whitelist
     blacklist: Blacklist
@@ -3145,12 +2904,12 @@ quests:
     complete: Complete
     textmode:
       any: Any
-      startswith: Startswith 
-      contains: Contains 
-      endswith: Endswith 
+      startswith: Startswith
+      contains: Contains
+      endswith: Endswith
     voicemode:
       mute: Allow Mute
-      deaf: Allow Deafen 
+      deaf: Allow Deafen
     duration:
       daily: Daily
       weekly: Weekly
@@ -3159,51 +2918,44 @@ quests:
     mode:
       voice: Voice
       text: Text
-
   selects:
     whitelist: Select roles to whitelist
     blacklist: Select roles to blacklist
     channel: Select channels
-
   modals:
     text:
       title: Text Requirement
       count:
         label: Message Count
         placeholder: Input a number of messages to complete the quest (1 - 99,999)
-      type: 
+      type:
         label: Message Type
         startswith: The message content have to starts with ...
         contains: The message content have to contains ...
         endswith: The message content have to ends with ...
-    
     function:
       title: Completion Function
       label: Completion Function
       placeholder: Input quests completion function
-    
     voice:
       title: Voice Count
       label: Voice Minutes
       placeholder: Input a number of voice minutes to complete the quest (1 - 99,999)
-
   embeds:
     mode:
       title: Quest Mode
       description: |
         You are selecting quest mode, that is able to complete either by stay in **Voice**, or chatting in **Text** channel.
         Please select your selection below.
-        
-        **Next step:** Select Quest duration
 
+        **Next step:** Select Quest duration
     duration:
       title: Quest Duration
       description: |
         You are selecting quest duration, that we will reset the quest for everyone in the server after each specific period.
         Please select your selection below.
-        
-        **Next step:** Select Channels
 
+        **Next step:** Select Channels
     channel:
       title: Quest's Channel
       description:
@@ -3211,27 +2963,24 @@ quests:
           You are selecting quest channels, only these channels will be count towards quest completion.
           You can aslo skip this step.
           Please select your selection below.
-          
+
           **Next step:** Specify message requirement
-        
         voice: |
           You are selecting quest channels, only these channels will be count towards quest completion.
           You can aslo skip this step.
           Please select your selection below.
-          
-          **Next step:** Specify voice requirement
 
+          **Next step:** Specify voice requirement
     voicemode:
       title: Quest's Voice Mode
-      description: | 
+      description: |
         You are editing quest's voice mode, managing which conditions will count towards quest completion.\n' \
         Your current option:
         - Allow User Voice Mute: {}
         - Allow User Deafen: {}
         Please edit your option below.
-        
+
         **Next step:** Specify voice duration
-    
     textmode:
       title: Quest's Text Mode
       description: |
@@ -3240,17 +2989,15 @@ quests:
         Please select your selection below.
 
         **Next step:** Specify message count, and message type (if you choose **startswith**, **contains**, or **endswith**)
-    
-    whitelistblacklist: 
+    whitelistblacklist:
       title: Additional Settings
       description: |
         Additionaly, you can whitelist/blacklist specific roles from completing the quest.
-        Also, you should add a [BucketScript Functions](https://bot.tudubucket.dev/bucketscript/functions/) for quests completetion message. 
+        Also, you should add a [BucketScript Functions](https://bot.tudubucket.dev/bucketscript/functions/) for quests completetion message.
 
         You can ignore this setting, **but you should add a message function**. Press **`🎉 Complete`** to complete the setup.
         Otherwise, please select your selection below:
-
-    whitelist: 
+    whitelist:
       title: Quest Whitelist
       description: |
         Whitelist specific roles can complete this quest.
@@ -3258,8 +3005,7 @@ quests:
         Please select your selection below.
 
         This is the final step. Press **`🎉 Complete`** to complete the setup
-      
-    blacklist: 
+    blacklist:
       title: Quest Blacklist
       description: |
         Blacklist specific roles from complete this quest.
@@ -3267,7 +3013,6 @@ quests:
         Please select your selection below.
 
         This is the final step. Press **`🎉 Complete`** to complete the setup
-
   commands:
     setup:
       description: Setup a new quest
@@ -3276,18 +3021,15 @@ quests:
           timezone: "Before setting up a quest, you have to configure **Server timezone for Quest** (`/quest setting timezone`)."
           channel: "Before setting up a quest, you have to configure **Channel for Quest's completion message** (`/quest setting channel`)."
           both: "Before setting up a quest, you have to configure **Server timezone for Quest** (`/quest setting timezone`) & **Channel for Quest's completion message** (`/quest setting channel`)."
-    
     list:
       description: List all running quests
       options:
         hidden: Whether hide quests that you cannot complete
-    
     delete:
       description: Delete a quest
       options:
         purge_data: Whether purge the user's data associated with this quest
-
-    leaderboard: 
+    leaderboard:
       description: Shows leaderboard of a quest
       options:
         limit: "Specify entries limit per page, default 10"
@@ -3297,28 +3039,25 @@ quests:
           rank: Rank
           points: Points
           user: User
-    
     settings:
-      timezone: 
+      timezone:
         description: Quests will reset on midnight based on configured timezone
         translation:
           already_set: "Your current timezone for quests is already at {}"
           successfully: Successfully changed your quest timezone to {}"
-      
-      channel: 
+      channel:
         description: Set channel to send quest's completion message
         translation:
           already_set: "Your current channel for sending quest's completed message for quests is already at {}"
           successfully: Successfully changed your channel for sending quest's completed message to {}!"
-
 user:
   description: Show user-related information.
   setting:
     created: Created
-    joined: Joined 
-    boost: Boost 
-    badge: Badge 
-    roles: Roles 
+    joined: Joined
+    boost: Boost
+    badge: Badge
+    roles: Roles
   commands:
     info:
       description: Show information of a user
@@ -3328,19 +3067,17 @@ user:
       description: Show banner of a user
       translation:
         no_banner: "{} does not have any banner."
-
 snowflake:
   description: Showing time difference between given ID and command message ID or 2 given IDs
   options:
     id1: First ID to compare
     id2: Second ID to compare, default to Interaction ID
-  translation: 
-    sent: Sent 
-    compare: 
+  translation:
+    sent: Sent
+    compare:
       self: Showing difference between given ID and Interaction ID.
       both: Showing difference between 2 given IDs.
     invalid_input: Invalid input. Please provide a valid ID/Message link.
-
 snowflake_ctxmenu:
   translation:
     modal:
@@ -3352,8 +3089,7 @@ snowflake_ctxmenu:
       given: Showing difference in time between the ID from the given message and the current timestamp.
       current: Showing difference in time between the ID from the given message and the given ID.
     invalid_input: Invalid input. Please provide a valid ID/Message link.
-  
-emoji:  
+emoji:
   description: Emoji Management.
   commands:
     upload:
@@ -3362,7 +3098,7 @@ emoji:
         name: Specify emoji name
         image: Upload emoji here
       translation:
-        failed: 
+        failed:
           download: "Failed to download the image."
           upload: "Failed to upload emoji: {}"
         uploaded: "Emoji uploaded: {}"
@@ -3376,10 +3112,9 @@ emoji:
         rate_limited: This server is currently limited to uploading more emojis. We will notify back when the server is no longer rate-limited and the upload is complete.
         name_required: "Emoji name is required for emoji URL stealing."
         invalid: "Invalid emoji or URL provided."
-        failed: 
+        failed:
           download: "Failed to download the emoji."
           upload: "Failed to upload emoji: {}"
         uploaded: "Emoji uploaded: {}"
-
-network: 
-  description: Network Utilities 
+network:
+  description: Network Utilities
