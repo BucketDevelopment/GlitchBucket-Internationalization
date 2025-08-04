@@ -216,7 +216,7 @@ help:
     command: Chọn một lệnh hợp lệ
   translation:
     no_command: "Không có lệnh nào của bot mang tên `{}`."
-    guild_only: "Chỉ Guild"
+    guild_only: "Chỉ Server"
     installable: "Có thể cài đặt bởi Người dùng"
     group_note: "\n\n*Lưu ý: Đây là một khối lệnh.*"
     subcommand: "Các lệnh con"
@@ -649,8 +649,8 @@ blacklist:
 donation:
   description: Thiết lập tự động nhận ủng hộ trong server của bạn
   common:
-    not_enabled: "Guild này chưa kích hoạt tính năng nhận ủng hộ tự động! Hãy cân nhắc thiết lập bằng cách sử dụng </donation enable:1152465316878762014>"
-    disabled_automatic_receiver: "Guild này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
+    not_enabled: "Server này chưa kích hoạt tính năng nhận ủng hộ tự động! Hãy cân nhắc thiết lập bằng cách sử dụng </donation enable:1152465316878762014>"
+    disabled_automatic_receiver: "Server này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
   current_setting:
     roles: "**Vai trò:** "
     members: "**Thành viên:** "
@@ -681,7 +681,7 @@ donation:
         channel: "Chỉ định kênh để tự động nhận ủng hộ từ thành viên thông qua loại tiền tệ của bot khác"
         receiver: Chỉ định người dùng, người sẽ là người nhận ủng hộ
       translation:
-        already_enabled: "Guild này đã kích hoạt tính năng nhận ủng hộ tự động!"
+        already_enabled: "Server này đã kích hoạt tính năng nhận ủng hộ tự động!"
         default_receive_message: "{user} đã ủng hộ cho **{server_name}** bằng <:OwO:1155867563612446841> __Tiền OwOBot__ và nhận được **{amount}** điểm ủng hộ!"
         successful_enabled: |
           Thành công kích hoạt ủng hộ tự động cho server này, với kênh ủng hộ {} & người nhận {}!
@@ -695,7 +695,7 @@ donation:
       options:
         delete: Hủy hành động - Xóa dữ liệu ủng hộ của server
       translation:
-        disabled: "Guild này hiện đang bị vô hiệu hóa! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
+        disabled: "Server này hiện đang bị vô hiệu hóa! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
         data_deleted: "Đã xóa thành công dữ liệu ủng hộ của server này!"
     threshold:
       description: Chỉnh sửa ngưỡng thông báo ủng hộ
@@ -716,7 +716,7 @@ donation:
         month: Tháng này
         week: Tuần này
       translation:
-        no_record: "Không có bản ghi ủng hộ nào trong guild này khớp với phạm vi bạn đã chọn."
+        no_record: "Không có bản ghi ủng hộ nào trong server này khớp với phạm vi bạn đã chọn."
         leaderboard:
           info: "Bảng xếp hạng ủng hộ cho {}"
           description: "Thông tin donate được lấy từ <t:{0}:F> (<t:{0}:R>) đến nay."
@@ -773,7 +773,7 @@ donation:
       translation:
         information: "Thông tin đóng góp của {}"
         warning: "**Cảnh báo:** Server này hiện đang vô hiệu hóa tính năng tiếp nhận ủng hộ tự động!"
-        no_record: "Guild này chưa nhận được bất kỳ khoản ủng hộ nào!"
+        no_record: "Server này chưa nhận được bất kỳ khoản ủng hộ nào!"
         received: "Số dư đã nhận"
         added: "Số dư được Thêm từ Quản trị viên"
         subtracted: "Số dư bị Trừ đi từ Quản trị viên"
@@ -934,7 +934,7 @@ locale:
         current: "Hiện tại, ngôn ngữ của server của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
         updated: "Đã cập nhật thành công ngôn ngữ của server thành {} ({})!"
         invalid: "{} không phải là một ngôn ngữ hợp lệ, hãy chọn từ danh sách khi sử dụng lệnh."
-        guild_only: Lệnh này chỉ được phép dùng trong các guild.
+        guild_only: Lệnh này chỉ được phép dùng trong các server.
     myself:
       description: "Đặt ngôn ngữ cho chính bạn, để hiển thị lệnh"
       options:
@@ -1257,7 +1257,7 @@ customrole:
         make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
       translation:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
-        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
@@ -1271,7 +1271,7 @@ customrole:
       options:
         delete_role: Có xóa role sau khi chấm dứt Custom Role đó không
       translation:
-        none_found: "Guild này không có bất kỳ Custom Role nào được thiết lập."
+        none_found: "Server này không có bất kỳ Custom Role nào được thiết lập."
     list:
       description: "Liệt kê các Custom Role của một thành viên"
       options:
@@ -1294,7 +1294,7 @@ customrole:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role có một số quyền). Để bảo mật, bot sẽ không đăng ký role này thành Custom Role."
         already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
-        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho guild này."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
           Tôi không thể quản lí một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
@@ -2137,7 +2137,7 @@ tasks:
     id: Task UUID
   common:
     task: Chọn một tác vụ từ autocomplete, hoặc chỉ định ID tác vụ
-    invalid_task: ID tác vụ không hợp lệ `{}` cho guild này.
+    invalid_task: ID tác vụ không hợp lệ `{}` cho server này.
   commands:
     autolock:
       description: Tự động khóa kênh
