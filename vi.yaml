@@ -2,7 +2,7 @@ common:
   vote_required: |
     `🎫` Lệnh này chỉ dành cho những người đã vote cho bot!
     `💖` **[`Bấm vào đây để vote`](https://redirect.tudubucket.dev/?url=https%3A%2F%2Ftop.gg%2Fbot%2F1103932552701550622%2Fvote%3Fsource%3Dcommand_forbidden)**
-    `💎` Bạn muốn skip vote? Hãy xem **[`các quyền lợi premium`](https://bot.tudubucket.dev/premium/whitelabel/)** của bot.
+    `💎` Bạn muốn skip vote? Hãy **`🚀 Boost`** cho **[`Server Hỗ trợ`](https://discord.gg/WDc5uF9wyS)**, hoặc xem **[`các quyền lợi premium`](https://bot.tudubucket.dev/premium/whitelabel/)** của bot.
   bucketscript: "[Placeholder/Function cho BucketScript](https://bot.tudubucket.dev/bucketscript/functions/)"
   limit: Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10
   missing_permission: Bạn không có đủ quyền thực hiện hành động vừa rồi.
