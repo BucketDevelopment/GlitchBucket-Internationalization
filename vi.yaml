@@ -371,6 +371,8 @@ autoresponder:
   description: Thiết lập Trả lời tự động trong server của bạn
   context_menu:
     name: Tạo thành một Autoresponder
+    translation:
+      no_content: Tin nhắn này không có nội dung.
   modal:
     response:
       title: Cập nhật Autoresponder

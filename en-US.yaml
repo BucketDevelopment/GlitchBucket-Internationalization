@@ -372,6 +372,8 @@ autoresponder:
   description: Set up Auto-responses in your server
   context_menu:
     name: Create Autoresponder
+    translation:
+      no_content: This message does not contain any content.
   modal:
     response:
       title: Update Autoresponder
