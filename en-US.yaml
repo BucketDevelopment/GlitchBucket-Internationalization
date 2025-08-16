@@ -16,6 +16,14 @@ common:
   none: None
   add: Add
   remove: Remove
+  modal:
+    action_confirmation:
+      title: Action Confirmation
+      placeholder: Please type '{}' to confirm previous action.
+      label: Action Confirmation Code [{}]
+      translation:
+        timed_out: Confirmation timed out (1 minute).
+        invalid_code: Invalid confirmation code (received `{}`, `{}` expected)
   guild_added:
     selection:
       placeholder: Select your server's language
@@ -1857,6 +1865,11 @@ bucketscript:
         description: Delete a BucketScript Embed
         translation:
           unknown_embed: There is no embed with that name in our BucketScript database.
+      import:
+        description: Import data to an existance embed. 
+        translation:
+          invalid_file: Imported file must in `.json` format and smaller than 1MB.
+          invalid_json: Imported file contains invalid json.
     greeting:
       subcommands:
         message:
@@ -2729,7 +2742,7 @@ bucketbalance:
           invalid: Invalid confirmation code (received `{}`, `{}` expected)
         deleted: Economy {} `{}` with ID `{}` has been deleted.
       modal:
-        title:
+        title: Delete Confirmation
         placeholder: Please type '{}' to confirm deletion.
         label: Delete Confirmation [{}]
     list:

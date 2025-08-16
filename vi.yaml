@@ -125,6 +125,15 @@ common:
         Bạn có thể thử lại. Nếu lỗi vẫn tiếp diễn, vui lòng tham gia Server Hỗ trợ để được hỗ trợ sớm nhất.
         -# Tạo liên tục nhiều lỗi trong thời gian ngắn sẽ bị cấm tạm thời. ID Lỗi: `{}`
       reply_failed: "Đã xảy ra lỗi không xác định trong khi thực hiện lệnh trên, vui lòng thử lại sau..."
+  modal:
+    action_confirmation:
+      title: Xác nhận hành động
+      placeholder: Vui lòng nhập '{}' để xác nhận hành động trước đó.
+      label: Mã xác nhận hành động [{}]
+      translation:
+        timed_out: Xác nhận đã hết hạn (1 phút).
+        invalid_code: "Mã xác nhận không hợp lệ (đã nhập `{}`, mã chính xác: `{}`)"
+
 logging:
   description: "Ghi nhật ký hoạt động của bot"
   commands:
