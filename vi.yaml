@@ -1747,6 +1747,9 @@ giveaway:
 bucketscript:
   description: "Tiện ích để xử lý các tin nhắn & embed động."
   translation:
+    shared_embeds:
+      maximum_reached: "Bạn đã đạt giới hạn shared embeds (30). Bạn có thể quản lý các shared embeds của mình qua `/bucketscript embed shared`."
+      shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/bucketscript embed shared`."
     unknown_embed: |
       Embed không xác định mang tên `{}` tại server `{}`
       Để tạo một embed, sử dụng lệnh </bucketscript embed create:1245661361673863238>
@@ -1772,6 +1775,7 @@ bucketscript:
     zero_field: "Không thể tương tác vì embed này không có field nào"
     back: Quay lại
   buttons:
+    share: Share
     author: Đầu Embed
     title: Tiêu đề & Nội dung
     footer: Chân Embed

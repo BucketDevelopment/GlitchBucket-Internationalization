@@ -1747,6 +1747,9 @@ giveaway:
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
+    shared_embeds:
+      maximum_reached: "You have reached the maximum number of shared embeds (30). You can manage your shared embeds via `/bucketscript embed shared`."
+      shared: "You have successfully shared an embed with ID **`{}`**. To view all your shared embeds, use `/bucketscript embed shared`."
     unknown_embed: |
       Unknown embed `{}` for server `{}`
       To create an embed, use </bucketscript embed create:1245661361673863238>
@@ -1772,6 +1775,7 @@ bucketscript:
     zero_field: "Cannot interact since this embed has zero field"
     back: Back
   buttons:
+    share: Share
     author: Author
     title: Title & Description
     footer: Footer
