@@ -3094,6 +3094,7 @@ snowflake:
   translation:
     sent: Sent
     compare:
+      given: Showing difference in time between the given message and the current timestamp.
       self: Showing difference between given ID and Interaction ID.
       both: Showing difference between 2 given IDs.
     invalid_input: Invalid input. Please provide a valid ID/Message link.

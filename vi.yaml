@@ -3089,6 +3089,7 @@ snowflake:
   translation:
     sent: Gửi lúc
     compare:
+      given: Kiểm tra thời gian giữa tin nhắn được cung cấp và ID Interaction
       self: Kiểm tra thời gian giữa ID được cung cấp và ID Interaction
       both: Kiểm tra thời gian giữa 2 ID được cung cấp
     invalid_input: Input không hợp lệ. Vui lòng cung cấp một ID/Link tin nhắn hợp lệ
