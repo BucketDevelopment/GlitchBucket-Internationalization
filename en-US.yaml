@@ -134,6 +134,23 @@ common:
         Please try again. If the issue still persists, join our support server for further fixes.
         -# Triggering a consistent amount of errors in a short period will result in a temporary bot-ban. Error ID: `{}`
       reply_failed: "An unknown error occurred while executing the above command, please try again later..."
+duration:
+  year: "year"
+  years: "years"
+  month: "month"
+  months: "months"
+  day: "day"
+  days: "days"
+  hour: "hour"
+  hours: "hours"
+  minute: "minute"
+  minutes: "minutes"
+  second: "second"
+  seconds: "seconds"
+  millisecond: "millisecond"
+  milliseconds: "milliseconds"
+  and: "and"
+
 logging:
   description: "Bot's action logging"
   commands:

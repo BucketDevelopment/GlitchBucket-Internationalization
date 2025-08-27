@@ -134,6 +134,23 @@ common:
         timed_out: Xác nhận đã hết hạn (1 phút).
         invalid_code: "Mã xác nhận không hợp lệ (đã nhập `{}`, mã chính xác: `{}`)"
 
+duration:
+  year: "năm"
+  years: "năm"
+  month: "tháng"
+  months: "tháng"
+  day: "ngày"
+  days: "ngày"
+  hour: "giờ"
+  hours: "giờ"
+  minute: "phút"
+  minutes: "phút"
+  second: "giây"
+  seconds: "giây"
+  millisecond: "mili giây"
+  milliseconds: "mili giây"
+  and: "và"
+
 logging:
   description: "Ghi nhật ký hoạt động của bot"
   commands:
