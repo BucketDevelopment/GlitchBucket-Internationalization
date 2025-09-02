@@ -1871,6 +1871,15 @@ bucketscript:
           label: Inline
           placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
   commands:
+  send: 
+    description: Gửi một tin nhắn BucketScript
+    translation:
+      successful: Tin nhắn đã được gửi thành công tới {}.
+      footer: -# Tin nhắn được gửi thông qua lệnh **`/bucketscript send`**.
+      missing_permission: | 
+        Bot đang thiếu một trong các quyền cần thiết tại kênh {} để xử lý tin nhắn BucketScript:
+        - Xem kênh, Gửi tin nhắn, Gửi embed, Đính kèm tập tin & Thêm Reaction
+
     embed:
       create:
         description: Tạo một Embed cho BucketScript

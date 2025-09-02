@@ -1871,6 +1871,14 @@ bucketscript:
           label: Inline
           placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
   commands:
+    send: 
+      description: Send a BucketScript message
+      translation:
+        successful: Message has successfully sent to {}.
+        footer: -# Message sent via **`/bucketscript send`** command.
+        missing_permission: | 
+        Bot is missing one of required permissions in {} to process BucketScript message:
+        - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions  
     embed:
       create:
         description: Create an Embed for BucketScript
