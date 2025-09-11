@@ -1793,6 +1793,8 @@ bucketscript:
     back: Quay lại
   buttons:
     share: Share
+    export: Xuất
+    delete: Xóa
     author: Đầu Embed
     title: Tiêu đề & Nội dung
     footer: Chân Embed
@@ -1871,6 +1873,11 @@ bucketscript:
           label: Inline
           placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
   commands:
+    shared:
+      description: Xem các embed bạn đã chia sẻ
+      translation:
+        no_embed: Bạn chưa chia sẻ embed nào.
+        exported: "Đã xuất embed. Bạn có thể nhập ở server khác thông qua lệnh `/bucketscript embed import`"
     send: 
       description: Gửi một tin nhắn BucketScript
       translation:

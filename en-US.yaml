@@ -1793,6 +1793,8 @@ bucketscript:
     back: Back
   buttons:
     share: Share
+    export: Export
+    delete: Delete
     author: Author
     title: Title & Description
     footer: Footer
@@ -1871,6 +1873,11 @@ bucketscript:
           label: Inline
           placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
   commands:
+    shared:
+      description: View your shared embeds
+      translation:
+        no_embed: You don't have any shared embeds.
+        exported: "Embed exported. You can import in another server by using `/bucketscript embed import`"
     send: 
       description: Send a BucketScript message
       translation:
