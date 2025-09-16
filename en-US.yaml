@@ -1644,6 +1644,23 @@ giveaway:
           label: Number of bonus entrants (1 - 99)
           placeholder: Type '0' to remove the role from bonus entrants
   commands:
+    migrate: 
+      description: Restore giveaways from other bots
+      options:
+        message: Provide the message link (URL) (https://discord.com/channels/.../.../...)
+        delete: Specify whether to remove the old giveaway message
+      translation:
+        invalid:
+          url: The provided message link (URL) is not valid.
+          guild: The Server ID in the message link is not valid.
+          channel: The Channel ID in the message link is not valid.
+          message: The Message ID in the message link is not valid.
+          embed: The linked message is not valid (no embed found for data).
+          data: The giveaway in the message may have ended (data could not be read from embed).
+          author: The message author must be a bot.
+          reaction: This message has no reactions. Only giveaways using reactions (not buttons) can be restored.
+        reading_data: Reading data, please wait...
+
     recover:
       description: Recover a deleted giveaway that is not ended
       embeds:

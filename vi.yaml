@@ -1644,6 +1644,23 @@ giveaway:
           label: Số lượng lượt tham gia bonus (1 - 99)
           placeholder: Nhập '0' để xóa vai trò khỏi lượt tham gia bonus
   commands:
+    migrate: 
+      description: Khôi phục giveaway từ bot khác
+      options:
+        message: Chỉ định đường dẫn (URL) tin nhắn (https://discord.com/channels/.../.../...)
+        delete: Chỉ định có xóa tin nhắn giveaway cũ hay không
+      translation:
+        invalid:
+          url: Đường dẫn (URL) tin nhắn của bạn không hợp lệ.
+          guild: ID Server trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
+          channel: ID Kênh trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
+          message: ID Tin nhắn trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
+          embed: Tin nhắn trong đường dẫn (URL) tin nhắn của bạn không hợp lệ (không có embed để đọc dữ liệu).
+          data: Giveaway trong tin nhắn có thể đã kết thúc (không đọc được dữ liệu từ embed).
+          author: Author của tin nhắn phải là 1 bot. 
+          reaction: Tin nhắn này không có reaction. Chỉ những Giveaway sử dụng reaction (không sử dụng nút) thì mới có thể khôi phục.
+        reading_data: Đang đọc dữ liệu, chờ xíu...
+        
     recover:
       description: Khôi phục một giveaway đã bị xóa nhưng vẫn chưa kết thúc
       embeds:
@@ -1724,7 +1741,7 @@ giveaway:
           duration: "Lỗi trong trường **Duration**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
           requires_join_before: "Lỗi trong trường **Requires Join Before**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
           template: Không có template nào gọi là `{}` trong server của bạn.
-          bot_missing_permission: Không thể tạo giveaway, đảm bảo rằng tôi có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
+          bot_missing_permission: Không thể tạo giveaway, đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
     reroll:
       description: Reroll một giveaway đã kết thúc
       translation:
