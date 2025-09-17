@@ -1563,6 +1563,7 @@ giveaway:
     participated:
       entrants: Entrants Participated
       entrant: Entrant Participated
+    finish_migrate: Review data & Finish migration
     enter_giveaway: "Enter Giveaway!"
     reroll: Reroll
     rerolled: Rerolled
@@ -1660,6 +1661,7 @@ giveaway:
           author: The message author must be a bot.
           reaction: This message has no reactions. Only giveaways using reactions (not buttons) can be restored.
         reading_data: Reading data, please wait...
+        confirm: "**``** entrants read from giveaway. Please revalidate information by click below."
 
     recover:
       description: Recover a deleted giveaway that is not ended
