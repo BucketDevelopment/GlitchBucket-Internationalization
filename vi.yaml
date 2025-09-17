@@ -1661,7 +1661,7 @@ giveaway:
           author: Author của tin nhắn phải là 1 bot. 
           reaction: Tin nhắn này không có reaction. Chỉ những Giveaway sử dụng reaction (không sử dụng nút) thì mới có thể khôi phục.
         reading_data: Đang đọc dữ liệu, chờ xíu...
-        confirm: Đã đọc được **``** entrant trong giveaway. Hãy bấm xác nhận để kiểm tra lại thông tin và bắt đầu lại giveaway.
+        confirm: Đã đọc được **`{}`** entrant trong giveaway. Hãy bấm xác nhận để kiểm tra lại thông tin và bắt đầu lại giveaway.
         
     recover:
       description: Khôi phục một giveaway đã bị xóa nhưng vẫn chưa kết thúc
