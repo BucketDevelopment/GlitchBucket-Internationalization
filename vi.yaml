@@ -1894,11 +1894,6 @@ bucketscript:
           label: Inline
           placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
   commands:
-    shared:
-      description: Xem các embed bạn đã chia sẻ
-      translation:
-        no_embed: Bạn chưa chia sẻ embed nào.
-        exported: "Đã xuất embed. Bạn có thể nhập ở server khác thông qua lệnh `/bucketscript embed import`"
     send: 
       description: Gửi một tin nhắn BucketScript
       translation:
@@ -1909,6 +1904,11 @@ bucketscript:
           - Xem kênh, Gửi tin nhắn, Gửi embed, Đính kèm tập tin & Thêm Reaction
 
     embed:
+      shared:
+        description: Xem các embed bạn đã chia sẻ
+        translation:
+          no_embed: Bạn hiện không có embed nào trong danh sách embed đã chia sẻ của mình.
+          exported: "Đã xuất embed. Bạn có thể nhập ở server khác thông qua lệnh `/bucketscript embed import`"
       create:
         description: Tạo một Embed cho BucketScript
         translation:
@@ -1923,6 +1923,17 @@ bucketscript:
         description: Xóa một BucketScript Embed
         translation:
           unknown_embed: Không có embed nào với tên đó trong cơ sở dữ liệu BucketScript của bot.
+      import:
+        description: Nhập dữ liệu vào một embed có sẵn. 
+        options:
+          data: Chỉ định dữ liệu JSON của embed
+          id: Hoặc, bạn có thể chỉ định một ID embed đã chia sẻ
+          embed: Chỉ định embed cần nhập vào
+        translation:
+          invalid_arguments: Bạn cần chỉ định trong một trong các field **`data`** hoặc **`id`** (không được chọn cả hai).
+          invalid_file: Tệp nhập vào phải có định dạng `.json` và nhỏ hơn 1MB.
+          invalid_json: Tệp nhập vào chứa dữ liệu JSON không hợp lệ.
+
     greeting:
       subcommands:
         message:

@@ -1894,11 +1894,6 @@ bucketscript:
           label: Inline
           placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
   commands:
-    shared:
-      description: View your shared embeds
-      translation:
-        no_embed: You don't have any shared embeds.
-        exported: "Embed exported. You can import in another server by using `/bucketscript embed import`"
     send: 
       description: Send a BucketScript message
       translation:
@@ -1908,6 +1903,12 @@ bucketscript:
         Bot is missing one of required permissions in {} to process BucketScript message:
         - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions  
     embed:
+      shared:
+        description: View your shared embeds
+        translation:
+          no_embed: You don't have any shared embeds for now.
+          exported: "Embed exported. You can import in another server by using `/bucketscript embed import`"
+
       create:
         description: Create an Embed for BucketScript
         translation:
@@ -1924,7 +1925,12 @@ bucketscript:
           unknown_embed: There is no embed with that name in our BucketScript database.
       import:
         description: Import data to an existance embed. 
+        options:
+          data: Specify embed JSON data
+          id: Or, you can specify a shared embed ID
+          embed: Specify embed to imported to
         translation:
+          invalid_arguments: You need to specify in one of **`data`** or **`id`** field (not both).
           invalid_file: Imported file must in `.json` format and smaller than 1MB.
           invalid_json: Imported file contains invalid json.
     greeting:
