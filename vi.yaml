@@ -1930,6 +1930,7 @@ bucketscript:
           id: Hoặc, bạn có thể chỉ định một ID embed đã chia sẻ
           embed: Chỉ định embed cần nhập vào
         translation:
+          unknown_embed: Không tồn tại embed nào đã được chia sẻ khớp với ID được cung cấp.
           invalid_arguments: Bạn cần chỉ định trong một trong các field **`data`** hoặc **`id`** (không được chọn cả hai).
           invalid_file: Tệp nhập vào phải có định dạng `.json` và nhỏ hơn 1MB.
           invalid_json: Tệp nhập vào chứa dữ liệu JSON không hợp lệ.

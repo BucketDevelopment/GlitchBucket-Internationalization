@@ -1930,6 +1930,7 @@ bucketscript:
           id: Or, you can specify a shared embed ID
           embed: Specify embed to imported to
         translation:
+          unknown_embed: No shared embed matches with provided ID.
           invalid_arguments: You need to specify in one of **`data`** or **`id`** field (not both).
           invalid_file: Imported file must in `.json` format and smaller than 1MB.
           invalid_json: Imported file contains invalid json.
