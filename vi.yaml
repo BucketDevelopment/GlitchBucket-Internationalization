@@ -1811,6 +1811,7 @@ bucketscript:
     invalid_input: Thông tin đã nhập trước đó của bạn không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
     maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
     zero_field: "Không thể tương tác vì embed này không có field nào"
+    insert_first: Thêm vào vị trí đầu tiên
     back: Quay lại
   buttons:
     share: Share
