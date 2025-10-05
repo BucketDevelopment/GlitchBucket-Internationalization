@@ -56,7 +56,7 @@ common:
     temporarily: |
       ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
       ~~                                                                                                        ~~
-      You have been **temporarily banned** from the bot, with the following reason:
+      You have been **temporarily banned** from using the bot, with the following reason:
 
       *{0}*
 
