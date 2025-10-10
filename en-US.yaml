@@ -1257,7 +1257,7 @@ customrole:
       {} is not a role that has been registered as a custom role in our database.
       To migrate from your own role into our custom role's database, please use </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` is not a valid short time format."
-    invalid_color_format: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
+    invalid_color_format: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
   admin: "Custom Role Admin Command Group"
   user: "Custom Role User Command Group"
   commands:
@@ -1289,7 +1289,7 @@ customrole:
         missing_permission: |
           I cannot create a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
           Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
-        invalid_color: "`{}` is not a valid color. Acceptable color format: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<number>, <number>, <number>)`"
+        invalid_color: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
     max_users:
       description: "Edit maximum users of a custom role"
       options:
@@ -1398,7 +1398,7 @@ customrole:
         color:
           description: "Change color of your custom role"
           options:
-            color: "Can be `0x<hex>`, `#<hex>`, `rgb(<number>, <number>, <number>)`, or leave empty for default color."
+            color: "Can be `#hex`, `rgb(number, number, number)`, or leave empty for default color."
           translation:
             palette_forbidden: This server has restricted role color to a set of color. Please select a color from command autocomplete instead of specifying one.
         icon:
@@ -1619,7 +1619,7 @@ giveaway:
       fields:
         color:
           label: Color
-          placeholder: "Can be #<hex>, rgb(<number>, <number>, <number>), or leave empty for default color."
+          placeholder: "Can be #hex, rgb(number, number, number), or leave empty for default color."
     image:
       title: Giveaway Embed Image
       fields:
@@ -1716,7 +1716,7 @@ giveaway:
         blacklists: 'Specify blakclist roles in format: role1|role2|...|role(n). Max 10 roles'
         bypasses: 'Specify bypass roles in format: role1|role2|...|role(n). Max 15 roles'
         multipliers: 'Specify bonus in format: role1:bonus1|role2:bonus2|... Max 10 bonuses'
-        color: 'Specify embed color in format: #<hex>, or rgb(<number>, <number>, <number>)'
+        color: 'Specify embed color in format: #hex, rgb(number, number, number)'
         button_color: "Choose a button color"
         button_emoji: "Specify a custom server emoji or an emoji unicode"
         requires_join_before: 'Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)'
@@ -1740,7 +1740,7 @@ giveaway:
           multipliers:
             maximum_reached: "Error in field **Multipliers**: You cannot add more than 15 roles in `blacklists` field."
             invalid: "Error in field **Multipliers**: `{}` is not a valid multiplier data part."
-          color: "Error in field **Color**: `{}` is not a valid color. Acceptable format: `#<hex>`, `rgb(<number>, <number>, <number>)`"
+          color: "Error in field **Color**: `{}` is not a valid color. Acceptable format: `#hex`, `rgb(number, number, number)`"
           image: "Error in field **Image**: `{}` is not a valid image URL."
           duration: "Error in field **Duration**: Your giveaway duration was invalid. Please specify by short date format (e.g. `1d2h`) or pure second (e.g. `86400`) and lower than 60 days."
           requires_join_before: "Error in field **Requires join before**: Your giveaway duration was invalid. Please specify by short date format (e.g. `1d2h`) or pure second (e.g. `86400`) and lower than 60 days."

@@ -1257,7 +1257,7 @@ customrole:
       {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
       Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
-    invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
+    invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
   admin: "Nhóm Lệnh Quản trị Custom Role"
   user: "Nhóm Lệnh Người Dùng Custom Role"
   commands:
@@ -1289,7 +1289,7 @@ customrole:
         missing_permission: |
           Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
           Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
-        invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `0x<hex>`, `#<hex>`, `0x#<hex>`, `rgb(<số>, <số>, <số>)`"
+        invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     max_users:
       description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
       options:
@@ -1398,7 +1398,7 @@ customrole:
         color:
           description: "Thay đổi màu của Custom Role của bạn"
           options:
-            color: "Có thể là `0x<hex>`, `#<hex>`, `rgb(<số>, <số>, <số>)`, hoặc để trống cho màu mặc định."
+            color: "Có thể là `#hex`, `rgb(số, số, số)`, hoặc để trống cho màu mặc định."
           translation:
             palette_forbidden: Server này đã giới hạn bạn chỉ được sử dụng một số màu nhất định. Vui lòng chọn từ autocomplete thay vì nhập một màu.
         icon:
@@ -1619,7 +1619,7 @@ giveaway:
       fields:
         color:
           label: Màu sắc
-          placeholder: "Có thể là #<hex>, rgb(<số>, <số>, <số>), hoặc để trống cho màu mặc định."
+          placeholder: "Có thể là #hex, rgb(số, số, số), hoặc để trống cho màu mặc định."
     image:
       title: Hình ảnh nhúng Giveaway
       fields:
@@ -1716,7 +1716,7 @@ giveaway:
         blacklists: 'Chỉ định blacklists theo định dạng: role1|role2|...|role(n). Tối đa 10 vai trò'
         bypasses: 'Chỉ định bypass requirements dạng: role1|role2|...|role(n). Tối đa 15 vai trò'
         multipliers: 'Chỉ định số lượt tham gia bonus theo định dạng: role1:bonus1|role2:bonus2|... Tối đa 10 phần thưởng'
-        color: 'Chỉ định màu theo định dạng: #<hex>, hoặc rgb(<số>, <số>, <số>)'
+        color: 'Chỉ định màu theo định dạng: #hex, hoặc rgb(số, số, số)'
         button_color: "Chọn màu nút"
         button_emoji: "Chỉ định biểu tượng cảm xúc tùy chỉnh của server hoặc mã Unicode biểu tượng cảm xúc"
         requires_join_before: 'Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)'
@@ -1740,7 +1740,7 @@ giveaway:
           multipliers:
             maximum_reached: "Lỗi trong trường **Bonus Entries**: Bạn không thể thêm hơn 15 vai trò trong trườn  này."
             invalid: "Lỗi trong trường **Bonus Entries**: `{}` không phải là một phần dữ liệu phần thưởng hợp lệ."
-          color: "Lỗi trong trường **Color**: `{}` không phải là một màu hợp lệ. Định dạng chấp nhận: `#<hex>`, `rgb(<số>, <số>, <số>)`"
+          color: "Lỗi trong trường **Color**: `{}` không phải là một màu hợp lệ. Định dạng chấp nhận: `#hex`, `rgb(số, số, số)`"
           image: "Lỗi trong trường **Image**: `{}` không phải là một URL hình ảnh hợp lệ."
           duration: "Lỗi trong trường **Duration**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
           requires_join_before: "Lỗi trong trường **Requires Join Before**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
