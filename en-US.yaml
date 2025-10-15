@@ -1899,7 +1899,7 @@ bucketscript:
       not_found: Server has no form with ID `{0}`. This button may have been deleted; please contact the server administrator to have the form fixed.
       no_questions: Form ID `{0}` currently has no questions for you to answer. Please contact the server administrator to have the form corrected.
     checks:
-      stopped: Form ID `{0}` is no longer accepting responses.
+      stopped: This form is no longer accepting responses.
       maximum_exceeded: You have reached the submission limit of `{0}` for this form and cannot submit again.
       on_cooldown: You must wait until <t:{0}> (t:{0}:R) before submitting this form again.
     invalid_channel: The response channel for this form could not be found in the server configuration. Please contact the server administrator to correct the setup.

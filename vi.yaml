@@ -1899,7 +1899,7 @@ bucketscript:
       not_found: Server không có form nào mang ID `{0}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
       no_questions: Form mang ID `{0}` hiện không có câu hỏi để bạn trả lời. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
     checks:
-      stopped: Form mang ID `{0}` này đã ngừng nhận phản hồi. 
+      stopped: Form này đã ngừng nhận phản hồi. 
       maximum_exceeded: Bạn đã submit tối đa `{0}` lần cho form này, và không thể nhập thêm lần nào nữa. 
       on_cooldown: Bạn cần phải chờ đến <t:{0}> (t:{0}:R) để có thể nhập lại form này.
     invalid_channel: Không thể tìm thấy kênh nhận trả lời form trong config của server. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
