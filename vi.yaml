@@ -18,14 +18,14 @@ common:
   remove: Xóa
   guild_added:
     selection:
-      placeholder: Chọn ngôn ngữ cho server của bạn
+      placeholder: Chọn ngôn ngữ cho server
     header: "### :e_mail: Tin nhắn này đã được gửi từ <:owner:1267138666128474215> Đội ngũ Phát triển GlitchBucket"
     open: |
       Xin chào! Cảm ơn bạn rất nhiều vì đã thêm **GlitchBucket** vào **{0}** <a:yaya:1267138629608931338>
 
       Nếu bạn có bất kỳ thắc mắc nào về cách sử dụng bot, hãy liên hệ với chúng tôi tại [Trung tâm Hỗ trợ](https://discord.gg/WDc5uF9wyS )!
     middle: |
-      Bot đã tự động phát hiện ngôn ngữ server của bạn là {0} ({1}), vì vậy server của bạn sẽ sử dụng ngôn ngữ {0}.
+      Bot đã tự động phát hiện ngôn ngữ server là {0} ({1}), vì vậy server sẽ sử dụng ngôn ngữ {0}.
       Để thay đổi cài đặt về ngôn ngữ bot, bạn có thể sử dụng </language server:1351220692863156396> hoặc </language me:1351220692863156396>, hoặc chọn ở dưới đây:
     button:
       support: Support
@@ -36,7 +36,7 @@ common:
     removed: |
       ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
       ~~                                                                                                        ~~
-      Lệnh cấm hiện tại của bạn đã được gỡ bỏ, với lý do sau:
+      Lệnh cấm hiện tại đã được gỡ bỏ, với lý do sau:
 
       *{0}*
 
@@ -53,7 +53,7 @@ common:
       *{0}*
 
       ~~                                                                                                        ~~
-      Lệnh cấm của bạn sẽ kết thúc vào <t:{1}:R>.
+      Lệnh cấm sẽ kết thúc vào <t:{1}:R>.
       Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Server hỗ trợ](https://discord.gg/WDc5uF9wyS ).
 
       [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Server hỗ trợ](https://discord.gg/WDc5uF9wyS)
@@ -72,19 +72,19 @@ common:
       temporarily: |
         ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
         ~~                                                                                                        ~~
-        Lệnh cấm hiện tại của bạn đã được sửa đổi, và bây giờ bạn bị **tạm thời cấm** sử dụng bot, với lý do sau:
+        Lệnh cấm hiện tại đã được sửa đổi, và bây giờ bạn bị **tạm thời cấm** sử dụng bot, với lý do sau:
 
         *{0}*
 
         ~~                                                                                                        ~~
-        Lệnh cấm của bạn sẽ kết thúc vào <t:{1}:R>.
+        Lệnh cấm sẽ kết thúc vào <t:{1}:R>.
         Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi tại [Server hỗ trợ](https://discord.gg/WDc5uF9wyS ).
 
         [Tài liệu](<https://bot.tudubucket.dev/getting-started/>) - [Điều khoản Dịch vụ](<https://bot.tudubucket.dev/policy/terms-of-service/>) - [Chính sách Bảo mật](<https://tudubucket.dev/application/GlitchBucket/privacy-policy>) - [Server hỗ trợ](https://discord.gg/WDc5uF9wyS)
       permanently: |
         ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
         ~~                                                                                                        ~~
-        Lệnh cấm hiện tại của bạn đã được sửa đổi, và bây giờ bạn bị **vĩnh viễn cấm** sử dụng bot, với lý do sau:
+        Lệnh cấm hiện tại đã được sửa đổi, và bây giờ bạn bị **vĩnh viễn cấm** sử dụng bot, với lý do sau:
 
         *{0}*
 
@@ -115,9 +115,9 @@ common:
     triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
     expired: ":stopwatch: Cooldown của lệnh đã kết thúc. Bây giờ bạn đã có thể sử dụng lại lệnh."
   error:
-    dns: "Bot không thể kết nối tới discord để phản hồi lại thực hiện hành động vừa rồi của bạn, vui lòng thử lại"
-    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy của bạn. Vui lòng tải lại Discord để cập nhật lệnh."
-    database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu của bạn, vui lòng thử lại sau..."
+    dns: "Bot không thể kết nối tới discord để phản hồi lại thực hiện hành động vừa rồi, vui lòng thử lại"
+    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy. Vui lòng tải lại Discord để cập nhật lệnh."
+    database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu, vui lòng thử lại sau..."
     unknown:
       reply: |
         Đã có lỗi xảy ra trong khi thực hiện thao tác:
@@ -185,12 +185,12 @@ afk:
 chat:
   description: Thảo luận với Trí tuệ nhân tạo!
   options:
-    message: Nhập tin nhắn của bạn vào đây
+    message: Nhập tin nhắn vào đây
   translation:
     disallowed_content: Your requested prompt has been aborted. Make sure to not use violation/insult language while submitting prompt.
     response: "Phản hồi:"
 fack:
-  description: gửi một 'fack' đến kẻ thù của bạn
+  description: gửi một 'fack' đến kẻ thù
   options:
     user: Người dùng bạn muốn fack
 information:
@@ -199,12 +199,12 @@ information:
     global_information: Thông tin
     description:
       normal: |
-        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết của bạn.
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết.
         > - Để biết danh sách các lệnh có sẵn, hãy sử dụng </help:1119604872497594495>.
         > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
         > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
       whitelabeled: |
-        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết của bạn.
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết.
         `👑` Đây là phiên bản đăng kí Premium (Whitelabel Instance) của **[GlitchBucket](https://bot.tudubucket.dev).**
         > - Để biết danh sách các lệnh có sẵn, hãy sử dụng </help:1119604872497594495>.
         > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
@@ -278,15 +278,15 @@ illustration:
   translation:
     no_nsfw: "Bạn không thể sử dụng thẻ NSFW trong kênh này."
     none_illust: "Thẻ `{}` không trả về minh họa nào."
-    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Kết quả có thể rất ít, hãy thử rút ngắn thẻ của bạn hoặc thay đổi tag.*\n_ _"
+    long_input: "Thẻ nhập dài hơn 2 từ (Tổng: {} từ)! Kết quả có thể rất ít, hãy thử rút ngắn thẻ hoặc thay đổi tag.*\n_ _"
     suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử "
     author: "Author: "
     original: "Bài đăng gốc: "
     tag: "Tag"
     multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*"
     less_amount: "***Cảnh báo:** Thẻ minh họa này trả về số lượng tác phẩm nghệ thuật ít (Tổng cộng: {})! Điều này có thể dẫn đến kết quả chất lượng thấp.*"
-    less_accurracy: "***Cảnh báo:** Thẻ minh họa nhập của bạn dài hơn 2 từ! Điều này có thể dẫn đến kết quả chất lượng thấp.*\n_ _"
-    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+    less_accurracy: "***Cảnh báo:** Thẻ minh họa nhập dài hơn 2 từ! Điều này có thể dẫn đến kết quả chất lượng thấp.*\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
 artwork:
   description: Ngẫu nhiên các top artwork trên https://pixiv.net
   options:
@@ -299,7 +299,7 @@ artwork:
   translation:
     no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
     multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
-    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
     author: "Author:"
     original: "Bài đăng gốc:"
 r18:
@@ -313,7 +313,7 @@ r18:
   translation:
     no_image: "Không tìm thấy hình ảnh nào trong thư mục..."
     multi_art: "***Lưu ý:** Artwork bên dưới chỉ là một phần của bài đăng gốc, bạn có thể xem tất cả các phần cuối cùng từ liên kết bên trên!*\n_ _"
-    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím của bạn, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
+    tips: "**Mẹo sử dụng lệnh:**\nBằng cách chỉ cần nhấn `Mũi tên lên - ↑` trên bàn phím, bạn có thể nhanh chóng sử dụng lệnh gạch chéo trước đó, thay vì sao chép-dán!\n_ _"
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
     author: "Tác giả"
     original: "Bài đăng gốc"
@@ -323,7 +323,7 @@ r34:
     tag: Chỉ định thẻ để tìm kiếm
   translation:
     none_illust: "Thẻ `{}` không trả về minh họa nào."
-    long_input: "Thẻ nhập của bạn dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ của bạn hoặc thay đổi đối số lệnh.*\n_ _"
+    long_input: "Thẻ nhập dài hơn 2 từ (Tổng: {} từ)! Điều này có thể gây ra kết quả bằng không, hãy thử rút ngắn thẻ hoặc thay đổi đối số lệnh.*\n_ _"
     suggesstion: "\nKhông tìm thấy những gì bạn đang tìm? Hãy thử </r18:1147727553373683753>!"
     nsfw_only: "Lệnh này chỉ có thể được sử dụng trong các kênh NSFW."
 illust_report:
@@ -335,7 +335,7 @@ illust_report:
 
     :small_red_triangle_down: Vui lòng chọn một category để báo cáo bên dưới đây :small_red_triangle_down:
   reported: "Nội dung này đã được báo cáo"
-  received: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo của bạn ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
+  received: ":inbox_tray: Cảm ơn bạn đã báo cáo! Người kiểm duyệt ứng dụng sẽ xem báo cáo ngay lập tức. Bất kỳ hành động nào về báo cáo này sẽ không được công bố cho bạn."
   report:
     title: Báo cáo Nội dung
     reason: Lí do
@@ -393,8 +393,8 @@ autoresponder:
     startswith: Bắt đầu bằng
     endswith: Kết thúc bằng
     mm_keep: Không thay đổi
-    no_trigger_matched: "Server của bạn không có bất kỳ autoresponder nào khớp với trigger {}!"
-  description: Thiết lập Trả lời tự động trong server của bạn
+    no_trigger_matched: "Server không có bất kỳ autoresponder nào khớp với trigger {}!"
+  description: Thiết lập Trả lời tự động trong server
   context_menu:
     name: Tạo thành một Autoresponder
     translation:
@@ -424,7 +424,7 @@ autoresponder:
         trigger: Từ khóa để kích hoạt autoresponder
         mode: Chọn chế độ khớp
     placeholders:
-      description: Hàm cho autoresponder của bạn
+      description: Hàm cho autoresponder
       translation:
         puser: "Hàm cho người dùng"
         pserver: "Hàm cho server"
@@ -458,7 +458,7 @@ autoresponder:
         none: "Server này không có autoresponder nào!"
         title: Danh sách Autoresponder
 security:
-  description: Thiết lập Bảo mật tự động cho server của bạn
+  description: Thiết lập Bảo mật tự động cho server
   common:
     current_setting: "Server này hiện đang {} tính năng này."
     enable: "Bật"
@@ -501,7 +501,7 @@ security:
         task_done: "Bỏ chặn thành công {}/{} người dùng."
 blocksmc:
   common:
-    invalid_player: "{} là tên người chơi không hợp lệ. Hãy đảm bảo rằng đầu vào của bạn chỉ chứa các ký tự là chữ cái hoặc/và số."
+    invalid_player: "{} là tên người chơi không hợp lệ. Hãy đảm bảo rằng đầu vào chỉ chứa các ký tự là chữ cái hoặc/và số."
   choices:
     zero: Trắng
     one: Nội thành
@@ -526,23 +526,23 @@ blocksmc:
   description: Kiểm tra thông tin về người chơi BlocksMC
   commands:
     link:
-      description: Liên kết tài khoản của bạn với cơ sở dữ liệu của bot (với mục đích render skin)
+      description: Liên kết tài khoản với cơ sở dữ liệu của bot (với mục đích render skin)
       options:
-        name: Chỉ định tên tài khoản của bạn
+        name: Chỉ định tên tài khoản
       translation:
-        successful: Đã liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
+        successful: Đã liên kết tài khoản Discord với tên người chơi {} thành công!
     unlink:
-      description: Hủy liên kết tài khoản của bạn từ cơ sở dữ liệu của bot
+      description: Hủy liên kết tài khoản từ cơ sở dữ liệu của bot
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
-        successful: Đã hủy liên kết tài khoản Discord của bạn với tên người chơi {} thành công!
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản."
+        successful: Đã hủy liên kết tài khoản Discord với tên người chơi {} thành công!
     skin:
-      description: Đặt skin của bạn trên hình ảnh render
+      description: Đặt skin trên hình ảnh render
       options:
         name: Chỉ định một tài khoản premium để render skin
       translation:
-        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản của bạn."
-        successful: Đã liên kết tài khoản game của bạn với skin {} thành công!
+        not_linked: "Bạn không có bất kỳ tài khoản nào đã liên kết với cơ sở dữ liệu của bot của bot, vui lòng sử dụng </blocksmc link:1125614999411359794> để liên kết tài khoản."
+        successful: Đã liên kết tài khoản game với skin {} thành công!
     leaderboard:
       description: Kiểm tra Bảng xếp hạng của BlocksMC
       options:
@@ -581,7 +581,7 @@ blocksmc:
         period: "[Người dùng được phép] Chọn một khoảng thời gian"
         date_start: "[Người dùng được phép] Chỉ định ngày bắt đầu tra cứu theo định dạng DD/MM/YYYY."
         date_end: "[Người dùng được phép] Chỉ định ngày kết thúc tra cứu theo định dạng DD/MM/YYYY."
-        update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
+        update_skin: Có cập nhật skin trong dữ liệu cache của bot không
         render_skin_as: Chỉ định một tài khoản premium để render skin
       translation:
         never_played: Người chơi này chưa bao giờ chơi `{}` trước đây!
@@ -598,7 +598,7 @@ blocksmc:
         generate_image: Bot có tạo ảnh cho hồ sơ hay không
         background: Chọn một hình nền đẹp
         period: Chọn một khoảng thời gian
-        update_skin: Có cập nhật skin của bạn trong dữ liệu cache của bot không
+        update_skin: Có cập nhật skin trong dữ liệu cache của bot không
         render_skin_as: Chỉ định một tài khoản premium để render skin
       translation:
         title: "Số liệu thống kê của {}"
@@ -628,16 +628,16 @@ outage:
       options:
         region: Chọn miền bạn đang sinh sống
     subscription:
-      description: Kiểm tra thông tin của bạn về chức năng này!
+      description: Kiểm tra thông tin về chức năng này!
     subprovider:
       description: Tra cứu mã công ty con của công ty điện lực trong tỉnh/thành phố
       options:
         provider: Nhập mã điện lực của tỉnh/thành phố. Sử dụng [/outage provider] để xem mã điện lực.
     lookup:
-      description: Tra cứu thông tin cắt điện tại khu vực của bạn
+      description: Tra cứu thông tin cắt điện tại khu vực
       options:
-        provider: Nhập tên tỉnh/thành phố của bạn để bắt đầu tìm kiếm.
-        subprovider: Nhập tên huyện/xã/thị trấn của bạn để bắt đầu tìm kiếm.
+        provider: Nhập tên tỉnh/thành phố để bắt đầu tìm kiếm.
+        subprovider: Nhập tên huyện/xã/thị trấn để bắt đầu tìm kiếm.
         time: 'Nhập ngày cần tìm với định dạng: DD/MM/YYYY. Nhập ''today'' hoặc bỏ trống để kiểm tra ngày hôm nay'
         keyword: Nhập thêm từ khóa để tìm kiếm lịch cắt điện
     unsubscribe:
@@ -675,7 +675,7 @@ blacklist:
         reason: Specify the reason for this action
         silent: Whether this command should be executed in silent or not
 donation:
-  description: Thiết lập tự động nhận ủng hộ trong server của bạn
+  description: Thiết lập tự động nhận ủng hộ trong server
   common:
     not_enabled: "Server này chưa kích hoạt tính năng nhận ủng hộ tự động! Hãy cân nhắc thiết lập bằng cách sử dụng </donation enable:1152465316878762014>"
     disabled_automatic_receiver: "Server này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
@@ -786,8 +786,8 @@ donation:
       translation:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì lí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
         insufficient_hierachy: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
         can_remove_only: "{} đã là vai trò phần thưởng cho server này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của server này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
@@ -807,7 +807,7 @@ donation:
         subtracted: "Số dư bị Trừ đi từ Quản trị viên"
         highest_donator: "Người ủng hộ cao nhất"
         highest_donaton: "Khoản ủng hộ cao nhất"
-        your_record: "Hồ sơ đóng góp của bạn"
+        your_record: "Hồ sơ đóng góp"
         points: Điểm
         donation_record: Hồ sơ ủng hộ
         not_donated: "Bạn chưa đóng góp cho server này."
@@ -866,7 +866,7 @@ stickie:
   common:
     not_enabled: "Kênh {} chưa bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
     server_not_enabled: "Server chưa có kênh bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
-  description: Đặt một Sticky Message trong kênh của bạn!
+  description: Đặt một Sticky Message trong kênh!
   commands:
     configuration:
       description: Xem cấu hình Sticky Message hiện tại của kênh
@@ -922,7 +922,7 @@ stickie:
       options:
         channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
       translation:
-        invalid: "Dữ liệu JSON cho thông báo nhúng của bạn không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
+        invalid: "Dữ liệu JSON cho thông báo nhúng không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
 fun:
   description: mấy lệnh xàm loz
 setting:
@@ -944,8 +944,8 @@ setting:
             enable: Bật (tiếp tục lưu trữ)
             disable: Tắt (không lưu trữ)
         translation:
-          enable: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn của bạn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa)
-          disable: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn của bạn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa)
+          enable: Bạn đã bật thành công chức năng lưu trữ snipe. (Tin nhắn vẫn sẽ nằm trong bộ nhớ đệm khi bạn chỉnh sửa/xóa)
+          disable: Bạn đã tắt thành công chức năng lưu trữ snipe. (Tin nhắn sẽ bị xóa khỏi bộ nhớ đệm khi bạn chỉnh sửa/xóa)
       clear:
         description: Xóa bộ nhớ đệm tin nhắn cho snipe
         translation:
@@ -959,7 +959,7 @@ locale:
       options:
         lang: "Chọn một ngôn ngữ"
       translation:
-        current: "Hiện tại, ngôn ngữ của server của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
+        current: "Hiện tại, ngôn ngữ của server là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
         updated: "Đã cập nhật thành công ngôn ngữ của server thành {} ({})!"
         invalid: "{} không phải là một ngôn ngữ hợp lệ, hãy chọn từ danh sách khi sử dụng lệnh."
         guild_only: Lệnh này chỉ được phép dùng trong các server.
@@ -969,8 +969,8 @@ locale:
         lang: "Chọn một ngôn ngữ"
         override_guilds: "Có ghi đè cài đặt của server hay không"
       translation:
-        current: "Hiện tại, ngôn ngữ của bạn là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
-        updated: "Thành công cập nhật ngôn ngữ của bạn thành {} ({})!"
+        current: "Hiện tại, ngôn ngữ là `{} ({})`. Bạn chỉ có thể thay đổi chúng."
+        updated: "Thành công cập nhật ngôn ngữ thành {} ({})!"
         invalid: "{} is not a valid language, please choose from the command auto-complete."
 quickreport:
   modal:
@@ -987,7 +987,7 @@ quickreport:
     name: Báo cáo tin nhắn này
   current_setting:
     report_updated: |
-      Báo cáo với ID `{}` của bạn tại server **{}** đã được cập nhật.
+      Báo cáo với ID `{}` tại server **{}** đã được cập nhật.
     title: "Cấu hình Quick Report cho {}"
     source:
       name: "Nguồn báo cáo"
@@ -1046,7 +1046,7 @@ quickreport:
       non_whitelisted_channel: "Bạn không được phép báo cáo tin nhắn trong kênh không được đưa vào danh sách trắng này!"
       blacklisted_category: "Bạn không được phép báo cáo tin nhắn trong danh mục đã đưa vào danh sách đen này!"
       blacklisted_channel: "Bạn không được phép báo cáo tin nhắn trong kênh đã đưa vào danh sách đen này!"
-    max_concurrent_reached: "Bạn đã đạt đến tối đa **{}** báo cáo đang chờ xử lý đồng thời trong server này! Vui lòng kiểm tra các báo cáo hiện tại của bạn trong </quickreport recent:1182566872810541056> trước khi báo cáo lại."
+    max_concurrent_reached: "Bạn đã đạt đến tối đa **{}** báo cáo đang chờ xử lý đồng thời trong server này! Vui lòng kiểm tra các báo cáo hiện tại trong </quickreport recent:1182566872810541056> trước khi báo cáo lại."
     description: "Để tự động cập nhật báo cáo này, bạn có thể kick, ban, hoặc mute {}.\nĐể cập nhật thủ công, sử dụng lệnh </report update:1192348904184881212> "
     reporter: Người báo cáo
     reported: Đã báo cáo
@@ -1060,7 +1060,7 @@ quickreport:
       options:
         receive_channel: Chỉ định kênh để nhận báo cáo đến
       translation:
-        received: ":information_source: Chúng tôi đã nhận được báo cáo của bạn. Người quản lý báo cáo sẽ xem qua báo cáo của bạn trong thời gian ngắn.\nĐể xem thông tin về các báo cáo của bạn, hãy sử dụng lệnh </report recent:1192112079977582672> & </report check:1192112079977582672>"
+        received: ":information_source: Chúng tôi đã nhận được báo cáo. Người quản lý báo cáo sẽ xem qua báo cáo trong thời gian ngắn.\nĐể xem thông tin về các báo cáo, hãy sử dụng lệnh </report recent:1192112079977582672> & </report check:1192112079977582672>"
         incoming: ":warning: Báo cáo mới đến!"
     successful_message:
       description: Đặt một tin nhắn được gửi tới Người báo cáo sau khi báo cáo thành công
@@ -1168,7 +1168,7 @@ quickreport:
         declined: Đã từ chối
       translation:
         args_no_perm: "Bạn không có quyền sử dụng đối số `reporter` và `reported`."
-        no_report: "Không có báo cáo gần đây nào khớp với cài đặt truy vấn của bạn trong server này."
+        no_report: "Không có báo cáo gần đây nào khớp với cài đặt truy vấn trong server này."
         title: "Báo cáo gần đây trong {}"
         pending: Đang chờ
         declined: Đã từ chối
@@ -1183,7 +1183,7 @@ quickreport:
         no_report: "Không có báo cáo nào liên kết với ID `{}` trong server này!"
         no_perm: "Bạn không có quyền xem báo cáo có ID `{}` trong server này!"
 customrole:
-  description: "Tạo Custom Role cho thành viên của bạn và cho phép họ tự quản lý nó"
+  description: "Tạo Custom Role cho thành viên và cho phép họ tự quản lý nó"
   current_setting:
     title: "Thông tin Custom Role cho @{}"
     permissions:
@@ -1235,7 +1235,7 @@ customrole:
       decline: Từ chối
       declined: Đã từ chối yêu cầu {}.
       unknown_channel: "Server này không có kênh phê duyệt yêu cầu. Vui lòng liên hệ với Quản trị viên server để thiết lập kênh phê duyệt bằng cách sử dụng `/customrole admin request-approval`."
-      sent: "Yêu cầu `#{}` của bạn đã được gửi. Đội ngũ Quản trị của server sẽ sớm xem xét yêu cầu sửa đổi của bạn."
+      sent: "Yêu cầu `#{}` đã được gửi. Đội ngũ Quản trị của server sẽ sớm xem xét yêu cầu sửa đổi."
       messages:
         remove_member: "{} đã yêu cầu **xóa** {} khỏi {}."
         add_member: "{} đã yêu cầu **thêm** {} vào {}."
@@ -1255,7 +1255,7 @@ customrole:
       approval: "Gửi Yêu cầu cho Quản trị viên duyệt"
     role_not_registered: |
       {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
-      Để di chuyển từ vai trò của bạn vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
+      Để di chuyển từ vai trò vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
   admin: "Nhóm Lệnh Quản trị Custom Role"
@@ -1287,8 +1287,8 @@ customrole:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     max_users:
       description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
@@ -1324,8 +1324,8 @@ customrole:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Tôi không thể quản lí một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc của bạn (vị trí của tôi: {0}, vị trí của bạn {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc của bạn.
+          Tôi không thể quản lí một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
         invalid_time: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     set_permission:
       description: "Đặt quyền cho một Custom Role"
@@ -1383,44 +1383,44 @@ customrole:
       common:
         no_role_found: "Bạn không có bất kỳ Custom Role nào với ID đó trong server này."
         missing_permission: "Người quản trị của server này đã hạn chế bạn khỏi việc sử dụng cài đặt này."
-        role_expired: "Custom Role {} của bạn đã hết hạn {}. Để gia hạn Custom Role của bạn, hãy liên hệ với Quản trị viên Server."
-        cannot_find_role: "Không thể tìm thấy Custom Role của bạn trong server, vui lòng thử lại sau..."
+        role_expired: "Custom Role {} đã hết hạn {}. Để gia hạn Custom Role, hãy liên hệ với Quản trị viên Server."
+        cannot_find_role: "Không thể tìm thấy Custom Role trong server, vui lòng thử lại sau..."
       subcommands:
         add:
-          description: "Thêm một thành viên vào Custom Role của bạn"
+          description: "Thêm một thành viên vào Custom Role"
           translation:
             maximum_reached: "Bạn đã đạt tối đa số lượng thành viên cho Custom Role này ({} trong số {}). Bạn có thể phải xóa bỏ một người khác để thêm người khác."
-            can_remove_only: "{} đã có Custom Role của bạn {}, bạn chỉ có thể xóa vai trò này khỏi họ."
+            can_remove_only: "{} đã có Custom Role {}, bạn chỉ có thể xóa vai trò này khỏi họ."
         remove:
-          description: "Xóa một thành viên khỏi Custom Role của bạn"
+          description: "Xóa một thành viên khỏi Custom Role"
           translation:
-            can_add_only: "{} không có Custom Role của bạn {}, bạn chỉ có thể thêm vai trò này cho họ."
+            can_add_only: "{} không có Custom Role {}, bạn chỉ có thể thêm vai trò này cho họ."
         color:
-          description: "Thay đổi màu của Custom Role của bạn"
+          description: "Thay đổi màu của Custom Role"
           options:
             color: "Có thể là `#hex`, `rgb(số, số, số)`, hoặc để trống cho màu mặc định."
           translation:
             palette_forbidden: Server này đã giới hạn bạn chỉ được sử dụng một số màu nhất định. Vui lòng chọn từ autocomplete thay vì nhập một màu.
         icon:
-          description: "Chỉnh sửa biểu tượng của Custom Role của bạn"
+          description: "Chỉnh sửa biểu tượng của Custom Role"
           options:
-            icon: Tải icon của bạn tại đây
+            icon: Tải icon tại đây
             emoji: Sử dụng Emoji ID, Custom Emoji của server, hoặc một Unicode Emoji cho icon
           translation:
-            require_7_boosts: "Tính năng này yêu cầu server của bạn phải có **Cấp độ 2**, hoặc 7 boost server."
+            require_7_boosts: "Tính năng này yêu cầu server phải có **Cấp độ 2**, hoặc 7 boost server."
             invalid_image_format: "Biểu tượng phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
             invalid_image_scale: "Biểu tượng phải là một hình ảnh vuông."
             invalid_arguments: "Bạn cần chỉ định `icon` hoặc `emoji`, bạn không được chỉ định cả 2 phần, hoặc bỏ qua cả 2 phần này"
             invalid_emoji: "{} Không phải là một emoji/custom emoji hợp lệ trong server này."
             invalid_emoji_id: "`{}` Không phải là một Emoji ID hợp lệ."
         removeicon:
-          description: "Xóa biểu tượng khỏi Custom Role của bạn"
+          description: "Xóa biểu tượng khỏi Custom Role"
         mentionable:
-          description: "Cho phép Custom Role của bạn có thể nhắc đến"
+          description: "Cho phép Custom Role có thể nhắc đến"
         info:
-          description: "Xem thông tin của Custom Role của bạn"
+          description: "Xem thông tin của Custom Role"
         name:
-          description: "Thay đổi tên của Custom Role của bạn"
+          description: "Thay đổi tên của Custom Role"
           options:
             name: "Chỉ định tên vai trò"
 pagination:
@@ -1437,10 +1437,10 @@ collections:
     saved_at: "Đã lưu lúc: "
   button:
     label: Lưu vào Bộ sưu tập!
-    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích của bạn! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection của bạn."
-    already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích của bạn trước đó rồi! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection của bạn."
+    saved: "Đã lưu bức họa vào bộ sưu tập yêu thích! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection."
+    already_saved: "Bạn đã lưu bức họa vào bộ sưu tập yêu thích trước đó rồi! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection."
 giveaway:
-  description: Tạo Giveaway nâng cao trong server của bạn
+  description: Tạo Giveaway nâng cao trong server
   translation:
     unknown_channel: Không thể tìm thấy kênh tổ chức giveaway, vui lòng thử lại sau...
     unknown_giveaway: Không thể tìm thấy giveaway từ kênh đã chỉ định, vui lòng thử lại sau...
@@ -1462,14 +1462,14 @@ giveaway:
     new_giveaway: "🎉🎉 **GIVEAWAY MỚI** 🎉🎉"
     giveaway_ended: "🎉🎉 **GIVEAWAY ĐÃ KẾT THÚC** 🎉🎉"
     template:
-      note: "Bạn đang chỉnh sửa một Template Giveaway. Không cần lo về việc quên lưu thay đổi - bot sẽ tự lưu thay đổi của bạn mỗi khi bạn thực hiện chỉnh sửa!"
+      note: "Bạn đang chỉnh sửa một Template Giveaway. Không cần lo về việc quên lưu thay đổi - bot sẽ tự lưu thay đổi mỗi khi bạn thực hiện chỉnh sửa!"
       already_exists: Một Template Giveaway với tên đó đã tồn tại. Bạn có thể phải sử dụng một tên khác.
       maximum_reached: "Đã đạt đến giới hạn template giveaway tối đa (10)."
       saved: Đã lưu template thành công!
       default:
         label: Không
         description: Bắt đầu từ đầu mà không sử dụng template đã lưu
-    invalid_input: "Input của bạn không hợp lệ, hãy đảm bảo làm theo hướng dẫn đã chỉ định."
+    invalid_input: "Input không hợp lệ, hãy đảm bảo làm theo hướng dẫn đã chỉ định."
   embeds:
     somehow_ended:
       title: Giveaway đã kết thúc trước đó!
@@ -1613,7 +1613,7 @@ giveaway:
       fields:
         emoji:
           label: Biểu tượng cảm xúc
-          placeholder: Dán mã Unicode biểu tượng cảm xúc của bạn hoặc Biểu tượng cảm xúc tùy chỉnh của server tại đây
+          placeholder: Dán mã Unicode biểu tượng cảm xúc hoặc Biểu tượng cảm xúc tùy chỉnh của server tại đây
     color:
       title: Màu nhúng Giveaway
       fields:
@@ -1652,11 +1652,11 @@ giveaway:
         delete: Chỉ định có xóa tin nhắn giveaway cũ hay không
       translation:
         invalid:
-          url: Đường dẫn (URL) tin nhắn của bạn không hợp lệ.
-          guild: ID Server trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
-          channel: ID Kênh trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
-          message: ID Tin nhắn trong đường dẫn (URL) tin nhắn của bạn không hợp lệ.
-          embed: Tin nhắn trong đường dẫn (URL) tin nhắn của bạn không hợp lệ (không có embed để đọc dữ liệu).
+          url: Đường dẫn (URL) tin nhắn không hợp lệ.
+          guild: ID Server trong đường dẫn (URL) tin nhắn không hợp lệ.
+          channel: ID Kênh trong đường dẫn (URL) tin nhắn không hợp lệ.
+          message: ID Tin nhắn trong đường dẫn (URL) tin nhắn không hợp lệ.
+          embed: Tin nhắn trong đường dẫn (URL) tin nhắn không hợp lệ (không có embed để đọc dữ liệu).
           data: Giveaway trong tin nhắn có thể đã kết thúc (không đọc được dữ liệu từ embed).
           author: Author của tin nhắn phải là 1 bot. 
           reaction: Tin nhắn này không có reaction. Chỉ những Giveaway sử dụng reaction (không sử dụng nút) thì mới có thể khôi phục.
@@ -1725,7 +1725,7 @@ giveaway:
       embeds:
         validating:
           title: Đang xác thực...
-          description: 'Bot đang xác thực đầu vào của bạn, vui lòng đợi...'
+          description: 'Bot đang xác thực đầu vào, vui lòng đợi...'
       translation:
         errors:
           requirements:
@@ -1742,9 +1742,9 @@ giveaway:
             invalid: "Lỗi trong trường **Bonus Entries**: `{}` không phải là một phần dữ liệu phần thưởng hợp lệ."
           color: "Lỗi trong trường **Color**: `{}` không phải là một màu hợp lệ. Định dạng chấp nhận: `#hex`, `rgb(số, số, số)`"
           image: "Lỗi trong trường **Image**: `{}` không phải là một URL hình ảnh hợp lệ."
-          duration: "Lỗi trong trường **Duration**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
-          requires_join_before: "Lỗi trong trường **Requires Join Before**: Thời lượng giveaway của bạn không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
-          template: Không có template nào gọi là `{}` trong server của bạn.
+          duration: "Lỗi trong trường **Duration**: Thời lượng giveaway không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
+          requires_join_before: "Lỗi trong trường **Requires Join Before**: Thời lượng giveaway không hợp lệ. Vui lòng chỉ định bằng định dạng ngày ngắn (ví dụ: `1d2h`) hoặc số giây (ví dụ: `86400`) và dưới 60 ngày."
+          template: Không có template nào gọi là `{}` trong server.
           bot_missing_permission: Không thể tạo giveaway, đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
     reroll:
       description: Reroll một giveaway đã kết thúc
@@ -1769,7 +1769,7 @@ giveaway:
         embeds:
           none_template:
             title: Template không hợp lệ!
-            description: "Không có template nào gọi là `{}` trong server của bạn."
+            description: "Không có template nào gọi là `{}` trong server."
       subcommands:
         edit:
           description: 'Chỉnh sửa một template'
@@ -1794,8 +1794,8 @@ bucketscript:
     preparing: Đang chuẩn bị dữ liệu, hãy đợi chút...
     embed: Chỉ định tên Embed
     invalid:
-      greeting: Server của bạn không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/bucketscript greeting message`
-      farewell: Server của bạn không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/bucketscript farewell message`
+      greeting: Server không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/bucketscript greeting message`
+      farewell: Server không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/bucketscript farewell message`
     greeting:
       title: Tin nhắn Chào mừng của Server
       description:
@@ -1808,7 +1808,7 @@ bucketscript:
         full: "### Tin nhắn Tạm biệt cho <#{}>:**\n\n{}\n\n"
     maximum_fields_reached: Đã đạt đến giới hạn field của embed (25). Bạn không thể thêm bất kỳ field nào cho đến khi bạn xóa một cái khác.
     require_content: Bạn cần cung cấp nội dung (ở bất kì vị trí nào, như tiêu đề/description/field/...) cho embed này trước khi sửa màu.
-    invalid_input: Thông tin đã nhập trước đó của bạn không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
+    invalid_input: Thông tin đã nhập trước đó không hợp lệ, hãy đảm bảo tuân theo hướng dẫn.
     maximum_size_reached: 'Đã đạt đến giới hạn kích thước embed (6000 ký tự). Hãy cân nhắc xóa các phần khác của embed để thêm phần khác.'
     zero_field: "Không thể tương tác vì embed này không có field nào"
     insert_first: Thêm vào vị trí đầu tiên
@@ -1840,7 +1840,7 @@ bucketscript:
     message:
       title: Nhập Tin nhắn
       label: Tin nhắn
-      placeholder: Nhập Tin nhắn của bạn ở đây
+      placeholder: Nhập Tin nhắn ở đây
     author:
       title: Nhập Tác giả
       fields:
@@ -1904,7 +1904,7 @@ bucketscript:
       on_cooldown: Bạn cần phải chờ đến <t:{0}> (t:{0}:R) để có thể nhập lại form này.
     invalid_channel: Không thể tìm thấy kênh nhận trả lời form trong config của server. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
     missing_permissions: Bot không đủ quyền để gửi lại thông tin form cho server. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
-    submitted: Chúng tôi đã ghi lại câu trả lời của bạn. Cảm ơn bạn đã nhập form!
+    submitted: Chúng tôi đã ghi lại câu trả lời. Cảm ơn bạn đã nhập form!
   commands:
     send: 
       description: Gửi một tin nhắn BucketScript
@@ -2015,9 +2015,9 @@ userscript:
       string: Bạn chưa chọn một chuỗi ngẫu nhiên trước khi gọi placeholder `[random:string]`. Vui lòng thêm một hàm tính chuỗi ngẫu nhiên `{random:string:A|B|C}` để chọn một chuỗi ngẫu nhiên từ `A`, `B`, hoặc `C`, sau đó lấy chuỗi ngẫu nhiên bằng cách sử dụng placeholder `[random:string]`.
     malform_number: "Dữ liệu đầu vào chưa chính xác đối với hàm số ngẫu nhiên. Để chọn một số ngẫu nhiên giữa `A` và `B`, vui lòng làm theo cấu trúc: `{random:number:A-B}`"
     argument_error:
-      from: Tin nhắn của bạn cần có độ dài `{}`.
-      range: Tin nhắn của bạn cần có độ dài `{}` đến `{}`.
-      single: Tin nhắn của bạn cần có nội dung tại vị trí thứ `{}`.
+      from: Tin nhắn cần có độ dài `{}`.
+      range: Tin nhắn cần có độ dài `{}` đến `{}`.
+      single: Tin nhắn cần có nội dung tại vị trí thứ `{}`.
     invalid_reply_edit: "Không thể chỉnh sửa/phản hồi tin nhắn gốc khi gọi chung `{reply}`/`{reply_no_mention}` và `{edit}` function."
     quick_delay: "Cần ít nhất 1 giây giữa các sleep/delay/wait. (đã nhận `{}`)"
     requires_delay: "Lệnh chỉnh sửa tin nhắn chỉ được phép thực hiện sau khi `{sleep}`/`{delay}`/`{wait}` được gọi ra."
@@ -2030,8 +2030,8 @@ userscript:
       ignore_user: Bạn đã bị chặn sử dụng autoresponder trên.
       ignore_channel: Kênh này đã bị chặn sử dụng autoresponder trên.
       ignore_category: Category này đã bị cấm sử dụng autoresponder này.
-      ignore_permission: Một số quyền của bạn đã bị cấm sử dụng autoresponder trên.
-      ignore_role: Một số vai trò của bạn đã bị cấm sử dụng autoresponder trên.
+      ignore_permission: Một số quyền đã bị cấm sử dụng autoresponder trên.
+      ignore_role: Một số vai trò đã bị cấm sử dụng autoresponder trên.
       cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
       global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
     triggered: "-# Autoresponder ID: `{}`"
@@ -2044,8 +2044,8 @@ userscript:
       invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
     occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
     invalid_channel: 'ID kênh không hợp lệ: `{}`.'
-    cannot_add_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng thêm vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
-    cannot_remove_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng xóa vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại của bạn."
+    cannot_add_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng thêm vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại."
+    cannot_remove_roles: "Bạn không có quyền Quản lí Vai trò, hoặc bạn đang cố gắng xóa vai trò bằng hoặc cao hơn vị trí vai trò cao nhất hiện tại."
     missing_permission:
       send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
       read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
@@ -2061,7 +2061,7 @@ voting:
     emoji:
       title: Biểu tượng cảm xúc
       label: Biểu tượng
-      placeholder: Dán Biểu tượng Unicode của bạn hoặc Biểu tượng Tùy chỉnh từ server ở đây
+      placeholder: Dán Biểu tượng Unicode hoặc Biểu tượng Tùy chỉnh từ server ở đây
     messages:
       title: Tin nhắn
       label: Số lượng
@@ -2148,7 +2148,7 @@ voting:
         leave_invalid: "- Tất cả các vote __vẫn hợp lệ__ nếu người vote rời khỏi server"
         leave_valid: "- Tất cả các vote __sẽ không hợp lệ__ nếu người vote rời khỏi server"
     method:
-      invalid_emoji: Server của bạn không có biểu tượng cảm xúc `{}`, hoặc biểu tượng Unicode này không hợp lệ.
+      invalid_emoji: Server không có biểu tượng cảm xúc `{}`, hoặc biểu tượng Unicode này không hợp lệ.
       set_emoji: Thiết lập biểu tượng (Yêu cầu Chế độ Strict)
       embed:
         title: Phương thức Đếm vote
@@ -2218,7 +2218,7 @@ voting:
           translation:
             ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
-            saved: Dữ liệu của bạn đã được lưu với ID `{0}`. Để xem phiên đã lưu của bạn, sử dụng lệnh **`/voting history`** `session:{0}`.
+            saved: Dữ liệu đã được lưu với ID `{0}`. Để xem phiên đã lưu, sử dụng lệnh **`/voting history`** `session:{0}`.
 tasks:
   description: Tạo các tác vụ tự động
   current_setting:
@@ -2244,7 +2244,7 @@ tasks:
         translation:
           invalid_time: Đầu vào thời gian `{}` không hợp lệ. Bạn có thể nhập theo định dạng `hh:mm`, với `hh` = giờ (00 - 23), `mm` = phút (00 - 59), tất cả đều 2 chữ số.
           invalid_time_gap: Khoảng thời gian giữa `lock_at` & `unlock_at` phải lớn hơn 180 giây (3 phút)
-          overlapped: "Tác vụ của bạn đã bị chồng chéo với một tác vụ khác: `{}`. \nĐảm bảo không thêm một tác vụ với thời gian bị chồng chéo với tác vụ khác (ví dụ: một tác vụ khóa từ 21:00 -> 22:00 không thể chồng chéo với tác vụ khóa khác trong 21:30 -> 22:30)"
+          overlapped: "Tác vụ đã bị chồng chéo với một tác vụ khác: `{}`. \nĐảm bảo không thêm một tác vụ với thời gian bị chồng chéo với tác vụ khác (ví dụ: một tác vụ khóa từ 21:00 -> 22:00 không thể chồng chéo với tác vụ khóa khác trong 21:30 -> 22:30)"
       mode:
         description: Chỉnh sửa chế độ tự động khóa cho một tác vụ cụ thể
         options:
@@ -2300,7 +2300,7 @@ minecraft:
   description: "Các tính năng dành cho Minecraft."
   commands:
     custombanner:
-      description: 'Hướng dẫn đặt một Banner riêng cho Server Minecraft của bạn'
+      description: 'Hướng dẫn đặt một Banner riêng cho Server Minecraft'
       translation:
         title: Đặt một Banner cho Server Minecraft
         fields:
@@ -2314,7 +2314,7 @@ minecraft:
             value: "Tạo một record loại **`URI`**, với `Priority` (độ ưu tiên) là **`15`**, và `Weight` (độ nặng) là **`2215`**. Phần `Target` (mục tiêu), bạn hãy điền URL dẫn đến banner bạn đã chuẩn bị.\n\nBot sẽ tự động kiểm tra và lấy banner ngay khi bạn đặt record thành công"
           reason:
             name: "Lí do"
-            value: "Việc thực hiện tạo một DNS Record này để đảm bảo rằng bạn là người sở hữu/quản lí tên miền đó, tránh việc người dùng khác thay đổi hoặc sử dụng dữ liệu dựa trên tên miền của bạn"
+            value: "Việc thực hiện tạo một DNS Record này để đảm bảo rằng bạn là người sở hữu/quản lí tên miền đó, tránh việc người dùng khác thay đổi hoặc sử dụng dữ liệu dựa trên tên miền"
     server:
       description: "Hiển thị thông tin của một server Minecraft"
       options:
@@ -2337,7 +2337,7 @@ minecraft:
           title: "Hết thời gian kết nối (Timeout)"
           description: "`{}` đã không trả về dữ liệu trong 5 giây. Đó có thể do:\n- Server đã chặn IP dịch vụ của bot,\n- Server quá tải & không trả lời trong thời gian quy định,\n- Server đang ngoại tuyến.\nBạn có thể thử lại sau vài phút."
       translation:
-        custom_banner: "**TIP:** Đặt banner tùy chỉnh cho Server Minecraft của bạn bằng lệnh </minecraft custom-server-banner:1258037133189451817>!"
+        custom_banner: "**TIP:** Đặt banner tùy chỉnh cho Server Minecraft bằng lệnh </minecraft custom-server-banner:1258037133189451817>!"
         below_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `below_layer`. Vui lòng chọn lại từ danh sách autocomplete. Bot sẽ sử dụng `end_stone` làm mặc định.\n"
         above_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `above_layer`. Vui lòng chọn lại từ danh sách autocomplete.\n"
         resolved_ip: "Địa chỉ IP"
@@ -2595,24 +2595,24 @@ agecalculator:
       discord: "Lấy tuổi từ Discord hoàn tất!"
       palm_reading: "Xem tay thành công!"
     self:
-      completed: "Tính toán tuổi hoàn tất! Tuổi của bạn là: **{}**."
-      calculating: "Đang tính tuổi của bạn, vui lòng chờ..."
-      exploit_dna: "Đang khai thác DNA của bạn..."
+      completed: "Tính toán tuổi hoàn tất! Tuổi là: **{}**."
+      calculating: "Đang tính tuổi, vui lòng chờ..."
+      exploit_dna: "Đang khai thác DNA..."
       birth_date:
-        performing: "Đang quét ngày sinh của bạn..."
-        done: "Hoàn tất! Ngày sinh của bạn là {0}."
+        performing: "Đang quét ngày sinh..."
+        done: "Hoàn tất! Ngày sinh là {0}."
       astrological_sign:
-        performing: "Đang kiểm tra cung hoàng đạo của bạn..."
-        done: "Hoàn tất! Cung hoàng đạo của bạn là {0}."
+        performing: "Đang kiểm tra cung hoàng đạo..."
+        done: "Hoàn tất! Cung hoàng đạo là {0}."
       blood_type:
-        performing: "Đang kiểm tra nhóm máu của bạn..."
-        done: "Hoàn tất! Nhóm máu của bạn là {0}."
+        performing: "Đang kiểm tra nhóm máu..."
+        done: "Hoàn tất! Nhóm máu là {0}."
       foot_size:
-        performing: "Đang đo kích thước chân của bạn..."
-        done: "Hoàn tất! Kích thước chân của bạn là {0} cm."
+        performing: "Đang đo kích thước chân..."
+        done: "Hoàn tất! Kích thước chân là {0} cm."
       superpower:
-        performing: "Đang kiểm tra siêu năng lực ưa thích của bạn..."
-        done: "Hoàn tất! Siêu năng lực ưa thích của bạn là {0}."
+        performing: "Đang kiểm tra siêu năng lực ưa thích..."
+        done: "Hoàn tất! Siêu năng lực ưa thích là {0}."
       palm_reading:
         performing: "Đang xem tay..."
       biometric_scan:
@@ -2620,31 +2620,31 @@ agecalculator:
       horoscope_analysis:
         performing: "Đang phân tích cung hoàng đạo..."
       google_search:
-        performing: "Đang tìm kiếm Google về tuổi của bạn..."
+        performing: "Đang tìm kiếm Google về tuổi..."
       ancestry_dna:
-        performing: "Đang sử dụng Ancestry DNA để xác minh tuổi của bạn..."
+        performing: "Đang sử dụng Ancestry DNA để xác minh tuổi..."
       past_life:
         performing: "Đang tính tuổi bao gồm các kiếp trước..."
       discord:
-        performing: "Đang hỏi Discord về tuổi của bạn..."
+        performing: "Đang hỏi Discord về tuổi..."
       favorite_food:
-        performing: "Đang kiểm tra món ăn yêu thích của bạn..."
-        done: "Hoàn tất! Món ăn yêu thích của bạn là {0}."
+        performing: "Đang kiểm tra món ăn yêu thích..."
+        done: "Hoàn tất! Món ăn yêu thích là {0}."
       hobby:
-        performing: "Đang kiểm tra sở thích yêu thích của bạn..."
-        done: "Hoàn tất! Sở thích yêu thích của bạn là {0}."
+        performing: "Đang kiểm tra sở thích yêu thích..."
+        done: "Hoàn tất! Sở thích yêu thích là {0}."
       brain_injection:
-        performing: "Đang truy cập vào bộ não của bạn..."
-        done: "Đã hoàn tất truy cập vào bộ não của bạn."
+        performing: "Đang truy cập vào bộ não..."
+        done: "Đã hoàn tất truy cập vào bộ não."
       height:
-        performing: "Đang đo chiều cao của bạn..."
-        done: "Hoàn tất! Chiều cao của bạn là {0} cm."
+        performing: "Đang đo chiều cao..."
+        done: "Hoàn tất! Chiều cao là {0} cm."
       weight:
-        performing: "Đang đo cân nặng của bạn..."
-        done: "Hoàn tất! Cân nặng của bạn là {0} kg."
+        performing: "Đang đo cân nặng..."
+        done: "Hoàn tất! Cân nặng là {0} kg."
       favorite_animal:
-        performing: "Đang kiểm tra động vật yêu thích của bạn..."
-        done: "Hoàn tất! Động vật yêu thích của bạn là {0}."
+        performing: "Đang kiểm tra động vật yêu thích..."
+        done: "Hoàn tất! Động vật yêu thích là {0}."
     other:
       completed: "Tính toán tuổi hoàn tất! Tuổi của {} là: **{}**."
       calculating: "Đang tính tuổi của {} , vui lòng chờ..."
@@ -2792,13 +2792,13 @@ moderation:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
           none: "**{}** đã bị đá khỏi server."
 bucketbalance:
-  description: Tạo vật phẩm cho member trong server của bạn!
+  description: Tạo vật phẩm cho member trong server!
   common:
     balance: "Chọn một item hoặc chỉ định ID item"
     invalid_id: "Đây không phải là ID item hợp lệ. Vui lòng chọn lại từ phần tự động hoàn thành."
   commands:
     create:
-      description: Tạo item trong server của bạn
+      description: Tạo item trong server
       options:
         name: "Chỉ định ID item. Đây không phải là tên để hiển thị"
         display_icon: "Chỉ định emoji để hiển thị. Có thể là chuỗi ký tự"
@@ -2811,7 +2811,7 @@ bucketbalance:
           Đã tạo thành công item {} **`[{}]`** **{}** với ID `{}`.
           Sử dụng function `{}` để chỉnh sửa item trong BucketScript, hoặc sử dụng lệnh `/item add/subtract` để chỉnh sửa thủ công.
     delete:
-      description: Xóa một item trong server của bạn
+      description: Xóa một item trong server
       translation:
         confirmation:
           question: Bạn có chắc chắn muốn xóa item {} **{}** không? Tất cả các bản ghi được gán với item này cũng sẽ bị xóa!
@@ -2823,7 +2823,7 @@ bucketbalance:
         placeholder: Vui lòng nhập '{}' để xác nhận xóa.
         label: Xác nhận xóa [{}]
     list:
-      description: Liệt kê tất cả các item trong server của bạn
+      description: Liệt kê tất cả các item trong server
       translation:
         no_balance: Server này không có item nào. Bạn có thể tạo một số dư bằng cách sử dụng `/item create`
         title: Danh sách item cho {}
@@ -2938,7 +2938,7 @@ server:
           adding: Removing **{}** from {} accounts, this may take {}.
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
 quests:
-  description: Tạo nhiệm vụ cho thành viên trong server của bạn!
+  description: Tạo nhiệm vụ cho thành viên trong server!
   translation:
     select: Chọn một nhiệm vụ, hoặc nhập ID Nhiệm Vụ
     invalid_quest: Đây không phải là một ID nhiệm vụ hợp lệ. Vui lòng chọn lại từ gợi ý tự động.
@@ -3038,14 +3038,14 @@ quests:
       title: Chế Độ Nhiệm Vụ
       description: |
         Bạn đang chọn chế độ nhiệm vụ, có thể hoàn thành bằng cách ở trong **Thoại**, hoặc trò chuyện trong **kênh Văn Bản**.
-        Vui lòng chọn lựa chọn của bạn bên dưới.
+        Vui lòng chọn lựa chọn bên dưới.
 
         **Bước tiếp theo:** Chọn thời gian của Nhiệm Vụ
     duration:
       title: Thời Gian Nhiệm Vụ
       description: |
         Bạn đang chọn thời gian của nhiệm vụ, sẽ được reset cho tất cả mọi người trong server sau mỗi khoảng thời gian nhất định.
-        Vui lòng chọn lựa chọn của bạn bên dưới.
+        Vui lòng chọn lựa chọn bên dưới.
 
         **Bước tiếp theo:** Chọn Kênh
     channel:
@@ -3054,23 +3054,23 @@ quests:
         text: |
           Bạn đang chọn các kênh nhiệm vụ, chỉ những kênh này sẽ được tính vào việc hoàn thành nhiệm vụ.
           Bạn có thể bỏ qua bước này.
-          Vui lòng chọn lựa chọn của bạn bên dưới.
+          Vui lòng chọn lựa chọn bên dưới.
 
           **Bước tiếp theo:** Xác định yêu cầu tin nhắn
         voice: |
           Bạn đang chọn các kênh nhiệm vụ, chỉ những kênh này sẽ được tính vào việc hoàn thành nhiệm vụ.
           Bạn có thể bỏ qua bước này.
-          Vui lòng chọn lựa chọn của bạn bên dưới.
+          Vui lòng chọn lựa chọn bên dưới.
 
           **Bước tiếp theo:** Xác định yêu cầu thoại
     voicemode:
       title: Chế Độ Thoại của Nhiệm Vụ
       description: |
         Bạn đang chỉnh sửa chế độ thoại của nhiệm vụ, quản lý các điều kiện sẽ được tính vào việc hoàn thành nhiệm vụ.
-        Tùy chọn hiện tại của bạn:
+        Tùy chọn hiện tại:
         - Cho phép người dùng tắt tiếng: {}
         - Cho phép người dùng tắt âm: {}
-        Vui lòng chỉnh sửa tùy chọn của bạn bên dưới.
+        Vui lòng chỉnh sửa tùy chọn bên dưới.
 
         **Bước tiếp theo:** Xác định thời gian thoại
     textmode:
@@ -3078,7 +3078,7 @@ quests:
       description: |
         Bạn đang chỉnh sửa chế độ văn bản của nhiệm vụ, nghĩa là nội dung tin nhắn có thể **bắt đầu bằng**, **chứa**, hoặc **kết thúc bằng** một nội dung nào đó.
         Bạn cũng có thể bỏ qua bước này nếu bạn muốn nội dung tin nhắn có thể là bất cứ thứ gì.
-        Vui lòng chọn lựa chọn của bạn bên dưới.
+        Vui lòng chọn lựa chọn bên dưới.
 
         **Bước tiếp theo:** Xác định số lượng tin nhắn và loại tin nhắn (nếu bạn chọn **bắt đầu bằng**, **chứa**, hoặc **kết thúc bằng**)
     whitelistblacklist:
@@ -3088,13 +3088,13 @@ quests:
         Bạn cũng nên thêm [Chức Năng BucketScript](https://bot.tudubucket.dev/bucketscript/functions/) cho thông báo hoàn thành nhiệm vụ.
 
         Bạn có thể bỏ qua cài đặt này, **nhưng bạn nên thêm chức năng thông báo**. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
-        Hoặc, vui lòng chọn lựa chọn của bạn bên dưới:
+        Hoặc, vui lòng chọn lựa chọn bên dưới:
     whitelist:
       title: Danh Sách Trắng của Nhiệm Vụ
       description: |
         Thêm vai trò cụ thể có thể hoàn thành nhiệm vụ này.
         Vai trò hiện tại: {}
-        Vui lòng chọn lựa chọn của bạn bên dưới.
+        Vui lòng chọn lựa chọn bên dưới.
 
         Đây là bước cuối cùng. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
     blacklist:
@@ -3102,7 +3102,7 @@ quests:
       description: |
         Thêm vai trò cụ thể không thể hoàn thành nhiệm vụ này.
         Vai trò hiện tại: {}
-        Vui lòng chọn lựa chọn của bạn bên dưới.
+        Vui lòng chọn lựa chọn bên dưới.
 
         Đây là bước cuối cùng. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
   commands:
@@ -3135,12 +3135,12 @@ quests:
       timezone:
         description: Nhiệm vụ sẽ được reset vào nửa đêm dựa trên múi giờ đã cấu hình
         translation:
-          already_set: "Múi giờ hiện tại của bạn cho nhiệm vụ đã được đặt là {}"
-          successfully: Đã thay đổi múi giờ nhiệm vụ của bạn thành {} thành công"
+          already_set: "Múi giờ hiện tại cho nhiệm vụ đã được đặt là {}"
+          successfully: Đã thay đổi múi giờ nhiệm vụ thành {} thành công"
       channel:
         description: Đặt kênh để gửi tin nhắn hoàn thành nhiệm vụ
         translation:
-          already_set: "Kênh hiện tại của bạn để gửi tin nhắn hoàn thành nhiệm vụ đã được đặt là {}"
+          already_set: "Kênh hiện tại để gửi tin nhắn hoàn thành nhiệm vụ đã được đặt là {}"
           successfully: Đã thay đổi kênh để gửi tin nhắn hoàn thành nhiệm vụ thành {} thành công!"
 user:
   description: Hiển thị thông tin liên quan tới người dùng.
