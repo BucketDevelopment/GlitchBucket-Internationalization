@@ -2791,62 +2791,63 @@ moderation:
         success:
           reason: "**{}** has been kicked, with reason: {}"
           none: "**{}** has been kicked."
+          
 bucketbalance:
-  description: Virtual-Economy for your server!
+  description: Item system for your server!
   common:
-    balance: "Select a balance, or specify Balance ID"
-    invalid_id: "This is not a valid balance ID. Please choose again from the autocomplete."
+    balance: "Select an item, or specify Item ID"
+    invalid_id: "This is not a valid item ID. Please choose again from the autocomplete."
   commands:
     create:
-      description: Create a virtual-economy in your server
+      description: Create an item in your server
       options:
-        name: "Specify balance identity name. This is not the name to display"
+        name: "Specify item ID. This is not the display name"
         display_icon: "Specify an icon to display. Can be string"
         display_name: "Specify a name to display"
       translation:
-        invalid_name: "Balance name should contains only lowercase characters, numbers and underscore."
-        already_exists: "Balance with identity name `{}` already exists, please try another name."
-        limit_exceeded: "You cannot create more than 10 virtual-economy for this server."
+        invalid_name: "Item ID should contain only lowercase characters, numbers and underscore."
+        already_exists: "Item with ID `{}` already exists, please try another name."
+        limit_exceeded: "You cannot create more than 10 virtual-item types for this server."
         created: |
-          Successfully created balance {} **`[{}]`** **{}** with ID `{}`.
-          Use `{}` function to modify balance in BucketScript, or use `/bucketbalance add/subtract` for modify manually.
+          Successfully created item {} **`[{}]`** **{}** with ID `{}`.
+          Use `{}` function to modify item in BucketScript, or use `/item add/subtract` to adjust manually.
     delete:
-      description: Delete an existing virtual-economy in your server
+      description: Delete an existing virtual-item type in your server
       translation:
         confirmation:
-          question: Are you sure to delete economy {} **{}**? All existance balance record of members that assigned with this economy will be delete too!
+          question: Are you sure to delete item type {} **{}**? All existing item records of members associated with this type will also be deleted!
           timed_out: Confirmation timed out (15 seconds).
           invalid: Invalid confirmation code (received `{}`, `{}` expected)
-        deleted: Economy {} `{}` with ID `{}` has been deleted.
+        deleted: Item type {} `{}` with ID `{}` has been deleted.
       modal:
         title: Delete Confirmation
         placeholder: Please type '{}' to confirm deletion.
         label: Delete Confirmation [{}]
     list:
-      description: List all existing virtual-economy in your server
+      description: List all existing virtual-item types in your server
       translation:
-        no_balance: This server does not have any balance. You can create a balance by using `/bucketbalance create`
-        title: BucketBalance list for {}
+        no_balance: This server does not have any item type. You can create one using `/item create`
+        title: BucketItem list for {}
         member: Member
-        total: Total Balance
+        total: Total Items
     add:
-      description: Add a specific amount of virtual-economy to a specific user
+      description: Add a specific amount of virtual-items to a specific user
       translation:
-        successful: "Successfully added {} {} **{}** to {}'s balance!"
+        successful: "Successfully added {} {} **{}** to {}'s inventory!"
     subtract:
-      description: Subtract a specific amount of virtual-economy from a specific user
+      description: Subtract a specific amount of virtual-items from a specific user
       translation:
-        successful: "Successfully subtracted {} {} **{}** to {}'s balance!"
+        successful: "Successfully removed {} {} **{}** from {}'s inventory!"
     leaderboard:
-      description: Show leaderboard of a specific virtual-economy
+      description: Show leaderboard of a specific virtual-item type
       options:
         limit: "Specify entries limit per page, default 10"
       translation:
-        no_record: "There is no balance record for {} **{}**"
+        no_record: "There is no item record for {} **{}**"
       embed:
         title: "{}'s Leaderboard for {}"
         rank: Rank
-        points: Points
+        points: Quantity
         user: User
 server:
   description: Show server-related information.

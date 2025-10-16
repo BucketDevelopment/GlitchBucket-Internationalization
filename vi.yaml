@@ -2792,61 +2792,61 @@ moderation:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
           none: "**{}** đã bị đá khỏi server."
 bucketbalance:
-  description: Economy cho máy chủ của bạn!
+  description: Tạo vật phẩm cho member trong server của bạn!
   common:
-    balance: "Chọn một economy hoặc chỉ định ID Economy"
-    invalid_id: "Đây không phải là ID economy hợp lệ. Vui lòng chọn lại từ phần tự động hoàn thành."
+    balance: "Chọn một item hoặc chỉ định ID item"
+    invalid_id: "Đây không phải là ID item hợp lệ. Vui lòng chọn lại từ phần tự động hoàn thành."
   commands:
     create:
-      description: Tạo economy trong máy chủ của bạn
+      description: Tạo item trong máy chủ của bạn
       options:
-        name: "Chỉ định tên nhận dạng economy. Đây không phải là tên để hiển thị"
-        display_icon: "Chỉ định biểu tượng để hiển thị. Có thể là chuỗi ký tự"
+        name: "Chỉ định ID item. Đây không phải là tên để hiển thị"
+        display_icon: "Chỉ định emoji để hiển thị. Có thể là chuỗi ký tự"
         display_name: "Chỉ định tên để hiển thị"
       translation:
-        invalid_name: "Tên định danh economy chỉ nên chứa các ký tự thường, số và dấu gạch dưới."
-        already_exists: "Economy với tên nhận dạng `{}` đã tồn tại, vui lòng thử tên khác."
-        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 economy cho máy chủ này."
+        invalid_name: "ID item chỉ được chứa các ký tự thường, số và dấu gạch dưới."
+        already_exists: "Item với ID `{}` đã tồn tại, vui lòng thử tên khác."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 item cho máy chủ này."
         created: |
-          Đã tạo thành công economy {} **`[{}]`** **{}** với ID `{}`.
-          Sử dụng function `{}` để chỉnh sửa economy trong BucketScript, hoặc sử dụng lệnh `/bucketbalance add/subtract` để chỉnh sửa thủ công.
+          Đã tạo thành công item {} **`[{}]`** **{}** với ID `{}`.
+          Sử dụng function `{}` để chỉnh sửa item trong BucketScript, hoặc sử dụng lệnh `/item add/subtract` để chỉnh sửa thủ công.
     delete:
-      description: Xóa một economy có sẵn trong máy chủ của bạn
+      description: Xóa một item trong máy chủ của bạn
       translation:
         confirmation:
-          question: Bạn có chắc chắn muốn xóa economy {} **{}** không? Tất cả các bản ghi số dư của các thành viên được gán với economy này cũng sẽ bị xóa!
+          question: Bạn có chắc chắn muốn xóa item {} **{}** không? Tất cả các bản ghi được gán với item này cũng sẽ bị xóa!
           timed_out: Hết thời gian xác nhận (15 giây).
           invalid: Mã xác nhận không hợp lệ (nhận `{}`, mong đợi `{}`)
-        deleted: Economy {} `{}` với ID `{}` đã bị xóa.
+        deleted: Item {} `{}` với ID `{}` đã bị xóa.
       modal:
         title:
         placeholder: Vui lòng nhập '{}' để xác nhận xóa.
         label: Xác nhận xóa [{}]
     list:
-      description: Liệt kê tất cả các economy có sẵn trong máy chủ của bạn
+      description: Liệt kê tất cả các item trong máy chủ của bạn
       translation:
-        no_balance: Máy chủ này không có số dư nào. Bạn có thể tạo một số dư bằng cách sử dụng `/bucketbalance create`
-        title: Danh sách BucketBalance cho {}
-        member: Thành viên
-        total: Tổng số dư
+        no_balance: Server này không có item nào. Bạn có thể tạo một số dư bằng cách sử dụng `/item create`
+        title: Danh sách item cho {}
+        member: Member
+        total: Tổng số lượng
     add:
-      description: Thêm một số lượng economy cụ thể cho một người dùng
+      description: Thêm một số lượng item cụ thể cho một member
       translation:
-        successful: "Đã thêm thành công {} {} **{}** vào số dư của {}!"
+        successful: "Đã thêm thành công {} {} **{}** vào túi đồ của {}!"
     subtract:
-      description: Trừ một số lượng economy cụ thể từ một người dùng
+      description: Trừ một số lượng item cụ thể từ một người dùng
       translation:
-        successful: "Đã trừ thành công {} {} **{}** khỏi số dư của {}!"
+        successful: "Đã xóa thành công {} {} **{}** khỏi túi đồ của {}!"
     leaderboard:
-      description: Hiển thị bảng xếp hạng của một economy cụ thể
+      description: Hiển thị bảng xếp hạng của một item cụ thể
       options:
         limit: "Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10"
       translation:
-        no_record: "Không có bản ghi số dư cho {} **{}**"
+        no_record: "Không có bản ghi số lượng cho {} **{}**"
       embed:
         title: "Bảng xếp hạng của {} cho {}"
         rank: Hạng
-        points: Điểm
+        points: Số lượng
         user: Người dùng
 server:
   description: Hiển thị thông tin liên quan đến máy chủ.
