@@ -1220,8 +1220,8 @@ customrole:
       embed:
         title: "Bảng Màu"
         description:
-          restricted: "Máy chủ này **đã giới hạn** bạn chỉ được sử dụng màu ở bảng phía dưới. Bạn chỉ có thể sử dụng một trong những màu dưới đây:"
-          not_restricted: "Máy chủ này **không giới hạn** màu bạn có thể sử dụng. Bạn có thể sử dụng bất kỳ màu nào, hoặc một trong những màu dưới đây:"
+          restricted: "Server này **đã giới hạn** bạn chỉ được sử dụng màu ở bảng phía dưới. Bạn chỉ có thể sử dụng một trong những màu dưới đây:"
+          not_restricted: "Server này **không giới hạn** màu bạn có thể sử dụng. Bạn có thể sử dụng bất kỳ màu nào, hoặc một trong những màu dưới đây:"
           no_palette: "Không có màu nào trong bảng. Bắt đầu thêm bảng màu bằng cách nhấn \"Thêm Màu\" bên dưới."
       toggle: "Bật/Tắt chỉ sử dụng bảng màu"
       maximum_reached: "Số lượng màu trong bảng màu đã đạt mức tối đa (25)."
@@ -1234,7 +1234,7 @@ customrole:
       approve: Chấp nhận
       decline: Từ chối
       declined: Đã từ chối yêu cầu {}.
-      unknown_channel: "Server này không có kênh phê duyệt yêu cầu. Vui lòng liên hệ với Quản trị viên máy chủ để thiết lập kênh phê duyệt bằng cách sử dụng `/customrole admin request-approval`."
+      unknown_channel: "Server này không có kênh phê duyệt yêu cầu. Vui lòng liên hệ với Quản trị viên server để thiết lập kênh phê duyệt bằng cách sử dụng `/customrole admin request-approval`."
       sent: "Yêu cầu `#{}` của bạn đã được gửi. Đội ngũ Quản trị của server sẽ sớm xem xét yêu cầu sửa đổi của bạn."
       messages:
         remove_member: "{} đã yêu cầu **xóa** {} khỏi {}."
@@ -2798,7 +2798,7 @@ bucketbalance:
     invalid_id: "Đây không phải là ID item hợp lệ. Vui lòng chọn lại từ phần tự động hoàn thành."
   commands:
     create:
-      description: Tạo item trong máy chủ của bạn
+      description: Tạo item trong server của bạn
       options:
         name: "Chỉ định ID item. Đây không phải là tên để hiển thị"
         display_icon: "Chỉ định emoji để hiển thị. Có thể là chuỗi ký tự"
@@ -2806,12 +2806,12 @@ bucketbalance:
       translation:
         invalid_name: "ID item chỉ được chứa các ký tự thường, số và dấu gạch dưới."
         already_exists: "Item với ID `{}` đã tồn tại, vui lòng thử tên khác."
-        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 item cho máy chủ này."
+        limit_exceeded: "Bạn không thể tạo nhiều hơn 10 item cho server này."
         created: |
           Đã tạo thành công item {} **`[{}]`** **{}** với ID `{}`.
           Sử dụng function `{}` để chỉnh sửa item trong BucketScript, hoặc sử dụng lệnh `/item add/subtract` để chỉnh sửa thủ công.
     delete:
-      description: Xóa một item trong máy chủ của bạn
+      description: Xóa một item trong server của bạn
       translation:
         confirmation:
           question: Bạn có chắc chắn muốn xóa item {} **{}** không? Tất cả các bản ghi được gán với item này cũng sẽ bị xóa!
@@ -2823,7 +2823,7 @@ bucketbalance:
         placeholder: Vui lòng nhập '{}' để xác nhận xóa.
         label: Xác nhận xóa [{}]
     list:
-      description: Liệt kê tất cả các item trong máy chủ của bạn
+      description: Liệt kê tất cả các item trong server của bạn
       translation:
         no_balance: Server này không có item nào. Bạn có thể tạo một số dư bằng cách sử dụng `/item create`
         title: Danh sách item cho {}
@@ -2849,21 +2849,21 @@ bucketbalance:
         points: Số lượng
         user: Người dùng
 server:
-  description: Hiển thị thông tin liên quan đến máy chủ.
+  description: Hiển thị thông tin liên quan đến server.
   buttons:
     banner: Biểu ngữ
     icon: Biểu tượng
   commands:
     info:
-      description: Hiển thị thông tin về máy chủ này
+      description: Hiển thị thông tin về server này
       embed:
-        title: Thông tin Máy chủ
+        title: Thông tin Server
         owner: Chủ sở hữu
         created: Tạo ra
         boost: Tăng cường
         language:
           text: Ngôn ngữ
-          server: "Cài đặt Máy chủ"
+          server: "Cài đặt Server"
           config: "Cấu hình"
         statistics: "Thống kê"
         security:
@@ -2879,7 +2879,7 @@ server:
           high: Cao
           highest: Cao nhất
     membercount:
-      description: Hiển thị số lượng thành viên về máy chủ này
+      description: Hiển thị số lượng thành viên về server này
       translation:
         total: Tổng cộng
         human: Người thật
@@ -2898,13 +2898,13 @@ server:
         description: Thêm một vai trò cho một thành viên
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
-          owner: Bạn không thể cấp **{}** cho chủ sở hữu máy chủ.
+          owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
           server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           already_have: "{} đã có vai trò **{}**."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           successful: Đã thêm **{}** cho **{}**.
       add-all:
-        description: Thêm vai trò cho tất cả thành viên máy chủ
+        description: Thêm vai trò cho tất cả thành viên server
         describe:
           option: Chọn một tùy chọn để gán vai trò
         choices:
@@ -2913,7 +2913,7 @@ server:
             human: Tất cả Người (không bao gồm bot)
             bot: Tất cả Bot (không bao gồm người)
         translation:
-          already_running: Máy chủ này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Server này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Tôi không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: 'Đang thực hiện thêm **{}** cho {} tài khoản. Thời gian hoàn thành ước tính: {}.'
@@ -2922,23 +2922,23 @@ server:
         description: Xóa một vai trò khỏi thành viên
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
-          owner: Bạn không thể xóa **{}** khỏi chủ sở hữu máy chủ.
+          owner: Bạn không thể xóa **{}** khỏi chủ sở hữu server.
           server_hierachy: Tôi không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           already_have: "{} không có vai trò {}."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           successful: Đã xóa {} khỏi **{}**.
       remove-all:
-        description: Xóa vai trò khỏi tất cả thành viên máy chủ
+        description: Xóa vai trò khỏi tất cả thành viên server
         describe:
           option: Chọn một tùy chọn để gán vai trò
         translation:
-          already_running: Máy chủ này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Server này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Tôi không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           adding: Removing **{}** from {} accounts, this may take {}.
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
 quests:
-  description: Tạo nhiệm vụ cho thành viên trong máy chủ của bạn!
+  description: Tạo nhiệm vụ cho thành viên trong server của bạn!
   translation:
     select: Chọn một nhiệm vụ, hoặc nhập ID Nhiệm Vụ
     invalid_quest: Đây không phải là một ID nhiệm vụ hợp lệ. Vui lòng chọn lại từ gợi ý tự động.
@@ -3044,7 +3044,7 @@ quests:
     duration:
       title: Thời Gian Nhiệm Vụ
       description: |
-        Bạn đang chọn thời gian của nhiệm vụ, sẽ được reset cho tất cả mọi người trong máy chủ sau mỗi khoảng thời gian nhất định.
+        Bạn đang chọn thời gian của nhiệm vụ, sẽ được reset cho tất cả mọi người trong server sau mỗi khoảng thời gian nhất định.
         Vui lòng chọn lựa chọn của bạn bên dưới.
 
         **Bước tiếp theo:** Chọn Kênh
@@ -3110,9 +3110,9 @@ quests:
       description: Thiết lập một nhiệm vụ mới
       translation:
         missing:
-          timezone: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ máy chủ cho Nhiệm Vụ** (`/quest setting timezone`)."
+          timezone: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ server cho Nhiệm Vụ** (`/quest setting timezone`)."
           channel: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
-          both: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ máy chủ cho Nhiệm Vụ** (`/quest setting timezone`) & **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
+          both: "Trước khi thiết lập nhiệm vụ, bạn cần phải cấu hình **Múi giờ server cho Nhiệm Vụ** (`/quest setting timezone`) & **Kênh cho tin nhắn hoàn thành nhiệm vụ** (`/quest setting channel`)."
     list:
       description: Liệt kê tất cả các nhiệm vụ đang chạy
       options:
@@ -3186,7 +3186,7 @@ emoji:
   description: Quản lý Emoji.
   commands:
     upload:
-      description: "Tải lên một emoji mới vào máy chủ"
+      description: "Tải lên một emoji mới vào server"
       describe:
         name: Têm emoji
         image: Tải lên emoji
@@ -3196,7 +3196,7 @@ emoji:
           upload: "Không thể tải lên emoji: {}"
         uploaded: "Đã tải lên emoji: {}"
     steal:
-      description: "Lấy một emoji từ máy chủ khác hoặc từ một URL"
+      description: "Lấy một emoji từ server khác hoặc từ một URL"
       describe:
         emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
         name: Chỉ định tên emoji
