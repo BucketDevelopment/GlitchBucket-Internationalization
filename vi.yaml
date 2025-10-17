@@ -107,6 +107,9 @@ common:
     action: "Hãy ghi hành động"
     amount: "Hãy ghi số lượng"
     enable: "Cho biết có nên kích hoạt điều này hay không"
+  selects:
+    common: Chọn 1 lựa chọn
+    channel: Chọn 1 kênh
   config:
     saved: "Đã lưu configuration thành công!"
     edited: "Đã chỉnh sửa configuration thành công!"
@@ -1837,6 +1840,9 @@ bucketscript:
     insert_fields: Chọn field để thêm sau nó
     edit_fields: Chọn field để chỉnh sửa
   modals:
+    channel:
+      title: Đặt kênh
+      description: Đặt kênh gửi đi cho tin nhắn
     message:
       title: Nhập Tin nhắn
       label: Tin nhắn

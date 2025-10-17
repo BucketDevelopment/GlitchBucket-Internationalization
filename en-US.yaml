@@ -116,6 +116,9 @@ common:
     action: "Specify an action"
     amount: "Specify the amount"
     enable: "Whether enable this or not"
+  selects:
+    common: Select an option
+    channel: Select a channel
   config:
     saved: "Successfully saved configuration!"
     edited: "Successfully edited configuration!"
@@ -1837,6 +1840,9 @@ bucketscript:
     insert_fields: Select field to add after it
     edit_fields: Select field to edit
   modals:
+    channel:
+      title: Set channel
+      description: Set channel for the specified message
     message:
       title: Message Input
       label: Message
