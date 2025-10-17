@@ -1789,16 +1789,16 @@ bucketscript:
   description: "Tiện ích để xử lý các tin nhắn động."
   translation:
     shared_embeds:
-      maximum_reached: "Bạn đã đạt giới hạn shared embeds (30). Bạn có thể quản lý các shared embeds của mình qua `/bucketscript embed shared`."
-      shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/bucketscript embed shared`."
+      maximum_reached: "Bạn đã đạt giới hạn shared embeds (30). Bạn có thể quản lý các shared embeds của mình qua `/embed shared`."
+      shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/embed shared`."
     unknown_embed: |
       Embed không xác định mang tên `{}` tại server `{}`
-      Để tạo một embed, sử dụng lệnh </bucketscript embed create:1245661361673863238>
+      Để tạo một embed, sử dụng lệnh </embed create:1245661361673863238>
     preparing: Đang chuẩn bị dữ liệu, hãy đợi chút...
     embed: Chỉ định tên Embed
     invalid:
-      greeting: Server không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/bucketscript greeting message`
-      farewell: Server không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/bucketscript farewell message`
+      greeting: Server không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/greeting message`
+      farewell: Server không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/farewell message`
     greeting:
       title: Tin nhắn Chào mừng của Server
       description:
@@ -1834,7 +1834,7 @@ bucketscript:
   embeds:
     empty:
       title: Embed Trống
-      description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </bucketscript embed edit:1245661361673863238> để làm biến mất embed mặc định này!
+      description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1245661361673863238> để làm biến mất embed mặc định này!
   selects:
     remove_fields: Chọn field để xóa
     insert_fields: Chọn field để thêm sau nó
@@ -1916,7 +1916,7 @@ bucketscript:
       description: Gửi một tin nhắn BucketScript
       translation:
         successful: Tin nhắn đã được gửi thành công tới {}.
-        footer: -# Tin nhắn được gửi thông qua lệnh **`/bucketscript send`**.
+        footer: -# Tin nhắn được gửi thông qua lệnh **`/send`**.
         missing_permission: | 
           Bot đang thiếu một trong các quyền cần thiết tại kênh {} để xử lý tin nhắn BucketScript:
           - Xem kênh, Gửi tin nhắn, Gửi embed, Đính kèm tập tin & Thêm Reaction
@@ -1926,12 +1926,12 @@ bucketscript:
         description: Xem các embed bạn đã chia sẻ
         translation:
           no_embed: Bạn hiện không có embed nào trong danh sách embed đã chia sẻ của mình.
-          exported: "Đã xuất embed. Bạn có thể nhập ở server khác thông qua lệnh `/bucketscript embed import`"
+          exported: "Đã xuất embed. Bạn có thể nhập ở server khác thông qua lệnh `/embed import`"
       create:
         description: Tạo một Embed cho BucketScript
         translation:
           forbidden: "Bạn không thể đặt tên embed bắt đầu bằng `__` - đây là đặc điểm nhận dạng cho các embed của hệ thống bot."
-          already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/bucketscript embed edit` để chỉnh sửa một embed hiện có.
+          already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/embed edit` để chỉnh sửa một embed hiện có.
           maximum_reached: Bạn không thể tạo hơn 15 embed trong server này.
       edit:
         description: Chỉnh sửa một BucketScript Embed
@@ -2003,10 +2003,10 @@ userscript:
     user:
       missing_permission: "### {} Thiếu quyền: {}"
       placeholder_error: "### {} Lỗi quy trình: {}"
-    insufficient_balance: "Bạn không đủ số dư {} để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
+    insufficient_balance: "Bạn không đủ số lượng item {} để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
     preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
-    no_negative: "Người dùng {} không đủ số dư {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số tiền chỉ có thể xuống âm bằng cách sử dụng lệnh /bucketscript subtract."
-    invalid_balance: "Tên hoặc UUID balance không hợp lệ: `{}`."
+    no_negative: "Người dùng {} không đủ số lượng item {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số lượng item chỉ có thể nhỏ hơn 0 bằng cách sử dụng lệnh /item subtract."
+    invalid_balance: "Tên hoặc ID Item không hợp lệ: `{}`."
     invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
     invalid_delete:
       trigger: "`int` trong `{delete_trigger:int}` phải là một số nguyên dương. (đã nhận `{}`)"

@@ -1789,16 +1789,16 @@ bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
     shared_embeds:
-      maximum_reached: "You have reached the maximum number of shared embeds (30). You can manage your shared embeds via `/bucketscript embed shared`."
-      shared: "You have successfully shared an embed with ID **`{}`**. To view all your shared embeds, use `/bucketscript embed shared`."
+      maximum_reached: "You have reached the maximum number of shared embeds (30). You can manage your shared embeds via `/embed shared`."
+      shared: "You have successfully shared an embed with ID **`{}`**. To view all your shared embeds, use `/embed shared`."
     unknown_embed: |
       Unknown embed `{}` for server `{}`
-      To create an embed, use </bucketscript embed create:1245661361673863238>
+      To create an embed, use </embed create:1245661361673863238>
     preparing: Preparing data, please wait...
     embed: Specify Embed name
     invalid:
-      greeting: Your server doesn't have any Greeting Message. Consider create one by using `/bucketscript greeting message`
-      farewell: Your server doesn't have any Farewell Message. Consider create one by using `/bucketscript farewell message`
+      greeting: Your server doesn't have any Greeting Message. Consider create one by using `/greeting message`
+      farewell: Your server doesn't have any Farewell Message. Consider create one by using `/farewell message`
     greeting:
       title: Server Greeting Message
       description:
@@ -1834,7 +1834,7 @@ bucketscript:
   embeds:
     empty:
       title: Empty Embed
-      description: Embed **`{}`** is currently empty. Start editing by using </bucketscript embed edit:1245661361673863238> to make this default embed disappear!
+      description: Embed **`{}`** is currently empty. Start editing by using </embed edit:1245661361673863238> to make this default embed disappear!
   selects:
     remove_fields: Select field(s) to remove
     insert_fields: Select field to add after it
@@ -1917,7 +1917,7 @@ bucketscript:
       description: Send a BucketScript message
       translation:
         successful: Message has successfully sent to {}.
-        footer: -# Message sent via **`/bucketscript send`** command.
+        footer: -# Message sent via **`/send`** command.
         missing_permission: | 
         Bot is missing one of required permissions in {} to process BucketScript message:
         - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions  
@@ -1926,13 +1926,13 @@ bucketscript:
         description: View your shared embeds
         translation:
           no_embed: You don't have any shared embeds for now.
-          exported: "Embed exported. You can import in another server by using `/bucketscript embed import`"
+          exported: "Embed exported. You can import in another server by using `/embed import`"
 
       create:
         description: Create an Embed for BucketScript
         translation:
           forbidden: "You cannot name an embed with a name that startswith `__` - this is for our system embed identification."
-          already_exists: An embed with that name already exists. Please choose another name, or use `/bucketscript embed edit` to edit an existing embed.
+          already_exists: An embed with that name already exists. Please choose another name, or use `/embed edit` to edit an existing embed.
           maximum_reached: You cannot create more than 15 embeds in this server.
       edit:
         description: Edit a BucketScript Embed
@@ -2003,10 +2003,10 @@ userscript:
     user:
       missing_permission: "### {} Missing Permissions: {}"
       placeholder_error: "### {} Logical Placeholder Error: {}"
-    insufficient_balance: "You do not have sufficient {}'s balance to perform this trigger (current: `{}`, required: `{}`)."
+    insufficient_balance: "You do not have sufficient {}'s item quantity to perform this trigger (current: `{}`, required: `{}`)."
     preparing: "This server is currently in preparing phase, please try this autoresponder later."
-    no_negative: "User {} does not have sufficient {}'s balance to perform the deduction (current: `{}`, after deduction: `{}`). The balance can only go negative by using /bucketscript subtract."
-    invalid_balance: "Invalid balance name/uuid {}."
+    no_negative: "User {} does not have sufficient {}'s item quantity to perform the deduction (current: `{}`, after deduction: `{}`). Item quantity can only go negative by using /item subtract."
+    invalid_balance: "Invalid item name/uuid {}."
     invalid_number: "`amount` should be a numeric value. (received `{}`)"
     invalid_delete:
       trigger: "`int` in `{delete_trigger:int}` should be a numeric value. (received `{}`)"
