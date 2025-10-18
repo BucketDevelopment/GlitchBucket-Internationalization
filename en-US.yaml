@@ -2012,6 +2012,7 @@ userscript:
       trigger: "`int` in `{delete_trigger:int}` should be a numeric value. (received `{}`)"
       reply: "`int` in `{delete_reply:int}` should be a numeric value. (received `{}`)"
     cooldown:
+      conflict: You cannot use `{daily_cooldown}` with `{cooldown}` or `{global_cooldown}`.
       member: "`int` in `{cooldown:int}` should be a numeric value. (received `{}`)"
       global: "`int` in `{global_cooldown:int}` should be a numeric value. (received `{}`)"
     large_payload: "`amount` should in range [0 - 50,000,000] for each operation. (received `{}`)"
@@ -2040,6 +2041,7 @@ userscript:
       ignore_role: You have specific roles that has been ignored from using this autoresponder.
       cooldown: "This autoresponder is on a **cooldown**. Try again: {}"
       global_cooldown: "This autoresponder is on a **global cooldown**. Try again: {}"
+      daily_cooldown: "This autoresponder is on a **daily cooldown**. Try again: {}"
     triggered: "-# Triggered Autoresponder ID: `{}`"
     webhook_cannot_reply: Webhook cannot reply to messages.
     validator:

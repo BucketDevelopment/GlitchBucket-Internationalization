@@ -2009,11 +2009,12 @@ userscript:
     invalid_balance: "Tên hoặc ID Item không hợp lệ: `{}`."
     invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
     invalid_delete:
-      trigger: "`int` trong `{delete_trigger:int}` phải là một số nguyên dương. (đã nhận `{}`)"
-      reply: "`int` trong `{delete_reply:int}` phải là một số nguyên dương. (đã nhận `{}`)"
+      trigger: "`int` trong `{delete_trigger:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+      reply: "`int` trong `{delete_reply:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
     cooldown:
-      member: "`int` trong `{cooldown:int}` phải là một số nguyên dương. (đã nhận `{}`)"
-      global: "`int` trong `{global_cooldown:int}` phải là một số nguyên dương. (đã nhận `{}`)"
+      conflict: Bạn không thể sử dụng `{daily_cooldown}` với hàm `{cooldown}` hoặc `{global_cooldown}`.
+      member: "`int` trong `{cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+      global: "`int` trong `{global_cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
     large_payload: "`amount` phải trong khoảng [0 - 50,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
     unknown_member: Thành viên không xác định `{}`
     random:
@@ -2040,6 +2041,7 @@ userscript:
       ignore_role: Một số vai trò đã bị cấm sử dụng autoresponder trên.
       cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
       global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
+      daily_cooldown: "Autoresponder này đang trong **cooldown hàng ngày**. Thời gian thử lại: {}"
     triggered: "-# Autoresponder ID: `{}`"
     webhook_cannot_reply: Webhook cannot reply to messages.
     validator:
