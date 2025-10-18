@@ -1914,7 +1914,10 @@ bucketscript:
   commands:
     send: 
       description: Gửi một tin nhắn BucketScript
+      options:
+        edit_message: Chỉ định 1 đường dẫn (https://discord.com/channels/.../.../...) hoặc ID tin nhắn để chỉnh sửa.
       translation:
+        unknown_message: ID/Link Tin nhắn được cung cấp trong kênh {} là không hợp lệ trong server này.
         successful: Tin nhắn đã được gửi thành công tới {}.
         footer: -# Tin nhắn được gửi thông qua lệnh **`/send`**.
         missing_permission: | 

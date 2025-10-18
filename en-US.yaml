@@ -1915,7 +1915,10 @@ bucketscript:
   commands:
     send: 
       description: Send a BucketScript message
+      options:
+        edit_message: Specify Message URL (https://discord.com/channels/.../.../...) or Message ID for editing.
       translation:
+        unknown_message: Provided ID/Message URL in {} does not valid in this server.
         successful: Message has successfully sent to {}.
         footer: -# Message sent via **`/send`** command.
         missing_permission: | 
