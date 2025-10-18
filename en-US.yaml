@@ -2055,8 +2055,8 @@ userscript:
       invalid_int: Value in placeholder `{}` need to be a valid integer
     occurred: "An exception as been caught while processing BucketScript:\n`{}`: {}"
     invalid_channel: Invalid channel ID `{}`.
-    cannot_add_roles: "You are trying to add roles that's has elevated permissions, or it's equal or higher than your current/bot highest role's position."
-    cannot_remove_roles: "You are trying to remove roles that's has elevated permissions, or it's equal or higher than your current/bot highest role's position."
+    cannot_add_roles: "You are trying to add roles that's has elevated permissions, or it's equal or higher than current bot highest role's position."
+    cannot_remove_roles: "You are trying to remove roles that's has elevated permissions, or it's equal or higher than current bot highest role's position."
     missing_permission:
       send_messages: "Bot Missing Permission: Send Messages"
       read_message_history: "`Reply` requires **Read Message History** permission."
