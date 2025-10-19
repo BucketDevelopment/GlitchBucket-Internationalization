@@ -1786,8 +1786,100 @@ giveaway:
             name: Chỉ định tên template
             description: Chỉ định mô tả template
 bucketscript:
+  errors:
+    button:
+      invalid_id: "ID của nút không hợp lệ."
+      missing_label_emoji: "Bạn cần cung cấp **Tên hiển thị** của nút, hoặc **Emoji** (không được bỏ trống cả 2)."
+      limit: "Bạn chỉ được phép tạo tối đa **`10`** button cho mỗi server."
+      exists: "Đã có 1 button khác tồn tại dưới ID này."
+    select:
+      invalid_id: "ID trình chọn không hợp lệ."
+      limit: "Bạn chỉ được phép tạo tối đa 3 trình chọn cho server này."
+      no_select_to_delete: "Không có trình chọn (select) để xóa."
+      option_limit: "Mỗi trình chọn chỉ được tối đa 15 lựa chọn."
+      option_unknown: "Lựa chọn không xác định. Dữ liệu của selection đã có thể bị thay đổi, hoặc select này đã cũ. \nBạn hãy liên hệ Quản trị viên của server để sửa lại nhé! (index={}, total={})"
+    option_not_exist: "Lựa chọn không tồn tại."
+    no_forms: "Server này hiện không có form nào. Bạn có thể tạo 1 form bằng lệnh **`/form`**."
+    form:
+      invalid_id: "ID của form không hợp lệ."
+      exists: "Đã có 1 form khác tồn tại dưới ID này."
+      limit: "Bạn chỉ được phép tạo tối đa 10 form cho server này."
+      question_limit: "Do giới hạn của discord, bạn chỉ được phép thêm tối đa 5 câu hỏi"
+    layout:
+      invalid_id: "ID của layout không hợp lệ. Bạn chỉ được sử dụng chữ cái thường, dấu gạch _ và chữ số."
+      exists: "Đã có 1 layout khác tồn tại dưới ID này."
+      not_found: "Không có layout tồn tại dưới ID này."
+      no_selects: "Không có select để chọn, xem thêm tại /select"
+      no_buttons: "Không có nút để chọn, xem thêm tại /button"
+
+    argument:
+      missing:
+        user: "Cần một người dùng hợp lệ tại vị trí `#{}`."
+        role: "Cần một vai trò hợp lệ tại vị trí `#{}`."
+        channel: "Cần một kênh hợp lệ tại vị trí `#{}`."
+        number: "Cần một số hợp lệ tại vị trí `#{}`."
+        any: "Cần một tham số tại vị trí `#{}`."
+      invalid:
+        user: "Cần một người dùng hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+        role: "Cần một vai trò hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+        channel: "Cần một kênh hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+    user:
+      missing_permission: "### {} Thiếu quyền: {}"
+      placeholder_error: "### {} Lỗi quy trình: {}"
+    insufficient_balance: "Bạn không đủ số lượng item {} để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
+    preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
+    no_negative: "Người dùng {} không đủ số lượng item {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số lượng item chỉ có thể nhỏ hơn 0 bằng cách sử dụng lệnh /item subtract."
+    invalid_balance: "Tên hoặc ID Item không hợp lệ: `{}`."
+    invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
+    invalid_delete:
+      trigger: "`int` trong `{delete_trigger:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+      reply: "`int` trong `{delete_reply:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+    cooldown:
+      conflict: Bạn không thể sử dụng `{daily_cooldown}` với hàm `{cooldown}` hoặc `{global_cooldown}`.
+      member: "`int` trong `{cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+      global: "`int` trong `{global_cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
+    large_payload: "`amount` phải trong khoảng [0 - 50,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
+    unknown_member: Thành viên không xác định `{}`
+    random:
+      number: Bạn chưa chọn một số ngẫu nhiên trước khi gọi placeholder `[random:number]`. Vui lòng thêm một hàm tính số ngẫu nhiên `{random:number:A-B}` để chọn một số ngẫu nhiên từ `A` đến `B`, sau đó lấy số ngẫu nhiên bằng cách sử dụng placeholder `[random:number]`.
+      string: Bạn chưa chọn một chuỗi ngẫu nhiên trước khi gọi placeholder `[random:string]`. Vui lòng thêm một hàm tính chuỗi ngẫu nhiên `{random:string:A|B|C}` để chọn một chuỗi ngẫu nhiên từ `A`, `B`, hoặc `C`, sau đó lấy chuỗi ngẫu nhiên bằng cách sử dụng placeholder `[random:string]`.
+    malform_number: "Dữ liệu đầu vào chưa chính xác đối với hàm số ngẫu nhiên. Để chọn một số ngẫu nhiên giữa `A` và `B`, vui lòng làm theo cấu trúc: `{random:number:A-B}`"
+    argument_error:
+      from: Tin nhắn cần có độ dài `{}`.
+      range: Tin nhắn cần có độ dài `{}` đến `{}`.
+      single: Tin nhắn cần có nội dung tại vị trí thứ `{}`.
+    invalid_reply_edit: "Không thể chỉnh sửa/phản hồi tin nhắn gốc khi gọi chung `{reply}`/`{reply_no_mention}` và `{edit}` function."
+    quick_delay: "Cần ít nhất 1 giây giữa các sleep/delay/wait. (đã nhận `{}`)"
+    requires_delay: "Lệnh chỉnh sửa tin nhắn chỉ được phép thực hiện sau khi `{sleep}`/`{delay}`/`{wait}` được gọi ra."
+    forbidden:
+      require_user: Bạn không được phép sử dụng autoresponder này.
+      require_channel: Bạn không được phép sử dụng autoresponder đó trong kênh này.
+      require_category: Bạn không được phép sử dụng autoresponder đó trong category này.
+      require_permission: Bạn không có quyền để sử dụng autoresponder này.
+      require_role: Bạn thiếu role cần thiết để sử dụng autoresponder này.
+      ignore_user: Bạn đã bị chặn sử dụng autoresponder trên.
+      ignore_channel: Kênh này đã bị chặn sử dụng autoresponder trên.
+      ignore_category: Category này đã bị cấm sử dụng autoresponder này.
+      ignore_permission: Một số quyền đã bị cấm sử dụng autoresponder trên.
+      ignore_role: Một số vai trò đã bị cấm sử dụng autoresponder trên.
+      cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
+      global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
+      daily_cooldown: "Autoresponder này đang trong **cooldown hàng ngày**. Thời gian thử lại: {}"
+    triggered: "-# Autoresponder ID: `{}`"
+    webhook_cannot_reply: Webhook cannot reply to messages.
+    validator:
+      user: ID Người dùng '{}' là không hợp lệ trong placeholder `{}`
+      channel: ID Kênh '{}' là không hợp lệ trong placeholder `{}`
+      permission: Quyền '{}' là không hợp lệ trong placeholder `{}`
+      role: ID Vai trò '{}' là không hợp lệ trong placeholder `{}`
+      invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
+    occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
+    invalid_channel: 'ID kênh không hợp lệ: `{}`.'
+    cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
+    cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
   description: "Tiện ích để xử lý các tin nhắn động."
   translation:
+    update_roles: Cập nhật vai trò từ autoresponder
     shared_embeds:
       maximum_reached: "Bạn đã đạt giới hạn shared embeds (30). Bạn có thể quản lý các shared embeds của mình qua `/embed shared`."
       shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/embed shared`."
@@ -1823,31 +1915,6 @@ bucketscript:
     red: "Đỏ"
   labels:
     no_display_name: "Không có tên hiển thị"
-  errors:
-    button:
-      invalid_id: "ID của nút không hợp lệ."
-      missing_label_emoji: "Bạn cần cung cấp **Tên hiển thị** của nút, hoặc **Emoji** (không được bỏ trống cả 2)."
-      limit: "Bạn chỉ được phép tạo tối đa **`10`** button cho mỗi server."
-      exists: "Đã có 1 button khác tồn tại dưới ID này."
-    select:
-      invalid_id: "ID trình chọn không hợp lệ."
-      limit: "Bạn chỉ được phép tạo tối đa 3 trình chọn cho server này."
-      no_select_to_delete: "Không có trình chọn (select) để xóa."
-      option_limit: "Mỗi trình chọn chỉ được tối đa 15 lựa chọn."
-      option_unknown: "Lựa chọn không xác định. Dữ liệu của selection đã có thể bị thay đổi, hoặc select này đã cũ. \nBạn hãy liên hệ Quản trị viên của server để sửa lại nhé! (index={}, total={})"
-    option_not_exist: "Lựa chọn không tồn tại."
-    no_forms: "Server này hiện không có form nào. Bạn có thể tạo 1 form bằng lệnh **`/form`**."
-    form:
-      invalid_id: "ID của form không hợp lệ."
-      exists: "Đã có 1 form khác tồn tại dưới ID này."
-      limit: "Bạn chỉ được phép tạo tối đa 10 form cho server này."
-      question_limit: "Do giới hạn của discord, bạn chỉ được phép thêm tối đa 5 câu hỏi"
-    layout:
-      invalid_id: "ID của layout không hợp lệ. Bạn chỉ được sử dụng chữ cái thường, dấu gạch _ và chữ số."
-      exists: "Đã có 1 layout khác tồn tại dưới ID này."
-      not_found: "Không có layout tồn tại dưới ID này."
-      no_selects: "Không có select để chọn, xem thêm tại /select"
-      no_buttons: "Không có nút để chọn, xem thêm tại /button"
   success:
     option_added: "Lựa chọn đã được thêm."
     option_deleted: "Lựa chọn đã bị xóa."
@@ -1886,6 +1953,7 @@ bucketscript:
     delete: "Xóa"
     edit: "Sửa"
   embeds:
+    maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo tính năng này hoạt động đúng."
     empty:
       title: Embed Trống
       description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1245661361673863238> để làm biến mất embed mặc định này!
@@ -2241,6 +2309,27 @@ bucketscript:
           label: "Làm mờ container"
           description: "Có làm mờ container bằng cách gán là spoiler không?"
   layout:
+    empty_layout_message: ">>> Có vẻ hơi trống trải - vì layout này chưa có gì cả.\n\nBạn có thể bắt đầu chỉnh sửa (thêm, thay đổi, hoặc xóa hàng) bằng cách chọn các lựa chọn ở dưới nhé!"
+    empty_container_message: ">>> Container này chưa có gì cả. Bạn hãy bắt đầu chỉnh sửa để làm mất dòng chữ này nhé!"
+    limit_exceeded: "Không thể thêm do layout vượt quá giới hạn khi khung vật liệu được thêm."
+    reload_failed: "Chúng tôi không thể tải lại layout do dữ liệu của layout có thể đã bị hỏng.\nThao tác chỉnh sửa vừa rồi của bạn sẽ không được lưu, và bot sẽ hiển thị lại layout trước khi được chỉnh sửa."
+    statistics_display: "Bạn đã sử dụng tổng cộng **`{chars:,}`**/**`3,000`** kí tự & **`{components:,}`**/**`30`** khung vật liệu."
+    duplicate_select: "Select này đã được thêm trước đó. Bạn không thể thêm 2 select có cùng 1 ID vào 1 layout."
+    duplicate_button: "Nút này đã được thêm trước đó. Bạn không thể thêm 2 nút có cùng 1 ID vào 1 layout."
+    unknown_button_label: "Nút không xác định: {}"
+    unknown_select_placeholder: "Select không xác định: {}"
+    button_not_found: "Server không có nút nào mang ID `{}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nút nhé!"
+    select_not_found: "Server không có select nào mang tên `{}`. Ô lựa chọn này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nhé!"
+    row_label: "Hàng #{}"
+    element_label: "phần tử #{}"
+    row_element_label: "Hàng #{}, phần tử #{}"
+    missing_permission:
+      send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
+      read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
+      add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
+      manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
+      manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
+    invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
     components:
       gallery:
         description: "Khung chứa các link ảnh, có thể chứa tới 10 ảnh"
@@ -2368,99 +2457,6 @@ bucketscript:
             invalid_channel: "Không thể lấy kênh tạm biệt đã cấu hình, vui lòng thử lại sau..."
             missing_permission: Quyền không đủ. Đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Nhúng Liên kết`, và `Đọc Lịch sử Tin nhắn` trong {}.
             successful: "Tin nhắn Tạm biệt đã được gửi!"
-userscript:
-  translation:
-    update_roles: Cập nhật vai trò từ autoresponder
-  errors:
-    argument:
-      missing:
-        user: "Cần một người dùng hợp lệ tại vị trí `#{}`."
-        role: "Cần một vai trò hợp lệ tại vị trí `#{}`."
-        channel: "Cần một kênh hợp lệ tại vị trí `#{}`."
-        number: "Cần một số hợp lệ tại vị trí `#{}`."
-        any: "Cần một tham số tại vị trí `#{}`."
-      invalid:
-        user: "Cần một người dùng hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
-        role: "Cần một vai trò hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
-        channel: "Cần một kênh hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
-    user:
-      missing_permission: "### {} Thiếu quyền: {}"
-      placeholder_error: "### {} Lỗi quy trình: {}"
-    insufficient_balance: "Bạn không đủ số lượng item {} để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
-    preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
-    no_negative: "Người dùng {} không đủ số lượng item {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số lượng item chỉ có thể nhỏ hơn 0 bằng cách sử dụng lệnh /item subtract."
-    invalid_balance: "Tên hoặc ID Item không hợp lệ: `{}`."
-    invalid_number: "`amount` phải là một giá trị số. (đã nhận `{}`)"
-    invalid_delete:
-      trigger: "`int` trong `{delete_trigger:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
-      reply: "`int` trong `{delete_reply:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
-    cooldown:
-      conflict: Bạn không thể sử dụng `{daily_cooldown}` với hàm `{cooldown}` hoặc `{global_cooldown}`.
-      member: "`int` trong `{cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
-      global: "`int` trong `{global_cooldown:int}` phải là một số nguyên không âm. (đã nhận `{}`)"
-    large_payload: "`amount` phải trong khoảng [0 - 50,000,000] cho mỗi lượt chỉnh sửa. (đã nhận `{}`)"
-    unknown_member: Thành viên không xác định `{}`
-    random:
-      number: Bạn chưa chọn một số ngẫu nhiên trước khi gọi placeholder `[random:number]`. Vui lòng thêm một hàm tính số ngẫu nhiên `{random:number:A-B}` để chọn một số ngẫu nhiên từ `A` đến `B`, sau đó lấy số ngẫu nhiên bằng cách sử dụng placeholder `[random:number]`.
-      string: Bạn chưa chọn một chuỗi ngẫu nhiên trước khi gọi placeholder `[random:string]`. Vui lòng thêm một hàm tính chuỗi ngẫu nhiên `{random:string:A|B|C}` để chọn một chuỗi ngẫu nhiên từ `A`, `B`, hoặc `C`, sau đó lấy chuỗi ngẫu nhiên bằng cách sử dụng placeholder `[random:string]`.
-    malform_number: "Dữ liệu đầu vào chưa chính xác đối với hàm số ngẫu nhiên. Để chọn một số ngẫu nhiên giữa `A` và `B`, vui lòng làm theo cấu trúc: `{random:number:A-B}`"
-    argument_error:
-      from: Tin nhắn cần có độ dài `{}`.
-      range: Tin nhắn cần có độ dài `{}` đến `{}`.
-      single: Tin nhắn cần có nội dung tại vị trí thứ `{}`.
-    invalid_reply_edit: "Không thể chỉnh sửa/phản hồi tin nhắn gốc khi gọi chung `{reply}`/`{reply_no_mention}` và `{edit}` function."
-    quick_delay: "Cần ít nhất 1 giây giữa các sleep/delay/wait. (đã nhận `{}`)"
-    requires_delay: "Lệnh chỉnh sửa tin nhắn chỉ được phép thực hiện sau khi `{sleep}`/`{delay}`/`{wait}` được gọi ra."
-    forbidden:
-      require_user: Bạn không được phép sử dụng autoresponder này.
-      require_channel: Bạn không được phép sử dụng autoresponder đó trong kênh này.
-      require_category: Bạn không được phép sử dụng autoresponder đó trong category này.
-      require_permission: Bạn không có quyền để sử dụng autoresponder này.
-      require_role: Bạn thiếu role cần thiết để sử dụng autoresponder này.
-      ignore_user: Bạn đã bị chặn sử dụng autoresponder trên.
-      ignore_channel: Kênh này đã bị chặn sử dụng autoresponder trên.
-      ignore_category: Category này đã bị cấm sử dụng autoresponder này.
-      ignore_permission: Một số quyền đã bị cấm sử dụng autoresponder trên.
-      ignore_role: Một số vai trò đã bị cấm sử dụng autoresponder trên.
-      cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
-      global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
-      daily_cooldown: "Autoresponder này đang trong **cooldown hàng ngày**. Thời gian thử lại: {}"
-    triggered: "-# Autoresponder ID: `{}`"
-    webhook_cannot_reply: Webhook cannot reply to messages.
-    validator:
-      user: ID Người dùng '{}' là không hợp lệ trong placeholder `{}`
-      channel: ID Kênh '{}' là không hợp lệ trong placeholder `{}`
-      permission: Quyền '{}' là không hợp lệ trong placeholder `{}`
-      role: ID Vai trò '{}' là không hợp lệ trong placeholder `{}`
-      invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
-    occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
-    invalid_channel: 'ID kênh không hợp lệ: `{}`.'
-    cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
-    cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
-  layout:
-    empty_layout_message: ">>> Có vẻ hơi trống trải - vì layout này chưa có gì cả.\n\nBạn có thể bắt đầu chỉnh sửa (thêm, thay đổi, hoặc xóa hàng) bằng cách chọn các lựa chọn ở dưới nhé!"
-    empty_container_message: ">>> Container này chưa có gì cả. Bạn hãy bắt đầu chỉnh sửa để làm mất dòng chữ này nhé!"
-    limit_exceeded: "Không thể thêm do layout vượt quá giới hạn khi khung vật liệu được thêm."
-    reload_failed: "Chúng tôi không thể tải lại layout do dữ liệu của layout có thể đã bị hỏng.\nThao tác chỉnh sửa vừa rồi của bạn sẽ không được lưu, và bot sẽ hiển thị lại layout trước khi được chỉnh sửa."
-    statistics_display: "Bạn đã sử dụng tổng cộng **`{chars:,}`**/**`3,000`** kí tự & **`{components:,}`**/**`30`** khung vật liệu."
-    duplicate_select: "Select này đã được thêm trước đó. Bạn không thể thêm 2 select có cùng 1 ID vào 1 layout."
-    duplicate_button: "Nút này đã được thêm trước đó. Bạn không thể thêm 2 nút có cùng 1 ID vào 1 layout."
-    unknown_button_label: "Nút không xác định: {}"
-    unknown_select_placeholder: "Select không xác định: {}"
-    button_not_found: "Server không có nút nào mang ID `{}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nút nhé!"
-    select_not_found: "Server không có select nào mang tên `{}`. Ô lựa chọn này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nhé!"
-    row_label: "Hàng #{}"
-    element_label: "phần tử #{}"
-    row_element_label: "Hàng #{}, phần tử #{}"
-    missing_permission:
-      send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
-      read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
-      add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
-      manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
-      manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
-    invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
-  embeds:
-    maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo tính năng này hoạt động đúng."
 voting:
   description: Dễ dàng theo dõi & kiểm tra các vote trong cuộc thi vote!
   modals:
