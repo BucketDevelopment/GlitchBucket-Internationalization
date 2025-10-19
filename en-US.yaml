@@ -2448,6 +2448,9 @@ userscript:
     unknown_select_placeholder: "Unknown select: {}"
     button_not_found: "The server doesn't have any button with ID `{}`. This button may have been deleted, please contact the server Administrator to fix it!"
     select_not_found: "The server doesn't have any select with name `{}`. This select may have been deleted, please contact the server Administrator to fix it!"
+    row_label: "Row #{}"
+    element_label: "element #{}"
+    row_element_label: "Row #{}, element #{}"
     missing_permission:
       send_messages: "Bot Missing Permission: Send Messages"
       read_message_history: "`Reply` requires **Read Message History** permission."

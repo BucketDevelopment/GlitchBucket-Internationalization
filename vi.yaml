@@ -2449,6 +2449,9 @@ userscript:
     unknown_select_placeholder: "Select không xác định: {}"
     button_not_found: "Server không có nút nào mang ID `{}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nút nhé!"
     select_not_found: "Server không có select nào mang tên `{}`. Ô lựa chọn này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nhé!"
+    row_label: "Hàng #{}"
+    element_label: "phần tử #{}"
+    row_element_label: "Hàng #{}, phần tử #{}"
     missing_permission:
       send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
       read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
