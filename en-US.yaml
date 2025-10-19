@@ -1821,11 +1821,14 @@ bucketscript:
     gray: "Gray"
     green: "Green"
     red: "Red"
+  labels:
+    no_display_name: "No display name"
   errors:
     button:
       invalid_id: "Invalid button ID."
       missing_label_emoji: "You need to provide either **Button Label** or **Emoji** (both can't be empty)."
       limit: "You can only create up to **`10`** buttons per server."
+      exists: "A button already exists with this ID."
     select:
       invalid_id: "Invalid select ID."
       limit: "You can only create up to 3 selects for this server."
@@ -1889,6 +1892,11 @@ bucketscript:
     forms:
       title: "Forms"
       description: "You're managing forms in your server. \n\nForms help members submit information to a channel, allowing you to collect data."
+      empty: "You don't have any forms in the database. Add one by clicking **`➕ Add`** below."
+      list: "Forms in server:"
+      field_identifier: "Identifier"
+      field_description: "Description"
+      field_callback_channel: "Form response channel"
     select_type:
       title: "Option Type"
       description: |

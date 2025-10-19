@@ -1821,11 +1821,14 @@ bucketscript:
     gray: "Xám"
     green: "Xanh lá"
     red: "Đỏ"
+  labels:
+    no_display_name: "Không có tên hiển thị"
   errors:
     button:
       invalid_id: "ID của nút không hợp lệ."
       missing_label_emoji: "Bạn cần cung cấp **Tên hiển thị** của nút, hoặc **Emoji** (không được bỏ trống cả 2)."
       limit: "Bạn chỉ được phép tạo tối đa **`10`** button cho mỗi server."
+      exists: "Đã có 1 button khác tồn tại dưới ID này."
     select:
       invalid_id: "ID trình chọn không hợp lệ."
       limit: "Bạn chỉ được phép tạo tối đa 3 trình chọn cho server này."
@@ -1889,6 +1892,11 @@ bucketscript:
     forms:
       title: "Form (Biểu mẫu)"
       description: "Bạn đang thực hiện quản lí các form (biểu mẫu) trong server của bạn. \n\nForm có chức năng giúp member gửi thông tin về 1 kênh, giúp bạn thu thập dữ liệu."
+      empty: "Bạn không có form nào trong database. Hãy thêm một form bằng cách bấm vào **`➕ Thêm`** ở phía dưới."
+      list: "Các form trong server:"
+      field_identifier: "Mã định danh"
+      field_description: "Miêu tả"
+      field_callback_channel: "Kênh trả form"
     select_type:
       title: "Loại Lựa chọn"
       description: |
