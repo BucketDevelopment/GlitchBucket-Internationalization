@@ -1904,7 +1904,7 @@ bucketscript:
       option_limit: "Each select can only have up to 15 options."
       option_unknown: "Unknown option. The selection data may have changed, or this select is outdated. \nPlease contact the Server Administrator to fix it! (index={}, total={})"
     option_not_exist: "Option does not exist."
-    no_forms: "This server currently has no forms. You can create one using **`/form`**."
+    no_forms: "This server currently has no forms. You can create one using **`/forms`**."
     form:
       invalid_id: "Invalid form ID."
       exists: "A form already exists with this ID."
@@ -1914,8 +1914,8 @@ bucketscript:
       invalid_id: "Invalid layout ID. You can only use lowercase letters, underscores _, and numbers."
       exists: "A layout already exists with this ID."
       not_found: "No layout exists with this ID."
-      no_selects: "No selects to choose from, see more at /select"
-      no_buttons: "No buttons to choose from, see more at /button"
+      no_selects: "No selects to choose from, see more at /selects"
+      no_buttons: "No buttons to choose from, see more at /buttons"
   success:
     option_added: "Option has been added."
     option_deleted: "Option has been deleted."
@@ -1973,7 +1973,7 @@ bucketscript:
 
         > **1. Normal Response Option** When clicked, the bot returns a response in [BucketScript](https://bot.tudubucket.dev/bucketscript/example/) format,
         > _ _
-        > **2. Form Request Option** When clicked, the bot will ask the user to fill out a form (this form needs to be created using **`/form`**), then the bot will send the user's data to a specified channel.
+        > **2. Form Request Option** When clicked, the bot will ask the user to fill out a form (this form needs to be created using **`/forms`**), then the bot will send the user's data to a specified channel.
 
         Please choose the option type according to your needs below:
     selects:

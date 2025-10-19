@@ -1799,7 +1799,7 @@ bucketscript:
       option_limit: "Mỗi trình chọn chỉ được tối đa 15 lựa chọn."
       option_unknown: "Lựa chọn không xác định. Dữ liệu của selection đã có thể bị thay đổi, hoặc select này đã cũ. \nBạn hãy liên hệ Quản trị viên của server để sửa lại nhé! (index={}, total={})"
     option_not_exist: "Lựa chọn không tồn tại."
-    no_forms: "Server này hiện không có form nào. Bạn có thể tạo 1 form bằng lệnh **`/form`**."
+    no_forms: "Server này hiện không có form nào. Bạn có thể tạo 1 form bằng lệnh **`/forms`**."
     form:
       invalid_id: "ID của form không hợp lệ."
       exists: "Đã có 1 form khác tồn tại dưới ID này."
@@ -1809,8 +1809,8 @@ bucketscript:
       invalid_id: "ID của layout không hợp lệ. Bạn chỉ được sử dụng chữ cái thường, dấu gạch _ và chữ số."
       exists: "Đã có 1 layout khác tồn tại dưới ID này."
       not_found: "Không có layout tồn tại dưới ID này."
-      no_selects: "Không có select để chọn, xem thêm tại /select"
-      no_buttons: "Không có nút để chọn, xem thêm tại /button"
+      no_selects: "Không có select để chọn, xem thêm tại /selects"
+      no_buttons: "Không có nút để chọn, xem thêm tại /buttons"
 
     argument:
       missing:
@@ -1972,7 +1972,7 @@ bucketscript:
 
         > **1. Lựa chọn phản hồi bình thường** Khi bấm vào lựa chọn, bot trả về một phản hồi dạng [BucketScript](https://bot.tudubucket.dev/bucketscript/example/),
         > _ _
-        > **2. Lựa chọn yêu cầu điền biểu mẫu (form)** Khi bấm vào nút, bot sẽ yêu cầu người dùng điền vào một biểu mẫu (form này cần được tạo ở lệnh **`/form`**), sau đó bot sẽ gửi dữ liệu người dùng đã điền vào một kênh xác định.
+        > **2. Lựa chọn yêu cầu điền biểu mẫu (form)** Khi bấm vào nút, bot sẽ yêu cầu người dùng điền vào một biểu mẫu (form này cần được tạo ở lệnh **`/forms`**), sau đó bot sẽ gửi dữ liệu người dùng đã điền vào một kênh xác định.
 
         Hãy chọn loại lựa chọn theo yêu cầu của bạn ở dưới:
     selects:
