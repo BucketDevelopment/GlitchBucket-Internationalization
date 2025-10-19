@@ -1816,29 +1816,154 @@ bucketscript:
     zero_field: "Cannot interact since this embed has zero field"
     insert_first: Insert to the first
     back: Back
+  colors:
+    blurple: "Blurple"
+    gray: "Gray"
+    green: "Green"
+    red: "Red"
+  errors:
+    button:
+      invalid_id: "Invalid button ID."
+      missing_label_emoji: "You need to provide either **Button Label** or **Emoji** (both can't be empty)."
+      limit: "You can only create up to **`10`** buttons per server."
+    select:
+      invalid_id: "Invalid select ID."
+      limit: "You can only create up to 3 selects for this server."
+      no_select_to_delete: "No select to delete."
+      option_limit: "Each select can only have up to 15 options."
+      option_unknown: "Unknown option. The selection data may have changed, or this select is outdated. \nPlease contact the Server Administrator to fix it! (index={}, total={})"
+    option_not_exist: "Option does not exist."
+    no_forms: "This server currently has no forms. You can create one using **`/form`**."
+    form:
+      invalid_id: "Invalid form ID."
+      exists: "A form already exists with this ID."
+      limit: "You can only create up to 10 forms for this server."
+      question_limit: "Due to Discord limitations, you can only add up to 5 questions"
+    layout:
+      invalid_id: "Invalid layout ID. You can only use lowercase letters, underscores _, and numbers."
+      exists: "A layout already exists with this ID."
+      not_found: "No layout exists with this ID."
+      no_selects: "No selects to choose from, see more at /select"
+      no_buttons: "No buttons to choose from, see more at /button"
+  success:
+    option_added: "Option has been added."
+    option_deleted: "Option has been deleted."
+    select_deleted: "Select has been deleted."
   buttons:
     share: Share
     export: Export
+    delete_embed: Delete
     delete: Delete
+    edit: Edit
+    add: Add
     author: Author
     title: Title & Description
     footer: Footer
     color: Color
     thumbnail: Thumbnail
     image: Image
+    back: Back
+    edit_placeholder: Edit Placeholder
+    add_option: Add Option
     fields:
       add: Add Field
       edit: Edit Field
       remove: Remove Field
       insert: Insert Field
+    response:
+      normal: "Normal Response"
+      form: "Return Form"
+    option:
+      normal: "Normal Response"
+      form: "Return Form"
+    select:
+      add: "Create Select"
+      delete: "Delete Select"
+    form:
+      edit_title_description: "Title/Description"
+      add_question: "Add Question"
   embeds:
     empty:
       title: Empty Embed
       description: Embed **`{}`** is currently empty. Start editing by using </embed edit:1245661361673863238> to make this default embed disappear!
+    forms:
+      title: "Forms"
+      description: "You're managing forms in your server. \n\nForms help members submit information to a channel, allowing you to collect data."
+    select_type:
+      title: "Option Type"
+      description: |
+        There are 2 types of options:
+
+        > **1. Normal Response Option** When clicked, the bot returns a response in [BucketScript](https://bot.tudubucket.dev/bucketscript/example/) format,
+        > _ _
+        > **2. Form Request Option** When clicked, the bot will ask the user to fill out a form (this form needs to be created using **`/form`**), then the bot will send the user's data to a specified channel.
+
+        Please choose the option type according to your needs below:
+    selects:
+      title: "Selects"
+      empty: "No selects yet."
+    manage_select:
+      title: "Manage Select: {select_name}"
+      not_exist: "Select doesn't exist or has been deleted."
+      description: "You're managing the select **{select_name}**."
+      field_id: "ID"
+      field_placeholder: "Placeholder"
+      field_count: "Option Count"
+      field_options: "Options"
+      no_options: "No options have been added to this select yet."
+      no_label: "No label"
+      form_callback: "Form: **{form_label}** (`{form_name}`)"
+      form_unknown: "Form: `unknown:{form_name}`"
+      emoji: "Emoji: {emoji}"
+      option_description: "Description: {description}"
+      callback: "Callback: {callback}"
+      option_title: "Option #{index}: {label}"
+    buttons:
+      title: "Buttons"
+      description: |
+        You're managing buttons in your server.
+
+        Buttons can return a response in [BucketScript](https://bot.tudubucket.dev/bucketscript/example/) format, or return a form for users to fill out, helping you collect data.
+      empty: "You don't have any buttons in the database. Add one by clicking **`➕ Add`** below."
+      list: "Buttons in server:"
+      form_exists: "**{form_label}** (**Form ID `{form_name}`**)"
+      form_unknown: "***Unknown Form***"
+      button_form: "> **ID: `{button_name}` **`>`** {label}**: Returns form {form_title}"
+      button_response: "> **ID: `{button_name}` **`>`** {label}**: Response: *{callback}*"
+    form_questions:
+      title: "Manage Questions"
+      description: "You're managing questions for form **{form_name}**."
+      field_title: "Title"
+      field_description: "Description"
+      field_questions: "Questions"
+      no_questions: "No questions yet"
+      paragraph_long: "Long Paragraph"
+      paragraph_short: "Short Text"
+      question_format: "**{index}.** {title}\n> *{description}*\n> Type: {paragraph_type}"
   selects:
     remove_fields: Select field(s) to remove
     insert_fields: Select field to add after it
     edit_fields: Select field to edit
+    edit:
+      placeholder: "Choose a select to edit"
+    remove_option:
+      placeholder: "Choose an option to remove"
+    edit_option:
+      placeholder: "Choose an option to edit"
+    edit_button:
+      placeholder: "Choose a button to edit"
+    edit_form:
+      placeholder: "Choose a form to edit"
+    form:
+      edit_question:
+        placeholder: "Choose a question to edit"
+      delete_question:
+        placeholder: "Delete a question"
+    layout:
+      add_element:
+        placeholder: "Choose an element to add"
+      edit_element:
+        placeholder: "Choose an element to edit"
   modals:
     channel:
       title: Set channel
@@ -1900,6 +2025,231 @@ bucketscript:
         inline:
           label: Inline
           placeholder: Leave empty to make field non-inline. Specify any character to make this field inline.
+    button:
+      old:
+        fields:
+          name:
+            label: "Button ID"
+            placeholder: "Button ID, not display name, only lowercase letters, underscores _, and numbers"
+          label:
+            label: "Display Name"
+            placeholder: "Text displayed on the button"
+          emoji:
+            label: "Emoji"
+            placeholder: "Button emoji"
+          color:
+            label: "Button Color"
+            placeholder: "Choose button color"
+      type:
+        title: "Button Type"
+        description: |
+          There are 2 types of buttons:
+
+          > **1. Normal Response Button** When clicked, the bot returns a response in [BucketScript](https://bot.tudubucket.dev/bucketscript/example/) format,
+          > _ _
+          > **2. Form Request Button** When clicked, the bot will ask the user to fill out a form (this form needs to be created using **`/forms`**), then the bot will send the user's data to a specified channel.
+
+          Please choose the button type according to your needs below:
+      title: "Button"
+      fields:
+        form:
+          label: "Form"
+          description: "Choose a form to link with this button"
+          placeholder: "Choose a form"
+        name:
+          label: "Button ID"
+          placeholder: "Button ID (only lowercase letters, numbers, and underscores)"
+        label:
+          label: "Label"
+          placeholder: "Text displayed on the button"
+        emoji:
+          label: "Emoji"
+          placeholder: "Paste Unicode code or choose a custom server emoji"
+        color:
+          label: "Button Color"
+          placeholder: "Choose button color (e.g. blurple, gray, green, red, custom)"
+        callback:
+          label: "Callback"
+          placeholder: "Callback name triggered when button is clicked"
+      delete:
+        title: "Delete Button"
+        select:
+          label: "Choose button to delete"
+          placeholder: "Choose a button..."
+    select:
+      text:
+        title: "Add Option (Text)"
+        fields:
+          label:
+            label: "Display Name"
+            placeholder: "Display label for the option"
+          description:
+            label: "Description"
+            placeholder: "Short description for the option, optional"
+          emoji:
+            label: "Emoji"
+            placeholder: "Option emoji, optional"
+          callback:
+            label: "Response"
+            placeholder: "Selection response"
+      form:
+        title: "Add Option (Form)"
+        fields:
+          label:
+            label: "Display Name"
+            placeholder: "Display label for the option"
+          description:
+            label: "Description"
+            placeholder: "Short description for the option, optional"
+          emoji:
+            label: "Emoji"
+            placeholder: "Option emoji, optional"
+          form:
+            label: "Return Form"
+            description: "Choose the form to send when user selects this option"
+            placeholder: "Choose a form"
+      info:
+        title: "Create Select"
+        fields:
+          name:
+            label: "Select ID"
+            placeholder: "Select ID, not display name, only lowercase letters, underscores _, and numbers"
+          placeholder:
+            label: "Placeholder"
+            placeholder: "Text displayed when no option is selected"
+    delete_select:
+      label: "Choose select to delete"
+      placeholder: "Choose a select"
+      title: "Delete Select"
+    delete_form:
+      label: "Choose form to delete"
+      placeholder: "Choose a form you want to delete"
+      title: "Delete Form"
+    form_info:
+      title: "Button"
+      fields:
+        id:
+          label: "Form ID"
+          placeholder: "Form ID, not display name, only lowercase letters, underscores _, and numbers"
+        title:
+          label: "Title"
+          placeholder: "Form title"
+        description:
+          label: "Form Description"
+          placeholder: "Description about the form"
+        channel:
+          label: "Form Return Channel"
+          description: "Bot will send the data to this channel when receiving form submissions from members"
+          placeholder: "Choose form return channel"
+        message:
+          label: "Message"
+          placeholder: "Message included when form is sent (you can ping a role or add notes)"
+          default: "Received a new form submission!"
+    form_question:
+      title: "Question"
+      fields:
+        title:
+          label: "Content"
+          placeholder: "Question content"
+        description:
+          label: "Description"
+          placeholder: "Question description (optional)"
+        is_paragraph:
+          label: "Is the answer long?"
+          description: "Choose answer type"
+          placeholder: "Choose an option"
+          options:
+            long: "Long Paragraph"
+            short: "Short Text"
+        required:
+          label: "Required"
+          description: "Is this question required to be answered?"
+          placeholder: "Choose an option"
+          options:
+            yes: "Yes"
+            no: "No"
+    layout_remove:
+      title: "Remove Row"
+      label: "Element Row"
+      description: "Choose the element row to remove"
+      placeholder: "Choose an element"
+    gallery:
+      title: "Image URLs"
+      fields:
+        urls:
+          label: "Image URL(s)"
+          placeholder: "URL(s) to images, one image per line."
+        spoiler:
+          label: "Blur Images"
+          description: "Blur images by marking as spoiler?"
+    text_display:
+      title: "Text Box"
+      fields:
+        content:
+          label: "Content"
+          description: "Supports BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Text box content"
+    section_thumbnail:
+      title: "Section - Thumbnail"
+      fields:
+        content:
+          label: "Content"
+          description: "Supports BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Text content in this Section"
+        url:
+          label: "Image URL"
+          placeholder: "URL to image for Thumbnail"
+        spoiler:
+          label: "Blur Image"
+          description: "Blur image by marking as spoiler?"
+    layout_select:
+      title: "Select Box"
+      label: "Select Box"
+      description: "Choose a select to display"
+      placeholder: "Choose an option"
+    layout_button:
+      title: "Button"
+      label: "Button"
+      description: "Choose a button to display"
+      placeholder: "Choose an option"
+    section_button:
+      title: "Section"
+      fields:
+        content:
+          label: "Content"
+          description: "Supports BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Text content in this Section"
+        button:
+          label: "Button"
+          description: "Choose a button to display"
+          placeholder: "Choose an option"
+    container:
+      title: "Container"
+      fields:
+        color:
+          label: "Container Color"
+          placeholder: "Color for container. Accepted formats: #hex, rgb(num, num, num). Leave empty for no color"
+        spoiler:
+          label: "Blur Container"
+          description: "Blur container by marking as spoiler?"
+  layout:
+    components:
+      gallery:
+        description: "Container for image links, can hold up to 10 images"
+      text:
+        description: "Text display element"
+      separator:
+        description: "Divider line"
+      section_image:
+        description: "Text display on the left, and an image frame on the right"
+      section_button:
+        description: "Text display on the left, and a button (not image) on the right"
+      button:
+        description: "A clickable button"
+      select:
+        description: "A dropdown select menu"
+      container:
+        description: "A display frame, similar to an embed"
   forms: 
     errors: 
       not_found: Server has no form with ID `{0}`. This button may have been deleted; please contact the server administrator to have the form fixed.
@@ -1913,6 +2263,27 @@ bucketscript:
     submitted: Your response has been recorded. Thank you for filling out the form!
 
   commands:
+    buttons:
+      description: "Manage buttons in your server"
+    forms:
+      description: "Manage forms in your server"
+    selects:
+      description: "Manage dropdown selects in your server"
+    layout:
+      description: "Create & Manage layouts (interfaces)"
+      subcommands:
+        create:
+          description: "Create a layout (interface)"
+          options:
+            name: "Specify layout name"
+        edit:
+          description: "Edit a layout (interface)"
+          options:
+            name: "Specify layout name"
+        delete:
+          description: "Delete a layout (interface)"
+          options:
+            name: "Specify layout name"
     send: 
       description: Send a BucketScript message
       options:

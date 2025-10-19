@@ -1816,10 +1816,43 @@ bucketscript:
     zero_field: "Không thể tương tác vì embed này không có field nào"
     insert_first: Thêm vào vị trí đầu tiên
     back: Quay lại
+  colors:
+    blurple: "Blurple"
+    gray: "Xám"
+    green: "Xanh lá"
+    red: "Đỏ"
+  errors:
+    button:
+      invalid_id: "ID của nút không hợp lệ."
+      missing_label_emoji: "Bạn cần cung cấp **Tên hiển thị** của nút, hoặc **Emoji** (không được bỏ trống cả 2)."
+      limit: "Bạn chỉ được phép tạo tối đa **`10`** button cho mỗi server."
+    select:
+      invalid_id: "ID trình chọn không hợp lệ."
+      limit: "Bạn chỉ được phép tạo tối đa 3 trình chọn cho server này."
+      no_select_to_delete: "Không có trình chọn (select) để xóa."
+      option_limit: "Mỗi trình chọn chỉ được tối đa 15 lựa chọn."
+      option_unknown: "Lựa chọn không xác định. Dữ liệu của selection đã có thể bị thay đổi, hoặc select này đã cũ. \nBạn hãy liên hệ Quản trị viên của server để sửa lại nhé! (index={}, total={})"
+    option_not_exist: "Lựa chọn không tồn tại."
+    no_forms: "Server này hiện không có form nào. Bạn có thể tạo 1 form bằng lệnh **`/form`**."
+    form:
+      invalid_id: "ID của form không hợp lệ."
+      exists: "Đã có 1 form khác tồn tại dưới ID này."
+      limit: "Bạn chỉ được phép tạo tối đa 10 form cho server này."
+      question_limit: "Do giới hạn của discord, bạn chỉ được phép thêm tối đa 5 câu hỏi"
+    layout:
+      invalid_id: "ID của layout không hợp lệ. Bạn chỉ được sử dụng chữ cái thường, dấu gạch _ và chữ số."
+      exists: "Đã có 1 layout khác tồn tại dưới ID này."
+      not_found: "Không có layout tồn tại dưới ID này."
+      no_selects: "Không có select để chọn, xem thêm tại /select"
+      no_buttons: "Không có nút để chọn, xem thêm tại /button"
+  success:
+    option_added: "Lựa chọn đã được thêm."
+    option_deleted: "Lựa chọn đã bị xóa."
+    select_deleted: "Trình chọn đã bị xóa."
   buttons:
     share: Share
     export: Xuất
-    delete: Xóa
+    delete_embed: Xóa
     author: Đầu Embed
     title: Tiêu đề & Nội dung
     footer: Chân Embed
@@ -1831,14 +1864,106 @@ bucketscript:
       edit: Sửa Field
       remove: Xóa Field
       insert: Chèn Field
+    response:
+      normal: "Phản hồi bình thường"
+      form: "Trả biểu mẫu"
+    option:
+      normal: "Phản hồi bình thường"
+      form: "Trả biểu mẫu"
+    select:
+      add: "Tạo select (trình chọn)"
+      delete: "Xóa Select"
+    form:
+      edit_title_description: "Tiêu đề/miêu tả"
+      add_question: "Thêm câu hỏi"
+    back: "Quay lại"
+    edit_placeholder: "Sửa Placeholder"
+    add_option: "Thêm lựa chọn"
+    add: "Thêm"
+    delete: "Xóa"
+    edit: "Sửa"
   embeds:
     empty:
       title: Embed Trống
       description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1245661361673863238> để làm biến mất embed mặc định này!
+    forms:
+      title: "Form (Biểu mẫu)"
+      description: "Bạn đang thực hiện quản lí các form (biểu mẫu) trong server của bạn. \n\nForm có chức năng giúp member gửi thông tin về 1 kênh, giúp bạn thu thập dữ liệu."
+    select_type:
+      title: "Loại Lựa chọn"
+      description: |
+        Có 2 loại lựa chọn:
+
+        > **1. Lựa chọn phản hồi bình thường** Khi bấm vào lựa chọn, bot trả về một phản hồi dạng [BucketScript](https://bot.tudubucket.dev/bucketscript/example/),
+        > _ _
+        > **2. Lựa chọn yêu cầu điền biểu mẫu (form)** Khi bấm vào nút, bot sẽ yêu cầu người dùng điền vào một biểu mẫu (form này cần được tạo ở lệnh **`/form`**), sau đó bot sẽ gửi dữ liệu người dùng đã điền vào một kênh xác định.
+
+        Hãy chọn loại lựa chọn theo yêu cầu của bạn ở dưới:
+    selects:
+      title: "Selects"
+      empty: "Chưa có trình chọn nào."
+    manage_select:
+      title: "Quản lí trình chọn: {select_name}"
+      not_exist: "Select không tồn tại hoặc đã bị xóa."
+      description: "Bạn đang quản lí trình chọn (select) **{select_name}**."
+      field_id: "ID"
+      field_placeholder: "Placeholder"
+      field_count: "Số lựa chọn"
+      field_options: "Lựa chọn"
+      no_options: "Chưa có lựa chọn nào được thêm vào trình chọn này."
+      no_label: "Không có nhãn"
+      form_callback: "Form: **{form_label}** (`{form_name}`)"
+      form_unknown: "Form: `unknown:{form_name}`"
+      emoji: "Emoji: {emoji}"
+      option_description: "Mô tả: {description}"
+      callback: "Callback: {callback}"
+      option_title: "Lựa chọn #{index}: {label}"
+    buttons:
+      title: "Nút bấm"
+      description: |
+        Bạn đang thực hiện quản lí các nút (button) trong server của bạn.
+
+        Button có thể trả về 1 phản hồi (response) dạng [BucketScript](https://bot.tudubucket.dev/bucketscript/example/), hoặc trả về người dùng 1 biểu mẫu (form) để người dùng nhập, giúp bạn thu thập dữ liệu.
+      empty: "Bạn không có button nào trong database. Hãy thêm một nút bằng cách bấm vào **`➕ Thêm`** ở phía dưới."
+      list: "Các button trong server:"
+      form_exists: "**{form_label}** (**ID form `{form_name}`**)"
+      form_unknown: "***Form không xác định***"
+      button_form: "> **ID: `{button_name}` **`>`** {label}**: Trả về form {form_title}"
+      button_response: "> **ID: `{button_name}` **`>`** {label}**: Phản hồi: *{callback}*"
+    form_questions:
+      title: "Quản lí câu hỏi"
+      description: "Bạn đang quản lí các câu hỏi cho form **{form_name}**."
+      field_title: "Tiêu đề"
+      field_description: "Miêu tả"
+      field_questions: "Các câu hỏi"
+      no_questions: "Chưa có câu hỏi nào"
+      paragraph_long: "Đoạn văn dài"
+      paragraph_short: "Văn bản ngắn"
+      question_format: "**{index}.** {title}\n> *{description}*\n> Loại: {paragraph_type}"
   selects:
     remove_fields: Chọn field để xóa
     insert_fields: Chọn field để thêm sau nó
     edit_fields: Chọn field để chỉnh sửa
+    edit:
+      placeholder: "Chọn select để sửa"
+    remove_option:
+      placeholder: "Chọn lựa chọn để xóa"
+    edit_option:
+      placeholder: "Chọn lựa chọn để sửa"
+    edit_button:
+      placeholder: "Chọn 1 nút để sửa"
+    edit_form:
+      placeholder: "Chọn 1 form để sửa"
+    form:
+      edit_question:
+        placeholder: "Chọn câu hỏi cần sửa"
+      delete_question:
+        placeholder: "Xóa một câu hỏi"
+    layout:
+      add_element:
+        placeholder: "Chọn một phần tử muốn thêm"
+      edit_element:
+        placeholder: "Chọn một phần tử muốn sửa"
   modals:
     channel:
       title: Đặt kênh
@@ -1900,6 +2025,232 @@ bucketscript:
         inline:
           label: Inline
           placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
+    button:
+      old:
+        fields:
+          name:
+            label: "ID Nút"
+            placeholder: "ID của nút, không phải tên hiển thị, chỉ được sử dụng chữ cái thường, dấu gạch _, và số"
+          label:
+            label: "Tên hiển thị"
+            placeholder: "Chữ hiển thị trên nút"
+          emoji:
+            label: "Emoji"
+            placeholder: "Emoji cho nút"
+          color:
+            label: "Màu của nút"
+            placeholder: "Chọn màu cho nút"
+      type:
+        title: "Loại button"
+        description: |
+          Có 2 loại nút:
+
+          > **1. Nút phản hồi bình thường** Khi bấm vào nút, bot trả về một phản hồi dạng [BucketScript](https://bot.tudubucket.dev/bucketscript/example/),
+          > _ _
+          > **2. Nút yêu cầu điền biểu mẫu (form)** Khi bấm vào nút, bot sẽ yêu cầu người dùng điền vào một biểu mẫu (form này cần được tạo ở lệnh **`/forms`**), sau đó bot sẽ gửi dữ liệu người dùng đã điền vào một kênh xác định.
+
+          Hãy chọn loại nút theo yêu cầu của bạn ở dưới:
+            title: "Nút"
+      fields:
+        form:
+          label: "Form"
+          description: "Chọn form để liên kết với nút này"
+          placeholder: "Chọn một form"
+        name:
+          label: "ID Nút"
+          placeholder: "ID của nút (chỉ chữ thường, số và gạch dưới)"
+        label:
+          label: "Nhãn"
+          placeholder: "Văn bản hiển thị trên nút"
+        emoji:
+          label: "Biểu tượng"
+          placeholder: "Dán mã Unicode hoặc chọn Emoji tùy chỉnh của server"
+        color:
+          label: "Màu nút"
+          placeholder: "Chọn màu nút (ví dụ: blurple, gray, green, red, custom)"
+        callback:
+          label: "Callback"
+          placeholder: "Tên callback được gọi khi nhấn nút"
+      delete:
+        title: "Xóa Nút"
+        select:
+          label: "Chọn nút để xóa"
+          placeholder: "Chọn một nút..."
+    select:
+      text:
+        title: "Thêm lựa chọn (Text)"
+        fields:
+          label:
+            label: "Tên hiển thị"
+            placeholder: "Label hiển thị cho lựa chọn"
+          description:
+            label: "Mô tả"
+            placeholder: "Mô tả ngắn cho lựa chọn, không bắt buộc"
+          emoji:
+            label: "Emoji"
+            placeholder: "Emoji cho lựa chọn, không bắt buộc"
+          callback:
+            label: "Phản hồi"
+            placeholder: "Phản hồi của selection"
+      form:
+        title: "Thêm lựa chọn (Form)"
+        fields:
+          label:
+            label: "Tên hiển thị"
+            placeholder: "Label hiển thị cho lựa chọn"
+          description:
+            label: "Mô tả"
+            placeholder: "Mô tả ngắn cho lựa chọn, không bắt buộc"
+          emoji:
+            label: "Emoji"
+            placeholder: "Emoji cho lựa chọn, không bắt buộc"
+          form:
+            label: "Form trả về"
+            description: "Chọn form sẽ gửi khi user chọn lựa chọn này"
+            placeholder: "Chọn 1 form"
+      info:
+        title: "Tạo trình chọn"
+        fields:
+          name:
+            label: "ID Trình chọn"
+            placeholder: "ID của trình chọn, không phải tên hiển thị, chỉ được sử dụng chữ cái thường, dấu gạch _, và số"
+          placeholder:
+            label: "Placeholder"
+            placeholder: "Chữ hiển thị khi không có lựa chọn"
+    delete_select:
+      label: "Chọn trình chọn (select) để xóa"
+      placeholder: "Chọn 1 trình chọn (select)"
+      title: "Xóa trình chọn"
+    delete_form:
+      label: "Chọn form cần xóa"
+      placeholder: "Chọn một form bạn muốn xóa"
+      title: "Xóa form"
+    form_info:
+      title: "Nút"
+      fields:
+        id:
+          label: "ID Form"
+          placeholder: "ID của form, không phải tên hiển thị, chỉ được sử dụng chữ cái thường, dấu gạch _ và số"
+        title:
+          label: "Tiêu đề"
+          placeholder: "Tiêu đề của form"
+        description:
+          label: "Miêu tả form"
+          placeholder: "Miêu tả về form"
+        channel:
+          label: "Kênh trả form"
+          description: "Bot sẽ gửi lại dữ liệu vào kênh này khi nhận được form từ member"
+          placeholder: "Chọn kênh trả form"
+        message:
+          label: "Tin nhắn"
+          placeholder: "Tin nhắn kèm theo khi form được gửi về (bạn có thể ping 1 role, hoặc ghi thêm lưu ý)"
+          default: "Đã nhận được 1 lượt điền form mới!"
+    form_question:
+      title: "Câu hỏi"
+      fields:
+        title:
+          label: "Nội dung"
+          placeholder: "Nội dung của câu hỏi"
+        description:
+          label: "Miêu tả"
+          placeholder: "Miêu tả của câu hỏi (không bắt buộc)"
+        is_paragraph:
+          label: "Câu trả lời có dài không?"
+          description: "Chọn loại câu trả lời"
+          placeholder: "Chọn 1 lựa chọn"
+          options:
+            long: "Đoạn văn dài"
+            short: "Văn bản ngắn"
+        required:
+          label: "Bắt buộc"
+          description: "Câu hỏi có bắt buộc phải trả lời không?"
+          placeholder: "Chọn 1 lựa chọn"
+          options:
+            yes: "Có"
+            no: "Không"
+    layout_remove:
+      title: "Xóa hàng"
+      label: "Hàng phần tử"
+      description: "Chọn hàng phần tử muốn xóa"
+      placeholder: "Chọn một phần tử"
+    gallery:
+      title: "Đường dẫn ảnh"
+      fields:
+        urls:
+          label: "Đường dẫn (URL) hình ảnh"
+          placeholder: "Đường dẫn (URL) tới hình ảnh, mỗi 1 ảnh là 1 dòng."
+        spoiler:
+          label: "Làm mờ ảnh"
+          description: "Có làm mờ các ảnh bằng cách gán là spoiler không?"
+    text_display:
+      title: "Ô chữ"
+      fields:
+        content:
+          label: "Nội dung"
+          description: "Hỗ trợ BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Nội dung của ô chữ"
+    section_thumbnail:
+      title: "Section - Thumbnail"
+      fields:
+        content:
+          label: "Nội dung"
+          description: "Hỗ trợ BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Nội dung của ô chữ trong Section này"
+        url:
+          label: "Đường dẫn (URL) hình ảnh"
+          placeholder: "Đường dẫn (URL) tới hình ảnh cho Thumbnail"
+        spoiler:
+          label: "Làm mờ ảnh"
+          description: "Có làm mờ ảnh bằng cách gán là spoiler không?"
+    layout_select:
+      title: "Ô lựa chọn"
+      label: "Ô lựa chọn"
+      description: "Chọn một ô lựa chọn để hiển thị"
+      placeholder: "Chọn 1 lựa chọn"
+    layout_button:
+      title: "Nút"
+      label: "Nút"
+      description: "Chọn một nút để hiển thị"
+      placeholder: "Chọn 1 lựa chọn"
+    section_button:
+      title: "Section"
+      fields:
+        content:
+          label: "Nội dung"
+          description: "Hỗ trợ BucketScript - https://bot.tudubucket.dev/bucketscript/functions"
+          placeholder: "Nội dung của ô chữ trong Section này"
+        button:
+          label: "Nút"
+          description: "Chọn một nút để hiển thị"
+          placeholder: "Chọn 1 lựa chọn"
+    container:
+      title: "Container"
+      fields:
+        color:
+          label: "Màu của container"
+          placeholder: "Màu cho container. Định dạng chấp nhận: #hex, rgb(số, số, số). Bỏ trống để không sử dụng màu"
+        spoiler:
+          label: "Làm mờ container"
+          description: "Có làm mờ container bằng cách gán là spoiler không?"
+  layout:
+    components:
+      gallery:
+        description: "Khung chứa các link ảnh, có thể chứa tới 10 ảnh"
+      text:
+        description: "Phần tử hiển thị chữ"
+      separator:
+        description: "Hàng phân chia"
+      section_image:
+        description: "Ô hiển thị chữ bên trái, và một khung ảnh ở bên phải"
+      section_button:
+        description: "Ô hiển thị chữ bên trái, và một button (không phải ảnh) ở bên phải"
+      button:
+        description: "Một nút bấm"
+      select:
+        description: "Một ô thả lựa chọn"
+      container:
+        description: "Một khung hiển thị, giống như embed"
+
   forms: 
     errors: 
       not_found: Server không có form nào mang ID `{0}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
@@ -1912,6 +2263,27 @@ bucketscript:
     missing_permissions: Bot không đủ quyền để gửi lại thông tin form cho server. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
     submitted: Chúng tôi đã ghi lại câu trả lời. Cảm ơn bạn đã nhập form!
   commands:
+    buttons:
+      description: "Quản lí các nút (button) trong server"
+    forms:
+      description: "Quản lí các biểu mẫu (form) trong server"
+    selects:
+      description: "Quản lí các ô lựa chọn kéo thả (selects) trong server"
+    layout:
+      description: "Tạo & Quản lí các layout (giao diện)"
+      subcommands:
+        create:
+          description: "Tạo một giao diện (layout)"
+          options:
+            name: "Chỉ định tên layout"
+        edit:
+          description: "Chỉnh sửa một giao diện (layout)"
+          options:
+            name: "Chỉ định tên layout"
+        delete:
+          description: "Xóa một giao diện (layout)"
+          options:
+            name: "Chỉ định tên layout"
     send: 
       description: Gửi một tin nhắn BucketScript
       options:
