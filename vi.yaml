@@ -2437,6 +2437,18 @@ userscript:
     invalid_channel: 'ID kênh không hợp lệ: `{}`.'
     cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
     cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
+  layout:
+    empty_layout_message: ">>> Có vẻ hơi trống trải - vì layout này chưa có gì cả.\n\nBạn có thể bắt đầu chỉnh sửa (thêm, thay đổi, hoặc xóa hàng) bằng cách chọn các lựa chọn ở dưới nhé!"
+    empty_container_message: ">>> Container này chưa có gì cả. Bạn hãy bắt đầu chỉnh sửa để làm mất dòng chữ này nhé!"
+    limit_exceeded: "Không thể thêm do layout vượt quá giới hạn khi khung vật liệu được thêm."
+    reload_failed: "Chúng tôi không thể tải lại layout do dữ liệu của layout có thể đã bị hỏng.\nThao tác chỉnh sửa vừa rồi của bạn sẽ không được lưu, và bot sẽ hiển thị lại layout trước khi được chỉnh sửa."
+    statistics_display: "Bạn đã sử dụng tổng cộng **`{chars:,}`**/**`3,000`** kí tự & **`{components:,}`**/**`30`** khung vật liệu."
+    duplicate_select: "Select này đã được thêm trước đó. Bạn không thể thêm 2 select có cùng 1 ID vào 1 layout."
+    duplicate_button: "Nút này đã được thêm trước đó. Bạn không thể thêm 2 nút có cùng 1 ID vào 1 layout."
+    unknown_button_label: "Nút không xác định: {}"
+    unknown_select_placeholder: "Select không xác định: {}"
+    button_not_found: "Server không có nút nào mang ID `{}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nút nhé!"
+    select_not_found: "Server không có select nào mang tên `{}`. Ô lựa chọn này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại nhé!"
     missing_permission:
       send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
       read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."

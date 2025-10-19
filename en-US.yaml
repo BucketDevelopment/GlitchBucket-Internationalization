@@ -2436,6 +2436,18 @@ userscript:
     invalid_channel: Invalid channel ID `{}`.
     cannot_add_roles: "You are trying to add roles that's has elevated permissions, or it's equal or higher than current bot highest role's position."
     cannot_remove_roles: "You are trying to remove roles that's has elevated permissions, or it's equal or higher than current bot highest role's position."
+  layout:
+    empty_layout_message: ">>> Looks a bit empty - this layout doesn't have anything yet.\n\nYou can start editing (adding, changing, or deleting rows) by selecting the options below!"
+    empty_container_message: ">>> This container doesn't have anything yet. Start editing to make this text disappear!"
+    limit_exceeded: "Cannot add due to layout exceeding limits when the component is added."
+    reload_failed: "We cannot reload the layout because the layout data may be corrupted.\nYour recent edit will not be saved, and the bot will display the layout from before the edit."
+    statistics_display: "You have used a total of **`{chars:,}`**/**`3,000`** characters & **`{components:,}`**/**`30`** components."
+    duplicate_select: "This select has already been added before. You cannot add 2 selects with the same ID to 1 layout."
+    duplicate_button: "This button has already been added before. You cannot add 2 buttons with the same ID to 1 layout."
+    unknown_button_label: "Unknown button: {}"
+    unknown_select_placeholder: "Unknown select: {}"
+    button_not_found: "The server doesn't have any button with ID `{}`. This button may have been deleted, please contact the server Administrator to fix it!"
+    select_not_found: "The server doesn't have any select with name `{}`. This select may have been deleted, please contact the server Administrator to fix it!"
     missing_permission:
       send_messages: "Bot Missing Permission: Send Messages"
       read_message_history: "`Reply` requires **Read Message History** permission."
