@@ -3292,6 +3292,7 @@ server:
         7days: Last 7 days
         30days: Last 30 days
     role:
+      description: Manage server roles
       members:
         description: Show members of a specific role
         options:

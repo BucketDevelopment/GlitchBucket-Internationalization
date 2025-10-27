@@ -3291,6 +3291,7 @@ server:
         7days: 7 ngày qua
         30days: 30 ngày qua
     role:
+      description: Quản lí role trong server
       members:
         description: Hiển thị thành viên của một vai trò cụ thể
         options:
