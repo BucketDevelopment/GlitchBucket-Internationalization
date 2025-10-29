@@ -3273,7 +3273,7 @@ server:
         security:
           text: Security
           value: |
-            Verfivication Level: {}
+            Verification Level: {}
             Invite Paused: {}
             Direct Message Paused: {}
         verification:
