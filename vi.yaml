@@ -4125,13 +4125,13 @@ ticket:
     unclaimed: "{} đã bỏ nhận ticket này."
     deleted: Ticket đã bị xóa.
   messages:
-    claimed: "Ticket hiện được claim bởi {user}."
+    claimed: "Ticket hiện được claim bởi {}."
     creating: "Đang tạo một ticket..."
     created: "Đã tạo một ticket {}."
     transcript: "Transcript của ticket {}:"
     transcript_dm: "Transcript của ticket `#{}` tại **{}**:"
   feedback:
-    is_supporter: "Bạn không thể đánh giá ticket này, vì bạn thuộc đội ngũ hỗ trợ của {guild}."
+    is_supporter: "Bạn không thể đánh giá ticket này, vì bạn thuộc đội ngũ hỗ trợ của {}."
     no_messages: "Bạn không thể đánh giá ticket này, vì bạn chưa nhắn bất kì tin nhắn nào vào ticket."
   form:
     required: Bắt buộc
@@ -4140,10 +4140,10 @@ ticket:
       paragraph: Dài
   priority:
     panel_default: "Cài đặt của bảng ticket"
-    position: "Vị trí: #{position}"
+    position: "Vị trí: #{}"
     for_panel: "Dành cho bảng ticket này"
     default_name: "tên ticket là mặc định"
-    custom_name: "tên ticket là `#{scheme}`"
+    custom_name: "tên ticket là `#{}`"
   type:
     channel:
       label: Kênh
