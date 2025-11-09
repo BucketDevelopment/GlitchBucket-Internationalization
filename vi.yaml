@@ -3630,24 +3630,78 @@ ticket:
       title: "Mở ticket"
       label: "{}"
       placeholder: "{}"
+    form_input:
+      modal_title: Form Ticket
+      title:
+        label: Nội dung
+        placeholder: Nội dung của câu hỏi, chính là chữ nhỏ in đậm ở trên
+      description:
+        label: Miêu tả
+        placeholder: Miêu tả của câu hỏi, chính là dòng chữ mờ này. Không bắt buộc
+      is_paragraph:
+        label: Câu trả lời có dài không?
+        placeholder: Để trống thì là không, nhập bất kì kí tự nào sẽ là có. Nếu có thì khung hiển thị câu hỏi sẽ to hơn.
+      required:
+        label: Bắt buộc
+        placeholder: Để trống thì là không, nhập bất kì kí tự nào sẽ là có.
+    button_input:
+      title: Nút cho bảng ticket
+      label:
+        label: Tên
+        placeholder: Tên của nút bấm, có thể để trống
+      description:
+        label: Miêu tả
+        placeholder: Miêu tả của ticket, chỉ hiển thị khi sử dụng dropdown
+      emoji:
+        label: Emoji
+        placeholder: "Có thể là 1 Unicode/Custom Emoji dạng <:emoji:12345678901234567>"
+    open_message:
+      title: Tin nhắn mở ticket
+      content:
+        label: Nội dung
+        placeholder: Nội dung tin nhắn khi một ticket được mở
+    panel_input:
+      title: Thông tin bảng ticket
+      name:
+        label: Tên bảng Ticket
+        placeholder: Tên của bảng ticket, hiển thị trên nút bấm mở ticket
+      description:
+        label: Miêu tả
+        placeholder: Miêu tả bảng ticket, chỉ hiển thị khi bạn sử dụng dropdown
+    priority:
+      title: Ưu tiên
+      position:
+        label: Vị trí
+        placeholder: Thứ tự ưu tiên cho role này (1 - 99), càng cao thì độ ưu tiên càng lớn
+      name_scheme:
+        label: Tên ticket
+        placeholder: Định dạng riêng tên ticket cho role ưu tiên này. Có thể bỏ trống để sử dụng tên mặc định
     name_schema:
       title: Định dạng tên ticket
       label: Tên ticket
       placeholder: "Ví dụ: ticket-{id}"
+    name_scheme:
+      title: Định dạng tên ticket
+      label: Tên Ticket
+      placeholder: "Tên của ticket, chính là tên kênh. Có thể sử dụng {id} thay cho ID Ticket (vd: ticket-{id})"
     priority_name:
       label: Tên ticket
       placeholder: "Định dạng riêng tên ticket cho role ưu tiên này. Có thể bỏ trống để sử dụng tên mặc định"
   buttons:
     open: Tạo ticket
     close: Đóng ticket
+    close_with_reason: Đóng với lí do
     reopen: Mở lại ticket
     claim: Nhận ticket
     unclaim: Bỏ nhận ticket
     transcript: Bản lưu trữ
+    view_transcript: Xem Transcript
     delete: Xóa ticket
     back: Trở lại
     add_panel: Thêm một bảng (danh mục) ticket
+    add_question: Thêm một câu hỏi
     change_name: Đổi tên
+    change_display: Thay đổi hiển thị
     decrease: Giảm
     increase: Tăng
     allow_user_close: Người mở được phép đóng
@@ -3659,12 +3713,55 @@ ticket:
     allow_claim: Cho phép người hỗ trợ nhận ticket
     reps_view: Người hỗ trợ khác được phép xem ticket
     reps_reply: Người hỗ trợ khác được phép nhắn vào ticket
+    use_dropdown: Sử dụng dropdown
+    panel_message: Tin nhắn ngoài bảng
+    edit_embed: Sửa Embed
+    edit_message_content: Sửa nội dung tin nhắn
+  colors:
+    green: "Xanh lá"
+    blurple: "Xanh tím"
+    gray: "Xám"
+    red: "Đỏ"
+  config:
+    category:
+      label: Category tạo ticket
+      description: Chỉ định category cho ticket được tạo
+    form:
+      label: Quản lí câu hỏi
+      description: Chỉnh sửa danh sách câu hỏi khi mở ticket
+    supporter:
+      label: Role hỗ trợ
+      description: Chỉ định role có quyền hỗ trợ trong ticket
+    button:
+      label: Nút mở ticket
+      description: Chỉnh sửa giao diện nút bấm mở ticket
+    open_message:
+      label: Tin nhắn mở
+      description: Tin nhắn sẽ gửi khi mở ticket
+    panel_message:
+      label: Tin nhắn bảng
+      description: Tin nhắn hiển thị ngoài bảng ticket
+    priority:
+      label: Ưu tiên
+      description: Cài đặt ticket ưu tiên
   selects:
     category: Chọn danh mục ticket
     ticket_type: Chọn thể loại ticket
     transcript_channel: Chọn kênh transcript
     blacklist_role: Chọn blacklist role
     configuration: Chọn config bạn muốn sửa
+    config_option: Chọn cài đặt cần chỉnh sửa
+    edit_panel: Chọn bảng ticket cần sửa
+    delete_panel: Xóa một bảng ticket
+    edit_question: Chọn câu hỏi cần sửa
+    delete_question: Xóa một câu hỏi
+    add_priority_role: Chọn một role để thêm vào hỗ trợ ưu tiên
+    remove_priority_role: Xóa một role khỏi hỗ trợ ưu tiên
+    support_roles: Chọn các role hỗ trợ đối với bảng ticket này
+    button_color: Chọn màu nút
+    multipanel_categories: Chọn các danh mục ticket cần gắn cho multi-panel này
+    no_panels: "Chưa có bảng ticket nào trong config. Không thể chọn bảng cho multi-panel."
+    no_priority_roles: "Chưa có role ưu tiên nào trong config. Không thể thực hiện xóa."
   views:
     ticket_initialize:
       open: Tạo ticket
@@ -3791,11 +3888,68 @@ ticket:
       option_blacklist: Blacklist
       option_blacklist_description: Chặn một role bất kì khỏi tạo ticket
   embeds:
+    footer: Vận hành bởi bot.tudubucket.dev
     setup:
       title: Thiết lập hệ thống ticket
+    button_manage:
+      title: Quản lí nút bảng ticket
+      description: "Bạn đang thực hiện chỉnh sửa nút bấm của bảng ticket. \n\nBạn có thể chọn 1 trong 4 màu ở dưới, hoặc chọn **`🔠 Thay đổi hiển thị`** để sửa **Emoji**, **Tên** và **Miêu tả** (Miêu tả chỉ áp dụng cho dropdown)  \n\nHãy thực hiện chỉnh sửa ở phía dưới:"
+    category_manage:
+      title: Quản lí bảng ticket
+      channel_mode: "Bạn đang thực hiện chỉnh sửa category cho bảng ticket {} **{}**.Ticket mới khi được tạo sẽ đẩy vào category này.\n\nCategory hiện tại: {}"
+      thread_mode: "Bạn đang thực hiện chỉnh sửa kênh cho bảng ticket {} **{}**. Ticket mới khi được tạo sẽ đẩy vào kênh này dưới dạng thread.\n\nKênh hiện tại: {}"
+    default_open:
+      title: Khu vực hỗ trợ
+      description: "Chờ một chút và đội ngũ hỗ trợ sẽ đến hỗ trợ bạn nhé! Và hãy đảm bảo rằng bạn đã đọc kĩ luật khi tạo ticket."
+      ticket_number: Ticket số
+      opened_by: Người mở ticket
+      opened_at: Thời gian mở
+    default_panel:
+      title: Tạo ticket
+      description: "Để được hỗ trợ, vui lòng bấm **`🎫 Tạo ticket`** ở phía dưới."
+    feedback:
+      title: Ticket đã được đóng
+      id: ID Ticket
+      category: Danh mục
+      creator: Người tạo
+      closed_by: Đóng bởi
+      opened_at: Mở lúc
+      claimed_by: Claim bởi
+      rating: Đánh giá
+      close_reason: Lí do đóng
+      description: "**Category:** {}\n**Miêu tả:** {}"
+    form_manage:
+      title: Quản lí câu hỏi
+      description: "Bạn đang thực hiện quản lí các câu hỏi cho bảng ticket. Hãy chọn câu hỏi cần chỉnh sửa hoặc thêm câu hỏi mới ở bên dưới."
+      empty: "Hiện chưa có câu hỏi nào cho bảng ticket này."
+    open_message:
+      title: Tin nhắn mở ticket
+      description: "Bạn đang thực hiện chỉnh sửa tin nhắn chào mừng khi mở ticket của bảng {} **{}**."
+    panel_edit:
+      title: Quản lí bảng ticket
+      description: "Chọn cài đặt cần chỉnh sửa cho bảng ticket {} **{}**."
+    priority:
+      title: Thứ tự ưu tiên ticket
+      description: "Bạn đang thực hiện chỉnh sửa thứ tự ưu tiên của bảng {} **{}**.\n"
+      current_roles: "Các role ưu tiên hiện có:"
+      empty: "Hiện chưa có các role ưu tiên cho bảng ticket này, bạn có thể thêm tối đa 2 role ưu tiên bằng cách chọn ở bên dưới"
+      default_setting: "Cài đặt mặc định:"
+    rating_sent:
+      title: Đã gửi feedback
+      description: "Đánh giá của bạn đã được ghi lại. Cảm ơn bạn đã phản hồi về chất lượng ticket!"
+    supporters:
+      title: Đội ngũ Hỗ trợ ticket
+      description: "Bạn đang thực hiện chỉnh sửa các role hỗ trợ ticket của bảng {} **{}**.\nCác role này sẽ được thêm vào ticket mỗi khi được mở.\n\n"
+      current: "Các role hỗ trợ hiện tại: "
+      none: "Các role hỗ trợ hiện tại: *Không có*"
     panel_management:
       title: Quản lí bảng ticket
       description: "Bạn đang thực hiện quản lí các bảng ticket. Mỗi một nút bấm mở ticket được coi là một bảng ticket. Hãy thực hiện chỉnh sửa ở phía dưới:"
+    multipanel:
+      title: "Quản lí các bảng ticket"
+      description: "Bạn đang thực hiện chỉnh sửa các bảng ticket (multi-panel). Các cài đặt hiện tại:"
+      use_dropdown: "🔽 Sử dụng hộp chọn (dropdown) thay cho nút (button)"
+      assigned_panels: "Các bảng ticket được gắn với multi-panel"
     panel_message:
       title: "Tin nhắn bảng: {}"
       description: "Bạn đang thực hiện chỉnh sửa tin nhắn được hiển thị ở trong bảng ticket (button {}).\nBạn có thể chỉnh embed hoặc nội dung văn bản (hoặc cả 2). Việc chỉnh embed được thực hiện thông qua **/embed editor**, và việc chỉnh nội dung văn bản được thực hiện qua **BucketScript**. Hãy bấm các nút bên dưới để chỉnh sửa."
@@ -3899,6 +4053,7 @@ ticket:
         form_title: Vấn đề của bạn
         form_placeholder: Hãy miêu tả vấn đề của bạn một cách ngắn gọn
         support_role_name: Hỗ trợ Ticket
+        supporter_role_name: Hỗ trợ Ticket
         admin_role_name: Admin Ticket
     close:
       description: Đóng ticket hiện tại
@@ -3969,6 +4124,33 @@ ticket:
     claimed: "{} đã nhận ticket này."
     unclaimed: "{} đã bỏ nhận ticket này."
     deleted: Ticket đã bị xóa.
+  messages:
+    claimed: "Ticket hiện được claim bởi {user}."
+    creating: "Đang tạo một ticket..."
+    created: "Đã tạo một ticket {}."
+    transcript: "Transcript của ticket {}:"
+    transcript_dm: "Transcript của ticket `#{}` tại **{}**:"
+  feedback:
+    is_supporter: "Bạn không thể đánh giá ticket này, vì bạn thuộc đội ngũ hỗ trợ của {guild}."
+    no_messages: "Bạn không thể đánh giá ticket này, vì bạn chưa nhắn bất kì tin nhắn nào vào ticket."
+  form:
+    required: Bắt buộc
+    type:
+      short: Ngắn
+      paragraph: Dài
+  priority:
+    panel_default: "Cài đặt của bảng ticket"
+    position: "Vị trí: #{position}"
+    for_panel: "Dành cho bảng ticket này"
+    default_name: "tên ticket là mặc định"
+    custom_name: "tên ticket là `#{scheme}`"
+  type:
+    channel:
+      label: Kênh
+      description: Ticket sẽ là 1 kênh ở trong 1 category
+    thread:
+      label: Thread
+      description: Ticket sẽ là 1 thread ở trong 1 kênh
   default:
     welcome_text: "Cảm ơn {user} đã mở ticket! {supporters} sẽ hỗ trợ bạn sớm nhất có thể 🎟️✨"
     welcome_embed:
@@ -3994,3 +4176,17 @@ ticket:
       not_provided: Không cung cấp
   errors:
     no_category: Danh mục của ticket này không tìm thấy category để đẩy ticket mới vào. Vui lòng kiểm tra lại cài đặt panel.
+    not_found: Không thể tìm thấy ticket trong hệ thống.
+    already_claimed: Ticket đã được claim bởi một người khác.
+    no_permission_claim: Bạn không có đủ quyền để claim ticket này.
+    no_permission_close: Bạn không có đủ quyền để đóng ticket này.
+    blacklisted: Bạn không thể tạo ticket vì bạn nằm trong danh sách bị cấm của server.
+    concurrent_limit: "Bạn đã đạt giới hạn số lượng ticket đang mở cùng lúc ({}). Hãy yêu cầu Quản trị viên kiểm tra lại các ticket đang mở trước khi mở thêm ticket khác.\nCác ticket đang mở: {}"
+    invalid_emoji: "Emoji không hợp lệ. Vui lòng nhập một emoji Unicode hoặc custom emoji."
+    max_priority_roles: "Bạn đã đạt giới hạn số lượng role ưu tiên (tối đa 2 role)."
+    max_questions: "Bạn đã đạt giới hạn số lượng câu hỏi (tối đa 5 câu hỏi)."
+    no_thread_channel: "Không tìm thấy channel thread để tạo ticket, vui lòng báo cáo tới admin của server để thực hiện setup lại."
+    cooldown: "Bạn sẽ có thể xem transcript của một ticket khác <t:{}:R>"
+    max_panels: "Bạn chỉ có thể có tối đa 5 danh mục ticket."
+    invalid_priority: "Thứ tự ưu tiên cần phải là 1 số dương trong khoảng 1 đến 99, vui lòng nhập lại."
+    priority_exists: "Đã có role <@&{}> mang thứ tự ưu tiên `{}`, vui lòng nhập lại thứ tự ưu tiên khác."
