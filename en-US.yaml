@@ -3995,3 +3995,578 @@ ticket:
       not_provided: Not provided
   errors:
     no_category: The ticket panel's category could not be found. Please check the panel settings.
+
+ticket:
+  modals:
+    close:
+      title: Close Ticket
+      label: Reason for closing
+      placeholder: "Enter the reason for closing this ticket"
+    close_timer:
+      title: Duration
+      label: Duration
+      placeholder: "Specify duration in short-day format (e.g., 10m25s), or seconds (e.g., 86400)"
+    form:
+      title: "Open Ticket"
+      label: "{}"
+      placeholder: "{}"
+    form_input:
+      modal_title: Ticket Form
+      title:
+        label: Subject
+        placeholder: The subject of the query, the small bold text above
+      description:
+        label: Description
+        placeholder: The description of the query, this faded text. Optional
+      is_paragraph:
+        label: Is this a long answer?
+        placeholder: Leave empty for no, enter any character for yes. If yes, the answer box will be larger.
+      required:
+        label: Required
+        placeholder: Leave empty for no, enter any character for yes.
+    button_input:
+      title: Ticket Panel Button
+      label:
+        label: Label
+        placeholder: The text on the button, can be left empty
+      description:
+        label: Description
+        placeholder: The ticket's description, only visible when using a dropdown
+      emoji:
+        label: Emoji
+        placeholder: "Can be a Unicode/Custom Emoji (e.g., <:emoji:12345678901234567>)"
+    open_message:
+      title: Ticket Open Message
+      content:
+        label: Content
+        placeholder: The message content when a ticket is opened
+    panel_input:
+      title: Ticket Panel Information
+      name:
+        label: Ticket Panel Name
+        placeholder: The name of the ticket panel, displayed on the open ticket button
+      description:
+        label: Description
+        placeholder: The ticket panel description, only visible when using a dropdown
+    priority:
+      title: Priority
+      position:
+        label: Position
+        placeholder: Priority order for this role (1 - 99), higher is more important
+      name_scheme:
+        label: Ticket Name
+        placeholder: Custom ticket name format for this priority role. Leave empty to use default
+    name_schema:
+      title: Ticket Name Format
+      label: Ticket Name
+      placeholder: "Example: ticket-{id}"
+    name_scheme:
+      title: Ticket Name Format
+      label: Ticket Name
+      placeholder: "The ticket's name (channel name). You can use {id} for the Ticket ID (e.g., ticket-{id})"
+    priority_name:
+      label: Ticket Name
+      placeholder: "Custom ticket name format for this priority role. Leave empty to use default"
+  buttons:
+    open: Create Ticket
+    close: Close Ticket
+    close_with_reason: Close with Reason
+    reopen: Reopen Ticket
+    claim: Claim Ticket
+    unclaim: Unclaim Ticket
+    transcript: Transcript
+    view_transcript: View Transcript
+    delete: Delete Ticket
+    back: Back
+    add_panel: Add a Ticket Panel
+    add_question: Add a Question
+    change_name: Change Name
+    change_display: Change Display
+    decrease: Decrease
+    increase: Increase
+    allow_user_close: Allow User to Close
+    allow_feedback: Allow Feedback
+    auto_close: Auto Close
+    auto_close_on_leave: Auto-close on Leave
+    auto_close_last_author_message: Auto-close on Author Inactivity
+    auto_close_last_message: Auto-close on General Inactivity
+    allow_claim: Allow Supporters to Claim
+    reps_view: Other Supporters Can View
+    reps_reply: Other Supporters Can Reply
+    use_dropdown: Use Dropdown
+    panel_message: Panel Message
+    edit_embed: Edit Embed
+    edit_message_content: Edit Message Content
+  colors:
+    green: "Green"
+    blurple: "Blurple"
+    gray: "Gray"
+    red: "Red"
+  config:
+    category:
+      label: Ticket Creation Category
+      description: Specify the category for new tickets
+    form:
+      label: Manage Questions
+      description: Edit the list of questions for opening a ticket
+    supporter:
+      label: Support Role
+      description: Specify roles that have support permissions in tickets
+    button:
+      label: Open Ticket Button
+      description: Edit the appearance of the open ticket button
+    open_message:
+      label: Open Message
+      description: The message sent when a ticket is opened
+    panel_message:
+      label: Panel Message
+      description: The message displayed within the ticket panel
+    priority:
+      label: Priority
+      description: Configure priority ticket settings
+  selects:
+    category: Select Ticket Category
+    ticket_type: Select Ticket Type
+    transcript_channel: Select Transcript Channel
+    blacklist_role: Select Blacklist Role
+    configuration: Select configuration to edit
+    config_option: Select setting to edit
+    edit_panel: Select panel to edit
+    delete_panel: Delete a ticket panel
+    edit_question: Select question to edit
+    delete_question: Delete a question
+    add_priority_role: Select a role to add to priority support
+    remove_priority_role: Remove a role from priority support
+    support_roles: Select support roles for this ticket panel
+    button_color: Select button color
+    multipanel_categories: Select ticket panels to assign to this multi-panel
+    no_panels: "No ticket panels exist in this config. Cannot select a panel for the multi-panel."
+    no_priority_roles: "No priority roles exist in this config. Cannot perform deletion."
+  views:
+    ticket_initialize:
+      open: Create Ticket
+      close: Close
+      reopen: Reopen
+    ticket_panel_edit:
+      add_panel: Add a Ticket Panel (Category)
+      refresh: Refresh
+      delete_panel: Delete This Panel
+      message: Panel Message
+      welcome: Welcome Message
+      form: Question Form
+      button: Button Label & Emoji
+      category: Category (or Channel)
+      priority: Priority
+      support_role: Support Role
+    ticket_panel_message_edit:
+      back: Back
+      edit_embed: Edit Embed
+    ticket_panel_welcome_message_edit:
+      back: Back
+      edit_message: Edit Text Message
+      edit_embed: Edit Embed
+    ticket_form:
+      back: Back
+      add_question: Add Question
+      edit_question: Edit Question
+      delete_question: Delete Question
+    ticket_form_input:
+      title: Add Question
+      position_label: Question Position (0 to 4)
+      position_placeholder: Specify question position (0-4)
+      question_label: Question
+      question_placeholder: Enter the question
+      placeholder_label: Placeholder
+      placeholder_placeholder: Enter the placeholder
+      min_label: Minimum Length
+      min_placeholder: Specify minimum length
+      max_label: Maximum Length
+      max_placeholder: Specify maximum length
+      style_label: Question Type (short/paragraph)
+      style_placeholder: Specify question type
+    ticket_button:
+      back: Back
+      edit_label: Edit Button Label
+      edit_emoji: Edit Button Emoji
+      remove_emoji: Remove Button Emoji
+    ticket_button_label_input:
+      title: Edit Button Label
+      label: Button Label
+      placeholder: Enter the button label
+    ticket_button_emoji_input:
+      title: Edit Button Emoji
+      label: Button Emoji
+      placeholder: Enter the button emoji
+    ticket_priority:
+      back: Back
+      add_priority: Add Priority
+      edit_priority: Edit Priority
+      delete_priority: Delete Priority
+    ticket_priority_input:
+      title: Add Priority
+      position_label: Priority Position (0 to 9)
+      position_placeholder: Specify priority position (0-9)
+      role_label: Priority Role
+      role_placeholder: Priority Role ID
+    ticket_support_role:
+      back: Back
+      add_role: Add Support Role
+      delete_role: Delete Support Role
+    ticket_category:
+      back: Back
+      channel_placeholder: Select category (or channel for thread type)
+      category_placeholder: Select category
+    ticket_panel_viewer:
+      panel_select_placeholder: Select the ticket panel you want to edit
+    ticket_type:
+      back: Back
+      select_placeholder: Select Ticket Type
+      option_channel: CHANNEL - Create Channel
+      option_channel_description: Create tickets as text channels
+      option_thread: THREAD - Create Thread
+      option_thread_description: Create tickets as threads
+    ticket_transcript:
+      back: Back
+      select_placeholder: Select Transcript Channel
+    ticket_name_schema:
+      back: Back
+      change_name: Change Name
+    ticket_maximum_concurrent:
+      back: Back
+      decrease: Decrease
+      increase: Increase
+    ticket_close_configuration:
+      back: Back
+      allow_user_close: Allow User to Close
+      allow_feedback: Allow Feedback
+      auto_close_toggle: Auto Close
+      auto_close_on_leave: Auto-close on Leave
+      auto_close_last_message: Auto-close on Author Inactivity
+      auto_close_no_message: Auto-close on General Inactivity
+    ticket_claim_configuration:
+      back: Back
+      allow_claim: Allow Supporters to Claim
+      reps_view: Other Supporters Can View
+      reps_reply: Other Supporters Can Reply
+    ticket_blacklist:
+      back: Back
+      select_placeholder: Select Blacklist Role
+    ticket_configuration:
+      select_placeholder: Select configuration to edit
+      option_type: Type
+      option_type_description: The ticket type the server uses (channel or thread)
+      option_transcript: Transcript
+      option_transcript_description: Channel to save closed tickets
+      option_name: Ticket Name Format
+      option_name_description: The format for ticket names (#ticket-{id})
+      option_concurrent: Tickets per User
+      option_concurrent_description: Maximum concurrent open tickets per user
+      option_close: Close
+      option_close_description: Settings for closing permissions & auto-close
+      option_claim: Claim
+      option_claim_description: Settings for ticket claiming by Supporters
+      option_blacklist: Blacklist
+      option_blacklist_description: Block any role from creating tickets
+  embeds:
+    footer: Powered by bot.tudubucket.dev
+    setup:
+      title: Ticket System Setup
+    button_manage:
+      title: Manage Ticket Panel Button
+      description: "You are editing the button for the ticket panel. \n\nYou can choose one of the 4 colors below, or select **`🔠 Change Display`** to edit the **Emoji**, **Name**, and **Description** (Description only applies to dropdowns). \n\nPlease make your changes below:"
+    category_manage:
+      title: Manage Ticket Panel
+      channel_mode: "You are editing the category for panel {} **{}**. New tickets will be created in this category.\n\nCurrent Category: {}"
+      thread_mode: "You are editing the channel for panel {} **{}**. New tickets will be created as threads in this channel.\n\nCurrent Channel: {}"
+    default_open:
+      title: Support Area
+      description: "Please wait a moment, our support team will be with you shortly! Please ensure you have read the rules before creating a ticket."
+      ticket_number: Ticket ID
+      opened_by: Opened by
+      opened_at: Time Opened
+    default_panel:
+      title: Create Ticket
+      description: "To receive support, please press **`🎫 Create Ticket`** below."
+    feedback:
+      title: Ticket Closed
+      id: Ticket ID
+      category: Category
+      creator: Creator
+      closed_by: Closed by
+      opened_at: Opened at
+      claimed_by: Claimed by
+      rating: Rating
+      close_reason: Close Reason
+      description: "**Category:** {}\n**Description:** {}"
+    form_manage:
+      title: Manage Questions
+      description: "You are managing the questions for this ticket panel. Select a question to edit or add a new one below."
+      empty: "There are currently no questions for this ticket panel."
+    open_message:
+      title: Ticket Open Message
+      description: "You are editing the welcome message sent when opening a ticket for panel {} **{}**."
+    panel_edit:
+      title: Manage Ticket Panel
+      description: "Select a setting to edit for ticket panel {} **{}**."
+    priority:
+      title: Ticket Priority
+      description: "You are editing the ticket priority for panel {} **{}**.\n"
+      current_roles: "Current priority roles:"
+      empty: "There are currently no priority roles for this ticket panel. You can add up to 2 priority roles below."
+      default_setting: "Default Settings:"
+    rating_sent:
+      title: Feedback Sent
+      description: "Your rating has been recorded. Thank you for your feedback on the ticket quality!"
+    supporters:
+      title: Ticket Support Team
+      description: "You are editing the support roles for panel {} **{}**.\nThese roles will be added to every ticket created.\n\n"
+      current: "Current support roles: "
+      none: "Current support roles: *None*"
+    panel_management:
+      title: Ticket Panel Management
+      description: "You are managing ticket panels. Each 'create ticket' button is considered one panel. Please make your edits below:"
+    multipanel:
+      title: "Manage Ticket Panels"
+      description: "You are editing the multi-panel settings. Current settings:"
+      use_dropdown: "🔽 Use dropdown menu instead of buttons"
+      assigned_panels: "Panels assigned to this multi-panel"
+    panel_message:
+      title: "Panel Message: {}"
+      description: "You are editing the message displayed in the ticket panel (button {}).\nYou can edit the embed or the text content (or both). Embed editing is done via **/embed editor**, and text content editing is done via **BucketScript**. Click the buttons below to edit."
+    panel_welcome:
+      title: "Welcome Message: {}"
+      description: "You are editing the welcome message displayed when a ticket is opened (panel {}).\nYou can edit the embed or the text content (or both). Embed editing is done via **/embed editor**, and text content editing is done via **BucketScript**. Click the buttons below to edit."
+    ticket_form:
+      title: "Question Form: {}"
+      description: "You are editing the question form for panel {}. When opening a ticket, the user must fill out this form.\n\n"
+    ticket_button:
+      title: "Button: {}"
+      description: "You are editing the label/emoji of the button used to open tickets (panel {})."
+      current_label: "Current button label: `{}`"
+      current_emoji: "Current button emoji: {}"
+    ticket_priority:
+      title: "Priority: {}"
+      description: "You are editing the ticket priority for panel {}. Each role can have its own priority. Higher priority roles will have a different ticket name format than lower priority ones. Edit the priority settings below.\n\n"
+    ticket_support_role:
+      title: "Support Role: {}"
+      description: "You are editing the support roles for panel {}. These roles can view, close, and manage tickets from this panel.\n\n"
+    ticket_category:
+      title: "Category/Channel: {}"
+      description_channel: "You are editing the category for panel {}. The category is where new tickets will be created. Adjust the category below."
+      description_thread: "You are editing the channel for panel {}. The channel is where new tickets (as threads) will be created. Adjust the channel below."
+      current_category: "Current Category: <#{}>"
+      current_channel: "Current Channel: <#{}>"
+      not_set: "Current Category: *Not set*"
+    ticket_type:
+      title: Ticket Type
+      description: |
+        You are editing the ticket type. There are 2 types:
+
+        - `CHANNEL`: The traditional method, the bot will create a **channel** in a specific **category**.
+        - `THREAD`: The new method, the bot will create a **thread** in a specific **channel**.
+
+        Each type has its own pros and cons:
+        - `CHANNEL`: A category can have a maximum of 50 tickets, and a server a maximum of 400-500 tickets.
+        - `THREAD`: Tickets must be joined manually and are not immediately visible like the `CHANNEL` type.
+
+        **If you are unsure which mode to use, we recommend keeping the `CHANNEL` mode.**
+        Please adjust the ticket type below. Current type: `{}`
+    ticket_transcript:
+      title: Ticket Transcript Channel
+      description: "You are editing the transcript channel. When a ticket is closed, its data will be sent to this channel.\nAdjust the transcript channel below. "
+      current_channel: "Current Transcript Channel: <#{}>"
+      not_set: "Current Transcript Channel: *Not set*"
+    ticket_name_schema:
+      title: Ticket Name
+      description: "You are editing the name format for new tickets.\nCurrent name format: `{}`"
+    ticket_maximum_concurrent:
+      title: Tickets per User
+      description: "You are editing the **maximum number of tickets a single user can have open at one time** (excluding closed tickets).\nIncrease/Decrease the number below. Max = 10, Min = 1.\n\nCurrent value: **{} ticket(s)/user**"
+    ticket_close_configuration:
+      title: Ticket Close Settings
+      description: "You are editing settings related to closing tickets. Available settings:"
+      field_allow_user_close: "👤 Allow creator to self-close ticket"
+      field_allow_feedback: "🌟 Allow ticket feedback"
+      field_auto_close: "🔐 Auto-close tickets"
+      field_auto_close_on_leave: "🏃‍♂️ Close when creator leaves"
+      field_auto_close_timing: "💬🔐 Auto-close on inactivity"
+      yes: "✅ Yes"
+      no: "{} No"
+      after_time: "After **{}**"
+      from_everyone: "💬 From everyone: {}"
+      from_author: "✍️ From ticket creator: {}"
+    ticket_claim_configuration:
+      title: Ticket Claim Settings
+      description: "You are editing settings related to ticket claiming by supporters. Available settings:"
+      field_allow_claim: "👤 Allow supporters to claim tickets"
+      field_reps_view: "👀 Other supporters can view claimed tickets"
+      field_reps_reply: "✍️ Other supporters can reply in claimed tickets"
+    ticket_blacklist:
+      title: Ticket Blacklist
+      description: "You are editing the ticket blacklist for all panels.\nThis role will be blocked from creating tickets.\n\n"
+      current_blacklist: "Current Blacklist Role: <@&{}>"
+      not_set: "Current Blacklist Role: *Not set*"
+    ticket_configuration:
+      title: Ticket Configuration
+      description: "You are editing the main ticket config. \nNote that you are editing global settings. To edit panel-specific settings (questions, category, etc.), use `/ticket panel configuration`.\n\nPlease select a setting to edit below:"
+  commands:
+    group_description: Ticket management commands
+    setup:
+      description: Set up the ticket system for the first time
+      describe:
+        force: Force setup (deletes old config)
+      progress:
+        step1_start: "`[1/4]` ⌛ Initializing config..."
+        step1_complete: "`[1/4]` ✅ Config initialization complete. Created ticket history channel ({})."
+        step2_start: "`[2/4]` ⌛ Creating support channel..."
+        step2_complete: "`[2/4]` ✅ Support channel creation complete. ({} at {})."
+        step3_start: "`[3/4]` ⌛ Creating default ticket panel..."
+        step3_complete: "`[3/4]` ✅ Default ticket panel created in {}."
+        step4_start: "`[4/4]` ⌛ Creating support roles..."
+        step4_complete: "`[4/4]` ✅ Created support roles {} & {}."
+        complete_message: "Default setup complete. \n- To manage or add a support category, use `/ticket panel manage`\n- To edit system settings, use `/ticket configuration`\n"
+      default_values:
+        category_name: Support
+        channel_name: "🎫〡ticket"
+        panel_description: Support
+        button_label: Create Ticket
+        form_title: Your Issue
+        form_placeholder: Please describe your issue briefly
+        support_role_name: Ticket Support
+        supporter_role_name: Ticket Support
+        admin_role_name: Ticket Admin
+    close:
+      description: Closes the current ticket
+      describe:
+        reason: Enter or select a reason
+    add:
+      description: Adds a user/role to the ticket
+      describe:
+        object: Select a user or role to add
+    remove:
+      description: Removes a user/role from the ticket
+      describe:
+        object: Select a user or role to remove
+    configuration:
+      description: Configure the ticket system
+      options:
+        type:
+          label: Type
+          description: The ticket type the server uses (channel or thread)
+        transcript:
+          label: Transcript
+          description: Channel to save closed tickets
+        name:
+          label: Ticket Name Format
+          description: "The format for ticket names (#ticket-{id})"
+        concurrent:
+          label: Tickets per User
+          description: Maximum concurrent open tickets per user
+        close:
+          label: Close
+          description: Settings for closing permissions & auto-close
+        claim:
+          label: Claim
+          description: Settings for ticket claiming by Supporters
+        blacklist:
+          label: Blacklist
+          description: Block any role from creating tickets
+    panel:
+      configuration:
+        description: Configure ticket panels
+      send:
+        description: Send a single (not multi) ticket panel
+        describe:
+          panel: Select a panel
+    multi_panel:
+      manage:
+        description: Manage multi-panel
+      send:
+        description: Send multi-panel
+  translations:
+    not_a_ticket: This is not a system ticket channel.
+    no_permission: You do not have permission to perform this action.
+    added: "Added {} to the ticket."
+    removed: "Removed {} from the ticket."
+    already_setup: This server has already set up the ticket system. To reset, use the `force=True` option.
+    panel_sent: The ticket panel has been sent successfully.\nTo edit the display message, use **`/ticket panel configuration`** `>` Select panel `>` Panel Message.
+    multipanel_sent: The ticket panels have been sent successfully.
+    no_setup: This server has not completed the initial ticket setup. To set up, use the `/ticket setup` command.
+    panel_not_found: The ticket panel does not exist in the system. Please re-run the command.
+    no_category: This ticket panel does not have a category assigned to create new tickets in. Please add a category via `/ticket panel manage`.
+    no_multipanel: You do not have a multi-panel set up. To set one up, use `/ticket multi-panel manage`.
+    no_panels_in_multipanel: "You have multi-panel settings, but no panels are assigned to it.\nTo add panels to the multi-panel, use `/ticket multi-panel manage`."
+    concurrent_limit: "You have reached the limit of concurrent open tickets ({}). "
+    blacklisted: You are blacklisted from creating tickets on this server.
+    already_closed: This ticket is already closed.
+    closed: Ticket closed.
+    reopened: Ticket reopened.
+    claimed: "{} has claimed this ticket."
+    unclaimed: "{} has unclaimed this ticket."
+    deleted: Ticket deleted.
+  messages:
+    claimed: "This ticket is currently claimed by {}."
+    creating: "Creating a ticket..."
+    created: "Created ticket {}."
+    transcript: "Transcript for ticket {}:"
+    transcript_dm: "Transcript for ticket `#{}` in **{}**:"
+  feedback:
+    is_supporter: "You cannot rate this ticket, as you are part of the {} support team."
+    no_messages: "You cannot rate this ticket, as you have not sent any messages in it."
+  form:
+    required: Required
+    type:
+      short: Short
+      paragraph: Paragraph
+  priority:
+    panel_default: "Ticket Panel Default"
+    position: "Position: #{}"
+    for_panel: "For this panel"
+    default_name: "ticket name is default"
+    custom_name: "ticket name is `#{}`"
+  type:
+    channel:
+      label: Channel
+      description: The ticket will be a channel inside a category
+    thread:
+      label: Thread
+      description: The ticket will be a thread inside a channel
+  default:
+    welcome_text: "Thank you {user} for opening a ticket! {supporters} will assist you as soon as possible 🎟️✨"
+    welcome_embed:
+      title: Support Area
+      description: "Please wait a moment, our support team will be with you shortly! Please ensure you have read the rules before creating a ticket."
+      field_ticket_id: Ticket ID
+      field_ticket_id_value: "{ticket_id}"
+      field_author: Opened by
+      field_author_value: "{user} ({user_name})"
+      field_time: Time Opened
+      field_time_value: "{now}"
+    multipanel_embed:
+      title: Create Ticket
+      description: "To request support, please create a ticket with the corresponding topic below."
+    support_embed:
+      title: Create Ticket
+      description: "To request support, please press **`🎫 Create Ticket`** below."
+    multipanel_support_embed:
+      title: Create Ticket
+      description: "To request support, please select the appropriate support category below."
+    form_embed:
+      title: Ticket Information
+      not_provided: Not provided
+  errors:
+    no_category: This ticket's panel is missing a category to create new tickets in. Please check the panel settings.
+    not_found: Could not find the ticket in the system.
+    already_claimed: This ticket is already claimed by someone else.
+    no_permission_claim: You do not have permission to claim this ticket.
+    no_permission_close: You do not have permission to close this ticket.
+    blacklisted: You cannot create a ticket because you are on the server's blacklist.
+    concurrent_limit: "You have reached the limit of concurrent open tickets ({}). Please ask an Administrator to review your open tickets before opening new ones.\nCurrent open tickets: {}"
+    invalid_emoji: "Invalid emoji. Please enter a Unicode or custom emoji."
+    max_priority_roles: "You have reached the limit of priority roles (maximum 2 roles)."
+    max_questions: "You have reached the limit of questions (maximum 5 questions)."
+    no_thread_channel: "Could not find a channel to create ticket threads in. Please report this to a server admin to re-run setup."
+    cooldown: "You can view another ticket's transcript <t:{}:R>"
+    max_panels: "You can only have a maximum of 5 ticket panels."
+    invalid_priority: "Priority must be a positive number between 1 and 99. Please re-enter."
+    priority_exists: "The role <@&{}> already has priority `{}`, please enter a different priority."
