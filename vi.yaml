@@ -4136,6 +4136,7 @@ ticket:
   form:
     required: Bắt buộc
     type:
+      title: Thể loại
       short: Ngắn
       paragraph: Dài
   priority:

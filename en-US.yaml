@@ -4137,6 +4137,7 @@ ticket:
   form:
     required: Required
     type:
+      title: Question type
       short: Short
       paragraph: Paragraph
   priority:
