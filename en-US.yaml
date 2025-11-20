@@ -928,6 +928,49 @@ stickie:
         invalid: "Your embed JSON data is invalid, please try again. Remember to build & get Embed JSON Data only in <https://discohook.org/>!"
 fun:
   description: Fun commands!
+prefix:
+  description: Manage server prefixes
+  options:
+    prefix: New prefix for the server
+  commands:
+    add:
+      description: Add a new prefix
+      options:
+        prefix: New prefix to add (maximum 4 characters)
+      translation:
+        success: "Successfully added prefix `{}`!"
+        too_long: "Prefix is too long! Maximum 4 characters allowed."
+        limit_reached: "Server has reached the limit of 3 prefixes! Please remove a prefix before adding a new one."
+    remove:
+      description: Remove a prefix
+      options:
+        prefix: Prefix to remove
+      translation:
+        success: "Successfully removed prefix `{}`!"
+        not_found: "Prefix `{}` does not exist in the server's prefix list."
+        last_prefix: "Cannot remove the last prefix! Server must have at least 1 prefix."
+    list:
+      description: View all server prefixes
+      translation:
+        title: "📝 Prefix List"
+        description: "Current server prefixes:\n{}"
+module:
+  description: Manage modules/commands in channel
+  commands:
+    enable:
+      translation:
+        title: "✅ Command Enabled"
+        description: "Command `{}` has been enabled in channel {}."
+        all_title: "✅ All Commands Enabled"
+        all_description: "All commands have been enabled in channel {}."
+        not_found: "Command `{}` not found."
+    disable:
+      translation:
+        title: "❌ Command Disabled"
+        description: "Command `{}` has been disabled in channel {}."
+        all_title: "❌ All Commands Disabled"
+        all_description: "All commands have been disabled in channel {}."
+        not_found: "Command `{}` not found."
 setting:
   description: Edit some settings
   commands:

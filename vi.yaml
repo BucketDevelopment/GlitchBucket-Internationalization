@@ -928,6 +928,49 @@ stickie:
         invalid: "Dữ liệu JSON cho thông báo nhúng không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
 fun:
   description: mấy lệnh xàm loz
+prefix:
+  description: Quản lý prefix của server
+  options:
+    prefix: Prefix mới cho server
+  commands:
+    add:
+      description: Thêm một prefix mới cho server
+      options:
+        prefix: Prefix mới cần thêm (tối đa 4 ký tự)
+      translation:
+        success: "Đã thêm prefix `{}` thành công!"
+        too_long: "Prefix quá dài! Prefix chỉ được tối đa 4 ký tự."
+        limit_reached: "Server đã đạt giới hạn 3 prefix! Vui lòng xóa một prefix trước khi thêm prefix mới."
+    remove:
+      description: Xóa một prefix khỏi server
+      options:
+        prefix: Prefix cần xóa
+      translation:
+        success: "Đã xóa prefix `{}` thành công!"
+        not_found: "Prefix `{}` không tồn tại trong danh sách prefix của server."
+        last_prefix: "Không thể xóa prefix cuối cùng! Server phải có ít nhất 1 prefix."
+    list:
+      description: Xem danh sách tất cả prefix của server
+      translation:
+        title: "Danh sách Prefix"
+        description: "Các prefix hiện tại của server:\n{}"
+module:
+  description: Quản lý module/lệnh trong kênh
+  commands:
+    enable:
+      translation:
+        title: "Đã Bật Lệnh"
+        description: "Lệnh `{}` đã được bật trong kênh {}."
+        all_title: "Đã Bật Tất Cả Lệnh"
+        all_description: "Tất cả lệnh đã được bật trong kênh {}."
+        not_found: "Không tìm thấy lệnh `{}`."
+    disable:
+      translation:
+        title: "Đã Tắt Lệnh"
+        description: "Lệnh `{}` đã được tắt trong kênh {}."
+        all_title: "Đã Tắt Tất Cả Lệnh"
+        all_description: "Tất cả lệnh đã được tắt trong kênh {}."
+        not_found: "Không tìm thấy lệnh `{}`."
 setting:
   description: Chỉnh sửa một số cài đặt
   commands:
