@@ -244,6 +244,18 @@ help:
   options:
     command: Select a command
   translation:
+    description:
+      normal: |
+        **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
+        > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://bot.tudubucket.dev/policy/terms-of-service/) - [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+      whitelabeled: |
+        To view information about available commands, use the dropdown below.
+        **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
+        `👑` This bot is a registered Whitelabel Instance of **[GlitchBucket](https://bot.tudubucket.dev).**
+        > - [Our Discord Support Server](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Documentation](<https://bot.tudubucket.dev/getting-started/>) - [Term of Service](https://bot.tudubucket.dev/policy/terms-of-service/) - [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite me!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        To view information about available commands, use the dropdown below.
     no_command: "There are no command associated with name `{}`."
     guild_only: "Server Only"
     installable: "User Installable"
@@ -258,6 +270,43 @@ help:
       default: "Default: "
       required: "> **Required:**\n"
       optional: "\n\n> **Optional:**\n"
+  ui:
+    command_select_placeholder: "Select a command to view details..."
+    module_select_placeholder: "Select a command module..."
+    button_previous: "Previous"
+    button_next: "Next"
+    button_back: "Back"
+    page_counter: "{}/{}"
+    home_label: "📖 Home"
+    home_description: "View main help menu"
+    back_label: "⬅️ Back"
+    back_description: "Go back to previous level"
+    module_description: "View {} commands"
+    help_menu_title: "📚 Help Menu"
+    module_commands_title: "{} {} Commands"
+    module_select_description: "Select a command from the dropdown below to view detailed information."
+    command_count: "`{}` commands"
+    footer_total_commands: "{} • Total: {} commands"
+    prefix_equivalent: "\n\n**Prefix equivalent:** `{}`"
+    no_commands_found: "No commands found."
+    available_commands: "Available Commands ({}-{} of {})"
+    slash_version: "\n\n**Slash version:** `/{}`"
+    prefix_version: "\n**Prefix version:** `{}`"
+    prefix_not_available: "\n**Prefix version:** *Not available*"
+    not_for_you: "This help menu is not for you!"
+    modules:
+      moderation: "Moderation"
+      bucketscript: "Advanced Message Processor"
+      community: "Community"
+      management: "Management"
+      support: "Support"
+      minecraft: "Minecraft"
+      creative: "Creative"
+      economy: "Economy"
+      automation: "Automation"
+      utility: "Utility"
+      fun: "Fun"
+      other: "Other"
 illustration:
   description: Search for artwork on https://pixiv.net
   options:

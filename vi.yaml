@@ -244,6 +244,18 @@ help:
   options:
     command: Chọn một lệnh hợp lệ
   translation:
+    description:
+      normal: |
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết.
+        > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        Để xem hướng dẫn về các lệnh có sẵn, sử dụng dropdown phía dưới.
+      whitelabeled: |
+        **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết.
+        `👑` Đây là phiên bản đăng kí Premium (Whitelabel Instance) của **[GlitchBucket](https://bot.tudubucket.dev).**
+        > - [Server Giải đáp & Hỗ trợ](https://discord.com/invite/Bzha7tgd7u)!
+        > - [Hướng dẫn Sử dụng](https://bot.tudubucket.dev/getting-started/) - [Điều khoản Dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/) - [Chính sách Bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/) - [Invite bot!](https://discord.com/oauth2/authorize?client_id=1103932552701550622&permissions=52664888455159&scope=bot%20applications.commands)
+        Để xem hướng dẫn về các lệnh có sẵn, sử dụng dropdown phía dưới.
     no_command: "Không có lệnh nào của bot mang tên `{}`."
     guild_only: "Chỉ Server"
     installable: "Có thể cài đặt bởi Người dùng"
@@ -258,6 +270,43 @@ help:
       default: "Mặc định: "
       required: "> **Bắt buộc:**\n"
       optional: "\n\n> **Không bắt buộc:**\n"
+  ui:
+    command_select_placeholder: "Chọn lệnh để xem chi tiết..."
+    module_select_placeholder: "Chọn module lệnh..."
+    button_previous: "Trước"
+    button_next: "Tiếp"
+    button_back: "Quay lại"
+    page_counter: "{}/{}"
+    home_label: "📖 Trang Chủ"
+    home_description: "Xem menu trợ giúp chính"
+    back_label: "⬅️ Quay lại"
+    back_description: "Quay về trang trước"
+    module_description: "Xem các lệnh {}"
+    help_menu_title: "📚 Menu Trợ Giúp"
+    module_commands_title: "{} Các lệnh {}"
+    module_select_description: "Chọn một lệnh từ menu thả xuống bên dưới để xem thông tin chi tiết."
+    command_count: "`{}` lệnh"
+    footer_total_commands: "{} • Tổng: {} lệnh"
+    prefix_equivalent: "\n\n**Lệnh prefix tương đương:** `{}`"
+    no_commands_found: "Không tìm thấy lệnh nào."
+    available_commands: "Các lệnh khả dụng ({}-{} trong tổng số {})"
+    slash_version: "\n\n**Phiên bản Slash:** `/{}`"
+    prefix_version: "\n**Phiên bản Prefix:** `{}`"
+    prefix_not_available: "\n**Phiên bản Prefix:** *Không khả dụng*"
+    not_for_you: "Menu trợ giúp này không dành cho bạn!"
+    modules:
+      moderation: "Moderation"
+      bucketscript: "Hệ thống xử lí tin nhắn"
+      community: "Community"
+      management: "Management"
+      support: "Support"
+      minecraft: "Minecraft"
+      creative: "Creative"
+      economy: "Economy"
+      automation: "Automation"
+      utility: "Utility"
+      fun: "Giải trí"
+      other: "Khác"
 illustration:
   description: Tìm kiếm tác phẩm nghệ thuật trên https://pixiv.net
   options:
