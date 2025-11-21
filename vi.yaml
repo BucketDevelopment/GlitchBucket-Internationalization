@@ -269,7 +269,7 @@ help:
       no_optional: "*Không có tham số không bắt buộc.*"
       default: "Mặc định: "
       required: "> **Bắt buộc:**\n"
-      optional: "\n\n> **Không bắt buộc:**\n"
+      optional: "\n> **Không bắt buộc:**\n"
   ui:
     command_select_placeholder: "Chọn lệnh để xem chi tiết..."
     module_select_placeholder: "Chọn module lệnh..."

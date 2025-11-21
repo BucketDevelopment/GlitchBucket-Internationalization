@@ -269,7 +269,7 @@ help:
       no_optional: "*No optional parameters.*"
       default: "Default: "
       required: "> **Required:**\n"
-      optional: "\n\n> **Optional:**\n"
+      optional: "\n> **Optional:**\n"
   ui:
     command_select_placeholder: "Select a command to view details..."
     module_select_placeholder: "Select a command module..."
