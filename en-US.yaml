@@ -196,6 +196,95 @@ fack:
   description: send a fack to your hater
   options:
     user: The user you want to fack
+8ball:
+  description: Ask the magic 8-ball a yes/no question
+  options:
+    question: The yes/no question you want to ask
+  translation:
+    title_question: "\U0001F3B1 Question"
+    title_answer: "\U0001F4AC Answer"
+    responses:
+      - "It is certain."
+      - "It is decidedly so."
+      - "Without a doubt."
+      - "Yes - definitely."
+      - "You may rely on it."
+      - "As I see it, yes."
+      - "Most likely."
+      - "Outlook good."
+      - "Yes."
+      - "Signs point to yes."
+      - "Reply hazy, try again."
+      - "Ask again later."
+      - "Better not tell you now."
+      - "Cannot predict now."
+      - "Concentrate and ask again."
+      - "Don't count on it."
+      - "My reply is no."
+      - "My sources say no."
+      - "Outlook not so good."
+      - "Very doubtful."
+ask:
+  description: Ask anything and get a random answer
+  options:
+    question: Your question
+  translation:
+    title_question: "\u2753 Question"
+    title_answer: "\U0001F4AD Answer"
+    responses:
+      - "Of course!"
+      - "Maybe."
+      - "No way."
+      - "Definitely not!"
+      - "I don't think so."
+      - "Possibly."
+      - "Ask me later."
+      - "I don't know either."
+      - "Good question, but no."
+      - "Well... no."
+      - "That sounds right."
+      - "I agree!"
+      - "Never!"
+      - "In your dreams."
+      - "100% sure!"
+      - "I think not."
+      - "Very likely."
+      - "No chance."
+      - "I'm not sure."
+      - "Try your luck."
+pick:
+  description: Pick a random choice from comma-separated options
+  options:
+    choices: Your choices, separated by commas (e.g., apple, orange, banana)
+  translation:
+    title_choices: "\U0001F3AF Choices"
+    title_picked: "\u2728 I pick"
+    error_min: "\u274C You need to provide at least 2 choices, separated by commas!\n\n**Example:** `apple, orange, banana`"
+    error_max: "\u274C You can only provide up to 20 choices!"
+gayrate:
+  description: Measure 🌈🌈🌈 of someone
+  options:
+    seed_based: Use consistent result based on user (same user = same result)
+  translation:
+    title: "Gay Rate"
+    rate_0: "Certified Human"
+    rate_25: "mf kinda straight"
+    rate_50: "nuh uh bro..."
+    rate_75: "certified femboy!"
+    rate_100_below: "nuh uh..."
+    rate_100: "freaky ahh dog"
+penisize:
+  description: Measure 🦃🦃🍆🍆 of someone
+  options:
+    seed_based: Use consistent result based on user (same user = same result)
+  translation:
+    title: "Peni Size"
+    size_5: "uh.... 🔬🔬🔎🔎"
+    size_10: "certified chinese"
+    size_15: "okay kinda average"
+    size_20: "giggy giggity"
+    size_25: "holy moly"
+    size_30: "🐴🐴🐴🐴🐴"
 information:
   description: Show information of the bot
   translation:

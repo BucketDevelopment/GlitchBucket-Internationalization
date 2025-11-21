@@ -196,6 +196,95 @@ fack:
   description: gửi một 'fack' đến kẻ thù
   options:
     user: Người dùng bạn muốn fack
+8ball:
+  description: Hỏi quả cầu thần kỳ một câu hỏi có/không
+  options:
+    question: Câu hỏi có/không bạn muốn hỏi
+  translation:
+    title_question: "\U0001F3B1 Câu hỏi"
+    title_answer: "\U0001F4AC Trả lời"
+    responses:
+      - "Chắc chắn rồi!"
+      - "Không còn nghi ngờ gì nữa."
+      - "Có, chắc chắn."
+      - "Bạn có thể tin tưởng vào điều đó."
+      - "Theo tôi thấy, có."
+      - "Rất có khả năng."
+      - "Triển vọng tốt."
+      - "Có vẻ như có."
+      - "Có."
+      - "Các dấu hiệu chỉ đến có."
+      - "Trả lời còn mơ hồ, hãy thử lại."
+      - "Hỏi lại sau đi."
+      - "Tốt nhất là không nói cho bạn bây giờ."
+      - "Không thể dự đoán được."
+      - "Tập trung và hỏi lại."
+      - "Đừng nghĩ về điều đó."
+      - "Câu trả lời của tôi là không."
+      - "Nguồn tin của tôi nói không."
+      - "Triển vọng không được tốt lắm."
+      - "Rất đáng nghi ngờ."
+ask:
+  description: Hỏi bất cứ điều gì và nhận câu trả lời ngẫu nhiên
+  options:
+    question: Câu hỏi của bạn
+  translation:
+    title_question: "\u2753 Câu hỏi"
+    title_answer: "\U0001F4AD Câu trả lời"
+    responses:
+      - "Tất nhiên rồi!"
+      - "Có lẽ là vậy."
+      - "Không đâu."
+      - "Chắc chắn không!"
+      - "Tôi không nghĩ vậy."
+      - "Có thể có thể."
+      - "Hỏi tôi sau nhé."
+      - "Tôi cũng không biết nữa."
+      - "Câu hỏi hay đấy, nhưng không."
+      - "Ứ thì... không."
+      - "Điều đó có vẻ đúng."
+      - "Tôi đồng ý!"
+      - "Không bao giờ!"
+      - "Trong giấc mơ của bạn."
+      - "Chắc chắn 100%!"
+      - "Tôi nghĩ là không."
+      - "Có khả năng cao."
+      - "Không có cơ hội nào đâu."
+      - "Tôi không chắc lắm."
+      - "Hãy thử vận may của bạn đi."
+pick:
+  description: Chọn ngẫu nhiên từ các lựa chọn phân cách bằng dấu phẩy
+  options:
+    choices: "Các lựa chọn của bạn, phân cách bằng dấu phẩy (vd: táo, cam, chuối)"
+  translation:
+    title_choices: "\U0001F3AF Các lựa chọn"
+    title_picked: "\u2728 Tôi chọn"
+    error_min: "\u274c Bạn cần cung cấp ít nhất 2 lựa chọn, phân cách bằng dấu phẩy!\n\n**Ví dụ:** `táo, cam, chuối`"
+    error_max: "\u274c Bạn chỉ có thể cung cấp tối đa 20 lựa chọn!"
+gayrate:
+  description: Đánh giá mức độ 🌈🌈🌈
+  options:
+    seed_based: Sử dụng kết quả cố định theo user (cùng user = cùng kết quả)
+  translation:
+    title: "Gay Rate"
+    rate_0: "Certified Human"
+    rate_25: "mf kinda straight"
+    rate_50: "nuh uh bro..."
+    rate_75: "certified femboy!"
+    rate_100_below: "nuh uh..."
+    rate_100: "freaky ahh dog"
+penisize:
+  description: Đo kích thước 🦃🦃🍆🍆
+  options:
+    seed_based: Sử dụng kết quả cố định theo user (cùng user = cùng kết quả)
+  translation:
+    title: "Peni Size"
+    size_5: "uh.... 🔬🔬🔎🔎"
+    size_10: "certified chinese"
+    size_15: "okay kinda average"
+    size_20: "giggy giggity"
+    size_25: "holy moly"
+    size_30: "🐴🐴🐴🐴🐴"
 information:
   description: Hiển thị thông tin của bot
   translation:
