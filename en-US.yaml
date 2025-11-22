@@ -4291,7 +4291,7 @@ ticket:
     added: "Added {} to the ticket."
     removed: "Removed {} from the ticket."
     already_setup: This server has already set up the ticket system. To reset, use the `force=True` option.
-    panel_sent: The ticket panel has been sent successfully.\nTo edit the display message, use **`/ticket panel configuration`** `>` Select panel `>` Panel Message.
+    panel_sent: "The ticket panel has been sent successfully.\nTo edit the display message, use **`/ticket panel configuration`** `>` Select panel `>` Panel Message."
     multipanel_sent: The ticket panels have been sent successfully.
     no_setup: This server has not completed the initial ticket setup. To set up, use the `/ticket setup` command.
     panel_not_found: The ticket panel does not exist in the system. Please re-run the command.

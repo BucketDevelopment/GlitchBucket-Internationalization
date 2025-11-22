@@ -4290,7 +4290,7 @@ ticket:
     added: "Đã thêm {} vào ticket."
     removed: "Đã xóa {} khỏi ticket."
     already_setup: Server này đã thiết lập hệ thống ticket. Nếu bạn muốn thiết lập lại, sử dụng tùy chọn `force=True`.
-    panel_sent: Danh mục ticket đã được gửi thành công.\nNếu bạn muốn chỉnh sửa tin nhắn hiển thị, sử dụng **`/ticket panel configuration`** `>` Chọn bảng ticket cần sửa `>` Tin nhắn bảng.
+    panel_sent: "Danh mục ticket đã được gửi thành công.\nNếu bạn muốn chỉnh sửa tin nhắn hiển thị, sử dụng **`/ticket panel configuration`** `>` Chọn bảng ticket cần sửa `>` Tin nhắn bảng."
     multipanel_sent: Các danh mục ticket đã được gửi thành công.
     no_setup: Server này chưa thực hiện setup ticket lần đầu. Để thực hiện setup, sử dụng lệnh `/ticket setup`.
     panel_not_found: Danh mục ticket không tồn tại trong hệ thống, vui lòng sử dụng lại command.
