@@ -1970,6 +1970,7 @@ bucketscript:
   errors:
     button:
       invalid_id: "ID của nút không hợp lệ."
+      invalid_emoji: "Emoji không hợp lệ. Bạn chỉ được phép sử dụng emoji trong server hoặc emoji mặc định."
       missing_label_emoji: "Bạn cần cung cấp **Tên hiển thị** của nút, hoặc **Emoji** (không được bỏ trống cả 2)."
       limit: "Bạn chỉ được phép tạo tối đa **`10`** button cho mỗi server."
       exists: "Đã có 1 button khác tồn tại dưới ID này."

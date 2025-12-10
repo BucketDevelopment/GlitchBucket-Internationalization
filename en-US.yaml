@@ -2074,6 +2074,7 @@ bucketscript:
 
  
     button:
+      invalid_emoji: "Invalid Emoji. Note that you can only use in-server emoji or default emoji"
       invalid_id: "Invalid button ID."
       missing_label_emoji: "You need to provide either **Button Label** or **Emoji** (both can't be empty)."
       limit: "You can only create up to **`10`** buttons per server."
