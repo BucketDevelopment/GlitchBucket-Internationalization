@@ -2926,6 +2926,9 @@ minecraft:
         below_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `below_layer`. Vui lòng chọn lại từ danh sách autocomplete. Bot sẽ sử dụng `end_stone` làm mặc định.\n"
         above_block_warning: ":warning: **Chú ý:** Vật liệu không xác định `{}` cho `above_layer`. Vui lòng chọn lại từ danh sách autocomplete.\n"
         resolved_ip: "Địa chỉ IP"
+        sample:
+          information: "Thông tin server"
+          players: "Danh sách người chơi"
         player_count: "Số lượng người chơi"
         version: "Phiên bản"
         sofware: "Phần mềm: `{}`\nPhiên bản: `{}` `({})`"

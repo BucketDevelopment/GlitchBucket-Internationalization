@@ -2926,6 +2926,9 @@ minecraft:
         below_block_warning: ":warning: **Warning:** Unknown material `{}` for `below_layer`. Please select again from the autocomplete. We will use `end_stone` as default.\n"
         above_block_warning: ":warning: **Warning:** Unknown material `{}` for `above_layer`. Please select again from the autocomplete.\n"
         resolved_ip: "Resolved IP"
+        sample:
+          information: "Information"
+          players: "Player List"
         player_count: "Player Count"
         version: "Version"
         sofware: "Software: `{}`\nProtocol Version: `{}` `({})`"
