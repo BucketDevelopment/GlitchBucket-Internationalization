@@ -598,6 +598,80 @@ autoresponder:
         total: "Server này có tổng cộng {} autoresponder.\nDanh sách: `{}`"
         none: "Server này không có autoresponder nào!"
         title: Danh sách Autoresponder
+tag:
+  description: Quản lý tag tùy chỉnh cho cá nhân
+  modal:
+    create:
+      title: Tạo Tag
+      trigger:
+        label: Trigger (chữ thường + gạch dưới)
+        placeholder: Nhập trigger cho tag này
+      trigger_display:
+        label: Tên hiển thị
+        placeholder: Nhập tên hiển thị cho tag này
+      response:
+        label: Nội dung phản hồi
+        placeholder: Bạn có thể sử dụng các placeholder tại https://bot.tudubucket.dev/bucketscript/functions/
+    update:
+      title: Cập nhật Tag
+      response:
+        label: Nội dung phản hồi
+        placeholder: Bạn có thể sử dụng các placeholder tại https://bot.tudubucket.dev/bucketscript/functions/
+  commands:
+    create:
+      description: Tạo một tag cá nhân mới
+      options:
+        trigger: Trigger cho tag
+      translation:
+        invalid_trigger: "Trigger chỉ được chứa chữ thường và dấu gạch dưới (_)!"
+        maximum_reached: "Bạn không thể tạo nhiều hơn 50 tag!"
+        already_exists: "Đã có một tag với trigger này. Bạn chỉ có thể chỉnh sửa hoặc xóa chúng."
+        successful: "Tag đã được tạo thành công!"
+        field_trigger: "Trigger"
+        field_display: "Tên hiển thị"
+        field_response: "Nội dung"
+    send:
+      description: Gửi một tag
+      options:
+        tag: Tag cần gửi
+      translation:
+        not_found: "Tag không tồn tại!"
+        bot_error: "Bot đã xuất hiện lỗi khi xử lí BucketScript, vui lòng báo cáo tới Developer.\n{}: {}"
+    edit:
+      description: Chỉnh sửa nội dung của tag
+      options:
+        tag: Tag cần chỉnh sửa
+      translation:
+        not_found: "Tag không tồn tại!"
+        not_owner: "Bạn không phải là chủ sở hữu của tag này!"
+        successful: "Tag đã được cập nhật thành công!"
+        field_trigger: "Trigger"
+        field_new_response: "Nội dung mới"
+    remove:
+      description: Xóa một tag
+      options:
+        tag: Tag cần xóa
+      translation:
+        not_found: "Tag không tồn tại!"
+        not_owner: "Bạn không phải là chủ sở hữu của tag này!"
+        successful: "Tag **{}** đã được xóa thành công!"
+    list:
+      description: Danh sách tag của bạn
+      translation:
+        title: Danh sách Tag của bạn
+        none: "Bạn không có tag nào!"
+        total: "Bạn có tổng cộng {} tag."
+    view:
+      description: Xem thông tin của một tag
+      options:
+        tag: Tag cần xem
+      translation:
+        not_found: "Tag không tồn tại!"
+        title: "Thông tin Tag: {}"
+        field_owner: "Chủ sở hữu"
+        field_trigger: "Trigger"
+        field_created: "Tạo lúc"
+        field_response: "Nội dung"
 security:
   description: Thiết lập Bảo mật tự động cho server
   common:

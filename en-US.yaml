@@ -598,6 +598,80 @@ autoresponder:
         total: "This server having total of {} autoresponder.\nList: `{}`"
         none: "This server doesn't have any autoresponder!"
         title: Autoresponder's List
+tag:
+  description: Manage personal custom tags
+  modal:
+    create:
+      title: Create Tag
+      trigger:
+        label: Trigger (lowercase + underscore)
+        placeholder: Enter trigger for this tag
+      trigger_display:
+        label: Display Name
+        placeholder: Enter display name for this tag
+      response:
+        label: Response Content
+        placeholder: You can use placeholders at https://bot.tudubucket.dev/bucketscript/functions/
+    update:
+      title: Update Tag
+      response:
+        label: Response Content
+        placeholder: You can use placeholders at https://bot.tudubucket.dev/bucketscript/functions/
+  commands:
+    create:
+      description: Create a new tag
+      options:
+        trigger: Trigger for the tag
+      translation:
+        invalid_trigger: "Trigger can only contain lowercase letters and underscores (_)!"
+        maximum_reached: "You cannot create more than 50 tags!"
+        already_exists: "A tag with this trigger already exists. You can only edit or delete them."
+        successful: "Tag has been created successfully!"
+        field_trigger: "Trigger"
+        field_display: "Display Name"
+        field_response: "Content"
+    send:
+      description: Send a tag
+      options:
+        tag: Tag to send
+      translation:
+        not_found: "Tag does not exist!"
+        bot_error: "Bot encountered an error while processing BucketScript, please report to Developer.\n{}: {}"
+    edit:
+      description: Edit tag content
+      options:
+        tag: Tag to edit
+      translation:
+        not_found: "Tag does not exist!"
+        not_owner: "You are not the owner of this tag!"
+        successful: "Tag has been updated successfully!"
+        field_trigger: "Trigger"
+        field_new_response: "New Content"
+    remove:
+      description: Delete a tag
+      options:
+        tag: Tag to delete
+      translation:
+        not_found: "Tag does not exist!"
+        not_owner: "You are not the owner of this tag!"
+        successful: "Tag **{}** has been deleted successfully!"
+    list:
+      description: List your tags
+      translation:
+        title: Your Tag List
+        none: "You don't have any tags!"
+        total: "You have a total of {} tags."
+    view:
+      description: View tag information
+      options:
+        tag: Tag to view
+      translation:
+        not_found: "Tag does not exist!"
+        title: "Tag Information: {}"
+        field_owner: "Owner"
+        field_trigger: "Trigger"
+        field_created: "Created At"
+        field_response: "Content"
 security:
   description: Setup Automatic Security for your server
   common:
