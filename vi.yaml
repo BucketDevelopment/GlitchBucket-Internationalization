@@ -600,6 +600,8 @@ autoresponder:
         title: Danh sách Autoresponder
 tag:
   description: Quản lý tag tùy chỉnh cho cá nhân
+  translation:
+    preparing: Đang chuẩn bị dữ liệu, đợi một chút...
   modal:
     create:
       title: Tạo Tag
@@ -642,8 +644,8 @@ tag:
       options:
         tag: Tag cần chỉnh sửa
       translation:
-        not_found: "Tag không tồn tại!"
-        not_owner: "Bạn không phải là chủ sở hữu của tag này!"
+        not_found: "Tag không tồn tại."
+        not_owner: "Bạn không phải là chủ sở hữu của tag này."
         successful: "Tag đã được cập nhật thành công!"
         field_trigger: "Trigger"
         field_new_response: "Nội dung mới"
@@ -652,26 +654,70 @@ tag:
       options:
         tag: Tag cần xóa
       translation:
-        not_found: "Tag không tồn tại!"
-        not_owner: "Bạn không phải là chủ sở hữu của tag này!"
-        successful: "Tag **{}** đã được xóa thành công!"
+        not_found: "Tag không tồn tại."
+        not_owner: "Bạn không phải là chủ sở hữu của tag này."
+        successful: "Tag **{}** đã được xóa thành công."
     list:
       description: Danh sách tag của bạn
       translation:
         title: Danh sách Tag của bạn
-        none: "Bạn không có tag nào!"
+        none: "Bạn không có tag nào."
         total: "Bạn có tổng cộng {} tag."
     view:
       description: Xem thông tin của một tag
       options:
         tag: Tag cần xem
       translation:
-        not_found: "Tag không tồn tại!"
+        not_found: "Tag không tồn tại."
         title: "Thông tin Tag: {}"
         field_owner: "Chủ sở hữu"
         field_trigger: "Trigger"
         field_created: "Tạo lúc"
         field_response: "Nội dung"
+    embed:
+      description: Quản lý embed cho tag cá nhân
+      create:
+        description: Tạo một Embed cho Tag
+        options:
+          name: Chỉ định tên embed
+        translation:
+          forbidden: "Bạn không thể đặt tên embed bắt đầu bằng `__` - đây là đặc điểm nhận dạng cho các embed của hệ thống."
+          already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/tag embed edit` để chỉnh sửa một embed hiện có.
+          maximum_reached: Bạn không thể tạo hơn 15 embed.
+      edit:
+        description: Chỉnh sửa một Embed của Tag
+        options:
+          name: Chỉ định tên embed
+        translation:
+          unknown_embed: Không có embed nào với tên đó trong cơ sở dữ liệu.
+      delete:
+        description: Xóa một Embed của Tag
+        options:
+          name: Chỉ định tên embed
+        translation:
+          unknown_embed: Không có embed nào với tên đó trong cơ sở dữ liệu.
+    layout:
+      description: Tạo & Quản lý layout cho tag cá nhân
+      create:
+        description: "Tạo một layout cho tag"
+        options:
+          name: "Chỉ định tên layout"
+      edit:
+        description: "Chỉnh sửa một layout cho tag"
+        options:
+          name: "Chỉ định tên layout"
+      delete:
+        description: "Xóa một layout cho tag"
+        options:
+          name: "Chỉ định tên layout"
+      errors:
+        invalid_id: "ID của layout không hợp lệ. Bạn chỉ được sử dụng chữ cái thường, dấu gạch _ và chữ số."
+        exists: "Đã có 1 layout khác tồn tại dưới ID này."
+        not_found: "Không có layout tồn tại dưới ID này."
+    buttons:
+      description: "Quản lý các nút (button) cho tag của bạn"
+    selects:
+      description: "Quản lý các ô lựa chọn kéo thả (selects) cho tag của bạn"
 security:
   description: Thiết lập Bảo mật tự động cho server
   common:

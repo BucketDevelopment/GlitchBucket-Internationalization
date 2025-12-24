@@ -600,6 +600,8 @@ autoresponder:
         title: Autoresponder's List
 tag:
   description: Manage personal custom tags
+  translation:
+    preparing: Preparing data, please wait...
   modal:
     create:
       title: Create Tag
@@ -672,6 +674,50 @@ tag:
         field_trigger: "Trigger"
         field_created: "Created At"
         field_response: "Content"
+    embed:
+      description: Manage embeds for tags
+      create:
+        description: Create an Embed for Tag
+        options:
+          name: Specify embed name
+        translation:
+          forbidden: "You cannot name an embed with a name that starts with `__` - this is for system embed identification."
+          already_exists: An embed with that name already exists. Please choose another name, or use `/tag embed edit` to edit an existing embed.
+          maximum_reached: You cannot create more than 15 embeds.
+      edit:
+        description: Edit a Tag Embed
+        options:
+          name: Specify embed name
+        translation:
+          unknown_embed: There is no embed with that name in the database.
+      delete:
+        description: Delete a Tag Embed
+        options:
+          name: Specify embed name
+        translation:
+          unknown_embed: There is no embed with that name in the database.
+    layout:
+      description: Create & Manage layouts for tags
+      create:
+        description: "Create a layout for tags"
+        options:
+          name: "Specify layout name"
+      edit:
+        description: "Edit a layout for tags"
+        options:
+          name: "Specify layout name"
+      delete:
+        description: "Delete a layout for tags"
+        options:
+          name: "Specify layout name"
+      errors:
+        invalid_id: "Invalid layout ID. You can only use lowercase letters, underscores _, and numbers."
+        exists: "A layout already exists with this ID."
+        not_found: "No layout exists with this ID."
+    buttons:
+      description: "Manage buttons for your tags"
+    selects:
+      description: "Manage dropdown selects for your tags"
 security:
   description: Setup Automatic Security for your server
   common:
