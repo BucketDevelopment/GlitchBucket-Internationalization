@@ -3904,14 +3904,21 @@ emoji:
           download: "Không thể tải xuống hình ảnh."
           upload: "Không thể tải lên emoji: {}"
         uploaded: "Đã tải lên emoji: {}"
+    context_steal:
+      description: "Lấy Emoji từ 1 tin nhắn, hoặc từ URL"
+      button:
+        add_emoji: Thêm dạng Emoji
+        add_sticker: Thêm dạng Sticker 
+        
+      describe: Chỉ định các custom emoji, hoặc 1 URL hình ảnh, hoặc reply 1 tin nhắn
     steal:
-      description: "Lấy một emoji từ server khác hoặc từ một URL"
+      description: "Lấy emoji từ server khác, hoặc từ một URL"
       describe:
         emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
         name: Chỉ định tên emoji
       translation:
         limit_reached: Server này đã đạt đến số lượng emoji tối đa. Vui lòng xóa emoji khác để thêm emoji mới.
-        rate_limited: Server nayf đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
+        rate_limited: Server này đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
         name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."
         failed:
