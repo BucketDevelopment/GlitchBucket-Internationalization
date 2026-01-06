@@ -3908,7 +3908,7 @@ emoji:
     context_steal:
       description: "Steal emojis from replied message, or from an url"
       button:
-        add_emoji: Add as Emoji
+        add_emoji: Add Emoji
         add_sticker: Add as Sticker
       describe: Specify custom emojis, or an Image URL, or reply to a message
     steal:

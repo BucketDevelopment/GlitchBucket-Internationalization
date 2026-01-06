@@ -3907,7 +3907,7 @@ emoji:
     context_steal:
       description: "Lấy Emoji từ 1 tin nhắn, hoặc từ URL"
       button:
-        add_emoji: Thêm dạng Emoji
+        add_emoji: Thêm Emoji
         add_sticker: Thêm dạng Sticker 
         
       describe: Chỉ định các custom emoji, hoặc 1 URL hình ảnh, hoặc reply 1 tin nhắn
@@ -4379,6 +4379,10 @@ ticket:
       description: Xóa một người/role khỏi ticket
       describe:
         object: Chọn một role hoặc người dùng để xóa khỏi ticket
+    rename:
+      description: Đổi tên ticket hiện tại
+      describe:
+        name: Tên mới cho ticket
     configuration:
       description: Cài đặt hệ thống ticket
       options:
@@ -4429,6 +4433,9 @@ ticket:
     no_multipanel: Bạn chưa có multi-panel. Để setup multi-panel, sử dụng lệnh `/ticket multi-panel manage`.
     no_panels_in_multipanel: "Bạn đã có cài đặt của multi-panel, nhưng không có panel (bảng ticket) nào được gắn cho multi-panel này.\nĐể thêm panel cho multi-panel, sử dụng lệnh `/ticket multi-panel manage`."
     concurrent_limit: "Bạn đã đạt giới hạn số lượng ticket đang mở cùng lúc ({}). "
+    rename_too_long: Tên kênh không được vượt quá 100 ký tự.
+    renamed: "Đã đổi tên kênh thành `{}`."
+    rename_failed: "Không thể đổi tên kênh: {}"
     blacklisted: Bạn bị chặn khỏi việc tạo ticket trong server này.
     already_closed: Ticket này đã được đóng.
     closed: Ticket đã được đóng.
