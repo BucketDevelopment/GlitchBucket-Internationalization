@@ -4506,7 +4506,7 @@ ticket:
     max_priority_roles: "Bạn đã đạt giới hạn số lượng role ưu tiên (tối đa 2 role)."
     max_questions: "Bạn đã đạt giới hạn số lượng câu hỏi (tối đa 5 câu hỏi)."
     no_thread_channel: "Không tìm thấy channel thread để tạo ticket, vui lòng báo cáo tới admin của server để thực hiện setup lại."
-    cooldown: "Bạn sẽ có thể xem transcript của một ticket khác <t:{}:R>"
+    cooldown: "Bạn sẽ có thể xem transcript của một ticket khác {}"
     max_panels: "Bạn chỉ có thể có tối đa 5 danh mục ticket."
     invalid_priority: "Thứ tự ưu tiên cần phải là 1 số dương trong khoảng 1 đến 99, vui lòng nhập lại."
     priority_exists: "Đã có role <@&{}> mang thứ tự ưu tiên `{}`, vui lòng nhập lại thứ tự ưu tiên khác."
