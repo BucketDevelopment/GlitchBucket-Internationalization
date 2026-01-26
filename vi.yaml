@@ -1111,7 +1111,7 @@ donation:
         successful_message: "Đã trừ **{} Điểm** khỏi số dư donate của {} với lý do: {}"
 stickie:
   current_setting:
-    title: "Cấu hình Sticky Message cho {} ﹥ #{}"
+    title: "Cấu hình Sticky Message cho {} > #{}"
     description: |
       **Sticky Message hiện tại trong {}**:
       {}
