@@ -2632,6 +2632,7 @@ bucketscript:
       add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
       manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
       manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
+      manage_roles: "Bạn cần có quyền **Quản lý Vai trò** để sử dụng placeholder này."
     invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
     components:
       gallery:

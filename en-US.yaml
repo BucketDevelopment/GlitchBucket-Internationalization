@@ -2633,6 +2633,7 @@ bucketscript:
       add_reactions: "Bot Missing Permission: Add Reactions"
       manage_messages: "Bot Missing Permission: Manage Messages"
       manage_nickname: "Bot Missing Permission: Manage Nickname"
+      manage_roles: "You need **Manage Roles** permission to use this placeholder."
     invalid_redirect: "`reply` function cannot being set with `redirect_to`."
     components:
       gallery:
