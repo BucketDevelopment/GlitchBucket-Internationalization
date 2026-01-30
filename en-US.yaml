@@ -3492,11 +3492,11 @@ moderation:
       description: Kick a member
       translation:
         errors:
-          self: "You cannot warn yourself."
+          self: "You cannot kick yourself."
           user_hierachy: "You are not higher than {} in the role hierarchy."
-          owner: "You cannot warn server owner."
-          bot_hierachy: "I cannot warn {} due to Discord hierarchy rules. Please give me higher role to perform this action."
-          unknown: "I cannot warn {} right now. Please try again later. `({})`"
+          owner: "You cannot kick server owner."
+          bot_hierachy: "I cannot kick {} due to Discord hierarchy rules. Please give me higher role to perform this action."
+          unknown: "I cannot kick {} right now. Please try again later. `({})`"
         success:
           reason: "**{}** has been kicked, with reason: {}"
           none: "**{}** has been kicked."

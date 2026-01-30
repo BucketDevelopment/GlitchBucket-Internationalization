@@ -3489,14 +3489,14 @@ moderation:
           reason: "**{}** đã được bỏ cảnh cáo, với lý do: {}"
           none: "**{}** đã được bỏ cảnh cáo."
     kick:
-      description: Đuổi một thành viên
+      description: Kick một thành viên
       translation:
         errors:
-          self: "Bạn không thể tự cảnh cáo mình."
+          self: "Bạn không thể tự kick mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
-          owner: "Bạn không thể cảnh cáo chủ sở hữu server."
-          bot_hierachy: "Tôi không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
-          unknown: "Tôi không thể cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          owner: "Bạn không thể kick chủ sở hữu server."
+          bot_hierachy: "Tôi không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          unknown: "Tôi không thể kick **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
           none: "**{}** đã bị đá khỏi server."
