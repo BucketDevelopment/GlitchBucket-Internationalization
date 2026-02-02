@@ -3417,7 +3417,7 @@ moderation:
           self: "Bạn không thể tự chặn mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể chặn chủ sở hữu server."
-          bot_hierachy: "Tôi không thể chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
           unknown: "Tôi không thể chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
@@ -3431,7 +3431,7 @@ moderation:
           self: "Bạn không thể tự bỏ chặn mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể bỏ chặn chủ sở hữu server."
-          bot_hierachy: "Tôi không thể bỏ chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể bỏ chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           unknown: "Tôi không thể bỏ chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã được bỏ tắt tiếng, với lý do: {}"
@@ -3445,7 +3445,7 @@ moderation:
           self: "Bạn không thể tự cấm mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể cấm chủ sở hữu server."
-          bot_hierachy: "Tôi không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải là định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
           unknown: "Tôi không thể cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
           already_banned: "**{}** đã bị cấm trong server này."
@@ -3468,7 +3468,7 @@ moderation:
           self: "Bạn không thể tự cảnh cáo mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể cảnh cáo chủ sở hữu server."
-          bot_hierachy: "Tôi không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           unknown: "Tôi không thể cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị cảnh cáo, với lý do: {}"
@@ -3483,7 +3483,7 @@ moderation:
           self: "Bạn không thể tự bỏ cảnh cáo mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể bỏ cảnh cáo chủ sở hữu server."
-          bot_hierachy: "Tôi không thể bỏ cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể bỏ cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           unknown: "Tôi không thể bỏ cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã được bỏ cảnh cáo, với lý do: {}"
@@ -3495,7 +3495,7 @@ moderation:
           self: "Bạn không thể tự kick mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể kick chủ sở hữu server."
-          bot_hierachy: "Tôi không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này."
+          bot_hierachy: "Tôi không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
           unknown: "Tôi không thể kick **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
@@ -3609,7 +3609,7 @@ server:
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
           owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
-          server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
+          server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
           already_have: "{} đã có vai trò **{}**."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           successful: Đã thêm **{}** cho **{}**.
@@ -3624,7 +3624,7 @@ server:
             bot: Tất cả Bot (không bao gồm người)
         translation:
           already_running: Server này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
-          server_hierachy: Tôi không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
+          server_hierachy: Tôi không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: 'Đang thực hiện thêm **{}** cho {} tài khoản. Thời gian hoàn thành ước tính: {}.'
           successful: Đã thêm thành công **{}** cho {} tài khoản.
@@ -3633,7 +3633,7 @@ server:
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
           owner: Bạn không thể xóa **{}** khỏi chủ sở hữu server.
-          server_hierachy: Tôi không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
+          server_hierachy: Tôi không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
           already_have: "{} không có vai trò {}."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           successful: Đã xóa {} khỏi **{}**.
@@ -3643,7 +3643,7 @@ server:
           option: Chọn một tùy chọn để gán vai trò
         translation:
           already_running: Server này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
-          server_hierachy: Tôi không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi quyền cao hơn để thực hiện hành động này.
+          server_hierachy: Tôi không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           adding: Removing **{}** from {} accounts, this may take {}.
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
