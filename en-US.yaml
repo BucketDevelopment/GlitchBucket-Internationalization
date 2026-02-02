@@ -2318,7 +2318,7 @@ bucketscript:
       no_questions: "No questions yet"
       paragraph_long: "Long Paragraph"
       paragraph_short: "Short Text"
-      question_format: "**{index}.** {title}\n> *{description}*\n> Type: {paragraph_type}"
+      question_format: "Required: {} `|` Type: {}"
   selects:
     remove_fields: Select field(s) to remove
     insert_fields: Select field to add after it

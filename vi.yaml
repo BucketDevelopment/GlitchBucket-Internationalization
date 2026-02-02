@@ -2317,7 +2317,7 @@ bucketscript:
       no_questions: "Chưa có câu hỏi nào"
       paragraph_long: "Đoạn văn dài"
       paragraph_short: "Văn bản ngắn"
-      question_format: "**{index}.** {title}\n> *{description}*\n> Loại: {paragraph_type}"
+      question_format: "Required: {} `|` Type: {}"
   selects:
     remove_fields: Chọn field để xóa
     insert_fields: Chọn field để thêm sau nó
