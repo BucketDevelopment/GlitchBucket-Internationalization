@@ -1703,6 +1703,8 @@ customrole:
           description: "Thay đổi màu của Custom Role"
           options:
             color: "Có thể là `#hex`, `rgb(số, số, số)`, hoặc để trống cho màu mặc định."
+            secondary_color: "Màu phụ. Để trống cho màu mặc định."
+            tertiary_color: "Màu thứ ba. Để trống cho màu mặc định."
           translation:
             palette_forbidden: Server này đã giới hạn bạn chỉ được sử dụng một số màu nhất định. Vui lòng chọn từ autocomplete thay vì nhập một màu.
         icon:

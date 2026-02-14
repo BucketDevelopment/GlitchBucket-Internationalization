@@ -1703,6 +1703,8 @@ customrole:
           description: "Change color of your custom role"
           options:
             color: "Can be `#hex`, `rgb(number, number, number)`, or leave empty for default color."
+            secondary_color: "Secondary color. Leave empty for default."
+            tertiary_color: "Tertiary color. Leave empty for default."
           translation:
             palette_forbidden: This server has restricted role color to a set of color. Please select a color from command autocomplete instead of specifying one.
         icon:
