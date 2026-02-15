@@ -1865,6 +1865,7 @@ giveaway:
     bypasses: Thêm vai trò để vượt Requirement
     channel: Đặt kênh Giveaway
     templates: Chọn một template để áp dụng
+    setup_action: Chọn hành động để cấu hình giveaway
   buttons:
     participated:
       entrants: Người tham gia
@@ -1887,19 +1888,41 @@ giveaway:
     confirm_start: "Xác nhận & Bắt đầu"
     back: Quay lại chỉnh sửa
     core: Cốt lõi
-    start: Bắt đầu Giveaway
-    edit_settings: Chỉnh sửa Phần thưởng, Thời lượng, ...
+    start:
+      label: Bắt đầu
+      description: Xem lại và khởi động giveaway
+    edit_settings:
+      label: Cài đặt
+      description: Sửa phần thưởng, thời lượng, số người thắng
     settings: Cài đặt
-    bonus: Đặt Lượt tham gia bonus
-    requirements: Đặt Requirement
-    bypasses: Sửa Vượt Requirement
-    blacklists: Thêm Blacklist
+    bonus:
+      label: Bonus
+      description: Thêm lượt tham gia cho vai trò
+    requirements:
+      label: Yêu cầu
+      description: Đặt yêu cầu vai trò và thời gian tham gia
+    bypasses:
+      label: Vượt yêu cầu
+      description: Vai trò được bỏ qua yêu cầu
+    blacklists:
+      label: Chặn
+      description: Ngăn vai trò tham gia giveaway
     decorators: Trang trí
-    image: Đặt Hình ảnh
-    button: Thay đổi nút
-    color_edit: Thay đổi Màu Embed
-    channel: Chỉnh sửa Kênh Giveaway
-    template_save: Lưu làm Template
+    image:
+      label: Hình ảnh
+      description: Thêm banner cho giveaway
+    button:
+      label: Nút
+      description: Tùy chỉnh màu và icon nút
+    color_edit:
+      label: Màu Embed
+      description: Đổi màu viền embed
+    channel:
+      label: Kênh
+      description: Chọn nơi đăng giveaway
+    template_save:
+      label: Lưu mẫu
+      description: Lưu cài đặt hiện tại để dùng lại
   modals:
     duration:
       title: Yêu cầu Thời gian Tham gia

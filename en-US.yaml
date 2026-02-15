@@ -117,8 +117,8 @@ common:
     amount: "Specify the amount"
     enable: "Whether enable this or not"
   selects:
-    common: Select an option
-    channel: Select a channel
+    common: Select an option...
+    channel: Select a channel...
   config:
     saved: "Successfully saved configuration!"
     edited: "Successfully edited configuration!"
@@ -1865,6 +1865,7 @@ giveaway:
     bypasses: Add roles to requirement bypasses
     channel: Set Giveaway channel
     templates: Select a template to apply
+    setup_action: Select an action to configure your giveaway
   buttons:
     participated:
       entrants: Entrants Participated
@@ -1887,19 +1888,41 @@ giveaway:
     confirm_start: "Confirm & Start"
     back: Back to edit
     core: Core
-    start: Start Giveaway
-    edit_settings: Edit Reward, Duration & Winners
+    start:
+      label: Start Giveaway
+      description: Review and launch your giveaway
+    edit_settings:
+      label: Edit Settings
+      description: Change reward, duration and winner count
     settings: Settings
-    bonus: Set Bonus Entrants
-    requirements: Set Requirements
-    bypasses: Add Bypasses
-    blacklists: Add Blacklists
+    bonus:
+      label: Bonus Entrants
+      description: Give extra entries to roles
+    requirements:
+      label: Requirements
+      description: Set role and join requirements
+    bypasses:
+      label: Bypasses
+      description: Roles that skip requirements
+    blacklists:
+      label: Blacklists
+      description: Prevent certain roles from joining
     decorators: Decorators
-    image: Set Image
-    button: Change Button Style
-    color_edit: Change Embed Color
-    channel: Edit Giveaway Channel
-    template_save: Save as Template
+    image:
+      label: Set Image
+      description: Add a banner image to your giveaway
+    button:
+      label: Button Style
+      description: Customize button color and emoji
+    color_edit:
+      label: Embed Color
+      description: Change the embed border color
+    channel:
+      label: Set Channel
+      description: Choose where to post the giveaway
+    template_save:
+      label: Save Template
+      description: Save current settings for reuse
   modals:
     duration:
       title: Join Duration Requirement
