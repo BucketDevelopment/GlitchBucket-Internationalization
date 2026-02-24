@@ -3632,6 +3632,7 @@ server:
       add:
         description: Thêm một vai trò cho một thành viên
         translation:
+          specified_user_hierachy: "{} không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
           owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
           server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.

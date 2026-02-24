@@ -3633,6 +3633,7 @@ server:
       add:
         description: Add a role to a member
         translation:
+          specified_user_hierachy: "{} are not higher than **{}** in the role hierarchy."
           user_hierachy: You are not higher than **{}** in the role hierarchy.
           owner: You cannot give **{}** to server owner.
           server_hierachy: I cannot give **{}** to **{}** due to Discord hierarchy rules. Please give me higher role to perform this action.
