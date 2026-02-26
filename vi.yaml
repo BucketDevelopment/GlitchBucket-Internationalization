@@ -2247,6 +2247,7 @@ bucketscript:
     option_deleted: "Lựa chọn đã bị xóa."
     select_deleted: "Trình chọn đã bị xóa."
   buttons:
+    form_submission_delete: "Xóa câu trả lời"
     share: Share
     export: Xuất
     delete_embed: Xóa
@@ -2358,6 +2359,8 @@ bucketscript:
     edit_form:
       placeholder: "Chọn 1 form để sửa"
     form:
+      actions:
+        placeholder: "Chọn thao tác form"
       edit_question:
         placeholder: "Chọn câu hỏi cần sửa"
       delete_question:
@@ -2368,6 +2371,8 @@ bucketscript:
       edit_element:
         placeholder: "Chọn một phần tử muốn sửa"
   modals:
+    cooldown:
+      placeholder: "Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)"
     channel:
       title: Đặt kênh
       description: Đặt kênh gửi đi cho tin nhắn
@@ -2571,6 +2576,23 @@ bucketscript:
           options:
             yes: "Có"
             no: "Không"
+    form_delete_question:
+      title: "Xóa câu hỏi"
+      select:
+        label: "Câu hỏi"
+        description: "Chọn 1 câu hỏi cần xóa"
+        empty: "Form không có câu hỏi nào để xóa."
+    form_limit:
+      title: "Giới hạn nhập form"
+      fields:
+        submission:
+          label: "Số lần nhập form"
+          description: "Số lần tối đa 1 thành viên có thể gửi form. Bạn có thể quản lí lịch sử nhập form tại /forms history."
+          placeholder: "Tối thiểu là 1, tối đa là 10"
+        cooldown:
+          label: "Cooldown giữa các lần nhập"
+          description: "Nếu thành viên chỉ được gửi tối đa 1 form thì phần này được bỏ qua. Tối thiểu là 15s."
+          placeholder: "Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)"
     layout_remove:
       title: "Xóa hàng"
       label: "Hàng phần tử"
@@ -2678,9 +2700,27 @@ bucketscript:
         description: "Một khung hiển thị, giống như embed"
 
   forms: 
+    actions:
+      edit_form:
+        label: "Chỉnh sửa thông tin"
+        description: "Sửa kênh nhận form, tin nhắn nhận form và thông tin cơ bản"
+      limit:
+        label: "Giới hạn"
+        description: "Sửa cooldown và giới hạn số lần nhập form"
+      add_question:
+        label: "Thêm câu hỏi"
+        description: "Thêm câu hỏi mới vào form"
+      edit_question:
+        label: "Sửa câu hỏi"
+        description: "Sửa một câu hỏi đã có"
+      delete_question:
+        label: "Xóa câu hỏi"
+        description: "Xóa một câu hỏi khỏi form"
     errors: 
       not_found: Server không có form nào mang ID `{0}`. Nút bấm này có thể đã bị xóa, bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
       no_questions: Form mang ID `{0}` hiện không có câu hỏi để bạn trả lời. Bạn hãy liên hệ với Quản trị viên của server để sửa lại form nhé!
+      invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
+      invalid_submission_amount: Số lần nhập form tối đa phải là 1 số hợp lệ trong khoảng 1 đến 10.
     checks:
       stopped: Form này đã ngừng nhận phản hồi. 
       maximum_exceeded: Bạn đã submit tối đa `{0}` lần cho form này, và không thể nhập thêm lần nào nữa. 
@@ -2693,6 +2733,17 @@ bucketscript:
       description: "Quản lí các nút (button) trong server"
     forms:
       description: "Quản lí các biểu mẫu (form) trong server"
+      subcommands:
+        history:
+          description: "Kiểm tra lịch sử nhập form của thành viên"
+          options:
+            form: "Chọn 1 form"
+          translation:
+            not_found: "Server không tồn tại form **`{0}`**."
+            empty: "Không có bất kì lịch sử điền form **`{0}`** nào của {1} trong server."
+            field_submitter: "Người gửi"
+            field_submitted_at: "Gửi lúc"
+            expired_answer: "*Câu trả lời đã bị xóa do dữ liệu quá cũ.*"
     selects:
       description: "Quản lí các ô lựa chọn kéo thả (selects) trong server"
     layout:

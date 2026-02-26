@@ -2248,6 +2248,7 @@ bucketscript:
     option_deleted: "Option has been deleted."
     select_deleted: "Select has been deleted."
   buttons:
+    form_submission_delete: "Delete response"
     share: Share
     export: Export
     delete_embed: Delete
@@ -2359,6 +2360,8 @@ bucketscript:
     edit_form:
       placeholder: "Choose a form to edit"
     form:
+      actions:
+        placeholder: "Choose a form action"
       edit_question:
         placeholder: "Choose a question to edit"
       delete_question:
@@ -2369,6 +2372,8 @@ bucketscript:
       edit_element:
         placeholder: "Choose an element to edit"
   modals:
+    cooldown:
+      placeholder: Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)
     channel:
       title: Set channel
       description: Set channel for the specified message
@@ -2572,6 +2577,23 @@ bucketscript:
           options:
             yes: "Yes"
             no: "No"
+    form_delete_question:
+      title: "Delete Question"
+      select:
+        label: "Question"
+        description: "Choose a question to delete"
+        empty: "This form has no questions to delete."
+    form_limit:
+      title: "Submission Limits"
+      fields:
+        submission:
+          label: "Submission Limit"
+          description: "Maximum submissions per member. You can review submission history using /forms history."
+          placeholder: "Minimum 1, maximum 10"
+        cooldown:
+          label: "Submission Cooldown"
+          description: "Ignored when submission limit is 1. Minimum is 15s."
+          placeholder: "Specify duration in short date format (e.g. 10m25s), or pure second (e.g. 86400)"
     layout_remove:
       title: "Remove Row"
       label: "Element Row"
@@ -2678,9 +2700,27 @@ bucketscript:
       container:
         description: "A display frame, similar to an embed"
   forms: 
+    actions:
+      edit_form:
+        label: "Edit information"
+        description: "Edit callback channel, callback message, and basic metadata"
+      limit:
+        label: "Limits"
+        description: "Edit submission cooldown and submission cap"
+      add_question:
+        label: "Add question"
+        description: "Add a new question to this form"
+      edit_question:
+        label: "Edit question"
+        description: "Edit an existing question"
+      delete_question:
+        label: "Delete question"
+        description: "Delete a question from this form"
     errors: 
       not_found: Server has no form with ID `{0}`. This button may have been deleted; please contact the server administrator to have the form fixed.
       no_questions: Form ID `{0}` currently has no questions for you to answer. Please contact the server administrator to have the form corrected.
+      invalid_time_format: "`{}` is not a valid short time format."
+      invalid_submission_amount: Maximum submission must be a valid number between 1 and 10.
     checks:
       stopped: This form is no longer accepting responses.
       maximum_exceeded: You have reached the submission limit of `{0}` for this form and cannot submit again.
@@ -2694,6 +2734,17 @@ bucketscript:
       description: "Manage buttons in your server"
     forms:
       description: "Manage forms in your server"
+      subcommands:
+        history:
+          description: "Check a member's form submission history"
+          options:
+            form: "Choose a form"
+          translation:
+            not_found: "This server does not have form **`{0}`**."
+            empty: "There is no submission history for form **`{0}`** from {1} in this server."
+            field_submitter: "Author"
+            field_submitted_at: "Submitted at"
+            expired_answer: "*This response was removed because the data is too old.*"
     selects:
       description: "Manage dropdown selects in your server"
     layout:
