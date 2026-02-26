@@ -3477,6 +3477,14 @@ moderation:
         success:
           reason: "**{}** has been banned, with reason: {}"
           none: "**{}** has been banned."
+    softban:
+      description: Softban a member
+      options:
+        delete_message: Speficy message old (in days) to delete message, default 0
+      translation:
+        success:
+          reason: "**{}** has been softbanned, with reason: {}"
+          none: "**{}** has been softbanned."
     unban:
       description: Unban a user
       translation:

@@ -3477,6 +3477,14 @@ moderation:
         success:
           reason: "**{}** đã bị cấm, với lý do: {}"
           none: "**{}** đã bị cấm."
+    softban:
+      description: Softban một thành viên
+      options:
+        delete_message: Chỉ định số ngày tin nhắn cũ để xóa, mặc định là 0
+      translation:
+        success:
+          reason: "**{}** đã bị softban, với lý do: {}"
+          none: "**{}** đã bị softban."
     unban:
       description: Bỏ cấm một người dùng
       translation:
