@@ -3478,7 +3478,7 @@ moderation:
           reason: "**{}** đã bị cấm, với lý do: {}"
           none: "**{}** đã bị cấm."
     softban:
-      description: Softban một thành viên
+      description: Ban một thành viên, và unban ngay lập tức
       options:
         delete_message: Chỉ định số ngày tin nhắn cũ để xóa, mặc định là 0
       translation:

@@ -3478,7 +3478,7 @@ moderation:
           reason: "**{}** has been banned, with reason: {}"
           none: "**{}** has been banned."
     softban:
-      description: Softban a member
+      description: Ban a member, and immediately unban
       options:
         delete_message: Speficy message old (in days) to delete message, default 0
       translation:
