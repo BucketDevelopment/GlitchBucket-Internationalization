@@ -258,7 +258,7 @@ pick:
     choices: "Các lựa chọn của bạn, phân cách bằng dấu phẩy (vd: táo, cam, chuối)"
   translation:
     title_choices: "\U0001F3AF Các lựa chọn"
-    title_picked: "\u2728 Tôi chọn"
+    title_picked: "\u2728 Bot chọn"
     error_min: "\u274c Bạn cần cung cấp ít nhất 2 lựa chọn, phân cách bằng dấu phẩy!\n\n**Ví dụ:** `táo, cam, chuối`"
     error_max: "\u274c Bạn chỉ có thể cung cấp tối đa 20 lựa chọn!"
 gayrate:
@@ -1047,8 +1047,8 @@ donation:
       translation:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì lí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
         insufficient_hierachy: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
+          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
         can_remove_only: "{} đã là vai trò phần thưởng cho server này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là vai trò phần thưởng của server này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
@@ -1339,7 +1339,7 @@ quickreport:
   send_report:
     channel_not_available: "Kênh nhận báo cáo từ người dùng hiện không tồn tại. Hãy thử lại sau vài phút, hoặc hỏi Quản trị viên Server về vấn đề này."
     bot_missing_permission: "Bot hiện đang thiếu quyền **Gửi Tin nhắn (Send Messages)** hoặc **Gửi Embed (Embed Links)** trong kênh nhận báo cáo, vậy nên bot không thể gửi báo cáo này tới Người Quản lí. Bạn có thể hỏi Quản trị viên Server về vấn đề này."
-    cant_view: "Không thể truy xuất tin nhắn cụ thể, hãy đảm bảo rằng tôi có thể xem {}!"
+    cant_view: "Không thể truy xuất tin nhắn cụ thể, hãy đảm bảo rằng bot có thể xem {}!"
     no_self_report: "Bạn không thể tự báo cáo chính mình."
     no_bot_report: "Bạn không thể báo cáo tin nhắn của bot."
     blacklisted: "Bạn đã bị chặn gửi báo cáo trong server này. Hãy đảm bảo rằng hiện tại bạn không bị tắt tiếng, đưa vào danh sách đen hoặc hết giờ."
@@ -1550,7 +1550,7 @@ customrole:
         this: đây
     select_role: Chọn một Custom Role, hoặc chỉ định một Custom Role ID
     unknown_role: "ID Role `{}` không thuộc về server này - role có thể đã bị xóa."
-    cannot_edit_role: "Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi vai trò của tôi thành một vị trí cao hơn."
+    cannot_edit_role: "Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi vai trò của bot thành một vị trí cao hơn."
     roles: Custom Role
     permissions_choice:
       _true: "Có"
@@ -1591,8 +1591,8 @@ customrole:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Tôi không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
+          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     max_users:
       description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
@@ -1628,8 +1628,8 @@ customrole:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Tôi không thể quản lí một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của tôi (vị trí của tôi: {0}, vị trí vai trò: {1}) hoặc (vị trí của tôi: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của tôi thành một ưu tiên cao hơn hoặc tạo một vai trò có vị trí thấp hơn vị trí cao nhất của tôi hoặc.
+          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
         invalid_time: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     set_permission:
       description: "Đặt quyền cho một Custom Role"
@@ -1764,7 +1764,7 @@ giveaway:
     ended_giveaway: Chọn một giveaway đã kết thúc
     giveaway: Chọn một giveaway đang chạy
     get_channel_failed: Không thể lấy kênh giveaway, vui lòng thử lại sau...
-    create_giveaway_failed: Không thể tạo giveaway, đảm bảo rằng tôi có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
+    create_giveaway_failed: Không thể tạo giveaway, đảm bảo rằng bot có quyền `Gửi Tin nhắn`, `Liên kết nhúng` và `Đọc Lịch sử Tin nhắn`.
     new_giveaway: "🎉🎉 **GIVEAWAY MỚI** 🎉🎉"
     giveaway_ended: "🎉🎉 **GIVEAWAY ĐÃ KẾT THÚC** 🎉🎉"
     template:
@@ -2202,8 +2202,8 @@ bucketscript:
       invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
     occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
     invalid_channel: 'ID kênh không hợp lệ: `{}`.'
-    cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
-    cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của tôi."
+    cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của bot."
+    cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của bot."
   description: "Tiện ích để xử lý các tin nhắn động."
   translation:
     update_roles: Cập nhật vai trò từ autoresponder
@@ -3434,17 +3434,17 @@ moderation:
   description: Các tiện ích quản lý server.
   commands:
     timeout:
-      description: Tạm thời chặn một thành viên
+      description: Timeout (tắt chat) một thành viên
       options:
         duration: 'Chỉ định thời gian dưới dạng ngắn (vd: 10m25s), hoặc số giây (vd: 86400)'
       translation:
         errors:
-          self: "Bạn không thể tự chặn mình."
+          self: "Bạn không thể tự timeout bản thân mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
-          owner: "Bạn không thể chặn chủ sở hữu server."
-          bot_hierachy: "Tôi không thể chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
+          owner: "Bạn không thể timeout chủ sở hữu server."
+          bot_hierachy: "Bot không thể timeout **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
-          unknown: "Tôi không thể chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          unknown: "Bot không thể timeout **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị tắt tiếng trong **{}**, với lý do: {}"
           none: "**{}** đã bị tắt tiếng trong **{}**."
@@ -3456,8 +3456,8 @@ moderation:
           self: "Bạn không thể tự bỏ chặn mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể bỏ chặn chủ sở hữu server."
-          bot_hierachy: "Tôi không thể bỏ chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
-          unknown: "Tôi không thể bỏ chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          bot_hierachy: "Bot không thể bỏ chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
+          unknown: "Bot không thể bỏ chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã được bỏ tắt tiếng, với lý do: {}"
           none: "**{}** đã được bỏ tắt tiếng."
@@ -3470,9 +3470,9 @@ moderation:
           self: "Bạn không thể tự cấm mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể cấm chủ sở hữu server."
-          bot_hierachy: "Tôi không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
+          bot_hierachy: "Bot không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải là định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
-          unknown: "Tôi không thể cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          unknown: "Bot không thể cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
           already_banned: "**{}** đã bị cấm trong server này."
         success:
           reason: "**{}** đã bị cấm, với lý do: {}"
@@ -3482,7 +3482,7 @@ moderation:
       translation:
         not_banned: "Thành viên này không bị cấm."
         invalid: "Người dùng này không hợp lệ hoặc không bị cấm trong server này."
-        error: "Tôi không thể bỏ cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+        error: "Bot không thể bỏ cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã được bỏ cấm, với lý do: {}"
           none: "**{}** đã được bỏ cấm."
@@ -3493,8 +3493,8 @@ moderation:
           self: "Bạn không thể tự cảnh cáo mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể cảnh cáo chủ sở hữu server."
-          bot_hierachy: "Tôi không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
-          unknown: "Tôi không thể cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          bot_hierachy: "Bot không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
+          unknown: "Bot không thể cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị cảnh cáo, với lý do: {}"
           none: "**{}** đã bị cảnh cáo."
@@ -3508,8 +3508,8 @@ moderation:
           self: "Bạn không thể tự bỏ cảnh cáo mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể bỏ cảnh cáo chủ sở hữu server."
-          bot_hierachy: "Tôi không thể bỏ cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
-          unknown: "Tôi không thể bỏ cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          bot_hierachy: "Bot không thể bỏ cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
+          unknown: "Bot không thể bỏ cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã được bỏ cảnh cáo, với lý do: {}"
           none: "**{}** đã được bỏ cảnh cáo."
@@ -3520,8 +3520,8 @@ moderation:
           self: "Bạn không thể tự kick mình."
           user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           owner: "Bạn không thể kick chủ sở hữu server."
-          bot_hierachy: "Tôi không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này."
-          unknown: "Tôi không thể kick **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          bot_hierachy: "Bot không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
+          unknown: "Bot không thể kick **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
         success:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
           none: "**{}** đã bị đá khỏi server."
@@ -3635,7 +3635,7 @@ server:
           specified_user_hierachy: "{} không cao hơn **{}** trong hệ thống cấp bậc vai trò."
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
           owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
-          server_hierachy: Tôi không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
+          server_hierachy: Bot không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           already_have: "{} đã có vai trò **{}**."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           successful: Đã thêm **{}** cho **{}**.
@@ -3650,7 +3650,7 @@ server:
             bot: Tất cả Bot (không bao gồm người)
         translation:
           already_running: Server này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
-          server_hierachy: Tôi không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
+          server_hierachy: Bot không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: 'Đang thực hiện thêm **{}** cho {} tài khoản. Thời gian hoàn thành ước tính: {}.'
           successful: Đã thêm thành công **{}** cho {} tài khoản.
@@ -3659,7 +3659,7 @@ server:
         translation:
           user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
           owner: Bạn không thể xóa **{}** khỏi chủ sở hữu server.
-          server_hierachy: Tôi không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
+          server_hierachy: Bot không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           already_have: "{} không có vai trò {}."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           successful: Đã xóa {} khỏi **{}**.
@@ -3669,7 +3669,7 @@ server:
           option: Chọn một tùy chọn để gán vai trò
         translation:
           already_running: Server này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
-          server_hierachy: Tôi không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho tôi role cao hơn để thực hiện hành động này.
+          server_hierachy: Bot không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           adding: Removing **{}** from {} accounts, this may take {}.
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
