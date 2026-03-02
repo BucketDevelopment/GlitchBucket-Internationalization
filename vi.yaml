@@ -100,7 +100,7 @@ common:
     role: "Chọn một vai trò, hoặc chỉ định ID vai trò"
     category: "Chọn danh mục, hoặc chỉ định ID danh mục"
     channel: "Chọn một kênh, hoặc chỉ định ID kênh"
-    member: "Chọn một thành viên trong server, hoặc chỉ định ID thành viên"
+    member: "Chọn một Member trong server, hoặc chỉ định ID Member"
     user: "Chọn một người dùng, hoặc chỉ định ID người dùng"
     reason: "Hãy nhập lý do cho hành động này"
     silent: "Cho biết lệnh này có nên được thực hiện ở chế độ im lặng hay không"
@@ -111,9 +111,9 @@ common:
     common: Chọn 1 lựa chọn
     channel: Chọn 1 kênh
   config:
-    saved: "Đã lưu configuration thành công!"
-    edited: "Đã chỉnh sửa configuration thành công!"
-    updated: "Đã cập nhật configuration thành công!"
+    saved: "Đã lưu configuration thành công."
+    edited: "Đã chỉnh sửa configuration thành công."
+    updated: "Đã cập nhật configuration thành công."
   cooldown:
     triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
     expired: ":stopwatch: Cooldown của lệnh đã kết thúc. Bây giờ bạn đã có thể sử dụng lại lệnh."
@@ -121,6 +121,11 @@ common:
     dns: "Bot không thể kết nối tới discord để phản hồi lại thực hiện hành động vừa rồi, vui lòng thử lại"
     client_desync: "### :warning: Lệnh này đã lỗi thời so với máy. Vui lòng tải lại Discord để cập nhật lệnh."
     database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu, vui lòng thử lại sau..."
+    missing_required_argument: |
+      Bạn còn thiếu tham số bắt buộc **`{}`**: 
+      ```ansi
+      {}```
+      Hãy bổ sung đầy đủ phần tử và thử lại. Lệnh chỉ được xử lý khi tất cả các tham số bắt buộc được cung cấp.
     unknown:
       reply: |
         Đã có lỗi xảy ra trong khi thực hiện thao tác:

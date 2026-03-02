@@ -120,9 +120,9 @@ common:
     common: Select an option...
     channel: Select a channel...
   config:
-    saved: "Successfully saved configuration!"
-    edited: "Successfully edited configuration!"
-    updated: "Successfully updated configuration!"
+    saved: "Successfully saved configuration."
+    edited: "Successfully edited configuration."
+    updated: "Successfully updated configuration."
   cooldown:
     triggered: ":stopwatch: Please wait <t:{}:R> before using the command again."
     expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
@@ -130,6 +130,11 @@ common:
     dns: "We could not connect to discord to process your previous interaction, please try again."
     client_desync: "### :warning: This command has outdated from your client. Please reload Discord to update the command."
     database: "A database error occurred while saving your data, please try again later..."
+    missing_required_argument: |
+      You are missing the required parameter **`{}`**: 
+      ```ansi
+      {}```
+      Please provide all required elements and try again. The command will only be processed when all required parameters are provided.
     unknown:
       reply: |
         An error occurred while executing the command:
