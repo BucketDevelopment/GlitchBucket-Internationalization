@@ -1820,7 +1820,9 @@ giveaway:
       description: "Giveaway sau đã được khôi phục: {}"
     embed_created:
       title: Tạo giveaway thành công!
-      description: "Giveaway sau đã được tạo: {}"
+      description: |
+        Giveaway sau đã được tạo: {}
+        **MỚI**: Custom embed/tin nhắn giveaway của bạn bằng **`/giveaway messages`**!
     embed_edited:
       title: Đã chỉnh sửa thành công!
       description: "Giveaway sau đây đã được chỉnh sửa: {}"

@@ -1820,7 +1820,9 @@ giveaway:
       description: "The following giveaway has been recovered: {}"
     embed_created:
       title: Giveaway successfully created!
-      description: "The following giveaway has been created: {}"
+      description: |
+        The following giveaway has been created: {}
+        **NEW:** Customize your giveaway embed by **`/giveaway messages`**!
     embed_edited:
       title: Giveaway successfully edited!
       description: "The following giveaway has been edited: {}"
