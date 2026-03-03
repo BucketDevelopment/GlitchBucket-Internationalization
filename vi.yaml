@@ -1781,6 +1781,9 @@ giveaway:
         label: Không
         description: Bắt đầu từ đầu mà không sử dụng template đã lưu
     invalid_input: "Input không hợp lệ, hãy đảm bảo làm theo hướng dẫn đã chỉ định."
+    custom_setting_blocked: "Cài đặt không khả dụng do bạn đã bật sử dụng Custom Message cho Giveaway.\nĐể sửa các tin nhắn custom của bạn, sử dụng **`/giveaway messages`**."
+    custom_toggled_on: "Đã bật custom message cho giveaway."
+    custom_toggled_off: "Đã tắt custom message cho giveaway."
   embeds:
     somehow_ended:
       title: Giveaway đã kết thúc trước đó!
@@ -1863,6 +1866,13 @@ giveaway:
       failed:
         title: Không thể rời đi...
         description: Bạn chưa tham gia giveaway này, hoặc giveaway không tồn tại.
+    customize:
+      title: Chỉnh sửa tin nhắn Giveaway
+      editing_part: "Bạn đang thực hiện chỉnh sửa phần **`{}`** của tin nhắn Giveaway."
+      description: "Bạn đang thực hiện custom message cho các giveaway."
+      enabled: "Server hiện đang **BẬT** custom message."
+      disabled: "Server hiện đang **TẮT** custom message."
+      select_part: "Hãy chọn phần tin nhắn giveaway bạn muốn chỉnh sửa, hoặc bật/tắt custom message cho giveaway ở dưới:"
   selects:
     bonus: Chọn vai trò để thêm Lượt tham gia bonus
     requirements: Chọn vai trò để làm Requirement
@@ -1871,6 +1881,26 @@ giveaway:
     channel: Đặt kênh Giveaway
     templates: Chọn một template để áp dụng
     setup_action: Chọn hành động để cấu hình giveaway
+    customize: Chọn loại tin nhắn giveaway cần sửa
+    customize_options:
+      running:
+        label: "Embed: Đang diễn ra"
+        description: "Tin nhắn khi giveaway đang diễn ra"
+      finished:
+        label: "Embed: Đã kết thúc, có winner"
+        description: "Tin nhắn khi giveaway kết thúc"
+      empty_embed:
+        label: "Embed: Đã kết thúc, không có winner"
+        description: "Embed khi không có người chiến thắng"
+      rolled:
+        label: "Reply: Công bố kết quả"
+        description: "Tin nhắn công bố người chiến thắng"
+      rerolled:
+        label: "Reply: Reroll người thắng"
+        description: "Tin nhắn khi reroll người chiến thắng"
+      empty_message:
+        label: "Reply: Không có winner"
+        description: "Tin nhắn phản hồi khi không có người chiến thắng"
   buttons:
     participated:
       entrants: Người tham gia
@@ -1928,6 +1958,10 @@ giveaway:
     template_save:
       label: Lưu mẫu
       description: Lưu cài đặt hiện tại để dùng lại
+    customize:
+      edit_message: Chỉnh sửa tin nhắn
+      edit_embed: Chỉnh sửa Embed
+      toggle: Bật/Tắt Custom Message
   modals:
     duration:
       title: Yêu cầu Thời gian Tham gia
@@ -1948,6 +1982,8 @@ giveaway:
         emoji:
           label: Biểu tượng cảm xúc
           placeholder: Dán mã Unicode biểu tượng cảm xúc hoặc Biểu tượng cảm xúc tùy chỉnh của server tại đây
+    customize:
+      title: Nội dung
     color:
       title: Màu nhúng Giveaway
       fields:

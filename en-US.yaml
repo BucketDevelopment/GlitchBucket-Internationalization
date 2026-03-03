@@ -1781,6 +1781,9 @@ giveaway:
         label: None
         description: Start from scratch without using saved templates
     invalid_input: "Your previous input was invalid, make sure to follow the instruction."
+    custom_setting_blocked: "This setting is unavailable because you have enabled Custom Message for Giveaway.\nTo edit your custom messages, use **`/giveaway messages`**."
+    custom_toggled_on: "Custom message for giveaway has been enabled."
+    custom_toggled_off: "Custom message for giveaway has been disabled."
   embeds:
     somehow_ended:
       title: Giveaway Already Ended!
@@ -1863,14 +1866,13 @@ giveaway:
       failed:
         title: Unable to leave...
         description: You haven't participated in this giveaway, or the giveaway does not exist.
-  selects:
-    bonus: Select role to add bonus entrants
-    requirements: Select roles to make requirement
-    blacklists: Select roles to blacklist
-    bypasses: Add roles to requirement bypasses
-    channel: Set Giveaway channel
-    templates: Select a template to apply
-    setup_action: Select an action to configure your giveaway
+    customize:
+      title: Edit Giveaway Messages
+      editing_part: "You are editing the **`{}`** part of giveaway messages."
+      description: "You are customizing messages for giveaways."
+      enabled: "This server currently has custom messages **ENABLED**."
+      disabled: "This server currently has custom messages **DISABLED**."
+      select_part: "Select the giveaway message part you want to edit, or toggle custom messages below:"
   buttons:
     participated:
       entrants: Entrants Participated
@@ -1928,6 +1930,38 @@ giveaway:
     template_save:
       label: Save Template
       description: Save current settings for reuse
+    customize:
+      edit_message: Edit Message
+      edit_embed: Edit Embed
+      toggle: Toggle Custom Message
+  selects:
+    bonus: Select role to add bonus entrants
+    requirements: Select roles to make requirement
+    blacklists: Select roles to blacklist
+    bypasses: Add roles to requirement bypasses
+    channel: Set Giveaway channel
+    templates: Select a template to apply
+    setup_action: Select an action to configure your giveaway
+    customize: Select giveaway message type to edit
+    customize_options:
+      running:
+        label: "Embed: Running"
+        description: "Message when giveaway is running"
+      finished:
+        label: "Embed: Finished with winners"
+        description: "Message when giveaway ends"
+      empty_embed:
+        label: "Embed: Finished without winners"
+        description: "Embed when there are no winners"
+      rolled:
+        label: "Reply: Announce results"
+        description: "Message announcing winners"
+      rerolled:
+        label: "Reply: Reroll winners"
+        description: "Message when rerolling winners"
+      empty_message:
+        label: "Reply: No winners"
+        description: "Reply message when there are no winners"
   modals:
     duration:
       title: Join Duration Requirement
@@ -1948,6 +1982,8 @@ giveaway:
         emoji:
           label: Emoji
           placeholder: Paste your Emoji Unicode, or Custom Server Emoji here
+    customize:
+      title: Content
     color:
       title: Giveaway Embed Color
       fields:
