@@ -1904,6 +1904,7 @@ giveaway:
         label: "Reply: Không có winner"
         description: "Tin nhắn phản hồi khi không có người chiến thắng"
   buttons:
+    documentation: Tài liệu (docs)
     participated:
       entrants: Người tham gia
       entrant: Người tham gia

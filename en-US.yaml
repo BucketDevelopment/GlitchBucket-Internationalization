@@ -1876,6 +1876,7 @@ giveaway:
       disabled: "This server currently has custom messages **DISABLED**."
       select_part: "Select the giveaway message part you want to edit, or toggle custom messages below:"
   buttons:
+    documentation: Documentation
     participated:
       entrants: Entrants Participated
       entrant: Entrant Participated
