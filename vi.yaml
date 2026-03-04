@@ -1822,7 +1822,7 @@ giveaway:
       title: Tạo giveaway thành công!
       description: |
         Giveaway sau đã được tạo: {}
-        **MỚI**: Custom embed/tin nhắn giveaway của bạn bằng **`/giveaway messages`**!
+        **MỚI**: Custom embed/tin nhắn giveaway của bạn bằng </giveaway messages:1240148427967565866>!
     embed_edited:
       title: Đã chỉnh sửa thành công!
       description: "Giveaway sau đây đã được chỉnh sửa: {}"

@@ -1822,7 +1822,7 @@ giveaway:
       title: Giveaway successfully created!
       description: |
         The following giveaway has been created: {}
-        **NEW:** Customize your giveaway embed by **`/giveaway messages`**!
+        **NEW:** Customize your giveaway embed by </giveaway messages:1240148427967565866>!
     embed_edited:
       title: Giveaway successfully edited!
       description: "The following giveaway has been edited: {}"
