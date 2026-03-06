@@ -114,6 +114,7 @@ common:
     saved: "Đã lưu configuration thành công."
     edited: "Đã chỉnh sửa configuration thành công."
     updated: "Đã cập nhật configuration thành công."
+    not_supported: "Tính năng này chưa được hỗ trợ. Vui lòng quay lại sau."
   cooldown:
     triggered: ":stopwatch: Vui lòng đợi <t:{}:R> trước khi sử dụng lại lệnh."
     expired: ":stopwatch: Cooldown của lệnh đã kết thúc. Bây giờ bạn đã có thể sử dụng lại lệnh."

@@ -123,6 +123,7 @@ common:
     saved: "Successfully saved configuration."
     edited: "Successfully edited configuration."
     updated: "Successfully updated configuration."
+    not_supported: "This feature is not yet supported. Please check back later."
   cooldown:
     triggered: ":stopwatch: Please wait <t:{}:R> before using the command again."
     expired: ":stopwatch: Command cooldown has expired. Now you can use the command again."
