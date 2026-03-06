@@ -4640,4 +4640,5 @@ ticket:
     max_panels: "Bạn chỉ có thể có tối đa 5 danh mục ticket."
     invalid_priority: "Thứ tự ưu tiên cần phải là 1 số dương trong khoảng 1 đến 99, vui lòng nhập lại."
     priority_exists: "Đã có role <@&{}> mang thứ tự ưu tiên `{}`, vui lòng nhập lại thứ tự ưu tiên khác."
+    missing_permissions: "Bot thiếu các quyền sau để tạo ticket: `{}`"
 

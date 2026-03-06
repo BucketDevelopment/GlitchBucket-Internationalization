@@ -4633,3 +4633,4 @@ ticket:
     max_panels: "You can only have a maximum of 5 ticket panels."
     invalid_priority: "Priority must be a positive number between 1 and 99. Please re-enter."
     priority_exists: "The role <@&{}> already has priority `{}`, please enter a different priority."
+    missing_permissions: "I am missing the following permissions to create tickets: `{}`"
