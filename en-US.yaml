@@ -1871,7 +1871,8 @@ giveaway:
         description: You haven't participated in this giveaway, or the giveaway does not exist.
     customize:
       title: Edit Giveaway Messages
-      editing_part: "You are editing the **`{}`** part of giveaway messages."
+      editing_part: "You are editing the **{}** part of giveaway messages. ({})"
+      template_context: "You are customizing giveaway messages for template **`{}`**."
       description: "You are customizing messages for giveaways."
       enabled: "This server currently has custom messages **ENABLED**."
       disabled: "This server currently has custom messages **DISABLED**."
@@ -1902,6 +1903,9 @@ giveaway:
     start:
       label: Start Giveaway
       description: Review and launch your giveaway
+    edit_embed:
+      label: Edit Embed
+      description: Customize giveaway messages/embeds
     edit_settings:
       label: Edit Settings
       description: Change reward, duration and winner count

@@ -1794,7 +1794,7 @@ giveaway:
       description: Chỉ có người tổ chức Giveaway mới có thể sử dụng nút này. Hoặc không, bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.
     not_enough_entrants:
       title: Không thể kết thúc giveaway...
-      description: Không có đủ người tham gia để xác định người chiến thắng cho [giveaway này]({}), ;(
+      description: Không có đủ người tham gia để xác định winner ...
     mismatch_requirements:
       title: Yêu cầu không khớp!
       description: "Bạn không được phép tham gia giveaway này với lý do: {}."
@@ -1871,7 +1871,8 @@ giveaway:
         description: Bạn chưa tham gia giveaway này, hoặc giveaway không tồn tại.
     customize:
       title: Chỉnh sửa tin nhắn Giveaway
-      editing_part: "Bạn đang thực hiện chỉnh sửa phần **`{}`** của tin nhắn Giveaway."
+      editing_part: "Bạn đang thực hiện chỉnh sửa phần **{}** của tin nhắn Giveaway. ({})"
+      template_context: "Bạn đang chỉnh sửa custom message cho template **`{}`**."
       description: "Bạn đang thực hiện custom message cho các giveaway."
       enabled: "Server hiện đang **BẬT** custom message."
       disabled: "Server hiện đang **TẮT** custom message."
@@ -1930,6 +1931,9 @@ giveaway:
     start:
       label: Bắt đầu
       description: Xem lại và khởi động giveaway
+    edit_embed:
+      label: Sửa Embed 
+      description: Sửa nội dung giveaway embed theo ý của bạn
     edit_settings:
       label: Cài đặt
       description: Sửa phần thưởng, thời lượng, số người thắng
