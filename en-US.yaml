@@ -1949,20 +1949,20 @@ giveaway:
     customize: Select giveaway message type to edit
     customize_options:
       running:
-        label: "Embed: Running"
-        description: "Message when giveaway is running"
+        label: "Running"
+        description: "Main Message/Embed when giveaway is running"
       finished:
-        label: "Embed: Finished with winners"
-        description: "Message when giveaway ends"
+        label: "Finished with winners"
+        description: "Main Message/Embed when giveaway ends"
       empty_embed:
-        label: "Embed: Finished without winners"
-        description: "Embed when there are no winners"
+        label: "Finished without winners"
+        description: "Main Message/Embed when there are no winners"
       rolled:
-        label: "Reply: Announce results"
-        description: "Message announcing winners"
+        label: "Announce results"
+        description: "A reply Message announcing winners"
       rerolled:
-        label: "Reply: Reroll winners"
-        description: "Message when rerolling winners"
+        label: "Reroll winners"
+        description: "A reply Message when rerolling winners"
       empty_message:
         label: "Reply: No winners"
         description: "Reply message when there are no winners"

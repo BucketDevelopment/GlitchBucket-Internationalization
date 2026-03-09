@@ -1887,22 +1887,22 @@ giveaway:
     customize: Chọn loại tin nhắn giveaway cần sửa
     customize_options:
       running:
-        label: "Embed: Đang diễn ra"
-        description: "Tin nhắn khi giveaway đang diễn ra"
+        label: "Đang diễn ra"
+        description: "Tin nhắn giveaway khi giveaway đang diễn ra"
       finished:
-        label: "Embed: Đã kết thúc, có winner"
-        description: "Tin nhắn khi giveaway kết thúc"
+        label: "Đã kết thúc, có winner"
+        description: "Tin nhắn giveaway khi giveaway kết thúc"
       empty_embed:
-        label: "Embed: Đã kết thúc, không có winner"
-        description: "Embed khi không có người chiến thắng"
+        label: "Đã kết thúc, không có winner"
+        description: "Tin nhắn giveaway khi không có người chiến thắng"
       rolled:
-        label: "Reply: Công bố kết quả"
-        description: "Tin nhắn công bố người chiến thắng"
+        label: "Công bố kết quả"
+        description: "Tin nhắn phản hồi công bố người chiến thắng"
       rerolled:
-        label: "Reply: Reroll người thắng"
-        description: "Tin nhắn khi reroll người chiến thắng"
+        label: "Reroll người thắng"
+        description: "Tin nhắn phản hồi khi reroll người chiến thắng"
       empty_message:
-        label: "Reply: Không có winner"
+        label: "Không có winner"
         description: "Tin nhắn phản hồi khi không có người chiến thắng"
   buttons:
     documentation: Tài liệu (docs)
