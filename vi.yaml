@@ -3721,7 +3721,7 @@ server:
           high: Cao
           highest: Cao nhất
     membercount:
-      description: Hiển thị số lượng thành viên về server này
+      description: Hiển thị số lượng member trong server này
       translation:
         total: Tổng cộng
         human: Người thật
@@ -3731,6 +3731,9 @@ server:
         30days: 30 ngày qua
     role:
       description: Quản lí role trong server
+      translation:
+        member_not_found: "Không tìm thấy member nào phù hợp với `{}`."
+        role_not_found: "Không tìm thấy role nào phù hợp với `{}`."
       members:
         description: Hiển thị thành viên của một vai trò cụ thể
         options:

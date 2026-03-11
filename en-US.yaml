@@ -3732,6 +3732,9 @@ server:
         30days: Last 30 days
     role:
       description: Manage server roles
+      translation:
+        member_not_found: "Could not find a member matching `{}`."
+        role_not_found: "Could not find a role matching `{}`."
       members:
         description: Show members of a specific role
         options:
