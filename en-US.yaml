@@ -1809,6 +1809,10 @@ customrole:
   admin: "Custom Role Admin Command Group"
   user: "Custom Role User Command Group"
   commands:
+    manage:
+      description: Manage a custom role (admin)
+    configuration: 
+      description: Edit custom role's server configuration
     warning:
       description: Send a warning message when a role is close to expiration date
       options:

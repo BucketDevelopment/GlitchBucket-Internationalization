@@ -1809,6 +1809,10 @@ customrole:
   admin: "Nhóm Lệnh Quản trị Custom Role"
   user: "Nhóm Lệnh Người Dùng Custom Role"
   commands:
+    manage: 
+      description: Quản lí Custom Role (admin)
+    configuration: 
+      description: Chỉnh sửa config Custom Role của server
     warning:
       description: Gửi một thông báo ghi một role sắp hết hạn
       options:
