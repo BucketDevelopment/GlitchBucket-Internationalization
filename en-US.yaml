@@ -295,6 +295,9 @@ information:
   description: Show information of the bot
   translation:
     global_information: Global Information
+    system_load: System Load
+    statistics: Statistics
+    stats_summary: "<:dot:1481894327834775626>{} servers\n<:dot:1481894327834775626>{} members"
     description:
       normal: |
         **{}** is a Discord bot based on [discord.py](https://github.com/Rapptz/discord.py), packaged with many useful utilities for your needs.
@@ -319,6 +322,11 @@ information:
     network: Inbound/Outbound Network
     shards: Current/Total Shards
     startup: Startup
+    startup_line: "-# **{}** started <t:{}:R> with {} shards."
+    guild_shard_line: "-# This server is running on shard {}"
+    process_mem:
+      na: " · Mem stats: N/A"
+      summary: " · {} ({}%) virt mem"
     made_with_love: Made with 💖 by {}
 snipe:
   description: Check recent deleted message
@@ -1568,6 +1576,236 @@ customrole:
       To migrate from your own role into our custom role's database, please use </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` is not a valid short time format."
     invalid_color_format: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
+    member_not_in_guild: "That member could not be found in this server."
+  ui:
+    manage:
+      modals:
+        name:
+          title: Edit Role Name
+          label: Role Name
+          placeholder: Enter the new display name for this role
+        color:
+          title: Edit Role Color
+          primary:
+            label: Primary Color
+            description: Enter a hex color code (#RRGGBB or #RGB)
+            placeholder: "#FF0000"
+          secondary:
+            label: Secondary Color (optional)
+            description: Only applies if the server has Enhanced Role Colors
+            placeholder: "#00FF00 — leave empty to keep current"
+        max_users:
+          title: Edit Maximum Users
+          label: Maximum Users
+          description: Enter a number between 1 and 100
+          placeholder: "5"
+          invalid: "Invalid number. Must be 1–100."
+        expiration:
+          title: Edit Expiration
+          label: Expiration
+          description: Enter a duration, 0 for permanent, or 1 for booster-tied
+          placeholder: "30d / 6h / 0 = permanent / 1 = booster"
+          extend_from_now:
+            text: Extend from Current Time
+            description: If checked, extend from now. If not, extend from current expiry
+        transfer:
+          title: Transfer Ownership
+          text: New Owner
+          description: Select the member who will become the new owner of this role
+          placeholder: Select a member…
+        member:
+          add_title: Add Member to Role
+          remove_title: Remove Member from Role
+          text: Member
+          description: Select the member to add or remove from this role
+          placeholder: Select a member…
+        permissions:
+          title: Configure Role Permissions
+          icon:
+            text: "🖼️ Icon"
+            placeholder: Set icon permission…
+          name:
+            text: "🏷️ Name"
+            placeholder: Set name permission…
+          color:
+            text: "🎨 Color"
+            placeholder: Set color permission…
+          members:
+            text: "👥 Members"
+            placeholder: Set members permission…
+          mentionable:
+            text: "🔔 Mentionable"
+            placeholder: Set mentionable permission…
+      views:
+        perm_options:
+          allow:
+            label: Allow
+            description: User can freely edit this
+          approval:
+            label: Require Approval
+            description: Requires admin approval first
+          deny:
+            label: Deny
+            description: User cannot edit this
+          default:
+            label: Server Default
+            description: Use server-wide default setting
+        perm_value:
+          placeholder: 'Set "{}" permission…'
+          back: Back
+          embed:
+            title: "Set Permission: {}"
+            description: |
+              Choose how this permission should behave **for this specific role**.
+
+              `✅ Allow` — user can edit freely
+              `📋 Require Approval` — needs admin to approve first
+              `❌ Deny` — user cannot edit
+              `⚙️ Server Default` — follow server-wide setting
+            footer: Customrole Admin • Set Permission Value
+        permissions:
+          placeholder: Select a permission to configure…
+          back: Back
+          embed:
+            title: Configure Role Permissions
+            description: "Select which permission to configure for this role.\nThese settings override the server-wide defaults."
+            footer: Customrole Admin • Permissions
+          options:
+            icon:
+              label: Icon
+              description: Edit role icon
+            name:
+              label: Name
+              description: Edit role name
+            color:
+              label: Color
+              description: Edit role color
+            members:
+              label: Members
+              description: Add / remove role members
+            mentionable:
+              label: Mentionable
+              description: Toggle role mentionable
+        manage:
+          placeholder: Select an option to configure…
+          options:
+            icon:
+              label: Icon
+              description: Change role's icon
+            mentionable:
+              label: "Mentionable"
+              description: Make the role mentionable by another members
+            name:
+              label: Edit Name
+              description: Change the role's display name
+            color:
+              label: Edit Color
+              description: Change primary / secondary color
+            max_users:
+              label: Max Users
+              description: Set maximum number of members allowed
+            expiration:
+              label: Expiration
+              description: Change when this role expires
+            transfer:
+              label: Transfer Ownership
+              description: Move this role to a different user
+            permissions:
+              label: Permissions
+              description: Configure per-role permission overrides
+            add_member:
+              label: Add Member
+              description: Add a member to this role
+            remove_member:
+              label: Remove Member
+              description: Remove a member from this role
+    user:
+      manage:
+        modals:
+          icon:
+            link:
+              placeholder: Paste an image URL for the role icon
+        views:
+          icon:
+            description: Choose how you want to update this role's icon.
+            link: Use Image URL
+            file: Upload File
+            remove: Remove Icon
+    configuration:
+      modals:
+        default_perm:
+          title: Default Author Permissions
+          perm_yes: "Yes - Allow"
+          perm_no: "No - Deny"
+          perm_approval: Require Approval
+          icon:
+            text: "Icon"
+            placeholder: Set icon permission…
+          name:
+            text: "Name"
+            placeholder: Set name permission…
+          color:
+            text: "Color"
+            placeholder: Set color permission…
+          members:
+            text: "Members"
+            placeholder: Set members permission…
+          mentionable:
+            text: "Mentionable"
+            placeholder: Set mentionable permission…
+        expiration_warning:
+          title: Expiration Warning
+          channel:
+            text: Warning Channel
+            description: Channel to send the expiration warning
+            placeholder: Select a text channel…
+          before:
+            label: Warn Before Expiry
+            description: How long before the role expires to send the warning
+            placeholder: "3d / 12h / 1w"
+          message:
+            label: Warning Message
+            description: Leave empty to clear and disable the expiration warning
+            placeholder: "Your custom role {role} will expire in {time}."
+        approval:
+          title: Request Approval
+          channel:
+            text: Approval Channel
+            description: Channel where approval requests are sent
+            placeholder: Select a text channel…
+          concurrent:
+            label: Max Concurrent Requests
+            description: Maximum number of pending approvals a user can have at once (1–10)
+            placeholder: "2"
+        on_expire:
+          title: On Expire Action
+          text: Action on Role Expiry
+          placeholder: Select action…
+          options:
+            removeall:
+              label: Remove All Members
+              description: Remove all members from the role
+            remove:
+              label: Remove Author Only
+              description: Remove only the author from the role
+            delete:
+              label: Delete Role
+              description: Delete the role entirely
+      view:
+        placeholder: Select a setting to configure…
+        options:
+          default_perm:
+            label: Default Author Permissions
+            description: Set default permissions for all custom roles
+          expiration_warning:
+            label: Expiration Warning
+            description: Send a warning before a role expires
+          on_expire:
+            label: On Expire Action
+            description: What to do when a role expires
+          request_approval:
+            label: Request Approval
+            description: Set approval channel and concurrent limit
   admin: "Custom Role Admin Command Group"
   user: "Custom Role User Command Group"
   commands:
@@ -1729,6 +1967,8 @@ customrole:
           description: "Remove icon from your custom role"
         mentionable:
           description: "Make your custom role mentionable"
+        manage:
+          description: "Manage your custom role"
         info:
           description: "See your custom role's information"
         name:

@@ -295,6 +295,9 @@ information:
   description: Hiển thị thông tin của bot
   translation:
     global_information: Thông tin
+    system_load: Tải hệ thống
+    statistics: Thống kê
+    stats_summary: "<:dot:1481894327834775626>{} server\n<:dot:1481894327834775626>{} member"
     description:
       normal: |
         **{}** là một bot Discord dựa trên [discord.py](https://github.com/Rapptz/discord.py), đáp ứng mọi nhu cầu cần thiết.
@@ -319,6 +322,11 @@ information:
     network: Network
     shards: Shard hiện tại/Tổng số Shard
     startup: Khởi động
+    startup_line: "-# ***{}** đã start <t:{}:R> với {} shard.*"
+    guild_shard_line: "-# *Server này đang chạy trên shard {}.*"
+    process_mem:
+      na: "Mem stats: Không khả dụng"
+      summary: "{} ({}%) virt mem"
     made_with_love: Made with 💖 by {}
 snipe:
   description: Kiểm tra tin nhắn đã xóa gần đây
@@ -1568,6 +1576,236 @@ customrole:
       Để di chuyển từ vai trò vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
+    member_not_in_guild: "Không thể tìm thấy member này trong server."
+  ui:
+    manage:
+      modals:
+        name:
+          title: Chỉnh Sửa Tên Role
+          label: Tên Role
+          placeholder: Nhập tên hiển thị mới cho role này
+        color:
+          title: Chỉnh Sửa Màu Role
+          primary:
+            label: Màu Chính
+            description: "Nhập mã màu hex (#RRGGBB)"
+            placeholder: "#FF0000"
+          secondary:
+            label: Màu Phụ (tùy chọn)
+            description: Chỉ áp dụng nếu server có Enhanced Role Colors
+            placeholder: "#00FF00 - để trống để giữ nguyên"
+        max_users:
+          title: Chỉnh Sửa Giới Hạn Người Dùng
+          label: Số Người Tối Đa
+          description: Nhập một số từ 1 đến 100
+          placeholder: "5"
+          invalid: "Số không hợp lệ. Phải từ 1–100."
+        expiration:
+          title: Chỉnh Sửa Thời Hạn
+          label: Thời Hạn
+          description: Nhập khoảng thời gian, 0 để vĩnh viễn, hoặc 1 để gắn với boost
+          placeholder: "30d / 6h / 0 = vĩnh viễn / 1 = theo boost"
+          extend_from_now:
+            text: Gia Hạn Từ Thời Điểm Hiện Tại
+            description: Nếu bật, gia hạn từ bây giờ. Nếu tắt, gia hạn từ thời điểm role hết hạn
+        transfer:
+          title: Chuyển Quyền Sở Hữu
+          text: Chủ Sở Hữu Mới
+          description: Chọn member sẽ trở thành chủ sở hữu mới của role này
+          placeholder: Chọn một member…
+        member:
+          add_title: Thêm Member Vào Role
+          remove_title: Xóa Member Khỏi Role
+          text: Member
+          description: Chọn member cần thêm hoặc xóa khỏi role này
+          placeholder: Chọn một member…
+        permissions:
+          title: Cấu Hình Quyền Role
+          icon:
+            text: "🖼️ Icon"
+            placeholder: Đặt quyền icon…
+          name:
+            text: "🏷️ Tên"
+            placeholder: Đặt quyền tên…
+          color:
+            text: "🎨 Màu Sắc"
+            placeholder: Đặt quyền màu sắc…
+          members:
+            text: "👥 Thành Viên"
+            placeholder: Đặt quyền thành viên…
+          mentionable:
+            text: "🔔 Được Đề Cập"
+            placeholder: Đặt quyền đề cập…
+      views:
+        perm_options:
+          allow:
+            label: Cho Phép
+            description: Người dùng có thể chỉnh sửa tự do
+          approval:
+            label: Yêu Cầu Phê Duyệt
+            description: Cần admin phê duyệt trước
+          deny:
+            label: Từ Chối
+            description: Người dùng không thể chỉnh sửa
+          default:
+            label: Mặc Định Server
+            description: Theo cài đặt mặc định của server
+        perm_value:
+          placeholder: 'Đặt quyền "{}"…'
+          back: Quay Lại
+          embed:
+            title: "Đặt Quyền: {}"
+            description: |
+              Chọn cách quyền này hoạt động **cho role cụ thể này**.
+
+              `✅ Cho Phép` - người dùng có thể chỉnh sửa tự do
+              `📋 Yêu Cầu Phê Duyệt` - cần admin phê duyệt trước
+              `❌ Từ Chối` - người dùng không thể chỉnh sửa
+              `⚙️ Mặc Định Server` - theo cài đặt mặc định của server
+            footer: Customrole Admin • Đặt Giá Trị Quyền
+        permissions:
+          placeholder: Chọn một quyền để cấu hình…
+          back: Quay Lại
+          embed:
+            title: Cấu Hình Quyền Role
+            description: "Chọn quyền bạn muốn cấu hình cho role này.\nCác cài đặt này sẽ ghi đè lên mặc định của server."
+            footer: Customrole Admin • Quyền
+          options:
+            icon:
+              label: Icon
+              description: Chỉnh sửa icon role
+            name:
+              label: Tên
+              description: Chỉnh sửa tên role
+            color:
+              label: Màu Sắc
+              description: Chỉnh sửa màu role
+            members:
+              label: Thành Viên
+              description: Thêm / xóa thành viên khỏi role
+            mentionable:
+              label: Được Đề Cập
+              description: Bật/tắt khả năng đề cập role
+        manage:
+          placeholder: Chọn một tùy chọn để cấu hình…
+          options:
+            icon:
+              label: Icon
+              description: Thay đổi icon của role
+            mentionable:
+              label: "@Đề cập Role"
+              description: Cho phép role được ping trong chat
+            name:
+              label: Chỉnh Sửa Tên
+              description: Thay đổi tên hiển thị của role
+            color:
+              label: Chỉnh Sửa Màu
+              description: Thay đổi màu chính / màu phụ
+            max_users:
+              label: Số Người Tối Đa
+              description: Đặt số lượng thành viên tối đa được phép
+            expiration:
+              label: Thời Hạn
+              description: Thay đổi thời điểm role hết hạn
+            transfer:
+              label: Chuyển Quyền Sở Hữu
+              description: Chuyển role này cho người dùng khác
+            permissions:
+              label: Quyền
+              description: Cấu hình ghi đè quyền cho từng role
+            add_member:
+              label: Thêm Thành Viên
+              description: Thêm một thành viên vào role này
+            remove_member:
+              label: Xóa Thành Viên
+              description: Xóa một thành viên khỏi role này
+    user:
+      manage:
+        modals:
+          icon:
+            link:
+              placeholder: Dán URL hình ảnh cho icon của role
+        views:
+          icon:
+            description: Chọn cách bạn muốn cập nhật icon của role này.
+            link: Dùng URL Hình Ảnh
+            file: Tải Lên Tệp
+            remove: Xóa Icon
+    configuration:
+      modals:
+        default_perm:
+          title: Quyền Mặc Định Của Role Owner
+          perm_yes: "Cho Phép"
+          perm_no: "Từ Chối"
+          perm_approval: Yêu Cầu Phê Duyệt
+          icon:
+            text: "Icon"
+            placeholder: Đặt quyền icon…
+          name:
+            text: "Tên"
+            placeholder: Đặt quyền tên…
+          color:
+            text: "Màu Sắc"
+            placeholder: Đặt quyền màu sắc…
+          members:
+            text: "Thành Viên"
+            placeholder: Đặt quyền thành viên…
+          mentionable:
+            text: "Được Đề Cập"
+            placeholder: Đặt quyền được đề cập…
+        expiration_warning:
+          title: Cảnh Báo Hết Hạn
+          channel:
+            text: Kênh Cảnh Báo
+            description: Kênh để gửi cảnh báo hết hạn
+            placeholder: Chọn một kênh văn bản…
+          before:
+            label: Cảnh Báo Trước Khi Hết Hạn
+            description: Cảnh báo trước bao lâu khi role sắp hết hạn
+            placeholder: "3d / 12h / 1w"
+          message:
+            label: Nội Dung Cảnh Báo
+            description: Để trống để xóa và tắt cảnh báo hết hạn
+            placeholder: "Custom role {role} của bạn sẽ hết hạn trong {time}."
+        approval:
+          title: Yêu Cầu Phê Duyệt
+          channel:
+            text: Kênh Phê Duyệt
+            description: Kênh nhận yêu cầu phê duyệt
+            placeholder: Chọn một kênh văn bản…
+          concurrent:
+            label: Số Yêu Cầu Đồng Thời Tối Đa
+            description: Số lượng yêu cầu chờ phê duyệt tối đa một người dùng có thể có cùng lúc (1–10)
+            placeholder: "2"
+        on_expire:
+          title: Hành Động Khi Hết Hạn
+          text: Hành Động Khi Role Hết Hạn
+          placeholder: Chọn hành động…
+          options:
+            removeall:
+              label: Xóa Tất Cả Thành Viên
+              description: Xóa tất cả thành viên khỏi role
+            remove:
+              label: Chỉ Xóa Owner
+              description: Chỉ xóa owner của role khỏi role
+            delete:
+              label: Xóa Role
+              description: Xóa toàn bộ role
+      view:
+        placeholder: Chọn một cài đặt để cấu hình…
+        options:
+          default_perm:
+            label: Quyền Mặc Định Của Owner
+            description: Đặt quyền mặc định cho tất cả custom role
+          expiration_warning:
+            label: Cảnh Báo Hết Hạn
+            description: Gửi cảnh báo trước khi role hết hạn
+          on_expire:
+            label: Hành Động Khi Hết Hạn
+            description: Làm gì khi role hết hạn
+          request_approval:
+            label: Yêu Cầu Phê Duyệt
+            description: Đặt kênh phê duyệt và giới hạn đồng thời
   admin: "Nhóm Lệnh Quản trị Custom Role"
   user: "Nhóm Lệnh Người Dùng Custom Role"
   commands:
@@ -1692,7 +1930,7 @@ customrole:
     user:
       common:
         no_role_found: "Bạn không có bất kỳ Custom Role nào với ID đó trong server này."
-        missing_permission: "Người quản trị của server này đã hạn chế bạn khỏi việc sử dụng cài đặt này."
+        missing_permission: "Người quản trị của server đã hạn chế bạn khỏi việc sử dụng cài đặt này."
         role_expired: "Custom Role {} đã hết hạn {}. Để gia hạn Custom Role, hãy liên hệ với Quản trị viên Server."
         cannot_find_role: "Không thể tìm thấy Custom Role trong server, vui lòng thử lại sau..."
       subcommands:
@@ -1729,6 +1967,8 @@ customrole:
           description: "Xóa biểu tượng khỏi Custom Role"
         mentionable:
           description: "Cho phép Custom Role có thể nhắc đến"
+        manage:
+          description: "Quản lý Custom Role của bạn"
         info:
           description: "Xem thông tin của Custom Role"
         name:
