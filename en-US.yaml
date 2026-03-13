@@ -2953,6 +2953,7 @@ bucketscript:
     limit_exceeded: "Cannot add due to layout exceeding limits when the component is added."
     reload_failed: "We cannot reload the layout because the layout data may be corrupted.\nYour recent edit will not be saved, and the bot will display the layout from before the edit."
     statistics_display: "You have used a total of **`{chars:,}`**/**`3,000`** characters & **`{components:,}`**/**`30`** components."
+    no_container: "You are **not** editing a container. To add items into container, click Edit and select the container."
     container_display: "You are editing container at position **`#{}`**."
     duplicate_select: "This select has already been added before. You cannot add 2 selects with the same ID to 1 layout."
     duplicate_button: "This button has already been added before. You cannot add 2 buttons with the same ID to 1 layout."

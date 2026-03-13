@@ -2953,6 +2953,7 @@ bucketscript:
     reload_failed: "Chúng tôi không thể tải lại layout do dữ liệu của layout có thể đã bị hỏng.\nThao tác chỉnh sửa vừa rồi của bạn sẽ không được lưu, và bot sẽ hiển thị lại layout trước khi được chỉnh sửa."
     statistics_display: "Bạn đã sử dụng tổng cộng **`{chars:,}`**/**`3,000`** kí tự & **`{components:,}`**/**`30`** khung vật liệu."
     container_display: "Bạn đang chỉnh sửa container ở vị trí **`#{}`**."
+    no_container: "Bạn đang **không** chỉnh sửa container. Để thêm 1 item vào 1 container, hãy chọn container đó ở phía dưới để edit."
     duplicate_select: "Select này đã được thêm trước đó. Bạn không thể thêm 2 select có cùng 1 ID vào 1 layout."
     duplicate_button: "Nút này đã được thêm trước đó. Bạn không thể thêm 2 nút có cùng 1 ID vào 1 layout."
     unknown_button_label: "Nút không xác định: {}"
