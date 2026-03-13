@@ -2196,6 +2196,12 @@ giveaway:
     setup_action: Select an action to configure your giveaway
     customize: Select giveaway message type to edit
     customize_options:
+      button:
+        label: Button
+        description: Edit join giveaway button
+      participants_button:
+        label: Participants Button
+        description: Edit participants button
       running:
         label: "Running"
         description: "Main Message/Embed when giveaway is running"

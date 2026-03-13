@@ -2131,6 +2131,12 @@ giveaway:
     setup_action: Chọn hành động để cấu hình giveaway
     customize: Chọn loại tin nhắn giveaway cần sửa
     customize_options:
+      button:
+        label: Nút
+        description: Chỉnh sửa nút tham gia giveaway
+      participants_button:
+        label: Nút người tham gia
+        description: Chỉnh sửa nút danh sách người tham gia
       running:
         label: "Đang diễn ra"
         description: "Tin nhắn giveaway khi giveaway đang diễn ra"
