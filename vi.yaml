@@ -3824,7 +3824,7 @@ moderation:
           bot_hierachy: "Bot không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải là định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
           unknown: "Bot không thể cấm **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
-          already_banned: "**{}** đã bị cấm trong server này."
+          already_banned: "**{}** đã bị ban trước đó."
         success:
           reason: "**{}** đã bị cấm, với lý do: {}"
           none: "**{}** đã bị cấm."
