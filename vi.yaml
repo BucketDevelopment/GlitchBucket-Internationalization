@@ -807,7 +807,7 @@ automod:
           no: "Không ({})"
         existing_rules:
           name: Danh sách Rule hiện có
-          none: Không tìm thấy luật AutoMod nào trong server này.
+          none: "*Hiện không có rule AutoMod nào trong server này.*"
         notice:
           name: Lưu ý
           value: Chỉ hiển thị 15 rule đầu tiên (còn lại {} rule).
