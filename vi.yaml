@@ -781,7 +781,7 @@ automod:
         create_without_template: Tạo thủ công (không dùng template)
   embed:
     setup:
-      title: "Thiết lập Rule AutoMod {1}: {0}"
+      title: "Thiết lập Rule AutoMod {0}: {1}"
       fields:
         word_lists:
           name: Danh sách từ
