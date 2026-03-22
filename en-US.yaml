@@ -778,7 +778,7 @@ automod:
         create_without_template: Create Without Template
   embed:
     setup:
-      title: "AutoMod {} Rule Setup: {}"
+      title: "AutoMod {0}'s Rule Setup: {1}"
       fields:
         word_lists:
           name: Word Lists
