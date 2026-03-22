@@ -5040,6 +5040,9 @@ ticket:
       send:
         description: Send multi-panel
   translations:
+    notice:
+      panel_message: "Bot only saves the embed, and does not resend the panel message automatically. To reload the panel message, use `/ticket panel send`."
+      multipanel_message: "Bot only saves the embed, and does not resend the multi-panel message automatically. To reload the multi-panel message, use `/ticket multi-panel send`."
     rename_too_long: "Ticket name too long."
     renamed: "Ticket renamed: {}"
     rename_failed: "Cannot rename ticket: {}"

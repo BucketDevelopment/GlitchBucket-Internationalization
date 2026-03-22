@@ -5040,6 +5040,9 @@ ticket:
       send:
         description: Gửi multi-panel
   translations:
+    notice:
+      panel_message: "Bot chỉ lưu embed và không tự gửi lại tin nhắn panel. Để reload lại tin nhắn panel, dùng lệnh **`/ticket panel send`** sau khi hoàn tất chỉnh sửa."
+      multipanel_message: "Bot chỉ lưu embed và không tự gửi lại tin nhắn multi-panel. Để reload lại tin nhắn multi-panel, dùng lệnh **`/ticket multi-panel send`** sau khi hoàn tất chỉnh sửa."
     not_a_ticket: Đây không phải là một ticket trong hệ thống bot.
     no_permission: Bạn không có đủ quyền để thực hiện hành động này.
     added: "Đã thêm {} vào ticket."
