@@ -681,6 +681,9 @@ automod:
           discord_invite_regex:
             label: Chặn invite Discord (Regex)
             description: Chặn theo Regex + timeout 5 phút + custom block message
+          minecraft_server_address:
+            label: Chặn địa chỉ server Minecraft
+            description: Chặn theo Regex cho IP/domain kèm port + allow list cho IP phổ biến
     keyword_preset:
       title: Config Trigger Preset
       allow_list:
@@ -821,6 +824,9 @@ automod:
     discord_invite_regex:
       rule_name: Chặn liên kết mời Discord (Regex)
       block_message: Vui lòng không gửi invite server khác.
+    minecraft_server_address:
+      rule_name: Chặn địa chỉ server Minecraft
+      block_message: Vui lòng không chia sẻ địa chỉ server Minecraft bên ngoài tại đây.
   errors:
     guild_only: Lệnh này chỉ có thể sử dụng trong server.
     invalid_rule_selected: Rule AutoMod được chọn không hợp lệ.

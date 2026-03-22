@@ -681,6 +681,9 @@ automod:
           discord_invite_regex:
             label: Block Discord Invite (Regex)
             description: Regex block + timeout 5 minutes + custom block message
+          minecraft_server_address:
+            label: Block Minecraft Server Address
+            description: Regex block for IP/domain with port + allow list for local/common IPs
     keyword_preset:
       title: Preset Trigger Configuration
       allow_list:
@@ -821,6 +824,9 @@ automod:
     discord_invite_regex:
       rule_name: Block Discord Invite (Regex)
       block_message: Please do not send invites to other servers.
+    minecraft_server_address:
+      rule_name: Block Minecraft Server Address
+      block_message: Please do not share external Minecraft server addresses here.
   errors:
     guild_only: This command can only be used in a server.
     invalid_rule_selected: Invalid AutoMod rule selected.
