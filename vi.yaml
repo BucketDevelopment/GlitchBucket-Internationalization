@@ -672,7 +672,7 @@ automod:
       title: Chọn template AutoMod
       template:
         text: Template
-        description: Chọn một template để tạo rule AutoMod đã được config sẵn
+        description: Chọn một template để tạo rule AutoMod đã được config sẵn. Bạn có thể chỉnh sửa thêm về sau.
         placeholder: Chọn một template
         options:
           vietnamese_badwords:
@@ -816,7 +816,7 @@ automod:
     deleted: "Đã xóa rule AutoMod thành công: {} (`{}`)."
   templates:
     vietnamese_badwords:
-      rule_name: Chặn từ ngữ tục tĩu tiếng Việt phổ biến
+      rule_name: Chặn từ ngữ thô tục phổ biến (Tiếng Việt)
       block_message: Vui lòng giữ thái độ văn minh trong kênh chat.
     discord_invite_regex:
       rule_name: Chặn liên kết mời Discord (Regex)
