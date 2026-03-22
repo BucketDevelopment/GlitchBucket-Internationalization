@@ -4962,6 +4962,10 @@ ticket:
       title: Ticket Configuration
       description: "You are editing the main ticket config. \nNote that you are editing global settings. To edit panel-specific settings (questions, category, etc.), use `/ticket panel configuration`.\n\nPlease select a setting to edit below:"
   commands:
+    rename:
+      description: Rename the current ticket
+      describe:
+        name: New ticket name
     group_description: Ticket management commands
     setup:
       description: Set up the ticket system for the first time
@@ -5036,6 +5040,9 @@ ticket:
       send:
         description: Send multi-panel
   translations:
+    rename_too_long: "Ticket name too long."
+    renamed: "Ticket renamed: {}"
+    rename_failed: "Cannot rename ticket: {}"
     not_a_ticket: This is not a system ticket channel.
     no_permission: You do not have permission to perform this action.
     added: "Added {} to the ticket."
