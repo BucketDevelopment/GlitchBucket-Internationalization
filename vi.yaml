@@ -188,8 +188,8 @@ afk:
     successful:
       global: ":electric_plug: Bạn đã set AFK **tại tất cả server**, với lí do: **{}**"
       server: ":electric_plug: Bạn đã set AFK **tại server này**, với lí do: **{}**"
-    welcome_back: ":stopwatch: Chào mừng bạn trở lại, {}! Bạn đã AFK trong **{}** và nhận được **{}** đề cập."
-    received_mention: "Các đề cập đã nhận"
+    welcome_back: ":stopwatch: Chào mừng bạn trở lại, {}! Bạn đã AFK trong **{}** và nhận được **{}** ping."
+    received_mention: "Các ping đã nhận"
     currently_afk: ":placard: Hiện tại `{}` đang AFK (<t:{}:R>): **{}**"
 chat:
   description: Thảo luận với Trí tuệ nhân tạo!
@@ -537,7 +537,7 @@ autoresponder:
     sendback:
       title: Loại gửi lại
       normal: Gửi đến kênh (bình thường)
-      no_mentions: ' (không đề cập)'
+      no_mentions: ' (không ping)'
       reply: Trả lời lại tin nhắn kích hoạt
     empty: "**Không có tin nhắn phản hồi**"
   common:
@@ -615,234 +615,234 @@ autoresponder:
 automod:
   description: Quản lý AutoMod
   trigger:
-    keyword: Keyword
+    keyword: Từ khóa
     spam: Spam
-    keyword_preset: Keyword Preset
-    mention_spam: Mention Spam
-    member_profile: Member Profile
-  shared:
+    keyword_preset: Preset từ khóa
+    mention_spam: Spam ping
+    member_profile: Hồ sơ thành viên
+  common:
     none: Không
-    words_more: "+{} words"
+    words_more: "+{} từ"
     no_actions_configured: Chưa có action nào được config
     bullet_item: "- {}"
     status:
       enabled: Bật
       disabled: Tắt
     actions:
-      block_message: Block message
-      block_message_alert: "Block message, kèm alert: {}"
+      block_message: Chặn tin nhắn
+      block_message_alert: "Chặn tin nhắn, kèm cảnh báo tới: {}"
       timeout_for: "Timeout trong {}"
       send_alert_to: "Gửi cảnh báo tới <#{}>"
-      block_member_interactions: Block member (block toàn bộ interactions)
+      block_member_interactions: Chặn member (khóa toàn bộ interactions)
   modal:
     create:
-      title: Tạo AutoMod rule
+      title: Tạo rule AutoMod
       rule_name:
-        label: Rule name
-        placeholder: Nhập tên dễ đọc cho rule này
+        label: Tên rule
+        placeholder: Nhập tên dễ nhận biết cho rule này
       trigger_type:
-        text: Trigger type
-        description: Chọn chính xác một trigger cho rule mới
+        text: Loại trigger
+        description: Vui lòng chọn đúng một trigger cho rule mới
         options:
           keyword:
-            label: Keyword Filter
-            description: Block keyword/pattern do bạn định nghĩa
+            label: Lọc từ khóa
+            description: Chặn từ khóa/pattern do bạn cấu hình
           spam:
-            label: Spam Detection
-            description: Sử dụng spam detection của Discord
+            label: Phát hiện spam
+            description: Sử dụng cơ chế phát hiện spam của Discord
           keyword_preset:
-            label: Preset Keyword Filter
-            description: Sử dụng Discord presets + allow list
+            label: Lọc từ khóa theo preset
+            description: Sử dụng preset của Discord kèm allow list
           mention_spam:
-            label: Mention Spam
-            description: Giới hạn số lượng mentions trên mỗi message
+            label: Giới hạn Spam ping
+            description: Giới hạn số lần ping trong mỗi tin nhắn
           member_profile:
-            label: Member Profile
-            description: Lọc keyword trong thông tin profile
+            label: Profile của Member
+            description: Lọc từ khóa trong thông tin hồ sơ
     trigger_list:
-      title: Metadata Trigger
+      title: Metadata của Trigger
       values:
         label: Giá trị
         placeholder: Mỗi dòng một giá trị hoặc phân tách bằng dấu phẩy
         labels:
-          keyword_filter: Filtered words
+          keyword_filter: Từ bị lọc
           regex_patterns: Mẫu Regex
           allow_list: Allow list
     template_select:
-      title: Chọn AutoMod template
+      title: Chọn template AutoMod
       template:
         text: Template
-        description: Chọn một template để tạo AutoMod rule đã được config sẵn
+        description: Chọn một template để tạo rule AutoMod đã được config sẵn
         placeholder: Chọn một template
         options:
           vietnamese_badwords:
-            label: Block common Vietnamese badwords
-            description: Block theo keyword + custom block message
+            label: Chặn từ ngữ thô tục phổ biến (Tiếng Việt)
+            description: Chặn theo từ khóa + custom block message
           discord_invite_regex:
-            label: Block Discord invite (Regex)
-            description: Block theo Regex + timeout 5 phút + custom block message
+            label: Chặn invite Discord (Regex)
+            description: Chặn theo Regex + timeout 5 phút + custom block message
     keyword_preset:
       title: Config Trigger Preset
       allow_list:
         label: Allow list
-        placeholder: Keywords được bỏ qua khi kiểm tra preset
+        placeholder: Các từ khóa được bỏ qua khi kiểm tra preset
       presets:
-        text: Preset filter
+        text: Bộ lọc có sẵn
         description: Chọn một preset của Discord
         options:
-          profanity: Profanity
-          sexual_content: Sexual Content
-          slurs: Slurs
+          profanity: Từ ngữ thô tục
+          sexual_content: Nội dung tình dục
+          slurs: Từ ngữ miệt thị
     mention_spam:
-      title: Config Mention Spam
+      title: Config Spam Đề Cập
       mention_limit:
-        label: Mention limit
+        label: Giới hạn ping
         placeholder: 2-40
       raid_protection:
-        text: Bật mention raid protection
-        description: Nếu bật, Discord sẽ áp dụng kiểm tra anti-raid nghiêm ngặt
+        text: Bật bảo vệ raid ping
+        description: Khi bật, Discord sẽ áp dụng cơ chế kiểm tra anti-raid nghiêm ngặt
     exemption:
-      title: Rule Exemptions
+      title: Exemption của Rule
       channels:
-        text: Exempt channels
-        description: Message trong các channels được chọn sẽ bỏ qua rule này
+        text: Bỏ qua channel
+        description: Tin nhắn trong các channel được chọn sẽ bỏ qua rule này
       roles:
-        text: Exempt roles
-        description: Members có roles được chọn sẽ bỏ qua rule này
+        text: Bỏ qua role
+        description: Member có role được chọn sẽ bỏ qua rule này
     generic_actions:
-      title: Rule Actions
+      title: Action của Rule
       action_flags:
-        text: Rule actions
-        description: Chọn ít nhất một action. Timeout không khả dụng với spam trigger.
+        text: Các action của rule
+        description: Vui lòng chọn ít nhất một action. Timeout không khả dụng với spam trigger.
         options:
-          block_message: Block message
+          block_message: Chặn tin nhắn
           timeout_member: Timeout member (60s)
           timeout_member_short: Timeout member
       custom_message:
         label: Custom block message
-        placeholder: Message tùy chọn hiển thị khi message bị block
+        placeholder: Nội dung tùy chọn hiển thị khi tin nhắn bị chặn
       timeout_duration:
-        label: Timeout duration
+        label: Thời lượng timeout
         placeholder: ví dụ 30s, 10m, 2h, 7d (tối thiểu 30s, tối đa 28d)
       alert_channel:
-        text: Alert channel
-        description: Channel tùy chọn để nhận alerts vi phạm
+        text: Kênh cảnh báo
+        description: Channel tùy chọn để nhận cảnh báo vi phạm
     member_profile_actions:
-      title: Member Profile Actions
+      title: Action cho Hồ Sơ Thành Viên
       block_member_interactions:
-        text: Block member interactions
-        description: Áp dụng interaction lock khi rule được trigger
+        text: Chặn interactions của member
+        description: Áp dụng khóa interactions khi rule được trigger
       custom_message:
         label: Custom block message
-        placeholder: Message tùy chọn hiển thị khi bị block (fallback block_message)
+        placeholder: Nội dung tùy chọn hiển thị khi bị chặn (fallback cho block_message)
       alert_channel:
-        text: Alert channel
-        description: Channel tùy chọn để nhận alerts vi phạm
+        text: Kênh cảnh báo
+        description: Channel tùy chọn để nhận cảnh báo vi phạm
   view:
     toggle:
-      enable: Enable Rule
-      disable: Disable Rule
+      enable: Bật Rule
+      disable: Tắt Rule
     dynamic_settings:
-      placeholder: Trigger-specific settings
+      placeholder: Thiết lập theo trigger
       options:
         filtered_words:
-          label: Filtered Words
-          description: Chỉnh blocked words list
+          label: Danh sách từ bị lọc
+          description: Chỉnh danh sách từ bị chặn
         regex_patterns:
           label: Mẫu Regex
-          description: Chỉnh regex pattern list
+          description: Chỉnh danh sách regex pattern
         allow_list:
           label: Allow List
-          description: Chỉnh bypass words list
+          description: Chỉnh danh sách từ được bỏ qua
         preset_allow_list:
           label: Preset + Allow List
-          description: Chọn preset và allow list tùy chọn
+          description: Chọn preset và allow list (tùy chọn)
         mention_spam_settings:
-          label: Mention Spam Settings
-          description: Thiết lập mention limit và raid protection
+          label: Thiết lập spam ping
+          description: Thiết lập giới hạn ping và bảo vệ raid
         none:
-          label: No Trigger Configuration
+          label: Không cần config trigger bổ sung
           description: Spam trigger không cần metadata bổ sung
     default_settings:
-      placeholder: Default rule settings
+      placeholder: Thiết lập mặc định của rule
       options:
         exemptions:
-          label: Except Roles/Channels
-          description: Config rule exemptions
+          label: Exempt roles/channels
+          description: Config exemption cho rule
         actions:
-          label: Set AutoMod Action
-          description: Config actions cho rule này
+          label: Thiết lập action AutoMod
+          description: Config action cho rule này
     create_entry:
       buttons:
-        use_template: Use Existing Templates
-        create_without_template: Create Without Template
+        use_template: Dùng template có sẵn
+        create_without_template: Tạo thủ công (không dùng template)
   embed:
     setup:
-      title: "AutoMod {} Rule Setup: {}"
+      title: "Thiết lập Rule AutoMod {}: {}"
       fields:
         word_lists:
-          name: Word Lists
-          blocked: "Blocked words: {}"
-          allowed: "Allowed words: {}"
+          name: Danh sách từ
+          blocked: "Từ bị chặn: {}"
+          allowed: "Từ được cho phép: {}"
         regex_patterns:
           name: Mẫu Regex
           more: + re ...
         actions:
-          name: Actions
+          name: Action
         exempt_channels:
-          name: Exempt Channels
+          name: Channel được exempt
         exempt_roles:
-          name: Exempt Roles
+          name: Role được exempt
       footer: "Rule ID: {} • Status: {}"
       footer_with_guild: "{} • {}"
     create_entry:
-      title: AutoMod Rule Creation
-      description: Chọn dùng template có sẵn hoặc tạo rule thủ công.
+      title: Tạo Rule AutoMod
+      description: Vui lòng chọn dùng template có sẵn hoặc tạo rule thủ công.
       limit_line: "{}: {}/{}"
       existing_rules_line: "{}. `{}` (`{}`) | {} | {}"
       fields:
         rule_limits:
-          name: Rule Limits by Type
+          name: Giới hạn Rule theo loại
         can_create:
-          name: Can Create New Rule
+          name: Có thể tạo Rule mới
           yes: "Có"
           no: "Không ({})"
         existing_rules:
-          name: Existing Rules
+          name: Danh sách Rule hiện có
           none: Không tìm thấy luật AutoMod nào trong server này.
         notice:
-          name: Notice
-          value: Chỉ hiển thị 15 rule đầu tiên (còn {} rule).
+          name: Lưu ý
+          value: Chỉ hiển thị 15 rule đầu tiên (còn lại {} rule).
   messages:
-    template_flow_acknowledged: Đã ghi nhận template flow. Bạn sẽ xử lý templates ở bước sau.
+    template_flow_acknowledged: Đã ghi nhận template flow. Bạn sẽ xử lý template ở bước sau.
   templates:
     vietnamese_badwords:
-      rule_name: Block common Vietnamese badwords
-      block_message: Vui lòng giữ văn minh trên chat.
+      rule_name: Chặn từ ngữ tục tĩu tiếng Việt phổ biến
+      block_message: Vui lòng giữ thái độ văn minh trong kênh chat.
     discord_invite_regex:
-      rule_name: Block Discord invite (Regex)
+      rule_name: Chặn liên kết mời Discord (Regex)
       block_message: Vui lòng không gửi invite server khác.
   errors:
-    guild_only: Lệnh này chỉ có thể dùng trong server.
-    invalid_rule_selected: AutoMod rule được chọn không hợp lệ.
-    rule_not_found: Không tìm thấy AutoMod rule.
+    guild_only: Lệnh này chỉ có thể sử dụng trong server.
+    invalid_rule_selected: Rule AutoMod được chọn không hợp lệ.
+    rule_not_found: Không tìm thấy rule AutoMod.
     no_additional_metadata: Trigger này không có metadata bổ sung để config.
-    mention_limit_integer: Giới hạn đề cập phải là số nguyên hợp lệ.
-    mention_limit_range: Giới hạn đề cập phải nằm trong khoảng từ 2 đến 40.
-    cannot_create_now: Hiện tại không thể tạo AutoMod rule mới.
-    trigger_limit_reached: "Không thể tạo {} rule: đã đạt giới hạn {}."
-    create_failed: "Tạo AutoMod rule thất bại: {}"
-    template_not_found: Template đã chọn không hợp lệ hoặc không còn khả dụng.
+    mention_limit_integer: Giới hạn ping phải là một số nguyên hợp lệ.
+    mention_limit_range: Giới hạn ping phải nằm trong khoảng từ 2 đến 40.
+    cannot_create_now: Hiện tại chưa thể tạo rule AutoMod mới.
+    trigger_limit_reached: "Không thể tạo rule {}: đã đạt giới hạn {}."
+    create_failed: "Tạo rule AutoMod thất bại: {}"
+    template_not_found: Template đã chọn không hợp lệ hoặc hiện không khả dụng.
     permission:
-      user_manage_guild: Người dùng thiếu quyền Quản lý Server
+      user_manage_guild: Bạn thiếu quyền Quản lý Server
       bot_manage_guild: Bot thiếu quyền Quản lý Server
   commands:
     create:
-      description: Tạo AutoMod rules
+      description: Tạo rule AutoMod
     manage:
-      description: Quản lý AutoMod rule hiện có
+      description: Quản lý rule AutoMod hiện có
     list:
-      description: Liệt kê AutoMod rules
+      description: Liệt kê rule AutoMod
 tag:
   description: Quản lý tag tùy chỉnh cho cá nhân
   translation:
@@ -1368,7 +1368,7 @@ stickie:
     mode: Chế độ
     inactive: Thời gian trì hoãn trò chuyện không hoạt động
     threshold: Ngưỡng tin nhắn
-    allowmentions: Cho phép đề cập
+    allowmentions: Cho phép ping
   common:
     not_enabled: "Kênh {} chưa bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
     server_not_enabled: "Server chưa có kênh bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
@@ -1916,7 +1916,7 @@ customrole:
               description: Thêm / xóa thành viên khỏi role
             mentionable:
               label: Được Đề Cập
-              description: Bật/tắt khả năng đề cập role
+              description: Bật/tắt khả năng ping role
         manage:
           placeholder: Chọn một tùy chọn để cấu hình…
           options:

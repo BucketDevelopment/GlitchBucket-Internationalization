@@ -620,7 +620,7 @@ automod:
     keyword_preset: Keyword Preset
     mention_spam: Mention Spam
     member_profile: Member Profile
-  shared:
+  common:
     none: None
     words_more: "+{} words"
     no_actions_configured: No actions configured
