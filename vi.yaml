@@ -790,9 +790,9 @@ automod:
         actions:
           name: Action
         exempt_channels:
-          name: Channel được exempt
+          name: Channel được ignore
         exempt_roles:
-          name: Role được exempt
+          name: Role được ignore
       footer: "Rule ID: {} • Status: {}"
       footer_with_guild: "{} • {}"
     create_entry:
@@ -815,6 +815,7 @@ automod:
           value: Chỉ hiển thị 15 rule đầu tiên (còn lại {} rule).
   messages:
     template_flow_acknowledged: Đã ghi nhận template flow. Bạn sẽ xử lý template ở bước sau.
+    deleted: "Đã xóa rule AutoMod thành công: {} (`{}`)."
   templates:
     vietnamese_badwords:
       rule_name: Chặn từ ngữ tục tĩu tiếng Việt phổ biến
@@ -832,6 +833,7 @@ automod:
     cannot_create_now: Hiện tại chưa thể tạo rule AutoMod mới.
     trigger_limit_reached: "Không thể tạo rule {}: đã đạt giới hạn {}."
     create_failed: "Tạo rule AutoMod thất bại: {}"
+    delete_failed: "Xóa rule AutoMod thất bại: {}"
     template_not_found: Template đã chọn không hợp lệ hoặc hiện không khả dụng.
     permission:
       user_manage_guild: Bạn thiếu quyền Quản lý Server
@@ -843,6 +845,10 @@ automod:
       description: Quản lý rule AutoMod hiện có
     list:
       description: Liệt kê rule AutoMod
+    delete:
+      description: Xóa rule AutoMod
+      options:
+        rule: Rule AutoMod cần xóa
 tag:
   description: Quản lý tag tùy chỉnh cho cá nhân
   translation:

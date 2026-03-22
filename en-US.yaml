@@ -815,6 +815,7 @@ automod:
           value: Only first 15 rules are shown ({} more).
   messages:
     template_flow_acknowledged: Template flow acknowledged. You will handle templates in a later step.
+    deleted: "Deleted AutoMod rule successfully: {} (`{}`)."
   templates:
     vietnamese_badwords:
       rule_name: Block Common Vietnamese Badwords
@@ -832,6 +833,7 @@ automod:
     cannot_create_now: Cannot create a new AutoMod rule right now.
     trigger_limit_reached: "Cannot create {} rule: limit of {} reached."
     create_failed: "Failed to create AutoMod rule: {}"
+    delete_failed: "Failed to delete AutoMod rule: {}"
     template_not_found: Selected template is invalid or unavailable.
     permission:
       user_manage_guild: Missing user Manage Server permission
@@ -843,6 +845,10 @@ automod:
       description: Manage an existing AutoMod rule
     list:
       description: List AutoMod rules
+    delete:
+      description: Delete an AutoMod rule
+      options:
+        rule: The AutoMod rule to delete
 tag:
   description: Manage personal custom tags
   translation:
