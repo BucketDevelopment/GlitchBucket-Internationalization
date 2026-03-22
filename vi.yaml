@@ -798,8 +798,6 @@ automod:
     create_entry:
       title: Tạo Rule AutoMod
       description: Vui lòng chọn dùng template có sẵn hoặc tạo rule thủ công.
-      limit_line: "{}: {}/{}"
-      existing_rules_line: "{}. `{}` (`{}`) | {} | {}"
       fields:
         rule_limits:
           name: Giới hạn Rule theo loại

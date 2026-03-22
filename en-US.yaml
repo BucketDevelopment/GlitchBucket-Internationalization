@@ -798,8 +798,6 @@ automod:
     create_entry:
       title: AutoMod Rule Creation
       description: Choose whether to use an existing template or create a rule manually.
-      limit_line: "{}: {}/{}"
-      existing_rules_line: "{}. `{}` (`{}`) | {} | {}"
       fields:
         rule_limits:
           name: Rule Limits by Type
