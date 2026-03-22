@@ -617,9 +617,9 @@ automod:
   trigger:
     keyword: Từ khóa
     spam: Spam
-    keyword_preset: Preset từ khóa
-    mention_spam: Spam ping
-    member_profile: Hồ sơ thành viên
+    keyword_preset: Preset từ khóa của discord
+    mention_spam: Spam Ping
+    member_profile: Profile của member
   common:
     none: Không
     words_more: "+{} từ"
@@ -654,7 +654,7 @@ automod:
             label: Lọc từ khóa theo preset
             description: Sử dụng preset của Discord kèm allow list
           mention_spam:
-            label: Giới hạn Spam ping
+            label: Giới hạn Spam Ping
             description: Giới hạn số lần ping trong mỗi tin nhắn
           member_profile:
             label: Profile của Member
@@ -728,7 +728,7 @@ automod:
         text: Kênh cảnh báo
         description: Channel tùy chọn để nhận cảnh báo vi phạm
     member_profile_actions:
-      title: Action cho Hồ Sơ Thành Viên
+      title: Action cho Profile của Member
       block_member_interactions:
         text: Chặn interactions của member
         description: Áp dụng khóa interactions khi rule được trigger
