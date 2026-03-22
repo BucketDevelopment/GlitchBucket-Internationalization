@@ -612,6 +612,237 @@ autoresponder:
         total: "This server having total of {} autoresponder.\nList: `{}`"
         none: "This server doesn't have any autoresponder!"
         title: Autoresponder's List
+automod:
+  description: Manage AutoMod
+  trigger:
+    keyword: Keyword
+    spam: Spam
+    keyword_preset: Keyword Preset
+    mention_spam: Mention Spam
+    member_profile: Member Profile
+  shared:
+    none: None
+    words_more: "+{} words"
+    no_actions_configured: No actions configured
+    bullet_item: "- {}"
+    status:
+      enabled: Enabled
+      disabled: Disabled
+    actions:
+      block_message: Block message
+      block_message_alert: "Block message, with alert: {}"
+      timeout_for: "Timeout for {}"
+      send_alert_to: "Send alerts to <#{}>"
+      block_member_interactions: Block member (block all interactions)
+  modal:
+    create:
+      title: Create AutoMod Rule
+      rule_name:
+        label: Rule name
+        placeholder: Enter a readable name for this rule
+      trigger_type:
+        text: Trigger type
+        description: Choose exactly one trigger for the new rule
+        options:
+          keyword:
+            label: Keyword Filter
+            description: Block user-defined words/patterns
+          spam:
+            label: Spam Detection
+            description: Use Discord spam detection
+          keyword_preset:
+            label: Preset Keyword Filter
+            description: Use Discord presets + allow list
+          mention_spam:
+            label: Mention Spam
+            description: Limit mentions per message
+          member_profile:
+            label: Member Profile
+            description: Filter keywords in profile fields
+    trigger_list:
+      title: Trigger Metadata
+      values:
+        label: Values
+        placeholder: One value per line or comma separated
+        labels:
+          keyword_filter: Filtered words
+          regex_patterns: Regex patterns
+          allow_list: Allow list
+    template_select:
+      title: Select AutoMod Template
+      template:
+        text: Template
+        description: Choose one template to create a preconfigured AutoMod rule
+        placeholder: Select a template
+        options:
+          vietnamese_badwords:
+            label: Block Common Vietnamese Badwords
+            description: Keyword block + custom block message
+          discord_invite_regex:
+            label: Block Discord Invite (Regex)
+            description: Regex block + timeout 5 minutes + custom block message
+    keyword_preset:
+      title: Preset Trigger Configuration
+      allow_list:
+        label: Allow list
+        placeholder: Keywords to bypass preset checks
+      presets:
+        text: Preset filter
+        description: Select one Discord preset
+        options:
+          profanity: Profanity
+          sexual_content: Sexual Content
+          slurs: Slurs
+    mention_spam:
+      title: Mention Spam Configuration
+      mention_limit:
+        label: Mention limit
+        placeholder: 2-40
+      raid_protection:
+        text: Enable mention raid protection
+        description: If enabled, Discord raises strict mention anti-raid checks
+    exemption:
+      title: Rule Exemptions
+      channels:
+        text: Exempt channels
+        description: Messages in selected channels skip this rule
+      roles:
+        text: Exempt roles
+        description: Members with selected roles skip this rule
+    generic_actions:
+      title: Rule Actions
+      action_flags:
+        text: Rule actions
+        description: Select at least one. Timeout is unavailable for spam trigger.
+        options:
+          block_message: Block message
+          timeout_member: Timeout member (60s)
+          timeout_member_short: Timeout member
+      custom_message:
+        label: Custom block message
+        placeholder: Optional message shown when message is blocked
+      timeout_duration:
+        label: Timeout duration
+        placeholder: e.g. 30s, 10m, 2h, 7d (min 30s, max 28d)
+      alert_channel:
+        text: Alert channel
+        description: Optional channel to receive violation alerts
+    member_profile_actions:
+      title: Member Profile Actions
+      block_member_interactions:
+        text: Block member interactions
+        description: Apply interaction lock when the rule is triggered
+      custom_message:
+        label: Custom block message
+        placeholder: Optional message shown when blocked (for block_message fallback)
+      alert_channel:
+        text: Alert channel
+        description: Optional channel to receive violation alerts
+  view:
+    toggle:
+      enable: Enable Rule
+      disable: Disable Rule
+    dynamic_settings:
+      placeholder: Trigger-specific settings
+      options:
+        filtered_words:
+          label: Filtered Words
+          description: Edit blocked words list
+        regex_patterns:
+          label: Regex Patterns
+          description: Edit regex pattern list
+        allow_list:
+          label: Allow List
+          description: Edit bypass words list
+        preset_allow_list:
+          label: Preset + Allow List
+          description: Choose preset and optional allow list
+        mention_spam_settings:
+          label: Mention Spam Settings
+          description: Set mention limit and raid protection
+        none:
+          label: No Trigger Configuration
+          description: Spam trigger does not require extra metadata
+    default_settings:
+      placeholder: Default rule settings
+      options:
+        exemptions:
+          label: Except Roles/Channels
+          description: Configure rule exemptions
+        actions:
+          label: Set AutoMod Action
+          description: Configure actions for this rule
+    create_entry:
+      buttons:
+        use_template: Use Existing Templates
+        create_without_template: Create Without Template
+  embed:
+    setup:
+      title: "AutoMod {} Rule Setup: {}"
+      fields:
+        word_lists:
+          name: Word Lists
+          blocked: "Blocked words: {}"
+          allowed: "Allowed words: {}"
+        regex_patterns:
+          name: Regex Patterns
+          more: + re ...
+        actions:
+          name: Actions
+        exempt_channels:
+          name: Exempt Channels
+        exempt_roles:
+          name: Exempt Roles
+      footer: "Rule ID: {} • Status: {}"
+      footer_with_guild: "{} • {}"
+    create_entry:
+      title: AutoMod Rule Creation
+      description: Choose whether to use an existing template or create a rule manually.
+      limit_line: "{}: {}/{}"
+      existing_rules_line: "{}. `{}` (`{}`) | {} | {}"
+      fields:
+        rule_limits:
+          name: Rule Limits by Type
+        can_create:
+          name: Can Create New Rule
+          yes: "Yes"
+          no: "No ({})"
+        existing_rules:
+          name: Existing Rules
+          none: No AutoMod rules found in this server.
+        notice:
+          name: Notice
+          value: Only first 15 rules are shown ({} more).
+  messages:
+    template_flow_acknowledged: Template flow acknowledged. You will handle templates in a later step.
+  templates:
+    vietnamese_badwords:
+      rule_name: Block Common Vietnamese Badwords
+      block_message: Please keep chat civil.
+    discord_invite_regex:
+      rule_name: Block Discord Invite (Regex)
+      block_message: Please do not send invites to other servers.
+  errors:
+    guild_only: This command can only be used in a server.
+    invalid_rule_selected: Invalid AutoMod rule selected.
+    rule_not_found: AutoMod rule not found.
+    no_additional_metadata: This trigger has no additional configurable metadata.
+    mention_limit_integer: Mention limit must be a valid integer.
+    mention_limit_range: Mention limit must be between 2 and 40.
+    cannot_create_now: Cannot create a new AutoMod rule right now.
+    trigger_limit_reached: "Cannot create {} rule: limit of {} reached."
+    create_failed: "Failed to create AutoMod rule: {}"
+    template_not_found: Selected template is invalid or unavailable.
+    permission:
+      user_manage_guild: Missing user Manage Server permission
+      bot_manage_guild: Missing bot Manage Server permission
+  commands:
+    create:
+      description: Create AutoMod rules
+    manage:
+      description: Manage an existing AutoMod rule
+    list:
+      description: List AutoMod rules
 tag:
   description: Manage personal custom tags
   translation:
