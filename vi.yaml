@@ -630,7 +630,7 @@ automod:
       disabled: Tắt
     actions:
       block_message: Chặn tin nhắn
-      block_message_alert: "Chặn tin nhắn, kèm cảnh báo tới: {}"
+      block_message_alert: "Chặn tin nhắn, kèm cảnh báo: {}"
       timeout_for: "Timeout trong {}"
       send_alert_to: "Gửi cảnh báo tới <#{}>"
       block_member_interactions: Chặn member (khóa toàn bộ interactions)
@@ -639,7 +639,7 @@ automod:
       title: Tạo rule AutoMod
       rule_name:
         label: Tên rule
-        placeholder: Nhập tên dễ nhận biết cho rule này
+        placeholder: Nhập tên cho rule này
       trigger_type:
         text: Loại trigger
         description: Vui lòng chọn đúng một trigger cho rule mới
