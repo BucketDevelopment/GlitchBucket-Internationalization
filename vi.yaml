@@ -782,6 +782,7 @@ automod:
   embed:
     setup:
       title: "Thiết lập Rule AutoMod {0}: {1}"
+      description: "Lưu ý: Theo cơ chế của Discord, Member có quyền Administrator hoặc Manage Server sẽ được bỏ qua AutoMod và hành vi này không thể chỉnh sửa."
       fields:
         word_lists:
           name: Danh sách từ

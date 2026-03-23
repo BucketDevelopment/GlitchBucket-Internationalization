@@ -782,6 +782,7 @@ automod:
   embed:
     setup:
       title: "AutoMod {0}'s Rule Setup: {1}"
+      description: "Note: By Discord limitations, members with Administrator or Manage Server permissions are ignored by AutoMod and this cannot be changed."
       fields:
         word_lists:
           name: Word Lists
