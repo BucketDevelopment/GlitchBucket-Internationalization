@@ -5002,6 +5002,8 @@ ticket:
       description: Đóng ticket hiện tại
       describe:
         reason: Nhập hoặc chọn một lí do
+    unclaim:
+      description: Bỏ nhận ticket hiện tại
     add:
       description: Thêm một người/role vào ticket
       describe:
@@ -5079,6 +5081,7 @@ ticket:
     deleted: Ticket đã bị xóa.
   messages:
     claimed: "Ticket hiện được claim bởi {}."
+    unclaimed: "{} đã bỏ claim ticket này."
     creating: "Đang tạo một ticket..."
     created: "Đã tạo một ticket {}."
     transcript: "Transcript của ticket {}:"
@@ -5131,8 +5134,10 @@ ticket:
   errors:
     no_category: Danh mục của ticket này không tìm thấy category để đẩy ticket mới vào. Vui lòng kiểm tra lại cài đặt panel.
     not_found: Không thể tìm thấy ticket trong hệ thống.
+    not_claimed: Ticket hiện chưa được claim.
     already_claimed: Ticket đã được claim bởi một người khác.
     no_permission_claim: Bạn không có đủ quyền để claim ticket này.
+    no_permission_unclaim: Bạn không có đủ quyền để bỏ claim ticket này.
     no_permission_close: Bạn không có đủ quyền để đóng ticket này.
     blacklisted: Bạn không thể tạo ticket vì bạn nằm trong danh sách bị cấm của server.
     concurrent_limit: "Bạn đã đạt giới hạn số lượng ticket đang mở cùng lúc ({}). Hãy yêu cầu Quản trị viên kiểm tra lại các ticket đang mở trước khi mở thêm ticket khác.\nCác ticket đang mở: {}"

@@ -5006,6 +5006,8 @@ ticket:
       description: Closes the current ticket
       describe:
         reason: Enter or select a reason
+    unclaim:
+      description: Unclaim the current ticket
     add:
       description: Adds a user/role to the ticket
       describe:
@@ -5079,6 +5081,7 @@ ticket:
     deleted: Ticket deleted.
   messages:
     claimed: "This ticket is currently claimed by {}."
+    unclaimed: "{} has unclaimed this ticket."
     creating: "Creating a ticket..."
     created: "Created ticket {}."
     transcript: "Transcript for ticket {}:"
@@ -5131,8 +5134,10 @@ ticket:
   errors:
     no_category: This ticket's panel is missing a category to create new tickets in. Please check the panel settings.
     not_found: Could not find the ticket in the system.
+    not_claimed: This ticket is not currently claimed.
     already_claimed: This ticket is already claimed by someone else.
     no_permission_claim: You do not have permission to claim this ticket.
+    no_permission_unclaim: You do not have permission to unclaim this ticket.
     no_permission_close: You do not have permission to close this ticket.
     blacklisted: You cannot create a ticket because you are on the server's blacklist.
     concurrent_limit: "You have reached the limit of concurrent open tickets ({}). Please ask an Administrator to review your open tickets before opening new ones.\nCurrent open tickets: {}"
