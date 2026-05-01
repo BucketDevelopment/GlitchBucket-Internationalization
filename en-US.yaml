@@ -3316,6 +3316,17 @@ bucketscript:
         Bot is missing one of required permissions in {} to process BucketScript message:
         - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions  
     embed:
+      show:
+        description: Send an embed
+        options:
+          edit_message: Specify Message URL (https://discord.com/channels/.../.../...) or Message ID to edit using the selected embed.
+        translation:
+          unknown_message: Provided ID/Message URL in {} does not valid in this server.
+          successful: Embed has successfully sent to {}.
+          footer: -# Embed sent via **`/embed show`** command.
+          missing_permission: |
+            Bot is missing one of required permissions in {} to send embed:
+            - View Channel, Send Messages, Send Embeds
       shared:
         description: View your shared embeds
         translation:

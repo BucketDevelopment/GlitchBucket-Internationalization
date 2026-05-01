@@ -97,7 +97,7 @@ common:
       none: Không có lý do được cung cấp.
       terms_violated: Bạn đã vi phạm Điều khoản Dịch vụ của bot, vì vậy chúng tôi đã ngưng bạn sử dụng dịch vụ của chúng tôi.
   options:
-    role: "Chọn một vai trò, hoặc chỉ định ID vai trò"
+    role: "Chọn một role, hoặc chỉ định ID role"
     category: "Chọn danh mục, hoặc chỉ định ID danh mục"
     channel: "Chọn một kênh, hoặc chỉ định ID kênh"
     member: "Chọn một Member trong server, hoặc chỉ định ID Member"
@@ -517,15 +517,15 @@ autoresponder:
       channel: Yêu cầu Kênh
       member: Yêu cầu Thành viên
       permissions: Yêu cầu Quyền
-      roles: Yêu cầu Vai trò
+      roles: Yêu cầu Role
     ignore:
       channel: Bỏ qua Kênh
       member: Bỏ qua Thành viên
       permissions: Bỏ qua Quyền
-      roles: Bỏ qua Vai trò
+      roles: Bỏ qua Role
       error: Bỏ qua Lỗi
-    add_roles: Thêm Vai trò
-    remove_roles: Xóa Vai trò
+    add_roles: Thêm Role
+    remove_roles: Xóa Role
     reaction: React tin nhắn
     reply: Trả lời
     raw: Trả lời thô
@@ -1197,7 +1197,7 @@ donation:
     not_enabled: "Server này chưa kích hoạt tính năng nhận ủng hộ tự động! Hãy cân nhắc thiết lập bằng cách sử dụng </donation enable:1152465316878762014>"
     disabled_automatic_receiver: "Server này hiện đang vô hiệu hóa tính năng nhận ủng hộ tự động! Hãy cân nhắc kích hoạt lại bằng cách sử dụng </donation enable:1152465316878762014>"
   current_setting:
-    roles: "**Vai trò:** "
+    roles: "**Role:** "
     members: "**Thành viên:** "
     warning: "***Cảnh báo:**"
     points: "Điểm"
@@ -1210,7 +1210,7 @@ donation:
     reward: "Phần thưởng ủng hộ"
     dmessage: "Tin nhắn ủng hộ"
     drawmessage: "Tin nhắn ủng hộ thô"
-    role_update: "Cập nhật vai trò phần thưởng ủng hộ dựa trên các yêu cầu"
+    role_update: "Cập nhật role phần thưởng ủng hộ dựa trên các yêu cầu"
   commands:
     channel:
       description: Thêm/Xóa kênh nhận ủng hộ
@@ -1273,12 +1273,12 @@ donation:
       options:
         message: '[Tích hợp BucketScript] Chỉ định tin nhắn khi nhận được donate. Placeholder mới: {amount}'
     receiverole:
-      description: Đặt vai trò cho người nhận
+      description: Đặt role cho người nhận
       options:
-        role: Chỉ định vai trò, sẽ là vai trò của người nhận ủng hộ
-        delete: Có xóa vai trò nhận này hay không
+        role: Chỉ định role, sẽ là role của người nhận ủng hộ
+        delete: Có xóa role nhận này hay không
       translation:
-        already_exists: "{} đã là vai trò nhận ủng hộ cho server này, bạn chỉ có thể xóa hoặc thay đổi chúng."
+        already_exists: "{} đã là role nhận ủng hộ cho server này, bạn chỉ có thể xóa hoặc thay đổi chúng."
     receiver:
       description: Thêm/Xóa người nhận
       options:
@@ -1295,19 +1295,19 @@ donation:
       translation:
         already_exists: "{} đã là kênh thông báo ủng hộ cho server này, bạn chỉ có thể thay đổi chúng."
     reward:
-      description: Đặt phần thưởng (vai trò) sau khi ủng hộ một số điểm nhất định
+      description: Đặt phần thưởng (role) sau khi ủng hộ một số điểm nhất định
       options:
         action: Chọn hành động
-        role: Chỉ định vai trò để thêm, nếu số tiền ủng hộ lớn hơn {threshold} điểm
+        role: Chỉ định role để thêm, nếu số tiền ủng hộ lớn hơn {threshold} điểm
         threshold: Chỉ định ngưỡng, bot thêm phần thưởng cho người dùng, nếu số tiền ủng hộ lớn hơn ngưỡng này
       translation:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì lí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
         insufficient_hierachy: |
-          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
-        can_remove_only: "{} đã là vai trò phần thưởng cho server này, bạn chỉ có thể xóa chúng."
-        can_add_only: "{} không phải là vai trò phần thưởng của server này, bạn chỉ có thể thêm chúng."
-        maximum_reached: "Bạn không thể thêm nhiều hơn 10 vai trò phần thưởng. Bạn nên xóa một vai trò để thêm một vai trò khác."
+          Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một role có vị trí cao hơn.
+        can_remove_only: "{} đã là role phần thưởng cho server này, bạn chỉ có thể xóa chúng."
+        can_add_only: "{} không phải là role phần thưởng của server này, bạn chỉ có thể thêm chúng."
+        maximum_reached: "Bạn không thể thêm nhiều hơn 10 role phần thưởng. Bạn nên xóa một role để thêm một role khác."
     configuration:
       description: Kiểm tra cấu hình về Người nhận ủng hộ tự động
       options:
@@ -1631,21 +1631,21 @@ quickreport:
     disable:
       description: Vô hiệu hóa tính năng Quick Report
     muterole:
-      description: Đặt vai trò tắt tiếng hiện có của bot kiểm duyệt khác
+      description: Đặt role tắt tiếng hiện có của bot kiểm duyệt khác
       options:
-        role: "Chọn một vai trò"
+        role: "Chọn một role"
     manager:
-      description: Đặt vai trò người quản lý báo cáo
+      description: Đặt role người quản lý báo cáo
       options:
-        role: Chỉ định vai trò
+        role: Chỉ định role
     bypass:
-      description: Đặt vai trò sẽ bảo vệ người dùng khỏi các báo cáo
+      description: Đặt role sẽ bảo vệ người dùng khỏi các báo cáo
       options:
-        role: Chỉ định vai trò
+        role: Chỉ định role
     blacklist:
-      description: Đặt vai trò khiến người dùng không thể báo cáo các tin nhắn khác
+      description: Đặt role khiến người dùng không thể báo cáo các tin nhắn khác
       options:
-        role: Chỉ định vai trò
+        role: Chỉ định role
     autoexpire:
       description: Đặt thời gian tự xóa cho các báo cáo khi không có người kiểm duyệt nào xử lý
       options:
@@ -1662,7 +1662,7 @@ quickreport:
       description: Đặt bot tự động xóa báo cáo trong một số sự kiện
       options:
         on_user_timeout: Có xóa báo cáo khi người dùng đó đã hết giờ hay không
-        on_user_muted: Có xóa báo cáo khi người dùng đó bị tắt tiếng hay không (vai trò tắt tiếng đã được trao cho họ)
+        on_user_muted: Có xóa báo cáo khi người dùng đó bị tắt tiếng hay không (role tắt tiếng đã được trao cho họ)
         on_user_leave: Có xóa báo cáo khi người dùng đó bị cấm/rời server hay không
     channels:
       description: Đưa vào danh sách trắng/đen Quick Report trong một số kênh
@@ -1699,8 +1699,8 @@ quickreport:
         approve: Chấp thuận
         decline: Từ chối
       translation:
-        no_manager_role: "Vai trò Quản lý báo cáo chưa được đặt trong cấu hình! Vui lòng sử dụng </quickreport manager:1182566872810541056> để thêm một."
-        no_perm: "Cập nhật báo cáo yêu cầu quyền Quản lí Member hoặc Vai trò quản lí."
+        no_manager_role: "Role Quản lý báo cáo chưa được đặt trong cấu hình! Vui lòng sử dụng </quickreport manager:1182566872810541056> để thêm một."
+        no_perm: "Cập nhật báo cáo yêu cầu quyền Quản lí Member hoặc Role quản lí."
         no_report: "Không có báo cáo nào có ID `{}` liên kết với server này!"
         no_override: "Báo cáo có ID `{}` đã được cập nhật trước đó, bạn không thể ghi đè bản cập nhật!"
         successful: "Đã cập nhật thành công báo cáo có ID `{}`!"
@@ -1747,11 +1747,11 @@ customrole:
   current_setting:
     title: "Thông tin Custom Role cho @{}"
     permissions:
-      icon: "Chỉnh sửa biểu tượng vai trò"
-      name: "Chỉnh sửa tên vai trò"
-      mentionable: "Cho phép nhắc đến vai trò"
-      members: "Quản lý thành viên của vai trò"
-      color: "Chỉnh sửa màu vai trò"
+      icon: "Chỉnh sửa biểu tượng role"
+      name: "Chỉnh sửa tên role"
+      mentionable: "Cho phép nhắc đến role"
+      members: "Quản lý thành viên của role"
+      color: "Chỉnh sửa màu role"
     expire_in:
       never: "Không bao giờ"
       remove_boost: "Cho đến khi xóa tất cả các boost"
@@ -1766,7 +1766,7 @@ customrole:
       granted_permission: "Quyền được cấp"
       restricted_permission: "Quyền bị hạn chế"
     admin_title: "Cấu hình quản trị Custom Role cho {}"
-    description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu vai trò:**"
+    description: "**Tổng số Custom Role:** {}\n**Quyền người sở hữu role:**"
   modal:
     title: Color Palette
     color:
@@ -1806,7 +1806,7 @@ customrole:
         this: đây
     select_role: Chọn một Custom Role, hoặc chỉ định một Custom Role ID
     unknown_role: "ID Role `{}` không thuộc về server này - role có thể đã bị xóa."
-    cannot_edit_role: "Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi vai trò của bot thành một vị trí cao hơn."
+    cannot_edit_role: "Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi role của bot thành một vị trí cao hơn."
     roles: Custom Role
     permissions_choice:
       _true: "Có"
@@ -1814,8 +1814,8 @@ customrole:
       default: "Mặc định"
       approval: "Gửi Yêu cầu cho Quản trị viên duyệt"
     role_not_registered: |
-      {} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
-      Để di chuyển từ vai trò vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
+      {} không phải là một role đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot.
+      Để di chuyển từ role vào cơ sở dữ liệu Custom Role của bot, vui lòng sử dụng </customrole admin migrate:1201110041013526589>
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     member_not_in_guild: "Không thể tìm thấy member này trong server."
@@ -2066,28 +2066,28 @@ customrole:
     create:
       description: "Tạo & Gán một Custom Role không có quyền cho một thành viên"
       options:
-        above_role: "Custom Role mới sẽ ở dưới vai trò này"
+        above_role: "Custom Role mới sẽ ở dưới role này"
         author: "Chỉ định người sở hữu của Custom Role"
-        name: "Chỉ định tên vai trò"
-        max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
+        name: "Chỉ định tên role"
+        max_users: "Số lượng thành viên tối đa có thể được gán vào role này"
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
-        color: "Chỉ định màu vai trò"
-        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        color: "Chỉ định màu role"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
       translation:
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
+          Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một role có vị trí cao hơn.
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     max_users:
       description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
       options:
-        users: "Chỉ định số lượng thành viên tối đa cho vai trò này"
+        users: "Chỉ định số lượng thành viên tối đa cho role này"
     terminate:
       description: "Chấm dứt một phiên bản Custom Role của một thành viên"
       options:
@@ -2097,7 +2097,7 @@ customrole:
     list:
       description: "Liệt kê các Custom Role của một thành viên"
       options:
-        delete_role: "Có xóa vai trò hay không"
+        delete_role: "Có xóa role hay không"
       translation:
         none_found: "Server này không có bất kỳ Custom Role nào được thiết lập."
         title: "Danh sách Custom Role cho {}"
@@ -2106,37 +2106,37 @@ customrole:
           boost: "cho đến khi xóa boost"
           timing: "hết hạn: {}"
     migrate:
-      description: "Di chuyển một vai trò hiện có sang Custom Role của bot"
+      description: "Di chuyển một role hiện có sang Custom Role của bot"
       options:
-        role: "Chỉ định một vai trò"
+        role: "Chỉ định một role"
         author: "Chỉ định người sở hữu của Custom Role"
-        max_users: "Số lượng thành viên tối đa có thể được gán vào vai trò này"
+        max_users: "Số lượng thành viên tối đa có thể được gán vào role này"
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
       translation:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role có một số quyền). Để bảo mật, bot sẽ không đăng ký role này thành Custom Role."
-        already_migrated: "{} là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
+        already_migrated: "{} là một role đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot, bạn không thể thay đổi nữa."
         already_have_one: "{} đã đạt tối đa số lượng Custom Role và bạn không thể tạo nhiều hơn 10 Custom Role cho mỗi người dùng."
         limit_exceeded: "Bạn không thể tạo nhiều hơn 100 Custom Role cho server này."
         missing_permission: |
-          Bot không thể tạo một vai trò có vị trí cao hơn hoặc bằng với vị trí của vai trò cao nhất của bot (vị trí của bot: {0}, vị trí vai trò: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi vai trò của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một vai trò có vị trí cao hơn.
+          Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
+          Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một role có vị trí cao hơn.
         invalid_time: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     set_permission:
       description: "Đặt quyền cho một Custom Role"
       options:
-        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
     default_author_permission:
-      description: "Chỉnh sửa quyền mặc định cho người sở hữu của vai trò"
+      description: "Chỉnh sửa quyền mặc định cho người sở hữu của role"
       options:
-        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên vai trò của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của vai trò của họ"
-        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của vai trò của họ"
-        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên vai trò"
-        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho vai trò của họ có thể nhắc đến bởi các thành viên khác"
+        edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
+        manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
+        make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
     approval:
       description: "Bật/Tắt yêu cầu chỉnh sửa Custom Role"
       options:
@@ -2158,7 +2158,7 @@ customrole:
       translation:
         missing_arguments: "Bạn cần cung cấp `role` hoặc `member`, hoặc cả hai."
         unknown_author: "{} không được gán bất kỳ Custom Role nào."
-        unknown_role: "{} không phải là một vai trò đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot."
+        unknown_role: "{} không phải là một role đã được đăng ký như một Custom Role trong cơ sở dữ liệu của bot."
     reduce:
       description: "Giảm thời gian cho một Custom Role được gán cho một thành viên, hoặc ngược lại"
       options:
@@ -2170,9 +2170,9 @@ customrole:
     on_expire:
       description: "Chỉ định sự kiện khi Custom Role của một người dùng hết hạn"
       choices:
-        removeall: "Xóa tất cả mọi người khỏi vai trò (mặc định)"
-        remove: "Xóa tất cả mọi người khỏi vai trò (loại trừ người sở hữu)"
-        delete: "Xóa vai trò"
+        removeall: "Xóa tất cả mọi người khỏi role (mặc định)"
+        remove: "Xóa tất cả mọi người khỏi role (loại trừ người sở hữu)"
+        delete: "Xóa role"
     user:
       common:
         no_role_found: "Bạn không có bất kỳ Custom Role nào với ID đó trong server này."
@@ -2184,11 +2184,11 @@ customrole:
           description: "Thêm một thành viên vào Custom Role"
           translation:
             maximum_reached: "Bạn đã đạt tối đa số lượng thành viên cho Custom Role này ({} trong số {}). Bạn có thể phải xóa bỏ một người khác để thêm người khác."
-            can_remove_only: "{} đã có Custom Role {}, bạn chỉ có thể xóa vai trò này khỏi họ."
+            can_remove_only: "{} đã có Custom Role {}, bạn chỉ có thể xóa role này khỏi họ."
         remove:
           description: "Xóa một thành viên khỏi Custom Role"
           translation:
-            can_add_only: "{} không có Custom Role {}, bạn chỉ có thể thêm vai trò này cho họ."
+            can_add_only: "{} không có Custom Role {}, bạn chỉ có thể thêm role này cho họ."
         color:
           description: "Thay đổi màu của Custom Role"
           options:
@@ -2220,7 +2220,7 @@ customrole:
         name:
           description: "Thay đổi tên của Custom Role"
           options:
-            name: "Chỉ định tên vai trò"
+            name: "Chỉ định tên role"
 pagination:
   unauthorized: "Bạn không có quyền sử dụng menu này."
   inactive: "Menu của tin nhắn này đã được tạm dừng."
@@ -2296,7 +2296,7 @@ giveaway:
       ends: "Kết thúc:"
       participators: "Số người tham gia:"
       stay: "Đã ở trong server ít nhất"
-      has_roles: "Có một trong các vai trò sau:"
+      has_roles: "Có một trong các role sau:"
       requirements: Yêu cầu
       bonus: Lượt tham gia bonus
       entrants: lượt tham gia
@@ -2325,23 +2325,23 @@ giveaway:
       prevent_edit: "Một khi giveaway đã bắt đầu, bạn sẽ không thể chỉnh sửa kênh nữa.\n\nKênh hiện tại: <#{}>"
     bypasses:
       title: Bỏ qua Giveaway
-      description: "Chọn vai trò để bỏ qua yêu cầu từ giveaway hiện tại. Một thành viên có thể bỏ qua yêu cầu nếu họ có bất kỳ vai trò nào trong lựa chọn này.\nBạn có thể chọn tối đa 5 vai trò."
+      description: "Chọn role để bỏ qua yêu cầu từ giveaway hiện tại. Một thành viên có thể bỏ qua yêu cầu nếu họ có bất kỳ role nào trong lựa chọn này.\nBạn có thể chọn tối đa 5 role."
       translation:
-        roles: "Vai trò bỏ qua: Bất kỳ của"
+        roles: "Role bỏ qua: Bất kỳ của"
     blacklists:
       title: Danh sách đen Giveaway
-      description: "Chọn vai trò để đưa vào danh sách đen từ giveaway hiện tại. Nếu thành viên có bất kỳ vai trò nào trong lựa chọn này, họ sẽ bị đưa vào danh sách đen.\nBạn có thể chọn tối đa 10 vai trò."
+      description: "Chọn role để đưa vào danh sách đen từ giveaway hiện tại. Nếu thành viên có bất kỳ role nào trong lựa chọn này, họ sẽ bị đưa vào danh sách đen.\nBạn có thể chọn tối đa 10 role."
       translation:
-        roles: "Vai trò trong danh sách đen: Bất kỳ của"
+        roles: "Role trong danh sách đen: Bất kỳ của"
     requirements:
       title: Yêu cầu Giveaway
-      description: "Thêm yêu cầu để tham gia giveaway này. Thành viên sẽ đáp ứng yêu cầu nếu họ có bất kỳ vai trò nào trong lựa chọn này.\nBạn có thể chọn tối đa 10 vai trò yêu cầu.\nBạn cũng có thể đặt yêu cầu thời gian tham gia bằng cách nhấn vào nút."
+      description: "Thêm yêu cầu để tham gia giveaway này. Thành viên sẽ đáp ứng yêu cầu nếu họ có bất kỳ role nào trong lựa chọn này.\nBạn có thể chọn tối đa 10 role yêu cầu.\nBạn cũng có thể đặt yêu cầu thời gian tham gia bằng cách nhấn vào nút."
       translation:
-        roles: "- Vai trò yêu cầu: Bất kỳ của"
+        roles: "- Role yêu cầu: Bất kỳ của"
         join: "- Yêu cầu tham gia: Thành viên phải ở trong server ít nhất"
     bonus:
       title: Lượt tham gia bonus của Giveaway
-      description: Thêm lượt tham gia bonus cho các vai trò vào giveaway này. Bạn có thể chọn tối đa 15 vai trò cho người lượt tham gia bonus.
+      description: Thêm lượt tham gia bonus cho các role vào giveaway này. Bạn có thể chọn tối đa 15 role cho người lượt tham gia bonus.
       translation:
         entries: Lượt tham gia
         bonus_entrants: "Lượt tham gia bonus:"
@@ -2364,10 +2364,10 @@ giveaway:
       disabled: "Server hiện đang **TẮT** custom message."
       select_part: "Hãy chọn phần tin nhắn giveaway bạn muốn chỉnh sửa, hoặc bật/tắt custom message cho giveaway ở dưới:"
   selects:
-    bonus: Chọn vai trò để thêm Lượt tham gia bonus
-    requirements: Chọn vai trò để làm Requirement
-    blacklists: Chọn vai trò để đưa vào Blacklist
-    bypasses: Thêm vai trò để vượt Requirement
+    bonus: Chọn role để thêm Lượt tham gia bonus
+    requirements: Chọn role để làm Requirement
+    blacklists: Chọn role để đưa vào Blacklist
+    bypasses: Thêm role để vượt Requirement
     channel: Đặt kênh Giveaway
     templates: Chọn một template để áp dụng
     setup_action: Chọn hành động để cấu hình giveaway
@@ -2432,16 +2432,16 @@ giveaway:
     settings: Cài đặt
     bonus:
       label: Bonus
-      description: Thêm lượt tham gia cho vai trò
+      description: Thêm lượt tham gia cho role
     requirements:
       label: Yêu cầu
-      description: Đặt yêu cầu vai trò và thời gian tham gia
+      description: Đặt yêu cầu role và thời gian tham gia
     bypasses:
       label: Vượt yêu cầu
-      description: Vai trò được bỏ qua yêu cầu
+      description: Role được bỏ qua yêu cầu
     blacklists:
       label: Chặn
-      description: Ngăn vai trò tham gia giveaway
+      description: Ngăn role tham gia giveaway
     decorators: Trang trí
     image:
       label: Hình ảnh
@@ -2513,7 +2513,7 @@ giveaway:
       fields:
         bonus:
           label: Số lượng lượt tham gia bonus (1 - 99)
-          placeholder: Nhập '0' để xóa vai trò khỏi lượt tham gia bonus
+          placeholder: Nhập '0' để xóa role khỏi lượt tham gia bonus
   commands:
     migrate: 
       description: Khôi phục giveaway từ bot khác
@@ -2582,9 +2582,9 @@ giveaway:
         winners: 'Chỉ định người chiến thắng'
         channel: 'Chỉ định kênh để bắt đầu'
         template: 'Chọn một template'
-        requirements: 'Chỉ định requirements theo định dạng: role1|role2|...|role(n). Tối đa 15 vai trò'
-        blacklists: 'Chỉ định blacklists theo định dạng: role1|role2|...|role(n). Tối đa 10 vai trò'
-        bypasses: 'Chỉ định bypass requirements dạng: role1|role2|...|role(n). Tối đa 15 vai trò'
+        requirements: 'Chỉ định requirements theo định dạng: role1|role2|...|role(n). Tối đa 15 role'
+        blacklists: 'Chỉ định blacklists theo định dạng: role1|role2|...|role(n). Tối đa 10 role'
+        bypasses: 'Chỉ định bypass requirements dạng: role1|role2|...|role(n). Tối đa 15 role'
         multipliers: 'Chỉ định số lượt tham gia bonus theo định dạng: role1:bonus1|role2:bonus2|... Tối đa 10 phần thưởng'
         color: 'Chỉ định màu theo định dạng: #hex, hoặc rgb(số, số, số)'
         button_color: "Chọn màu nút"
@@ -2599,16 +2599,16 @@ giveaway:
       translation:
         errors:
           requirements:
-            maximum_reached: "Lỗi trong trường **Requirements**: Bạn không thể thêm hơn 10 vai trò trong trường này."
-            invalid: "Lỗi trong trường **Requirements**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong server này."
+            maximum_reached: "Lỗi trong trường **Requirements**: Bạn không thể thêm hơn 10 role trong trường này."
+            invalid: "Lỗi trong trường **Requirements**: ID role `{0}` (<@&{0}>) không tồn tại trong server này."
           blacklists:
-            maximum_reached: "Lỗi trong trường **Blacklists**: Bạn không thể thêm hơn 10 vai trò trong trường này."
-            invalid: "Lỗi trong trường **Blacklists**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong server này."
+            maximum_reached: "Lỗi trong trường **Blacklists**: Bạn không thể thêm hơn 10 role trong trường này."
+            invalid: "Lỗi trong trường **Blacklists**: ID role `{0}` (<@&{0}>) không tồn tại trong server này."
           bypasses:
-            maximum_reached: "Lỗi trong trường **Bypasses**: Bạn không thể thêm hơn 5 vai trò trong trường này."
-            invalid: "Lỗi trong trường **Bypasses**: ID vai trò `{0}` (<@&{0}>) không tồn tại trong server này."
+            maximum_reached: "Lỗi trong trường **Bypasses**: Bạn không thể thêm hơn 5 role trong trường này."
+            invalid: "Lỗi trong trường **Bypasses**: ID role `{0}` (<@&{0}>) không tồn tại trong server này."
           multipliers:
-            maximum_reached: "Lỗi trong trường **Bonus Entries**: Bạn không thể thêm hơn 15 vai trò trong trườn  này."
+            maximum_reached: "Lỗi trong trường **Bonus Entries**: Bạn không thể thêm hơn 15 role trong trườn  này."
             invalid: "Lỗi trong trường **Bonus Entries**: `{}` không phải là một phần dữ liệu phần thưởng hợp lệ."
           color: "Lỗi trong trường **Color**: `{}` không phải là một màu hợp lệ. Định dạng chấp nhận: `#hex`, `rgb(số, số, số)`"
           image: "Lỗi trong trường **Image**: `{}` không phải là một URL hình ảnh hợp lệ."
@@ -2683,13 +2683,13 @@ bucketscript:
     argument:
       missing:
         user: "Cần một người dùng hợp lệ tại vị trí `#{}`."
-        role: "Cần một vai trò hợp lệ tại vị trí `#{}`."
+        role: "Cần một role hợp lệ tại vị trí `#{}`."
         channel: "Cần một kênh hợp lệ tại vị trí `#{}`."
         number: "Cần một số hợp lệ tại vị trí `#{}`."
         any: "Cần một tham số tại vị trí `#{}`."
       invalid:
         user: "Cần một người dùng hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
-        role: "Cần một vai trò hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+        role: "Cần một role hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
         channel: "Cần một kênh hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
     user:
       missing_permission: "### {} Thiếu quyền: {}"
@@ -2729,7 +2729,7 @@ bucketscript:
       ignore_channel: Kênh này đã bị chặn sử dụng autoresponder trên.
       ignore_category: Category này đã bị cấm sử dụng autoresponder này.
       ignore_permission: Một số quyền đã bị cấm sử dụng autoresponder trên.
-      ignore_role: Một số vai trò đã bị cấm sử dụng autoresponder trên.
+      ignore_role: Một số role đã bị cấm sử dụng autoresponder trên.
       cooldown: "Autoresponder này đang trong **cooldown**. Thời gian thử lại: {}"
       global_cooldown: "Autoresponder này đang trong **server cooldown**. Thời gian thử lại: {}"
       daily_cooldown: "Autoresponder này đang trong **cooldown hàng ngày**. Thời gian thử lại: {}"
@@ -2739,7 +2739,7 @@ bucketscript:
       user: ID Người dùng '{}' là không hợp lệ trong placeholder `{}`
       channel: ID Kênh '{}' là không hợp lệ trong placeholder `{}`
       permission: Quyền '{}' là không hợp lệ trong placeholder `{}`
-      role: ID Vai trò '{}' là không hợp lệ trong placeholder `{}`
+      role: ID Role '{}' là không hợp lệ trong placeholder `{}`
       invalid_int: Giá trị trong placeholder `{}` cần phải là một số nguyên hợp lệ
     occurred: "Đã xảy ra lỗi khi xử lý BucketScript:\n`{}`: {}"
     invalid_channel: 'ID kênh không hợp lệ: `{}`.'
@@ -2747,7 +2747,7 @@ bucketscript:
     cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của bot."
   description: "Tiện ích để xử lý các tin nhắn động."
   translation:
-    update_roles: Cập nhật vai trò từ autoresponder
+    update_roles: Cập nhật role từ autoresponder
     shared_embeds:
       maximum_reached: "Bạn đã đạt giới hạn shared embeds (30). Bạn có thể quản lý các shared embeds của mình qua `/embed shared`."
       shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/embed shared`."
@@ -3221,7 +3221,7 @@ bucketscript:
       add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
       manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
       manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
-      manage_roles: "Bạn cần có quyền **Quản lý Vai trò** để sử dụng placeholder này."
+      manage_roles: "Bạn cần có quyền **Quản lý Role** để sử dụng placeholder này."
     invalid_redirect: "`reply` function không thể được thiết lập với `redirect_to`. Vui lòng bỏ 1 trong 2."
     components:
       gallery:
@@ -3316,6 +3316,17 @@ bucketscript:
           - Xem kênh, Gửi tin nhắn, Gửi embed, Đính kèm tập tin & Thêm Reaction
 
     embed:
+      show:
+        description: Gửi một embed đã lưu
+        options:
+          edit_message: Chỉ định 1 đường dẫn (https://discord.com/channels/.../.../...) hoặc ID tin nhắn để chỉnh sửa bằng embed đã chọn.
+        translation:
+          unknown_message: ID/Link Tin nhắn được cung cấp trong kênh {} là không hợp lệ trong server này.
+          successful: Embed đã được gửi thành công tới {}.
+          footer: -# Embed được gửi thông qua lệnh **`/embed show`**.
+          missing_permission: |
+            Bot đang thiếu một trong các quyền cần thiết tại kênh {} để gửi embed:
+            - Xem kênh, Gửi tin nhắn, Gửi embed
       shared:
         description: Xem các embed bạn đã chia sẻ
         translation:
@@ -3395,8 +3406,8 @@ voting:
       label: Thời lượng
       placeholder: 'Chỉ định thời lượng theo định dạng ngắn (vd: 1d2h, tối đa 60d) hoặc số giây (vd: 86400)'
   selects:
-    blacklist: Chọn vai trò cho blacklist
-    blacklist_whitelist: Chọn vai trò cho blacklist/whitelist
+    blacklist: Chọn role cho blacklist
+    blacklist_whitelist: Chọn role cho blacklist/whitelist
   embeds:
     preparing:
       title: 'Đang chuẩn bị...'
@@ -3431,8 +3442,8 @@ voting:
       voter_requirements: Yêu cầu cho Người vote
       participant_requirements:
         name: Yêu cầu của Người tham gia
-        whitelist: "- Chỉ có thành viên có vai trò <@&{}> mới được tham gia\n"
-        blacklist: "- Thành viên có vai trò <@&{}> không được phép tham gia\n"
+        whitelist: "- Chỉ có thành viên có role <@&{}> mới được tham gia\n"
+        blacklist: "- Thành viên có role <@&{}> không được phép tham gia\n"
         everyone: "- Tất cả mọi người đều có thể tham gia\n"
         messages:
           limited: "- Mỗi người tham gia chỉ được gửi __{} tin nhắn__"
@@ -3466,7 +3477,7 @@ voting:
         title: Yêu cầu Người bỏ phiếu
         description: "Chọn điều kiện để đếm phiếu bầu. Cấu hình hiện tại:\n"
       requrement:
-        role: "- Thành viên có vai trò <@&{}> không thể vote\n"
+        role: "- Thành viên có role <@&{}> không thể vote\n"
         stay: "- Thành viên phải ở trong server ít nhất __{}__ để có thể vote\n"
         register: "- Tài khoản phải được đăng ký ít nhất __{}__ để có thể vote\n"
         leave_invalid: "- Tất cả các vote __vẫn hợp lệ__ nếu người vote rời khỏi server"
@@ -3491,8 +3502,8 @@ voting:
         description: |
           Chọn cách thức mà các thành viên có thể tham gia vào phiên bầu chọn này:
 
-          **Blacklist**: Tất cả các thành viên có vai trò đã chọn không thể tham gia vào phiên bầu chọn,
-          **Whitelist**: Các thành viên cần phải có vai trò đã chọn để tham gia vào phiên bầu chọn,
+          **Blacklist**: Tất cả các thành viên có role đã chọn không thể tham gia vào phiên bầu chọn,
+          **Whitelist**: Các thành viên cần phải có role đã chọn để tham gia vào phiên bầu chọn,
           **Any**: Tất cả mọi người có thể tham gia vào phiên bầu chọn này
 
           Chọn phương pháp tham gia dưới đây. Lựa chọn hiện tại: **`{}`**
@@ -4033,7 +4044,7 @@ moderation:
       translation:
         errors:
           self: "Bạn không thể tự timeout bản thân mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể timeout chủ sở hữu server."
           bot_hierachy: "Bot không thể timeout **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
@@ -4047,7 +4058,7 @@ moderation:
         errors:
           not_timed_out: "**{}** hiện không bị tắt tiếng."
           self: "Bạn không thể tự bỏ chặn mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể bỏ chặn chủ sở hữu server."
           bot_hierachy: "Bot không thể bỏ chặn **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           unknown: "Bot không thể bỏ chặn **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
@@ -4061,7 +4072,7 @@ moderation:
       translation:
         errors:
           self: "Bạn không thể tự cấm mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể cấm chủ sở hữu server."
           bot_hierachy: "Bot không thể cấm **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải là định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
@@ -4092,7 +4103,7 @@ moderation:
       translation:
         errors:
           self: "Bạn không thể tự cảnh cáo mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể cảnh cáo chủ sở hữu server."
           bot_hierachy: "Bot không thể cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           unknown: "Bot không thể cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
@@ -4107,7 +4118,7 @@ moderation:
         no_recent: "Người dùng này không có cảnh cáo nào gần đây."
         errors:
           self: "Bạn không thể tự bỏ cảnh cáo mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể bỏ cảnh cáo chủ sở hữu server."
           bot_hierachy: "Bot không thể bỏ cảnh cáo **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           unknown: "Bot không thể bỏ cảnh cáo **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
@@ -4119,7 +4130,7 @@ moderation:
       translation:
         errors:
           self: "Bạn không thể tự kick mình."
-          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò."
+          user_hierachy: "Bạn không cao hơn **{}** trong hệ thống cấp bậc role."
           owner: "Bạn không thể kick chủ sở hữu server."
           bot_hierachy: "Bot không thể kick **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           unknown: "Bot không thể kick **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
@@ -4228,51 +4239,51 @@ server:
         member_not_found: "Không tìm thấy member nào phù hợp với `{}`."
         role_not_found: "Không tìm thấy role nào phù hợp với `{}`."
       members:
-        description: Hiển thị thành viên của một vai trò cụ thể
+        description: Hiển thị thành viên của một role cụ thể
         options:
           limit: "Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10"
         translation:
-          title: "Thành viên của vai trò @{}"
+          title: "Thành viên của role @{}"
       add:
-        description: Thêm một vai trò cho một thành viên
+        description: Thêm một role cho một thành viên
         translation:
-          specified_user_hierachy: "{} không cao hơn **{}** trong hệ thống cấp bậc vai trò."
-          user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
+          specified_user_hierachy: "{} không cao hơn **{}** trong hệ thống cấp bậc role."
+          user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc role.
           owner: Bạn không thể cấp **{}** cho chủ sở hữu server.
           server_hierachy: Bot không thể cấp **{}** cho **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
-          already_have: "{} đã có vai trò **{}**."
+          already_have: "{} đã có role **{}**."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           successful: Đã thêm **{}** cho **{}**.
       add-all:
-        description: Thêm vai trò cho tất cả thành viên server
+        description: Thêm role cho tất cả thành viên server
         describe:
-          option: Chọn một tùy chọn để gán vai trò
+          option: Chọn một tùy chọn để gán role
         choices:
           option:
             all: Tất cả Người và Bot
             human: Tất cả Người (không bao gồm bot)
             bot: Tất cả Bot (không bao gồm người)
         translation:
-          already_running: Server này hiện đang có một tiến trình gán vai trò cho tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Server này hiện đang có một tiến trình gán role cho tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Bot không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: 'Đang thực hiện thêm **{}** cho {} tài khoản. Thời gian hoàn thành ước tính: {}.'
           successful: Đã thêm thành công **{}** cho {} tài khoản.
       remove:
-        description: Xóa một vai trò khỏi thành viên
+        description: Xóa một role khỏi thành viên
         translation:
-          user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc vai trò.
+          user_hierachy: Bạn không cao hơn **{}** trong hệ thống cấp bậc role.
           owner: Bạn không thể xóa **{}** khỏi chủ sở hữu server.
           server_hierachy: Bot không thể xóa **{}** khỏi **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
-          already_have: "{} không có vai trò {}."
+          already_have: "{} không có role {}."
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           successful: Đã xóa {} khỏi **{}**.
       remove-all:
-        description: Xóa vai trò khỏi tất cả thành viên server
+        description: Xóa role khỏi tất cả thành viên server
         describe:
-          option: Chọn một tùy chọn để gán vai trò
+          option: Chọn một tùy chọn để gán role
         translation:
-          already_running: Server này hiện đang có một tiến trình xóa vai trò khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: Server này hiện đang có một tiến trình xóa role khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
           server_hierachy: Bot không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
           adding: Removing **{}** from {} accounts, this may take {}.
@@ -4351,8 +4362,8 @@ quests:
       voice: Thoại
       text: Văn Bản
   selects:
-    whitelist: Chọn vai trò cho danh sách trắng
-    blacklist: Chọn vai trò cho danh sách đen
+    whitelist: Chọn role cho danh sách trắng
+    blacklist: Chọn role cho danh sách đen
     channel: Chọn kênh
   modals:
     text:
@@ -4424,7 +4435,7 @@ quests:
     whitelistblacklist:
       title: Cài Đặt Bổ Sung
       description: |
-        Ngoài ra, bạn có thể thêm danh sách trắng/đen vai trò cụ thể để hoàn thành nhiệm vụ.
+        Ngoài ra, bạn có thể thêm danh sách trắng/đen role cụ thể để hoàn thành nhiệm vụ.
         Bạn cũng nên thêm [Chức Năng BucketScript](https://bot.tudubucket.dev/bucketscript/functions/) cho thông báo hoàn thành nhiệm vụ.
 
         Bạn có thể bỏ qua cài đặt này, **nhưng bạn nên thêm chức năng thông báo**. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
@@ -4432,16 +4443,16 @@ quests:
     whitelist:
       title: Danh Sách Trắng của Nhiệm Vụ
       description: |
-        Thêm vai trò cụ thể có thể hoàn thành nhiệm vụ này.
-        Vai trò hiện tại: {}
+        Thêm role cụ thể có thể hoàn thành nhiệm vụ này.
+        Role hiện tại: {}
         Vui lòng chọn lựa chọn bên dưới.
 
         Đây là bước cuối cùng. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
     blacklist:
       title: Danh Sách Đen của Nhiệm Vụ
       description: |
-        Thêm vai trò cụ thể không thể hoàn thành nhiệm vụ này.
-        Vai trò hiện tại: {}
+        Thêm role cụ thể không thể hoàn thành nhiệm vụ này.
+        Role hiện tại: {}
         Vui lòng chọn lựa chọn bên dưới.
 
         Đây là bước cuối cùng. Nhấn **`🎉 Hoàn Thành`** để hoàn tất cài đặt.
@@ -4489,7 +4500,7 @@ user:
     joined: Tham gia
     boost: Nâng cấp
     badge: Huy hiệu
-    roles: Vai trò
+    roles: Role
   commands:
     info:
       description: Kiểm tra thông tin của một người dùng
