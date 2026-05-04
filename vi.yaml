@@ -199,7 +199,7 @@ chat:
     disallowed_content: Your requested prompt has been aborted. Make sure to not use violation/insult language while submitting prompt.
     response: "Phản hồi:"
 fack:
-  description: gửi một 'fack' đến kẻ thù
+  description: 🖕 người khác
   options:
     user: Người dùng bạn muốn fack
 8ball:
@@ -379,6 +379,8 @@ help:
     button_previous: "Trước"
     button_next: "Tiếp"
     button_back: "Quay lại"
+    button_prefix_list: "Lệnh Prefix"
+    button_slash_list: "Lệnh Slash"
     page_counter: "{}/{}"
     home_label: "📖 Trang Chủ"
     home_description: "Xem menu trợ giúp chính"
@@ -388,7 +390,13 @@ help:
     help_menu_title: "📚 Menu Trợ Giúp"
     module_commands_title: "{} Các lệnh {}"
     module_select_description: "Chọn một lệnh từ menu thả xuống bên dưới để xem thông tin chi tiết."
+    prefix_list_title: "⌨️ Lệnh Prefix"
+    prefix_list_description: "Danh sách lệnh được nhóm theo danh mục."
+    slash_list_title: "🧭 Lệnh Slash"
+    slash_list_description: "Các lệnh slash và nhóm lệnh cấp cao nhất."
     command_count: "`{}` lệnh"
+    prefix_stat: "Lệnh prefix"
+    slash_stat: "Lệnh slash"
     footer_total_commands: "{} • Tổng: {} lệnh"
     prefix_equivalent: "\n\n**Lệnh prefix tương đương:** `{}`"
     no_commands_found: "Không tìm thấy lệnh nào."

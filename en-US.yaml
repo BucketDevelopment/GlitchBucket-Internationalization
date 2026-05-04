@@ -379,6 +379,8 @@ help:
     button_previous: "Previous"
     button_next: "Next"
     button_back: "Back"
+    button_prefix_list: "Prefix Commands"
+    button_slash_list: "Slash Commands"
     page_counter: "{}/{}"
     home_label: "📖 Home"
     home_description: "View main help menu"
@@ -388,7 +390,13 @@ help:
     help_menu_title: "📚 Help Menu"
     module_commands_title: "{} {} Commands"
     module_select_description: "Select a command from the dropdown below to view detailed information."
+    prefix_list_title: "⌨️ Prefix Commands"
+    prefix_list_description: "Commands grouped by category."
+    slash_list_title: "🧭 Slash Commands"
+    slash_list_description: "Top-level slash commands and command groups."
     command_count: "`{}` commands"
+    prefix_stat: "Prefix commands"
+    slash_stat: "Slash commands"
     footer_total_commands: "{} • Total: {} commands"
     prefix_equivalent: "\n\n**Prefix equivalent:** `{}`"
     no_commands_found: "No commands found."
@@ -1835,7 +1843,7 @@ customrole:
           secondary:
             label: Secondary Color (optional)
             description: Only applies if the server has Enhanced Role Colors
-            placeholder: "#00FF00 — leave empty to keep current"
+            placeholder: "#00FF00 - leave empty to keep current"
         max_users:
           title: Edit Maximum Users
           label: Maximum Users
@@ -1900,10 +1908,10 @@ customrole:
             description: |
               Choose how this permission should behave **for this specific role**.
 
-              `✅ Allow` — user can edit freely
-              `📋 Require Approval` — needs admin to approve first
-              `❌ Deny` — user cannot edit
-              `⚙️ Server Default` — follow server-wide setting
+              `✅ Allow` - user can edit freely
+              `📋 Require Approval` - needs admin to approve first
+              `❌ Deny` - user cannot edit
+              `⚙️ Server Default` - follow server-wide setting
             footer: Customrole Admin • Set Permission Value
         permissions:
           placeholder: Select a permission to configure…
