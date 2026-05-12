@@ -3425,14 +3425,14 @@ voting:
       description: "Kênh vote không hợp lệ (có thể đã bị xóa: `{}`). Nếu bạn cho rằng đây là lỗi, vui lòng thử lại sau một phút. Nếu kênh đã bị xóa, bạn cần setup một vote session mới."
     missing_permission:
       title: Thiếu Quyền
-      description: "Bot thiếu quyền để đọc phiếu vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Server về vấn đề này."
+      description: "Bot thiếu quyền để đọc vote trong {}: **Quản lý Tin nhắn**, **Đọc Lịch sử Tin nhắn**, **Đọc Tin nhắn** & **Thêm Biểu tượng Reaction**.\nBạn có thể cần liên hệ với Quản trị viên Server về vấn đề này."
   translation:
     outdated_data: "*Dữ liệu này đã cũ và hiện bot đang làm mới dữ liệu trong nền (Thời gian bắt đầu cập nhật: {}). Hãy sử dụng lại lệnh sau vài phút để có dữ liệu mới nhất.*"
     none_vote: "*Hiện đang không có vote hợp lệ nào trong kênh <#{}>.*"
     none_running: Hiện không có phiên vote nào đang diễn ra trong server này.
     require_setup: Server này chưa thiết lập bất kỳ phiên vote nào. Vui lòng chạy lệnh `/voting session setup` ít nhất một lần để lệnh này hoạt động.
     cache: "Dữ liệu được cập nhật theo thời gian thực"
-    votes: Phiếu bầu
+    votes: Số lượt Vote
     messages: Tin nhắn
     valid: hợp lệ
     left: thoát
@@ -3475,15 +3475,15 @@ voting:
           description: 'Phiên vote đã bắt đầu thành công trong <#{}>!'
     no_emoji:
       short: Không có biểu tượng cảm xúc trong cấu hình
-      full: Không có biểu tượng cảm xúc trong cấu hình. Nhấn 'Thiết lập Biểu tượng' dưới đây để thiết lập biểu tượng riêng cho việc đếm phiếu
+      full: Không có biểu tượng cảm xúc trong cấu hình. Nhấn 'Thiết lập Biểu tượng' dưới đây để thiết lập emoji cho phiếu vote. 
     back: Trở lại
     voter_requirement:
       join: Đặt Thời gian Tham gia
       register: Đặt Thời gian Đăng ký T.khoản
       allow_leave: Bật/Tắt 'Cho phép người vote rời đi'
       embed:
-        title: Yêu cầu Người bỏ phiếu
-        description: "Chọn điều kiện để đếm phiếu bầu. Cấu hình hiện tại:\n"
+        title: Yêu cầu Người vote
+        description: "Chọn điều kiện để đếm lượt vote. Config hiện tại:\n"
       requrement:
         role: "- Thành viên có role <@&{}> không thể vote\n"
         stay: "- Thành viên phải ở trong server ít nhất __{}__ để có thể vote\n"
@@ -3549,9 +3549,9 @@ voting:
         start:
           description: Thiết lập một phiên bầu chọn
           options:
-            from_message: Chỉ định một ID tin nhắn để đếm phiếu từ đó. Để trống để đếm toàn bộ tin nhắn.
+            from_message: Chỉ định một ID tin nhắn để đếm vote từ đó. Để trống để đếm toàn bộ tin nhắn.
           translation:
-            missing_permission: "Bot thiếu quyền trong {} để đọc phiếu bầu: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
+            missing_permission: "Bot thiếu quyền trong {} để đọc lượt vote: **`Quản lý Tin nhắn`**, **`Đọc Lịch sử Tin nhắn`**, **`Đọc Tin nhắn`** & **`Thêm Biểu tượng Reaction`**"
             invalid_message: "ID Tin nhắn cung cấp cho {0} không hợp lệ. Đảm bảo rằng đó là một số nguyên hợp lệ và tồn tại trong {0}."
             already_running: "Server này đã có một phiên bầu chọn đang diễn ra trong <#{}>."
         end:
