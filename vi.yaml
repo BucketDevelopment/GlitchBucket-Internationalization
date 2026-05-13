@@ -120,7 +120,7 @@ common:
     expired: ":stopwatch: Cooldown của lệnh đã kết thúc. Bây giờ bạn đã có thể sử dụng lại lệnh."
   error:
     dns: "Bot không thể kết nối tới discord để phản hồi lại thực hiện hành động vừa rồi, vui lòng thử lại"
-    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy. Vui lòng tải lại Discord để cập nhật lệnh."
+    client_desync: "### :warning: Lệnh này đã lỗi thời so với máy. Vui lòng reload Discord để cập nhật lệnh."
     database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu, vui lòng thử lại sau..."
     missing_required_argument: |
       Bạn còn thiếu tham số bắt buộc **`{}`**: 
