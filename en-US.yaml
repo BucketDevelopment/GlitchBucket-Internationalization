@@ -3327,7 +3327,7 @@ bucketscript:
       show:
         description: Send an embed
         options:
-          edit_message: Specify Message URL (https://discord.com/channels/.../.../...) or Message ID to edit using the selected embed.
+          edit_message: Specify Message URL (https://discord.com/channels/.../.../...) or Message ID to edit message's embed
         translation:
           unknown_message: Provided ID/Message URL in {} does not valid in this server.
           successful: Embed has successfully sent to {}.
