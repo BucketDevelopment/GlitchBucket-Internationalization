@@ -173,9 +173,101 @@ logging:
         no_record: Không có kênh ghi nhật ký cho bot.
         successful: Đã vô hiệu hóa thành công ghi nhật ký của bot.
   action:
+    moderation:
+      timeout:
+        title: "⏱️ Timeout"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        duration: "Thời gian"
+        reason: "Lý do"
+      untimeout:
+        title: "⏰ Hủy Timeout"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      ban:
+        title: "🚫 Ban"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      softban:
+        title: "🔨 Softban"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      unban:
+        title: "✅ Gỡ Ban"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      warn:
+        title: "⚠️ Cảnh cáo (warn)"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      unwarn:
+        title: "✔️ Bỏ Warn"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+      kick:
+        title: "👢 Kick"
+        case: "Case"
+        moderator: "Mod"
+        user: "User"
+        reason: "Lý do"
+    autoresponder:
+      add:
+        title: "🤖 Thêm Autoresponder"
+        user: "Người Tạo"
+        id: "ID"
+      update:
+        title: "🤖 Cập nhật Autoresponder"
+        user: "Người Sửa"
+        id: "ID"
+      remove:
+        title: "🤖 Xóa Autoresponder"
+        user: "Người Xóa"
+        id: "ID"
+    customrole:
+      create:
+        title: "🎨 Tạo Custom Role"
+        user: "Người Tạo"
+        role: "Role"
+        author: "Tác giả"
+      edit:
+        title: "🎨 Sửa Custom Role"
+        user: "Người Sửa"
+        role: "Role"
+        changes: "Thay đổi"
+      remove:
+        title: "🎨 Xóa Custom Role"
+        user: "Người Xóa"
+        role: "Role"
+        deleted_role: "Bị Xóa?"
     donation:
+      received:
+        title: "💰 Nhận Donation"
+        donator: "Người Tặng"
+        receiver: "Người Nhận"
+        amount: "Số tiền"
+        reason: "Ghi chú"
       subtract:
         title:
+    setting:
+      language:
+        title: "🌐 Đổi Ngôn Ngữ"
+        user: "Người Thay Đổi"
+        old_locale: "Ngôn ngữ Cũ"
+        new_locale: "Ngôn ngữ Mới"
+        target: "Phạm vi"
 afk:
   description: Thiết lập cho bạn AFK
   options:

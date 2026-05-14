@@ -173,9 +173,101 @@ logging:
         no_record: There is no logging channel for the bot.
         successful: Successfully disabled bot logging.
   action:
+    moderation:
+      timeout:
+        title: "⏱️ Timeout"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        duration: "Duration"
+        reason: "Reason"
+      untimeout:
+        title: "⏰ Untimeout"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      ban:
+        title: "🚫 Ban"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      softban:
+        title: "🔨 Softban"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      unban:
+        title: "✅ Unban"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      warn:
+        title: "⚠️ Warn"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      unwarn:
+        title: "✔️ Unwarn"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+      kick:
+        title: "👢 Kick"
+        case: "Case"
+        moderator: "Moderator"
+        user: "User"
+        reason: "Reason"
+    autoresponder:
+      add:
+        title: "🤖 Autoresponder Added"
+        user: "User"
+        id: "ID"
+      update:
+        title: "🤖 Autoresponder Updated"
+        user: "User"
+        id: "ID"
+      remove:
+        title: "🤖 Autoresponder Removed"
+        user: "User"
+        id: "ID"
+    customrole:
+      create:
+        title: "🎨 Custom Role Created"
+        user: "User"
+        role: "Role"
+        author: "Author"
+      edit:
+        title: "🎨 Custom Role Edited"
+        user: "User"
+        role: "Role"
+        changes: "Changes"
+      remove:
+        title: "🎨 Custom Role Removed"
+        user: "User"
+        role: "Role"
+        deleted_role: "Role Deleted"
     donation:
+      received:
+        title: "💰 Donation Received"
+        donator: "Donator"
+        receiver: "Receiver"
+        amount: "Amount"
+        reason: "Reason"
       subtract:
         title:
+    setting:
+      language:
+        title: "🌐 Language Changed"
+        user: "User"
+        old_locale: "Old Language"
+        new_locale: "New Language"
+        target: "Target"
 afk:
   description: Set yourself AFK
   options:
