@@ -3078,7 +3078,7 @@ bucketscript:
           placeholder: Nhập giá trị Field
         inline:
           label: Inline
-          placeholder: Để trống để làm cho field không inline. Ghi bất kỳ ký tự nào để làm cho field này inline.
+          placeholder: Field này có cùng hàng với các field khác không?
     button:
       old:
         fields:
