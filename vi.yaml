@@ -2836,7 +2836,7 @@ bucketscript:
       description: |
         Embed **`{0}`** hiện đang trống. 
         - Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1428778747183501374> để làm biến mất embed mặc định này!
-        - Để kèm embed vào [autoresponder] hoặc bất kì thành phần tin nhắn nào khác, thêm **`{{embed:{0}}}`** vào phần phản hồi.
+        - Để kèm embed vào [autoresponder](https://bot.tudubucket.dev/docs/commands/group/autoresponder/), [tin nhắn welcome](https://bot.tudubucket.dev/docs/commands/group/greeting/), hoặc bất kì thành phần tin nhắn nào khác, thêm **`{{embed:{0}}}`** vào phần phản hồi.
         - Để gửi nhanh 1 embed, sử dụng </embed show:1428778747183501374>.
         -# Xem [Placeholder cho Embed](https://bot.tudubucket.dev/docs/bucketscript/functions/)
     forms:

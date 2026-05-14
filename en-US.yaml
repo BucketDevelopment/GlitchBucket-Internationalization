@@ -2837,7 +2837,7 @@ bucketscript:
       description: |
         Embed **`{0}`** is currently empty.  
         - Start editing by using </embed edit:1428778747183501374> to make this default embed disappear!
-        - To attach the embed to an [autoresponder] or any other message component, add **`{{embed:{0}}}`** to the response content.
+        - To attach the embed to an [autoresponder](https://bot.tudubucket.dev/docs/commands/group/autoresponder/), [welcome message](https://bot.tudubucket.dev/docs/commands/group/greeting/), or any other message component, add **`{{embed:{0}}}`** to the response content.
         - To quickly send an embed, use </embed show:1428778747183501374>.
         -# See [Embed Placeholders](https://bot.tudubucket.dev/docs/bucketscript/functions/)
     forms:
