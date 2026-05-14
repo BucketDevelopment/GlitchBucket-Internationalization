@@ -1403,8 +1403,8 @@ donation:
       translation:
         elevated_permissions: "{} không phải là một role không có quyền hạn (role hiện đang có một số quyền quản lí). Vì lí do bảo mật, bot sẽ không thêm role này thành phần thưởng."
         insufficient_hierachy: |
-          Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
-          Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một role có vị trí cao hơn.
+          Bạn chỉ được thêm các role có **vị trí thấp hơn role cao nhất của bot/của bạn** (vị trí role: {1}, vị trí của bot: {0}, vị trí của bạn: {2}).
+          Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) đưa role về vị trí thấp hơn.
         can_remove_only: "{} đã là role phần thưởng cho server này, bạn chỉ có thể xóa chúng."
         can_add_only: "{} không phải là role phần thưởng của server này, bạn chỉ có thể thêm chúng."
         maximum_reached: "Bạn không thể thêm nhiều hơn 10 role phần thưởng. Bạn nên xóa một role để thêm một role khác."
