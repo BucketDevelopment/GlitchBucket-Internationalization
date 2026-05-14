@@ -2834,7 +2834,12 @@ bucketscript:
     maximum_size_reached: "Embed `{}` for server `{}` exceeded Discord Embed size limit ({} >= 6000) after replacing placeholder.\nPlease keep the original embed size under 5000 to ensure this feature work properly."
     empty:
       title: Empty Embed
-      description: Embed **`{}`** is currently empty. Start editing by using </embed edit:1245661361673863238> to make this default embed disappear!
+      description: |
+        Embed **`{0}`** is currently empty.  
+        - Start editing by using </embed edit:1428778747183501374> to make this default embed disappear!
+        - To attach the embed to an [autoresponder] or any other message component, add **`{{embed:{0}}}`** to the response content.
+        - To quickly send an embed, use </embed show:1428778747183501374>.
+        -# See [Embed Placeholders](https://bot.tudubucket.dev/docs/bucketscript/functions/)
     forms:
       title: "Forms"
       description: "You're managing forms in your server. \n\nForms help members submit information to a channel, allowing you to collect data."

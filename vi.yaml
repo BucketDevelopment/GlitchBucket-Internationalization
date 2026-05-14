@@ -2761,7 +2761,7 @@ bucketscript:
       shared: "Bạn đã chia sẻ thành công một embed với ID **`{}`**. Để xem tất cả các shared embeds, sử dụng `/embed shared`."
     unknown_embed: |
       Embed không xác định mang tên `{}` tại server `{}`
-      Để tạo một embed, sử dụng lệnh </embed create:1245661361673863238>
+      Để tạo một embed, sử dụng lệnh </embed create:1428778747183501374>
     preparing: Đang chuẩn bị dữ liệu, hãy đợi chút...
     embed: Chỉ định tên Embed
     invalid:
@@ -2830,10 +2830,15 @@ bucketscript:
     delete: "Xóa"
     edit: "Sửa"
   embeds:
-    maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo tính năng này hoạt động đúng."
+    maximum_size_reached: "Embed `{}` cho server `{}` vượt quá giới hạn kích thước Embed của Discord ({} >= 6000) sau khi thay thế placeholder.\nVui lòng giữ kích thước embed gốc dưới 5000 để đảm bảo embed luôn hoạt động."
     empty:
       title: Embed Trống
-      description: Embed **`{}`** hiện đang trống. Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1245661361673863238> để làm biến mất embed mặc định này!
+      description: |
+        Embed **`{0}`** hiện đang trống. 
+        - Bắt đầu chỉnh sửa bằng cách sử dụng </embed edit:1428778747183501374> để làm biến mất embed mặc định này!
+        - Để kèm embed vào [autoresponder] hoặc bất kì thành phần tin nhắn nào khác, thêm **`{{embed:{0}}}`** vào phần phản hồi.
+        - Để gửi nhanh 1 embed, sử dụng </embed show:1428778747183501374>.
+        -# Xem [Placeholder cho Embed](https://bot.tudubucket.dev/docs/bucketscript/functions/)
     forms:
       title: "Form (Biểu mẫu)"
       description: "Bạn đang thực hiện quản lí các form (biểu mẫu) trong server của bạn. \n\nForm có chức năng giúp member gửi thông tin về 1 kênh, giúp bạn thu thập dữ liệu."
