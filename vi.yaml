@@ -2375,6 +2375,9 @@ giveaway:
     somehow_ended:
       title: Giveaway đã kết thúc trước đó!
       description: Bằng một cách nào đó, giveaway này đã kết thúc nhưng bạn vẫn có thể yêu cầu tham gia. Bạn sẽ không thể tham gia giveaway này, thay vào đó, hãy liên hệ với Quản trị viên để reroll giveaway.
+    unexpected_behaviour:
+      title: Đã có lỗi xảy ra
+      description: Đã xảy ra một lỗi bất thường khi xử lý giveaway này (không thể tìm thấy giveaway với ID **`{0}***). Vui lòng thử lại sau hoặc liên hệ developer.
     missing_permission:
       title: Thiếu quyền
       description: Chỉ có người tổ chức Giveaway mới có thể sử dụng nút này. Hoặc không, bạn thiếu quyền `Quản lý Tin nhắn` để thực hiện hành động này.

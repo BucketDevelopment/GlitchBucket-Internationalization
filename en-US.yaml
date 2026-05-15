@@ -2375,6 +2375,9 @@ giveaway:
     somehow_ended:
       title: Giveaway Already Ended!
       description: Somehow this giveaway has ended, and you cannot enter to a giveaway that has ended before. Please contact server administrator to reroll this giveaway instead.
+    unexpected_behaviour:
+      title: Error Occurred
+      description: Something unexpected happened while processing this giveaway (cannot find giveaway with ID **`{0}`**). Please try again later or contact developer.
     missing_permission:
       title: Missing Permissions
       description: Only Giveaway host can use this button. Otherwise, you are missing `Manage Messages` permission to perform this action.
