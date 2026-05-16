@@ -4795,8 +4795,8 @@ ticket:
       label: Support Role
       description: Specify roles that have support permissions in tickets
     button:
-      label: Open Ticket Button
-      description: Edit the appearance of the open ticket button
+      label: Ticket Panel Name (Open Ticket Button)
+      description: Edit the appearance of the open ticket button (also the ticket panel name)
     open_message:
       label: Open Message
       description: The message sent when a ticket is opened

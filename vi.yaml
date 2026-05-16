@@ -4795,8 +4795,8 @@ ticket:
       label: Role hỗ trợ
       description: Chỉ định role có quyền hỗ trợ trong ticket
     button:
-      label: Nút mở ticket
-      description: Chỉnh sửa giao diện nút bấm mở ticket
+      label: Tên danh mục (Nút mở ticket)
+      description: Sửa tên danh mục ticket, cũng là giao diện nút bấm mở ticket
     open_message:
       label: Tin nhắn mở
       description: Tin nhắn sẽ gửi khi mở ticket
