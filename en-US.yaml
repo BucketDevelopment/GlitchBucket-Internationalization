@@ -9,6 +9,9 @@ common:
   ping: " **|** `Shard {}` response within `{} ms / avg. {} ms`. \n        **|** Server prefix is {}. Use </help:1119604872497594495>, or access [Documentation](<https://bot.tudubucket.dev/getting-started/>) for available commands. For more information, type </information:1144680408429109308>"
   _true: "True"
   _false: "False"
+  _yes: "Yes"
+  _no: "No"
+  select_config: Select a configuration...
   support:
     discord: Discord Support
     status: Status Page
@@ -2340,6 +2343,9 @@ collections:
 giveaway:
   description: Create Advanced giveaway in your server
   translation:
+    unknown_content:
+      template: "No embed exists for this option within this template."
+      default: "No embed exists for this option."
     unknown_channel: Cannot get the channel assigned to the giveaway, please try again later...
     unknown_giveaway: Cannot get the giveaway assigned to the specified channel, please try again later...
     participants: Participants
@@ -2540,6 +2546,19 @@ giveaway:
     templates: Select a template to apply
     setup_action: Select an action to configure your giveaway
     customize: Select giveaway message type to edit
+    customize_settings:
+      message:
+        label: Edit Text Message
+        description: Customize the message content
+      embed:
+        label: Edit Embed
+        description: Customize the embed
+      reset_message:
+        label: Reset Message
+        description: Reset message content back to default
+      reset_embed:
+        label: Edit Embed
+        description: Reset embed back to default
     customize_options:
       button:
         label: Button

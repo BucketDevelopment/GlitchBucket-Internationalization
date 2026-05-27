@@ -9,6 +9,9 @@ common:
   ping: " **|** `Shard {}` phản hồi trong `{} ms / tr.b {} ms`. \n        **|** Prefix của server là {}. Để xem các lệnh có sẵn, sử dụng </help:1119604872497594495> hoặc truy cập [Trang tài liệu](<https://bot.tudubucket.dev/getting-started/>). Để xem các thông tin khác, sử dụng </information:1144680408429109308>"
   _true: "Có"
   _false: "Không"
+  _yes: "Có"
+  _no: "Không"
+  select_config: Chọn cài đặt cần chỉnh sửa...
   support:
     discord: Hỗ trợ Discord
     status: Trạng thái Bot
@@ -2340,6 +2343,9 @@ collections:
 giveaway:
   description: Tạo Giveaway nâng cao trong server
   translation:
+    unknown_content:
+      template: "Không có embed nào cho template cùng lựa chọn này."
+      default: "Không có embed nào cho lựa chọn này."
     unknown_channel: Không thể tìm thấy kênh tổ chức giveaway, vui lòng thử lại sau...
     unknown_giveaway: Không thể tìm thấy giveaway từ kênh đã chỉ định, vui lòng thử lại sau...
     participants: Người tham gia
@@ -2475,6 +2481,19 @@ giveaway:
     templates: Chọn một template để áp dụng
     setup_action: Chọn hành động để cấu hình giveaway
     customize: Chọn loại tin nhắn giveaway cần sửa
+    customize_settings:
+      message:
+        label: Chỉnh sửa Nội dung Message
+        description: Custom nội dung tin nhắn
+      embed:
+        label: Chỉnh sửa Embed
+        description: Custom nội dung embed
+      reset_message:
+        label: Đặt lại Message
+        description: Reset nội dung tin nhắn về mặc định
+      reset_embed:
+        label: Đặt lại Embed
+        description: Reset embed về mặc định
     customize_options:
       button:
         label: Nút
