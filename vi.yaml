@@ -2878,6 +2878,7 @@ bucketscript:
       Để tạo một embed, sử dụng lệnh </embed create:1428778747183501374>
     preparing: Đang chuẩn bị dữ liệu, hãy đợi chút...
     embed: Chỉ định tên Embed
+    invalid_message_id: "`{}` không phải là 1 ID/link tin nhắn hợp lệ để chỉnh sửa tin nhắn có sẵn đã được gửi trước đó."
     invalid:
       greeting: Server không có bất kỳ Tin nhắn Chào mừng nào. Hãy tạo một bằng cách sử dụng `/greeting message`
       farewell: Server không có bất kỳ Tin nhắn Tạm biệt nào. Hãy tạo một bằng cách sử dụng `/farewell message`
@@ -3426,6 +3427,17 @@ bucketscript:
           description: "Chỉnh sửa một giao diện (layout)"
           options:
             name: "Chỉ định tên layout"
+        send:
+          description: "Gửi một giao diện (layout)"
+          options:
+            name: "Chỉ định tên layout"
+            edit_message: Chỉ định 1 link (https://discord.com/channels/.../.../...) hoặc ID tin nhắn để chỉnh sửa layout đó.
+          translation:
+            unknown_message: ID/Link Tin nhắn được cung cấp trong kênh {} là không hợp lệ trong server này.
+            successful: Layout đã được gửi thành công tới {}.
+            missing_permission: |
+              Bot đang thiếu một trong các quyền cần thiết tại kênh {} để gửi layout:
+              - Xem kênh, Gửi tin nhắn
         delete:
           description: "Xóa một giao diện (layout)"
           options:

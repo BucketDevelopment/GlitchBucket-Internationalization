@@ -2786,6 +2786,7 @@ bucketscript:
       To create an embed, use </embed create:1245661361673863238>
     preparing: Preparing data, please wait...
     embed: Specify Embed name
+    invalid_message_id: "`{}` is not a valid message ID/link for editing a previously sent message."
     invalid:
       greeting: Your server doesn't have any Greeting Message. Consider create one by using `/greeting message`
       farewell: Your server doesn't have any Farewell Message. Consider create one by using `/farewell message`
@@ -3427,6 +3428,17 @@ bucketscript:
           description: "Edit a layout (interface)"
           options:
             name: "Specify layout name"
+        send:
+          description: "Send a layout (interface)"
+          options:
+            name: "Specify layout name"
+            edit_message: Specify Message URL (https://discord.com/channels/.../.../...) or Message ID to edit message's layout
+          translation:
+            unknown_message: Provided ID/Message URL in {} does not valid in this server.
+            successful: Layout has successfully sent to {}.
+            missing_permission: |
+              Bot is missing one of required permissions in {} to send layout:
+              - View Channel, Send Messages
         delete:
           description: "Delete a layout (interface)"
           options:
