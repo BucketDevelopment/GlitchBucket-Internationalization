@@ -5025,7 +5025,7 @@ ticket:
       title: Thứ tự ưu tiên ticket
       description: "Bạn đang thực hiện chỉnh sửa thứ tự ưu tiên của bảng {} **{}**.\n"
       current_roles: "Các role ưu tiên hiện có:"
-      empty: "Hiện chưa có các role ưu tiên cho bảng ticket này, bạn có thể thêm tối đa 2 role ưu tiên bằng cách chọn ở bên dưới"
+      empty: "Hiện chưa có các role ưu tiên cho bảng ticket này, bạn có thể thêm tối đa 5 role ưu tiên bằng cách chọn ở bên dưới"
       default_setting: "Cài đặt mặc định: {}"
     rating_sent:
       title: Đã gửi feedback
@@ -5292,7 +5292,7 @@ ticket:
     blacklisted: Bạn không thể tạo ticket vì bạn nằm trong danh sách bị cấm của server.
     concurrent_limit: "Bạn đã đạt giới hạn số lượng ticket đang mở cùng lúc ({}). Hãy yêu cầu Quản trị viên kiểm tra lại các ticket đang mở trước khi mở thêm ticket khác.\nCác ticket đang mở: {}"
     invalid_emoji: "Emoji không hợp lệ. Vui lòng nhập một emoji Unicode hoặc custom emoji."
-    max_priority_roles: "Bạn đã đạt giới hạn số lượng role ưu tiên (tối đa 2 role)."
+    max_priority_roles: "Bạn đã đạt giới hạn số lượng role ưu tiên (tối đa 5 role)."
     max_questions: "Bạn đã đạt giới hạn số lượng câu hỏi (tối đa 5 câu hỏi)."
     no_thread_channel: "Không tìm thấy channel thread để tạo ticket, vui lòng báo cáo tới admin của server để thực hiện setup lại."
     cooldown: "Bạn sẽ có thể xem transcript của một ticket khác {}"

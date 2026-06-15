@@ -5025,7 +5025,7 @@ ticket:
       title: Ticket Priority
       description: "You are editing the ticket priority for panel {} **{}**.\n"
       current_roles: "Current priority roles:"
-      empty: "There are currently no priority roles for this ticket panel. You can add up to 2 priority roles below."
+      empty: "There are currently no priority roles for this ticket panel. You can add up to 5 priority roles below."
       default_setting: "Default Settings: {}"
     rating_sent:
       title: Feedback Sent
@@ -5292,7 +5292,7 @@ ticket:
     blacklisted: You cannot create a ticket because you are on the server's blacklist.
     concurrent_limit: "You have reached the limit of concurrent open tickets ({}). Please ask an Administrator to review your open tickets before opening new ones.\nCurrent open tickets: {}"
     invalid_emoji: "Invalid emoji. Please enter a Unicode or custom emoji."
-    max_priority_roles: "You have reached the limit of priority roles (maximum 2 roles)."
+    max_priority_roles: "You have reached the limit of priority roles (maximum 5 roles)."
     max_questions: "You have reached the limit of questions (maximum 5 questions)."
     no_thread_channel: "Could not find a channel to create ticket threads in. Please report this to a server admin to re-run setup."
     cooldown: "You can view another ticket's transcript <t:{}:R>"
