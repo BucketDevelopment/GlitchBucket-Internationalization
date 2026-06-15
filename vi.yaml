@@ -5026,7 +5026,7 @@ ticket:
       description: "Bạn đang thực hiện chỉnh sửa thứ tự ưu tiên của bảng {} **{}**.\n"
       current_roles: "Các role ưu tiên hiện có:"
       empty: "Hiện chưa có các role ưu tiên cho bảng ticket này, bạn có thể thêm tối đa 2 role ưu tiên bằng cách chọn ở bên dưới"
-      default_setting: "Cài đặt mặc định:"
+      default_setting: "Cài đặt mặc định: {}"
     rating_sent:
       title: Đã gửi feedback
       description: "Đánh giá của bạn đã được ghi lại. Cảm ơn bạn đã phản hồi về chất lượng ticket!"
@@ -5248,7 +5248,7 @@ ticket:
   priority:
     panel_default: "Cài đặt của bảng ticket"
     position: "Vị trí: #{}"
-    for_panel: "Dành cho bảng ticket này"
+    for_panel: "Mặc định cho các ticket trong danh mục"
     default_name: "tên ticket là mặc định"
     custom_name: "tên ticket là `#{}`"
   type:
