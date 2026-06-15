@@ -5026,7 +5026,7 @@ ticket:
       description: "You are editing the ticket priority for panel {} **{}**.\n"
       current_roles: "Current priority roles:"
       empty: "There are currently no priority roles for this ticket panel. You can add up to 5 priority roles below."
-      default_setting: "Default Settings: {}"
+      default_setting: "Default Settings: `#{}`"
     rating_sent:
       title: Feedback Sent
       description: "Your rating has been recorded. Thank you for your feedback on the ticket quality!"
