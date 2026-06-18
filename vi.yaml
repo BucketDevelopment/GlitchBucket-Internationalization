@@ -2070,7 +2070,11 @@ customrole:
         embed:
           input: 
             title: Đang chờ input
-            description: "Hãy gửi icon mới vào chat (emoji, link ảnh, hoặc file). Bot sẽ tự động kiểm tra và cập nhật icon mới cho {}.\nThời gian chờ còn lại: {}"
+            description: | 
+              Hãy gửi icon mới vào chat (emoji, link ảnh, hoặc file). Bot sẽ tự động kiểm tra và cập nhật icon mới cho {}.
+              Thời gian chờ còn lại: {}
+
+              **Lưu ý:** Bạn không được sử dụng emoji từ server khác.
         modals:
           icon:
             link:
