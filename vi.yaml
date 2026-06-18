@@ -1850,7 +1850,7 @@ customrole:
   current_setting:
     title: "Thông tin Custom Role cho @{}"
     permissions:
-      icon: "Chỉnh sửa biểu tượng role"
+      icon: "Chỉnh sửa icon của role"
       name: "Chỉnh sửa tên role"
       mentionable: "Cho phép nhắc đến role"
       members: "Quản lý thành viên của role"
@@ -1922,6 +1922,7 @@ customrole:
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     member_not_in_guild: "Không thể tìm thấy member này trong server."
+    no_feature: Server này không có access tính năng chỉnh sửa icon role (thiếu boost).
   ui:
     manage:
       modals:
@@ -2066,16 +2067,26 @@ customrole:
               description: Xóa một thành viên khỏi role này
     user:
       manage:
+        embed:
+          input: 
+            title: Đang chờ input
+            description: "Hãy gửi icon mới vào chat (emoji, link ảnh, hoặc file). Bot sẽ tự động kiểm tra và cập nhật icon mới cho {}.\nThời gian chờ còn lại: {}"
         modals:
           icon:
             link:
               placeholder: Dán URL hình ảnh cho icon của role
-        views:
-          icon:
-            description: Chọn cách bạn muốn cập nhật icon của role này.
-            link: Dùng URL Hình Ảnh
-            file: Tải Lên Tệp
-            remove: Xóa Icon
+        icon:
+          description: |
+            Bạn đang thực hiện chỉnh sửa icon của role. 
+            Có 3 cách cho bạn để update icon của role:
+            - <a:gura_bounce:1311328344008032388> Sử dụng emoji custom
+            - 🔗 Sử dụng link ảnh
+            - 🖼️ Gửi file ảnh
+          link: Dùng URL Hình Ảnh
+          file: Tải Lên Tệp
+          remove: Xóa Icon
+          input: Sửa Icon
+
     configuration:
       modals:
         default_perm:
@@ -2176,7 +2187,7 @@ customrole:
         expire_after: "Hỗ trợ ngày ngắn (vd: 2mon1d2h), nhập '0' để là vĩnh viễn, '1' để cho đến khi xóa boost"
         color: "Chỉ định màu role"
         edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi icon của role của họ"
         edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
         manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
         make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
@@ -2228,7 +2239,7 @@ customrole:
       description: "Đặt quyền cho một Custom Role"
       options:
         edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi icon của role của họ"
         edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
         manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
         make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
@@ -2236,7 +2247,7 @@ customrole:
       description: "Chỉnh sửa quyền mặc định cho người sở hữu của role"
       options:
         edit_name_permission: "Cho phép người sở hữu có thể thay đổi tên role của họ"
-        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi biểu tượng của role của họ"
+        edit_icon_permission: "Cho phép người sở hữu có thể thay đổi icon của role của họ"
         edit_color_permission: "Cho phép người sở hữu có thể thay đổi màu của role của họ"
         manage_role_members_permission: "Cho phép người sở hữu có thể thêm/xóa thành viên role"
         make_role_mentionable_permission: "Cho phép người sở hữu có thể làm cho role của họ có thể nhắc đến bởi các thành viên khác"
@@ -2301,19 +2312,19 @@ customrole:
           translation:
             palette_forbidden: Server này đã giới hạn bạn chỉ được sử dụng một số màu nhất định. Vui lòng chọn từ autocomplete thay vì nhập một màu.
         icon:
-          description: "Chỉnh sửa biểu tượng của Custom Role"
+          description: "Chỉnh sửa icon của Custom Role"
           options:
             icon: Tải icon tại đây
             emoji: Sử dụng Emoji ID, Custom Emoji của server, hoặc một Unicode Emoji cho icon
           translation:
             require_7_boosts: "Tính năng này yêu cầu server phải có **Cấp độ 2**, hoặc 7 boost server."
-            invalid_image_format: "Biểu tượng phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
-            invalid_image_scale: "Biểu tượng phải là một hình ảnh vuông."
+            invalid_image_format: "Icon phải ở định dạng `.png` hoặc `.jpg` và nhỏ hơn 256kb."
+            invalid_image_scale: "Icon phải là một hình ảnh vuông."
             invalid_arguments: "Bạn cần chỉ định `icon` hoặc `emoji`, bạn không được chỉ định cả 2 phần, hoặc bỏ qua cả 2 phần này"
             invalid_emoji: "{} Không phải là một emoji/custom emoji hợp lệ trong server này."
             invalid_emoji_id: "`{}` Không phải là một Emoji ID hợp lệ."
         removeicon:
-          description: "Xóa biểu tượng khỏi Custom Role"
+          description: "Xóa icon khỏi Custom Role"
         mentionable:
           description: "Cho phép Custom Role có thể nhắc đến"
         manage:
@@ -2456,7 +2467,7 @@ giveaway:
         bonus_entrants: "Lượt tham gia bonus:"
     edit_button:
       title: Nút Giveaway
-      description: Chỉnh sửa màu & biểu tượng cho nút giveaway. Do giới hạn, bạn chỉ có thể chọn màu nút ở dưới đây.
+      description: Chỉnh sửa màu & icon cho nút giveaway. Do giới hạn, bạn chỉ có thể chọn màu nút ở dưới đây.
     leave:
       success:
         title: Rời thành công!
@@ -2538,7 +2549,7 @@ giveaway:
       blurple: Xanh đậm
       green: Xanh lá
       red: Đỏ
-      custom: Đặt Unicode/Biểu tượng tùy chỉnh
+      custom: Đặt Icon tùy chỉnh
     confirm_start: "Xác nhận & Bắt đầu"
     back: Quay lại chỉnh sửa
     core: Cốt lõi
@@ -2599,11 +2610,11 @@ giveaway:
           label: Mô tả
           placeholder: "[Tùy chọn] Chỉ định mô tả cho template"
     button_emoji:
-      title: Biểu tượng Nút
+      title: Icon Nút
       fields:
         emoji:
-          label: Biểu tượng cảm xúc
-          placeholder: Dán mã Unicode biểu tượng cảm xúc hoặc Biểu tượng cảm xúc tùy chỉnh của server tại đây
+          label: Emoji
+          placeholder: Dán mã Unicode icon cảm xúc hoặc Custom Emoji của server tại đây
     customize:
       title: Nội dung
     color:
@@ -2710,7 +2721,7 @@ giveaway:
         multipliers: 'Chỉ định số lượt tham gia bonus theo định dạng: role1:bonus1|role2:bonus2|... Tối đa 10 phần thưởng'
         color: 'Chỉ định màu theo định dạng: #hex, hoặc rgb(số, số, số)'
         button_color: "Chọn màu nút"
-        button_emoji: "Chỉ định biểu tượng cảm xúc tùy chỉnh của server hoặc mã Unicode biểu tượng cảm xúc"
+        button_emoji: "Chỉ định Custom Emoji của server hoặc mã Unicode icon cảm xúc"
         requires_join_before: 'Chỉ định thời lượng theo định dạng ngày ngắn (ví dụ: 10m25s), hoặc số giây (ví dụ: 86400)'
         image: "Chỉ định URL hình ảnh"
         count: "Tạo ra nhiều giveaway với setting như trên. Mặc định: 1"
@@ -3140,8 +3151,8 @@ bucketscript:
           label: "Nhãn"
           placeholder: "Văn bản hiển thị trên nút"
         emoji:
-          label: "Biểu tượng"
-          placeholder: "Dán mã Unicode hoặc chọn Emoji tùy chỉnh của server"
+          label: "Emoji"
+          placeholder: "Dán mã Unicode hoặc chọn Custom Emoji của server"
         color:
           label: "Màu nút"
           placeholder: "Chọn màu nút (ví dụ: blurple, gray, green, red, custom)"
@@ -3533,9 +3544,9 @@ voting:
   description: Dễ dàng theo dõi & kiểm tra các vote trong cuộc thi vote!
   modals:
     emoji:
-      title: Biểu tượng cảm xúc
-      label: Biểu tượng
-      placeholder: Dán Biểu tượng Unicode hoặc Biểu tượng Tùy chỉnh từ server ở đây
+      title: Emoji
+      label: Emoji
+      placeholder: Dán Unicode icon hoặc Custom Emoji ở đây
     messages:
       title: Tin nhắn
       label: Số lượng
@@ -3591,7 +3602,7 @@ voting:
         first: "> Đếm __tổng số lượt reaction__ của react đầu tiên"
         reaction: "> Đếm __tổng số lượt reaction__ của tin nhắn"
         member: "> Đếm __tổng số thành viên đã react__ vào tin nhắn"
-        strict: "> Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})"
+        strict: "> Chỉ đếm số lượt reaction với một emoji duy nhất ({})"
     start:
       name: Bắt đầu Phiên Bầu chọn
       buttons:
@@ -3605,8 +3616,8 @@ voting:
           title: Phiên Bầu chọn Đã bắt đầu
           description: 'Phiên vote đã bắt đầu thành công trong <#{}>!'
     no_emoji:
-      short: Không có biểu tượng cảm xúc trong cấu hình
-      full: Không có biểu tượng cảm xúc trong cấu hình. Nhấn 'Thiết lập Biểu tượng' dưới đây để thiết lập emoji cho phiếu vote. 
+      short: Không có emoji trong config
+      full: Không có emoji trong cấu hình. Nhấn 'Thiết lập Emoji' dưới đây để thiết lập emoji cho phiếu vote. 
     back: Trở lại
     voter_requirement:
       join: Đặt Thời gian Tham gia
@@ -3622,8 +3633,8 @@ voting:
         leave_invalid: "- Tất cả các vote __vẫn hợp lệ__ nếu người vote rời khỏi server"
         leave_valid: "- Tất cả các vote __sẽ không hợp lệ__ nếu người vote rời khỏi server"
     method:
-      invalid_emoji: Server không có biểu tượng cảm xúc `{}`, hoặc biểu tượng Unicode này không hợp lệ.
-      set_emoji: Thiết lập biểu tượng (Yêu cầu Chế độ Strict)
+      invalid_emoji: Server không có emoji `{}`, hoặc Unicode icon này không hợp lệ.
+      set_emoji: Thiết lập Emoji (Yêu cầu Chế độ Strict)
       embed:
         title: Phương thức Đếm vote
         description: |
@@ -3632,7 +3643,7 @@ voting:
           **First Reaction**: Đếm __tổng số lượt reaction__ của react đầu tiên,
           **Reaction**: Đếm __tổng số lượt reaction__ của tin nhắn,
           **Member**: Đếm __tổng số member đã react__ vào tin nhắn,
-          **Strict**: Chỉ đếm số lượt reaction với một biểu tượng duy nhất ({})
+          **Strict**: Chỉ đếm số lượt reaction với một emoji duy nhất ({})
 
           Chọn phương pháp dưới đây. Lựa chọn hiện tại: **{}**
     participate_method:

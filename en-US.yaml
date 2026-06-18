@@ -1922,6 +1922,7 @@ customrole:
     invalid_time_format: "`{}` is not a valid short time format."
     invalid_color_format: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
     member_not_in_guild: "That member could not be found in this server."
+    no_feature: This server does not have access in editing role icons (insufficient boosts).
   ui:
     manage:
       modals:
@@ -2066,16 +2067,25 @@ customrole:
               description: Remove a member from this role
     user:
       manage:
+        embed:
+          input: 
+            title: Waiting for input
+            description: "Send the icon (custom emoji, icon url, or attachment). Bot will automatically check and update icon for {}.\nRemaining time: {}"
         modals:
           icon:
             link:
               placeholder: Paste an image URL for the role icon
-        views:
-          icon:
-            description: Choose how you want to update this role's icon.
-            link: Use Image URL
-            file: Upload File
-            remove: Remove Icon
+        icon:
+          description: | 
+            You're editing Custom Role's icon. 
+            You can choose how you want to update this role's icon:
+            - <a:gura_bounce:1311328344008032388> Using custom emojis
+            - 🔗 Image link
+            - 🖼️ Attachment
+          link: Use Image URL
+          file: Upload File
+          remove: Remove Icon
+          input: Edit Icon
     configuration:
       modals:
         default_perm:
@@ -2301,7 +2311,7 @@ customrole:
           translation:
             palette_forbidden: This server has restricted role color to a set of color. Please select a color from command autocomplete instead of specifying one.
         icon:
-          description: "Edit icon of your custom role"
+          description: "Edit Icon"
           options:
             icon: Upload your icon here
             emoji: An Emoji ID, Custom Server Emoji, or a Unicode Emoji for the icon
