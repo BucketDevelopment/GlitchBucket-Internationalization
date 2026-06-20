@@ -5218,8 +5218,19 @@ ticket:
         description: Send multi-panel
   translations:
     notice:
-      panel_message: "Bot only saves the embed, and does not resend the panel message automatically. To reload the panel message, use `/ticket panel send`."
-      multipanel_message: "Bot only saves the embed, and does not resend the multi-panel message automatically. To reload the multi-panel message, use `/ticket multi-panel send`."
+    panel_message: |
+      Note:
+      - Bot only saves the embed and does not automatically resend the panel message. To reload the panel message, use **`/ticket panel send`** after finishing your edits.
+      - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
+        - **`/ticket panel send`** sends a specific panel;
+        - **`/ticket multi-panel send`** sends multiple panels together, so it uses a separate embed. To edit the multi-panel embed, use **`/ticket multi-panel manage`**.
+
+    multipanel_message: |
+      Note:
+      - Bot only saves the embed and does not automatically resend the multi-panel message. To reload the multi-panel message, use **`/ticket multi-panel send`** after finishing your edits.
+      - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
+        - **`/ticket multi-panel send`** sends multiple panels together;
+        - **`/ticket panel send`** sends a specific panel, so it uses a separate embed.
     rename_too_long: "Ticket name too long."
     renamed: "Ticket renamed: {}"
     rename_failed: "Cannot rename ticket: {}"

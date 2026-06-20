@@ -5219,8 +5219,18 @@ ticket:
         description: Gửi multi-panel
   translations:
     notice:
-      panel_message: "Bot chỉ lưu embed và không tự gửi lại tin nhắn panel. Để reload lại tin nhắn panel, dùng lệnh **`/ticket panel send`** sau khi hoàn tất chỉnh sửa."
-      multipanel_message: "Bot chỉ lưu embed và không tự gửi lại tin nhắn multi-panel. Để reload lại tin nhắn multi-panel, dùng lệnh **`/ticket multi-panel send`** sau khi hoàn tất chỉnh sửa."
+      panel_message: | 
+        Lưu ý:
+        - Bot chỉ lưu embed và không tự gửi lại tin nhắn panel. Để reload lại tin nhắn panel, dùng lệnh **`/ticket panel send`** sau khi hoàn tất chỉnh sửa.
+        - **`/ticket panel send`** và **`/ticket multi-panel send`** là 2 lệnh hoàn toàn khác nhau, với 2 embed khác nhau:
+          - **`/ticket panel send`** để gửi 1 panel nhất định;
+          - **`/ticket multi-panel send`** để gửi nhiều panel với nhau, nên sẽ cần 1 embed khác. Đối với embed multi-panel, sử dụng **`/ticket multi-panel manage`** để sửa embed.
+      multipanel_message: | 
+        Lưu ý:
+        - Bot chỉ lưu embed và không tự gửi lại tin nhắn multi-panel. Để reload lại tin nhắn multi-panel, dùng lệnh **`/ticket multi-panel send`** sau khi hoàn tất chỉnh sửa.
+        - **`/ticket panel send`** và **`/ticket multi-panel send`** là 2 lệnh hoàn toàn khác nhau, với 2 embed khác nhau:
+          - **`/ticket multi-panel send`** để gửi nhiều panel với nhau;
+          - **`/ticket panel send`** để gửi 1 panel nhất định, nên hiện đang ở 1 embed khác.
     not_a_ticket: Đây không phải là một ticket trong hệ thống bot.
     no_permission: Bạn không có đủ quyền để thực hiện hành động này.
     added: "Đã thêm {} vào ticket."
