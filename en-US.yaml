@@ -3490,6 +3490,7 @@ bucketscript:
         description: Create an Embed for BucketScript
         translation:
           forbidden: "You cannot name an embed with a name that startswith `__` - this is for our system embed identification."
+          invalid_name: "Embed name can only contain letters, numbers, spaces, underscores (`_`) and hyphens (`-`)."
           already_exists: An embed with that name already exists. Please choose another name, or use `/embed edit` to edit an existing embed.
           maximum_reached: You cannot create more than 15 embeds in this server.
       edit:

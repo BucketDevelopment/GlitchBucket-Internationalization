@@ -3490,6 +3490,7 @@ bucketscript:
         description: Tạo một Embed cho BucketScript
         translation:
           forbidden: "Bạn không thể đặt tên embed bắt đầu bằng `__` - đây là đặc điểm nhận dạng cho các embed của hệ thống bot."
+          invalid_name: "Tên embed chỉ có thể chứa chữ cái, số, khoảng trắng, dấu gạch dưới (`_`) và dấu gạch ngang (`-`)."
           already_exists: Đã tồn tại một embed với tên đó. Vui lòng chọn tên khác, hoặc sử dụng `/embed edit` để chỉnh sửa một embed hiện có.
           maximum_reached: Bạn không thể tạo hơn 15 embed trong server này.
       edit:
