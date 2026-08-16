@@ -4712,11 +4712,20 @@ emoji:
       describe:
         emoji_input: Specify a custom emoji, or an Image URL
         name: Specify emoji name
+      batch:
+        prompt: Do you want to automatically steal all emojis?
+        button:
+          auto: Yes, steal them all
+          manual: Let me choose each emoji
+        selected:
+          auto: Automatically stealing all emojis...
+          manual: Opening the emoji picker...
       translation:
         limit_reached: This server has reached its maximum emoji slot. Please delete another emoji in order to add a new one.
         rate_limited: This server is currently limited to uploading more emojis. We will notify back when the server is no longer rate-limited and the upload is complete.
         name_required: "Emoji name is required for emoji URL stealing."
         invalid: "Invalid emoji or URL provided."
+        invalid_name: "Emoji name is invalid. Use 2-32 letters, numbers, or underscores."
         failed:
           download: "Failed to download the emoji."
           upload: "Failed to upload emoji: {}"

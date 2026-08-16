@@ -4713,11 +4713,20 @@ emoji:
       describe:
         emoji_input: Một custom emoji, hoặc đường dẫn (link) tới ảnh
         name: Chỉ định tên emoji
+      batch:
+        prompt: Bạn có muốn tự động steal tất cả emoji về không?
+        button:
+          auto: Có, steal hết
+          manual: Cho tôi lựa từng emoji
+        selected:
+          auto: Đang tự động steal tất cả emoji...
+          manual: Đang mở danh sách để bạn chọn từng emoji...
       translation:
         limit_reached: Server này đã đạt đến số lượng emoji tối đa. Vui lòng xóa emoji khác để thêm emoji mới.
         rate_limited: Server này đã bị giới hạn upload thêm emoji vào thời điểm hiện tại. Bot sẽ thông báo lại cho bạn khi server kết thúc giới hạn và việc upload hoàn tất.
         name_required: "Tên emoji là một trường bắt buộc nếu bạn lấy emoji từ một URL."
         invalid: "Emoji hoặc URL không hợp lệ."
+        invalid_name: "Tên emoji không hợp lệ. Hãy dùng 2-32 chữ cái, số hoặc dấu gạch dưới."
         failed:
           download: "Không thể tải xuống emoji."
           upload: "Không thể tải lên emoji: {}"
