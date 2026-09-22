@@ -126,10 +126,15 @@ common:
     client_desync: "### :warning: Lệnh này đã lỗi thời so với máy. Vui lòng reload Discord để cập nhật lệnh."
     database: "Đã xảy ra lỗi cơ sở dữ liệu trong khi lưu dữ liệu, vui lòng thử lại sau..."
     missing_required_argument: |
-      Bạn còn thiếu tham số bắt buộc **`{}`**: 
+      Bạn còn **thiếu** tham số bắt buộc **`{}`**: 
       ```ansi
       {}```
       Hãy bổ sung đầy đủ phần tử và thử lại. Lệnh chỉ được xử lý khi tất cả các tham số bắt buộc được cung cấp.
+    invalid_argument: |
+      Tham số đã nhập **chưa chính xác** **`{}`**: 
+      ```ansi
+      {}```
+      Hãy sửa lại tham số và thử lại. Lệnh chỉ được xử lý khi tất cả các tham số được nhập chính xác.
     unknown:
       reply: |
         Đã có lỗi xảy ra trong khi thực hiện thao tác:

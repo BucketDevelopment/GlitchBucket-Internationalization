@@ -139,6 +139,11 @@ common:
       ```ansi
       {}```
       Please provide all required elements and try again. The command will only be processed when all required parameters are provided.
+    invalid_argument: |
+      Invalid argument **`{}`**: 
+      ```ansi
+      {}```
+      Please check your syntax and try again. The command will only be processed when all required parameters are provided correctly.
     unknown:
       reply: |
         An error occurred while executing the command:
