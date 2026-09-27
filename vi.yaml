@@ -1927,7 +1927,9 @@ customrole:
     invalid_time_format: "`{}` không phải là một định dạng thời gian ngắn hợp lệ."
     invalid_color_format: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
     member_not_in_guild: "Không thể tìm thấy member này trong server."
-    no_feature: Server này không có access tính năng chỉnh sửa icon role (thiếu boost).
+    no_feature:
+      icon: Server này không có access tính năng chỉnh sửa icon role (thiếu boost).
+      secondary_color: Server này chưa có access tính năng màu thứ 2 cho role.
   ui:
     manage:
       modals:

@@ -1927,7 +1927,10 @@ customrole:
     invalid_time_format: "`{}` is not a valid short time format."
     invalid_color_format: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
     member_not_in_guild: "That member could not be found in this server."
-    no_feature: This server does not have access in editing role icons (insufficient boosts).
+    no_feature: 
+      icon: This server does not have access in editing role icons (insufficient boosts).
+      secondary_color: This server does not have access for secondary role color.
+    
   ui:
     manage:
       modals:
