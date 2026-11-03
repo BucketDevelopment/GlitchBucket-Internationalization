@@ -5362,7 +5362,7 @@ tempvoice:
     bitrate:
       description: "Đổi bitrate cho temp voice của bạn"
   interface:
-    content: "## Tempvoice\nQuản lý temp voice của bạn bằng các nút bên dưới, hoặc dùng lệnh **`/voice`** với các tùy chọn tương tự."
+    content: "## Kênh voice tạm thời\nQuản lý temp voice của bạn bằng các nút bên dưới, hoặc dùng lệnh **`/voice`** với các tùy chọn tương tự."
     tutorial: "{} đây là voice của bạn, hãy quản lý bằng các nút bên dưới.\n-# Để gửi tin nhắn TTS, hãy ping bot kèm nội dung hoặc dùng lệnh **`/autotts enable`**."
   modals:
     info: "Thông tin"

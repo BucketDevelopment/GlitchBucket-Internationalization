@@ -5362,7 +5362,7 @@ tempvoice:
     bitrate:
       description: "Change your temporary voice channel's bitrate"
   interface:
-    content: "## Tempvoice\nManage your temporary voice channel with the buttons below, or use **`/voice`** commands for the same options."
+    content: "## Temporary Voice\nManage your temporary voice channel with the buttons below, or use **`/voice`** commands for the same options."
     tutorial: "{} this is your voice channel, manage it with the buttons below.\n-# To send a TTS message, ping the bot followed by your text or use **`/autotts enable`**."
   modals:
     info: "Information"
