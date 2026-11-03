@@ -5573,9 +5573,9 @@ voice:
       all: "Voice notifier is now enabled for all voice channels."
     defaults:
       join:
-        - "{user} joined the voice channel."
+        - "<:_:1567239155912671292> {user} joined the voice channel."
       leave:
-        - "{user_nick} left the voice channel."
+        - "<:_:1567239158110490815> {user_nick} left the voice channel."
   selects:
     type: "Choose message type"
     message: "Choose a message to edit"
