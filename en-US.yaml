@@ -5498,6 +5498,7 @@ tempvoice:
     find_voice: "{} is in {}."
     preference_saved: "Saved! These settings will be applied to your next voice channels."
     preference_reset: "Your saved voice settings have been reset. Your next voice channels will use the default settings."
+    create_cooldown: "You can only create {} voice channels per minute. Please wait **{}** and then join {} again."
   preference:
     prompt: "{} you have updated your voice channel. Do you want to save these settings for next time?\n**Changes made:**\n{}"
     fields:

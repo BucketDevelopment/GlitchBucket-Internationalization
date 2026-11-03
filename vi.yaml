@@ -5498,6 +5498,7 @@ tempvoice:
     find_voice: "{} đang ở {}."
     preference_saved: "Đã lưu! Các setting này sẽ được áp dụng cho các voice sau của bạn."
     preference_reset: "Đã reset setting voice đã lưu. Các voice sau của bạn sẽ dùng setting mặc định."
+    create_cooldown: "Bạn chỉ được tạo tối đa {} voice trong 1 phút. Hãy chờ **{}** rồi join lại {} nhé."
   preference:
     prompt: "{} bạn đã cập nhật voice. Bạn có muốn lưu các setting này cho lần sau không?\n**Các thay đổi đã thực hiện:**\n{}"
     fields:
