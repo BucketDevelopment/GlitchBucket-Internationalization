@@ -5343,3 +5343,265 @@ ticket:
     invalid_priority: "Priority must be a positive number between 1 and 99. Please re-enter."
     priority_exists: "The role <@&{}> already has priority `{}`, please enter a different priority."
     missing_permissions: "I am missing the following permissions to create tickets: `{}`"
+
+tempvoice:
+  commands:
+    group_description: "Temporary voice channels"
+    setup:
+      description: "Set up temporary voice channels for this server"
+      describe:
+        force: "Recreate the setup even if one already exists"
+      default_values:
+        category_name: "Temp Voice"
+        hub_name: "➕ Create voice"
+        interface_name: "interface"
+    find:
+      description: "Find which voice channel a member is in"
+      describe:
+        member: "The member to find"
+    bitrate:
+      description: "Change your temporary voice channel's bitrate"
+  interface:
+    content: "## TempVoice Interface\nThis **interface** can be used to manage temporary voice channels.\nMore options are available with **`/voice`** commands.\n-# Press the buttons below to use the interface"
+    tutorial: "{} this is your voice channel, manage it with the buttons below.\n-# To send a TTS message, ping the bot followed by your text or use **`/autotts enable`**."
+  modals:
+    info: "Information"
+    name:
+      title: "Rename"
+      heading: "Rename voice channel"
+      description: "{}"
+      full: "You have **{}** renames left, renames are restored every **{}**."
+      partial: "You have **{}** rename left, it will be restored in **{}**."
+      label: "Channel name"
+      placeholder: "Enter a new name for your voice channel"
+    limit:
+      title: "User limit"
+      heading: "Change user limit"
+      description: "Set the maximum number of members that can join your voice channel (1 - 99)."
+      label: "User limit"
+      placeholder: "1 - 99"
+    privacy:
+      title: "Privacy"
+      heading: "Change privacy"
+      description: "Choose who can join, see and chat in your voice channel. Trusted members can always join."
+      lock:
+        label: "Connection"
+        lock: "Locked"
+        unlock: "Unlocked"
+      visibility:
+        label: "Visibility"
+        visible: "Visible"
+        invisible: "Invisible"
+      chat:
+        label: "Chat"
+        enable: "Chat enabled"
+        disable: "Chat disabled"
+    bitrate:
+      title: "Bitrate"
+      heading: "Change bitrate"
+      description: "Set the audio bitrate in kbps. This server allows up to **{} kbps**, boost the server to unlock higher bitrate."
+      label: "Bitrate (kbps)"
+      placeholder: "8 - 384"
+    tts:
+      title: "Auto TTS"
+      heading: "Auto text-to-speech"
+      description: "Your messages in the voice chat will be read aloud. Temporary mode turns off when you leave the voice channel."
+      mode:
+        label: "Mode"
+        disable: "Disabled"
+        temporary: "Temporary (until you leave voice)"
+        persistent: "Persistent (until disabled)"
+    user:
+      label: "Members"
+      placeholder: "Select members"
+    select:
+      label: "Selection"
+      placeholder: "Select an option"
+    trust:
+      title: "Trust"
+      heading: "Trust members"
+      description: "Trusted members can always see and join your voice channels, even when hidden or locked. This applies to all of your future voice channels."
+    untrust:
+      title: "Untrust"
+      heading: "Untrust members"
+      description: "Remove members from your trusted list."
+    block:
+      title: "Block"
+      heading: "Block members"
+      description: "Blocked members cannot see or join your voice channels and will be kicked if they are inside. This applies to all of your future voice channels."
+    unblock:
+      title: "Unblock"
+      heading: "Unblock members"
+      description: "Remove members from your blocked list."
+    invite:
+      title: "Invite"
+      heading: "Invite members"
+      description: "Invited members can join this voice channel even when it is hidden or locked. This only applies to the current voice channel."
+    kick:
+      title: "Kick"
+      heading: "Kick members"
+      description: "Disconnect members from your voice channel."
+    transfer:
+      title: "Transfer"
+      heading: "Transfer ownership"
+      description: "Choose a member in your voice channel to become the new owner."
+    region:
+      title: "Region"
+      heading: "Change region"
+      description: "Choose the voice server region. Automatic lets Discord pick the best region."
+    delete:
+      title: "Delete"
+      heading: "Delete voice channel"
+      description: "This voice channel will be deleted immediately and everyone inside will be disconnected."
+      label: "Confirmation"
+      confirm: "Delete this voice channel"
+  errors:
+    not_in_tempvoice: "You need to be in a temporary voice channel to use this."
+    not_owner: "Only the owner of this voice channel can do this."
+    rename_limit: "You have run out of renames, try again in **{}**."
+    invalid_limit: "User limit must be a number between 1 and 99."
+    invalid_bitrate: "Bitrate must be a number between 8 and {} kbps."
+    no_valid_user: "No valid members were selected."
+    no_trusted: "You have not trusted anyone."
+    no_blocked: "You have not blocked anyone."
+    no_members: "There is no one else in your voice channel."
+    already_owner: "You already own this voice channel."
+    owner_present: "The owner is still in this voice channel."
+    member_left: "That member is no longer in your voice channel."
+    preference_expired: "This prompt has expired."
+    no_preference: "You do not have any saved voice settings."
+  translations:
+    default_name: "{}'s channel"
+    empty_warning: "This voice channel is empty and will be deleted {} if no one joins."
+    renamed: "Renamed your voice channel to **{}**."
+    limit_changed: "User limit has been set to **{}**."
+    privacy_changed: "Privacy updated: **{}**, **{}**, **{}**."
+    bitrate_changed: "Bitrate has been set to **{} kbps**."
+    trusted: "Trusted {}."
+    blocked: "Blocked {}."
+    untrusted: "Untrusted {}."
+    unblocked: "Unblocked {}."
+    invite_message: "{} invited {} to this voice channel."
+    invited: "Invited {}."
+    kicked: "Kicked {}."
+    automatic: "Automatic"
+    region_changed: "Region has been set to **{}**."
+    claimed: "You are now the owner of this voice channel."
+    owner_changed: "{} is now the owner of this voice channel."
+    transferred: "Transferred ownership to {}."
+    deleted: "Your voice channel has been deleted."
+    already_setup: "TempVoice is already set up with {}. Use `force` to set it up again."
+    setup_complete: "TempVoice has been set up!\n- Category: {}\n- Join to create: {}\n- Interface: {}\n\nThe voice notifier has been enabled for temporary voice channels."
+    find_none: "{} is not in any voice channel."
+    find_hidden: "{} is in a voice channel you cannot see."
+    find_temp: "{} is in {} (temporary voice owned by {})."
+    find_voice: "{} is in {}."
+    preference_saved: "Saved! These settings will be applied to your next voice channels."
+    preference_reset: "Your saved voice settings have been reset. Your next voice channels will use the default settings."
+  preference:
+    prompt: "{} you have updated your voice channel. Do you want to save these settings for next time?\n**Changes made:**\n{}"
+    fields:
+      name: "- Name: **{}**"
+      limit: "- User limit: **{}**"
+      privacy: "- Privacy: **{}**"
+      bitrate: "- Bitrate: **{} kbps**"
+      region: "- Region: **{}**"
+    buttons:
+      save: "Save for next time"
+      dismiss: "Dismiss"
+
+voice:
+  commands:
+    group_description: "Manage your temporary voice channel"
+    name:
+      description: "Rename your voice channel"
+    limit:
+      description: "Change the user limit of your voice channel"
+    privacy:
+      description: "Change the privacy of your voice channel"
+    trust:
+      description: "Trust members to always join your voice channels"
+    untrust:
+      description: "Remove members from your trusted list"
+    invite:
+      description: "Invite members to your voice channel"
+    kick:
+      description: "Kick members from your voice channel"
+    region:
+      description: "Change the region of your voice channel"
+    block:
+      description: "Block members from your voice channels"
+    unblock:
+      description: "Remove members from your blocked list"
+    claim:
+      description: "Claim the voice channel after the owner left"
+    transfer:
+      description: "Transfer ownership of your voice channel"
+    delete:
+      description: "Delete your voice channel"
+    reset:
+      description: "Reset your saved voice settings to default"
+    notifier:
+      description: "Voice join/leave notifier"
+      range:
+        description: "Choose which voice channels the notifier applies to"
+        describe:
+          range: "Off, temporary voice channels only, or all voice channels"
+      messages:
+        description: "Edit the join/leave notifier messages"
+  modals:
+    notifier:
+      title: "Notifier message"
+      label: "Message"
+      placeholder: "{user} just joined, say hi!"
+      description: "Placeholders: {user}, {user_name}, {channel}. Leave empty to delete this message."
+    bulk:
+      title: "Bulk edit"
+      label: "Messages"
+      placeholder: "One message per line"
+      description: "One line is one message, up to {} messages. This replaces all current messages."
+  notifier:
+    editor: "## Voice notifier\nEditing **{}** messages (**{}/{}**). A random message is picked whenever a member joins or leaves."
+    empty: "-# No messages yet, default messages will be used."
+    types:
+      join: "Join"
+      leave: "Leave"
+    ranges:
+      off: "Voice notifier has been disabled."
+      tempvoice: "Voice notifier is now enabled for temporary voice channels."
+      all: "Voice notifier is now enabled for all voice channels."
+    defaults:
+      join:
+        - "{user} joined the voice channel."
+      leave:
+        - "{user_name} left the voice channel."
+  selects:
+    type: "Choose message type"
+    message: "Choose a message to edit"
+  buttons:
+    add: "Add"
+    bulk: "Bulk edit"
+
+autotts:
+  commands:
+    group_description: "Automatic text-to-speech in voice chat"
+    enable:
+      description: "Enable auto TTS for your messages in voice chat"
+      describe:
+        mode: "Temporary (until you leave voice) or persistent (until disabled)"
+    disable:
+      description: "Disable auto TTS"
+    prefix:
+      description: "Set a prefix required for messages to be read, leave empty to remove"
+      describe:
+        prefix: "Prefix, for example: ,"
+  translations:
+    disable: "Auto TTS has been disabled."
+    temporary: "Auto TTS has been enabled until you leave the voice channel."
+    persistent: "Auto TTS has been enabled until you disable it."
+    prefix_set: "Only messages starting with `{}` will be read."
+    prefix_removed: "Prefix removed, all of your messages will be read."
+  errors:
+    too_long: "TTS messages can be at most {} characters."
+    busy: "The bot is currently in another voice channel ({})."
+    not_in_voice: "You need to be in a voice channel to enable temporary mode."

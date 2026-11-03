@@ -5343,3 +5343,265 @@ ticket:
     priority_exists: "Đã có role <@&{}> mang thứ tự ưu tiên `{}`, vui lòng nhập lại thứ tự ưu tiên khác."
     missing_permissions: "Bot thiếu các quyền sau để tạo ticket: `{}`"
 
+
+tempvoice:
+  commands:
+    group_description: "Temp voice"
+    setup:
+      description: "Setup temp voice cho server"
+      describe:
+        force: "Setup lại kể cả khi server đã setup trước đó"
+      default_values:
+        category_name: "Temp Voice"
+        hub_name: "➕ Tạo voice"
+        interface_name: "interface"
+    find:
+      description: "Tìm xem member đang ở voice nào"
+      describe:
+        member: "Member cần tìm"
+    bitrate:
+      description: "Đổi bitrate cho temp voice của bạn"
+  interface:
+    content: "## TempVoice Interface\n**Interface** này dùng để quản lý temp voice.\nCó thêm nhiều tùy chọn khác với lệnh **`/voice`**.\n-# Bấm các nút bên dưới để sử dụng interface"
+    tutorial: "{} đây là voice của bạn, hãy quản lý bằng các nút bên dưới.\n-# Để gửi tin nhắn TTS, hãy ping bot kèm nội dung hoặc dùng lệnh **`/autotts enable`**."
+  modals:
+    info: "Thông tin"
+    name:
+      title: "Name"
+      heading: "Đổi tên voice"
+      description: "{}"
+      full: "Bạn còn **{}** lượt đổi tên, lượt đổi tên được hồi lại mỗi **{}**."
+      partial: "Bạn còn **{}** lượt đổi tên, lượt sẽ được hồi lại sau **{}**."
+      label: "Tên voice"
+      placeholder: "Nhập tên mới cho voice"
+    limit:
+      title: "Limit"
+      heading: "Đổi user limit"
+      description: "Đặt số member tối đa có thể vào voice (1 - 99)."
+      label: "User limit"
+      placeholder: "1 - 99"
+    privacy:
+      title: "Privacy"
+      heading: "Đổi privacy"
+      description: "Chọn ai được join, nhìn thấy và chat trong voice. Member được trust luôn có thể join."
+      lock:
+        label: "Kết nối"
+        lock: "Lock"
+        unlock: "Unlock"
+      visibility:
+        label: "Hiển thị"
+        visible: "Visible"
+        invisible: "Invisible"
+      chat:
+        label: "Chat"
+        enable: "Bật chat"
+        disable: "Tắt chat"
+    bitrate:
+      title: "Bitrate"
+      heading: "Đổi bitrate"
+      description: "Đặt bitrate theo kbps. Server này cho phép tối đa **{} kbps**, boost server để mở khóa bitrate cao hơn."
+      label: "Bitrate (kbps)"
+      placeholder: "8 - 384"
+    tts:
+      title: "Auto TTS"
+      heading: "Auto TTS"
+      description: "Tin nhắn của bạn trong chat voice sẽ được bot đọc lên. Chế độ tạm thời sẽ tự tắt khi bạn rời voice."
+      mode:
+        label: "Chế độ"
+        disable: "Tắt"
+        temporary: "Tạm thời (đến khi rời voice)"
+        persistent: "Vĩnh viễn (đến khi tắt)"
+    user:
+      label: "Member"
+      placeholder: "Chọn member"
+    select:
+      label: "Lựa chọn"
+      placeholder: "Chọn một tùy chọn"
+    trust:
+      title: "Trust"
+      heading: "Trust member"
+      description: "Member được trust luôn có thể thấy và join voice của bạn, kể cả khi voice bị ẩn hoặc lock. Áp dụng cho mọi voice sau này của bạn."
+    untrust:
+      title: "Untrust"
+      heading: "Untrust member"
+      description: "Xóa member khỏi danh sách trust."
+    block:
+      title: "Block"
+      heading: "Block member"
+      description: "Member bị block không thể thấy hay join voice của bạn, và sẽ bị kick nếu đang ở trong. Áp dụng cho mọi voice sau này của bạn."
+    unblock:
+      title: "Unblock"
+      heading: "Unblock member"
+      description: "Xóa member khỏi danh sách block."
+    invite:
+      title: "Invite"
+      heading: "Invite member"
+      description: "Member được invite có thể join voice này kể cả khi bị ẩn hoặc lock. Chỉ áp dụng cho voice hiện tại."
+    kick:
+      title: "Kick"
+      heading: "Kick member"
+      description: "Ngắt kết nối member khỏi voice của bạn."
+    transfer:
+      title: "Transfer"
+      heading: "Transfer owner"
+      description: "Chọn một member trong voice để làm owner mới."
+    region:
+      title: "Region"
+      heading: "Đổi region"
+      description: "Chọn region của voice server. Automatic sẽ để Discord tự chọn region tốt nhất."
+    delete:
+      title: "Delete"
+      heading: "Xóa voice"
+      description: "Voice này sẽ bị xóa ngay lập tức và mọi người bên trong sẽ bị ngắt kết nối."
+      label: "Xác nhận"
+      confirm: "Xóa voice này"
+  errors:
+    not_in_tempvoice: "Bạn cần ở trong một temp voice để dùng chức năng này."
+    not_owner: "Chỉ owner của voice mới có thể làm việc này."
+    rename_limit: "Bạn đã hết lượt đổi tên, hãy thử lại sau **{}**."
+    invalid_limit: "User limit phải là số từ 1 đến 99."
+    invalid_bitrate: "Bitrate phải là số từ 8 đến {} kbps."
+    no_valid_user: "Không có member hợp lệ nào được chọn."
+    no_trusted: "Bạn chưa trust ai."
+    no_blocked: "Bạn chưa block ai."
+    no_members: "Không có ai khác trong voice của bạn."
+    already_owner: "Bạn đã là owner của voice này."
+    owner_present: "Owner vẫn đang ở trong voice này."
+    member_left: "Member đó không còn ở trong voice của bạn."
+    preference_expired: "Tin nhắn này đã hết hạn."
+    no_preference: "Bạn chưa lưu setting voice nào."
+  translations:
+    default_name: "Voice của {}"
+    empty_warning: "Voice này đang trống và sẽ bị xóa {} nếu không có ai join."
+    renamed: "Đã đổi tên voice thành **{}**."
+    limit_changed: "Đã đặt user limit thành **{}**."
+    privacy_changed: "Đã cập nhật privacy: **{}**, **{}**, **{}**."
+    bitrate_changed: "Đã đặt bitrate thành **{} kbps**."
+    trusted: "Đã trust {}."
+    blocked: "Đã block {}."
+    untrusted: "Đã untrust {}."
+    unblocked: "Đã unblock {}."
+    invite_message: "{} đã invite {} vào voice này."
+    invited: "Đã invite {}."
+    kicked: "Đã kick {}."
+    automatic: "Automatic"
+    region_changed: "Đã đặt region thành **{}**."
+    claimed: "Bạn hiện là owner của voice này."
+    owner_changed: "{} hiện là owner của voice này."
+    transferred: "Đã transfer owner cho {}."
+    deleted: "Voice của bạn đã bị xóa."
+    already_setup: "Server đã setup temp voice với {}. Dùng `force` để setup lại."
+    setup_complete: "Đã setup temp voice!\n- Category: {}\n- Join để tạo voice: {}\n- Interface: {}\n\nVoice notifier đã được bật cho các temp voice."
+    find_none: "{} không ở trong voice nào."
+    find_hidden: "{} đang ở trong một voice mà bạn không thể thấy."
+    find_temp: "{} đang ở {} (temp voice của {})."
+    find_voice: "{} đang ở {}."
+    preference_saved: "Đã lưu! Các setting này sẽ được áp dụng cho các voice sau của bạn."
+    preference_reset: "Đã reset setting voice đã lưu. Các voice sau của bạn sẽ dùng setting mặc định."
+  preference:
+    prompt: "{} bạn đã cập nhật voice. Bạn có muốn lưu các setting này cho lần sau không?\n**Các thay đổi đã thực hiện:**\n{}"
+    fields:
+      name: "- Tên: **{}**"
+      limit: "- User limit: **{}**"
+      privacy: "- Privacy: **{}**"
+      bitrate: "- Bitrate: **{} kbps**"
+      region: "- Region: **{}**"
+    buttons:
+      save: "Lưu cho lần sau"
+      dismiss: "Bỏ qua"
+
+voice:
+  commands:
+    group_description: "Quản lý temp voice của bạn"
+    name:
+      description: "Đổi tên voice"
+    limit:
+      description: "Đổi user limit của voice"
+    privacy:
+      description: "Đổi privacy của voice"
+    trust:
+      description: "Trust member để họ luôn join được voice của bạn"
+    untrust:
+      description: "Xóa member khỏi danh sách trust"
+    invite:
+      description: "Invite member vào voice"
+    kick:
+      description: "Kick member khỏi voice"
+    region:
+      description: "Đổi region của voice"
+    block:
+      description: "Block member khỏi voice của bạn"
+    unblock:
+      description: "Xóa member khỏi danh sách block"
+    claim:
+      description: "Claim voice khi owner đã rời đi"
+    transfer:
+      description: "Transfer owner của voice"
+    delete:
+      description: "Xóa voice của bạn"
+    reset:
+      description: "Reset setting voice đã lưu về mặc định"
+    notifier:
+      description: "Thông báo khi có người join/leave voice"
+      range:
+        description: "Chọn phạm vi voice được thông báo"
+        describe:
+          range: "Tắt, chỉ temp voice, hoặc mọi voice"
+      messages:
+        description: "Sửa tin nhắn thông báo join/leave voice"
+  modals:
+    notifier:
+      title: "Notifier message"
+      label: "Tin nhắn"
+      placeholder: "{user} vừa join voice, chào đi nào!"
+      description: "Placeholder: {user}, {user_name}, {channel}. Để trống để xóa tin nhắn này."
+    bulk:
+      title: "Bulk edit"
+      label: "Danh sách tin nhắn"
+      placeholder: "Mỗi dòng là một tin nhắn"
+      description: "Mỗi dòng là một tin nhắn, tối đa {} tin nhắn. Danh sách hiện tại sẽ bị thay thế."
+  notifier:
+    editor: "## Voice notifier\nĐang sửa tin nhắn **{}** (**{}/{}**). Bot sẽ chọn random một tin nhắn mỗi khi có người join hoặc leave voice."
+    empty: "-# Chưa có tin nhắn nào, bot sẽ dùng tin nhắn mặc định."
+    types:
+      join: "Join"
+      leave: "Leave"
+    ranges:
+      off: "Đã tắt voice notifier."
+      tempvoice: "Đã bật voice notifier cho các temp voice."
+      all: "Đã bật voice notifier cho mọi voice."
+    defaults:
+      join:
+        - "{user} đã join voice."
+      leave:
+        - "{user_name} đã rời voice."
+  selects:
+    type: "Chọn loại tin nhắn"
+    message: "Chọn tin nhắn để sửa"
+  buttons:
+    add: "Thêm"
+    bulk: "Bulk edit"
+
+autotts:
+  commands:
+    group_description: "Auto TTS trong chat voice"
+    enable:
+      description: "Bật auto TTS cho tin nhắn của bạn trong chat voice"
+      describe:
+        mode: "Tạm thời (đến khi rời voice) hoặc vĩnh viễn (đến khi tắt)"
+    disable:
+      description: "Tắt auto TTS"
+    prefix:
+      description: "Đặt prefix bắt buộc để tin nhắn được đọc, để trống để xóa"
+      describe:
+        prefix: "Prefix, ví dụ: ,"
+  translations:
+    disable: "Đã tắt auto TTS."
+    temporary: "Đã bật auto TTS cho đến khi bạn rời voice."
+    persistent: "Đã bật auto TTS cho đến khi bạn tắt."
+    prefix_set: "Chỉ những tin nhắn bắt đầu bằng `{}` mới được đọc."
+    prefix_removed: "Đã xóa prefix, mọi tin nhắn của bạn sẽ được đọc."
+  errors:
+    too_long: "Tin nhắn TTS chỉ được tối đa {} ký tự."
+    busy: "Bot đang ở một voice khác ({})."
+    not_in_voice: "Bạn cần ở trong một voice để bật chế độ tạm thời."
