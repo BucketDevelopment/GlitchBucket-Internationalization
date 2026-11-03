@@ -5555,7 +5555,7 @@ voice:
       title: "Notifier message"
       label: "Message"
       placeholder: "{user} just joined, say hi!"
-      description: "Placeholders: {user}, {user_name}, {channel}. Leave empty to delete this message."
+      description: "Supports BucketScript placeholders, e.g. {user}, {user_nick}, {channel}, {server_name}. Leave empty to delete this message."
     bulk:
       title: "Bulk edit"
       label: "Messages"
@@ -5575,7 +5575,7 @@ voice:
       join:
         - "{user} joined the voice channel."
       leave:
-        - "{user_name} left the voice channel."
+        - "{user_nick} left the voice channel."
   selects:
     type: "Choose message type"
     message: "Choose a message to edit"

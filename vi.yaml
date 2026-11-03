@@ -5555,7 +5555,7 @@ voice:
       title: "Notifier message"
       label: "Tin nhắn"
       placeholder: "{user} vừa join voice, chào đi nào!"
-      description: "Placeholder: {user}, {user_name}, {channel}. Để trống để xóa tin nhắn này."
+      description: "Hỗ trợ placeholder của BucketScript, ví dụ {user}, {user_nick}, {channel}, {server_name}. Để trống để xóa tin nhắn này."
     bulk:
       title: "Bulk edit"
       label: "Danh sách tin nhắn"
@@ -5575,7 +5575,7 @@ voice:
       join:
         - "{user} đã join voice."
       leave:
-        - "{user_name} đã rời voice."
+        - "{user_nick} đã rời voice."
   selects:
     type: "Chọn loại tin nhắn"
     message: "Chọn tin nhắn để sửa"
