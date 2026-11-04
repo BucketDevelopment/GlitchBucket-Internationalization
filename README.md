@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://bot.tudubucket.dev"><img src="https://cdn.langdua.net/104169263_p1.png" height="auto" width="180" style="border-radius:50%"></a>
+<a href="https://bot.tudubucket.dev"><img src="https://cdn.tudubucket.dev/glitchbucket/logo.png" width="180" alt="GlitchBucket"></a>
 </p>
 
 <h1 align="center">GlitchBucket Internationalization</h1>
