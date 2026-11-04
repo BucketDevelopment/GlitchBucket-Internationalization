@@ -4327,7 +4327,7 @@ bucketbalance:
           invalid: Mã xác nhận không hợp lệ (nhận `{}`, mong đợi `{}`)
         deleted: Item {} `{}` với ID `{}` đã bị xóa.
       modal:
-        title:
+        title: Xác nhận xóa
         placeholder: Vui lòng nhập '{}' để xác nhận xóa.
         label: Xác nhận xóa [{}]
     list:

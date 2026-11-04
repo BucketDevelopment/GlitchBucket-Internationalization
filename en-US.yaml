@@ -1715,7 +1715,7 @@ quickreport:
       blacklisted_category: "You are not eligible to report messages in this blacklisted category!"
       blacklisted_channel: "You are not eligible to report messages in this blacklisted channel!"
     max_concurrent_reached: "You have reached maximum of **{}** concurrent pending reports in this server! Please check your current reports in </quickreport recent:1182566872810541056> before making reports again."
-    description: "Use command </quickreport update:1182566872810541056> to update status of this report."
+    description: "To update this report automatically, you can kick, ban, or mute {}.\nTo update it manually, use command </quickreport update:1182566872810541056>."
     reporter: Reporter
     reported: Reported
     message: Message
@@ -3473,9 +3473,9 @@ bucketscript:
         unknown_message: Provided ID/Message URL in {} does not valid in this server.
         successful: Message has successfully sent to {}.
         footer: -# Message sent via **`/send`** command.
-        missing_permission: | 
-        Bot is missing one of required permissions in {} to process BucketScript message:
-        - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions  
+        missing_permission: |
+          Bot is missing one of required permissions in {} to process BucketScript message:
+          - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions
     embed:
       show:
         description: Send an embed
@@ -5236,19 +5236,19 @@ ticket:
         description: Send multi-panel
   translations:
     notice:
-    panel_message: |
-      Note:
-      - Bot only saves the embed and does not automatically resend the panel message. To reload the panel message, use **`/ticket panel send`** after finishing your edits.
-      - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
-        - **`/ticket panel send`** sends a specific panel;
-        - **`/ticket multi-panel send`** sends multiple panels together, so it uses a separate embed. To edit the multi-panel embed, use **`/ticket multi-panel manage`**.
+      panel_message: |
+        Note:
+        - Bot only saves the embed and does not automatically resend the panel message. To reload the panel message, use **`/ticket panel send`** after finishing your edits.
+        - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
+          - **`/ticket panel send`** sends a specific panel;
+          - **`/ticket multi-panel send`** sends multiple panels together, so it uses a separate embed. To edit the multi-panel embed, use **`/ticket multi-panel manage`**.
 
-    multipanel_message: |
-      Note:
-      - Bot only saves the embed and does not automatically resend the multi-panel message. To reload the multi-panel message, use **`/ticket multi-panel send`** after finishing your edits.
-      - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
-        - **`/ticket multi-panel send`** sends multiple panels together;
-        - **`/ticket panel send`** sends a specific panel, so it uses a separate embed.
+      multipanel_message: |
+        Note:
+        - Bot only saves the embed and does not automatically resend the multi-panel message. To reload the multi-panel message, use **`/ticket multi-panel send`** after finishing your edits.
+        - **`/ticket panel send`** and **`/ticket multi-panel send`** are two completely separate commands with two different embeds:
+          - **`/ticket multi-panel send`** sends multiple panels together;
+          - **`/ticket panel send`** sends a specific panel, so it uses a separate embed.
     rename_too_long: "Ticket name too long."
     renamed: "Ticket renamed: {}"
     rename_failed: "Cannot rename ticket: {}"
