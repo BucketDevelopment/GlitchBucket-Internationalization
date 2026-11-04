@@ -5576,7 +5576,7 @@ voice:
       join:
         - "<:_:1567239155912671292> {user} đã join voice."
       leave:
-        - "<:_:1567239158110490815> {user_nick} đã rời voice."
+        - "<:_:1567239158110490815> {user} đã rời voice."
   selects:
     type: "Chọn loại tin nhắn"
     message: "Chọn tin nhắn để sửa"

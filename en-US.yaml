@@ -5575,7 +5575,7 @@ voice:
       join:
         - "<:_:1567239155912671292> {user} joined the voice channel."
       leave:
-        - "<:_:1567239158110490815> {user_nick} left the voice channel."
+        - "<:_:1567239158110490815> {user} left the voice channel."
   selects:
     type: "Choose message type"
     message: "Choose a message to edit"
