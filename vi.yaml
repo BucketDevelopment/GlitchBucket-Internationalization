@@ -3125,6 +3125,7 @@ bucketscript:
           label: Inline
           placeholder: Field này có cùng hàng với các field khác không?
     button:
+      title: "Nút"
       old:
         fields:
           name:
