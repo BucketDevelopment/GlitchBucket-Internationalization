@@ -5607,3 +5607,36 @@ autotts:
     too_long: "Tin nhắn TTS chỉ được tối đa {} ký tự."
     busy: "Bot đang ở một voice khác ({})."
     not_in_voice: "Bạn cần ở trong một voice để bật chế độ tạm thời."
+
+premium:
+  commands:
+    group_description: "Plan premium của server"
+    info:
+      description: "Xem plan và các giới hạn của server"
+  embeds:
+    info:
+      title: "Premium"
+      description: "Plan: **{}**\nThời hạn: {}"
+  translations:
+    permanent: "vĩnh viễn"
+    expire_on: "đến {} ({})"
+    expired: "Plan trước đó đã hết hạn, server đã quay về plan mặc định"
+  plans:
+    default: "Default"
+    plus: "Plus"
+    extended: "Extended"
+    whitelabel: "Whitelabel"
+    custom: "Custom"
+  keys:
+    autoresponder: "Autoresponder"
+    embed: "Embed"
+    layout: "Layout"
+    button: "Button"
+    select: "Select"
+    form: "Form"
+    stickie: "Sticky Message"
+    customrole: "Custom Role"
+    giveaway_template: "Template giveaway"
+    ticket_panel: "Panel ticket"
+    item: "Item"
+    prefix: "Prefix"

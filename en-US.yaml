@@ -5606,3 +5606,36 @@ autotts:
     too_long: "TTS messages can be at most {} characters."
     busy: "The bot is currently in another voice channel ({})."
     not_in_voice: "You need to be in a voice channel to enable temporary mode."
+
+premium:
+  commands:
+    group_description: "Premium plan of the server"
+    info:
+      description: "View the plan and limits of this server"
+  embeds:
+    info:
+      title: "Premium"
+      description: "Plan: **{}**\nDuration: {}"
+  translations:
+    permanent: "permanent"
+    expire_on: "until {} ({})"
+    expired: "The previous plan has expired, the server is back to the default plan"
+  plans:
+    default: "Default"
+    plus: "Plus"
+    extended: "Extended"
+    whitelabel: "Whitelabel"
+    custom: "Custom"
+  keys:
+    autoresponder: "Autoresponder"
+    embed: "Embed"
+    layout: "Layout"
+    button: "Button"
+    select: "Select"
+    form: "Form"
+    stickie: "Sticky Message"
+    customrole: "Custom Role"
+    giveaway_template: "Giveaway template"
+    ticket_panel: "Ticket panel"
+    item: "Item"
+    prefix: "Prefix"
