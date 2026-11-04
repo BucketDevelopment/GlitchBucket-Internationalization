@@ -5489,7 +5489,7 @@ tempvoice:
     claimed: "Bạn hiện là owner của voice này."
     owner_changed: "{} hiện là owner của voice này."
     transferred: "Đã transfer owner cho {}."
-    deleted: "Voice của bạn đã bị xóa."
+    deleted: "Voice của bạn đã được xóa."
     already_setup: "Server đã setup temp voice với {}. Dùng `force` để setup lại."
     setup_complete: "Đã setup temp voice!\n- Category: {}\n- Join để tạo voice: {}\n- Interface: {}\n\nVoice notifier đã được bật cho các temp voice."
     find_none: "{} không ở trong voice nào."
