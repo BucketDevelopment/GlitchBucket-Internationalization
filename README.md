@@ -24,7 +24,7 @@ Repo này là **bản sao** của mã nguồn bot và được đồng bộ tự
 
 Nếu bạn muốn sửa một đoạn dịch, hoặc thêm một ngôn ngữ mới, hãy tạo Pull Request.
 
-Sau khi được duyệt, Pull Request của bạn sẽ được chuyển vào mã nguồn của bot, nên Pull Request gốc sẽ được đóng lại. Đừng lo, bạn vẫn được ghi tên trong commit, và thay đổi sẽ xuất hiện lại ở đây sau khi được merge.
+Pull Request của bạn sẽ được đưa vào source chính của bot để duyệt. Khi được chấp nhận, Pull Request ở đây cũng sẽ được merge, và bạn vẫn được ghi tên trong commit.
 
 Khi dịch, bạn cần lưu ý:
 - **Không sửa `en-US.yaml`**. Đây là bản gốc và được quản lí trong mã nguồn của bot.

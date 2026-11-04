@@ -1,6 +1,6 @@
 # Add the "import" label to an approved pull request to copy its translations into the bot source.
-# This repository is a read-only mirror: the change comes back here through the mirror sync once
-# the pull request in the bot source is merged, so the original pull request is closed.
+# The pull request stays open here. When the bot source merges it, the "i18n merge" workflow of the
+# bot source merges this pull request too (or closes it when rejected).
 #
 # Pull request code is never executed here: translation files are read with `git show` and parsed
 # by the trusted validator from the base branch.
@@ -74,21 +74,21 @@ jobs:
           GH_TOKEN: ${{ secrets.CORE_TOKEN }}
         run: |
           branch="i18n/pr-$PR"
+          title=$(python -c 'import os; print(os.environ["PR_TITLE"].strip().lower())')
           git checkout -b "$branch"
           while read -r f; do cp "$RUNNER_TEMP/check/$f" "lang/$f"; done < "$RUNNER_TEMP/changed.txt"
           git add lang
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
-            commit --author="$PR_AUTHOR <$PR_AUTHOR_ID+$PR_AUTHOR@users.noreply.github.com>" -m "$PR_TITLE"
+            commit --author="$PR_AUTHOR <$PR_AUTHOR_ID+$PR_AUTHOR@users.noreply.github.com>" -m "$title"
           git push -f origin "$branch"
           url=$(gh pr list --repo "$CORE_REPO" --head "$branch" --json url --jq '.[0].url')
           if [ -z "$url" ]; then
-            url=$(gh pr create --repo "$CORE_REPO" --base main --head "$branch" --title "$PR_TITLE" --body "Imported from $PR_URL")
+            url=$(gh pr create --repo "$CORE_REPO" --base main --head "$branch" --title "$title" --body "imported from $PR_URL")
           fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
-      - name: close mirror pull request
+      - name: notify
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Đã chuyển vào mã nguồn của bot để duyệt. Repo này là mirror, thay đổi sẽ xuất hiện ở đây sau khi được merge. Cảm ơn bạn đã đóng góp!"
-          gh pr close "$PR" --repo "$GITHUB_REPOSITORY"
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Các thay đổi đã được đưa vào source chính của bot để duyệt. Pull Request này sẽ được merge sau khi được duyệt. Cảm ơn bạn đã đóng góp!"
