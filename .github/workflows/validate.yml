@@ -1,0 +1,48 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: en-US is managed by the bot source
+        if: github.event_name == 'pull_request'
+        env:
+          BASE: origin/${{ github.base_ref }}
+        run: |
+          if git diff --name-only "$BASE...HEAD" | grep -qx 'en-US.yaml'; then
+            echo "::error file=en-US.yaml::en-US.yaml is synced from the bot source, please do not edit it in a pull request"
+            exit 1
+          fi
+
+      - name: validate translations
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: origin/${{ github.base_ref }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            mkdir -p "$RUNNER_TEMP/baseline"
+            for f in $(git ls-tree --name-only "$BASE" | grep '\.yaml$'); do
+              git show "$BASE:$f" > "$RUNNER_TEMP/baseline/$f"
+            done
+            python scripts/validate.py --baseline "$RUNNER_TEMP/baseline"
+          else
+            python scripts/validate.py
+          fi

@@ -1,0 +1,94 @@
+# Add the "import" label to an approved pull request to copy its translations into the bot source.
+# This repository is a read-only mirror: the change comes back here through the mirror sync once
+# the pull request in the bot source is merged, so the original pull request is closed.
+#
+# Pull request code is never executed here: translation files are read with `git show` and parsed
+# by the trusted validator from the base branch.
+
+name: import
+
+on:
+  pull_request_target:
+    types: [labeled]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  import:
+    if: github.event.label.name == 'import'
+    runs-on: ubuntu-latest
+    env:
+      PR: ${{ github.event.pull_request.number }}
+      PR_TITLE: ${{ github.event.pull_request.title }}
+      PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+      PR_AUTHOR_ID: ${{ github.event.pull_request.user.id }}
+      PR_URL: ${{ github.event.pull_request.html_url }}
+      CORE_REPO: tudubucket/GlitchBucket
+    steps:
+      - name: checkout mirror (base branch only)
+        uses: actions/checkout@v4
+        with:
+          path: mirror
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: collect translation files
+        working-directory: mirror
+        run: |
+          git fetch origin "pull/$PR/head:pr"
+          mkdir -p "$RUNNER_TEMP/check/scripts" "$RUNNER_TEMP/baseline"
+          cp en-US.yaml "$RUNNER_TEMP/check/"
+          cp scripts/validate.py "$RUNNER_TEMP/check/scripts/"
+          git diff --name-only "HEAD...pr" > "$RUNNER_TEMP/changed.txt"
+          [ -s "$RUNNER_TEMP/changed.txt" ] || { echo "::error::nothing to import"; exit 1; }
+          while read -r f; do
+            if ! printf '%s' "$f" | grep -Eq '^[a-z]{2}(-[A-Z]{2})?\.yaml$' || [ "$f" = "en-US.yaml" ]; then
+              echo "::error::only translation files can be imported, got $f"
+              exit 1
+            fi
+            git show "pr:$f" > "$RUNNER_TEMP/check/$f" || { echo "::error::$f was deleted, deleting a locale is not supported"; exit 1; }
+            git show "HEAD:$f" > "$RUNNER_TEMP/baseline/$f" 2>/dev/null || rm -f "$RUNNER_TEMP/baseline/$f"
+          done < "$RUNNER_TEMP/changed.txt"
+
+      - name: validate
+        run: python "$RUNNER_TEMP/check/scripts/validate.py" --baseline "$RUNNER_TEMP/baseline" $(cat "$RUNNER_TEMP/changed.txt")
+
+      - name: checkout bot source
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.CORE_REPO }}
+          token: ${{ secrets.CORE_TOKEN }}
+          path: core
+
+      - name: open pull request in the bot source
+        id: core
+        working-directory: core
+        env:
+          GH_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          branch="i18n/pr-$PR"
+          git checkout -b "$branch"
+          while read -r f; do cp "$RUNNER_TEMP/check/$f" "lang/$f"; done < "$RUNNER_TEMP/changed.txt"
+          git add lang
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit --author="$PR_AUTHOR <$PR_AUTHOR_ID+$PR_AUTHOR@users.noreply.github.com>" -m "$PR_TITLE"
+          git push -f origin "$branch"
+          url=$(gh pr list --repo "$CORE_REPO" --head "$branch" --json url --jq '.[0].url')
+          if [ -z "$url" ]; then
+            url=$(gh pr create --repo "$CORE_REPO" --base main --head "$branch" --title "$PR_TITLE" --body "Imported from $PR_URL")
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: close mirror pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Đã chuyển vào mã nguồn của bot để duyệt. Repo này là mirror, thay đổi sẽ xuất hiện ở đây sau khi được merge. Cảm ơn bạn đã đóng góp!"
+          gh pr close "$PR" --repo "$GITHUB_REPOSITORY"
