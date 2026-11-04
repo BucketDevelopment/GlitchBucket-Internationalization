@@ -915,8 +915,8 @@ automod:
           name: Rule Limits by Type
         can_create:
           name: Can Create New Rule
-          yes: "Yes"
-          no: "No ({})"
+          "yes": "Yes"
+          "no": "No ({})"
         existing_rules:
           name: Existing Rules
           none: No AutoMod rules found in this server.
@@ -5568,7 +5568,7 @@ voice:
       join: "Join"
       leave: "Leave"
     ranges:
-      off: "Voice notifier has been disabled."
+      "off": "Voice notifier has been disabled."
       tempvoice: "Voice notifier is now enabled for temporary voice channels."
       all: "Voice notifier is now enabled for all voice channels."
     defaults:

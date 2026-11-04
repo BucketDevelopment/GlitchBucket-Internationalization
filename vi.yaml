@@ -915,8 +915,8 @@ automod:
           name: Giới hạn Rule theo loại
         can_create:
           name: Có thể tạo Rule mới
-          yes: "Có"
-          no: "Không ({})"
+          "yes": "Có"
+          "no": "Không ({})"
         existing_rules:
           name: Danh sách Rule hiện có
           none: "*Hiện không có rule AutoMod nào trong server này.*"
@@ -5569,7 +5569,7 @@ voice:
       join: "Join"
       leave: "Leave"
     ranges:
-      off: "Đã tắt voice notifier."
+      "off": "Đã tắt voice notifier."
       tempvoice: "Đã bật voice notifier cho các temp voice."
       all: "Đã bật voice notifier cho mọi voice."
     defaults:
