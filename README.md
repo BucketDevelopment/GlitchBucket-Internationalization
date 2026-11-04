@@ -16,25 +16,28 @@
 </div>
 
 ## 🌺 Giới thiệu
-Repo này chứa bản dịch của [GlitchBucket](https://discord.com/application-directory/1103932552701550622). Mỗi ngôn ngữ là một file [YAML](https://www.redhat.com/en/topics/automation/what-is-yaml), đặt tên theo locale ID của Discord.
+Đây là nơi chứa toàn bộ bản dịch của [GlitchBucket](https://discord.com/application-directory/1103932552701550622). Mỗi ngôn ngữ là một file [YAML](https://www.redhat.com/en/topics/automation/what-is-yaml), được đặt tên theo locale của Discord.
 
-Repo này là bản sao (mirror) được đồng bộ tự động từ mã nguồn của bot, nên nhánh `main` luôn khớp với bản bot đang chạy.
+Repo này là **bản sao** của mã nguồn bot và được đồng bộ tự động, nên những gì bạn thấy ở đây luôn giống với bot đang chạy.
 
 ## 🍞 Đóng góp bản dịch
 
-Tạo Pull Request để sửa hoặc thêm bản dịch. PR sau khi được duyệt sẽ được đưa vào mã nguồn của bot, sau đó repo này tự cập nhật và PR được đóng kèm liên kết. Bạn vẫn được ghi công trong commit.
+Nếu bạn muốn sửa một đoạn dịch, hoặc thêm một ngôn ngữ mới, hãy tạo Pull Request.
 
-Khi sửa hoặc thêm file, hãy đảm bảo:
-- Không sửa `en-US.yaml`. Đây là bản gốc, do mã nguồn của bot quản lý.
-- Giữ đúng cấu trúc của `en-US.yaml` (thụt lề, key, ...). Không thêm key không có trong `en-US.yaml`.
-- Giữ nguyên số lượng và thứ tự `{}` cũng như các placeholder dạng `{user}`, `{channel}`.
-- Tên file theo [Discord Locales](https://discord.com/developers/docs/reference#locales). Ví dụ bản dịch tiếng Hindi phải đặt tên `hi.yaml`.
+Sau khi được duyệt, Pull Request của bạn sẽ được chuyển vào mã nguồn của bot, nên Pull Request gốc sẽ được đóng lại. Đừng lo, bạn vẫn được ghi tên trong commit, và thay đổi sẽ xuất hiện lại ở đây sau khi được merge.
+
+Khi dịch, bạn cần lưu ý:
+- **Không sửa `en-US.yaml`**. Đây là bản gốc và được quản lí trong mã nguồn của bot.
+- Giữ đúng cấu trúc của `en-US.yaml` (thụt lề, key, ...), và không thêm key mà `en-US.yaml` không có.
+- Giữ nguyên các placeholder như `{}`, `{0}`, `{user}`. Bạn có thể đổi vị trí của chúng cho hợp với câu văn, nhưng không được thêm placeholder mới.
+- Tên file phải theo [locale của Discord](https://discord.com/developers/docs/reference#locales). Ví dụ, bản dịch tiếng Hindi phải đặt tên là `hi.yaml`.
 - Tuân theo giới hạn của Discord:
-  + Mô tả lệnh dưới 100 ký tự
-  + Mô tả tham số lệnh dưới 100 ký tự
-  + Placeholder của modal dưới 100 ký tự
-  + Tiêu đề modal dưới 45 ký tự
-  + Không để trống key (ví dụ `my_translation: ''` là không hợp lệ)
+  + Mô tả lệnh và mô tả tham số tối đa 100 kí tự
+  + Placeholder của modal tối đa 100 kí tự
+  + Tiêu đề modal tối đa 45 kí tự
+  + Không được để trống (ví dụ `my_translation: ''` là không hợp lệ)
   + Xem thêm tại [Discord Developer Docs](https://discord.com/developers/docs/)
 
-Bản dịch không được làm sai lệch ý nghĩa so với bản gốc `en-US`.
+Mỗi Pull Request sẽ được kiểm tra tự động theo các quy tắc trên. Nếu bị báo lỗi, bạn chỉ cần sửa theo hướng dẫn trong phần kiểm tra là được.
+
+Lưu ý rằng bản dịch không được làm sai lệch ý nghĩa so với bản gốc `en-US`.
