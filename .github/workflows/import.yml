@@ -91,4 +91,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Các thay đổi đã được đưa vào source chính của bot để duyệt. Pull Request này sẽ được merge sau khi được duyệt. Cảm ơn bạn đã đóng góp!"
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Các thay đổi sẽ được merge vào source chính của bot. Cảm ơn bạn đã đóng góp!"
