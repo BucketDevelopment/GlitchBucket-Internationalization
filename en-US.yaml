@@ -5653,3 +5653,52 @@ premium:
     ticket_concurrent: "Concurrent tickets per member"
     form_submission: "Form submissions per member"
     select_option: "Options per select"
+purge:
+  commands:
+    group_description: "Bulk delete messages in this channel"
+    all:
+      description: "Delete recent messages"
+    human:
+      description: "Delete messages from members"
+    bot:
+      description: "Delete messages from bots and webhooks"
+    user:
+      description: "Delete messages from a user"
+    contains:
+      description: "Delete messages containing a text"
+    startswith:
+      description: "Delete messages starting with a text"
+    endswith:
+      description: "Delete messages ending with a text"
+    links:
+      description: "Delete messages with links"
+    invites:
+      description: "Delete messages with Discord invites"
+    attachments:
+      description: "Delete messages with attachments"
+    images:
+      description: "Delete messages with images"
+    embeds:
+      description: "Delete messages with embeds"
+    mentions:
+      description: "Delete messages with mentions"
+    emoji:
+      description: "Delete messages with emojis"
+  describe:
+    amount: "Number of messages to delete (1 - 1000)"
+    user: "The user whose messages will be deleted"
+    user_filter: "Only delete messages from this user"
+    text: "Text to match (case insensitive)"
+    before: "Only delete messages before this message (ID or link)"
+    after: "Only delete messages after this message (ID or link)"
+    pinned: "Also delete pinned messages"
+  translation:
+    reason: "Purged by @{}"
+    unsupported: "Messages in this channel cannot be purged."
+    invalid_message: "`{}` is not a valid message ID or link."
+    running: "A purge is already running in this channel, please wait."
+    error: "Something went wrong while purging messages, please try again later."
+    empty: "No matching messages were found."
+    deleted: "Deleted **{}** messages."
+    skipped: "Skipped **{}** messages older than 14 days, Discord does not allow bulk deleting them."
+    failed: "Could not delete **{}** messages."

@@ -5654,3 +5654,52 @@ premium:
     ticket_concurrent: "Ticket mở cùng lúc mỗi thành viên"
     form_submission: "Lượt gửi form mỗi thành viên"
     select_option: "Lựa chọn mỗi select"
+purge:
+  commands:
+    group_description: "Xóa hàng loạt tin nhắn trong kênh"
+    all:
+      description: "Xóa các tin nhắn gần đây"
+    human:
+      description: "Xóa tin nhắn của member"
+    bot:
+      description: "Xóa tin nhắn của bot và webhook"
+    user:
+      description: "Xóa tin nhắn của một user"
+    contains:
+      description: "Xóa tin nhắn có chứa nội dung"
+    startswith:
+      description: "Xóa tin nhắn bắt đầu bằng nội dung"
+    endswith:
+      description: "Xóa tin nhắn kết thúc bằng nội dung"
+    links:
+      description: "Xóa tin nhắn có link"
+    invites:
+      description: "Xóa tin nhắn có invite Discord"
+    attachments:
+      description: "Xóa tin nhắn có tệp đính kèm"
+    images:
+      description: "Xóa tin nhắn có hình ảnh"
+    embeds:
+      description: "Xóa tin nhắn có embed"
+    mentions:
+      description: "Xóa tin nhắn có mention"
+    emoji:
+      description: "Xóa tin nhắn có emoji"
+  describe:
+    amount: "Số tin nhắn cần xóa (1 - 1000)"
+    user: "User có tin nhắn cần xóa"
+    user_filter: "Chỉ xóa tin nhắn của user này"
+    text: "Nội dung cần tìm (không phân biệt hoa thường)"
+    before: "Chỉ xóa tin nhắn trước tin nhắn này (ID hoặc link)"
+    after: "Chỉ xóa tin nhắn sau tin nhắn này (ID hoặc link)"
+    pinned: "Xóa cả tin nhắn đã ghim"
+  translation:
+    reason: "Purge bởi @{}"
+    unsupported: "Không thể purge tin nhắn trong kênh này."
+    invalid_message: "`{}` không phải ID hoặc link tin nhắn hợp lệ."
+    running: "Kênh này đang được purge, vui lòng chờ."
+    error: "Đã xảy ra lỗi khi purge tin nhắn, vui lòng thử lại sau."
+    empty: "Không tìm thấy tin nhắn nào phù hợp."
+    deleted: "Đã xóa **{}** tin nhắn."
+    skipped: "Bỏ qua **{}** tin nhắn cũ hơn 14 ngày, Discord không cho phép xóa hàng loạt các tin này."
+    failed: "Không thể xóa **{}** tin nhắn."
