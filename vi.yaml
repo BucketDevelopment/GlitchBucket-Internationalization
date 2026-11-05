@@ -4814,6 +4814,7 @@ ticket:
       label: Tên ticket
       placeholder: "Định dạng riêng tên ticket cho role ưu tiên này. Có thể bỏ trống để sử dụng tên mặc định"
   buttons:
+    join: Tham gia ticket
     open: Tạo ticket
     close: Đóng ticket
     close_with_reason: Đóng với lí do
@@ -4849,6 +4850,9 @@ ticket:
     gray: "Xám"
     red: "Đỏ"
   config:
+    mode:
+      label: Chế độ ticket
+      description: Tạo ticket dưới dạng kênh hoặc private thread
     category:
       label: Category tạo ticket
       description: Chỉ định category cho ticket được tạo
@@ -4871,6 +4875,7 @@ ticket:
       label: Ưu tiên
       description: Cài đặt ticket ưu tiên
   selects:
+    notification_channel: Chọn kênh thông báo thread
     category: Chọn danh mục ticket
     ticket_type: Chọn thể loại ticket
     transcript_channel: Chọn kênh transcript
@@ -5014,6 +5019,15 @@ ticket:
       option_blacklist: Blacklist
       option_blacklist_description: Chặn một role bất kì khỏi tạo ticket
   embeds:
+    mode_manage:
+      title: Chế độ ticket
+      channel_mode: "Bạn đang chỉnh chế độ ticket của bảng ticket {} **{}**.\n\nChế độ hiện tại: `CHANNEL`. Bot sẽ tạo 1 kênh mới trong category của bảng ticket cho mỗi ticket."
+      thread_mode: "Bạn đang chỉnh chế độ ticket của bảng ticket {} **{}**.\n\nChế độ hiện tại: `THREAD`. Bot sẽ tạo 1 private thread trong kênh đã gửi bảng ticket. Staff không được tự thêm vào thread: support role được ping trong open message sẽ được thêm, staff khác vào bằng nút **Tham gia ticket** ở kênh thông báo.\n\n- `@everyone` cần quyền **Send Messages in Threads** ở kênh bảng ticket, nếu không user sẽ không gõ được trong ticket.\n- Discord cho tối đa 1000 thread đang hoạt động trong 1 server. Ticket đã đóng sẽ bị archive và lock, không tính vào giới hạn.\n\nKênh thông báo: {}"
+    thread_notification:
+      title: "Ticket mới #{}"
+      closed_title: "Ticket #{} đã đóng"
+      description: "{} đã mở ticket ở bảng ticket **{}**.\nThread: {}"
+      claimed_by: Claim bởi
     footer: Vận hành bởi bot.tudubucket.dev
     setup:
       title: Thiết lập hệ thống ticket
@@ -5021,6 +5035,7 @@ ticket:
       title: Quản lí nút bảng ticket
       description: "Bạn đang thực hiện chỉnh sửa nút bấm của bảng ticket. \n\nBạn có thể chọn 1 trong 4 màu ở dưới, hoặc chọn **`🔠 Thay đổi hiển thị`** để sửa **Emoji**, **Tên** và **Miêu tả** (Miêu tả chỉ áp dụng cho dropdown)  \n\nHãy thực hiện chỉnh sửa ở phía dưới:"
     category_manage:
+      thread_notice: "Bảng ticket này đang ở chế độ `THREAD` nên category không được dùng. Ticket sẽ được tạo dưới dạng thread trong kênh đã gửi bảng ticket."
       title: Quản lí bảng ticket
       channel_mode: "Bạn đang thực hiện chỉnh sửa category cho bảng ticket {} **{}**.Ticket mới khi được tạo sẽ đẩy vào category này.\n\nCategory hiện tại: {}"
       thread_mode: "Bạn đang thực hiện chỉnh sửa kênh cho bảng ticket {} **{}**. Ticket mới khi được tạo sẽ đẩy vào kênh này dưới dạng thread.\n\nKênh hiện tại: {}"
@@ -5236,6 +5251,7 @@ ticket:
       send:
         description: Gửi multi-panel
   translations:
+    thread_everyone_warning: "`@everyone` chưa có quyền **Send Messages in Threads** ở {}, user sẽ không gõ được trong thread ticket."
     notice:
       panel_message: | 
         Lưu ý:
@@ -5273,6 +5289,9 @@ ticket:
     unclaimed: "{} đã bỏ nhận ticket này."
     deleted: Ticket đã bị xóa.
   messages:
+    joined: "Bạn đã tham gia {}."
+    thread_closed: "Ticket đã được đóng bởi {}. Thread đã được archive và lock."
+    reply_blocked: "{}, ticket này đang được claim bởi {}. Các supporter khác không thể reply."
     claimed: "Ticket hiện được claim bởi {}."
     unclaimed: "{} đã bỏ claim ticket này."
     creating: "Đang tạo một ticket..."
@@ -5325,6 +5344,10 @@ ticket:
       title: Thông tin ticket
       not_provided: Không cung cấp
   errors:
+    role_not_mentionable: "{} không cho phép mention và bot thiếu quyền **Mention Everyone**, nên ping role sẽ không thêm được ai vào thread. Hãy thêm từng member hoặc bật mention cho role."
+    no_transcript: "Ticket này không có transcript được lưu."
+    no_permission_join: Bạn không có đủ quyền để tham gia ticket này.
+    join_claimed: "Ticket này đang được claim bởi {}. Các supporter khác không thể tham gia."
     no_category: Danh mục của ticket này không tìm thấy category để đẩy ticket mới vào. Vui lòng kiểm tra lại cài đặt panel.
     not_found: Không thể tìm thấy ticket trong hệ thống.
     not_claimed: Ticket hiện chưa được claim.
@@ -5337,7 +5360,7 @@ ticket:
     invalid_emoji: "Emoji không hợp lệ. Vui lòng nhập một emoji Unicode hoặc custom emoji."
     max_priority_roles: "Bạn đã đạt giới hạn số lượng role ưu tiên (tối đa 5 role)."
     max_questions: "Bạn đã đạt giới hạn số lượng câu hỏi (tối đa 5 câu hỏi)."
-    no_thread_channel: "Không tìm thấy channel thread để tạo ticket, vui lòng báo cáo tới admin của server để thực hiện setup lại."
+    no_thread_channel: "Bảng ticket chế độ thread phải được gửi trong 1 text channel. Vui lòng báo admin của server gửi lại bảng ticket."
     cooldown: "Bạn sẽ có thể xem transcript của một ticket khác {}"
     max_panels: "Bạn chỉ có thể có tối đa 5 danh mục ticket."
     invalid_priority: "Thứ tự ưu tiên cần phải là 1 số dương trong khoảng 1 đến 99, vui lòng nhập lại."

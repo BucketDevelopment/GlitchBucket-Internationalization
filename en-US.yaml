@@ -4813,6 +4813,7 @@ ticket:
       label: Ticket Name
       placeholder: "Custom ticket name format for this priority role. Leave empty to use default"
   buttons:
+    join: Join Ticket
     open: Create Ticket
     close: Close Ticket
     close_with_reason: Close with Reason
@@ -4848,6 +4849,9 @@ ticket:
     gray: "Gray"
     red: "Red"
   config:
+    mode:
+      label: Ticket Mode
+      description: Create tickets as channels or as private threads
     category:
       label: Ticket Creation Category
       description: Specify the category for new tickets
@@ -4870,6 +4874,7 @@ ticket:
       label: Priority
       description: Configure priority ticket settings
   selects:
+    notification_channel: Select thread notification channel
     category: Select Ticket Category
     ticket_type: Select Ticket Type
     transcript_channel: Select Transcript Channel
@@ -5013,6 +5018,15 @@ ticket:
       option_blacklist: Blacklist
       option_blacklist_description: Block any role from creating tickets
   embeds:
+    mode_manage:
+      title: Ticket Mode
+      channel_mode: "You are editing the ticket mode for panel {} **{}**.\n\nCurrent mode: `CHANNEL`. The bot will create a new channel in the panel category for each ticket."
+      thread_mode: "You are editing the ticket mode for panel {} **{}**.\n\nCurrent mode: `THREAD`. The bot will create a private thread in the channel the panel was sent to. Staff are not added automatically: support roles pinged in the open message are added, others join with the **Join Ticket** button in the notification channel.\n\n- `@everyone` needs **Send Messages in Threads** in the panel channel, otherwise users cannot type in their ticket.\n- Discord allows up to 1000 active threads per server. Closed tickets are archived and locked, and do not count.\n\nNotification channel: {}"
+    thread_notification:
+      title: "New ticket #{}"
+      closed_title: "Ticket #{} closed"
+      description: "{} opened a ticket in panel **{}**.\nThread: {}"
+      claimed_by: Claimed by
     footer: Powered by bot.tudubucket.dev
     setup:
       title: Ticket System Setup
@@ -5020,6 +5034,7 @@ ticket:
       title: Manage Ticket Panel Button
       description: "You are editing the button for the ticket panel. \n\nYou can choose one of the 4 colors below, or select **`🔠 Change Display`** to edit the **Emoji**, **Name**, and **Description** (Description only applies to dropdowns). \n\nPlease make your changes below:"
     category_manage:
+      thread_notice: "This panel is in `THREAD` mode, so the category is not used. Tickets are created as threads in the channel the panel was sent to."
       title: Manage Ticket Panel
       channel_mode: "You are editing the category for panel {} **{}**. New tickets will be created in this category.\n\nCurrent Category: {}"
       thread_mode: "You are editing the channel for panel {} **{}**. New tickets will be created as threads in this channel.\n\nCurrent Channel: {}"
@@ -5235,6 +5250,7 @@ ticket:
       send:
         description: Send multi-panel
   translations:
+    thread_everyone_warning: "`@everyone` is missing **Send Messages in Threads** in {}, so users will not be able to type in their ticket thread."
     notice:
       panel_message: |
         Note:
@@ -5273,6 +5289,9 @@ ticket:
     unclaimed: "{} has unclaimed this ticket."
     deleted: Ticket deleted.
   messages:
+    joined: "You have joined {}."
+    thread_closed: "This ticket was closed by {}. The thread is now archived and locked."
+    reply_blocked: "{}, this ticket is claimed by {}. Other supporters cannot reply."
     claimed: "This ticket is currently claimed by {}."
     unclaimed: "{} has unclaimed this ticket."
     creating: "Creating a ticket..."
@@ -5325,6 +5344,10 @@ ticket:
       title: Ticket Information
       not_provided: Not provided
   errors:
+    role_not_mentionable: "{} is not mentionable and I lack **Mention Everyone**, so pinging it will not add its members to this thread. Add members one by one or make the role mentionable."
+    no_transcript: "No transcript was saved for this ticket."
+    no_permission_join: You do not have permission to join this ticket.
+    join_claimed: "This ticket is claimed by {}. Other supporters cannot join."
     no_category: This ticket's panel is missing a category to create new tickets in. Please check the panel settings.
     not_found: Could not find the ticket in the system.
     not_claimed: This ticket is not currently claimed.
@@ -5337,7 +5360,7 @@ ticket:
     invalid_emoji: "Invalid emoji. Please enter a Unicode or custom emoji."
     max_priority_roles: "You have reached the limit of priority roles (maximum 5 roles)."
     max_questions: "You have reached the limit of questions (maximum 5 questions)."
-    no_thread_channel: "Could not find a channel to create ticket threads in. Please report this to a server admin to re-run setup."
+    no_thread_channel: "Thread mode panels must be sent to a text channel. Please ask a server admin to resend the panel."
     cooldown: "You can view another ticket's transcript <t:{}:R>"
     max_panels: "You can only have a maximum of 5 ticket panels."
     invalid_priority: "Priority must be a positive number between 1 and 99. Please re-enter."
