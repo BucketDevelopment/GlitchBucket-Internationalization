@@ -43,6 +43,19 @@ common:
       docs: "Docs"
       policy: "Terms"
       premium: Premium
+  premium_granted:
+    header: "### :e_mail: This message was sent from <:owner:1267138666128474215> GlitchBucket Development Team"
+    open: |
+      Thank you so much for supporting **GlitchBucket** <a:yaya:1267138629608931338>
+
+      The **{0}** plan is now active for **{1}**, {2}. The new limits apply right away, you can check them with </premium info:1568212783118553248>!
+    expires: "valid until <t:{0}:D> (<t:{0}:R>)"
+    lifetime: "valid for **lifetime**"
+    footer: "-# Your order code is **`{0}`** with a value of {1} VND.\n-# Having trouble with your order or have a question? Contact us at the [Support Center](https://discord.gg/WDc5uF9wyS)!"
+    button:
+      dashboard: Dashboard
+      docs: Docs
+      support: Support
   ban:
     removed: |
       ## :e_mail: This message has been sent from :shield: GlitchBucket Administration
