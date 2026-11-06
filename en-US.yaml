@@ -5725,3 +5725,12 @@ purge:
     deleted: "Deleted **{}** messages."
     skipped: "Skipped **{}** messages older than 14 days, Discord does not allow bulk deleting them."
     failed: "Could not delete **{}** messages."
+imagelink:
+  description: Upload an image to Discord and get its link
+  options:
+    image: The image to get a link for
+  translation:
+    success: "Image uploaded successfully!\n-# Do not delete this channel or message, or the image will be lost.\n<{}>\n```\n{}\n```\nFor use inside Discord (no params needed):\n```\n{}\n```"
+    not_image: "The file you sent is not an image."
+    too_large: "The image is larger than the upload limit here."
+    failed: "Could not upload the image, please try again later."

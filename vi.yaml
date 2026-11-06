@@ -5726,3 +5726,12 @@ purge:
     deleted: "Đã xóa **{}** tin nhắn."
     skipped: "Bỏ qua **{}** tin nhắn cũ hơn 14 ngày, Discord không cho phép xóa hàng loạt các tin này."
     failed: "Không thể xóa **{}** tin nhắn."
+imagelink:
+  description: Tải ảnh lên Discord và lấy link ảnh
+  options:
+    image: Ảnh cần lấy link
+  translation:
+    success: "Ảnh đã được tải lên thành công!\n-# Đừng xóa kênh hoặc tin nhắn này, nếu không ảnh sẽ bị mất.\n<{}>\n```\n{}\n```\nDùng trong Discord (không cần param):\n```\n{}\n```"
+    not_image: "File bạn gửi không phải ảnh."
+    too_large: "Ảnh vượt quá giới hạn tải lên ở đây."
+    failed: "Chưa tải ảnh lên được, bạn thử lại sau nhé."
