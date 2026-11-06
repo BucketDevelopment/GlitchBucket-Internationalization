@@ -35,6 +35,19 @@ common:
       docs: "Tài liệu"
       policy: "Điều khoản"
       premium: Premium
+  premium_granted:
+    header: "### :e_mail: Tin nhắn này đã được gửi từ <:owner:1267138666128474215> Đội ngũ Phát triển GlitchBucket"
+    open: |
+      Cảm ơn bạn rất nhiều vì đã ủng hộ **GlitchBucket** <a:yaya:1267138629608931338>
+
+      Plan **{0}** đã được kích hoạt cho server **{1}**, {2}. Các giới hạn mới đã có hiệu lực ngay, bạn có thể xem lại bằng </premium info:1568212783118553248> nhé!
+    expires: "sử dụng tới <t:{0}:D> (<t:{0}:R>)"
+    lifetime: "sử dụng **lifetime**"
+    footer: "-# Đơn của bạn có mã **`{0}`** với giá trị là {1}đ.\n-# Có vấn đề về đơn hàng hoặc thắc mắc cần giải đáp? Liên hệ chúng tôi tại [Trung tâm Hỗ trợ](https://discord.gg/WDc5uF9wyS)!"
+    button:
+      dashboard: Dashboard
+      docs: "Tài liệu"
+      support: Support
   ban:
     removed: |
       ## :e_mail: Thông báo này được gửi từ :shield: Đội ngũ Quản trị GlitchBucket
