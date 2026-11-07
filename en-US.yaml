@@ -5648,6 +5648,80 @@ premium:
     group_description: "Premium plan of the server"
     info:
       description: "View the plan and limits of this server"
+    customize:
+      description: "Change the bot's profile in this server (Premium)"
+      embed:
+        title: "Bot profile"
+        description: "Pick what you want to change below, changes apply right away in this server. For a visual preview you can also edit it on the [Dashboard](<{}>)."
+        default: "Default"
+        custom: "Server only"
+        fields:
+          nick: "Display name"
+          avatar: "Avatar"
+          banner: "Banner"
+          style: "Name style"
+          bio: "Bio"
+      select:
+        placeholder: "Pick what to change"
+        options:
+          nick:
+            label: "Display name"
+            description: "Name of the bot in this server, up to 32 characters"
+          bio:
+            label: "Bio"
+            description: "Shown in the profile when members click the bot"
+          avatar:
+            label: "Avatar"
+            description: "Server avatar of the bot"
+          banner:
+            label: "Banner"
+            description: "Server banner of the bot"
+          style:
+            label: "Name style"
+            description: "Font, effect and color of the bot's name"
+          reset:
+            label: "Reset"
+            description: "Reset part of the profile to the bot's default"
+      modal:
+        nick:
+          title: "Display name"
+          label: "Name of the bot in this server"
+          placeholder: "Leave empty to use the default name"
+        bio:
+          title: "Bio"
+          label: "Bio of the bot in this server"
+          placeholder: "Leave empty to use the default bio"
+        avatar:
+          title: "Avatar"
+          label: "Avatar image"
+          description: "PNG, JPG, GIF or WEBP, up to 4 MB"
+        banner:
+          title: "Banner"
+          label: "Banner image"
+          description: "A wide 5:2 image looks best, up to 4 MB"
+        style:
+          title: "Name style"
+          font: "Font"
+          effect: "Effect"
+          colors: "Colors"
+          colors_description: "Hex codes separated by commas. Gradient needs 2, Gummy 4, Prism 5"
+        reset:
+          title: "Reset profile"
+          label: "Parts to reset"
+          description: "The selected parts go back to the bot's default profile"
+          options:
+            nick: "Display name"
+            bio: "Bio"
+            avatar: "Avatar"
+            banner: "Banner"
+            style: "Name style"
+      translation:
+        premium_required: "Changing the bot's profile is a **Plus** plan perk or higher. See the plans and upgrade at <{}>!"
+        invalid_image: "The image must be PNG, JPG, GIF or WEBP."
+        image_too_large: "Images can be up to 4 MB, try a smaller one."
+        missing_colors: "This effect needs **{}** colors, enter enough hex codes separated by commas (e.g. `#ff6fc2, #7cb8ff`)."
+        failed: "Could not change the profile: {}"
+        success: "The bot's profile in this server has been updated!"
   embeds:
     info:
       title: "Premium"

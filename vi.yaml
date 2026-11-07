@@ -5649,6 +5649,80 @@ premium:
     group_description: "Plan premium của server"
     info:
       description: "Xem plan và các giới hạn của server"
+    customize:
+      description: "Đổi profile của bot trong server (Premium)"
+      embed:
+        title: "Profile của bot"
+        description: "Chọn mục bạn muốn đổi ở bên dưới, thay đổi sẽ có hiệu lực ngay trong server nhé. Muốn xem trước trực quan hơn thì bạn có thể chỉnh trên [Dashboard](<{}>)."
+        default: "Mặc định"
+        custom: "Riêng của server"
+        fields:
+          nick: "Tên hiển thị"
+          avatar: "Avatar"
+          banner: "Banner"
+          style: "Name style"
+          bio: "Bio"
+      select:
+        placeholder: "Chọn mục muốn đổi"
+        options:
+          nick:
+            label: "Tên hiển thị"
+            description: "Tên của bot trong server, tối đa 32 kí tự"
+          bio:
+            label: "Bio"
+            description: "Hiện trong profile khi member bấm vào bot"
+          avatar:
+            label: "Avatar"
+            description: "Avatar riêng của bot trong server"
+          banner:
+            label: "Banner"
+            description: "Banner riêng của bot trong server"
+          style:
+            label: "Name style"
+            description: "Font, hiệu ứng và màu của tên bot"
+          reset:
+            label: "Đặt lại"
+            description: "Đưa một phần profile về mặc định của bot"
+      modal:
+        nick:
+          title: "Tên hiển thị"
+          label: "Tên của bot trong server"
+          placeholder: "Để trống để dùng tên mặc định"
+        bio:
+          title: "Bio"
+          label: "Bio của bot trong server"
+          placeholder: "Để trống để dùng bio mặc định"
+        avatar:
+          title: "Avatar"
+          label: "Ảnh avatar"
+          description: "PNG, JPG, GIF hoặc WEBP, tối đa 4 MB"
+        banner:
+          title: "Banner"
+          label: "Ảnh banner"
+          description: "Ảnh ngang tỉ lệ 5:2 là đẹp nhất, tối đa 4 MB"
+        style:
+          title: "Name style"
+          font: "Font"
+          effect: "Hiệu ứng"
+          colors: "Màu"
+          colors_description: "Mã hex cách nhau dấu phẩy. Gradient cần 2 màu, Gummy 4 màu, Prism 5 màu"
+        reset:
+          title: "Đặt lại profile"
+          label: "Mục muốn đặt lại"
+          description: "Các mục được chọn sẽ quay về profile mặc định của bot"
+          options:
+            nick: "Tên hiển thị"
+            bio: "Bio"
+            avatar: "Avatar"
+            banner: "Banner"
+            style: "Name style"
+      translation:
+        premium_required: "Đổi profile của bot là quyền lợi của plan **Plus** trở lên. Xem các plan và nâng cấp tại <{}> nhé!"
+        invalid_image: "Ảnh phải là PNG, JPG, GIF hoặc WEBP."
+        image_too_large: "Ảnh tối đa 4 MB, bạn thử ảnh nhẹ hơn nhé."
+        missing_colors: "Hiệu ứng này cần **{}** màu, hãy nhập đủ mã hex cách nhau dấu phẩy (vd: `#ff6fc2, #7cb8ff`)."
+        failed: "Chưa đổi được profile: {}"
+        success: "Đã cập nhật profile của bot trong server!"
   embeds:
     info:
       title: "Premium"
