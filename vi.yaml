@@ -5627,6 +5627,8 @@ autotts:
     group_description: "Auto TTS trong chat voice"
     join:
       description: "Gọi bot vào voice bạn đang ở"
+    leave:
+      description: "Cho bot rời voice hiện tại"
     enable:
       description: "Bật auto TTS cho tin nhắn của bạn trong chat voice"
       describe:
@@ -5646,6 +5648,7 @@ autotts:
   translations:
     disable: "Đã tắt auto TTS."
     joined: "Bot đã vào {}, hãy bật **`/tts enable`** hoặc ping bot kèm nội dung để bot đọc nhé!"
+    left: "Bot đã rời {}."
     language:
       auto: "Bot sẽ đọc tin nhắn của bạn theo ngôn ngữ bạn đang dùng với bot."
       vi: "Bot sẽ đọc tin nhắn của bạn bằng tiếng Việt."
@@ -5660,6 +5663,8 @@ autotts:
     not_in_voice: "Bạn cần ở trong một voice để bật chế độ tạm thời."
     join_not_in_voice: "Bạn cần vào một voice trước rồi mới gọi bot vào được nhé."
     already_joined: "Bot đang ở trong voice của bạn rồi."
+    not_joined: "Bot hiện không ở trong voice nào."
+    leave_forbidden: "Chỉ người đã gọi bot vào hoặc người có quyền Move Members mới cho bot rời voice được nhé."
   speech:
     said: "{0} nói: {1}"
     sent: "đã gửi {0}"

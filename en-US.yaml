@@ -5626,6 +5626,8 @@ autotts:
     group_description: "Automatic text-to-speech in voice chat"
     join:
       description: "Bring the bot into your voice channel"
+    leave:
+      description: "Make the bot leave its current voice channel"
     enable:
       description: "Enable auto TTS for your messages in voice chat"
       describe:
@@ -5645,6 +5647,7 @@ autotts:
   translations:
     disable: "Auto TTS has been disabled."
     joined: "The bot joined {}, use **`/tts enable`** or ping the bot with your text to have it read!"
+    left: "The bot left {}."
     language:
       auto: "The bot will read your messages in the language you use with the bot."
       vi: "The bot will read your messages in Vietnamese."
@@ -5659,6 +5662,8 @@ autotts:
     not_in_voice: "You need to be in a voice channel to enable temporary mode."
     join_not_in_voice: "You need to join a voice channel first before calling the bot in."
     already_joined: "The bot is already in your voice channel."
+    not_joined: "The bot is not in any voice channel right now."
+    leave_forbidden: "Only the person who brought the bot in or members with Move Members can make it leave."
   speech:
     said: "{0} said: {1}"
     sent: "sent {0}"
