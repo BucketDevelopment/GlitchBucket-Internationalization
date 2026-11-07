@@ -5399,7 +5399,7 @@ tempvoice:
       description: "Change your temporary voice channel's bitrate"
   interface:
     content: "## Temporary Voice\nManage your temporary voice channel with the buttons below, or use **`/voice`** commands for the same options."
-    tutorial: "{} this is your voice channel, manage it with the buttons below.\n-# To send a TTS message, ping the bot followed by your text or use **`/autotts enable`**."
+    tutorial: "{} this is your voice channel, manage it with the buttons below.\n-# To send a TTS message, ping the bot followed by your text or use **`/tts enable`**."
   modals:
     info: "Information"
     name:
@@ -5622,6 +5622,8 @@ voice:
 autotts:
   commands:
     group_description: "Automatic text-to-speech in voice chat"
+    join:
+      description: "Bring the bot into your voice channel"
     enable:
       description: "Enable auto TTS for your messages in voice chat"
       describe:
@@ -5640,6 +5642,7 @@ autotts:
         auto: "Auto"
   translations:
     disable: "Auto TTS has been disabled."
+    joined: "The bot joined {}, use **`/tts enable`** or ping the bot with your text to have it read!"
     language:
       auto: "The bot will read your messages in the language you use with the bot."
       vi: "The bot will read your messages in Vietnamese."
@@ -5652,6 +5655,8 @@ autotts:
     too_long: "TTS messages can be at most {} characters."
     busy: "The bot is currently in another voice channel ({})."
     not_in_voice: "You need to be in a voice channel to enable temporary mode."
+    join_not_in_voice: "You need to join a voice channel first before calling the bot in."
+    already_joined: "The bot is already in your voice channel."
   speech:
     said: "{0} said: {1}"
     sent: "sent {0}"

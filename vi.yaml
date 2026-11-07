@@ -5400,7 +5400,7 @@ tempvoice:
       description: "Đổi bitrate cho temp voice của bạn"
   interface:
     content: "## Kênh voice tạm thời\nQuản lý temp voice của bạn bằng các nút bên dưới, hoặc dùng lệnh **`/voice`** với các tùy chọn tương tự."
-    tutorial: "{} đây là voice của bạn, hãy quản lý bằng các nút bên dưới.\n-# Để gửi tin nhắn TTS, hãy ping bot kèm nội dung hoặc dùng lệnh **`/autotts enable`**."
+    tutorial: "{} đây là voice của bạn, hãy quản lý bằng các nút bên dưới.\n-# Để gửi tin nhắn TTS, hãy ping bot kèm nội dung hoặc dùng lệnh **`/tts enable`**."
   modals:
     info: "Thông tin"
     name:
@@ -5623,6 +5623,8 @@ voice:
 autotts:
   commands:
     group_description: "Auto TTS trong chat voice"
+    join:
+      description: "Gọi bot vào voice bạn đang ở"
     enable:
       description: "Bật auto TTS cho tin nhắn của bạn trong chat voice"
       describe:
@@ -5641,6 +5643,7 @@ autotts:
         auto: "Tự động"
   translations:
     disable: "Đã tắt auto TTS."
+    joined: "Bot đã vào {}, hãy bật **`/tts enable`** hoặc ping bot kèm nội dung để bot đọc nhé!"
     language:
       auto: "Bot sẽ đọc tin nhắn của bạn theo ngôn ngữ bạn đang dùng với bot."
       vi: "Bot sẽ đọc tin nhắn của bạn bằng tiếng Việt."
@@ -5653,6 +5656,8 @@ autotts:
     too_long: "Tin nhắn TTS chỉ được tối đa {} ký tự."
     busy: "Bot đang ở một voice khác ({})."
     not_in_voice: "Bạn cần ở trong một voice để bật chế độ tạm thời."
+    join_not_in_voice: "Bạn cần vào một voice trước rồi mới gọi bot vào được nhé."
+    already_joined: "Bot đang ở trong voice của bạn rồi."
   speech:
     said: "{0} nói: {1}"
     sent: "đã gửi {0}"
