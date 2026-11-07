@@ -1540,6 +1540,8 @@ stickie:
       description: Set custom webhook for Sticky Message
       options:
         channel: Select a channel to assign Sticky Message Configuration
+      translation:
+        premium_required: "Sending Sticky Message through a webhook requires the Plus plan or higher. See pricing at {}"
     delay:
       description: Set delay for Sticky Message
       options:

@@ -1540,6 +1540,8 @@ stickie:
       description: Đặt webhook tùy chỉnh cho Sticky Message
       options:
         channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
+      translation:
+        premium_required: "Sticky Message gửi qua webhook cần server có plan Plus trở lên. Xem bảng giá tại {}"
     delay:
       description: Đặt độ trễ cho Sticky Message
       options:
