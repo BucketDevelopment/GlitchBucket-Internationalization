@@ -5643,7 +5643,17 @@ autotts:
     too_long: "Tin nhắn TTS chỉ được tối đa {} ký tự."
     busy: "Bot đang ở một voice khác ({})."
     not_in_voice: "Bạn cần ở trong một voice để bật chế độ tạm thời."
-
+  speech:
+    said: "{0} nói: {1}"
+    sent: "đã gửi {0}"
+    link: "một đường link"
+    emoji: "emoji"
+    files:
+      image: "một file ảnh"
+      video: "một file video"
+      audio: "một file âm thanh"
+      file: "một file"
+      multiple: "nhiều file"
 premium:
   commands:
     group_description: "Plan premium của server"
