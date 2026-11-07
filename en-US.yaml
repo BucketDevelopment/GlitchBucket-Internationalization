@@ -5632,8 +5632,18 @@ autotts:
       description: "Set a prefix required for messages to be read, leave empty to remove"
       describe:
         prefix: "Prefix, for example: ,"
+    language:
+      description: "Choose the language the bot reads your messages in"
+      describe:
+        language: "Auto follows the language you use with the bot"
+      choices:
+        auto: "Auto"
   translations:
     disable: "Auto TTS has been disabled."
+    language:
+      auto: "The bot will read your messages in the language you use with the bot."
+      vi: "The bot will read your messages in Vietnamese."
+      en: "The bot will read your messages in English."
     temporary: "Auto TTS has been enabled until you leave the voice channel."
     persistent: "Auto TTS has been enabled until you disable it."
     prefix_set: "Only messages starting with `{}` will be read."

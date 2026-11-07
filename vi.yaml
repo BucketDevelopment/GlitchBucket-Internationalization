@@ -5633,8 +5633,18 @@ autotts:
       description: "Đặt prefix bắt buộc để tin nhắn được đọc, để trống để xóa"
       describe:
         prefix: "Prefix, ví dụ: ,"
+    language:
+      description: "Chọn ngôn ngữ bot đọc tin nhắn của bạn"
+      describe:
+        language: "Tự động sẽ đọc theo ngôn ngữ bạn dùng với bot"
+      choices:
+        auto: "Tự động"
   translations:
     disable: "Đã tắt auto TTS."
+    language:
+      auto: "Bot sẽ đọc tin nhắn của bạn theo ngôn ngữ bạn đang dùng với bot."
+      vi: "Bot sẽ đọc tin nhắn của bạn bằng tiếng Việt."
+      en: "Bot sẽ đọc tin nhắn của bạn bằng tiếng Anh."
     temporary: "Đã bật auto TTS cho đến khi bạn rời voice."
     persistent: "Đã bật auto TTS cho đến khi bạn tắt."
     prefix_set: "Chỉ những tin nhắn bắt đầu bằng `{}` mới được đọc."
