@@ -35,6 +35,25 @@ common:
       docs: "Tài liệu"
       policy: "Điều khoản"
       premium: Premium
+    resources_header: "## <:gb_bucket:1568918315064229889> Các tài nguyên của bot"
+    resources:
+      website:
+        title: "Website"
+        description: "Trang chủ của bot, nơi xem tính năng, thống kê và dashboard."
+        button: "Website"
+      dashboard:
+        title: "Dashboard"
+        description: "Cài đặt mọi tính năng của bot ngay trên web với Interactive UI."
+        button: "Dashboard"
+      support:
+        title: "Server hỗ trợ"
+        description: "Khu vực xử lí lỗi & support mọi người sử dụng bot."
+        button: "Server"
+      docs:
+        title: "Docs"
+        description: "Hướng dẫn chi tiết các tính năng của bot."
+        button: "Đọc docs"
+    others: "**<:gb_resources:1568916814686064670> Các tài nguyên khác**\n-# Xem [Điều khoản dịch vụ](https://bot.tudubucket.dev/policy/terms-of-service/), [Chính sách bảo mật](https://bot.tudubucket.dev/policy/privacy-policy/), [Chính sách hoàn tiền](https://bot.tudubucket.dev/policy/refund/) và [Chính sách Whitelabel](https://bot.tudubucket.dev/policy/whitelabel/)."
   premium_granted:
     header: "### :e_mail: Tin nhắn này đã được gửi từ <:owner:1267138666128474215> Đội ngũ Phát triển GlitchBucket"
     open: |

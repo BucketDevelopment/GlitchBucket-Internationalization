@@ -43,6 +43,25 @@ common:
       docs: "Docs"
       policy: "Terms"
       premium: Premium
+    resources_header: "## <:gb_bucket:1568918315064229889> Bot resources"
+    resources:
+      website:
+        title: "Website"
+        description: "The bot's homepage, with features, stats and the dashboard."
+        button: "Website"
+      dashboard:
+        title: "Dashboard"
+        description: "Set up every feature of the bot on the web with an interactive UI."
+        button: "Dashboard"
+      support:
+        title: "Support server"
+        description: "Where we fix issues and help everyone using the bot."
+        button: "Server"
+      docs:
+        title: "Docs"
+        description: "Detailed guides for every feature of the bot."
+        button: "Read docs"
+    others: "**<:gb_resources:1568916814686064670> Other resources**\n-# See the [Terms of Service](https://bot.tudubucket.dev/policy/terms-of-service/), [Privacy Policy](https://bot.tudubucket.dev/policy/privacy-policy/), [Refund Policy](https://bot.tudubucket.dev/policy/refund/) and [Whitelabel Policy](https://bot.tudubucket.dev/policy/whitelabel/)."
   premium_granted:
     header: "### :e_mail: This message was sent from <:owner:1267138666128474215> GlitchBucket Development Team"
     open: |
