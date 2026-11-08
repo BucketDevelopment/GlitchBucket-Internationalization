@@ -5633,6 +5633,9 @@ autotts:
       description: "Bật auto TTS cho tin nhắn của bạn trong chat voice"
       describe:
         mode: "Tạm thời (đến khi rời voice) hoặc vĩnh viễn (đến khi tắt)"
+      choices:
+        temporary: "Tạm thời cho đến khi rời voice"
+        persistent: "Vĩnh viễn"
     disable:
       description: "Tắt auto TTS"
     prefix:

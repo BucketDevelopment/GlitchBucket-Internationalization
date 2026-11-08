@@ -5632,6 +5632,9 @@ autotts:
       description: "Enable auto TTS for your messages in voice chat"
       describe:
         mode: "Temporary (until you leave voice) or persistent (until disabled)"
+      choices:
+        temporary: "Temporary until you leave voice"
+        persistent: "Persistent"
     disable:
       description: "Disable auto TTS"
     prefix:
