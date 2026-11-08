@@ -5646,7 +5646,8 @@ autotts:
         auto: "Auto"
   translations:
     disable: "Auto TTS has been disabled."
-    joined: "The bot joined {}, use **`/tts enable`** or ping the bot with your text to have it read!"
+    joined: "The bot joined {}, everything you type in the voice chat will now be read! It stops reading for you once you leave the voice channel."
+    ping_hint: "-# Use **`/tts enable`** to have your messages read without pinging the bot!"
     left: "The bot left {}."
     language:
       auto: "The bot will read your messages in the language you use with the bot."

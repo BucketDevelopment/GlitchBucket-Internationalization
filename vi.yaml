@@ -5647,7 +5647,8 @@ autotts:
         auto: "Tự động"
   translations:
     disable: "Đã tắt auto TTS."
-    joined: "Bot đã vào {}, hãy bật **`/tts enable`** hoặc ping bot kèm nội dung để bot đọc nhé!"
+    joined: "Bot đã vào {}, giờ bạn gõ gì trong chat của voice bot cũng sẽ đọc nhé! Khi bạn rời voice thì bot tự tắt đọc cho bạn."
+    ping_hint: "-# Dùng **`/tts enable`** để bot đọc tin nhắn của bạn mà không cần ping nhé!"
     left: "Bot đã rời {}."
     language:
       auto: "Bot sẽ đọc tin nhắn của bạn theo ngôn ngữ bạn đang dùng với bot."
