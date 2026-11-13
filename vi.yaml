@@ -458,7 +458,7 @@ information:
     guild_shard_line: "-# *Server này đang chạy trên shard {}.*"
     process_mem:
       na: "Mem stats: Không khả dụng"
-      summary: "{} ({}%) virt mem"
+      summary: "{} ({}%) RAM"
     made_with_love: Made with 💖 by {}
 snipe:
   description: Kiểm tra tin nhắn đã xóa gần đây
