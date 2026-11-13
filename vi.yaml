@@ -4286,6 +4286,13 @@ moderation:
         success:
           reason: "**{}** đã bị softban, với lý do: {}"
           none: "**{}** đã bị softban."
+    bulk:
+      translation:
+        too_many: "Bạn chỉ có thể xử lý tối đa **{}** user mỗi lần."
+        ban: "Đã ban **{}** user, **{}** user không ban được."
+        softban: "Đã softban **{}** user, **{}** user không softban được."
+        kick: "Đã kick **{}** user, **{}** user không kick được."
+        failed: "ID không thành công: {}"
     unban:
       description: Bỏ cấm một người dùng
       translation:

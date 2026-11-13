@@ -457,8 +457,8 @@ information:
     startup_line: "-# **{}** started <t:{}:R> with {} shards."
     guild_shard_line: "-# This server is running on shard {}"
     process_mem:
-      na: " · Mem stats: N/A"
-      summary: " · {} ({}%) virt mem"
+      na: "Mem stats: N/A"
+      summary: "{} ({}%) virt mem"
     made_with_love: Made with 💖 by {}
 snipe:
   description: Check recent deleted message
@@ -4285,6 +4285,13 @@ moderation:
         success:
           reason: "**{}** has been softbanned, with reason: {}"
           none: "**{}** has been softbanned."
+    bulk:
+      translation:
+        too_many: "You can only handle up to **{}** users at once."
+        ban: "Banned **{}** users, **{}** users could not be banned."
+        softban: "Softbanned **{}** users, **{}** users could not be softbanned."
+        kick: "Kicked **{}** users, **{}** users could not be kicked."
+        failed: "Failed IDs: {}"
     unban:
       description: Unban a user
       translation:
