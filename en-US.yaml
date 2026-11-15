@@ -5619,7 +5619,7 @@ voice:
       title: "Notifier message"
       label: "Message"
       placeholder: "{user} just joined, say hi!"
-      description: "Supports BucketScript placeholders, e.g. {user}, {user_nick}, {channel}, {server_name}. Leave empty to delete this message."
+      description: "Supports BucketScript placeholders like {user}, {channel}, {server_name}. Leave empty to delete it."
     bulk:
       title: "Bulk edit"
       label: "Messages"

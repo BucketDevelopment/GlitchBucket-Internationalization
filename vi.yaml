@@ -5620,7 +5620,7 @@ voice:
       title: "Notifier message"
       label: "Tin nhắn"
       placeholder: "{user} vừa join voice, chào đi nào!"
-      description: "Hỗ trợ placeholder của BucketScript, ví dụ {user}, {user_nick}, {channel}, {server_name}. Để trống để xóa tin nhắn này."
+      description: "Hỗ trợ placeholder BucketScript như {user}, {channel}, {server_name}. Để trống để xóa tin nhắn này."
     bulk:
       title: "Bulk edit"
       label: "Danh sách tin nhắn"
