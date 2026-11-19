@@ -5230,6 +5230,16 @@ ticket:
         step4_start: "`[4/4]` ⌛ Creating support roles..."
         step4_complete: "`[4/4]` ✅ Created support roles {} & {}."
         complete_message: "Default setup complete. \n- To manage or add a support category, use `/ticket panel manage`\n- To edit system settings, use `/ticket configuration`\n"
+        failed: "❌ Bot lacks the permissions to finish the setup, so the channels and roles it just created were removed. Please check the bot's permissions (and its role position) and try again!"
+      missing_permissions: "❌ The bot doesn't have enough permissions to set up tickets. Please give the bot's role the following permissions and try again:"
+      permissions:
+        manage_channels: "- **Manage Channels**: create the category, the panel channel, the transcript channel and a private channel for each ticket"
+        manage_roles: "- **Manage Roles**: create the support roles and set channel permissions so only the ticket opener and supporters can see a ticket"
+        view_channel: "- **View Channels**: see the ticket channels the bot creates"
+        send_messages: "- **Send Messages**: send the ticket panel and the welcome message inside tickets"
+        embed_links: "- **Embed Links**: show the panel and ticket embeds"
+        attach_files: "- **Attach Files**: upload the transcript file to the history channel when a ticket closes"
+        read_message_history: "- **Read Message History**: read the ticket's messages to save its transcript"
       default_values:
         category_name: Support
         channel_name: "🎫〡ticket"

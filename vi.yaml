@@ -5227,6 +5227,16 @@ ticket:
         step4_start: "`[4/4]` ⌛ Tạo role hỗ trợ ..."
         step4_complete: "`[4/4]` ✅ Tạo role hỗ trợ {} & {} hoàn tất."
         complete_message: "Khởi tạo cài đặt mặc định hoàn tất. \n- Để quản lí hoặc thêm một danh mục hỗ trợ, sử dụng `/ticket panel manage`\n- Để chỉnh sửa các cài đặt có sẵn, sử dụng `/ticket configuration`\n"
+        failed: "❌ Bot không đủ quyền để hoàn tất thiết lập nên đã gỡ lại các kênh và role vừa tạo. Hãy kiểm tra quyền của bot (và vị trí role của bot) rồi thử lại nhé!"
+      missing_permissions: "❌ Bot chưa đủ quyền để thiết lập ticket. Hãy cấp thêm cho role của bot các quyền sau rồi thử lại nhé:"
+      permissions:
+        manage_channels: "- **Manage Channels**: tạo category, kênh bảng ticket, kênh lưu transcript và kênh riêng cho từng ticket"
+        manage_roles: "- **Manage Roles**: tạo role hỗ trợ và đặt quyền riêng để chỉ người mở ticket và người hỗ trợ thấy được ticket"
+        view_channel: "- **View Channels**: xem các kênh ticket mà bot tạo ra"
+        send_messages: "- **Send Messages**: gửi bảng ticket và tin nhắn chào trong ticket"
+        embed_links: "- **Embed Links**: hiện embed của bảng ticket và của ticket"
+        attach_files: "- **Attach Files**: gửi file transcript vào kênh lưu lịch sử khi đóng ticket"
+        read_message_history: "- **Read Message History**: đọc lại tin nhắn trong ticket để lưu transcript"
       default_values:
         category_name: Hỗ trợ
         channel_name: "🎫〡ticket"
