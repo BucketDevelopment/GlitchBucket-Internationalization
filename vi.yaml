@@ -207,6 +207,7 @@ logging:
       description: Thiết lập nhật ký cho mọi sự kiện liên quan đến bot
       translation:
         successful: Đã thiết lập thành công {} để trở thành kênh ghi nhật ký của {}.
+        bot_missing_webhooks: "Bot cần quyền **Manage Webhooks** ở {} để tạo webhook gửi log. Hãy cấp quyền này cho bot ở kênh đó rồi thử lại nhé!"
     disable:
       description: Vô hiệu hóa ghi nhật ký sự kiện
       translation:
@@ -474,6 +475,8 @@ snipe:
       deleted: "### Tin nhắn đã xóa của {}, {} trước đó"
       edited: "### Tin nhắn đã chỉnh sửa của {}, {} trước đó"
     channel_none: "Không tìm thấy tin nhắn đã xóa gần đây nào trong kênh này trong vòng 28 ngày."
+    no_access: "Bạn không thể xem tin nhắn đã xóa của {} vì bạn chưa có quyền **View Channel** và **Read Message History** ở kênh đó. Hãy thử lại ở một kênh mà bạn xem được nhé!"
+    nsfw_channel: "{} là kênh NSFW nên bot không thể hiện tin nhắn của kênh đó ở đây. Hãy dùng lệnh này trong một kênh NSFW nhé!"
 help:
   description: Hiển thị trợ giúp cho GlitchBucket
   options:
@@ -983,6 +986,9 @@ automod:
     permission:
       user_manage_guild: Bạn thiếu quyền Quản lý Server
       bot_manage_guild: Bot thiếu quyền Quản lý Server
+      user_moderate_members: "Bạn cần quyền **Moderate Members** để dùng hành động timeout trong rule AutoMod. Bạn hãy bỏ chọn timeout, hoặc nhờ Quản trị viên server cấp quyền này cho bạn nhé!"
+      bot_moderate_members: "Bot cần quyền **Moderate Members** để thêm hành động timeout vào rule AutoMod. Bạn hãy cấp quyền này cho bot, hoặc bỏ chọn timeout rồi thử lại nhé!"
+    edit_failed: "Bot chưa cập nhật được rule AutoMod: {}"
   commands:
     create:
       description: Tạo rule AutoMod
@@ -1523,6 +1529,7 @@ stickie:
   common:
     not_enabled: "Kênh {} chưa bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
     server_not_enabled: "Server chưa có kênh bật Sticky Message! Hãy cân nhắc thiết lập bằng cách sử dụng </stickie message:1158663116662525962>"
+    bot_missing_permissions: "Bot đang thiếu quyền {1} trong {0} nên chưa thể gửi tin nhắn stickie ở đó. Bạn hãy cấp thêm các quyền này cho bot trong kênh rồi thử lại nhé!"
   description: Đặt một Sticky Message trong kênh!
   commands:
     configuration:
@@ -1561,6 +1568,8 @@ stickie:
         channel: Chọn một kênh để chỉ định Cấu hình Sticky Message
       translation:
         premium_required: "Sticky Message gửi qua webhook cần server có plan Plus trở lên. Xem bảng giá tại {}"
+        bot_missing_permissions: "Bot đang thiếu quyền {1} trong {0} nên chưa thể tạo webhook để gửi tin nhắn stickie. Bạn hãy cấp thêm các quyền này cho bot trong kênh rồi thử lại nhé!"
+        create_failed: "Bot chưa tạo được webhook trong {} ({}). Có thể kênh đã đủ số webhook tối đa, bạn hãy xóa bớt webhook cũ trong kênh rồi thử lại nhé!"
     delay:
       description: Đặt độ trễ cho Sticky Message
       options:
@@ -1584,6 +1593,12 @@ stickie:
         invalid: "Dữ liệu JSON cho thông báo nhúng không hợp lệ, vui lòng thử lại. Hãy nhớ chỉ xây dựng và lấy Dữ liệu JSON cho Thông báo nhúng tại <https://discohook.org/>!"
 fun:
   description: mấy lệnh xàm loz
+  wordconnect:
+    bot_missing_channel_perms: "Bot đang thiếu quyền trong kênh {} nên chưa thể chạy nối từ ở đó. Hãy cấp cho bot các quyền **View Channel**, **Send Messages**, **Add Reactions** và **Read Message History** trong kênh này rồi thử lại nhé!"
+  quote:
+    cannot_read_message: "Bạn không có quyền đọc tin nhắn đó nên bot không thể quote nó. Hãy chọn một tin nhắn trong kênh mà bạn xem được nhé!"
+  common:
+    bot_missing_attach_files: "Bot cần quyền **Attach Files** trong kênh này để gửi ảnh. Hãy nhờ Quản trị viên server cấp quyền cho bot hoặc dùng lệnh ở kênh khác nhé!"
 prefix:
   description: Quản lý prefix của server
   options:
@@ -1946,6 +1961,11 @@ customrole:
         edit_name: "{} đã yêu cầu **chỉnh sửa tên hiển thị** thành {} cho {}."
         edit_icon: "{} đã yêu cầu **chỉnh sửa icon** thành {} cho {}."
         this: đây
+      not_found: "Bot không tìm thấy yêu cầu {} nữa, có thể yêu cầu này đã bị xóa rồi."
+      already_handled: "Yêu cầu {} đã được xử lý trước đó rồi, bạn không cần duyệt lại nữa nhé!"
+      icon_failed: "Bot không thể tải icon của yêu cầu {}. Icon cần là ảnh PNG hoặc JPEG và nhỏ hơn 256KB, bạn có thể nhờ người gửi yêu cầu chọn một icon khác nhé!"
+      bot_missing_channel_perms: "Bot không thể gửi yêu cầu vào kênh phê duyệt {} vì đang thiếu quyền **View Channel** hoặc **Send Messages** ở kênh đó. Bạn hãy nhờ Quản trị viên server cấp lại quyền cho bot trong kênh này nhé!"
+      apply_failed: "Bot chưa áp dụng được yêu cầu {} vì Discord từ chối thay đổi này ({}). Yêu cầu vẫn đang chờ duyệt, bạn hãy kiểm tra lại rồi thử duyệt lại nhé!"
     select_role: Chọn một Custom Role, hoặc chỉ định một Custom Role ID
     unknown_role: "ID Role `{}` không thuộc về server này - role có thể đã bị xóa."
     cannot_edit_role: "Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}). Bạn có thể hỏi Quản trị viên của server về vấn đề này, xem xét việc thay đổi role của bot thành một vị trí cao hơn."
@@ -1964,6 +1984,7 @@ customrole:
     no_feature:
       icon: Server này không có access tính năng chỉnh sửa icon role (thiếu boost).
       secondary_color: Server này chưa có access tính năng màu thứ 2 cho role.
+    user_cannot_edit_role: "Role {} đang nằm ngang hoặc cao hơn role cao nhất của bạn, nên bạn không thể quản lý role này. Hãy nhờ một Quản trị viên có role cao hơn giúp bạn nhé!"
   ui:
     manage:
       modals:
@@ -2243,6 +2264,7 @@ customrole:
           Bot không thể tạo một role có vị trí cao hơn hoặc bằng với vị trí của role cao nhất của bot (vị trí của bot: {0}, vị trí role: {1}) hoặc (vị trí của bot: {0}, vị trí {2}).
           Hãy xem xét việc thay đổi role của bot thành (1) một ưu tiên cao hơn hoặc (2) gán cho bot một role có vị trí cao hơn.
         invalid_color: "`{}` không phải là một màu hợp lệ. Định dạng màu chấp nhận được: `#hex`, `rgb(số, số, số)`"
+        position_failed: "Custom Role đã được tạo, nhưng bot không thể di chuyển role tới vị trí của {}. Hãy kéo role của bot lên cao hơn trong **Server Settings > Roles** rồi tự sắp xếp lại role này nhé!"
     max_users:
       description: "Chỉnh sửa số lượng thành viên tối đa của một Custom Role"
       options:
@@ -2830,6 +2852,9 @@ giveaway:
           options:
             name: Chỉ định tên template
             description: Chỉ định mô tả template
+  errors:
+    user_cannot_send: "Bạn không có quyền gửi tin nhắn trong {}, nên không thể tạo giveaway ở kênh đó. Hãy chọn một kênh mà bạn có thể nhắn tin nhé!"
+    channel_not_found: "Kênh của giveaway này ({}) không còn tồn tại hoặc bot không thấy được kênh. Hãy kiểm tra lại kênh và quyền **View Channel** của bot nhé!"
 bucketscript:
   errors:
     button:
@@ -2923,6 +2948,18 @@ bucketscript:
     invalid_channel: 'ID kênh không hợp lệ: `{}`.'
     cannot_add_roles: "Bạn đang cố gắng thêm role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của bot."
     cannot_remove_roles: "Bạn đang cố gắng xóa role có các quyền Quản lí, hoặc nó bằng hoặc cao hơn vị trí role cao nhất hiện tại của bot."
+    missing_permission:
+      bot_manage_roles: "Bot đang thiếu quyền **Manage Roles** nên không thêm hay xóa role được. Bạn hãy nhờ Quản trị viên của server cấp quyền này cho bot nhé!"
+      add_reactions: "Bot Thiếu Quyền **Thêm Reaction** để thêm reaction vào tin nhắn gốc/tin nhắn gửi đi."
+      manage_messages: "Bot Thiếu Quyền **Quản lý Tin nhắn** để thực hiện xóa tin nhắn gốc."
+      manage_nickname: "Bot Thiếu Quyền **Quản lý Biệt danh** để thực hiện đổi biệt danh với function `setnick`."
+      manage_roles: "Bạn cần có quyền **Quản lý Role** để sử dụng placeholder này."
+      read_message_history: "Bot thiếu quyền **Đọc Lịch sử Tin nhắn** để trả lời lại tin nhắn gốc."
+      send_messages: "Bot Thiếu Quyền: Gửi Tin nhắn"
+    set_nick:
+      owner: "Bot không thể đổi biệt danh của chủ server, Discord không cho phép điều này."
+      hierarchy: "Bot không đổi được biệt danh của {} vì role cao nhất của user này bằng hoặc cao hơn role của bot. Bạn hãy kéo role của bot lên cao hơn trong cài đặt server nhé!"
+    discord_forbidden: "Discord đã từ chối thao tác này vì bot thiếu quyền hoặc role của bot đang thấp hơn đối tượng cần sửa (`{}`). Bạn hãy kiểm tra lại quyền và vị trí role của bot nhé!"
   description: "Tiện ích để xử lý các tin nhắn động."
   translation:
     update_roles: Cập nhật role từ autoresponder
@@ -2955,6 +2992,9 @@ bucketscript:
     zero_field: "Không thể tương tác vì embed này không có field nào"
     insert_first: Thêm vào vị trí đầu tiên
     back: Quay lại
+    user_missing_channel_permission: "Bạn cần có quyền **View Channel** và **Send Messages** ở kênh {} thì mới gửi tin nhắn tới đó được. Hãy chọn kênh khác hoặc nhờ Quản trị viên của server cấp quyền cho bạn nhé!"
+    unknown_channel: "Bot không tìm thấy kênh bạn vừa chọn. Có thể kênh đã bị xóa hoặc bot không xem được kênh đó, bạn hãy chọn lại kênh khác nhé!"
+    gf_bot_missing_permission: "Bot đang thiếu quyền ở kênh {} nên không gửi tin nhắn tới đó được. Bot cần **View Channel**, **Send Messages** và **Embed Links** ở kênh này, bạn hãy cấp thêm quyền cho bot rồi lưu lại nhé!"
   colors:
     blurple: "Blurple"
     gray: "Xám"
@@ -3495,6 +3535,7 @@ bucketscript:
             missing_permission: |
               Bot đang thiếu một trong các quyền cần thiết tại kênh {} để gửi layout:
               - Xem kênh, Gửi tin nhắn
+            bot_missing_edit_permission: "Bot không sửa được layout ở kênh {}. Bot cần **View Channel**, **Send Messages** và **Read Message History** ở kênh này để tìm và sửa tin nhắn, bạn hãy cấp thêm quyền cho bot rồi thử lại nhé!"
         delete:
           description: "Xóa một giao diện (layout)"
           options:
@@ -3510,6 +3551,8 @@ bucketscript:
         missing_permission: | 
           Bot đang thiếu một trong các quyền cần thiết tại kênh {} để xử lý tin nhắn BucketScript:
           - Xem kênh, Gửi tin nhắn, Gửi embed, Đính kèm tập tin & Thêm Reaction
+        bot_missing_permission: "Bot đang thiếu quyền ở kênh {} nên không gửi tin nhắn BucketScript tới đó được. Bot cần **View Channel**, **Send Messages** và **Embed Links** ở kênh này, bạn hãy cấp thêm quyền cho bot rồi thử lại nhé!"
+        bot_missing_edit_permission: "Bot không sửa được tin nhắn ở kênh {}. Bot cần **View Channel**, **Send Messages**, **Embed Links** và **Read Message History** ở kênh này để tìm và sửa tin nhắn, bạn hãy cấp thêm quyền cho bot rồi thử lại nhé!"
 
     embed:
       show:
@@ -3523,6 +3566,7 @@ bucketscript:
           missing_permission: |
             Bot đang thiếu một trong các quyền cần thiết tại kênh {} để gửi embed:
             - Xem kênh, Gửi tin nhắn, Gửi embed
+          bot_missing_edit_permission: "Bot không sửa được embed ở kênh {}. Bot cần **View Channel**, **Send Messages**, **Embed Links** và **Read Message History** ở kênh này để tìm và sửa tin nhắn, bạn hãy cấp thêm quyền cho bot rồi thử lại nhé!"
       shared:
         description: Xem các embed bạn đã chia sẻ
         translation:
@@ -3693,6 +3737,7 @@ voting:
           **Strict**: Chỉ đếm số lượt reaction với một emoji duy nhất ({})
 
           Chọn phương pháp dưới đây. Lựa chọn hiện tại: **{}**
+      bot_missing_reactions: "Bot cần quyền **Add Reactions** và **Read Message History** ở kênh này để kiểm tra emoji. Hãy cấp quyền cho bot rồi thử lại nhé!"
     participate_method:
       embed:
         title: Phương thức Tham gia
@@ -3751,6 +3796,7 @@ voting:
             ending: Phiên này đang trong quá trình lưu dữ liệu, bạn có thể kiểm tra lại sau.
             saving: Đang lưu dữ liệu, vui lòng chờ vài phút ...
             saved: Dữ liệu đã được lưu với ID `{0}`. Để xem phiên đã lưu, sử dụng lệnh **`/voting history`** `session:{0}`.
+            bot_missing_history: "Bot cần quyền **View Channel** và **Read Message History** ở <#{}> để đọc lại các tin nhắn và lưu kết quả vote. Hãy cấp quyền cho bot rồi thử lại, hoặc kết thúc mà không lưu dữ liệu nhé!"
 tasks:
   description: Tạo các tác vụ tự động
   current_setting:
@@ -4246,6 +4292,7 @@ moderation:
           bot_hierachy: "Bot không thể timeout **{}** do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này."
           invalid_time: "`{}` không phải định dạng thời gian ngắn hợp lệ hoặc lớn hơn 7 ngày."
           unknown: "Bot không thể timeout **{}** ngay bây giờ. Vui lòng thử lại sau. `({})`"
+          administrator: "**{}** đang có quyền **Administrator**, Discord không cho phép timeout user có quyền này. Nếu cần, bạn hãy gỡ quyền **Administrator** của user trước rồi thử lại nhé!"
         success:
           reason: "**{}** đã bị tắt tiếng trong **{}**, với lý do: {}"
           none: "**{}** đã bị tắt tiếng trong **{}**."
@@ -4341,6 +4388,8 @@ moderation:
         success:
           reason: "**{}** đã bị đá khỏi server, với lý do: {}"
           none: "**{}** đã bị đá khỏi server."
+  translation:
+    forbidden: "Discord đã từ chối cho bot xử lý **{0}**. Bạn hãy kiểm tra lại quyền của bot trong server và đảm bảo role cao nhất của bot nằm trên role cao nhất của **{0}** nhé!"
 bucketbalance:
   description: Tạo vật phẩm cho member trong server!
   common:
@@ -4782,6 +4831,8 @@ emoji:
         uploaded: "Đã tải lên emoji: {}"
 network:
   description: Các lệnh liên quan tới mạng.
+  web_capture:
+    internal_address: "Bot chỉ chụp được các trang web công khai trên Internet. Địa chỉ này trỏ tới mạng nội bộ hoặc không phân giải được, hãy thử lại với một địa chỉ công khai nhé!"
 
 ticket:
   modals:
@@ -5417,6 +5468,15 @@ ticket:
     invalid_priority: "Thứ tự ưu tiên cần phải là 1 số dương trong khoảng 1 đến 99, vui lòng nhập lại."
     priority_exists: "Đã có role <@&{}> mang thứ tự ưu tiên `{}`, vui lòng nhập lại thứ tự ưu tiên khác."
     missing_permissions: "Bot thiếu các quyền sau để tạo ticket: `{}`"
+    claim_overwrites_failed: "Bạn đã nhận ticket này, nhưng bot chưa đổi được quyền của các role hỗ trợ trong kênh. Hãy cấp cho bot quyền **Manage Permissions** (Manage Roles) trong kênh ticket để bot ẩn ticket hoặc chặn nhắn tin với những người hỗ trợ khác nhé!"
+    close_missing_permissions: "Bot chưa đủ quyền để đóng ticket này. Bot cần thêm {} trong ticket để lưu transcript rồi xoá kênh (hoặc lưu trữ thread). Hãy cấp thêm quyền cho bot rồi thử lại nhé!"
+    close_failed: "Bot không xoá được kênh ticket này nên ticket vẫn đang mở. Hãy kiểm tra quyền **Manage Channels** của bot trong kênh và category của ticket rồi thử đóng lại nhé!"
+    target_everyone: "Bạn không thể thêm hoặc xoá @everyone khỏi ticket. Hãy chọn một user hoặc role cụ thể nhé!"
+    target_bot: "Bot luôn cần có mặt trong ticket để hoạt động, nên bạn không thể thêm hoặc xoá bot khỏi ticket."
+    target_owner: "Đây là người đã mở ticket, họ luôn có mặt trong ticket nên bạn không cần thêm hay xoá họ."
+    bot_missing_manage_permissions: "Bot cần quyền **Manage Permissions** (Manage Roles) trong kênh ticket này để thêm hoặc xoá user và role. Hãy cấp quyền này cho bot rồi thử lại nhé!"
+    panel_missing_permissions: "Bot chưa gửi được bảng ticket vào {} vì đang thiếu {} trong kênh đó. Hãy cấp thêm quyền cho bot trong kênh rồi gửi lại nhé!"
+    config_channel_missing_permissions: "Bot chưa lưu {} vì đang thiếu {} trong kênh đó, nên sẽ không gửi được tin nhắn vào đây. Hãy cấp thêm quyền cho bot trong kênh rồi chọn lại nhé!"
 
 
 tempvoice:
@@ -5545,6 +5605,10 @@ tempvoice:
     member_left: "Member đó không còn ở trong voice của bạn."
     preference_expired: "Tin nhắn này đã hết hạn."
     no_preference: "Bạn chưa lưu setting voice nào."
+    bot_missing_permissions: "Bot đang thiếu quyền {} trong server nên chưa thể setup temp voice. Hãy cấp thêm các quyền này cho role của bot rồi thử lại nhé!"
+    setup_failed: "Bot không thể tạo đủ các kênh cho temp voice nên đã dọn lại những kênh vừa tạo. Hãy kiểm tra quyền **Manage Channels** và **Manage Roles** của bot rồi thử lại nhé!"
+    bot_missing_channel_permissions: "Bot không đủ quyền để chỉnh voice này. Hãy nhờ Quản trị viên server kiểm tra quyền **Manage Channels**, **Manage Roles** và **Move Members** của bot ở category temp voice nhé!"
+    protected_targets: "Bot đã bỏ qua {} vì họ là moderator hoặc có role cao hơn bạn."
   translations:
     default_name: "Voice của {}"
     empty_warning: "Voice này đang trống và sẽ bị xóa {} nếu không có ai join."
@@ -5574,6 +5638,7 @@ tempvoice:
     preference_saved: "Đã lưu! Các setting này sẽ được áp dụng cho các voice sau của bạn."
     preference_reset: "Đã reset setting voice đã lưu. Các voice sau của bạn sẽ dùng setting mặc định."
     create_cooldown: "Bạn chỉ được tạo tối đa {} voice trong 1 phút. Hãy chờ **{}** rồi join lại {} nhé."
+    create_failed: "Bot không thể tạo temp voice cho bạn ở **{}** vì đang thiếu quyền {} trong category của kênh {}. Bạn hãy báo Quản trị viên server cấp lại quyền cho bot nhé!"
   preference:
     prompt: "{} bạn đã cập nhật voice. Bạn có muốn lưu các setting này cho lần sau không?\n**Các thay đổi đã thực hiện:**\n{}"
     fields:
@@ -5705,6 +5770,9 @@ autotts:
     already_joined: "Bot đang ở trong voice của bạn rồi."
     not_joined: "Bot hiện không ở trong voice nào."
     leave_forbidden: "Chỉ người đã gọi bot vào hoặc người có quyền Move Members mới cho bot rời voice được nhé."
+    missing_permissions: "Bot đang thiếu quyền {} trong {} nên chưa thể vào kênh để đọc tin nhắn. Bạn hãy nhờ Quản trị viên server cấp thêm quyền cho bot trong kênh này nhé!"
+    channel_full: "{} đã đủ người nên bot chưa vào được. Bạn hãy thử lại khi kênh còn chỗ, hoặc cấp quyền **Move Members** cho bot để bot vào được cả khi kênh đã đầy nhé!"
+    join_failed: "Bot chưa vào được {} lúc này ({}). Bạn thử lại sau một chút nhé!"
   speech:
     said: "{0} nói: {1}"
     sent: "đã gửi {0}"

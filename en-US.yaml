@@ -207,6 +207,7 @@ logging:
       description: Setup logging for every events relate to the bot
       translation:
         successful: Successfully set {} to be {}'s logging channel.
+        bot_missing_webhooks: "The bot needs **Manage Webhooks** in {} to create the logging webhook. Please grant it in that channel and try again!"
     disable:
       description: Disable events logging
       translation:
@@ -474,6 +475,8 @@ snipe:
       deleted: "### Message deleted by {}, {} ago"
       edited: "### Message edited by {}, {} ago"
     channel_none: "There are no recent deleted messages found in this channel within 28 days."
+    no_access: "You can't snipe {} because you don't have **View Channel** and **Read Message History** there. Try again in a channel you can read!"
+    nsfw_channel: "{} is an NSFW channel, so its messages can't be shown here. Please use this command in an NSFW channel!"
 help:
   description: Show help for the bot
   options:
@@ -983,6 +986,9 @@ automod:
     permission:
       user_manage_guild: Missing user Manage Server permission
       bot_manage_guild: Missing bot Manage Server permission
+      user_moderate_members: "You need **Moderate Members** to use the timeout action in an AutoMod rule. Please untick timeout, or ask a server admin for this permission!"
+      bot_moderate_members: "The bot needs **Moderate Members** to add the timeout action to an AutoMod rule. Please give the bot this permission, or untick timeout and try again!"
+    edit_failed: "The bot couldn't update the AutoMod rule: {}"
   commands:
     create:
       description: Create AutoMod rules
@@ -1523,6 +1529,7 @@ stickie:
   common:
     not_enabled: "Channel {} haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
     server_not_enabled: "This server haven't enabled Sticky Message! Consider setting it up by using </stickie message:1158663116662525962>"
+    bot_missing_permissions: "The bot is missing {1} in {0}, so it can't post the stickie message there. Please give the bot these permissions in that channel and try again!"
   description: Set a Sticky Message in your channel!
   commands:
     configuration:
@@ -1561,6 +1568,8 @@ stickie:
         channel: Select a channel to assign Sticky Message Configuration
       translation:
         premium_required: "Sending Sticky Message through a webhook requires the Plus plan or higher. See pricing at {}"
+        bot_missing_permissions: "The bot is missing {1} in {0}, so it can't create a webhook for the stickie message. Please give the bot these permissions in that channel and try again!"
+        create_failed: "The bot couldn't create a webhook in {} ({}). The channel may have reached its webhook limit, please remove some old webhooks there and try again!"
     delay:
       description: Set delay for Sticky Message
       options:
@@ -1584,6 +1593,12 @@ stickie:
         invalid: "Your embed JSON data is invalid, please try again. Remember to build & get Embed JSON Data only in <https://discohook.org/>!"
 fun:
   description: Fun commands!
+  wordconnect:
+    bot_missing_channel_perms: "The bot is missing permissions in {} so it can't run word connect there. Please give the bot **View Channel**, **Send Messages**, **Add Reactions** and **Read Message History** in that channel and try again!"
+  quote:
+    cannot_read_message: "You don't have permission to read that message, so the bot can't quote it. Please pick a message from a channel you can see!"
+  common:
+    bot_missing_attach_files: "The bot needs **Attach Files** in this channel to send images. Please ask a server admin to grant it, or use the command in another channel!"
 prefix:
   description: Manage server prefixes
   options:
@@ -1946,6 +1961,11 @@ customrole:
         edit_name: "{} requested to **edit display name** to {} for {}."
         edit_icon: "{} requested to **edit display icon** to {} for {}."
         this: this
+      not_found: "The bot can't find request {} anymore, it may have been deleted."
+      already_handled: "Request {} has already been handled, there's no need to review it again!"
+      icon_failed: "The bot couldn't download the icon of request {}. The icon must be a PNG or JPEG image under 256KB, you can ask the requester to pick another icon!"
+      bot_missing_channel_perms: "The bot can't send the request to the approval channel {} because it's missing **View Channel** or **Send Messages** there. Please ask a server admin to give the bot these permissions in that channel!"
+      apply_failed: "The bot couldn't apply request {} because Discord rejected the change ({}). The request is still pending, please check it and try approving again!"
     select_role: Select a Custom Role, or specify your Custom Role ID
     unknown_role: "Role ID `{}` does not belong to this server - the role may have been deleted."
     cannot_edit_role: "I cannot manage a role that has higher than or equal position with my highest role position (me: pos {0}, destination role: pos {1}).\nYou may contact Server Administrator about this, consider change my role to a higher priority."
@@ -1964,6 +1984,7 @@ customrole:
     no_feature: 
       icon: This server does not have access in editing role icons (insufficient boosts).
       secondary_color: This server does not have access for secondary role color.
+    user_cannot_edit_role: "{} is at or above your highest role, so you can't manage it. Please ask an admin with a higher role to help you!"
     
   ui:
     manage:
@@ -2243,6 +2264,7 @@ customrole:
           I cannot create a role that has higher than or equal position with my highest role position (me: pos {1}, destination role: pos {0}) or your highest role position (me: pos {1}, your: pos {2}).
           Consider change my role to a higher priority, or create a role with position that is lower than your/mine highest position.
         invalid_color: "`{}` is not a valid color. Acceptable color format: `#hex`, `rgb(number, number, number)`"
+        position_failed: "The Custom Role was created, but the bot couldn't move it to the position of {}. Please move the bot's role higher in **Server Settings > Roles** and rearrange this role yourself!"
     max_users:
       description: "Edit maximum users of a custom role"
       options:
@@ -2830,6 +2852,9 @@ giveaway:
           options:
             name: Specify template name
             description: Specify template description
+  errors:
+    user_cannot_send: "You don't have permission to send messages in {}, so you can't host a giveaway there. Please pick a channel you can send messages in."
+    channel_not_found: "This giveaway's channel ({}) no longer exists or the bot can't see it. Please check the channel and the bot's **View Channel** permission."
 bucketscript:
   description: "Utilities for processing dynamic messages & embeds"
   translation:
@@ -2863,6 +2888,9 @@ bucketscript:
     zero_field: "Cannot interact since this embed has zero field"
     insert_first: Insert to the first
     back: Back
+    user_missing_channel_permission: "You need **View Channel** and **Send Messages** in {} to send messages there. Please pick another channel or ask a server admin to give you those permissions!"
+    unknown_channel: "The bot couldn't find the channel you picked. It may have been deleted or the bot can't see it, please pick another channel!"
+    gf_bot_missing_permission: "The bot is missing permissions in {} so it can't send messages there. It needs **View Channel**, **Send Messages** and **Embed Links** in that channel, please grant them and save again!"
   colors:
     blurple: "Blurple"
     gray: "Gray"
@@ -2963,6 +2991,18 @@ bucketscript:
       not_found: "No layout exists with this ID."
       no_selects: "No selects to choose from, see more at /selects"
       no_buttons: "No buttons to choose from, see more at /buttons"
+    missing_permission:
+      bot_manage_roles: "The bot is missing **Manage Roles** so it can't add or remove roles. Please ask a server admin to grant it to the bot!"
+      add_reactions: "Bot Missing Permission: Add Reactions"
+      manage_messages: "Bot Missing Permission: Manage Messages"
+      manage_nickname: "Bot Missing Permission: Manage Nickname"
+      manage_roles: "You need **Manage Roles** permission to use this placeholder."
+      read_message_history: "`Reply` requires **Read Message History** permission."
+      send_messages: "Bot Missing Permission: Send Messages"
+    set_nick:
+      owner: "The bot can't change the server owner's nickname, Discord doesn't allow it."
+      hierarchy: "The bot can't change {}'s nickname because their highest role is equal to or above the bot's. Please move the bot's role higher in the server settings!"
+    discord_forbidden: "Discord refused this action because the bot is missing permissions or its role is below the target (`{}`). Please check the bot's permissions and role position!"
   success:
     option_added: "Option has been added."
     option_deleted: "Option has been deleted."
@@ -3495,6 +3535,7 @@ bucketscript:
             missing_permission: |
               Bot is missing one of required permissions in {} to send layout:
               - View Channel, Send Messages
+            bot_missing_edit_permission: "The bot can't edit the layout in {}. It needs **View Channel**, **Send Messages** and **Read Message History** in that channel to find and edit the message, please grant them and try again!"
         delete:
           description: "Delete a layout (interface)"
           options:
@@ -3510,6 +3551,8 @@ bucketscript:
         missing_permission: |
           Bot is missing one of required permissions in {} to process BucketScript message:
           - View Channel, Send Messages, Send Embed, Attach Files & Add Reactions
+        bot_missing_permission: "The bot is missing permissions in {} so it can't send the BucketScript message there. It needs **View Channel**, **Send Messages** and **Embed Links** in that channel, please grant them and try again!"
+        bot_missing_edit_permission: "The bot can't edit the message in {}. It needs **View Channel**, **Send Messages**, **Embed Links** and **Read Message History** in that channel to find and edit the message, please grant them and try again!"
     embed:
       show:
         description: Send an embed
@@ -3522,6 +3565,7 @@ bucketscript:
           missing_permission: |
             Bot is missing one of required permissions in {} to send embed:
             - View Channel, Send Messages, Send Embeds
+          bot_missing_edit_permission: "The bot can't edit the embed in {}. It needs **View Channel**, **Send Messages**, **Embed Links** and **Read Message History** in that channel to find and edit the message, please grant them and try again!"
       shared:
         description: View your shared embeds
         translation:
@@ -3692,6 +3736,7 @@ voting:
           **Strict**: Count only reaction count of a single emoji ({})
 
           Select method below. Current option: **{}**
+      bot_missing_reactions: "The bot needs **Add Reactions** and **Read Message History** in this channel to check the emoji. Please grant them and try again!"
     participate_method:
       embed:
         title: Participate Method
@@ -3750,6 +3795,7 @@ voting:
             ending: This session is currently in save progess, you can check back later.
             saving: Saving data, please wait for some minutes ...
             saved: Your data has been saved with ID `{0}`. To view your saved session, use command **`/voting history`** `session:{0}`.
+            bot_missing_history: "The bot needs **View Channel** and **Read Message History** in <#{}> to read the messages and save the voting results. Please grant them and try again, or end without saving data!"
 tasks:
   description: Create Automatic tasks
   current_setting:
@@ -4245,6 +4291,7 @@ moderation:
           bot_hierachy: "I cannot timeout **{}** due to Discord hierarchy rules. Please give me higher role to perform this action."
           invalid_time: "`{}` is not a valid short time format, or larger than 7 days."
           unknown: "I cannot timeout **{}** right now. Please try again later. `({})`"
+          administrator: "**{}** has the **Administrator** permission, and Discord does not allow timing out users with it. If needed, remove their **Administrator** permission first and try again!"
         success:
           reason: "**{}** has been timed out for **{}**, with reason: {}"
           none: "**{}** has been timed out for **{}**."
@@ -4340,6 +4387,8 @@ moderation:
         success:
           reason: "**{}** has been kicked, with reason: {}"
           none: "**{}** has been kicked."
+  translation:
+    forbidden: "Discord did not let the bot act on **{0}**. Please check the bot's permissions in this server and make sure the bot's highest role is above **{0}**'s highest role!"
           
 bucketbalance:
   description: Item system for your server!
@@ -4781,6 +4830,8 @@ emoji:
         uploaded: "Emoji uploaded: {}"
 network:
   description: Network Utilities
+  web_capture:
+    internal_address: "Only public websites can be captured. This address points to a private network or could not be resolved, please try again with a public address!"
 
 ticket:
   modals:
@@ -5417,6 +5468,15 @@ ticket:
     invalid_priority: "Priority must be a positive number between 1 and 99. Please re-enter."
     priority_exists: "The role <@&{}> already has priority `{}`, please enter a different priority."
     missing_permissions: "I am missing the following permissions to create tickets: `{}`"
+    claim_overwrites_failed: "You claimed this ticket, but the bot couldn't update the support roles' permissions in this channel. Give the bot **Manage Permissions** (Manage Roles) in the ticket channel so it can hide the ticket from, or stop replies by, other supporters."
+    close_missing_permissions: "The bot doesn't have enough permissions to close this ticket. It also needs {} in the ticket to save the transcript and then delete the channel (or archive the thread). Please give the bot these permissions and try again."
+    close_failed: "The bot couldn't delete this ticket channel, so the ticket is still open. Check the bot's **Manage Channels** permission in the ticket channel and its category, then try closing it again."
+    target_everyone: "You can't add or remove @everyone from a ticket. Please pick a specific user or role."
+    target_bot: "The bot always needs to be in the ticket to work, so you can't add or remove it."
+    target_owner: "This is the user who opened the ticket. They always stay in the ticket, so you don't need to add or remove them."
+    bot_missing_manage_permissions: "The bot needs **Manage Permissions** (Manage Roles) in this ticket channel to add or remove users and roles. Please give the bot this permission and try again."
+    panel_missing_permissions: "The bot can't send the ticket panel to {} because it's missing {} there. Please give the bot these permissions in that channel and send it again."
+    config_channel_missing_permissions: "The bot didn't save {} because it's missing {} there and wouldn't be able to post in it. Please give the bot these permissions in that channel and pick it again."
 
 tempvoice:
   commands:
@@ -5544,6 +5604,10 @@ tempvoice:
     member_left: "That member is no longer in your voice channel."
     preference_expired: "This prompt has expired."
     no_preference: "You do not have any saved voice settings."
+    bot_missing_permissions: "The bot is missing {} in this server, so it can't set up temp voice yet. Please give the bot's role these permissions and try again!"
+    setup_failed: "The bot couldn't create all the temp voice channels, so it removed the ones it had just created. Please check the bot's **Manage Channels** and **Manage Roles** permissions and try again!"
+    bot_missing_channel_permissions: "The bot doesn't have enough permissions to change this voice. Please ask a server admin to check the bot's **Manage Channels**, **Manage Roles** and **Move Members** permissions in the temp voice category!"
+    protected_targets: "The bot skipped {} because they are moderators or have a higher role than you."
   translations:
     default_name: "{}'s channel"
     empty_warning: "This voice channel is empty and will be deleted {} if no one joins."
@@ -5573,6 +5637,7 @@ tempvoice:
     preference_saved: "Saved! These settings will be applied to your next voice channels."
     preference_reset: "Your saved voice settings have been reset. Your next voice channels will use the default settings."
     create_cooldown: "You can only create {} voice channels per minute. Please wait **{}** and then join {} again."
+    create_failed: "The bot couldn't create a temp voice for you in **{}** because it's missing {} in the category of {}. Please let a server admin know so they can fix the bot's permissions!"
   preference:
     prompt: "{} you have updated your voice channel. Do you want to save these settings for next time?\n**Changes made:**\n{}"
     fields:
@@ -5704,6 +5769,9 @@ autotts:
     already_joined: "The bot is already in your voice channel."
     not_joined: "The bot is not in any voice channel right now."
     leave_forbidden: "Only the person who brought the bot in or members with Move Members can make it leave."
+    missing_permissions: "The bot is missing {} in {}, so it can't join to read messages aloud. Please ask a server admin to give the bot these permissions in that channel!"
+    channel_full: "{} is full, so the bot can't join. Please try again when there's room, or give the bot **Move Members** so it can join even when the channel is full!"
+    join_failed: "The bot couldn't join {} right now ({}). Please try again in a moment!"
   speech:
     said: "{0} said: {1}"
     sent: "sent {0}"
