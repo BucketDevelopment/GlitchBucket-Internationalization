@@ -1914,6 +1914,8 @@ customrole:
       remove_boost: "Cho đến khi xóa tất cả các boost"
     fields:
       current: "{} (Hiện tại: {} Thành viên)"
+      current_unknown: "{} (Hiện tại: Chưa xác định)"
+      unknown: "Chưa xác định"
       author: "Người sở hữu"
       color: "Màu"
       maximum_member: "Số lượng thành viên tối đa"
@@ -2203,13 +2205,14 @@ customrole:
           title: Hành Động Khi Hết Hạn
           text: Hành Động Khi Role Hết Hạn
           placeholder: Chọn hành động…
+          unavailable: "Chế độ này không còn khả dụng nữa. Từ giờ role hết hạn sẽ được xóa luôn nhé!"
           options:
             removeall:
-              label: Xóa Tất Cả Thành Viên
-              description: Xóa tất cả thành viên khỏi role
+              label: Xóa Tất Cả Thành Viên (không khả dụng)
+              description: Không còn khả dụng, role hết hạn sẽ được xóa luôn nhé
             remove:
-              label: Chỉ Xóa Owner
-              description: Chỉ xóa owner của role khỏi role
+              label: Chỉ Xóa Owner (không khả dụng)
+              description: Không còn khả dụng, role hết hạn sẽ được xóa luôn nhé
             delete:
               label: Xóa Role
               description: Xóa toàn bộ role
@@ -2351,8 +2354,8 @@ customrole:
     on_expire:
       description: "Chỉ định sự kiện khi Custom Role của một người dùng hết hạn"
       choices:
-        removeall: "Xóa tất cả mọi người khỏi role (mặc định)"
-        remove: "Xóa tất cả mọi người khỏi role (loại trừ người sở hữu)"
+        removeall: "Xóa tất cả mọi người khỏi role (không còn khả dụng, role sẽ bị xóa)"
+        remove: "Xóa tất cả mọi người khỏi role, trừ owner (không còn khả dụng, role sẽ bị xóa)"
         delete: "Xóa role"
     user:
       common:
@@ -2365,6 +2368,7 @@ customrole:
           description: "Thêm một thành viên vào Custom Role"
           translation:
             maximum_reached: "Bạn đã đạt tối đa số lượng thành viên cho Custom Role này ({} trong số {}). Bạn có thể phải xóa bỏ một người khác để thêm người khác."
+            count_unavailable: "Hiện bot không thể kiểm tra số thành viên của Custom Role này, nên lúc này chỉ admin mới thêm thành viên được. Bạn thử lại sau ít phút nhé!"
             can_remove_only: "{} đã có Custom Role {}, bạn chỉ có thể xóa role này khỏi họ."
         remove:
           description: "Xóa một thành viên khỏi Custom Role"
@@ -4480,6 +4484,7 @@ server:
     membercount:
       description: Hiển thị số lượng member trong server này
       translation:
+        members_unavailable: "Bot chưa lấy được danh sách member của server này, có thể Discord đang giới hạn tạm thời. Bạn thử lại sau ít phút nhé!"
         total: Tổng cộng
         human: Người thật
         bot: Bot
@@ -4489,14 +4494,9 @@ server:
     role:
       description: Quản lí role trong server
       translation:
+        members_unavailable: "Bot chưa lấy được danh sách member của server này, có thể Discord đang giới hạn tạm thời. Bạn thử lại sau ít phút nhé!"
         member_not_found: "Không tìm thấy member nào phù hợp với `{}`."
         role_not_found: "Không tìm thấy role nào phù hợp với `{}`."
-      members:
-        description: Hiển thị thành viên của một role cụ thể
-        options:
-          limit: "Chỉ định giới hạn số lượng mục mỗi trang, mặc định là 10"
-        translation:
-          title: "Thành viên của role @{}"
       add:
         description: Thêm một role cho một thành viên
         translation:
@@ -4517,7 +4517,7 @@ server:
             human: Tất cả Người (không bao gồm bot)
             bot: Tất cả Bot (không bao gồm người)
         translation:
-          already_running: Server này hiện đang có một tiến trình gán role cho tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: "Server này đang có một tiến trình gán role cho tất cả thành viên. Hãy đợi tiến trình đó xong, hoặc dừng nó bằng `/role abort-all` nhé."
           server_hierachy: Bot không thể cấp **{}** cho tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được gán bởi bot vì lý do bảo mật."
           adding: 'Đang thực hiện thêm **{}** cho {} tài khoản. Thời gian hoàn thành ước tính: {}.'
@@ -4536,11 +4536,16 @@ server:
         describe:
           option: Chọn một tùy chọn để gán role
         translation:
-          already_running: Server này hiện đang có một tiến trình xóa role khỏi tất cả thành viên, vui lòng thử lại sau vài phút.
+          already_running: "Server này đang có một tiến trình xóa role khỏi tất cả thành viên. Hãy đợi tiến trình đó xong, hoặc dừng nó bằng `/role abort-all` nhé."
           server_hierachy: Bot không thể xóa **{}** khỏi tất cả thành viên do quy tắc cấp bậc Discord. Vui lòng cung cấp cho bot role cao hơn để thực hiện hành động này.
           elevated_permissions: "**{}** chứa quyền hạn cao và không thể được xóa bởi bot vì lý do bảo mật."
-          adding: Removing **{}** from {} accounts, this may take {}.
+          removing: "Đang thực hiện xóa **{}** khỏi {} tài khoản. Thời gian hoàn thành ước tính: {}."
           successful: Đã xóa thành công **{}** khỏi {} tài khoản.
+      abort-all:
+        description: "Dừng tiến trình add-all hoặc remove-all đang chạy"
+        translation:
+          not_running: "Server này không có tiến trình add-all hay remove-all nào đang chạy."
+          aborted: "Đã dừng tiến trình {} với role **{}**. Bot đã xử lí xong {} tài khoản trước khi dừng."
 quests:
   description: Tạo nhiệm vụ cho thành viên trong server!
   translation:

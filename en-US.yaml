@@ -1914,6 +1914,8 @@ customrole:
       remove_boost: "Until remove all boosts"
     fields:
       current: "{} (Current: {} Members)"
+      current_unknown: "{} (Current: Unknown)"
+      unknown: "Unknown"
       author: "Author"
       color: "Color"
       maximum_member: "Maximum members"
@@ -2203,13 +2205,14 @@ customrole:
           title: On Expire Action
           text: Action on Role Expiry
           placeholder: Select action…
+          unavailable: "This mode is no longer available. Expired roles are now deleted instead."
           options:
             removeall:
-              label: Remove All Members
-              description: Remove all members from the role
+              label: Remove All Members (unavailable)
+              description: No longer available, expired roles are deleted instead
             remove:
-              label: Remove Author Only
-              description: Remove only the author from the role
+              label: Remove Author Only (unavailable)
+              description: No longer available, expired roles are deleted instead
             delete:
               label: Delete Role
               description: Delete the role entirely
@@ -2351,8 +2354,8 @@ customrole:
     on_expire:
       description: "Specify event to do when an user's custom role is expired"
       choices:
-        removeall: "Remove everyone from the role (default)"
-        remove: "Remove everyone from the role (exclude role author)"
+        removeall: "Remove everyone from the role (no longer available, the role is deleted)"
+        remove: "Remove everyone from the role except the author (no longer available, the role is deleted)"
         delete: "Delete the role"
     user:
       common:
@@ -2365,6 +2368,7 @@ customrole:
           description: "Add a member to your custom role"
           translation:
             maximum_reached: "You have reached maximum users for this custom role ({} out of {}). You may have to remove another user in order to add someone else."
+            count_unavailable: "The member count of this custom role cannot be checked right now, so only admins can add members for the moment. Please try again in a few minutes!"
             can_remove_only: "{} already has your custom role {}, you can only remove this role from them."
         remove:
           description: "Remove a member from your custom role"
@@ -4480,6 +4484,7 @@ server:
     membercount:
       description: Show members count about this server
       translation:
+        members_unavailable: "I couldn't load this server's member list right now, Discord may be limiting it for a moment. Please try again in a few minutes!"
         total: Total
         human: Humans
         bot: Bots
@@ -4489,14 +4494,9 @@ server:
     role:
       description: Manage server roles
       translation:
+        members_unavailable: "I couldn't load this server's member list right now, Discord may be limiting it for a moment. Please try again in a few minutes!"
         member_not_found: "Could not find a member matching `{}`."
         role_not_found: "Could not find a role matching `{}`."
-      members:
-        description: Show members of a specific role
-        options:
-          limit: "Specify entries limit per page, default 10"
-        translation:
-          title: "@{}'s Role Members"
       add:
         description: Add a role to a member
         translation:
@@ -4517,7 +4517,7 @@ server:
             human: All Humans (exclude bots)
             bot: All Bots (exclude humans)
         translation:
-          already_running: This server is currently having an instance of assigning roles to all members, please try after a few minutes.
+          already_running: "This server already has a running process adding a role to all members. Please wait for it to finish, or stop it with `/role abort-all`."
           server_hierachy: I cannot give **{}** to all members due to Discord hierarchy rules. Please give me higher role to perform this action.
           elevated_permissions: "**{}** contains elevated permission and cannot be assigned by the bot for security reasons."
           adding: Adding **{}** to {} accounts, this may take {}.
@@ -4536,11 +4536,16 @@ server:
         describe:
           option: Select an option for assigning roles
         translation:
-          already_running: This server is currently having an instance of removing roles from all members, please try after a few minutes.
+          already_running: "This server already has a running process removing a role from all members. Please wait for it to finish, or stop it with `/role abort-all`."
           server_hierachy: I cannot remove {} from all members due to Discord hierarchy rules. Please give me higher role to perform this action.
           elevated_permissions: "**{}** contains elevated permission and cannot be removed by the bot for security reasons."
-          adding: Removing **{}** from {} accounts, this may take {}.
+          removing: "Removing **{}** from {} accounts, this may take {}."
           successful: Successfully removed **{}** from {} accounts.
+      abort-all:
+        description: "Stop the running add-all or remove-all process"
+        translation:
+          not_running: "This server has no running add-all or remove-all process."
+          aborted: "Stopped {} for role **{}**. {} accounts were processed before stopping."
 quests:
   description: Create Quests for your server members!
   translation:
