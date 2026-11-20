@@ -5742,7 +5742,7 @@ autotts:
         temporary: "Temporary until you leave voice"
         persistent: "Persistent"
     disable:
-      description: "Disable auto TTS"
+      description: "Disable auto TTS for your messages"
     prefix:
       description: "Set a prefix required for messages to be read, leave empty to remove"
       describe:
@@ -5753,6 +5753,19 @@ autotts:
         language: "Auto follows the language you use with the bot"
       choices:
         auto: "Auto"
+    server:
+      description: "Auto TTS settings for the whole server"
+      enable:
+        description: "Read voice chat messages for everyone, no need to turn it on one by one"
+      disable:
+        description: "Turn off auto reading for the server, people who turned it on themselves are still read"
+      read-name:
+        description: "Turn reading the sender's name before the message on or off"
+        describe:
+          value: "When on, the bot reads the sender's name whenever the speaker changes"
+        choices:
+          enable: "On"
+          disable: "Off"
   translations:
     disable: "Auto TTS has been disabled."
     joined: "The bot joined {}, everything you type in the voice chat will now be read! It stops reading for you once you leave the voice channel."
@@ -5766,6 +5779,11 @@ autotts:
     persistent: "Auto TTS has been enabled until you disable it."
     prefix_set: "Only messages starting with `{}` will be read."
     prefix_removed: "Prefix removed, all of your messages will be read."
+    server:
+      enabled: "Auto TTS is now on for the whole server! Anyone sitting in the bot's voice channel who types in that channel's chat will be read out, no need to turn it on themselves. Anyone who doesn't want to be read can use `/tts disable`."
+      disabled: "Auto TTS is now off for the whole server. People who turned it on with `/tts enable` are still read as before."
+      read_name_on: "The bot will read the sender's name whenever the speaker changes."
+      read_name_off: "The bot won't read the sender's name anymore, only the message itself."
   errors:
     too_long: "TTS messages can be at most {} characters."
     busy: "The bot is currently in another voice channel ({})."
@@ -5773,7 +5791,7 @@ autotts:
     join_not_in_voice: "You need to join a voice channel first before calling the bot in."
     already_joined: "The bot is already in your voice channel."
     not_joined: "The bot is not in any voice channel right now."
-    leave_forbidden: "Only the person who brought the bot in or members with Move Members can make it leave."
+    leave_forbidden: "Only people in the same voice channel as the bot, the person who brought it in, or members with Move Members can make it leave."
     missing_permissions: "The bot is missing {} in {}, so it can't join to read messages aloud. Please ask a server admin to give the bot these permissions in that channel!"
     channel_full: "{} is full, so the bot can't join. Please try again when there's room, or give the bot **Move Members** so it can join even when the channel is full!"
     join_failed: "The bot couldn't join {} right now ({}). Please try again in a moment!"

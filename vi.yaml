@@ -5743,7 +5743,7 @@ autotts:
         temporary: "Tạm thời cho đến khi rời voice"
         persistent: "Vĩnh viễn"
     disable:
-      description: "Tắt auto TTS"
+      description: "Tắt auto TTS cho tin nhắn của bạn"
     prefix:
       description: "Đặt prefix bắt buộc để tin nhắn được đọc, để trống để xóa"
       describe:
@@ -5754,6 +5754,19 @@ autotts:
         language: "Tự động sẽ đọc theo ngôn ngữ bạn dùng với bot"
       choices:
         auto: "Tự động"
+    server:
+      description: "Cài đặt auto TTS cho cả server"
+      enable:
+        description: "Đọc tin nhắn trong chat voice cho mọi người, không cần ai tự bật"
+      disable:
+        description: "Tắt đọc tự động cho cả server, ai đã tự bật vẫn được đọc"
+      read-name:
+        description: "Bật hoặc tắt đọc tên người nhắn trước nội dung"
+        describe:
+          value: "Bật thì bot đọc tên người nhắn mỗi khi đổi người nói"
+        choices:
+          enable: "Bật"
+          disable: "Tắt"
   translations:
     disable: "Đã tắt auto TTS."
     joined: "Bot đã vào {}, giờ bạn gõ gì trong chat của voice bot cũng sẽ đọc nhé! Khi bạn rời voice thì bot tự tắt đọc cho bạn."
@@ -5767,6 +5780,11 @@ autotts:
     persistent: "Đã bật auto TTS cho đến khi bạn tắt."
     prefix_set: "Chỉ những tin nhắn bắt đầu bằng `{}` mới được đọc."
     prefix_removed: "Đã xóa prefix, mọi tin nhắn của bạn sẽ được đọc."
+    server:
+      enabled: "Đã bật auto TTS cho cả server! Giờ ai ngồi trong voice có bot mà nhắn vào chat của voice đó đều sẽ được đọc, không cần tự bật nữa. Ai không muốn bị đọc thì dùng `/tts disable` nhé."
+      disabled: "Đã tắt auto TTS cho cả server. Những ai đã tự bật bằng `/tts enable` vẫn được đọc như trước nhé."
+      read_name_on: "Bot sẽ đọc tên người nhắn mỗi khi đổi người nói."
+      read_name_off: "Bot sẽ không đọc tên người nhắn nữa, chỉ đọc nội dung tin nhắn."
   errors:
     too_long: "Tin nhắn TTS chỉ được tối đa {} ký tự."
     busy: "Bot đang ở một voice khác ({})."
@@ -5774,7 +5792,7 @@ autotts:
     join_not_in_voice: "Bạn cần vào một voice trước rồi mới gọi bot vào được nhé."
     already_joined: "Bot đang ở trong voice của bạn rồi."
     not_joined: "Bot hiện không ở trong voice nào."
-    leave_forbidden: "Chỉ người đã gọi bot vào hoặc người có quyền Move Members mới cho bot rời voice được nhé."
+    leave_forbidden: "Chỉ người đang ở cùng voice với bot, người đã gọi bot vào hoặc người có quyền Move Members mới cho bot rời voice được nhé."
     missing_permissions: "Bot đang thiếu quyền {} trong {} nên chưa thể vào kênh để đọc tin nhắn. Bạn hãy nhờ Quản trị viên server cấp thêm quyền cho bot trong kênh này nhé!"
     channel_full: "{} đã đủ người nên bot chưa vào được. Bạn hãy thử lại khi kênh còn chỗ, hoặc cấp quyền **Move Members** cho bot để bot vào được cả khi kênh đã đầy nhé!"
     join_failed: "Bot chưa vào được {} lúc này ({}). Bạn thử lại sau một chút nhé!"
