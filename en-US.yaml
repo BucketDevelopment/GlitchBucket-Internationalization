@@ -1922,6 +1922,7 @@ customrole:
       created_at: "Created at"
       expired_in: "Expired in"
       members: "Role Members"
+      members_hint: "Click {} to see the member list!"
       granted_permission: "Granted Permissions"
       restricted_permission: "Restricted Permissions"
     admin_title: "Custom Role Admin Configuration for {}"
