@@ -2920,6 +2920,7 @@ bucketscript:
       number: Bạn chưa chọn một số ngẫu nhiên trước khi gọi placeholder `[random:number]`. Vui lòng thêm một hàm tính số ngẫu nhiên `{random:number:A-B}` để chọn một số ngẫu nhiên từ `A` đến `B`, sau đó lấy số ngẫu nhiên bằng cách sử dụng placeholder `[random:number]`.
       string: Bạn chưa chọn một chuỗi ngẫu nhiên trước khi gọi placeholder `[random:string]`. Vui lòng thêm một hàm tính chuỗi ngẫu nhiên `{random:string:A|B|C}` để chọn một chuỗi ngẫu nhiên từ `A`, `B`, hoặc `C`, sau đó lấy chuỗi ngẫu nhiên bằng cách sử dụng placeholder `[random:string]`.
     malform_number: "Dữ liệu đầu vào chưa chính xác đối với hàm số ngẫu nhiên. Để chọn một số ngẫu nhiên giữa `A` và `B`, vui lòng làm theo cấu trúc: `{random:number:A-B}`"
+    malform_weight: "Weight trong `{random:weight:A|B|C}` phải là số từ `0` đến `999.9` (tối đa 1 chữ số thập phân, có thể ghi kèm `%`), ngăn cách bởi dấu `|`. Ví dụ: `{random:weight:70|20|10}`"
     argument_error:
       from: Tin nhắn cần có độ dài `{}`.
       range: Tin nhắn cần có độ dài `{}` đến `{}`.
