@@ -4789,8 +4789,8 @@ snowflake_ctxmenu:
       placeholder: 123456789012345678 | https://discord.com/channels/...
     sent: Sent
     compare:
-      given: Showing difference in time between the ID from the given message and the current timestamp.
-      current: Showing difference in time between the ID from the given message and the given ID.
+      given: Showing difference in time between the ID from the given message and the given ID.
+      current: Showing difference in time between the ID from the given message and the current timestamp.
     invalid_input: Invalid input. Please provide a valid ID/Message link.
 emoji:
   description: Emoji Management.
