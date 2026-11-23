@@ -2419,6 +2419,8 @@ collections:
     no_collections: "You don't have any illustration in your collection yet, :("
     title: "{}'s Collection"
     saved_at: "Saved at: "
+    delete_placeholder: Select illustrations to remove from your collection
+    deleted: "Removed **{}** illustration(s) from your collection."
   button:
     label: Save to Collection!
     saved: "Successfully saved illustration to your collection! Use </collections:1231542816325374034> to view your collection."

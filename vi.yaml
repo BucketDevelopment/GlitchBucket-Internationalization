@@ -2419,6 +2419,8 @@ collections:
     no_collections: "Bạn không có bức họa nào được lưu bào bộ sưu tập, :("
     title: "Bộ sưu tập yêu thích của {}"
     saved_at: "Đã lưu lúc: "
+    delete_placeholder: Chọn ảnh để xóa khỏi bộ sưu tập
+    deleted: "Đã xóa **{}** ảnh khỏi bộ sưu tập."
   button:
     label: Lưu vào Bộ sưu tập!
     saved: "Đã lưu bức họa vào bộ sưu tập yêu thích! Hãy sử dụng lệnh </collection:1231542816325374034> để xem collection."
