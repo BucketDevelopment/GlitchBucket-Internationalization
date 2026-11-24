@@ -1321,6 +1321,7 @@ lemme:
     pat: Pat an user!
     punch: Punch an user!
     match: Match an user!
+    lick: Lick an user!
 blacklist:
   description: Global Bot's Blacklist
   commands:
