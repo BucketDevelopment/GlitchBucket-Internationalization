@@ -2902,9 +2902,17 @@ bucketscript:
         user: "Cần một người dùng hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
         role: "Cần một role hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
         channel: "Cần một kênh hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
-    user:
-      missing_permission: "### {} Thiếu quyền: {}"
-      placeholder_error: "### {} Lỗi quy trình: {}"
+        number: "Cần một số hợp lệ tại vị trí `#{}`. Bạn đã nhập `{}`."
+    group:
+      access: Không đủ điều kiện
+      cooldown: Đang cooldown
+      argument: Sai tham số
+      item: Không đủ item
+      role: Không đổi được role
+      member: Không tìm thấy thành viên
+      script: Lỗi BucketScript
+      bot: Bot thiếu quyền
+    duplicate_component: "Bạn đã dùng 2 {} có cùng ID `{}` trong một tin nhắn, hãy đổi hoặc bỏ bớt một cái nhé."
     insufficient_balance: "Bạn không đủ số lượng item {} để thực hiện trigger này (hiện tại: `{}`, yêu cầu: `{}`)."
     preparing: "Server này hiện đang trong giai đoạn chuẩn bị, vui lòng thử lại autoresponder sau."
     no_negative: "Người dùng {} không đủ số lượng item {} để thực hiện trừ bớt (hiện tại: `{}`, sau khi trừ: `{}`). Số lượng item chỉ có thể nhỏ hơn 0 bằng cách sử dụng lệnh /item subtract."

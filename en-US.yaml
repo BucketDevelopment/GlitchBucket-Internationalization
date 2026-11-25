@@ -2918,9 +2918,17 @@ bucketscript:
         user: "A valid user is required at argument `#{}`. You wrote `{}`."
         role: "A valid role is required at argument `#{}`. You wrote `{}`."
         channel: "A valid channel is required at argument `#{}`. You wrote `{}`."
-    user:
-      missing_permission: "### {} Missing Permissions: {}"
-      placeholder_error: "### {} Logical Placeholder Error: {}"
+        number: "A valid number is required at argument `#{}`. You wrote `{}`."
+    group:
+      access: Access denied
+      cooldown: On cooldown
+      argument: Invalid argument
+      item: Not enough items
+      role: Cannot change roles
+      member: Member not found
+      script: BucketScript error
+      bot: Bot is missing permissions
+    duplicate_component: "You used 2 {} with the same ID `{}` in one message. Please rename or remove one of them."
     insufficient_balance: "You do not have sufficient {}'s item quantity to perform this trigger (current: `{}`, required: `{}`)."
     preparing: "This server is currently in preparing phase, please try this autoresponder later."
     no_negative: "User {} does not have sufficient {}'s item quantity to perform the deduction (current: `{}`, after deduction: `{}`). Item quantity can only go negative by using /item subtract."
